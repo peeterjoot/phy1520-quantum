@@ -1,5 +1,6 @@
 THISDIR := phy1520-quantum
 THISBOOK := phy1520
+BASEVER := 34a3c5e
 
 include ../latex/make.bookvars
 
