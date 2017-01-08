@@ -1,13 +1,12 @@
 THISDIR := phy1520-quantum
 THISBOOK := phy1520
-BASEVER := 34a3c5e
 
 include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
 
 SOURCE_DIRS += appendix
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/$(THISBOOK)
 SOURCE_DIRS += $(FIGURES)
 
 # also toggle redacted classicthesis-config.tex
@@ -26,8 +25,8 @@ THISBOOK_DEPS += $(PDFS_FROM_EPS)
 
 include ../latex/make.rules
 
-julia.tex : $(HOME)/physicsplay/julia/METADATA
-mathematica.tex : $(HOME)/physicsplay/mathematica/METADATA
+julia.tex : ../julia/METADATA
+mathematica.tex : ../mathematica/METADATA
 
 problemSets :: gradQuantumProblemSet1.pdf
 problemSets :: gradQuantumProblemSet2.pdf
@@ -72,8 +71,8 @@ gradQuantumProblemSet8.pdf : ../phy1520/gradQuantumProblemSet8Problem3.tex
 gradQuantumProblemSet8.pdf : ../phy1520/gradQuantumProblemSet8Problem4.tex
 gradQuantumProblemSet8.pdf : ps8mathematica.tex
 
-ps7mathematica.tex : ../METADATA ../../mathematica/METADATA
+ps7mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -phy1520 -filter phy1520/ps7/ ) > $@
 
-ps8mathematica.tex : ../METADATA ../../mathematica/METADATA
+ps8mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -phy1520 -filter phy1520/ps8/ ) > $@
