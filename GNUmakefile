@@ -1,6 +1,9 @@
 THISDIR := phy1520-quantum
 THISBOOK := phy1520
 
+#.revinfo/gitCommitDateAsMyTime.tex:\newcommand{\myTime}{April 2018}\newcommand{\myVersion}{version V0.117\xspace}
+VER := $(shell grep Version .revinfo/gitCommitDateAsMyTime.tex | sed 's/.*{//;s/.xspace.*//;')
+
 include make.revision
 include ../latex/make.bookvars
 
@@ -25,6 +28,13 @@ THISBOOK_DEPS += $(PDFS_FROM_EPS)
 #THISBOOK_DEPS += macros_mathematica.sty
 
 include ../latex/make.rules
+
+dist:
+	cp $(THISBOOK).pdf $(THISBOOK).$(VER).pdf
+
+# a for annotate (releases).
+tag:
+	git tag -a $(THISBOOK).$(VER).pdf
 
 julia.tex : ../julia/METADATA
 mathematica.tex : ../mathematica/METADATA
