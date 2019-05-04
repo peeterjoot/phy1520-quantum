@@ -1,3 +1,12 @@
+- figures:
+   - thicken mathematica ones.
+   - add mathImage... markup.
+   - suppress mathematica.tex for print version.
+
+- lstlisting fix for dashes.
+
+- customize the dedication.
+
 - revisit rod balancing problem (still in ../blogit).  Perhaps try particle on a table problem first.
 
 - revisit the Sakurai "tricky problem" from chapter 5, discussed in tutorial.

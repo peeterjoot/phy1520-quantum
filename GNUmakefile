@@ -1,6 +1,13 @@
 THISDIR := phy1520-quantum
 THISBOOK := phy1520
 
+BIBLIOGRAPHY_PATH := classicthesis_mine
+HAVE_OWN_CONTENTS := 1
+#HAVE_OWN_TITLEPAGE := 1
+#HAVE_CUSTOM_DEDICATION := 1
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/ContentsAndFigures.tex
+BOOKTEMPLATE := ../latex/classicthesis_mine/ClassicThesis2.tex
 include make.revision
 include ../latex/make.bookvars
 
@@ -13,7 +20,8 @@ SOURCE_DIRS += $(FIGURES)
 #GENERATED_SOURCES += matlab.tex 
 GENERATED_SOURCES += mathematica.tex 
 GENERATED_SOURCES += julia.tex 
-
+GENERATED_SOURCES += backmatter.tex
+ 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
 PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 
@@ -73,3 +81,9 @@ ps7mathematica.tex : ../METADATA ../mathematica/METADATA
 
 ps8mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -phy1520 -filter phy1520/ps8/ ) > $@
+
+backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
+	rm -f $@
+	#ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
+
