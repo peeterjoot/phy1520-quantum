@@ -28,7 +28,7 @@ Derive the free particle propagator in one and three dimensions.
 \makeanswer{problem:freeParticlePropagator:31}{
 
 I found the description in the text confusing, so let's start from scratch with the definition of the propagator.  This is the kernel of the spatial convolution integral that encodes time evolution, and can be expressed by expanding a general time state with two sets of identity operators.  Let the position relative state at time \( t \), relative to an initial time \( t_0 \) be given by \( \braket{\Bx}{\alpha, t ; t_0 } \), and expand this in terms of a complete basis of energy eigenstates \( \ket{a'} \) and the time evolution operator
-
+%
 \begin{dmath}\label{eqn:freeParticlePropagator:20}
 \begin{aligned}
 \braket{\Bx''}{\alpha, t ; t_0 }
@@ -54,7 +54,7 @@ I found the description in the text confusing, so let's start from scratch with 
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:freeParticlePropagator:40}
 K(\Bx'', t ; \Bx', t_0) =
 \sum_{a'}
@@ -63,7 +63,7 @@ e^{-i E_{a'} (t -t_0)/\Hbar},
 \end{dmath}
 
 the propagator, is the kernel of the convolution integral that takes the state \( \ket{\alpha, t_0} \) to state \( \ket{\alpha, t ; t_0} \).  Evaluating this over the momentum states (where integration and not plain summation is required), we have
-
+%
 \begin{dmath}\label{eqn:freeParticlePropagator:60}
 \begin{aligned}
 K(\Bx'', t ; \Bx', t_0)
@@ -102,7 +102,7 @@ e^{i (x_3'' -x_3') p_3'/\Hbar}
 \end{dmath}
 
 With \( a = \ifrac{(t -t_0)}{2 m \Hbar} \), each of these three integral factors is of the form
-
+%
 \begin{dmath}\label{eqn:freeParticlePropagator:80}
 \begin{aligned}
 \inv{ 2 \pi \Hbar }

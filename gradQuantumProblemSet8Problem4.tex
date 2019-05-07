@@ -13,14 +13,14 @@ What are the spin eigenstates and eigenvalues?
 
 \makesubproblem{}{gradQuantum:problemSet8:4b}
 Now consider applying a magnetic field which leads to an extra term
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:20}
 -B \lr{ g_\txte \mu_\txte S_\txte^z + g_\txtp \mu_\txtp S_\txtp^z }
 \end{dmath}
 
 with gyromagnetic ratios \( g_\txte \approx -2 \) and \( g_\txtp \approx 5.5 \), with magnetic moments \( \mu_\txte = e/2m_\txte \) and
 \( \mu_\txtp = e/2m_\txtp \). The large nuclear mass ensures \( \mu_\txte/\mu_\txtp \sim 2000 \), so let us simply set \( \mu_\txtp = 0\). For convenience, set \( B g_\txte \mu_\txte \rightarrow B_{\textrm{eff}} \) so the Hamiltonian becomes
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:40}
 H = A \BS_\txte \cdot \BS_\txtp - B_{\textrm{eff}} S_\txte^z,
 \end{dmath}
@@ -42,7 +42,7 @@ Compute the full field evolution of the levels and compare with the perturbative
 %What are the spin eigenstates and eigenvalues?
 
 With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), the unperturbed interaction Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:60}
 A \BS_\txte \cdot \BS_\txtp
 =
@@ -78,7 +78,7 @@ A
 \end{dmath}
 
 The spin eigenstates are the basis elements of \( \beta \) above, with respective eigenvalues
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:80}
 \setlr{ A \Hbar^2/4, -A \Hbar^2/4, -A \Hbar^2/4, A \Hbar^2/4}
 \end{dmath}
@@ -86,7 +86,7 @@ The spin eigenstates are the basis elements of \( \beta \) above, with respectiv
 \makeSubAnswer{}{gradQuantum:problemSet8:4b}
 
 The matrix representation of the perturbation potential is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:100}
 -B_{\textrm{eff}} S^z_\txte
 =
@@ -122,7 +122,7 @@ e^{-i\phi} \cos(\theta/2) \\
 \end{dmath}
 
 the representation of the \( \sigma^z_\txte \) operator is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:160}
 \sigma^z_\txte
 =
@@ -146,7 +146,7 @@ U =
 This is demonstrated in \nbref{ps8:PauliMatrixSpinOperators.nb}.
 
 The full Hamiltonian can now be written in block matrix form
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:200}
 H
 =
@@ -163,7 +163,7 @@ U \sigma_z U^{-1} & 0 \\
 \end{dmath}
 
 Transforming the Hamiltonian to the \( S^z_\txte \) basis we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:220}
 H' =
 \frac{A \Hbar^2}{4}
@@ -220,7 +220,7 @@ U^{-1} \sigma_z U & 0 \\
 %We don't need this for the zeroth order energy split.
 
 For \( B_{\textrm{eff}} \ll A \), the first order energy splitting can be read off by inspection
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:260}
 \begin{aligned}
 \frac{\Hbar^2 A}{4} &\rightarrow \frac{\Hbar^2 A}{4} -\frac{B_{\textrm{eff}} \Hbar}{2} \\
@@ -231,7 +231,7 @@ For \( B_{\textrm{eff}} \ll A \), the first order energy splitting can be read o
 \end{equation}
 
 For the strong field limit, we can flip the problem, and consider \( A \BS_\txte \cdot \BS_\txtp \) to be a perturbation of an initial Hamiltonian \( H_0 = -B_{\textrm{eff}} S^z_\txte \).  The diagonalization of that perturbation is just \cref{eqn:gradQuantumProblemSet8Problem4:200} so the first order energy shifts are
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:280}
 \begin{aligned}
 -\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow -\frac{B_{\textrm{eff}} \Hbar}{2} + \frac{\Hbar^2 A}{4} \\
@@ -246,7 +246,7 @@ The splitting is the same to first order, but the starting energies are differen
 \makeSubAnswer{}{gradQuantum:problemSet8:4a}
 
 The full field solutions (as found in \nbref{ps8:PauliMatrixSpinOperators.nb}) are
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:300}
 \begin{array}{c}
  -\frac{\Hbar}{4} \sqrt{4 B_{\textrm{eff}}^2 - 4 A \Hbar \cos\theta B_{\textrm{eff}} + A^2 \Hbar^2}, \\
@@ -257,7 +257,7 @@ The full field solutions (as found in \nbref{ps8:PauliMatrixSpinOperators.nb}) a
 \end{equation}
 
 For the weak field \( B_{\textrm{eff}} \ll A \) the respective approximations of these energies are
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:320}
 \begin{array}{c}
  -\frac{A \Hbar^2}{4} - \frac{B_{\textrm{eff}} \Hbar \cos\theta}{2}, \\
@@ -268,7 +268,7 @@ For the weak field \( B_{\textrm{eff}} \ll A \) the respective approximations of
 \end{equation}
 
 whereas for the strong field \( B_{\textrm{eff}} \gg A \) the respective approximations of these energies are
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:340}
 \begin{array}{c}
  -\frac{\Hbar B_{\textrm{eff}}}{2} - \frac{A \Hbar^2 \cos\theta}{4}, \\

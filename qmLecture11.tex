@@ -29,13 +29,13 @@
 \index{symmetry!classical}
 
 In a classical context considering a Hamiltonian
-
+%
 \begin{dmath}\label{eqn:qmLecture11:20}
 H(q_i, p_i),
 \end{dmath}
 
 a symmetry means that certain \( q_i \) don't appear.  In that case the rate of change of one of the generalized momenta is zero
-
+%
 \begin{equation}\label{eqn:qmLecture11:40}
 \ddt{p_k} = - \PD{q_k}{H} = 0,
 \end{equation}
@@ -49,7 +49,7 @@ the trajectory of a particle after rotation is related by rotation to the trajec
 \section{Symmetry in quantum mechanics}
 
 Suppose that we have a symmetry operation that takes states from
-
+%
 \begin{dmath}\label{eqn:qmLecture11:60}
 \ket{\psi} \rightarrow \ket{U \psi}
 \end{dmath}
@@ -58,7 +58,7 @@ Suppose that we have a symmetry operation that takes states from
 \end{dmath}
 
 we expect that
-
+%
 \begin{dmath}\label{eqn:qmLecture11:100}
 \Abs{\braket{ \psi}{\phi} }^2 = \Abs{\braket{ U\psi}{ U\phi} }^2.
 \end{dmath}
@@ -67,7 +67,7 @@ This won't hold true for a general operator.   Two cases where this does hold tr
 
 \begin{itemize}
 \item \( \braket{\psi}{\phi} = \braket{ U\psi}{ U\phi} \).  Here \( U \) is \textAndIndex{unitary}, and the equivalence follows from
-
+%
 \begin{dmath}\label{eqn:qmLecture11:120}
 \braket{ U\psi}{ U\phi} = \bra{ \psi} U^\dagger U { \phi} = \bra{ \psi} 1 { \phi} = \braket{\psi}{\phi}.
 \end{dmath}
@@ -81,7 +81,7 @@ This won't hold true for a general operator.   Two cases where this does hold tr
 \index{symmetry!unitary}
 
 If an ``observable'' is not changed by a unitary operation representing a symmetry we must have
-
+%
 \begin{dmath}\label{eqn:qmLecture11:140}
 \bra{\psi} \hatA \ket{\psi}
 \rightarrow
@@ -112,11 +112,11 @@ Given
 \( H \) is invariant.
 
 Given
-
+%
 \begin{dmath}\label{eqn:qmLecture11:220}
 H \ket{\phi_n} = \epsilon_n \ket{\phi_n} .
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture11:240}
 U H \ket{\phi_n}
 = H U \ket{\phi_n}
@@ -124,7 +124,7 @@ U H \ket{\phi_n}
 \end{dmath}
 
 Such a state
-
+%
 \begin{dmath}\label{eqn:qmLecture11:260}
 \ket{\psi_n} = U \ket{\phi_n}
 \end{dmath}
@@ -132,7 +132,7 @@ Such a state
 is also an eigenstate with the \underline{same} energy.
 
 Suppose this process is repeated, finding other states
-
+%
 \begin{dmath}\label{eqn:qmLecture11:280}
 U \ket{\psi_n} = \ket{\chi_n}
 \end{dmath}
@@ -148,7 +148,7 @@ We can say that symmetry operations are generators of a \underlineAndIndex{group
 \begin{itemize}
 \item
 Form products that lie in a closed set
-
+%
 \begin{dmath}\label{eqn:qmLecture11:320}
 U_1 U_2 = U_3
 \end{dmath}
@@ -171,7 +171,7 @@ When \( H \) has a symmetry, then degenerate eigenstates form \underlineAndIndex
 \makeexample{Inversion.}{example:qmLecture11:1}{
 
 Given a state and a parity operation \( \hat\Pi \), with the transformation
-
+%
 \begin{dmath}\label{eqn:qmLecture11:380}
 \ket{\psi} \rightarrow \hat\Pi \ket{\psi}
 \end{dmath}
@@ -181,7 +181,7 @@ In one dimension, the parity operation is just inversion.  In two dimensions, th
 \imageFigure{../figures/phy1520-quantum/lecture11Fig2}{2D parity operation.}{fig:lecture11:lecture11Fig2}{0.3}
 
 The operational effects of this operator are
-
+%
 \begin{equation}\label{eqn:qmLecture11:400}
 \begin{aligned}
 \hatx &\rightarrow - \hatx \\
@@ -190,13 +190,13 @@ The operational effects of this operator are
 \end{equation}
 
 Acting again with the \textAndIndex{parity operator} produces the original value, so it is its own inverse, and \( \hat\Pi^\dagger = \hat\Pi = \hat\Pi^{-1} \).  In an expectation value
-
+%
 \begin{dmath}\label{eqn:qmLecture11:420}
 \bra{ \hat\Pi \psi } \hatx \ket{ \hat\Pi \psi } = - \bra{\psi} \hatx \ket{\psi}.
 \end{dmath}
 
 This means that
-
+%
 \begin{dmath}\label{eqn:qmLecture11:440}
 \hat\Pi^\dagger \hatx \hat\Pi = - \hatx,
 \end{dmath}
@@ -215,13 +215,13 @@ or
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:qmLecture11:500}
 \hat\Pi \ket{x_0} = \ket{-x_0}.
 \end{dmath}
 
 Acting on a wave function
-
+%
 \begin{dmath}\label{eqn:qmLecture11:520}
 \bra{x} \hat\Pi \ket{\psi}
 =
@@ -230,7 +230,7 @@ Acting on a wave function
 \end{dmath}
 
 What does this mean for eigenfunctions.  Eigenfunctions are supposed to form irreducible representations of the group.  The group has just two elements
-
+%
 \begin{dmath}\label{eqn:qmLecture11:540}
 \setlr{ 1, \hat\Pi },
 \end{dmath}
@@ -238,13 +238,13 @@ What does this mean for eigenfunctions.  Eigenfunctions are supposed to form irr
 where \( \hat\Pi^2 = 1 \).
 
 Suppose we have a Hamiltonian
-
+%
 \begin{dmath}\label{eqn:qmLecture11:560}
 H = \frac{\hatp^2}{2m} + V(\hatx),
 \end{dmath}
 
 where \( V(\hatx) \) is even, or \( \antisymmetric{V(\hatx)}{\hat\Pi } = 0 \).  The squared momentum commutes with the parity operator
-
+%
 \begin{dmath}\label{eqn:qmLecture11:580}
 \antisymmetric{\hatp^2}{\hat\Pi}
 =
@@ -264,7 +264,7 @@ where \( V(\hatx) \) is even, or \( \antisymmetric{V(\hatx)}{\hat\Pi } = 0 \).  
 \end{dmath}
 
 Only two functions are possible in the symmetry set \( \setlr{ \Psi(x), \hat\Pi \Psi(x) } \), since
-
+%
 \begin{dmath}\label{eqn:qmLecture11:600}
 \hat\Pi^2 \Psi(x)
 = \hat\Pi \Psi(-x)
@@ -272,7 +272,7 @@ Only two functions are possible in the symmetry set \( \setlr{ \Psi(x), \hat\Pi 
 \end{dmath}
 
 This symmetry severely restricts the possible solutions, making it so there can be only one dimensional forms of this problem with solutions that are either even or odd respectively
-
+%
 \begin{dmath}\label{eqn:qmLecture11:620}
 \begin{aligned}
 \phi_e(x) &= \psi(x ) + \psi(-x) \\

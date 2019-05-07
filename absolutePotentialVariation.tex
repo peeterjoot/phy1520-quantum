@@ -26,13 +26,13 @@
 \index{variational method}
 
 Estimate the lowest eigenvalue \( \lambda \) of the differential equation
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:20}
 \frac{d^2}{dx^2}\psi + \lr{ \lambda - \Abs{x} } \psi = 0.
 \end{dmath}
 
 Using \( \alpha \) variation with the trial function
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:40}
 \psi =
 \left\{
@@ -47,13 +47,13 @@ c(\alpha - \Abs{x}) & \quad \mbox{\(\Abs{x} < \alpha \) } \\
 
 \makeanswer{problem:absolutePotentialVariation:1}{
 First rewrite the differential equation in a Hamiltonian like fashion
-
+%
 \begin{equation}\label{eqn:absolutePotentialVariation:60}
 H \psi = -\frac{d^2}{dx^2}\psi + \Abs{x} \psi = \lambda \psi.
 \end{equation}
 
 We need the derivatives of the trial distribution.  The first derivative is
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:80}
 \frac{d}{dx} \psi
 =
@@ -102,13 +102,13 @@ The second derivative is
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:120}
 H \psi = -2 c \delta(x) + \Abs{x} c \lr{ \alpha - \Abs{x} }.
 \end{dmath}
 
 We are now set to compute some of the inner products.  The normalization is the simplest
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:140}
 \begin{aligned}
 \braket{\psi}{\psi}
@@ -140,7 +140,7 @@ c^2 \lr{ - 2 \alpha + \inv{6} \alpha^4 }.
 \end{dmath}
 
 The energy estimate is
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:180}
 \overbar{E}
 =
@@ -162,7 +162,7 @@ or
 \end{dmath}
 
 Back substitution into the energy gives
-
+%
 \begin{dmath}\label{eqn:absolutePotentialVariation:240}
 \overbar{E}
 =

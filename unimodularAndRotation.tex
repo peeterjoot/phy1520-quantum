@@ -23,7 +23,7 @@
 \makeoproblem{Unimodular transformation.}{problem:unimodularAndRotation:1}{\citep{sakurai2014modern} pr. 3.3}{
 \index{unimodular transformation}
 Given the matrix
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:20}
 U =
 \frac
@@ -44,7 +44,7 @@ A unitary transformation can represent an arbitrary rotation.  Determine the rot
 \makeSubAnswer{}{problem:unimodularAndRotation:1:a}
 
 Let's call these factors \( A_{\pm} \), which expand to
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:40}
 A_{\pm}
 =
@@ -57,7 +57,7 @@ a_0 \pm i a_z  & \pm \lr{ a_y + i a_x} \\
 \end{dmath}
 
 or with \( z = a_0 + i a_z \), and \( w = a_y + i a_x \), these are
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:120}
 A_{+}
 =
@@ -95,7 +95,7 @@ z & w \\
 \end{dmath}
 
 Noting that the numerator and denominator commute the inverse can be applied in either order.  Picking one, the transformation of interest, after writing \( A = a_0^2 + \Ba^2 \), is
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:100}
 U
 =
@@ -117,7 +117,7 @@ z^2 - \Abs{w}^2          & w( z + z^\conj) \\
 \end{dmath}
 
 Recall that a unimodular transformation is one that has the form
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:140}
 \begin{bmatrix}
 z & w \\
@@ -126,7 +126,7 @@ z & w \\
 \end{dmath}
 
 provided \( \Abs{z}^2 + \Abs{w}^2 = 1 \), so \cref{eqn:unimodularAndRotation:100} is unimodular if the following sum is unity, which is the case
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:160}
 \frac{\Abs{z^2 - \Abs{w}^2}^2}{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 } + \Abs{w}^2 \frac{\Abs{z + z^\conj}^2 }{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 }
 =
@@ -148,7 +148,7 @@ provided \( \Abs{z}^2 + \Abs{w}^2 = 1 \), so \cref{eqn:unimodularAndRotation:100
 
 \makeSubAnswer{}{problem:unimodularAndRotation:1:b}
 The most general rotation of a vector \( \Ba \), described by Pauli matrices is
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:220}
 e^{i \Bsigma \cdot \ncap \theta/2}
 \Bsigma \cdot \Ba
@@ -158,13 +158,13 @@ e^{-i \Bsigma \cdot \ncap \theta/2}
 \end{dmath}
 
 If the unimodular matrix above, applied as \( \Bsigma \cdot \Ba' = U^\dagger \Bsigma \cdot \Ba U \) is to also describe this rotation, we want the equivalence
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:240}
 U = e^{-i \Bsigma \cdot \ncap \theta/2},
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:260}
 \inv{a_0^2 + \Ba^2}
 \begin{bmatrix}
@@ -189,7 +189,7 @@ Equating components, that is
 \end{equation}
 
 Noting that
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:300}
 \begin{aligned}
 \sin(\theta/2)
@@ -212,14 +212,14 @@ a_0^2 + \Ba^2
 \end{dmath}
 
 The vector normal direction can be written
-
+%
 \begin{dmath}\label{eqn:unimodularAndRotation:320}
 \Bn
 = - \frac{2 a_0}{(a_0^2 + \Ba^2) \sin(\theta/2)} \Ba,
 \end{dmath}
 
 or
-
+%
 %\begin{dmath}\label{eqn:unimodularAndRotation:340}
 \boxedEquation{eqn:unimodularAndRotation:340}{
 \Bn = - \frac{\Ba}{\Abs{\Ba}}.
@@ -227,7 +227,7 @@ or
 %\end{dmath}
 
 The angle of rotation is
-
+%
 %\begin{dmath}\label{eqn:unimodularAndRotation:380}
 \boxedEquation{eqn:unimodularAndRotation:380}{
 \theta = 2 \Atan \frac{2 a_0 \Abs{\Ba}}{ a_0^2 - \Ba^2}.

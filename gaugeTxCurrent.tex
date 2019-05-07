@@ -26,19 +26,19 @@
 \index{gauge transformation!probability current}
 
 For the gauge transformed Schr\"{o}dinger equation
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:20}
 \inv{2m} \BPi(\Bx) \cdot \BPi(\Bx) \psi(\Bx, t) + e \phi(\Bx) \psi(\Bx, t) = i \Hbar \PD{t}{}\psi(\Bx, t),
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:40}
 \BPi(\Bx) = -i \Hbar \spacegrad - \frac{e}{c} \BA(\Bx),
 \end{dmath}
 
 find the probability current defined by
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:60}
 \PD{t}{\psi} + \spacegrad \cdot \Bj.
 \end{dmath}
@@ -56,7 +56,7 @@ Evaluate \( \int d^3 x \Bj \).
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:a}
 
 Equation \cref{eqn:gaugeTxCurrent:20} and its conjugate are
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:22}
 \begin{aligned}
 \inv{2m} \BPi \cdot \BPi \psi + e \phi \psi &= i \Hbar \PD{t}{\psi} \\
@@ -65,7 +65,7 @@ Equation \cref{eqn:gaugeTxCurrent:20} and its conjugate are
 \end{dmath}
 
 which can be used immediately in a chain rule expansion of the probability time derivative
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:80}
 i \Hbar \PD{t}{\rho}
 =
@@ -82,7 +82,7 @@ i \Hbar \psi \PD{t}{\psi^\conj}
 \end{dmath}
 
 We have a difference of conjugates, so can get away with expanding just the first term
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:100}
 \psi^\conj \BPi \cdot \BPi \psi
 =
@@ -104,7 +104,7 @@ We have a difference of conjugates, so can get away with expanding just the firs
 Note that in the directional derivative terms, the gradient operates on everything to its right, including \( \BA \).  Also note that the last term has no imaginary component, so it will not contribute to the difference of conjugates.
 
 This gives
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:120}
 \begin{aligned}
 \psi^\conj \BPi \cdot \BPi \psi - \psi \BPi^\conj \cdot \BPi^\conj \psi^\conj
@@ -133,7 +133,7 @@ This gives
 \end{dmath}
 
 The first term is recognized as a divergence
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:140}
 \spacegrad \cdot \lr{ \psi^\conj \spacegrad \psi - \psi \spacegrad \psi^\conj }
 =
@@ -148,7 +148,7 @@ The first term is recognized as a divergence
 \end{dmath}
 
 The second term can also be factored into a divergence operation
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:160}
 \begin{aligned}
 \psi^\conj
@@ -178,7 +178,7 @@ The second term can also be factored into a divergence operation
 \end{dmath}
 
 Putting all the pieces back together we have
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:180}
 \PD{t}{\rho}
 =
@@ -202,7 +202,7 @@ Putting all the pieces back together we have
 \end{dmath}
 
 From \cref{eqn:gaugeTxCurrent:60}, the probability current must be
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:200}
 \Bj
 =
@@ -223,7 +223,7 @@ or
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:b}
 
 To find the \( \psi = \sqrt{\rho} e^{i S/\Hbar} \) form of the current, note that
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:240}
 \spacegrad \psi = e^{i S/\Hbar} \spacegrad \sqrt{\rho} + \sqrt{\rho} e^{i S/\Hbar} \spacegrad \lr{ i S/\Hbar },
 \end{dmath}
@@ -236,7 +236,7 @@ so
 \end{dmath}
 
 Discarding the real part of this product, we have
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:280}
 \Bj
 = \frac{\Hbar}{m} \rho \spacegrad S - \frac{e }{m c} \BA \rho,
@@ -251,13 +251,13 @@ or
 
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:c}
 Finally, note that
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:320}
 -i \Hbar \spacegrad \psi = \bra{ \Bx } \Bp \ket{\psi},
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:340}
 \Bj
 = \frac{\Hbar}{m} \Imag \lr{ \braket{\Psi}{\Bx} \lr{ \frac{i}{ \Hbar} } \bra{\Bx} \Bp \ket{\psi} }
@@ -265,7 +265,7 @@ so
 \end{dmath}
 
 Integrating over all space to eliminate the identity operators, this is
-
+%
 \begin{dmath}\label{eqn:gaugeTxCurrent:360}
 \int d^3 x \Bj
 =

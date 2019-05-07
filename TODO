@@ -1,4 +1,4 @@
-- customize the dedication.
+- check for spaces before and after equations.  Suspect that the page counts are inflated because of this.
 
 - revisit rod balancing problem (still in ../blogit).  Perhaps try particle on a table problem first.
 
@@ -18,4 +18,4 @@
 
 - why was I able to have usepackage{censor} in ../ece1254/thisbook.sty, but it didn't work for ../phy1520redacted/ ?
 
-- need to apply redaction to the problem set subset of mathematica.tex
+#- need to apply redaction to the problem set subset of mathematica.tex

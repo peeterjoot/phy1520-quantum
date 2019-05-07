@@ -62,25 +62,25 @@
 \section{Stark effect}
 \index{Stark effect}
 
-
+%
 \begin{dmath}\label{eqn:qmLecture21:100}
 H = H_{\textrm{atom}} + e \calE z,
 \end{dmath}
 
 where \( H_{\textrm{atom}} \) is assumed to be Hydrogen-like with Hamiltonian
-
+%
 \begin{dmath}\label{eqn:qmLecture21:120}
 H_{\textrm{atom}} = \frac{\Bp^2}{2m} - \frac{e^2}{4 \pi \epsilon_0 r},
 \end{dmath}
 
 and wave functions
-
+%
 \begin{dmath}\label{eqn:qmLecture21:140}
 \braket{\Br}{\psi_{n l m}} = R_{n l}(r) Y_{lm}( \theta, \phi )
 \end{dmath}
 
 Referring to \cref{eqn:qmLecture21:640}, the first level correction to the energy
-
+%
 \begin{dmath}\label{eqn:qmLecture21:160}
 \Delta_1
 = \bra{\psi_{100}} e \calE z \ket{ \psi_{100}}
@@ -90,7 +90,7 @@ Referring to \cref{eqn:qmLecture21:640}, the first level correction to the energ
 The cosine integral is obliterated, so we have \( \Delta_1 = 0 \).
 
 How about the second order energy correction?  That is
-
+%
 \begin{dmath}\label{eqn:qmLecture21:180}
 \Delta_2 = \sum_{n l m \ne 100} \frac{
 \Abs{ \bra{\psi_{100}} e \calE z \ket{ n l m }}^2
@@ -100,7 +100,7 @@ E_{100}^{(0)} - E_{n l m}
 \end{dmath}
 
 The matrix element in the numerator is the absolute square of
-
+%
 \begin{dmath}\label{eqn:qmLecture21:200}
 V_{100,nlm}
 =
@@ -112,7 +112,7 @@ e \calE \int d\Omega \inv{\sqrt{ 4 \pi } }
 \end{dmath}
 
 For all \( m \ne 0 \), \( Y_{lm} \) includes a \( e^{i m \phi} \) factor, so this cosine integral is zero.  For \( m = 0 \), each of the \( Y_{lm} \) functions appears to contain either even or odd powers of cosines (see: \cref{eqn:qmLecture21:760}).  This shows that for even \( 2k = l \), the cosine integral is zero
-
+%
 \begin{equation}\label{eqn:qmLecture21:780}
 \int_0^\pi \sin\theta \cos\theta \sum_k a_k \cos^{2k}\theta d\theta
 =
@@ -124,7 +124,7 @@ since \( \cos^{2k}(\theta) \) is even and \( \sin\theta \cos\theta \) is odd ove
 FIXME: find the property of the spherical harmonics that can be used to prove that this is true in general for \( l > 1 \).
 
 This leaves
-
+%
 \begin{dmath}\label{eqn:qmLecture21:220}
 \Delta_2
 = \sum_{n \ne 1} \frac{
@@ -143,13 +143,13 @@ E_{n 1 0}
 \end{dmath}
 
 This is sometimes written in terms of a polarizability \( \alpha \)
-
+%
 \begin{dmath}\label{eqn:qmLecture21:260}
 \Delta_2 = -\frac{\calE^2}{2} \alpha,
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:qmLecture21:280}
 \alpha =
 2 e^2
@@ -167,7 +167,7 @@ With
 \end{equation}
 
 the energy change upon turning on the electric field from \( 0 \rightarrow \calE \) is simply \( - \BP \cdot d\bcE \) integrated from \( 0 \rightarrow \calE \).  Putting \( \BP = \alpha \calE \zcap \), we have
-
+%
 \begin{dmath}\label{eqn:qmLecture21:400}
 - \int_0^\calE P_z d\calE
 =
@@ -179,11 +179,11 @@ the energy change upon turning on the electric field from \( 0 \rightarrow \calE
 leading to an energy change \( - \alpha \calE^2/2 \), so we can directly compute \( \expectation{\BP} \) or we can compute change in energy, and both contain information about the polarization factor \( \alpha \).
 
 There is an exact answer to the sum \cref{eqn:qmLecture21:280}, but we aren't going to try to get it here.  Instead let's look for bounds
-
+%
 \begin{equation}\label{eqn:qmLecture21:240}
 \Delta_2^{\mathrm{min}} < \Delta_2 < \Delta_2^{\mathrm{max}}
 \end{equation}
-
+%
 \begin{dmath}\label{eqn:qmLecture21:320}
 \alpha^{\mathrm{min}} = 2 e^2 \frac{
 \Abs{ \bra{\psi_{100}} z \ket{\psi_{210}} }^2
@@ -191,13 +191,13 @@ There is an exact answer to the sum \cref{eqn:qmLecture21:280}, but we aren't go
 \end{dmath}
 
 For the hydrogen atom we have
-
+%
 \begin{dmath}\label{eqn:qmLecture21:820}
 E_n = -\frac{ e^2}{ 2 n^2 a_0 },
 \end{dmath}
 
 allowing any difference of energy levels to be expressed as a fraction of the ground state energy, such as
-
+%
 \begin{dmath}\label{eqn:qmLecture21:340}
 E_{210}^{(0)} = \inv{4} E_{100}^{(0)} = \inv{4} \frac{ -\Hbar^2 }{ 2 m a_0^2 }
 \end{dmath}
@@ -209,7 +209,7 @@ E_{210}^{(0)} - E_{100}^{(0)} = \frac{3}{4}
 \end{dmath}
 
 In the numerator we have
-
+%
 \begin{dmath}\label{eqn:qmLecture21:380}
 \bra{\psi_{100}} z \ket{\psi_{210}}
 =
@@ -238,7 +238,7 @@ In the numerator we have
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:qmLecture21:420}
 \alpha^{\mathrm{min}}
 = \frac{ 2 e^2 (0.75)^2 a_0^2 }{ \frac{3}{4} \frac{\Hbar^2}{2 m a_0^2} }
@@ -254,7 +254,7 @@ This gives
 The factor \( 4 \pi \epsilon_0 a_0^3 \) are the natural units for the polarizability.
 
 There is a neat trick that generalizes to many problems to find the upper bound.  Recall that the general polarizability was
-
+%
 \begin{dmath}\label{eqn:qmLecture21:440}
 \alpha =
 2 e^2
@@ -267,7 +267,7 @@ E_{n l m}
 \end{dmath}
 
 If we are looking for the upper bound, and replace the denominator by the smallest energy difference that will be encountered, it can be brought out of the sum, for
-
+%
 \begin{dmath}\label{eqn:qmLecture21:460}
 \alpha^{\mathrm{max}} =
 2 e^2
@@ -278,7 +278,7 @@ If we are looking for the upper bound, and replace the denominator by the smalle
 \end{dmath}
 
 Because \( \bra{nlm} z \ket{100} = 0 \), the constraint in the sum can be removed, and the identity summation evaluated
-
+%
 \begin{dmath}\label{eqn:qmLecture21:480}
 \alpha^{\mathrm{max}} =
 2 e^2
@@ -295,7 +295,7 @@ Because \( \bra{nlm} z \ket{100} = 0 \), the constraint in the sum can be remove
 \end{dmath}
 
 The bounds are
-
+%
 %\begin{dmath}\label{eqn:qmLecture21:520}
 \boxedEquation{eqn:qmLecture21:540}{
 3 \ge \frac{\alpha}{\alpha^{\mathrm{at}}} < \frac{16}{3},
@@ -303,7 +303,7 @@ The bounds are
 %\end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:qmLecture21:560}
 \alpha^{\mathrm{at}} = 4 \pi \epsilon_0 a_0^3.
 \end{dmath}
@@ -317,7 +317,7 @@ See \nbref{lecture21someSphericalHarmonicsAndTheirIntegrals.nb}, for some of the
 
 \paragraph{Example: Computing the dipole moment}
 \index{dipole moment}
-
+%
 \begin{equation}\label{eqn:qmLecture21:600}
 \expectation{P_z}
 = \alpha \calE
@@ -325,7 +325,7 @@ See \nbref{lecture21someSphericalHarmonicsAndTheirIntegrals.nb}, for some of the
 \end{equation}
 
 Without any perturbation this is zero.  After perturbation, retaining only the terms that are first order in \( \delta \psi_{100} \) we have
-
+%
 \begin{dmath}\label{eqn:qmLecture21:620}
 \bra{\psi_{100} + \delta \psi_{100}} e z \ket{\psi_{100} + \delta \psi_{100}}
 \approx

@@ -25,7 +25,7 @@
 \index{harmonic oscillator!xy perturbation}
 
 Given a 2D SHO with Hamiltonian
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:20}
 H_0 = \inv{2m} \lr{ p_x^2 + p_y^2 } + \frac{m \omega^2}{2} \lr{ x^2 + y^2 },
 \end{dmath}
@@ -35,7 +35,7 @@ What are the energies and degeneracies of the three lowest states?
 
 \makesubproblem{}{problem:2dHarmonicOscillatorXYPerturbation:1:b}
 With perturbation
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:40}
 V = m \omega^2 x y,
 \end{dmath}
@@ -53,7 +53,7 @@ Solve the \( H_0 + \delta V \) problem exactly, and compare.
 
 
 Recall that we have
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:60}
 H \ket{n_1, n_2} =
 \Hbar\omega
@@ -67,7 +67,7 @@ So the three lowest energy states are \( \ket{0,0}, \ket{1,0}, \ket{0,1} \) with
 
 \makeSubAnswer{}{problem:2dHarmonicOscillatorXYPerturbation:1:b}
 Consider the action of \( x y \) on the \( \beta = \setlr{ \ket{0,0}, \ket{1,0}, \ket{0,1} } \) subspace.  Those are
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:200}
 x y \ket{0,0}
 =
@@ -77,7 +77,7 @@ x y \ket{0,0}
 =
 \frac{x_0^2}{2} \ket{1,1}.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:220}
 x y \ket{1, 0}
 =
@@ -87,7 +87,7 @@ x y \ket{1, 0}
 =
 \frac{x_0^2}{2} \lr{ \ket{0,1} + \sqrt{2} \ket{2,1} } .
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:240}
 x y \ket{0, 1}
 =
@@ -100,7 +100,7 @@ x y \ket{0, 1}
 
 %<row|A|column>
 The matrix representation of \( m \omega^2 x y \) with respect to the subspace spanned by basis \( \beta \) above is
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:260}
 x y
 \sim
@@ -146,7 +146,7 @@ x y = U D U^\dagger = U D U.
 \end{subequations}
 
 The unperturbed Hamiltonian in the original basis is
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:380}
 H_0
 =
@@ -158,7 +158,7 @@ H_0
 \end{dmath}
 
 So the transformation to the diagonal \( x y \) basis leaves the initial Hamiltonian unaltered
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:400}
 H_0'
 = U^\dagger H_0 U
@@ -177,7 +177,7 @@ H_0'
 \end{dmath}
 
 Now we can compute the first order energy shifts almost by inspection.  Writing the new basis as \( \beta' = \setlr{ \ket{0}, \ket{1}, \ket{2} } \) those energy shifts are just the diagonal elements from the \( x y \) operators matrix representation
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:420}
 \begin{aligned}
 E^{{(1)}}_0 &= \bra{0} V \ket{0} = 0 \\
@@ -187,7 +187,7 @@ E^{{(1)}}_2 &= \bra{2} V \ket{2} = -\inv{2} \Hbar \omega.
 \end{dmath}
 
 The new energies are
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:440}
 \begin{aligned}
 E_0 &\rightarrow \Hbar \omega \\
@@ -199,7 +199,7 @@ E_2 &\rightarrow \Hbar \omega \lr{ 2 - \delta/2 }.
 \makeSubAnswer{}{problem:2dHarmonicOscillatorXYPerturbation:1:c}
 
 For the exact solution, it's possible to rotate the coordinate system in a way that kills the explicit \( x y \) term of the perturbation.  That we could do this for \( x, y \) operators wasn't obvious to me, but after doing so (and rotating the momentum operators the same way) the new operators still have the required commutators.  Let
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:80}
 \begin{bmatrix}
 u \\
@@ -244,7 +244,7 @@ p_x \cos\theta + p_y \sin\theta \\
 \end{dmath}
 
 For the commutators of the new operators we have
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:120}
 \antisymmetric{u}{p_u}
 =
@@ -256,7 +256,7 @@ i \Hbar \lr{ \cos^2\theta + \sin^2\theta }
 =
 i\Hbar.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:140}
 \antisymmetric{v}{p_v}
 =
@@ -266,7 +266,7 @@ i\Hbar.
 =
 i \Hbar.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:160}
 \antisymmetric{u}{p_v}
 =
@@ -275,7 +275,7 @@ i \Hbar.
 =
 0.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:180}
 \antisymmetric{v}{p_u}
 =
@@ -286,7 +286,7 @@ i \Hbar.
 \end{dmath}
 
 We see that the new operators are canonical conjugate as required.  For this problem, we just want a 45 degree rotation, with
-
+%
 \begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:460}
 \begin{aligned}
 x &= \inv{\sqrt{2}} \lr{ u + v } \\
@@ -304,7 +304,7 @@ x^2 + y^2
 =
 u^2 + v^2,
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:500}
 p_x^2 + p_y^2
 =
@@ -325,7 +325,7 @@ x y
 \end{dmath}
 
 The perturbed Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:540}
 H_0 + \delta V
 =
@@ -337,14 +337,14 @@ H_0 + \delta V
 \end{dmath}
 
 In this coordinate system, the corresponding eigensystem is
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:560}
 H \ket{n_1, n_2}
 = \Hbar \omega \lr{ 1 + n_1 \sqrt{1 + \delta} + n_2 \sqrt{ 1 - \delta } } \ket{n_1, n_2}.
 \end{dmath}
 
 For small \( \delta \)
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:580}
 n_1 \sqrt{1 + \delta} + n_2 \sqrt{ 1 - \delta }
 \approx
@@ -361,7 +361,7 @@ H \ket{n_1, n_2}
 \end{dmath}
 
 The lowest order perturbed energy levels are
-
+%
 \begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:620}
 \ket{0,0} \rightarrow \Hbar \omega
 \end{dmath}

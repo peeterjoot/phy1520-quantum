@@ -32,7 +32,7 @@
 \section{Classical mechanics}
 
 We'll be talking about one body physics for most of this course.  In classical mechanics we can figure out the particle trajectories using both of \( (\Br, \Bp \), where
-
+%
 \begin{dmath}\label{eqn:qmLecture1:20}
 \begin{aligned}
 \ddt{\Br} &= \inv{m} \Bp \\
@@ -47,7 +47,7 @@ A two dimensional phase space as sketched in \cref{fig:lectureOnePhaseSpaceClass
 \section{Quantum mechanics}
 
 For this lecture, we'll work with natural units, setting
-
+%
 %\begin{dmath}\label{eqn:qmLecture1:480}
 \boxedEquation{eqn:qmLecture1:480}{
 \Hbar = 1.
@@ -60,7 +60,7 @@ In QM we are no longer allowed to think of position and momentum, but have to st
 \index{basis}
 \index{braket}
 We'll consider the state vector with respect to some basis, for example, in a position basis, we write
-
+%
 \begin{dmath}\label{eqn:qmLecture1:40}
 \braket{ x }{\Psi } = \Psi(x),
 \end{dmath}
@@ -71,7 +71,7 @@ a complex numbered ``wave function'', the probability amplitude for a particle i
 
 We could also consider the state in a momentum basis
 \index{momentum!basis}
-
+%
 \begin{dmath}\label{eqn:qmLecture1:60}
 \braket{ p }{\Psi } = \Psi(p),
 \end{dmath}
@@ -79,7 +79,7 @@ We could also consider the state in a momentum basis
 a probability amplitude with respect to momentum \( p \).
 
 More precisely,
-
+%
 \begin{dmath}\label{eqn:qmLecture1:80}
 \Abs{\Psi(x)}^2 dx \ge 0
 \end{dmath}
@@ -93,7 +93,7 @@ is the probability of finding the particle in the range \( (x, x + dx ) \).  To 
 
 \index{probability!density function}
 The average position can be calculated using this probability density function.  For example
-
+%
 \begin{dmath}\label{eqn:qmLecture1:120}
 \expectation{x} = \int_{-\infty}^\infty \Abs{\Psi(x)}^2 x dx,
 \end{dmath}
@@ -115,7 +115,7 @@ Similarly, calculation of an average of a function of momentum can be expressed 
 We have a problem, if we which to compute an average in momentum space such as \( \expectation{p} \), when given a wavefunction \( \Psi(x) \).
 
 How do we convert
-
+%
 \begin{dmath}\label{eqn:qmLecture1:180}
 \Psi(p)
 \overset{?}{\leftrightarrow}
@@ -130,7 +130,7 @@ or equivalently
 \end{dmath}
 
 Such a conversion can be performed by virtue of an the assumption that we have a complete orthonormal basis, for which we can introduce identity operations such as
-
+%
 \begin{dmath}\label{eqn:qmLecture1:220}
 \int_{-\infty}^\infty dp \ket{p}\bra{p} = 1,
 \end{dmath}
@@ -150,7 +150,7 @@ Some interpretations:
 \end{enumerate}
 
 The delta function interpretation of the braket \( \braket{p}{p'} \) justifies the identity operator, since we recover any state in the basis when operating with it.  For example, in momentum space
-
+%
 \begin{dmath}\label{eqn:qmLecture1:260}
 1 \ket{p}
 =
@@ -170,7 +170,7 @@ The delta function interpretation of the braket \( \braket{p}{p'} \) justifies t
 \end{dmath}
 
 This also the determination of an integral operator representation for the delta function
-
+%
 \begin{dmath}\label{eqn:qmLecture1:500}
 \delta(x - x')
 =
@@ -182,7 +182,7 @@ This also the determination of an integral operator representation for the delta
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:qmLecture1:520}
 \delta(x - x')
 =
@@ -194,7 +194,7 @@ Here we used the fact that \( \braket{p}{x} = \braket{x}{p}^\conj \).
 FIXME: do we have a justification for that conjugation with what was defined here so far?
 
 The conversion from a position basis to momentum space is now possible
-
+%
 \begin{dmath}\label{eqn:qmLecture1:280}
 \braket{p}{\Psi}
 =
@@ -204,14 +204,14 @@ The conversion from a position basis to momentum space is now possible
 \end{dmath}
 
 The momentum space to position space conversion can be written as
-
+%
 \begin{dmath}\label{eqn:qmLecture1:300}
 \Psi(x)
 = \int_{-\infty}^\infty \frac{e^{ip x}}{\sqrt{V}} \Psi(p) dp.
 \end{dmath}
 
 Now we can go back and figure out the an expectation
-
+%
 \begin{dmath}\label{eqn:qmLecture1:320}
 \expectation{p}
 =
@@ -273,7 +273,7 @@ p
 
 Here we've essentially calculated the position space representation of the momentum operator, allowing identifications of the following form
 \index{momentum!operator}
-
+%
 \begin{dmath}\label{eqn:qmLecture1:380}
 p \leftrightarrow -i \PD{x}{}
 \end{dmath}
@@ -284,7 +284,7 @@ p^2 \leftrightarrow - \PDSq{x}{}.
 \paragraph{Alternate starting point.}
 
 Most of the above results followed from the claim that \( \braket{x}{p} = e^{i p x} \).  Note that this position space representation of the momentum operator can also be taken as the starting point.  Given that, the exponential representation of the position-momentum braket follows
-
+%
 \begin{dmath}\label{eqn:qmLecture1:540}
 \bra{x} P \ket{p}
 =
@@ -292,13 +292,13 @@ Most of the above results followed from the claim that \( \braket{x}{p} = e^{i p
 \end{dmath}
 
 but \( \bra{x} P \ket{p} = p \braket{x}{p} \), providing a differential equation for \( \braket{x}{p} \)
-
+%
 \begin{dmath}\label{eqn:qmLecture1:560}
 p \braket{x}{p} = -i \Hbar \PD{x}{} \braket{x}{p},
 \end{dmath}
 
 with solution
-
+%
 \begin{dmath}\label{eqn:qmLecture1:580}
 i p x/\Hbar = \ln \braket{x}{p} + \text{const},
 \end{dmath}
@@ -315,7 +315,7 @@ or
 \item Bra's \( \bra{\Psi} \leftrightarrow {(\text{row vector})}^\conj \)
 \item Operators \( \leftrightarrow \) matrices that act on vectors.
 \end{enumerate}
-
+%
 \begin{dmath}\label{eqn:qmLecture1:420}
 \hatp \ket{\Psi} \rightarrow \ket{\Psi'}
 \end{dmath}
@@ -325,7 +325,7 @@ or
 \index{Hamiltonian}
 
 For a state subject to the equations of motion given by the Hamiltonian operator \( \hatH \)
-
+%
 \begin{dmath}\label{eqn:qmLecture1:440}
 i \PD{t}{} \ket{\Psi} = \hatH \ket{\Psi},
 \end{dmath}

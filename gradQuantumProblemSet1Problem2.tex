@@ -54,7 +54,7 @@ and compute \( S_{n=2} \) for the above \( \rho_\txtR \).
 \index{reduced density!operator}
 
 Some notation is useful to start.  Let \( \ket{a}_1 \) represent a spin state for the first particle and \( \ket{a}_2 \) represent a spin state for the second particle.  If the state under consideration is \( \ket{\psi} \), the reduced density operator matrix representation, after summing over all the second particle states, is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:20}
 \rho_\txtR
 = \sum_a \prescript{}{2}{\bra{a}} \lr{ \ket{\psi} \bra{\psi} } \ket{a}_2.
@@ -64,7 +64,7 @@ Computing these \( {}_2\braket{a}{\psi} \) brackets for each state will allow th
 
 \begin{enumerate}[(i)]
 \item For this state we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:40}
 \prescript{}{2}{\braket{\uparrow}{\psi}} =
 \inv{2}
@@ -90,7 +90,7 @@ Computing these \( {}_2\braket{a}{\psi} \) brackets for each state will allow th
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:60}
 \prescript{}{2}{\braket{\downarrow}{\psi}} =
 \inv{2}
@@ -116,7 +116,7 @@ and
 \end{dmath}
 
 so the reduced density operator matrix representation is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:80}
 \rho_\txtR
 =
@@ -146,7 +146,7 @@ so the reduced density operator matrix representation is
 \end{dmath}
 
 \item For this state we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:100}
 \prescript{}{2}{\braket{\uparrow}{\psi}} =
 \inv{\sqrt{2}}
@@ -167,7 +167,7 @@ so the reduced density operator matrix representation is
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:120}
 \prescript{}{2}{\braket{\downarrow}{\psi}} =
 \inv{\sqrt{2}}
@@ -188,7 +188,7 @@ and
 \end{dmath}
 
 so the reduced density operator matrix representation is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:140}
 \rho_\txtR
 =
@@ -218,7 +218,7 @@ so the reduced density operator matrix representation is
 \end{dmath}
 
 \item For this state we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:160}
 \prescript{}{2}{\braket{\uparrow}{\psi}} =
 \inv{\sqrt{5}}
@@ -239,7 +239,7 @@ so the reduced density operator matrix representation is
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:180}
 \prescript{}{2}{\braket{\downarrow}{\psi}} =
 \inv{\sqrt{5}}
@@ -260,7 +260,7 @@ and
 \end{dmath}
 
 so the reduced density operator matrix representation is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:200}
 \rho_\txtR
 =
@@ -298,7 +298,7 @@ Here is the computation of the von Neumann entropy for each of these states.
 
 \begin{enumerate}[(i)]
 \item For this case, the eigenvalues of the reduced density matrix are \( \setlr{0,1} \), so the von Neumann entropy is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:220}
 S_{\txtv \txtN} = - 1 \ln 1 - 0 \ln 0 = 0,
 \end{dmath}
@@ -306,13 +306,13 @@ S_{\txtv \txtN} = - 1 \ln 1 - 0 \ln 0 = 0,
 where the zero logarithm is interpreted in the limit \( \lim_{x \rightarrow 0} -x \ln x = 0 \).
 
 \item Since this reduced density matrix is diagonal, the von Neumann entropy can be calculated easily
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:240}
 S_{\txtv \txtN} = 2 \lr{ - \inv{2} \ln \inv{2} } = \ln 2 \approx 0.69
 \end{dmath}
 
 \item This is also diagonal with von Neumann entropy of
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:260}
 S_{\txtv \txtN}
 = - \inv{5} \ln \inv{5} - \frac{4}{5} \ln \frac{4}{5}
@@ -326,7 +326,7 @@ In the diagonal representation the entropy of the reduced density operator for c
 \index{Renyi entropy}
 
 Here is the computation of the Renyi entropy for \( n = 2 \) for each of these states.  That is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:280}
 S_{n=2} = -\ln \tr \lr{ \rho_\txtR^2 }.
 \end{dmath}
@@ -337,7 +337,7 @@ S_{n=2} = -\ln \tr \lr{ \rho_\txtR^2 }.
 
 For this case the reduced density matrix is idempotent
 \index{idempotent}
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:300}
 \rho_\txtR^2 = \inv{4}
 \begin{bmatrix}
@@ -357,7 +357,7 @@ For this case the reduced density matrix is idempotent
 \end{dmath}
 
 So the trace is the sum of the eigenvalues of \( \rho_\txtR \), and the \( n = 2 \) Renyi entropy is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:320}
 S_{n=2} = -\ln (1 + 0) = 0.
 \end{dmath}
@@ -365,7 +365,7 @@ S_{n=2} = -\ln (1 + 0) = 0.
 \item
 
 For this case, the \( n = 2 \) Renyi entropy is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:340}
 S_{n=2} = -\ln \lr{ \inv{2^2} + \inv{2^2}} = \ln 2 \approx 0.69.
 \end{dmath}
@@ -373,7 +373,7 @@ S_{n=2} = -\ln \lr{ \inv{2^2} + \inv{2^2}} = \ln 2 \approx 0.69.
 \item
 
 Finally, for this case, the \( n = 2 \) Renyi entropy is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:360}
 S_{n=2} = -\ln \lr{ \frac{1}{25} + \frac{16}{25} } = \ln \frac{17}{25} \approx 0.39.
 \end{dmath}
@@ -383,14 +383,14 @@ S_{n=2} = -\ln \lr{ \frac{1}{25} + \frac{16}{25} } = \ln \frac{17}{25} \approx 0
 \paragraph{Limit of Renyi entropy}
 
 In a diagonal representation of the reduced density matrix, the \( n \rightarrow 1 \) summation in the numerator of the Renyi entropy
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:380}
 S_{n \rightarrow 1}
 = \lim_{n \rightarrow 1} \frac{\ln \sum_{k} \rho_{kk}^n }{1 - n},
 \end{dmath}
 
 tends to unity, so that logarithm tends to zero.  This results in division of two nearly zero quantities, which can be evaluated using l'H\^{o}pital's rule.  That is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:400}
 S_{n \rightarrow 1}
 = \frac{\evalbar{\frac{d}{dn} \ln \sum_{k} \rho_{kk}^n}{n=1} }{-1}
@@ -405,7 +405,7 @@ S_{n \rightarrow 1}
 \end{dmath}
 
 To evaluate the derivatives set \( a^n = e^y \), or \( y = n \ln a \).  That gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:420}
 \frac{d}{dn} a^n
 =
@@ -415,7 +415,7 @@ a^n \ln a,
 \end{dmath}
 
 which gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:440}
 S_{n \rightarrow 1}
 =

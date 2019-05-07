@@ -21,7 +21,7 @@
 
 \index{Pauli matrix!orthonality}
 The conventional form for the Pauli matrices is
-
+%
 \begin{equation}\label{eqn:pauliMatrixXYgeometry:20}
 \begin{aligned}
 \sigma_x &= \PauliX \\
@@ -31,7 +31,7 @@ The conventional form for the Pauli matrices is
 \end{equation}
 
 In \citep{desai2009quantum} these forms are derived based on the commutation relations
-
+%
 \begin{equation}\label{eqn:pauliMatrixXYgeometry:40}
 \antisymmetric{\sigma_r}{\sigma_s} = 2 i \epsilon_{r s t} \sigma_t,
 \end{equation}
@@ -41,7 +41,7 @@ by defining raising and lowering operators \( \sigma_{\pm} = \sigma_x \pm i \sig
 \paragraph{Derivation}
 
 For completeness, I'll repeat the argument of \citep{desai2009quantum}, which builds on the commutation relations of the raising and lowering operators.  Those are
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:60}
 \antisymmetric{\sigma_z}{\sigma_{\pm}}
 =
@@ -56,7 +56,7 @@ For completeness, I'll repeat the argument of \citep{desai2009quantum}, which bu
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:80}
 \antisymmetric{\sigma_{+}}{\sigma_{-}}
 =
@@ -71,7 +71,7 @@ and
 \end{dmath}
 
 From these a matrix representation containing unknown values can be assumed.  Let
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:100}
 \sigma_{+} =
 \begin{bmatrix}
@@ -81,7 +81,7 @@ c & d
 \end{dmath}
 
 The commutator with \( \sigma_z \) can be computed
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:120}
 \antisymmetric{\sigma_z}{\sigma_{+}}
 =
@@ -115,7 +115,7 @@ c & -d
 \end{dmath}
 
 Now compare this with \cref{eqn:pauliMatrixXYgeometry:60}
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:140}
 2
 \begin{bmatrix}
@@ -133,7 +133,7 @@ d & d
 \end{dmath}
 
 This shows that \( a = 0 \), and \( d = 0 \).  Similarly the \( \sigma_z \) commutator with the lowering operator is
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:160}
 \antisymmetric{\sigma_z}{\sigma_{-}}
 =
@@ -182,7 +182,7 @@ b^\conj & 0
 \end{dmath}
 
 so \( c = 0 \).  Computing the commutator of the raising and lowering operators fixes \( b \)
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:200}
 \antisymmetric{\sigma_{+}}{\sigma_{-}}
 =
@@ -220,7 +220,7 @@ b^\conj & 0 \\
 \end{dmath}
 
 From \cref{eqn:pauliMatrixXYgeometry:80} it must be that \( \Abs{b}^2 = 4\), so the most general form of the raising operator is
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:220}
 \sigma_{+}
 =
@@ -234,7 +234,7 @@ From \cref{eqn:pauliMatrixXYgeometry:80} it must be that \( \Abs{b}^2 = 4\), so 
 \paragraph{Observation}
 
 The conventional choice is to set \( \phi = 0 \), but I found it interesting to see the form of \( \sigma_x, \sigma_y \) without that choice.  That is
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:240}
 \sigma_x = \inv{2} \lr{ \sigma_{+} + \sigma_{-} }
 =
@@ -243,7 +243,7 @@ The conventional choice is to set \( \phi = 0 \), but I found it interesting to 
 e^{-i \phi} & 0 \\
 \end{bmatrix}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:pauliMatrixXYgeometry:260}
 \sigma_y = \inv{2 i} \lr{ \sigma_{+} - \sigma_{-} }
 =

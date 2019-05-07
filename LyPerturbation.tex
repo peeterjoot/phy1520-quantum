@@ -24,7 +24,7 @@
 \index{angular momentum!perturbation}
 
 Find the first non-zero energy shift for the perturbed Hamiltonian
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:20}
 H = A \BL^2 + B L_z + C L_y = H_0 + V.
 \end{dmath}
@@ -34,7 +34,7 @@ H = A \BL^2 + B L_z + C L_y = H_0 + V.
 \makeanswer{problem:LyPerturbation:1}{
 
 The energy eigenvalues for state \( \ket{l, m} \) prior to perturbation are
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:40}
 A \Hbar^2 l(l+1) + B \Hbar m.
 \end{dmath}
@@ -56,7 +56,7 @@ The first order energy shift is zero
 \end{dmath}
 
 so we need the second order shift.  Assuming no degeneracy to start, the perturbed state is
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:80}
 \ket{l, m}' = \sum' \frac{\ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m},
 \end{dmath}
@@ -86,7 +86,7 @@ m - m'
 
 The sum over \( l' \) was eliminated because \( V \) only changes the \( m \) of any state \( \ket{l,m} \), so the matrix element \( \bra{l',m'} V \ket{l, m} \) must includes a \( \delta_{l', l} \) factor.
 Since we are now summing over \( m' \ne m \), some of the matrix elements in the numerator should now be non-zero, unlike the case when the zero first order energy shift was calculated in \cref{eqn:LyPerturbation:60}.
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:120}
 \bra{l, m'} C L_y \ket{l, m}
 =
@@ -119,7 +119,7 @@ L_{+}
 \end{dmath}
 
 After squaring and summing, the cross terms will be zero since they involve products of delta functions with different indices.  That leaves
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:140}
 \Delta^2
 =
@@ -165,7 +165,7 @@ A \Hbar
 \paragraph{Exact perturbation equation}
 
 If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 2 m + 1 \) dimensional Hamiltonian
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:180}
 \bra{l, m'} H \ket{l, m}
 =
@@ -180,7 +180,7 @@ If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 
 \end{dmath}
 
 This Hamiltonian matrix has a very regular structure
-
+%
 \begin{equation}\label{eqn:LyPerturbation:200}
 \begin{aligned}
 H &=
@@ -207,13 +207,13 @@ H &=
 \end{equation}
 
 Solving for the eigenvalues of this Hamiltonian for increasing \( l \) in Mathematica (\nbref{sakuraiProblem5.17a.nb}), it appears that the eigenvalues are
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:220}
 \lambda_m = A \Hbar^2 (l)(l+1) + \Hbar m B \sqrt{ 1 + \frac{4 C^2}{B^2} },
 \end{dmath}
 
 so to first order in \( C^2 \), these are
-
+%
 \begin{dmath}\label{eqn:LyPerturbation:221}
 \lambda_m = A \Hbar^2 (l)(l+1) + \Hbar m B \lr{ 1 + \frac{2 C^2}{B^2} }.
 \end{dmath}

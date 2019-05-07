@@ -24,7 +24,7 @@
 \makeoproblem{Dynamics of non-Hermitian Hamiltonian.}{problem:dynamicsNonHermitian:2.2}{\citep{sakurai2014modern} pr. 2.2}{
 \index{Hamiltonian!non-Hermitian}
 Revisiting an earlier Hamiltonian, but assuming it was entered incorrectly as
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:20}
 H = H_{11} \ket{1}\bra{1}
   + H_{22} \ket{2}\bra{2}
@@ -37,7 +37,7 @@ What principle is now violated?  Illustrate your point explicitly by attempting 
 \makeanswer{problem:dynamicsNonHermitian:2.2}{
 
 In matrix form this Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:40}
 H =
 \begin{bmatrix}
@@ -52,7 +52,7 @@ H_{11} & H_{12} \\
 \end{dmath}
 
 This is not a Hermitian operator.  What is the physical implication of this non-Hermicity?  Consider the simpler case where \( H_{11} = H_{22} \).  Such a Hamiltonian has the form
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:60}
 H =
 \begin{bmatrix}
@@ -62,19 +62,19 @@ a & b \\
 \end{dmath}
 
 This has only one unique eigenvector ( \( (1,0) \), but we can still solve the time evolution equation
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:80}
 i \Hbar \PD{t}{U} = H U,
 \end{dmath}
 
 since for constant \( H \), we have
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:100}
 U = e^{-i H t/\Hbar}.
 \end{dmath}
 
 To exponentiate, note that we have
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:120}
 {\begin{bmatrix}
 a & b \\
@@ -88,7 +88,7 @@ a^n & n a^{n-1} b \\
 \end{dmath}
 
 To prove the induction, the \( n = 2 \) case follows easily
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:140}
 \begin{bmatrix}
 a & b \\
@@ -106,7 +106,7 @@ a^2 & 2 a b \\
 \end{dmath}
 
 as does the general case
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:160}
 \begin{bmatrix}
 a^n & n a^{n-1} b \\
@@ -134,7 +134,7 @@ e^{a \tau} & 0 + \frac{b \tau}{1!} + \frac{2 a b \tau^2}{2!} + \frac{3 a^2 b \ta
 \end{dmath}
 
 That sum simplifies to
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:200}
 \frac{b \tau}{0!} + \frac{a b \tau^2}{1!} + \frac{a^2 b \tau^3}{2!} + \cdots \\
 =
@@ -159,7 +159,7 @@ e^{a\tau}.
 \end{dmath}
 
 In particular
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:240}
 U = e^{-i H t/\Hbar} =
 \begin{bmatrix}
@@ -170,7 +170,7 @@ e^{-i a t /\Hbar }.
 \end{dmath}
 
 We can verify that this is a solution to \cref{eqn:dynamicsNonHermitian:80}.  The left hand side is
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:260}
 i \Hbar \PD{t}{U}
 =
@@ -212,7 +212,7 @@ i \Hbar \PD{t}{U}. \qedmarker
 \end{dmath}
 
 While the Schr\"{o}dinger is satisfied, we don't have the unitary inversion physical property that is desired for the time evolution operator \( U \).  Namely
-
+%
 \begin{dmath}\label{eqn:dynamicsNonHermitian:300}
 U^\dagger U
 =

@@ -7,7 +7,7 @@
 In classical mechanics the (orbital) angular momentum is
 \index{orbital angular momentum}
 \index{angular momentum operator}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:880}
 \BL = \Br \cross \Bp.
 \end{dmath}
@@ -15,7 +15,7 @@ In classical mechanics the (orbital) angular momentum is
 Here ``orbital'' is to distinguish from spin angular momentum.
 
 In quantum mechanics, the mapping to operators, in component form, is
-
+%
 \begin{dmath}\label{eqn:qmLecture13:900}
 \hatL_i = \epsilon_{ijk} \hatr_j \hatp_k.
 \end{dmath}
@@ -55,7 +55,7 @@ i \Hbar \epsilon_{ijk} \hatL_k.
 which means that we can't simultaneously determine \( \hatL_i \) for all \( i \).
 
 Aside: In quantum mechanics, we define an operator \( \Vcap \) to be a vector operator if
-
+%
 \begin{dmath}\label{eqn:qmLecture13:940}
 \antisymmetric{\hatL_i}{\hatV_j}
 =
@@ -63,7 +63,7 @@ i \Hbar \epsilon_{ijk} \hatV_k.
 \end{dmath}
 
 The commutator of the squared angular momentum operator with any \( \hatL_i \), say \( \hatL_x \) is zero
-
+%
 \begin{dmath}\label{eqn:qmLecture13:960}
 \begin{aligned}
 \antisymmetric{
@@ -106,13 +106,13 @@ i \Hbar \lr{
 %\end{dmath}
 
 Suppose we have a state \( \ket{\Psi} \) with a well defined \( \hatL_z \) eigenvalue and well defined \( \hat{\BL^2} \) eigenvalue, written as
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1000}
 \ket{\Psi} = \ket{a, b},
 \end{dmath}
 
 where the label \( a \) is used for the eigenvalue of \( \Lcap^2 \) and \( b \) labels the eigenvalue of \( \hatL_z \).  Then
-
+%
 \begin{equation}\label{eqn:qmLecture13:1020}
 \begin{aligned}
 \Lcap^2 \ket{a , b} &= \Hbar^2 a \ket{a ,b} \\
@@ -121,7 +121,7 @@ where the label \( a \) is used for the eigenvalue of \( \Lcap^2 \) and \( b \) 
 \end{equation}
 
 Things aren't so nice when we act with other angular momentum operators, producing a scrambled mess
-
+%
 \begin{equation}\label{eqn:qmLecture13:1040}
 \begin{aligned}
 \hatL_x \ket{a , b} &= \sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'} \\
@@ -130,14 +130,14 @@ Things aren't so nice when we act with other angular momentum operators, produci
 \end{equation}
 
 With this representation, we have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1060}
 \hatL_x \Lcap^2 \ket{a, b}
 =
 \hatL_x \Hbar^2 a
 \sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'}.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1080}
 \Lcap^2 \hatL_x \ket{a, b}
 =
@@ -146,7 +146,7 @@ With this representation, we have
 \end{dmath}
 
 Since \( \Lcap^2, \hatL_x \) commute, we must have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1100}
 \calA^x_{a, b, a', b'} = \delta_{a, a'} \calA^x_{a'; b, b'},
 \end{dmath}
@@ -157,7 +157,7 @@ and similarly
 \end{dmath}
 
 Simplifying things we can write the action of \( \hatL_x, \hatL_y \) on the state as
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1140}
 \begin{aligned}
 \hatL_x \ket{a , b} &= \sum_{ b'} \calA^x_{a; b, b'} \ket{a, b'} \\
@@ -174,13 +174,13 @@ Let's define
 \end{dmath}
 
 Because these are sums of \( \hatL_x, \hatL_y \) they must also commute with \( \Lcap^2 \)
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1180}
 \antisymmetric{\Lcap^2}{\hatL_{\pm}} = 0.
 \end{dmath}
 
 The commutators with \( \hatL_z \) are non-zero
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1740}
 \antisymmetric{\hatL_z}{\hatL_{\pm}}
 =
@@ -201,13 +201,13 @@ i \Hbar \lr{
 =
 \pm \Hbar \hatL_{\pm}.
 \end{dmath}
-
+%
 %\begin{dmath}\label{eqn:qmLecture13:1200}
 %\antisymmetric{\hatL_z}{\hatL_{\pm}} = \pm \Hbar \hatL_{\pm}.
 %\end{dmath}
 %
 Explicitly, that is
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1220}
 \begin{aligned}
 \hatL_z \hatL_{+} - \hatL_{+} \hatL_z &= \Hbar \hatL_{+} \\
@@ -216,7 +216,7 @@ Explicitly, that is
 \end{dmath}
 
 Now we are set to compute actions of these (assumed) raising and lowering operators on the eigenstate of \( \hatL_z, \Lcap^2 \)
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1240}
 \hatL_z \hatL_{\pm} \ket{a, b}
 =
@@ -228,13 +228,13 @@ Now we are set to compute actions of these (assumed) raising and lowering operat
 \end{dmath}
 
 There must be a proportionality of the form
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1260}
 \ket{\hatL_{\pm}} \propto \ket{a, b \pm 1},
 \end{dmath}
 
 The products of the raising and lowering operators are
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1280}
 \hatL_{-} \hatL_{+}
 =
@@ -263,7 +263,7 @@ and
 \end{dmath}
 
 So we must have
-
+%
 \begin{equation}\label{eqn:qmLecture13:1320}
 0
 \le \bra{a, b} \hatL_{-} \hatL_{+} \ket{a, b}
@@ -276,7 +276,7 @@ So we must have
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:qmLecture13:1340}
 0
 \le \bra{a, b} \hatL_{+} \hatL_{-} \ket{a, b}

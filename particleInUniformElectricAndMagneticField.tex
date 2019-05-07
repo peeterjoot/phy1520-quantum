@@ -29,7 +29,7 @@ Find the energy eigenvalues and states for a charged particle moving the in the 
 \makeanswer{problem:particleInUniformElectricAndMagneticField:1}{
 
 The Hamiltonian for such a problem has the form
-
+%
 \begin{dmath}\label{eqn:particleInUniformElectricAndMagneticField:20}
 H =
 \frac{(p_x - q A_x/c)^2}{2m} +
@@ -37,13 +37,13 @@ H =
 \end{dmath}
 
 where \( \BA, \phi \) are the potentials for the electromagnetic field.  Since we don't want a time dependent electric potential, our only choice is
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:40}
 E \ycap = -\spacegrad \phi = -\spacegrad (-E y).
 \end{equation}
 
 We have many choices for the magnetic field, but it will have to be of the form \( \BA = B(-a y, b x,0) \), for example \( a = b = 1/2 \).  The Hamiltonian becomes
-
+%
 \begin{dmath}\label{eqn:particleInUniformElectricAndMagneticField:60}
 H =
 \frac{(p_x + q B a y /c)^2}{2m} +
@@ -51,7 +51,7 @@ H =
 \end{dmath}
 
 We seek a wave function that makes this separable.  If we try \( \psi = e^{i k y} \phi(x) \) we get
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:80}
 \frac{H \psi}{e^{iky}}
 =
@@ -61,7 +61,7 @@ We seek a wave function that makes this separable.  If we try \( \psi = e^{i k y
 \end{equation}
 
 and if we try \( \psi = e^{i k y} \phi(x) \) we get
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:100}
 \frac{H \psi}{e^{ikx}}
 =
@@ -71,7 +71,7 @@ and if we try \( \psi = e^{i k y} \phi(x) \) we get
 \end{equation}
 
 The latter is separable if we set \( b = 0 \), which requires \( a = 1 \), leaving an eigenvalue equation for \( \phi(y) \)
-
+%
 \begin{dmath}\label{eqn:particleInUniformElectricAndMagneticField:120}
 H'
 =
@@ -114,19 +114,19 @@ E_0 &= \frac{(\Hbar k)^2}{2m} - \inv{2} m \omega^2 y_0^2,
 \end{equation}
 
 leaving
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:160}
 H' = \frac{p_y^2}{2m} + \inv{2} m\omega^2 (y -y_0)^2 + E_0.
 \end{equation}
 
 The energy eigenvalues are therefore
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:180}
 E = \Hbar \omega \lr{ n + \inv{2} } + E_0,
 \end{equation}
 
 and the eigenfunctions are
-
+%
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:200}
 \psi = e^{i k x} \phi_n(y - y_0),
 \end{equation}

@@ -8,7 +8,7 @@
 \index{virial theorem}
 
 Consider a three-dimensional Hamiltonian
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:21}
 H = \frac{\Bp^2}{2m} + V(\Bx).
 \end{dmath}
@@ -16,7 +16,7 @@ H = \frac{\Bp^2}{2m} + V(\Bx).
 \makesubproblem{}{gradQuantum:problemSet2:2a}
 
 Calculate \( \antisymmetric{\Bx \cdot \Bp}{H} \) and show that
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:41}
 \ddt{} \expectation{ \Bx \cdot \Bp } = \expectation{ \frac{\Bp^2}{m} } - \expectation{ \Bx \cdot \spacegrad V }.
 \end{dmath}
@@ -59,7 +59,7 @@ x_r \antisymmetric{ p_r}{ V(\Bx)},
 \end{dmath}
 
 Evaluating those commutators separately, gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:60}
 \begin{aligned}
 \antisymmetric{ x_r }{\Bp^2}
@@ -71,7 +71,7 @@ Evaluating those commutators separately, gives
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:80}
 \antisymmetric{ p_r}{ V(\Bx)}
 = -i \Hbar \PD{x_r}{V(\Bx)},
@@ -90,7 +90,7 @@ so
 \end{dmath}
 
 Evaluating the expectation of this identity with respect to a stationary state \( \ket{\psi} \) (i.e. a state independent of time), we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:120}
 \bra{\psi} \ddt{} \Bx \cdot \Bp \ket{\psi}
 =
@@ -104,13 +104,13 @@ Because the expectation was with respect to a stationary state, the time derivat
 
 \makeSubAnswer{}{gradQuantum:problemSet2:2c}
 When \cref{eqn:gradQuantumProblemSet2Problem2:120} is zero, we have the quantum equivalent of the virial theorem, relating the average kinetic energy to the potential
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:140}
 2 \expectation{T} = \expectation{\Bx \cdot \spacegrad V(\Bx)}
 \end{dmath}
 
 To evaluate these expectations operations with respect to the 3D SHO eigenstates, let
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:240}
 \begin{aligned}
 a_x(t) &= a_x e^{-i \omega t} \\
@@ -120,7 +120,7 @@ a_z(t) &= a_z e^{-i \omega t},
 \end{dmath}
 
 Note that
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:480}
 \expectation{ \Bx \cdot \spacegrad V }
 =
@@ -140,7 +140,7 @@ m \omega^2 \frac{x_0^2}{2}
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:500}
 \expectation{ \frac{\Bp^2}{m} }
 =
@@ -164,7 +164,7 @@ and
 \end{dmath}
 
 In both cases the pairs of raising and lowering operators have been factored into conjugate pairs so that only the action of the latter on \( \ket{\psi} \) need be considered.  Considering the \( x \) component for example, we've got
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:540}
 \lr{ a_x^\dagger e^{i \omega t} \pm a_x e^{-i \omega t}}
 \ket{n_x, n_y, n_z}
@@ -175,7 +175,7 @@ e^{-i \omega t} \sqrt{n_x} \ket{n_x - 1, n_y, n_z}.
 \end{dmath}
 
 This gives
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:560}
 \expectation{ \Bx \cdot \spacegrad V } = \expectation{ \frac{\Bp^2}{m} }
 =
@@ -201,7 +201,7 @@ Neither expectation has any time dependence, and the virial theorem has been con
 \makeSubAnswer{}{gradQuantum:problemSet2:2d}
 
 With \( \ket{\psi} = \ket{0,0,0} + \ket{0,0,2} \), the gradient portion of the RHS is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:600}
 \expectation{ \Bx \cdot \spacegrad V }
 =
@@ -213,7 +213,7 @@ m \omega^2 \frac{x_0^2}{2}
 \frac{\Hbar \omega}{2}
 \sum_{k=1}^3 \bra{\psi} \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} }^2 \ket{\psi}
 \end{dmath}
-
+%
 %\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:260}
 %\begin{aligned}
 %\expectation{ \Bx \cdot \spacegrad V }
@@ -244,25 +244,25 @@ m \omega^2 \frac{x_0^2}{2}
 %\end{dmath}
 
 We require the following for each \( k \)
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:620}
 \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }.
 \end{dmath}
 
 For \( k = 1 \) this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:640}
 \ket{1,0,0} + \ket{1,0,2},
 \end{dmath}
 
 for \( k = 2 \) this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:660}
 \ket{0,1,0} + \ket{0,1,2},
 \end{dmath}
 
 and for \( k = 3 \)
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:680}
 \begin{aligned}
 e^{-i \omega t} &\sqrt{2} \ket{0,0,1}
@@ -283,7 +283,7 @@ e^{-i \omega t} \sqrt{2} + e^{i \omega t}
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:700}
 \expectation{ \Bx \cdot \spacegrad V }
 =
@@ -299,7 +299,7 @@ This gives
 \end{dmath}
 
 or
-
+%
 %\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:340}
 \boxedEquation{eqn:gradQuantumProblemSet2Problem2:340}{
 \expectation{ \Bx \cdot \spacegrad V }
@@ -310,7 +310,7 @@ or
 %\end{dmath}
 
 For the kinetic portion, we've got
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:360}
 \expectation{\frac{\Bp^2}{m}}
 =
@@ -323,7 +323,7 @@ For the kinetic portion, we've got
 \end{dmath}
 
 The squared momentum operator has been factored into conjugate pairs, so only the action on \( \ket{\psi} \) need be computed.  For the \( x \) component of that operation we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:380}
 \lr{ a_x^\dagger e^{i\omega t} - a_x e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
 =
@@ -334,7 +334,7 @@ e^{i\omega t}
 \end{dmath}
 
 The \( y \) component, by inspection, must be
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:400}
 \lr{ a_x^\dagger e^{i\omega t} - a_x e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
 =
@@ -343,7 +343,7 @@ e^{i\omega t}
 \end{dmath}
 
 The \( z \) component is slightly messier to compute
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:420}
 \lr{ a_z^\dagger e^{i\omega t} - a_z e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
 =
@@ -355,7 +355,7 @@ e^{i\omega t} \lr{ \ket{0,0,1} + \sqrt{3} \ket{0,0,3} }
 \end{dmath}
 
 Summation of all the component contributions gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:440}
 \expectation{\frac{\Bp^2}{m}}
 =

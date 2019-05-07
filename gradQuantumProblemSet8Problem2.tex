@@ -6,7 +6,7 @@
 \index{quadrupolar potential}
 
 Consider a p-orbital electron of hydrogen with \( \ket{ n,l = 1, m } \), with \( m = 0, \pm 1 \), subject to an external potential
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:20}
 V(x, y, z) = \lambda(x^2 - y^2),
 \end{dmath}
@@ -23,13 +23,13 @@ p-orbital is completely broken by the perturbation to linear order in \( \lambda
 %\makeSubAnswer{}{gradQuantum:problemSet8:2a}
 
 The potential in spherical coordinates is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:40}
 V = \lambda r^2 \sin^2\theta \lr{ \cos^2\phi - \sin^2\phi } = \lambda r^2 \sin^2\theta \cos(2 \phi).
 \end{dmath}
 
 The p-orbital wave functions are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:60}
 \psi_{n1m}(r, \theta, \phi) = R_n(r) Y_{1,m}(\theta, \phi),
 \end{dmath}
@@ -44,7 +44,7 @@ Y_{1,-1}(\theta, \phi) &= \frac{1}{2} \sqrt{\frac{3}{2 \pi }} e^{-i \phi } \sin 
 \end{equation}
 
 That is enough information to construct the matrix element of the perturbing potential with respect to these states.  Those are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:100}
 \bra{n' 1 m'} V \ket{n 1 m}
 =
@@ -62,7 +62,7 @@ That is enough information to construct the matrix element of the perturbing pot
 \end{dmath}
 
 The matrix above is computed in \nbref{ps8:quadrupolarPotentialPorbitalSplitting.nb}.  It has eigenvalues
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:120}
 \lambda \int_0^\infty r^4 dr R^2_n(r)
 \setlr{
@@ -98,7 +98,7 @@ The respective eigenvectors for this matrix are
 \end{dmath}
 
 so the wave functions, say \( \setlr{\psi_{n,-1},\psi_{n,1}, \psi_{n,0}} \), that diagonalize this perturbation potential are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:160}
 \begin{aligned}
 \psi_{n,-1}(r, \theta, \phi) &= \frac{R_n(r)}{\sqrt{2}} \lr{ Y_{-1,1}(\theta, \phi) + Y_{1,1}(\theta, \phi) } = \frac{R_n(r)}{2 i} \sqrt{\frac{3}{\pi }} \sin\phi \sin\theta  \\
@@ -108,7 +108,7 @@ so the wave functions, say \( \setlr{\psi_{n,-1},\psi_{n,1}, \psi_{n,0}} \), tha
 \end{dmath}
 
 It is natural to adjust the phases above, forming an alternate basis
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:180}
 \setlr{-\psi_{n,1}, i\psi_{n,-1}, \psi_{n,0}}
 =

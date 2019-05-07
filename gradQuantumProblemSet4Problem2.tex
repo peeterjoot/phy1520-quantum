@@ -10,7 +10,7 @@ Thus \( m > 0 \) and \( m < 0 \) lead to the same dispersion relation.
 Set aside for now, the physical meaning of \( m < 0 \).
 Assume \( V(x) = 0 \) but let us assume the mass \( m \) is a function of position \( m(x) \).
 This leads to
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:20}
 H =
 \begin{bmatrix}
@@ -24,7 +24,7 @@ Let \( m(x) \) be such that \( m(-x) = -m(x) \), i.e., an odd function of positi
 
 \makesubproblem{}{gradQuantum:problemSet4:2a}
 Show that the operator \( \hatcalP_{\textrm{Dirac}} = \sigma_y \hatcalP \) commutes with the Hamiltonian, where
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:40}
 \sigma_y
 =
@@ -34,7 +34,7 @@ Show that the operator \( \hatcalP_{\textrm{Dirac}} = \sigma_y \hatcalP \) commu
 is the y-Pauli matrix, and \( \hatcalP \) is the parity operator which sends \( x \rightarrow -x\).
 \makesubproblem{}{gradQuantum:problemSet4:2b}
 Consider the wavefunction
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:60}
 \Phi(x) =
 \begin{bmatrix}
@@ -58,7 +58,7 @@ Normalize the wavefunction \( \Phi(x) \).
 \makeSubAnswer{}{gradQuantum:problemSet4:2a}
 
 Let \( \pi \) represent a parity operator that acts on a scalar (operator), so the Dirac parity operator \( \hatcalP_{\textrm{Dirac}} \) takes the form
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:80}
 \hatcalP_{\textrm{Dirac}} =
 \begin{bmatrix}
@@ -68,7 +68,7 @@ i \pi & 0
 \end{dmath}
 
 The commutator with the Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:100}
 \antisymmetric{H}{\hatcalP_{\textrm{Dirac}}}
 = H \hatcalP_{\textrm{Dirac}} - \hatcalP_{\textrm{Dirac}} H
@@ -108,7 +108,7 @@ i c^2 \symmetric{m(x)}{ \pi } & -i c \symmetric{\hatp}{\pi} \\
 \end{dmath}
 
 Now consider the matrix element of this commutator with respect to a position basis wavefunction \( \bra{x} \antisymmetric{H}{\hatcalP_{\textrm{Dirac}}} \ket{\Psi} \).  To compute this we must first understand the behaviour of the anticommutators of scalar operators \( m, \hatp \) with \( \pi \).  That is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:120}
 \bra{x} \symmetric{m(x)}{\pi} \ket{\psi}
 =
@@ -124,7 +124,7 @@ m(x) \psi(-x) - m(x) \psi(-x)
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:140}
 \bra{x} \symmetric{\hatp}{\pi} \ket{\psi}
 =
@@ -148,7 +148,7 @@ H \hatcalP_{\textrm{Dirac}} = \hatcalP_{\textrm{Dirac}} H.
 \makeSubAnswer{}{gradQuantum:problemSet4:2b}
 
 This follows with direct substitution
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:180}
 \hatcalP_{\textrm{Dirac}} \Phi(x)
 =
@@ -181,7 +181,7 @@ f(x) \\
 \makeSubAnswer{}{gradQuantum:problemSet4:2c}
 
 The eigenvalue equation has the form
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:380}
 \lambda \Phi
 = H \Phi
@@ -210,26 +210,26 @@ i c (-i \Hbar) \PD{x}{f} + m(x) c^2 f &= -i \lambda f \\
 \end{dmath}
 
 This special selection of \( \Phi \) leads to two identical equations, which should simplify things nicely.  For the zero energy eigenstate, we must solve
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:220}
 \PD{x}{f} = - \inv{c \Hbar} m(x) c^2 f,
 \end{dmath}
 
 which integrates to
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:240}
 \ln f
 = \ln f(0) - \int_0^x \inv{c \Hbar} m(x) c^2 dx,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:260}
 f(x) = f(0) \exp\lr{ - \int_0^x \frac{c}{\Hbar} m(x) dx }.
 \end{dmath}
 
 For \( x > 0 \) this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:280}
 f(x)
 = f(0) \exp\lr{ - \int_0^x \frac{c}{\Hbar} m_0 dx }
@@ -244,7 +244,7 @@ f(x)
 \end{dmath}
 
 These can be combined as
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:320}
 f(x) = f(0) \exp\lr{ - \frac{m_0 c \Abs{x}}{\Hbar}}.
 \end{dmath}
@@ -252,7 +252,7 @@ f(x) = f(0) \exp\lr{ - \frac{m_0 c \Abs{x}}{\Hbar}}.
 \makeSubAnswer{}{gradQuantum:problemSet4:2d}
 
 The normalization is given by
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:340}
 1
 =
@@ -270,7 +270,7 @@ The normalization is given by
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:360}
 f(0) = \sqrt{ \frac{ m_0 c}{2 \Hbar} }.
 \end{dmath}

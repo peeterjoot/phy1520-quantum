@@ -3,7 +3,7 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 Given the circular constraint, working in cylindrical coordinates \( ( r, \phi, z ) \) probably makes sense.  The cylindrical representation of the vector potential can be found using Pauli basis for \R{3}
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:40}
 \BA
 = \frac{B_0}{2} \lr{ -y, x, 0 }
@@ -15,13 +15,13 @@ Given the circular constraint, working in cylindrical coordinates \( ( r, \phi, 
 \end{dmath}
 
 The gradient in cyclindrical coordinates is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:60}
 \spacegrad = \rcap \PD{r}{} + \frac{\phicap}{r} \PD{\phi}{} + \zcap \PD{z}{}.
 \end{dmath}
 
 The projection of the gradient onto the circular path retains just the \( \phicap \) component.
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:120}
 \boldpartial = \Proj_{\textrm{circle}} \spacegrad = \frac{\phicap}{R} \PD{\phi}{}
 \end{dmath}
@@ -38,7 +38,7 @@ The projection of the gradient onto the circular path retains just the \( \phica
 %\end{dmath}
 
 The Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:140}
 H
 = \inv{ 2 m} \lr{ -i \Hbar \boldpartial - \frac{Q B_0 R}{2} \phicap }^2
@@ -46,7 +46,7 @@ H
 \end{dmath}
 
 Because \( \phicap \) is \( \phi \) dependent, it appears that some care is required to evaluate this, but we end up with the good luck that the \( \phicap \) variation is orthogonal to the circular gradient
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:80}
 \PD{\phi}{\phicap}
 = \sigma_2 \sigma_1 \sigma_2 e^{ \sigma_1 \sigma_2 \phi}
@@ -68,7 +68,7 @@ so
 \end{dmath}
 
 Expanding the Hamiltonian's action on a wavefunction gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:180}
 H \psi
 =
@@ -89,7 +89,7 @@ H \psi
 \end{dmath}
 
 The function \( \psi = e^{i n \phi} \) turns out to be an eigenfunction for this Hamiltonian, provided there is a constraint on the energy eigenvalues given by
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:200}
 H \psi
 = E \psi

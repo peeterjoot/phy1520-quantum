@@ -29,7 +29,7 @@
 \index{perturbation!simplest}
 
 Given a \( 2 \times 2 \) Hamiltonian \( H = H_0 + V \), where
-
+%
 \begin{dmath}\label{eqn:qmLecture20:20}
 H =
 \begin{bmatrix}
@@ -39,7 +39,7 @@ c^\conj & b
 \end{dmath}
 
 note that if \( c = 0 \) is
-
+%
 \begin{equation}\label{eqn:qmLecture20:60}
 H = H_0 =
 \begin{bmatrix}
@@ -49,7 +49,7 @@ a & 0 \\
 \end{equation}
 
 The off diagonal terms can be considered to be a perturbation
-
+%
 \begin{dmath}\label{eqn:qmLecture20:80}
 V =
 \begin{bmatrix}
@@ -63,7 +63,7 @@ with \( H = H_0 + V \).
 \paragraph{Energy levels after perturbation}
 
 We can solve for the eigenvalues of \( H \) easily, finding
-
+%
 \begin{dmath}\label{eqn:qmLecture20:40}
 \lambda_\pm = \frac{a + b}{2} \pm \sqrt{ \lr{ \frac{a - b}{2}}^2 + \Abs{c}^2 }.
 \end{dmath}
@@ -80,17 +80,17 @@ Plots of a few \( a,b \) variations of \( \lambda_{\pm} \) are shown in \cref{fi
 \paragraph{Some approximations}
 
 Suppose that \( \Abs{c} \ll \Abs{a - b} \), then
-
+%
 \begin{dmath}\label{eqn:qmLecture20:100}
 \lambda_\pm \approx \frac{a + b}{2} \pm \Abs{ \frac{a - b}{2} } \lr{ 1 + 2 \frac{\Abs{c}^2}{\Abs{a - b}^2} }.
 \end{dmath}
 
 If  \( a > b \), then
-
+%
 \begin{dmath}\label{eqn:qmLecture20:120}
 \lambda_\pm \approx \frac{a + b}{2} \pm \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture20:140}
 \lambda_{+}
 = \frac{a + b}{2} + \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }
@@ -114,7 +114,7 @@ and is described as a non-degenerate permutation.
 %\imageFigure{../figures/phy1520-quantum/lecture20Fig1}{Adiabatic (non-degenerate) pertubation}{fig:lecture20:lecture20Fig1}{0.2}
 
 If \( \Abs{c} \gg \Abs{a -b} \), then
-
+%
 \begin{dmath}\label{eqn:qmLecture20:160}
 \lambda_\pm
 = \frac{a + b}{2} \pm \Abs{c} \sqrt{ 1 + \inv{\Abs{c}^2} \lr{ \frac{a - b}{2}}^2 }
@@ -132,43 +132,43 @@ We no longer have the sign of \( a - b \) in the expansion.  This is described a
 \index{perturbation!non-degenerate}
 
 Given an unperturbed system with solutions of the form
-
+%
 \begin{equation}\label{eqn:qmLecture20:180}
 H_0 \ket{n^{(0)}} = E_n^{(0)} \ket{n^{(0)}},
 \end{equation}
 
 we want to solve the perturbed Hamiltonian equation
-
+%
 \begin{equation}\label{eqn:qmLecture20:200}
 \lr{ H_0 + \lambda V } \ket{ n } = \lr{ E_n^{(0)} + \Delta n } \ket{n}.
 \end{equation}
 
 Here \( \Delta n \) is an energy shift as that goes to zero as \( \lambda \rightarrow 0 \).  We can write this as
-
+%
 \begin{equation}\label{eqn:qmLecture20:220}
 \lr{ E_n^{(0)} - H_0 } \ket{ n } = \lr{ \lambda V - \Delta_n } \ket{n}.
 \end{equation}
 
 We are hoping to iterate with application of the inverse to an initial estimate of \( \ket{n} \)
-
+%
 \begin{equation}\label{eqn:qmLecture20:240}
 \ket{n} = \lr{ E_n^{(0)} - H_0 }^{-1} \lr{ \lambda V - \Delta_n } \ket{n}.
 \end{equation}
 
 This gets us into trouble if \( \lambda \rightarrow 0 \), which can be fixed by using
-
+%
 \begin{equation}\label{eqn:qmLecture20:260}
 \ket{n} = \lr{ E_n^{(0)} - H_0 }^{-1} \lr{ \lambda V - \Delta_n } \ket{n} + \ket{ n^{(0)} },
 \end{equation}
 
 which can be seen to be a solution to \cref{eqn:qmLecture20:220}.  We want to ask if
-
+%
 \begin{equation}\label{eqn:qmLecture20:280}
 \lr{ \lambda V - \Delta_n } \ket{n} ,
 \end{equation}
 
 contains a bit of \( \ket{ n^{(0)} } \)?  To determine this act with \( \bra{n^{(0)}} \) on the left
-
+%
 \begin{dmath}\label{eqn:qmLecture20:300}
 \bra{ n^{(0)} } \lr{ \lambda V - \Delta_n } \ket{n}
 =
@@ -182,7 +182,7 @@ contains a bit of \( \ket{ n^{(0)} } \)?  To determine this act with \( \bra{n^{
 This shows that \( \ket{n} \) is entirely orthogonal to \( \ket{n^{(0)}} \).
 
 Define a projection operator
-
+%
 \begin{dmath}\label{eqn:qmLecture20:320}
 P_n = \ket{n^{(0)}}\bra{n^{(0)}},
 \end{dmath}
@@ -199,7 +199,7 @@ Define a rejection operator
 \end{dmath}
 
 Because \( \ket{n} \) has no component in the direction \( \ket{n^{(0)}} \), the rejection operator can be inserted much like we normally do with the identity operator, yielding
-
+%
 \begin{dmath}\label{eqn:qmLecture20:360}
 \ket{n}' = \lr{ E_n^{(0)} - H_0 }^{-1} \overbar{P}_n \lr{ \lambda V - \Delta_n } \ket{n} + \ket{ n^{(0)} },
 \end{dmath}
@@ -209,7 +209,7 @@ valid for any initial \( \ket{n} \).
 \paragraph{Power series perturbation expansion}
 
 Instead of iterating, suppose that the unknown state and unknown energy difference operator can be expanded in a \( \lambda \) power series, say
-
+%
 \begin{dmath}\label{eqn:qmLecture20:380}
 \ket{n}
 =
@@ -220,7 +220,7 @@ Instead of iterating, suppose that the unknown state and unknown energy differen
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:qmLecture20:400}
 \Delta_{n} = \Delta_{n_0}
 + \lambda \Delta_{n_1}
@@ -229,14 +229,14 @@ and
 \end{dmath}
 
 We usually interpret functions of operators in terms of power series expansions.  In the case of \( \lr{ E_n^{(0)} - H_0 }^{-1} \), we have a concrete interpretation when acting on one of the unperturbed eigenstates
-
+%
 \begin{dmath}\label{eqn:qmLecture20:420}
 \inv{ E_n^{(0)} - H_0 } \ket{m^{(0)}} =
 \inv{ E_n^{(0)} - E_m^0 } \ket{m^{(0)}}.
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:qmLecture20:440}
 \ket{n}
 =
@@ -247,7 +247,7 @@ This gives
 \end{dmath}
 
 or
-
+%
 %\begin{equation}\label{eqn:qmLecture20:460}
 \boxedEquation{eqn:qmLecture20:480}{
 \ket{n}
@@ -264,14 +264,14 @@ E_n^{(0)} - E_m^{(0)}
 %\end{equation}
 
 From \cref{eqn:qmLecture20:220}, note that
-
+%
 \begin{equation}\label{eqn:qmLecture20:500}
 \Delta_n =
 \frac{\bra{n^{(0)}} \lambda V \ket{n}}{\braket{n^0}{n}},
 \end{equation}
 
 however, we will normalize by setting \( \braket{n^0}{n} = 1 \), so
-
+%
 %\begin{equation}\label{eqn:qmLecture20:521}
 \boxedEquation{eqn:qmLecture20:521}{
 \Delta_n =
@@ -303,7 +303,7 @@ E_n^{(0)} - E_m^{(0)}
 \end{subequations}
 
 so
-
+%
 \begin{dmath}\label{eqn:qmLecture20:540}
 \begin{aligned}
 \ket{n_0} &= \ket{n^{(0)}} \\
@@ -314,7 +314,7 @@ so
 \paragraph{to \( O(\lambda^1) \) }
 
 Requiring identity for all \( \lambda^1 \) terms means
-
+%
 \begin{dmath}\label{eqn:qmLecture20:760}
 \ket{n_1} \lambda
 =
@@ -327,7 +327,7 @@ E_n^{(0)} - E_m^{(0)}
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:qmLecture20:560}
 \ket{n_1}
 =
@@ -342,13 +342,13 @@ E_n^{(0)} - E_m^{(0)}
 \end{dmath}
 
 With the assumption that \( \ket{n^{(0)}} \) is normalized, and with the shorthand
-
+%
 \begin{dmath}\label{eqn:qmLecture20:600}
 V_{m n} = \bra{ m^{(0)}} V \ket{n^{(0)}},
 \end{dmath}
 
 that is
-
+%
 \begin{equation}\label{eqn:qmLecture20:580}
 \begin{aligned}
 \ket{n_1}
@@ -370,7 +370,7 @@ V_{m n}
 \paragraph{to \( O(\lambda^2) \) }
 
 The second order perturbation states are found by selecting only the \( \lambda^2 \) contributions to
-
+%
 \begin{dmath}\label{eqn:qmLecture20:820}
 \lambda^2 \ket{n_2}
 =
@@ -387,7 +387,7 @@ E_n^{(0)} - E_m^{(0)}
 \end{dmath}
 
 Because \( \ket{n_0} = \ket{n^{(0)}} \), the \( \lambda^2 \Delta_{n_2} \) is killed, leaving
-
+%
 \begin{dmath}\label{eqn:qmLecture20:840}
 \ket{n_2}
 =
@@ -416,7 +416,7 @@ V_{l n},
 \end{dmath}
 
 which can be written as
-
+%
 \begin{dmath}\label{eqn:qmLecture20:620}
 \ket{n_2}
 =
@@ -437,14 +437,14 @@ which can be written as
 \end{dmath}
 
 For the second energy perturbation we have
-
+%
 \begin{dmath}\label{eqn:qmLecture20:860}
 \lambda^2 \Delta_{n_2} =
 \bra{n^{(0)}} \lambda V \lr{ \lambda \ket{n_1} },
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:qmLecture20:880}
 \Delta_{n_2}
 =
@@ -462,7 +462,7 @@ V_{m n}.
 \end{dmath}
 
 That is
-
+%
 \begin{dmath}\label{eqn:qmLecture20:900}
 \Delta_{n_2}
 =
@@ -472,7 +472,7 @@ That is
 \paragraph{to \( O(\lambda^3) \) }
 
 Similarly, it can be shown that
-
+%
 \begin{dmath}\label{eqn:qmLecture20:640}
 \Delta_{n_3} =
 \sum_{l, m \ne n} \frac{V_{n m} V_{m l} V_{l n} }{
@@ -486,7 +486,7 @@ Similarly, it can be shown that
 \end{dmath}
 
 In general, the energy perturbation is given by
-
+%
 \begin{dmath}\label{eqn:qmLecture20:660}
 \Delta_n^{(l)} = \bra{n^{(0)}} V \ket{n_{l-1}}.
 \end{dmath}

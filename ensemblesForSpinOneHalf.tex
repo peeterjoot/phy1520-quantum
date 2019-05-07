@@ -36,14 +36,14 @@ Show how the expectation values \( \expectation{S_x}, \expectation{S_y},\expecta
 I'll do this in two parts, the first using a spin-up/down ensemble to see what form this has, then the general case.  The general case is a bit messy algebraically.  After first attempting it the hard way, I did the grunt work portion of that calculation in Mathematica, but then realized it's not so bad to do it manually.
 
 Consider first an ensemble with \textAndIndex{density operator}
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:20}
 \rho =
 w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-},
 \end{dmath}
 
 where these are the \( \BS \cdot (\pm \zcap) \) eigenstates.  The traces are
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:40}
 \tr( \rho \sigma_x )
 =
@@ -65,7 +65,7 @@ where these are the \( \BS \cdot (\pm \zcap) \) eigenstates.  The traces are
 =
 0,
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:60}
 \tr( \rho \sigma_y )
 =
@@ -126,7 +126,7 @@ Attempting to do a similar set of trace expansions this way for a more general s
 However, it's not so bad if the trace is done completely in matrix form.
 
 Using the basis
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:120}
 \begin{aligned}
 \ket{\BS \cdot \ncap ; + } &=
@@ -144,7 +144,7 @@ Using the basis
 
 \index{projection operator}
 the projector matrices are
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:140}
 \ket{\BS \cdot \ncap ; + } \bra{\BS \cdot \ncap ; + }
 =
@@ -180,7 +180,7 @@ the projector matrices are
 \end{dmath}
 
 With \( C = \cos(\theta/2), S = \sin(\theta/2) \), a general density operator in this basis has the form
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:180}
 \rho
 =
@@ -204,7 +204,7 @@ w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 
 The products with the Pauli matrices are
 \index{Pauli matrix}
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:200}
 \rho \sigma_x
 =
@@ -219,7 +219,7 @@ w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 w_{+} S^2  + w_{-} C^2 & (w_{+} -w_{-} ) S C e^{i \phi} \\
 \end{bmatrix}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:220}
 \rho \sigma_y
 =
@@ -235,7 +235,7 @@ i
 w_{+} S^2  + w_{-} C^2          & -(w_{+} -w_{-} ) S C e^{i \phi} \\
 \end{bmatrix}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:240}
 \rho \sigma_z
 =
@@ -261,7 +261,7 @@ The respective traces can be read right off the matrices
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:280}
 (w_{+} - w_{-}) \ncap = \lr{ \tr( \rho \sigma_x ), \tr( \rho \sigma_y ), \tr( \rho \sigma_z ) },
 \end{dmath}
@@ -277,7 +277,7 @@ So, as claimed, it's possible to completely describe the ensemble weight factors
 \paragraph{Alternate approach}
 
 Another easier and trig free way to look at this problem is assume the density operator's representation is given by a \( 2 \times 2 \) matrix with undetermined values
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:400}
 \rho =
 \begin{bmatrix}
@@ -287,7 +287,7 @@ c & d
 \end{dmath}
 
 For such a representation we have
-
+%
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:420}
 \begin{aligned}
 \rho \sigma_x
@@ -340,19 +340,19 @@ The ensemble averages can be read by inspection
 \end{equation}
 
 Noting that \( \tr \lr{E A E^{-1}} = \tr \lr{A E^{-1} E} = \tr \lr{A} \), and that there must be a diagonal basis for which \( \braket{+}{-} = 0 \) and
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:460}
 \rho = w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-},
 \end{dmath}
 
 we must have
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:480}
 \trace{\rho} = a + d = w_{+} + w_{-} = 1.
 \end{dmath}
 
 This provides one set of equations for each of \( b,c \) and \( a, d\)
-
+%
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:500}
 \begin{aligned}
 [\sigma_x] &= b + c \\
@@ -389,7 +389,7 @@ or
 }
 
 The characteristic equation for this operator is
-
+%
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:600}
 0 =
 \lr{ \lr{ \inv{2} - \lambda } + \frac{[\sigma_z] }{2} }
@@ -407,7 +407,7 @@ as found above.
 \makeSubAnswer{}{problem:ensemblesForSpinOneHalf:1:b}
 
 Suppose that the system is in the state \( \ket{\BS \cdot \ncap ; + } \) as defined in \cref{eqn:ensemblesForSpinOneHalf:120}, then the expectation values of \( \sigma_x, \sigma_y, \sigma_z \) with respect to this state are
-
+%
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:300}
 \expectation{\sigma_x}
 =

@@ -11,7 +11,7 @@ We talked about diagonalization of the Dirac Hamiltonian by introducing a rotati
 To understand the form form of the eigenkets for particles and antiparticles in both forward and backwards moving configurations, lets do this diagonalization explicitly for both forwards and backwards solutions.
 
 For the forward solution, given \( \Psi = \Psi_0 e^{i(k x - E t/\Hbar) } \), the Dirac equation is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:20}
 i \Hbar (-i E/\Hbar) \Psi =
 \begin{bmatrix}
@@ -37,7 +37,7 @@ m c^2 &  - \Hbar k
 \end{dmath}
 
 Similarly, for the backwards moving wave \( \Psi = e^{i(-k x - E t/\Hbar)} \), we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:60}
 \begin{bmatrix}
 E - V_0 & 0 \\
@@ -53,7 +53,7 @@ m c^2 & \Hbar k
 \end{dmath}
 
 Working with \( \Hbar = c = 1 \) temporarily, we want to compute the eigensolutions for the matrix
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:80}
 H_{\pm k}
 =
@@ -64,7 +64,7 @@ m & \mp k
 \end{dmath}
 
 The eigenvalues \( \epsilon \) of both are the same
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:100}
 0
 =
@@ -78,7 +78,7 @@ The eigenvalues \( \epsilon \) of both are the same
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:120}
 \epsilon = \pm \sqrt{k^2 + m^2}.
 \end{dmath}
@@ -86,7 +86,7 @@ or
 \paragraph{Eigenkets for \( H_k \)}
 
 For the positive(negative) energy eigenvalues, we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:140}
 0
 =
@@ -101,13 +101,13 @@ b
 \end{dmath}
 
 for some \( a, b\).  That is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:160}
 (k \mp \epsilon) a + m b = 0,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:180}
 \begin{bmatrix}
 a \\
@@ -121,7 +121,7 @@ k \mp \epsilon
 \end{dmath}
 
 For the normalization note that
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:200}
 m^2 + \lr{ k \mp \epsilon }^2
 =
@@ -133,7 +133,7 @@ m^2 + k^2 + \epsilon^2 \mp 2 k \epsilon
 \end{dmath}
 
 so the normalized kets are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:220}
 \ket{k; \pm\epsilon} =
 \inv{\sqrt{2 \epsilon(\epsilon \mp k)}}
@@ -146,7 +146,7 @@ so the normalized kets are
 \paragraph{Eigenkets for \( H_{-k} \)}
 
 This time, for the positive(negative) energy eigenvalues, we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:141}
 0
 =
@@ -161,13 +161,13 @@ b
 \end{dmath}
 
 for some \( a, b\).  That is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:161}
 (-k \mp \epsilon) a + m b = 0,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:181}
 \begin{bmatrix}
 a \\
@@ -186,7 +186,7 @@ k \pm \epsilon
 \end{dmath}
 
 For the normalization note that
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:201}
 m^2 + \lr{ k \pm \epsilon }^2
 =
@@ -198,7 +198,7 @@ m^2 + k^2 + \epsilon^2 \pm 2 k \epsilon
 \end{dmath}
 
 so the normalized kets are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:221}
 \ket{-k; \pm\epsilon} =
 \inv{\sqrt{2 \epsilon(\epsilon \mp k)}}
@@ -211,7 +211,7 @@ so the normalized kets are
 \paragraph{Simplification of the rotation matrices}
 
 The eigenvalue equations have the form
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:240}
 H
 \begin{bmatrix}
@@ -228,7 +228,7 @@ H
 \end{dmath}
 
 With \( R = \begin{bmatrix} \ket{+} & \ket{-} \end{bmatrix} \), this has the form \( H R = R \Omega \), or \( H = R \Omega R^{-1} \).  The rotation matrices have been found to be
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:260}
 R_{+k}
 =
@@ -251,7 +251,7 @@ R_{-k}
 \end{dmath}
 
 These don't look very much like rotation matrices as is, but not all the terms are independent.  Writing
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:300}
 \begin{aligned}
 a &= \frac{m}{\sqrt{2\epsilon(\epsilon - k)}}  \\
@@ -262,7 +262,7 @@ b &= \frac{m}{\sqrt{2\epsilon(\epsilon + k)}} \\
 \end{dmath}
 
 the rotation matrices are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:320}
 R_{+k}
 =
@@ -313,7 +313,7 @@ a & b
 \end{dmath}
 
 These are expected to have a unit determinant, which is verified easily
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:420}
 a^2 + b^2
 =
@@ -330,13 +330,13 @@ a^2 + b^2
 \end{dmath}
 
 We see that both sets of matrices invert by transposition, so we are free to make a trigonometric identification
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:440}
 a = \cos\theta
 =
 \frac{m}{\sqrt{2\epsilon(\epsilon - k)}}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:460}
 b = \sin\theta
 =
@@ -344,7 +344,7 @@ b = \sin\theta
 \end{equation}
 
 Using the double angle formulation used in class these are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:480}
 \cos(2 \theta)
 =
@@ -368,7 +368,7 @@ and
 \end{dmath}
 
 Putting back in the \( \Hbar \), and \( c\) factors, the diagonalizing transformation is now fully specified
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:520}
 \begin{aligned}
 H_{\pm k} &=
@@ -411,7 +411,7 @@ R_{- k} &=
 \end{equation}
 
 The functions \( \Psi = \ket{\pm k; \pm \epsilon} e^{\pm i k x - i E t/\Hbar} \) are eigenfunctions of the Hamiltonian.  For example, for a non-antiparticle forward moving state
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:540}
 (E - V_0) \ket{k; +\epsilon}
 =
@@ -473,19 +473,19 @@ H_k \ket{k; +\epsilon}
 \paragraph{Back to the core problem.}
 
 The total energy for this particle is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:560}
 E = V_0 \pm \sqrt{(\Hbar k c)^2 + (m c^2)^2}.
 \end{dmath}
 
 This can be plotted nicely, as \( \frac{E}{m c^2} \) vs. \( \frac{\Hbar k}{m c} \) if non-dimensionalized as
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:580}
 \frac{E}{m c^2} = \frac{V_0}{m c^2} + \sqrt{1 + \frac{(\Hbar k)^2}{(m c)^2} }.
 \end{dmath}
 
 For the step potential we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:600}
 \frac{E}{m c^2}
 = \sqrt{ 1 + {\frac{ \Hbar k_1}{m c} }^2 }
@@ -525,7 +525,7 @@ and ordinary-particle transmission
 {energyVsMomentumForDiracStepPotentialWaveFunctions.nb}
 
 We want to find the wave incident, reflected, and transmitted wave function.  From the diagonalization above, these are
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:640}
 \Psi_{\textrm{inc}} =
 \begin{bmatrix}
@@ -544,19 +544,19 @@ e^{i (-k_1 x - E t/\Hbar)}
 \end{dmath}
 
 The currents \( j = c (\psi_1^\conj \psi_1 - \psi_2^\conj \psi_2) \) for these wave functions are
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:960}
 j_{\textrm{inc}} = c (\cos^2 \theta_{k_1} - \sin^2 \theta_{k_1}) = c \cos(2 \theta_{k_1} ),
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:980}
 j_{\textrm{ref}} = c (\sin^2 \theta_{k_1} - \cos^2 \theta_{k_1}) = -c \cos(2 \theta_{k_1} ).
 \end{equation}
 
 When there is a transmitted particle (anti-particle) in region II, the transmitted wave function are respectively
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:680}
 \Psi_{\textrm{trans}} =
 \begin{bmatrix}
@@ -580,7 +580,7 @@ j = c \lr{ \cos^2\theta_{k_2} - \sin^2\theta_{k_2} } = c \cos(2\theta_{k_2}),
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1341}
 j = c \lr{ \sin^2\theta_{k_2} - \cos^2\theta_{k_2} } = -c \cos(2\theta_{k_2}).
 \end{dmath}
@@ -589,7 +589,7 @@ To determine the weighting of the wave functions, we require matching at the bou
 
 \begin{enumerate}[(i)]
 \item Total reflection.  Are there any special values of momentum that allow for total reflection?  If so, at the boundary both components must be zero
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:720}
 \begin{bmatrix}
 \cos\theta_{k_1} \\
@@ -609,19 +609,19 @@ To determine the weighting of the wave functions, we require matching at the bou
 \end{dmath}
 
 This is possible if \( -B/A = \cot\theta_{k_1} = \tan\theta_{k_1} \), which requires
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:740}
 \theta_{k_1} = \frac{\pi}{4} \lr{ 1 + 2 n }, \qquad n \in \bbZ.
 \end{equation}
 
 However, we must also have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:760}
 \tan 2 \theta_1 = \frac{m c}{\Hbar k},
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:780}
 \theta_1 = \inv{2} \Atan\lr{ \frac{m c}{\Hbar k} }.
 \end{dmath}
@@ -631,7 +631,7 @@ Simultaneous solutions of \cref{eqn:gradQuantumProblemSet4Problem3:740}, \cref{e
 \item Ordinary matter transmission.
 
 For this case at \( x = 0 \), we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:920}
 A
 \begin{bmatrix}
@@ -653,7 +653,7 @@ D
 \end{dmath}
 
 With \( a = B/A \) and \( b = D/A \), \( S_{1,2} = \sin\theta_{k_{1,2}}, C_{1,2} = \cos\theta_{k_{1,2}} \), this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:800}
 \begin{bmatrix}
 C_1 \\
@@ -703,7 +703,7 @@ which is
 }
 
 Let's verify that the currents in both regions match.  With \( A = 1 \), the region I current sum is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1000}
 j_{\textrm{inc}}
 + j_{\textrm{ref}}
@@ -738,7 +738,7 @@ so we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \), as exp
 \index{anti-matter transmission}
 
 For this case at \( x = 0 \), we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:940}
 A
 \begin{bmatrix}
@@ -760,7 +760,7 @@ D
 \end{dmath}
 
 With the same substitutions as above, this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:860}
 \begin{bmatrix}
 C_1 \\
@@ -810,7 +810,7 @@ which is
 }
 
 For the anti-particle transmission, the region I current is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1001}
 j_{\textrm{inc}}
 + j_{\textrm{ref}}
@@ -844,7 +844,7 @@ and again we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \),
 \item Decaying transmission.
 
 In units where \( \Hbar = c = 1 \), the eigenkets found for the Dirac Hamiltonian, before normalization, were found to be
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1041}
 \ket{\pm} \propto
 \begin{bmatrix}
@@ -855,7 +855,7 @@ e^{\pm i k x - i E t/\Hbar},
 \end{dmath}
 
 where \( \epsilon_1^2 = m^2 + k^2 \).  Letting \( k \rightarrow i k \), this provides the form of the non-oscillatory wavefunctions in region II when there is no ordinary nor anti-particle transmission.
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1061}
 \ket{\pm} \propto
 \begin{bmatrix}
@@ -866,13 +866,13 @@ e^{\mp k x - i E t/\Hbar},
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1081}
 \epsilon_2^2 = m^2 - k^2
 \end{dmath}
 
 Observe that the \( \psi_2 \) component of this wave function sits on a circle in the complex plane
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1101}
 \Abs{\epsilon_2 \pm i k}^2
 = \epsilon^2 + k^2
@@ -881,13 +881,13 @@ Observe that the \( \psi_2 \) component of this wave function sits on a circle i
 \end{dmath}
 
 Putting back in the factors of \( \Hbar \), \( c\), this allows the identification
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1121}
 \epsilon_2 \pm i \Hbar k c = m c^2 e^{i\phi}.
 \end{dmath}
 
 So, like the trigonometric representation of the oscillatory wave function, the normalized wave functions for exponential decay(increase) can be written
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1141}
 \ket{\pm}
 =
@@ -903,7 +903,7 @@ e^{\mp k x - i E t/\Hbar}
 where the respective eigenvalues are \( \epsilon_2 = \pm \sqrt{ (m c^2)^2 - (\Hbar k c)^2} \), and \( \Hbar k c < m c^2 \).
 
 Observe that the currents for the exponential wave functions are both light-like
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1161}
 j_{\pm} = c \lr{ \Abs{\pm e^{\pm i \phi/2}}^2 - \Abs{e^{\mp i \phi/2}}^2 } = 0,
 \end{equation}
@@ -911,7 +911,7 @@ j_{\pm} = c \lr{ \Abs{\pm e^{\pm i \phi/2}}^2 - \Abs{e^{\mp i \phi/2}}^2 } = 0,
 which makes some sense since the particle is not able to propagate freely in the barrier region.
 
 At the interface, we wish to solve
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1181}
 A
 \begin{bmatrix}
@@ -933,7 +933,7 @@ e^{-i \phi/2} \\
 \end{dmath}
 
 With \( a = A/D \), and \( b = B/D \), this has solution
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1201}
 \begin{bmatrix}
 a \\

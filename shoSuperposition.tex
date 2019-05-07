@@ -51,13 +51,13 @@ Evaluate \( \expectation{(\Delta x)^2} \).
 \makeSubAnswer{}{problem:shoSuperposition:1:a}
 
 Forming
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:20}
 \ket{\psi} = \frac{\ket{0} + \sigma \ket{1}}{\sqrt{1 + \Abs{\sigma}^2}}
 \end{dmath}
 
 the position expectation is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:40}
 \bra{\psi} x \ket{\psi}
 =
@@ -65,7 +65,7 @@ the position expectation is
 \end{dmath}
 
 Evaluating the action of the operators on the kets, we've got
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:60}
 \lr{ a^\dagger + a } \lr{ \ket{0} + \sigma \ket{1} }
 =
@@ -73,7 +73,7 @@ Evaluating the action of the operators on the kets, we've got
 \end{dmath}
 
 The \( \ket{2} \) term is killed by the bras, leaving
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:80}
 \expectation{x}
 =
@@ -85,31 +85,31 @@ The \( \ket{2} \) term is killed by the bras, leaving
 Any imaginary component in \( \sigma \) will reduce the expectation, so we are constrained to picking a real value.
 
 The derivative of
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:100}
 f(\sigma) = \frac{\sigma}{1 + \sigma^2},
 \end{dmath}
 
 is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:120}
 f'(\sigma) = \frac{1 - \sigma^2}{(1 + \sigma^2)^2}.
 \end{dmath}
 
 That has zeros at \( \sigma = \pm 1 \).  The second derivative is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:140}
 f''(\sigma) = \frac{-2 \sigma (3 - \sigma^2)}{(1 + \sigma^2)^3}.
 \end{dmath}
 
 That will be negative (maximum for the extreme value) at \( \sigma = 1 \), so the linear superposition of these first two energy eigenkets that maximizes the position expectation is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:160}
 \psi = \inv{\sqrt{2}}\lr{ \ket{0} + \ket{1} }.
 \end{dmath}
 
 That maximized position expectation is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:180}
 \expectation{x}
 =
@@ -119,7 +119,7 @@ That maximized position expectation is
 \makeSubAnswer{}{problem:shoSuperposition:1:b}
 
 The time evolution is given by
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:200}
 \ket{\Psi(t)}
 = e^{-i H t/\Hbar} \inv{\sqrt{2}}\lr{ \ket{0} + \ket{1} }
@@ -130,7 +130,7 @@ The time evolution is given by
 \makeSubAnswer{}{problem:shoSuperposition:1:c}
 
 The position expectation in the Schr\"{o}dinger representation is
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:220}
 \expectation{x(t)}
 =
@@ -146,7 +146,7 @@ The position expectation in the Schr\"{o}dinger representation is
 \end{dmath}
 
 \makeSubAnswer{}{problem:shoSuperposition:1:d}
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:240}
 \expectation{x(t)}
 =
@@ -167,7 +167,7 @@ matching the calculation using the Schr\"{o}dinger picture.
 \makeSubAnswer{}{problem:shoSuperposition:1:e}
 
 Let's use the Heisenberg picture for the uncertainty calculation.  Using the calculation above we have
-
+%
 \begin{dmath}\label{eqn:shoSuperposition:260}
 \expectation{x^2}
 =

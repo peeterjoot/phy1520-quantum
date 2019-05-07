@@ -23,7 +23,7 @@
 \makeoproblem{Alternate Dirac equation representation.}{problem:diracAlternate:1}{phy1520 2015 midterm pr. 2}{
 
 Given an alternate representation of the Dirac equation
-
+%
 \begin{dmath}\label{eqn:diracAlternate:20}
 H =
 \begin{bmatrix}
@@ -53,7 +53,7 @@ find the form of the probability density current.
 \makeSubAnswer{}{problem:diracAlternate:1:a}
 
 The action of the Hamiltonian on
-
+%
 \begin{dmath}\label{eqn:diracAlternate:40}
 \psi =
 e^{i k x - i E t/\Hbar}
@@ -85,7 +85,7 @@ c \Hbar k & - m c^2 + V_0
 \end{dmath}
 
 Writing
-
+%
 \begin{dmath}\label{eqn:diracAlternate:80}
 H_k
 =
@@ -96,7 +96,7 @@ c \Hbar k & - m c^2 + V_0
 \end{dmath}
 
 the characteristic equation is
-
+%
 \begin{dmath}\label{eqn:diracAlternate:100}
 0 =
 (m c^2 + V_0 - \lambda)
@@ -109,7 +109,7 @@ the characteristic equation is
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:diracAlternate:120}
 \lambda = V_0 \pm \epsilon,
 \end{dmath}
@@ -120,7 +120,7 @@ where
 \end{dmath}
 
 We've got
-
+%
 \begin{dmath}\label{eqn:diracAlternate:160}
 \begin{aligned}
 H - ( V_0 + \epsilon )
@@ -139,7 +139,7 @@ c \Hbar k & - m c^2 + \epsilon
 \end{dmath}
 
 so the eigenkets are
-
+%
 \begin{dmath}\label{eqn:diracAlternate:180}
 \begin{aligned}
 \ket{V_0+\epsilon}
@@ -161,7 +161,7 @@ m c^2 + \epsilon
 % (c \Hbar k)^2 + (m c^2 + \epsilon)^2 = 2 \epsilon^2 + 2 m c^2 \epsilon = 2 \epsilon ( \epsilon + m c^2)
 
 Up to an arbitrary phase for each, these are
-
+%
 \begin{dmath}\label{eqn:diracAlternate:200}
 \begin{aligned}
 \ket{V_0 + \epsilon}
@@ -182,7 +182,7 @@ c \Hbar k \\
 \end{dmath}
 
 We can now write
-
+%
 \begin{dmath}\label{eqn:diracAlternate:220}
 H_k =
 E
@@ -214,7 +214,7 @@ E &=
 Here the signs have been adjusted to ensure the transformation matrix has a unit determinant.
 
 Observe that there's redundancy in this matrix since \( \ifrac{c \Hbar \Abs{k}}{ \sqrt{ \epsilon - m c^2 } } = \sqrt{ \epsilon + m c^2 } \), and \( \ifrac{c \Hbar \Abs{k}}{ \sqrt{ \epsilon + m c^2 } } = \sqrt{ \epsilon - m c^2 } \), which allows the transformation matrix to be written in the form of a rotation matrix
-
+%
 \begin{equation}\label{eqn:diracAlternate:260}
 \begin{aligned}
 E &=
@@ -233,7 +233,7 @@ E &=
 \end{equation}
 
 With
-
+%
 \begin{equation}\label{eqn:diracAlternate:280}
 \begin{aligned}
 \cos\theta &= \frac{c \Hbar \Abs{k}}{ \sqrt{ 2 \epsilon( \epsilon - m c^2) } } = \frac{\sqrt{ \epsilon + m c^2} }{ \sqrt{ 2 \epsilon}}\\
@@ -257,7 +257,7 @@ E =
 %\end{equation}
 
 Observe that \cref{eqn:diracAlternate:280} can be simplified by using double angle formulas
-
+%
 \begin{dmath}\label{eqn:diracAlternate:320}
 \cos(2 \theta)
 =
@@ -280,7 +280,7 @@ and
 \end{dmath}
 
 This allows all the \( \theta \) dependence on \( \Hbar k c \) and \( m c^2 \) to be expressed as a ratio of momenta
-
+%
 %\begin{dmath}\label{eqn:diracAlternate:360}
 \boxedEquation{eqn:diracAlternate:360}{
 \tan(2\theta) = \frac{\Hbar k}{m c}.
@@ -289,7 +289,7 @@ This allows all the \( \theta \) dependence on \( \Hbar k c \) and \( m c^2 \) t
 
 \makeSubAnswer{}{problem:diracAlternate:1:b}
 For a wave function of the form
-
+%
 \begin{dmath}\label{eqn:diracAlternate:380}
 \psi =
 e^{k x - i E t/\Hbar}
@@ -300,7 +300,7 @@ e^{k x - i E t/\Hbar}
 \end{dmath}
 
 some of the work above can be recycled if we substitute \( k \rightarrow -i k \), which yields unnormalized eigenfunctions
-
+%
 \begin{dmath}\label{eqn:diracAlternate:400}
 \begin{aligned}
 \ket{V_0+\epsilon}
@@ -319,13 +319,13 @@ m c^2 + \epsilon
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:diracAlternate:420}
 \epsilon^2 = (m c^2)^2 - (c \Hbar k)^2.
 \end{dmath}
 
 The squared magnitude of these wavefunctions are
-
+%
 \begin{dmath}\label{eqn:diracAlternate:440}
 (c \Hbar k)^2 + (m c^2 \mp \epsilon)^2
 =
@@ -337,7 +337,7 @@ The squared magnitude of these wavefunctions are
 \end{dmath}
 
 so, up to a constant phase for each, the normalized kets are
-
+%
 \begin{dmath}\label{eqn:diracAlternate:460}
 \begin{aligned}
 \ket{V_0+\epsilon}
@@ -358,7 +358,7 @@ m c^2 + \epsilon
 \end{dmath}
 
 After the \( k \rightarrow -i k \) substitution, \( H_k \) is not Hermitian, so these kets aren't expected to be orthonormal, which is readily verified
-
+%
 \begin{dmath}\label{eqn:diracAlternate:480}
 \begin{aligned}
 \braket{V_0+\epsilon}{V_0-\epsilon}
@@ -394,7 +394,7 @@ m c^2 + \epsilon
 \makeSubAnswer{}{problem:diracAlternate:1:d}
 
 Acting against a completely general wavefunction the Hamiltonian action \( H \psi \) is
-
+%
 \begin{dmath}\label{eqn:diracAlternate:520}
 i \Hbar \PD{t}{\psi}
 = m c^2 \sigma_z \psi + V_0 \psi + c \hatp \sigma_x \psi
@@ -402,14 +402,14 @@ i \Hbar \PD{t}{\psi}
 \end{dmath}
 
 Conversely, the conjugate \( (H \psi)^\dagger \) is
-
+%
 \begin{dmath}\label{eqn:diracAlternate:540}
 -i \Hbar \PD{t}{\psi^\dagger}
 = m c^2 \psi^\dagger \sigma_z + V_0 \psi^\dagger +i \Hbar c \PD{x}{\psi^\dagger} \sigma_x.
 \end{dmath}
 
 These give
-
+%
 \begin{dmath}\label{eqn:diracAlternate:560}
 \begin{aligned}
 i \Hbar \psi^\dagger \PD{t}{\psi}
@@ -428,7 +428,7 @@ Taking differences
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:diracAlternate:600}
 0
 =
@@ -444,7 +444,7 @@ c \psi^\dagger \sigma_x \psi
 \end{dmath}
 
 The probability current still has the usual form \( \rho = \psi^\dagger \psi = \psi_1^\conj \psi_1 + \psi_2^\conj \psi_2 \), but the probability current with this representation of the Dirac Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:diracAlternate:620}
 j
 = c \psi^\dagger \sigma_x \psi

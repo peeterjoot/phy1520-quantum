@@ -13,7 +13,7 @@ where \( E_\txtH \) is the ground state energy of the hydrogen atom.
 
 \makesubproblem{}{gradQuantum:problemSet7:2b}
 Consider the full problem which retains the Coulomb interaction between the electrons, i.e.
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:20}
 H
 =
@@ -48,13 +48,13 @@ Compare with numerical estimates of the energy.
 
 %Having initially thought that I had to show that \( E_{\textrm{He}} = 4 E_\txtH\), and geting an 8 times difference above, I went looking for mistakes and tried the Helium ground state a different way.
 Without the electron-electron interaction term, the Helium Hamiltonian is separable.  Assuming a wave function of the form
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:660}
 \psi(r_1, r_2) = \psi_1(r_1) \psi_2(r_2),
 \end{dmath}
 
 The Hamiltonian action on this wave function is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:680}
 E \psi_1(r_1) \psi_2(r_2)
 =
@@ -83,7 +83,7 @@ E
 \end{dmath}
 
 This can be written in separated form as
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:720}
 \begin{aligned}
 E_1 \psi_1(r_1) &= \inv{2m} \Bp_1^2 \psi_1(r_1) - 2 e^2 \inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \\
@@ -93,13 +93,13 @@ E &= E_1 + E_2.
 \end{equation}
 
 Observe that each of these separated Hamiltonians have (with \( Z = 2 \) ) the form
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:740}
 E \psi(r) = \inv{2m} \Bp^2 \psi(r) - Z e^2 \inv{4 \pi \epsilon_0 } \inv{r} \psi(r).
 \end{equation}
 
 With \( Z = 1 \) that is precisely the Hamiltonian for the Hydrogen atom.  If the wavefunction for this Hamiltonian is assumed to be \( \psi(r) = e^{-r/a} \), we find
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:760}
 \frac{\bra{\psi} H \ket{\psi} }{\braket{\psi}{\psi}}
 =
@@ -107,7 +107,7 @@ With \( Z = 1 \) that is precisely the Hamiltonian for the Hydrogen atom.  If th
 \end{equation}
 
 which has its minimum at
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:780}
 a_{\mathrm{min}} = \frac{a_0}{Z},
 \end{equation}
@@ -118,20 +118,20 @@ a_0 = \frac{4 \pi \epsilon_0 \Hbar^2}{m e^2}.
 \end{dmath}
 
 The minimum energy is found to be
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:800}
 E_{\mathrm{min}} = -\inv{2} \frac{e^2 Z^2}{ 4 \pi \epsilon_0 a_0 }.
 \end{equation}
 
 With \( Z = 1 \), the Hydrogen ground state energy is
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:820}
 E_\txtH
 = -\inv{2} \frac{e^2}{ 4 \pi \epsilon_0 a_0 },
 \end{equation}
 
 a value of about \( -13.6 \si{eV} \).  The Helium ground state energy is
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:840}
 \begin{aligned}
 E_{\textrm{He}}
@@ -148,7 +148,7 @@ The computations above can be found in \nbref{ps7:heliumAtomGroundStateWithInter
 \makeSubAnswer{}{gradQuantum:problemSet7:2b}
 
 The Laplacian of an exponentially decreasing trial function \( e^{-r/a} \) is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:340}
 \begin{aligned}
 \spacegrad^2 e^{-r/a}
@@ -217,7 +217,7 @@ The Laplacian of an exponentially decreasing trial function \( e^{-r/a} \) is
 %\end{dmath}
 %
 or
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:120}
 \spacegrad^2 e^{-r/a} = \inv{a} \lr{ \inv{a} -\frac{2}{r} } e^{-r/a}.
 \end{dmath}
@@ -258,7 +258,7 @@ or
 %%%\end{dmath}
 
 For Helium without electron-electron interaction the kinetic portion of the Hamiltonian action on this trial function \( \psi = e^{-(r_1 + r_2)/a} \) is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:140}
 H \psi(r_1, r_2)
 =
@@ -278,7 +278,7 @@ e^{-(r_1 + r_2)/a}.
 \end{dmath}
 
 Now, assuming that \( \psi = e^{-(r_1 + r_2)/a} \) is the unnormalized ground state wavefunction for the Helium atom without electron-electron interaction, that ground state energy is given by
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:260}
 E_{\textrm{He}}
 %=
@@ -307,7 +307,7 @@ E_{\textrm{He}}
 We'll need a couple helper integrals
 %A couple helper integrals
 %For the normalization factor we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:180}
 %\begin{aligned}
 %\braket{ \psi }{ \psi }
@@ -326,7 +326,7 @@ We'll need a couple helper integrals
 \end{dmath}
 
 and %for the inverse radial expectation we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:200}
 %\bra{ \psi } \inv{r} \ket{ \psi }
 %=
@@ -373,7 +373,7 @@ and %for the inverse radial expectation we have
 %\paragraph{Calculating Helium ground state energy}
 %
 To normalize the wavefunction, we need a six-fold integral over both the spatial domains.  With only radial dependence that is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:280}
 %\begin{aligned}
 \braket{ \psi }{ \psi }
@@ -392,7 +392,7 @@ To normalize the wavefunction, we need a six-fold integral over both the spatial
 \end{dmath}
 
 We also need the inverse radial expectations.  Calculating the expectation of \( 1/r_1 \) is sufficient, and is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:300}
 \bra{ \psi } \inv{r_1} \ket{ \psi }
 =
@@ -410,7 +410,7 @@ We also need the inverse radial expectations.  Calculating the expectation of \(
 \end{dmath}
 
 So, without the electron-electron interaction, the ground state energy is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:320}
 E_{\textrm{He}}
 =
@@ -444,21 +444,21 @@ E_{\textrm{He}}
 %This is \( E_{\textrm{He}} = 8 E_\txtH\), a value of about \( -110 eV \).
 
 To evaluate the interaction term, a Fourier transform representation of that inverse radial distance can be employed
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:900}
 \inv{\Abs{\Br}}
 = \inv{2 \pi^2} \int d^3 k \frac{e^{i \Bk \cdot \Br}}{\Bk^2},
 \end{dmath}
 
 where this is understood to be the \( \epsilon \rightarrow 0 \) limit of
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:420}
 \inv{\Abs{\Br}} e^{-\epsilon \Abs{\Br}}
 = \inv{2 \pi^2} \int d^3 k \frac{e^{i \Bk \cdot \Br}}{\Bk^2 + \epsilon^2}.
 \end{dmath}
 
 See \citep{byron1992mca} for a demonstration of this identity, and the contour used to evaluate the RHS of \cref{eqn:gradQuantumProblemSet7Problem2:420}.  Employing this inverse radial representation, the \( r_1 \) and \( r_2 \) contributions to the interaction can be decoupled
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:440}
 \frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}
 =
@@ -477,7 +477,7 @@ e^{ -2(r_1 + r_2)/a}
 \end{dmath}
 
 The spatial domain integrals can now be evaluated separately.  With a coordinate system picked so that \( \Bk = \pm k \zcap \), that gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:460}
 \begin{aligned}
 2 \pi \int dr d\theta r^2 \sin(\theta) e^{-2r/a + i \Bk \cdot \Br}
@@ -503,7 +503,7 @@ e^{\mp i k r u} \\
 \end{dmath}
 
 We see that the specific orientation used to evaluate the integral does not matter, so we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:480}
 \frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}
 =
@@ -530,7 +530,7 @@ We see that the specific orientation used to evaluate the integral does not matt
 \end{dmath}
 
 Rescaling with the normalization factor gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:500}
 \frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}/\braket{\psi}{\psi}
 =
@@ -541,7 +541,7 @@ Rescaling with the normalization factor gives
 
 Adding this electron-electron interaction to the Helium ground energy calculated in
 \cref{eqn:gradQuantumProblemSet7Problem2:320} gives
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:520}
 E_{\textrm{He}}
 =
@@ -549,7 +549,7 @@ E_{\textrm{He}}
 \end{dmath}
 
 For the minimum we want to solve
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:540}
 0
 =
@@ -559,7 +559,7 @@ For the minimum we want to solve
 \end{dmath}
 
 which has the minimum at
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:560}
 a = - \frac{64 \Hbar^2 \pi \epsilon_0}{27 m e^2}.
 \end{dmath}
@@ -568,7 +568,7 @@ Note that \( m \) should really be treated as the reduced mass of the electron, 
 
 %Noting that \( a_0 = \Hbar^2/m e^2 \),
 %the ground state energy, after substituting this value of \( a \) is
-
+%
 %\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:580}
 \boxedEquation{eqn:gradQuantumProblemSet7Problem2:600}{
 E_{\textrm{He}}
@@ -578,7 +578,7 @@ E_{\textrm{He}}
 %\end{dmath}
 
 In atomic units this is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:860}
 E_{\textrm{He}}
 =

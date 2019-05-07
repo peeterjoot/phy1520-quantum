@@ -40,7 +40,7 @@ Why do we have the zeros at integral multiples of \( h/q \)?  Consider a particl
 \imageFigure{../figures/phy1520-quantum/lecture7Fig3}{Circular trajectory.}{fig:lecture7:lecture7Fig3}{0.1}
 
 FIXME: Prof mentioned:
-
+%
 \begin{dmath}\label{eqn:qmLecture7:20}
 \phi_{\textrm{loop}} = q \frac{ h p/ q }{\Hbar} = 2 \pi p
 \end{dmath}
@@ -48,7 +48,7 @@ FIXME: Prof mentioned:
 ... I'm not sure what that was about now.
 
 In classical mechanics we have
-
+%
 \begin{dmath}\label{eqn:qmLecture7:40}
 \oint p dq
 \end{dmath}
@@ -77,19 +77,19 @@ This experiment shows that the effective charge of the circulating charge was \(
 %F7
 %\cref{fig:lecture7:lecture7Fig7}.
 %\imageFigure{../figures/phy1520-quantum/lecture7Fig7}{CAPTION: lecture7Fig7}{fig:lecture7:lecture7Fig7}{0.2}
-
+%
 \begin{dmath}\label{eqn:qmLecture7:140}
 \omega_{\textrm{c}} = \frac{e B}{m}
 \end{dmath}
 
 We work with what is now called the Landau gauge
-
+%
 \begin{dmath}\label{eqn:qmLecture7:60}
 \BA = \lr{ 0, B x, 0 }
 \end{dmath}
 
 This gives
-
+%
 \begin{dmath}\label{eqn:qmLecture7:80}
 \BB
 = \spacegrad \cross \BA
@@ -98,13 +98,13 @@ This gives
 \end{dmath}
 
 An alternate gauge choice, the symmetric gauge, is
-
+%
 \begin{dmath}\label{eqn:qmLecture7:100}
 \BA = \lr{ -\frac{B y}{2}, \frac{B x}{2}, 0 },
 \end{dmath}
 
 that also has the same magnetic field
-
+%
 \begin{dmath}\label{eqn:qmLecture7:120}
 \BB
 = \spacegrad \BA
@@ -116,7 +116,7 @@ that also has the same magnetic field
 We expect the physics for each to have the same results, although the wave functions in one gauge may be more complicated than in the other.
 
 Our Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:qmLecture7:160}
 H
 = \inv{2 m} \lr{ \Bp - e \BA }^2
@@ -124,32 +124,32 @@ H
 \end{dmath}
 
 We can solve after noting that
-
+%
 \begin{dmath}\label{eqn:qmLecture7:180}
 \antisymmetric{\hatp_y}{H} = 0
 \end{dmath}
 
 means that
-
+%
 \begin{dmath}\label{eqn:qmLecture7:200}
 \Psi(x,y) = e^{i k_y y} \phi(x)
 \end{dmath}
 
 The eigensystem
-
+%
 \begin{dmath}\label{eqn:qmLecture7:220}
 H \psi(x, y) = E \phi(x, y) ,
 \end{dmath}
 
 becomes
-
+%
 \begin{dmath}\label{eqn:qmLecture7:240}
 \lr{ \inv{2 m} \hatp_x^2 + \inv{2 m} \lr{ \Hbar k_y - e B \hatx}^2 } \phi(x)
 = E \phi(x).
 \end{dmath}
 
 This reduced Hamiltonian can be rewritten as
-
+%
 \begin{dmath}\label{eqn:qmLecture7:320}
 H_x
 = \inv{2 m} p_x^2 + \inv{2 m} e^2 B^2 \lr{ \hatx - \frac{\Hbar k_y}{e B} }^2
@@ -157,7 +157,7 @@ H_x
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:qmLecture7:260}
 \inv{2 m} e^2 B^2 = \inv{2} m \omega^2,
 \end{dmath}
@@ -168,7 +168,7 @@ or
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:qmLecture7:300}
 x_0 = \frac{\Hbar}{k_y}{e B}.
 \end{dmath}
@@ -187,31 +187,31 @@ To resolve this we can introduce periodic boundary conditions, imagining that a 
 \imageFigure{../figures/phy1520-quantum/lecture7Fig9}{Landau degeneracy region.}{fig:lecture7:lecture7Fig9}{0.1}
 
 Requiring quantized momentum
-
+%
 \begin{dmath}\label{eqn:qmLecture7:340}
 k_y L_y = 2 \pi n,
 \end{dmath}
 
 or
-
+%
 \begin{equation}\label{eqn:qmLecture7:360}
 k_y = \frac{2 \pi n}{L_y}, \qquad n \in \bbZ,
 \end{equation}
 
 gives
-
+%
 \begin{dmath}\label{eqn:qmLecture7:380}
 x_0(n) = \frac{\Hbar}{e B} \frac{ 2 \pi n}{L_y},
 \end{dmath}
 
 with \( x_0 \le L_x \).  The range is thus restricted to
-
+%
 \begin{dmath}\label{eqn:qmLecture7:400}
 \frac{\Hbar}{e B} \frac{ 2 \pi n_{\textrm{max}}}{L_y} = L_x,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:qmLecture7:420}
 n_{\textrm{max}} =
 \mathLabelBox
@@ -220,7 +220,7 @@ n_{\textrm{max}} =
 \end{dmath}
 
 That is
-
+%
 \begin{dmath}\label{eqn:qmLecture7:440}
 n_{\textrm{max}}
 = \frac{\Phi_{\textrm{total}}}{h/e}
@@ -232,7 +232,7 @@ n_{\textrm{max}}
 %\imageFigure{../figures/phy1520-quantum/lecture7Fig10}{CAPTION: lecture7Fig10}{fig:lecture7:lecture7Fig10}{0.2}
 
 Attempting to measure Hall-effect systems, it was found that the Hall conductivity was quantized like
-
+%
 \begin{dmath}\label{eqn:qmLecture7:460}
 \sigma_{x y} = p \frac{e^2}{h}.
 \end{dmath}

@@ -34,7 +34,7 @@ is used in the derivation of the uncertainty relation.  The proof of the Schwart
 \paragraph{Without being sneaky}
 
 My ancient first year linear algebra text \citep{nicholson1990elementary} contains a non-sneaky proof, but it only works for real vector spaces.  Recast in bra-ket notation, this method examines the bounds of the norms of sums and differences of unit state vectors (i.e. \( \braket{a}{a} = \braket{b}{b} = 1 \).)
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:40}
 \braket{a - b}{a - b}
 = \braket{a}{a} + \braket{b}{b} - \braket{a}{b} - \braket{b}{a}
@@ -48,7 +48,7 @@ so
 \end{dmath}
 
 Similarly
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:80}
 \braket{a + b}{a + b}
 = \braket{a}{a} + \braket{b}{b} + \braket{a}{b} + \braket{b}{a}
@@ -62,7 +62,7 @@ so
 \end{dmath}
 
 This means that for normalized state vectors
-
+%
 \begin{equation}\label{eqn:qmSchwartz:120}
 -1 \le \Real \braket{a}{b} \le 1,
 \end{equation}
@@ -79,7 +79,7 @@ or
 %\end{equation}
 
 Writing out the unit vectors explicitly, that last inequality is
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:180}
 \Abs{ \Real \braket{ \frac{a}{\sqrt{\braket{a}{a}}} }{ \frac{b}{\sqrt{\braket{b}{b}}} } } \le 1,
 %1 \le \Abs{ \Braket{ \frac{a}{\sqrt{\braket{a|a}}} | \frac{b}{\sqrt{\braket{b|b}}} } },
@@ -87,7 +87,7 @@ Writing out the unit vectors explicitly, that last inequality is
 \end{dmath}
 
 squaring and rearranging gives
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:200}
 \Abs{\Real \braket{a}{b}}^2 \le
 \braket{a}{a}
@@ -101,7 +101,7 @@ This is similar to, but not identical to the Schwartz inequality.  Since \( \Abs
 Notice that the equality condition holds when the vectors are colinear, and the largest inequality (\(0 \le 1\)) holds when the vectors are normal to each other.  Given those geometrical observations, it seems reasonable to examine the norms of projected or rejected components of a vector.  To do so in bra-ket notation, the correct form of a projection operation must be determined.  Care is required to get the ordering of the bra-kets right when expressing such a projection (or rejection)
 
 Suppose we wish to calculation the rejection of \( \ket{a} \) from \( \ket{b} \), that is \( \ket{b - \alpha a}\), such that
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:220}
 0
 = \braket{a}{b - \alpha a}
@@ -115,7 +115,7 @@ or
 \end{dmath}
 
 Therefore, the projection of \( \ket{b} \) on \( \ket{a} \) is
-
+%
 \begin{equation}\label{eqn:qmSchwartz:260}
 \Proj_{\ket{a}} \ket{b}
 = \frac{\braket{a}{b} }{ \braket{a}{a} } \ket{a}
@@ -123,20 +123,20 @@ Therefore, the projection of \( \ket{b} \) on \( \ket{a} \) is
 \end{equation}
 
 The conventional way to write this in QM is in the operator form
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:300}
 \Proj_{\ket{a}} \ket{b}
 = \frac{\ket{a}\bra{a}}{\braket{a}{a}} \ket{b}.
 \end{dmath}
 
 In this form the rejection of \( \ket{a} \) from \( \ket{b} \) can be expressed as
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:280}
 \RejName_{\ket{a}} \ket{b} = \ket{b} - \frac{\ket{a}\bra{a}}{\braket{a}{a}} \ket{b}.
 \end{dmath}
 
 This state vector is normal to \( \ket{a} \) as desired
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:320}
 \braket{a}{b - \frac{\braket{a}{b} }{ \braket{a}{a} } a }
 =
@@ -145,7 +145,7 @@ This state vector is normal to \( \ket{a} \) as desired
 \end{dmath}
 
 How about it's length?  That is
-
+%
 \begin{equation}\label{eqn:qmSchwartz:340}
 \begin{aligned}
 \braket{b - \frac{\braket{a}{b} }{ \braket{a}{a} } a}{b - \frac{\braket{a}{b} }{ \braket{a}{a} } a }
@@ -157,13 +157,13 @@ How about it's length?  That is
 \end{equation}
 
 Observe that this must be greater to or equal to zero, so
-
+%
 \begin{equation}\label{eqn:qmSchwartz:360}
 \braket{b}{b} \ge \frac{ \Abs{ \braket{a}{b} }^2 }{ \braket{a}{a} }.
 \end{equation}
 
 Rearranging this gives \cref{eqn:qmSchwartz:20} as desired.  The Schwartz proof in \citep{sakurai2014modern} obscures the geometry involved and starts with
-
+%
 \begin{dmath}\label{eqn:qmSchwartz:380}
 \braket{b + \lambda a}{b + \lambda a} \ge 0,
 \end{dmath}

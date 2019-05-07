@@ -23,7 +23,7 @@
 
 \index{Gaussian integral}
 Both \citep{sakurai2014modern} and \citep{zee2005quantum} use Gaussian integrals with both (negative) real, and imaginary arguments, which give the impression that the following is true:
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:20}
 \int_{-\infty}^\infty \exp\lr{ a x^2 } dx = \sqrt{\frac{-\pi}{a}},
 \end{dmath}
@@ -45,7 +45,7 @@ Let's handle the \( a = \pm i \) cases next.  These can be evaluated by consider
 Since there are no poles, the integral over either such contour is zero.  Credit for figuring out how to tackle that integral and what contour to use goes to Dr MV, on stackexchange \citep{se:evalDefiniteIntegralOf}.
 
 For the upper plane contour we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:40}
 0
 = \ointctrclockwise \exp\lr{ i z^2 } dz
@@ -55,7 +55,7 @@ For the upper plane contour we have
 \end{dmath}
 
 Observe that \( i e^{2 i \theta} = i\cos(2 \theta) - \sin(2\theta) \) which has a negative real part for all values of \( \theta \ne 0 \).  Provided the contour is slightly deformed from the axis, that second integral has a term of the form \( \sim R e^{-R^2} \) which tends to zero as \( R \rightarrow \infty \).  So in the limit, this is
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:60}
 \int_0^\infty \exp\lr{ i x^2 } dx
 = \sqrt{\pi} e^{i\pi/4}/2,
@@ -68,7 +68,7 @@ or
 \end{dmath}
 
 a special case of \cref{eqn:generalizedGaussian:20} as desired.  For \( a = -i \) integrating around the lower plane contour, we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:100}
 0
 = \ointclockwise \exp\lr{ -i z^2 } dz
@@ -80,7 +80,7 @@ a special case of \cref{eqn:generalizedGaussian:20} as desired.  For \( a = -i \
 This time, in the second integral we also have \( -i R^2 e^{2 i \theta} = i R^2 \cos(2 \theta) + \sin(2 \theta) \), which also has a negative real part for \( \theta \in (0, \pi/4] \).  Again the contour needs to be infinitesimally deformed\footnote{Distorting the contour in this fashion seems somewhat like handwaving.  A better approach would probably follow \citep{lepage1980cva:theoremForTrigIntegrals} where Jordan's lemma is covered.  It doesn't look like Jordan's lemma applies as is to this case, but the arguments look like they could be adapted appropriately.}, placed just lower than the axis.
 
 This time we find
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:120}
 \int_{-\infty}^\infty \exp\lr{ -i x^2 } dx
 = \sqrt{-i \pi},
@@ -95,7 +95,7 @@ A similar trick can be used to evaluate the more general cases, but a bit of tho
 \imageFigure{../figures/phy1520-quantum/twoContoursThetaFig2}{Contours for complex \( a \).}{fig:twoContoursTheta:twoContoursThetaFig2}{0.3}
 
 To evaluate an integral consider
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:140}
 0
 = \oint \exp\lr{ e^{i\phi} z^2 } dz
@@ -105,13 +105,13 @@ To evaluate an integral consider
 \end{dmath}
 
 where \( \phi \in (\pi/2, \pi) \cup (\pi,3\pi/2) \).  We have a hope of evaluating this last integral if \( \phi + 2 \theta = \pi \), or
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:160}
 \theta = (\pi -\phi)/2,
 \end{dmath}
 
 giving
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:180}
 \int_0^R \exp\lr{ e^{i\phi} x^2 } dx
 =
@@ -120,31 +120,31 @@ e^{i\lr{\pi - \phi}/2} \int_0^R \exp\lr{ -t^2 } dt
 \end{dmath}
 
 If the cosine is always negative on the chosen contours, then that integral will vanish in the \( R \rightarrow \infty \) limit.  This turns out to be the case, which can be confirmed by considering each of the contours in sequence.  If the upper plane contour is used to evaluate \cref{eqn:generalizedGaussian:140} for the \( \phi \in (\pi/2,\pi) \) case, we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:200}
 \theta \in (0, \pi/4).
 \end{dmath}
 
 Since \( \phi + 2\theta = \pi \), we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:220}
 \phi + 2 \mu \in (\pi/2, \pi),
 \end{dmath}
 
 and find that the cosine is strictly negative on that contour for that range of \( \phi \).  Picking the lower plane contour for the \( \phi \in (\pi, 3\pi/2) \) range, we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:240}
 \theta \in (-\pi/4, 0),
 \end{dmath}
 
 and so
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:260}
 \phi + 2 \mu \in (\pi/2, 3\pi/2).
 \end{dmath}
 
 For this range of \( \phi \) the cosine on the lower plane contour is again negative as desired, so in the infinite \( R \) limit we have
-
+%
 \begin{dmath}\label{eqn:generalizedGaussian:280}
 \int_0^\infty \exp\lr{ e^{i\phi} x^2 } dx
 =

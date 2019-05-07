@@ -28,19 +28,19 @@
 \paragraph{Time reversal (cont.)}
 
 Given a time reversed state
-
+%
 \begin{dmath}\label{eqn:qmLecture13:20}
 \ket{\tilde{\Psi}(t)} = \Theta \ket{\Psi(0)}
 \end{dmath}
 
 which can alternately be written
-
+%
 \begin{equation}\label{eqn:qmLecture13:40}
 \Theta^{-1} \ket{\tilde{\Psi}(t)} = \ket{\Psi(-t)} = e^{i \hatH t/\Hbar} \ket{\Psi(0)}
 \end{equation}
 
 The left hand side can be expanded as the evolution of the state as found at time \( -t \)
-
+%
 \begin{dmath}\label{eqn:qmLecture13:60}
 \Theta^{-1} \ket{\tilde{\Psi}(t)}
 =
@@ -50,14 +50,14 @@ The left hand side can be expanded as the evolution of the state as found at tim
 \end{dmath}
 
 To first order for a small time increment \( \delta t \), we have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:80}
 \lr{ 1 + i \frac{\hatH}{\Hbar} \delta t } \ket{\Psi(0)} =
 \Theta^{-1} \lr{ 1 - i \frac{\hatH}{\Hbar} \delta t } \Theta \ket{\Psi(0)},
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:qmLecture13:120}
 i \frac{\hatH}{\Hbar} \delta t \ket{\Psi(0)}
 =
@@ -65,7 +65,7 @@ i \frac{\hatH}{\Hbar} \delta t \ket{\Psi(0)}
 \end{dmath}
 
 Since this holds for any state \( \ket{\Psi(0)} \), the time reversal operator satisfies
-
+%
 \begin{dmath}\label{eqn:qmLecture13:140}
 i \hatH
 =
@@ -78,7 +78,7 @@ There are two possible solutions
 
 \begin{itemize}
 \item If \( \Theta \) is unitary where \( \Theta i = i \Theta \), then
-
+%
 \begin{dmath}\label{eqn:qmLecture13:160}
 \hatH
 =
@@ -96,19 +96,19 @@ Consider the implications of this on energy eigenstates
 \begin{dmath}\label{eqn:qmLecture13:200}
 \hatH \ket{\Psi_n} = E_n \ket{\Psi_n},
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:220}
 \Theta \hatH \ket{\Psi_n} = E_n \Theta \ket{\Psi_n},
 \end{dmath}
 
 but
-
+%
 \begin{dmath}\label{eqn:qmLecture13:240}
 -\hatH \Theta \ket{\Psi_n} = E_n \Theta \ket{\Psi_n},
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:qmLecture13:260}
 \hatH \lr{ \Theta \ket{\Psi_n}} = -E_n \lr{ \Theta \ket{\Psi_n} }.
 \end{dmath}
@@ -123,13 +123,13 @@ i \hatH = i \Theta^{-1} \hatH \Theta,
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:qmLecture13:300}
 \Theta \hatH = \hatH \Theta.
 \end{dmath}
 
 Acting on an energy eigenket, we've got
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1400}
 \Theta \hatH \ket{\Psi_n}
 =
@@ -160,7 +160,7 @@ We expect
 \end{dmath}
 
 where we have a sign flip in the time dependent momentum operator (and therefore angular momentum), but not for position.  If we have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:340}
 \Theta^{-1} \hatx \Theta = \hatx,
 \end{dmath}
@@ -179,7 +179,7 @@ i \Hbar \Theta^{-1} \Theta \PD{x}{}
 \end{dmath}
 
 How about the \( x,p \) commutator?  For that we have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:380}
 \Theta^{-1} \antisymmetric{\hatx}{\hatp} \Theta
 =
@@ -191,13 +191,13 @@ How about the \( x,p \) commutator?  For that we have
 \end{dmath}
 
 For the the angular momentum operators
-
+%
 \begin{dmath}\label{eqn:qmLecture13:420}
 \hatL_i = \epsilon_{ijk} \hatr_j \hatp_k,
 \end{dmath}
 
 the time reversal operator should flip the sign due to its action on \( \hatp_k \).
-
+%
 %\begin{dmath}\label{eqn:qmLecture13:400}
 %\antisymmetric{\hatL_i }{\hatL_j } = i \epsilon_{ijk} \hatL_k.
 %\end{dmath}
@@ -207,7 +207,7 @@ the time reversal operator should flip the sign due to its action on \( \hatp_k 
 \paragraph{Time reversal acting on spin 1/2 (Fermions).  Attempt I.}
 
 Consider two spin states \( \ket{\uparrow}, \ket{\downarrow} \).  What should the action of the time reversal operator on such a state be?  Let's (incorrectly) start by supposing that the time reversal operator effects are
-
+%
 \begin{dmath}\label{eqn:qmLecture13:440}
 \begin{aligned}
 \Theta \ket{\uparrow} &\questionEquals \ket{\downarrow} \\
@@ -217,19 +217,19 @@ Consider two spin states \( \ket{\uparrow}, \ket{\downarrow} \).  What should th
 
 Given a general state
 so that if
-
+%
 \begin{equation}\label{eqn:qmLecture13:740}
 \ket{\Psi} = a \ket{\uparrow} + b \ket{\downarrow},
 \end{equation}
 
 the action of the time reversal operator would be
-
+%
 \begin{equation}\label{eqn:qmLecture13:760}
 \Theta \ket{\Psi} = a^\conj \ket{\downarrow} + b^\conj \ket{\uparrow}.
 \end{equation}
 
 That action is:
-
+%
 \begin{equation}\label{eqn:qmLecture13:460}
 \begin{aligned}
 a \rightarrow b^\conj \\
@@ -238,19 +238,19 @@ b \rightarrow a^\conj
 \end{equation}
 
 Let's consider whether or not such an action a spin operator with properties
-
+%
 \begin{dmath}\label{eqn:qmLecture13:480}
 \antisymmetric{\hatS_i}{\hatS_j} = i \epsilon_{ijk} \hatS_k.
 \end{dmath}
 
 produce the desired inversion of sign
-
+%
 \begin{dmath}\label{eqn:qmLecture13:500}
 \Theta^{-1} \hatS_i \Theta = - \hatS_i.
 \end{dmath}
 
 The expectations of the spin operators (without any application of time reversal) are
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1440}
 \bra{\Psi} \hatS_x \ket{\Psi}
 =
@@ -266,7 +266,7 @@ The expectations of the spin operators (without any application of time reversal
 \frac{\Hbar}{2}
 \lr{ a^\conj b + b^\conj a },
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1460}
 \bra{\Psi} \hatS_y \ket{\Psi}
 =
@@ -281,7 +281,7 @@ The expectations of the spin operators (without any application of time reversal
 =
 \frac{\Hbar}{2 i} \lr{ a^\conj b - b^\conj a },
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1480}
 \bra{\Psi} \hatS_z \ket{\Psi}
 =
@@ -294,7 +294,7 @@ The expectations of the spin operators (without any application of time reversal
 \end{dmath}
 
 The time reversed actions are
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1560}
 \bra{\Psi} \Theta^{-1} \hatS_x \Theta \ket{\Psi}
 =
@@ -310,7 +310,7 @@ The time reversed actions are
 \frac{\Hbar}{2}
 \lr{ a^\conj b + b^\conj a },
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1580}
 \bra{\Psi} \Theta^{-1} \hatS_y \Theta \ket{\Psi}
 =
@@ -325,7 +325,7 @@ The time reversed actions are
 =
 \frac{\Hbar}{2 i} \lr{ -a^\conj b + b^\conj a },
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:qmLecture13:1600}
 \bra{\Psi} \Theta^{-1} \hatS_z \Theta \ket{\Psi}
 =
@@ -340,7 +340,7 @@ The time reversed actions are
 =
 \frac{\Hbar}{2} \lr{ -\Abs{a}^2 + \Abs{b}^2 }
 \end{dmath}
-
+%
 %\begin{dmath}\label{eqn:qmLecture13:1500}
 %\Theta^{-1} \hatS_z \Theta \ket{\uparrow}
 %=
@@ -390,19 +390,19 @@ We see that this is not right, because the sign for the x component has not been
 \paragraph{Spin 1/2 (Fermions).  Attempt II.}
 
 Again assuming
-
+%
 \begin{equation}\label{eqn:qmLecture13:580}
 \ket{\Psi} = a \ket{\uparrow} + b \ket{\downarrow},
 \end{equation}
 
 now try the action
-
+%
 \begin{equation}\label{eqn:qmLecture13:780}
 \Theta \ket{\Psi} = a^\conj \ket{\downarrow} - b^\conj \ket{\uparrow}.
 \end{equation}
 
 This is the action:
-
+%
 \begin{equation}\label{eqn:qmLecture13:600}
 \begin{aligned}
 a \rightarrow -b^\conj \\
@@ -422,7 +422,7 @@ The correct action of time reversal on the basis states (up to a phase choice) i
 }
 
 Note that acting the time reversal operator twice has the effects
-
+%
 \begin{dmath}\label{eqn:qmLecture13:660}
 \Theta^2 \ket{\uparrow} = \Theta \ket{\downarrow} = - \ket{\uparrow}
 \end{dmath}
@@ -440,7 +440,7 @@ We end up with the same state we started with, but with the opposite sign.  This
 %\end{dmath}
 
 This is try for half integer particles (Fermions) \( S = 1/2, 3/2, 5/2, \cdots \), but for Bosons with integer spin \( S \).
-
+%
 %\begin{dmath}\label{eqn:qmLecture13:720}
 \boxedEquation{eqn:qmLecture13:720}{
 \Theta^2 = 1.
@@ -452,7 +452,7 @@ This is try for half integer particles (Fermions) \( S = 1/2, 3/2, 5/2, \cdots \
 \index{spin half!time reversal}
 
 Suppose we imagine there is state for which the action of the time reversal operator produces the same state, just different in phase.  Let
-
+%
 \begin{equation}\label{eqn:qmLecture13:800}
 \ket{\psi}' = \Theta \ket{\psi}
 = e^{i \delta} \ket{\psi}.
@@ -464,7 +464,7 @@ For a Fermion we have
 \end{dmath}
 
 but if such the time reversal action posited above is possible we also have
-
+%
 \begin{dmath}\label{eqn:qmLecture13:860}
 \Theta^2 \ket{\psi}
 =

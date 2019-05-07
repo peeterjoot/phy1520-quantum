@@ -6,7 +6,7 @@
 \index{harmonic oscillator!anharmonic perturbation}
 
 Consider a 2D harmonic oscillator with
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:20}
 H =
 \frac{p_x^2}{2m}
@@ -15,7 +15,7 @@ H =
 \end{dmath}
 
 Turn on an anharmonic perturbation
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:40}
 V = \lambda g_1 \frac{m^2 \omega^3}{\Hbar} \lr{ x^4 + y^4 } + \lambda^2 g_2 m \omega^2 x y,
 \end{dmath}
@@ -41,13 +41,13 @@ Do the same for the first two degenerate states.
 \makeSubAnswer{}{gradQuantum:problemSet8:3a}
 
 With a \( \lambda^2 \) perturbation we have to step back and revisit the derivation of the energy level and perturbed state formulas.  Given
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:60}
 H = H_0 + \lambda V_1 + \lambda^2 V_2,
 \end{dmath}
 
 with known solution \( H_0 \ket{n^{(0)}} = E^{(0)} \ket{n^{(0)}} \), we seek the a power series representation of the perturbed ket and an energy shift \( \Delta \)
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:80}
 \ket{n} = \ket{n_0} + \lambda \ket{n_1} + \lambda^2 \ket{n_2} + \cdots
 \end{dmath}
@@ -56,25 +56,25 @@ with known solution \( H_0 \ket{n^{(0)}} = E^{(0)} \ket{n^{(0)}} \), we seek the
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:120}
 H \ket{n} = \lr{ E^{(0)} + \Delta } \ket{n}.
 \end{dmath}
 
 We can assume that the we have the same sort of representation of the perturbed state
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:140}
 \ket{n} = \ket{n^{(0)}} + \frac{\overbar{P}_n}{E^{(0)} - H_0} \lr{ \lambda_1 V_1 + \lambda^2 V_2 - \Delta } \ket{n},
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:160}
 \overbar{P}_n = 1 - \ket{n^{(0)}}\bra{n^{(0)}} = \sum_{m \ne n} \ket{m^{(0)}}\bra{m^{(0)}}.
 \end{dmath}
 
 To check this, operating with \( E^{(0)} - H_0 \), we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:180}
 \lr{ E^{(0)} - H_0 } \ket{n}
 =
@@ -97,13 +97,13 @@ or
 
 The LHS is also zero as desired, showing that \cref{eqn:gradQuantumProblemSet8Problem3:140} is the desired perturbation relationship.
 For the perturbed state we are looking for just the \( \lambda^1 \) terms of \cref{eqn:gradQuantumProblemSet8Problem3:140}, which after dropping all second order and higher terms is
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:420}
 \ket{n_0} + \lambda \ket{n_1} = \ket{n_0} + \sum_{m \ne n} \frac{\ket{m^{(0)}} \bra{m^{(0)}}}{E^{(0)} - E_m} \lr{ \lambda V_1 - \lambda \Delta^{(1)} } \lr{ \ket{n_0} + \lambda \ket{n_1} },
 \end{equation}
 
 so the first order state perturbation is
-
+%
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:440}
 \ket{n_1} = \sum_{m \ne n} \frac{\ket{m^{(0)}} \bra{m^{(0)}}}{E^{(0)} - E_m} \lr{ V_1 - \Delta^{(1)} } \ket{n_0}.
 \end{equation}
@@ -117,7 +117,7 @@ The \( \Delta^{(1)} \) contribution drops out, leaving
 just as we had for a strictly first order perturbing potential.
 
 For the energy shifts consider the braket
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:220}
 \bra{n^{(0)}} H -H_0 \ket{n}
 =
@@ -130,13 +130,13 @@ For the energy shifts consider the braket
 
 or
 %As with the a first order \( \lambda \) perturbation, we can impose a requirement that \( \braket{0^{(0)}}{n} = 1 \), so
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:240}
 \Delta \braket{n^{(0)}}{n} = \bra{n^{(0)}} { V_1 \Delta^{(1)} + V_2 \Delta^{(2)} } \ket{n}.
 \end{dmath}
 
 Expanding both sides in powers of \( \lambda \) we have
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:260}
 \sum_{r = 1, s = 0} \lambda^{r+s} \Delta^{(r)} \braket{n^{(0)}}{n_s}
 =
@@ -144,7 +144,7 @@ Expanding both sides in powers of \( \lambda \) we have
 \end{dmath}
 
 With \( \ket{n^{(0)}} = \ket{n_0} \) as required in the \( \lambda \rightarrow 0 \) limit, the \( \lambda = 1 \) contribution to these sums is
-
+%
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:280}
 \boxedEquation{eqn:gradQuantumProblemSet8Problem3:300}{
 \Delta^{(1)} = \bra{n_0} V_1 \ket{n_0}.
@@ -152,7 +152,7 @@ With \( \ket{n^{(0)}} = \ket{n_0} \) as required in the \( \lambda \rightarrow 0
 %\end{dmath}
 
 The second order contribution is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:320}
 \Delta^{(1)} \braket{n^{(0)}}{n_1} + \Delta^{(2)} \braket{n^{(0)}}{n_0}
 =
@@ -185,7 +185,7 @@ However, from \cref{eqn:gradQuantumProblemSet8Problem3:460} we see that \( \ket{
 
 In \nbref{ps8:2dHarmonicOscillatorOperators.nb}, for
 an initial state \( \ket{n_0} = \ket{0,0} \), it is calculated that
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:480}
 V_1 \ket{0,0}
 =
@@ -202,13 +202,13 @@ g_1 \Hbar \omega
 \end{dmath}
 
 The first energy shift is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:520}
 \Delta^{(1)} = \bra{0,0} V_1 \ket{0,0} = \frac{3}{2} g_1 \Hbar \omega,
 \end{dmath}
 
 and the first order perturbation of the state is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:540}
 \ket{n_1} = g_1 \Hbar \omega
 \lr{
@@ -242,7 +242,7 @@ so the second order energy shift is
 \end{dmath}
 
 so the ground state energy shift, to second order in \( \lambda \), is
-
+%
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:620}
 \boxedEquation{eqn:gradQuantumProblemSet8Problem3:680}{
 \Hbar \omega \rightarrow \Hbar \omega + \frac{3}{2} \Hbar \omega g_1 \lambda - \frac{21}{4} \Hbar \omega g_1^2 \lambda^2.
@@ -254,7 +254,7 @@ For the ground state, there is no contribution from the second order potential \
 \makeSubAnswer{}{gradQuantum:problemSet8:3c}
 
 The next two highest states are \( \ket{1,0}, \ket{0,1} \) both with unperturbed energy eigenvalues \( 2 \Hbar \omega \).  For a basis spanning the \( \setlr{ \ket{1,0}, \ket{0,1} } \) subspace, the matrix element of the perturbed Hamiltonian is
-
+%
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:640}
 H_0 + \lambda V_1 + \lambda^2 V_2
 =
@@ -274,7 +274,7 @@ Since the eigenvalues of \(
 a & b \\
 b & a
 \end{bmatrix} \) are just \( a \pm b \), the energy splitting to first order for these first two degenerate states is
-
+%
 %\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:660}
 \boxedEquation{eqn:gradQuantumProblemSet8Problem3:700}{
 2 \Hbar \omega \rightarrow \Hbar \omega \lr{ 2 + \frac{9}{2} g_1 \lambda \pm \frac{g_2 \lambda^2 }{2} }.
