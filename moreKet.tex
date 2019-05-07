@@ -108,33 +108,37 @@ The expectation values with respect to this ket are
 \alpha \Hbar \sin\theta.
 \end{dmath}
 %
-The variances are
+With \( C_\theta = \cos\theta, S_\theta = \sin\theta\), the variances are
 \begin{dmath}\label{eqn:moreKet:220}
+\begin{aligned}
 \lr{ \Delta S_x }^2
-=
+&=
 \lr{
 \frac{\Hbar}{2}
 \begin{bmatrix}
--2 \alpha \cos\theta & 1 \\
-1 & -2 \alpha \cos\theta \\
+-2 \alpha C_\theta & 1 \\
+1 & -2 \alpha C_\theta \\
 \end{bmatrix}
 }^2
-=
+\\
+&=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
--2 \alpha \cos\theta & 1 \\
-1 & -2 \alpha \cos\theta \\
+-2 \alpha C_\theta & 1 \\
+1 & -2 \alpha C_\theta \\
 \end{bmatrix}
 \begin{bmatrix}
--2 \alpha \cos\theta & 1 \\
-1 & -2 \alpha \cos\theta \\
+-2 \alpha C_\theta & 1 \\
+1 & -2 \alpha C_\theta \\
 \end{bmatrix}
-=
+\\
+&=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
-4 \alpha^2 \cos^2\theta + 1 & -4 \alpha \cos\theta \\
--4 \alpha \cos\theta & 4 \alpha^2 \cos^2\theta + 1 \\
+4 \alpha^2 C_\theta^2 + 1 & -4 \alpha C_\theta \\
+-4 \alpha C_\theta & 4 \alpha^2 C_\theta^2 + 1 \\
 \end{bmatrix},
+\end{aligned}
 \end{dmath}
 %
 and
@@ -145,25 +149,25 @@ and
 \lr{
 \frac{\Hbar}{2}
 \begin{bmatrix}
--2 \alpha \sin\theta & -i \\
-i & -2 \alpha \sin\theta \\
+-2 \alpha S_\theta & -i \\
+i & -2 \alpha S_\theta \\
 \end{bmatrix}
 }^2
 =
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
--2 \alpha \sin\theta & -i \\
-i & -2 \alpha \sin\theta \\
+-2 \alpha S_\theta & -i \\
+i & -2 \alpha S_\theta \\
 \end{bmatrix}
 \begin{bmatrix}
--2 \alpha \sin\theta & -i \\
-i & -2 \alpha \sin\theta \\
+-2 \alpha S_\theta & -i \\
+i & -2 \alpha S_\theta \\
 \end{bmatrix}
 =
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
-4 \alpha^2 \sin^2\theta + 1 & 4 \alpha i \sin\theta \\
--4 \alpha i \sin\theta & 4 \alpha^2 \sin^2\theta + 1 \\
+4 \alpha^2 S_\theta^2 + 1 & 4 \alpha i S_\theta \\
+-4 \alpha i S_\theta & 4 \alpha^2 S_\theta^2 + 1 \\
 \end{bmatrix}.
 \end{dmath}
 %
@@ -177,8 +181,8 @@ The uncertainty factors are
 1 & \alpha e^{-i\theta}
 \end{bmatrix}
 \begin{bmatrix}
-4 \alpha^2 \cos^2\theta + 1 & -4 \alpha \cos\theta \\
--4 \alpha \cos\theta & 4 \alpha^2 \cos^2\theta + 1 \\
+4 \alpha^2 C_\theta^2 + 1 & -4 \alpha C_\theta \\
+-4 \alpha C_\theta & 4 \alpha^2 C_\theta^2 + 1 \\
 \end{bmatrix}
 \begin{bmatrix}
 1 \\
@@ -190,31 +194,31 @@ The uncertainty factors are
 1 & \alpha e^{-i\theta}
 \end{bmatrix}
 \begin{bmatrix}
-4 \alpha^2 \cos^2\theta + 1 -4 \alpha^2 \cos\theta e^{i\theta} \\
--4 \alpha \cos\theta + 4 \alpha^3 \cos^2\theta e^{i\theta} + \alpha e^{i\theta} \\
+4 \alpha^2 C_\theta^2 + 1 -4 \alpha^2 C_\theta e^{i\theta} \\
+-4 \alpha C_\theta + 4 \alpha^3 C_\theta^2 e^{i\theta} + \alpha e^{i\theta} \\
 \end{bmatrix}
 =
 \frac{\Hbar^2}{4}
 \lr{
-4 \alpha^2 \cos^2\theta + 1 -4 \alpha^2 \cos\theta e^{i\theta}
--4 \alpha^2 \cos\theta e^{-i\theta} + 4 \alpha^4 \cos^2\theta + \alpha^2
+4 \alpha^2 C_\theta^2 + 1 -4 \alpha^2 C_\theta e^{i\theta}
+-4 \alpha^2 C_\theta e^{-i\theta} + 4 \alpha^4 C_\theta^2 + \alpha^2
 }
 =
 \frac{\Hbar^2}{4}
 \lr{
-4 \alpha^2 \cos^2\theta + 1 -8 \alpha^2 \cos^2\theta
-+ 4 \alpha^4 \cos^2\theta + \alpha^2
+4 \alpha^2 C_\theta^2 + 1 -8 \alpha^2 C_\theta^2
++ 4 \alpha^4 C_\theta^2 + \alpha^2
 }
 =
 \frac{\Hbar^2}{4}
 \lr{
--4 \alpha^2 \cos^2\theta + 1
-+ 4 \alpha^4 \cos^2\theta + \alpha^2
+-4 \alpha^2 C_\theta^2 + 1
++ 4 \alpha^4 C_\theta^2 + \alpha^2
 }
 =
 \frac{\Hbar^2}{4}
 \lr{
-4 \alpha^2 \cos^2\theta \lr{ \alpha^2 - 1 }
+4 \alpha^2 C_\theta^2 \lr{ \alpha^2 - 1 }
 + \alpha^2 + 1
 }
 ,
@@ -230,8 +234,8 @@ and
 1 & \alpha e^{-i\theta}
 \end{bmatrix}
 \begin{bmatrix}
-4 \alpha^2 \sin^2\theta + 1 & 4 \alpha i \sin\theta \\
--4 \alpha i \sin\theta & 4 \alpha^2 \sin^2\theta + 1 \\
+4 \alpha^2 S_\theta^2 + 1 & 4 \alpha i S_\theta \\
+-4 \alpha i S_\theta & 4 \alpha^2 S_\theta^2 + 1 \\
 \end{bmatrix}
 \begin{bmatrix}
 1 \\
@@ -243,25 +247,25 @@ and
 1 & \alpha e^{-i\theta}
 \end{bmatrix}
 \begin{bmatrix}
-4 \alpha^2 \sin^2\theta + 1 + 4 \alpha^2 i \sin\theta e^{i\theta} \\
--4 \alpha i \sin\theta + 4 \alpha^3 \sin^2\theta e^{i\theta} + \alpha e^{i\theta} \\
+4 \alpha^2 S_\theta^2 + 1 + 4 \alpha^2 i S_\theta e^{i\theta} \\
+-4 \alpha i S_\theta + 4 \alpha^3 S_\theta^2 e^{i\theta} + \alpha e^{i\theta} \\
 \end{bmatrix}
 =
 \frac{\Hbar^2}{4}
 \lr{
-4 \alpha^2 \sin^2\theta + 1 + 4 \alpha^2 i \sin\theta e^{i\theta}
--4 \alpha^2 i \sin\theta e^{-i\theta} + 4 \alpha^4 \sin^2\theta + \alpha^2
+4 \alpha^2 S_\theta^2 + 1 + 4 \alpha^2 i S_\theta e^{i\theta}
+-4 \alpha^2 i S_\theta e^{-i\theta} + 4 \alpha^4 S_\theta^2 + \alpha^2
 }
 =
 \frac{\Hbar^2}{4}
 \lr{
--4 \alpha^2 \sin^2\theta + 1
-+ 4 \alpha^4 \sin^2\theta + \alpha^2
+-4 \alpha^2 S_\theta^2 + 1
++ 4 \alpha^4 S_\theta^2 + \alpha^2
 }
 =
 \frac{\Hbar^2}{4}
 \lr{
-4 \alpha^2 \sin^2\theta \lr{ \alpha^2 - 1}
+4 \alpha^2 S_\theta^2 \lr{ \alpha^2 - 1}
 + \alpha^2
 + 1
 }
@@ -276,11 +280,11 @@ The uncertainty product can finally be calculated
 =
 \lr{\frac{\Hbar}{2} }^4
 \lr{
-4 \alpha^2 \cos^2\theta \lr{ \alpha^2 - 1 }
+4 \alpha^2 C_\theta^2 \lr{ \alpha^2 - 1 }
 + \alpha^2 + 1
 }
 \lr{
-4 \alpha^2 \sin^2\theta \lr{ \alpha^2 - 1}
+4 \alpha^2 S_\theta^2 \lr{ \alpha^2 - 1}
 + \alpha^2
 + 1
 }
@@ -320,12 +324,12 @@ n = 0, 2, 4, 6.
 %
 At these points \( \sin^2 2\theta \) takes the values
 %
-\begin{dmath}\label{eqn:moreKet:400}
+\begin{equation}\label{eqn:moreKet:400}
 \sin^2 \lr{ 2 \frac{\pi}{4} \setlr{ 0, 2, 4, 6 } }
 =
 \sin^2 \lr{ \pi \setlr{ 0, 1, 2, 3 } }
 \in \setlr{ 0 },
-\end{dmath}
+\end{equation}
 %
 so the maximization of the uncertainty product can be reduced to that of
 %
@@ -371,18 +375,18 @@ We seek
 %
 The only real root of this polynomial is \( \alpha = 0 \), so the ket where both \( \ket{+} \) and \( \ket{-} \) are not zero that maximizes the uncertainty product is
 %
-\begin{dmath}\label{eqn:moreKet:460}
+\begin{equation}\label{eqn:moreKet:460}
 \ket{s} =
 \begin{bmatrix}
 1 \\
 0
 \end{bmatrix}
 = \ket{+}.
-\end{dmath}
+\end{equation}
 %
 The search for this maximizing value excluded those kets proportional to \( \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \ket{-} \).  Let's see the values of this uncertainty product at both \( \ket{\pm} \), and compare to the uncertainty commutator.  First \( \ket{s} = \ket{+} \)
 %
-\begin{dmath}\label{eqn:moreKet:480}
+\begin{equation}\label{eqn:moreKet:480}
 \expectation{S_x}
 =
 \begin{bmatrix}
@@ -394,9 +398,9 @@ The search for this maximizing value excluded those kets proportional to \( \beg
 \end{bmatrix}
 =
 0.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:moreKet:500}
+\begin{equation}\label{eqn:moreKet:500}
 \expectation{S_y}
 =
 \begin{bmatrix}
@@ -408,11 +412,11 @@ The search for this maximizing value excluded those kets proportional to \( \beg
 \end{bmatrix}
 =
 0.
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:moreKet:520}
+\begin{equation}\label{eqn:moreKet:520}
 \expectation{ \lr{ \Delta S_x }^2 }
 =
 \lr{\frac{\Hbar}{2}}^2
@@ -424,9 +428,9 @@ so
 \end{bmatrix}
 =
 \lr{\frac{\Hbar}{2}}^2
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:moreKet:540}
+\begin{equation}\label{eqn:moreKet:540}
 \expectation{ \lr{ \Delta S_y }^2 }
 =
 \lr{\frac{\Hbar}{2}}^2
@@ -438,7 +442,7 @@ so
 \end{bmatrix}
 =
 \lr{\frac{\Hbar}{2}}^2.
-\end{dmath}
+\end{equation}
 %
 For the commutator side of the uncertainty relation we have
 %
@@ -461,17 +465,17 @@ For the commutator side of the uncertainty relation we have
 %
 so for the \( \ket{+} \) state we have an equality condition for the uncertainty relation
 %
-\begin{dmath}\label{eqn:moreKet:580}
+\begin{equation}\label{eqn:moreKet:580}
 \expectation{\lr{\Delta S_x}^2}
 \expectation{\lr{\Delta S_y}^2}
 =
 \inv{4} \Abs{ \expectation{\antisymmetric{S_x}{S_y}}}^2
 =
 \lr{ \frac{\Hbar}{2} }^4.
-\end{dmath}
+\end{equation}
 %
 It's reasonable to guess that the \( \ket{-} \) state also matches the equality condition.  Let's check
-\begin{dmath}\label{eqn:moreKet:600}
+\begin{equation}\label{eqn:moreKet:600}
 \expectation{S_x}
 =
 \begin{bmatrix}
@@ -483,9 +487,9 @@ It's reasonable to guess that the \( \ket{-} \) state also matches the equality 
 \end{bmatrix}
 =
 0.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:moreKet:620}
+\begin{equation}\label{eqn:moreKet:620}
 \expectation{S_y}
 =
 \begin{bmatrix}
@@ -497,14 +501,13 @@ It's reasonable to guess that the \( \ket{-} \) state also matches the equality 
 \end{bmatrix}
 =
 0.
-\end{dmath}
+\end{equation}
 %
 so \( \expectation{ \lr{ \Delta S_x }^2 } = \expectation{ \lr{ \Delta S_y }^2 } = \lr{\frac{\Hbar}{2}}^2 \).
 
 For the commutator side of the uncertainty relation will be identical, so the equality of \cref{eqn:moreKet:580} is satisfied for both \( \ket{\pm} \).  Note that it wasn't explicitly verified that \( \ket{-} \) maximized the uncertainty product, but I don't feel like working through that second set of algebraic mess.
 
 We can see by example that equality does not mean that the equality condition means that the product is maximized.  For example, it is straightforward to show that \( \ket{ S_x ; \pm } \) also satisfy the equality condition of the uncertainty relation.  However, in that case the product is not maximized, but is zero.
-
 } % answer
 
 \makeoproblem{Degenerate ket space example.}{problem:moreKet:23}{\citep{sakurai2014modern} pr. 1.23}{
