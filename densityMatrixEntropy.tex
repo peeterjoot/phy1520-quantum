@@ -24,7 +24,7 @@ In the class notes and the text \citep{sakurai2014modern} the Von Neumann entrop
 \begin{dmath}\label{eqn:densityMatrixEntropy:20}
 S = -\tr(\rho \ln \rho).
 \end{dmath}
-
+%
 In one of our problems I had trouble evaluating this, having calculated a density operator matrix representation
 %
 \begin{dmath}\label{eqn:densityMatrixEntropy:40}
@@ -49,7 +49,7 @@ and
 0 & 0
 \end{bmatrix}.
 \end{dmath}
-
+%
 The usual method of evaluating a function of a matrix is to assume the function has a power series representation, and that a similarity transformation of the form \( A = E \wedge E^{-1} \) is possible, so that
 %
 \begin{dmath}\label{eqn:densityMatrixEntropy:80}
@@ -74,7 +74,7 @@ however, when attempting to do this with the matrix of \cref{eqn:densityMatrixEn
 1 & -1
 \end{bmatrix}.
 \end{dmath}
-
+%
 The \( \ln 0 \) makes the evaluation of this matrix logarithm rather unpleasant.  To give meaning to the entropy expression, we have to do two things, the first is treating the trace operation as a higher precedence than the logarithms that it contains.  That is
 %
 \begin{dmath}\label{eqn:densityMatrixEntropy:140}
@@ -90,7 +90,7 @@ The \( \ln 0 \) makes the evaluation of this matrix logarithm rather unpleasant.
 =
 - \sum_k \wedge_{kk} \ln \wedge_{kk}.
 \end{dmath}
-
+%
 Now the matrix of the logarithm need not be evaluated, but we still need to give meaning to \( \wedge_{kk} \ln \wedge_{kk} \) for zero diagonal entries.  This can be done by considering a limiting scenario
 %
 \begin{dmath}\label{eqn:densityMatrixEntropy:160}
@@ -102,7 +102,7 @@ Now the matrix of the logarithm need not be evaluated, but we still need to give
 =
 0.
 \end{dmath}
-
+%
 The entropy can now be expressed in the unambiguous form, summing over all the non-zero eigenvalues of the density operator
 %
 %\begin{dmath}\label{eqn:densityMatrixEntropy:180}
@@ -110,5 +110,5 @@ The entropy can now be expressed in the unambiguous form, summing over all the n
 S = - \sum_{ \wedge_{kk} \ne 0} \wedge_{kk} \ln \wedge_{kk}.
 }
 %\end{dmath}
-
+%
 %\EndArticle

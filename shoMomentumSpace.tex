@@ -35,7 +35,7 @@ show that
 \begin{dmath}\label{eqn:shoMomentumSpace:40}
 \bra{p'} x \ket{\alpha} = i \Hbar \PD{p'}{} \braket{p'}{\alpha}.
 \end{dmath}
-
+%
 Use this to find the momentum space representation of the Schr\"{o}dinger equation for the one dimensional SHO and the energy eigenfunctions in their momentum representation.
 
 } % problem
@@ -83,7 +83,7 @@ with the momentum representation
 \begin{dmath}\label{eqn:shoMomentumSpace:100}
 i \Hbar \PD{t}{} \braket{p'}{\alpha} = \bra{p'} H \ket{\alpha}.
 \end{dmath}
-
+%
 Expansion of the Hamiltonian matrix element for a strictly spatial dependent potential \( V(x) \) gives
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:120}
@@ -94,14 +94,14 @@ Expansion of the Hamiltonian matrix element for a strictly spatial dependent pot
 \frac{(p')^2}{2m}
 + \bra{p'} V(x) \ket{\alpha}.
 \end{dmath}
-
+%
 Assuming a Taylor representation of the potential \( V(x) = \sum c_k x^k \), we want to calculate
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:140}
 \bra{p'} V(x) \ket{\alpha}
 = \sum c_k \bra{p'} x^k \ket{\alpha}.
 \end{dmath}
-
+%
 With \( \ket{\alpha} = \ket{p''} \) \cref{eqn:shoMomentumSpace:40} provides the \( k = 1 \) term
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:160}
@@ -126,7 +126,7 @@ i \Hbar
 =
 \lr{ i \Hbar }^2 \frac{d^2}{d(p')^2} \braket{p'}{\alpha}.
 \end{dmath}
-
+%
 This means that the potential matrix element is
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:200}
@@ -135,7 +135,7 @@ This means that the potential matrix element is
 \sum c_k \lr{ i \Hbar \frac{d}{dp'} }^k \braket{p'}{\alpha}
 = V\lr{ i \Hbar \frac{d}{dp'} }.
 \end{dmath}
-
+%
 Writing \( \Psi_\alpha(p') = \braket{p'}{\alpha} \), the momentum space representation of Schr\"{o}dinger's equation for a position dependent potential is
 %
 %\begin{dmath}\label{eqn:shoMomentumSpace:220}
@@ -145,7 +145,7 @@ i \Hbar \PD{t}{} \Psi_\alpha(p')
 \lr{ \frac{(p')^2}{2m} + V\lr{ i \Hbar \PDi{p'}{} } } \Psi_\alpha(p').
 }
 %\end{dmath}
-
+%
 For the SHO Hamiltonian the potential is \( V(x) = (1/2) m \omega^2 x^2 \), so the Schr\"{o}dinger equation is
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:240}
@@ -155,7 +155,7 @@ i \Hbar \PD{t}{} \Psi_\alpha(p')
 =
 \inv{2 m} \lr{ (p')^2 - m^2 \omega^2 \Hbar^2 \frac{\partial^2}{\partial(p')^2} } \Psi_\alpha(p').
 \end{dmath}
-
+%
 To determine the wave functions, let's non-dimensionalize this and compare to the position space Schr\"{o}dinger equation.  Let
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:260}
@@ -173,7 +173,7 @@ i \Hbar \PD{t}{} \Psi_\alpha(p')
 \lr{\frac{p'}{p_0}}^2
 } \Psi_\alpha(p').
 \end{dmath}
-
+%
 Compare this to the position space equation with \( x_0^2 = m \omega/\Hbar \),
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:300}
@@ -206,7 +206,7 @@ i \Hbar \PD{t}{} \Psi_\alpha(x')
 }
 \Psi_\alpha(x').
 \end{dmath}
-
+%
 It's clear that there is a straightforward duality relationship between the respective wave functions.  Since
 %
 \begin{dmath}\label{eqn:shoMomentumSpace:320}
@@ -221,7 +221,7 @@ the momentum space wave functions are
 \braket{p'}{n} =
 \inv{\pi^{1/4} \sqrt{2^n n!} p_0^{n + 1/2}}  \lr{ p' - p_0^2 \frac{d}{dp'} }^n \exp\lr{ -\inv{2} \lr{\frac{p'}{p_0}}^2 }.
 \end{dmath}
-
+%
 } % answer
 
 %\EndArticle

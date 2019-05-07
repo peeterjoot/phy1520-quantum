@@ -42,7 +42,7 @@ find the probability current defined by
 \begin{dmath}\label{eqn:gaugeTxCurrent:60}
 \PD{t}{\psi} + \spacegrad \cdot \Bj.
 \end{dmath}
-
+%
 \makesubproblem{}{problem:gaugeTxCurrent:1:b}
 Once obtained, let use a \( \psi = \sqrt{\rho} e^{i S/\Hbar} \) wavefunction representation, and find the corresponding form for the probability current.
 
@@ -80,7 +80,7 @@ i \Hbar \psi \PD{t}{\psi^\conj}
 -\psi \BPi^\conj \cdot \BPi^\conj \psi^\conj
 }.
 \end{dmath}
-
+%
 We have a difference of conjugates, so can get away with expanding just the first term
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:100}
@@ -100,7 +100,7 @@ We have a difference of conjugates, so can get away with expanding just the firs
 }
 \psi.
 \end{dmath}
-
+%
 Note that in the directional derivative terms, the gradient operates on everything to its right, including \( \BA \).  Also note that the last term has no imaginary component, so it will not contribute to the difference of conjugates.
 
 This gives
@@ -146,7 +146,7 @@ The first term is recognized as a divergence
 \spacegrad \psi^\conj \cdot \spacegrad \psi
 = \psi^\conj \spacegrad^2 \psi - \psi \spacegrad^2 \psi^\conj.
 \end{dmath}
-
+%
 The second term can also be factored into a divergence operation
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:160}
@@ -200,7 +200,7 @@ Putting all the pieces back together we have
 + \frac{e}{m c} \BA \psi \psi^\conj
 }.
 \end{dmath}
-
+%
 From \cref{eqn:gaugeTxCurrent:60}, the probability current must be
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:200}
@@ -219,7 +219,7 @@ or
 - \frac{e}{m c} \BA \psi \psi^\conj.
 }
 %\end{dmath}
-
+%
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:b}
 
 To find the \( \psi = \sqrt{\rho} e^{i S/\Hbar} \) form of the current, note that
@@ -234,7 +234,7 @@ so
 =
 \sqrt{\rho} \spacegrad \sqrt{\rho} + \frac{ i \rho}{\Hbar} \spacegrad S.
 \end{dmath}
-
+%
 Discarding the real part of this product, we have
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:280}
@@ -248,7 +248,7 @@ or
 \Bj = \frac{\rho}{m} \lr{ \spacegrad S - \frac{e}{c} \BA }.
 }
 %\end{dmath}
-
+%
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:c}
 Finally, note that
 %
@@ -263,7 +263,7 @@ so
 = \frac{\Hbar}{m} \Imag \lr{ \braket{\Psi}{\Bx} \lr{ \frac{i}{ \Hbar} } \bra{\Bx} \Bp \ket{\psi} }
 - \frac{e}{m c} \BA \braket{ \psi}{\Bx} \braket{\Bx}{\psi}.
 \end{dmath}
-
+%
 Integrating over all space to eliminate the identity operators, this is
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:360}
@@ -276,7 +276,7 @@ Integrating over all space to eliminate the identity operators, this is
 =
 \inv{m} \expectation{ \BPi }.
 \end{dmath}
-
+%
 } % answer
 
 %\EndArticle

@@ -43,7 +43,7 @@ I wasn't able to make sense of this since the field I was calculating was zero f
 =
 \frac{B \rho_a^2}{2 \rho^2} \lr{ -\zcap + \phicap \cross \partial_\phi \phicap}.
 \end{dmath}
-
+%
 Note that the \( \rho \) partial requires that \( \rho \ne 0 \).  To expand the cross product in the second term let \( j = \Be_1 \Be_2 \), and expand using a Geometric Algebra representation of the unit vector
 %
 \begin{dmath}\label{eqn:solenoidConstantField:60}
@@ -60,7 +60,7 @@ Note that the \( \rho \) partial requires that \( \rho \ne 0 \).  To expand the 
 = \Be_3
 = \zcap.
 \end{dmath}
-
+%
 So, provided \( \rho \ne 0 \), \( \BB = 0 \).
 
 The errata \citep{sakurai2014modernErrata} provides the clarification, showing that a \( \rho > \rho_a \) constraint is required for this potential to produce the desired results.  Continuity at \( \rho = \rho_a \) means that in the interior (or at least on the boundary) we must have one of
@@ -74,7 +74,7 @@ or
 \begin{dmath}\label{eqn:solenoidConstantField:100}
 \BA = \frac{B \rho}{2} \phicap.
 \end{dmath}
-
+%
 The first doesn't work, but the second does
 %
 \begin{dmath}\label{eqn:solenoidConstantField:120}
@@ -88,7 +88,7 @@ The first doesn't work, but the second does
 \frac{\phicap}{\rho} \cross \partial_\phi \phicap
 = B \zcap.
 \end{dmath}
-
+%
 So the vector potential that we want for a constant \( B \zcap \) field in the interior \( \rho < \rho_a \) of a cylindrical space, we need
 %
 \begin{dmath}\label{eqn:solenoidConstantField:140}
@@ -100,7 +100,7 @@ So the vector potential that we want for a constant \( B \zcap \) field in the i
 \end{array}
 \right.
 \end{dmath}
-
+%
 An example of the magnitude of potential is graphed in \cref{fig:solenoidPotential:solenoidPotentialFig1}.
 
 \mathImageFigure{../figures/phy1520-quantum/solenoidPotentialFig1}{Vector potential for constant field in cylindrical region.}{fig:solenoidPotential:solenoidPotentialFig1}{0.3}{vectorSolenoid.jl}

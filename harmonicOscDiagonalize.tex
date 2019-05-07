@@ -34,7 +34,7 @@ The starting point is the Heisenberg equations of motion.  For a time independen
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:20}
 \ddt{A^{(H)}} = \inv{i \Hbar} \antisymmetric{A^{(H)}}{H}.
 \end{dmath}
-
+%
 Here the Heisenberg operator \( A^{(H)} \) is related to the Schr\"{o}dinger operator \( A^{(S)} \) by
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:60}
@@ -61,7 +61,7 @@ U^\dagger A^{(S)} H U
 }
 = \inv{i \Hbar} U^\dagger \antisymmetric{A^{(S)}}{H} U.
 \end{dmath}
-
+%
 The Hamiltonian for the harmonic oscillator, with Schr\"{o}dinger-picture position and momentum operators \( x, p \) is
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:40}
@@ -88,7 +88,7 @@ and
 = -m \omega^2 U^\dagger x U
 = -m \omega^2 x^{(H)}.
 \end{dmath}
-
+%
 In the Heisenberg picture the equations of motion are precisely those of classical Hamiltonian mechanics, except that we are dealing with operators instead of scalars
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:140}
@@ -97,7 +97,7 @@ In the Heisenberg picture the equations of motion are precisely those of classic
 \ddt{x^{(H)}} &= \inv{m } p^{(H)}.
 \end{aligned}
 \end{dmath}
-
+%
 In the text the ladder operators are used to simplify the solution of these coupled equations, since they can decouple them.  That's not really required since we can solve them directly in matrix form with little work
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:160}
@@ -149,7 +149,7 @@ x^{(H)}
 x^{(H)}
 \end{bmatrix}.
 \end{dmath}
-
+%
 Writing \( y = \begin{bmatrix} \frac{p^{(H)}}{m \omega} \\ x^{(H)} \end{bmatrix} \), the solution can then be written immediately as
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:200}
@@ -174,7 +174,7 @@ or
 x^{(H)}(t) &= -\sin\lr{ \omega t } \frac{p^{(H)}(0)}{m \omega} + \cos\lr{ \omega t } x^{(H)}(0).
 \end{aligned}
 \end{dmath}
-
+%
 This solution depends on being lucky enough to recognize that the matrix has a Pauli matrix as a factor (which squares to unity, and allows the exponential to be evaluated easily.)
 
 If we hadn't been that observant, then the first tool we'd have used instead would have been to diagonalize the matrix.  For such diagonalization, it's natural to work in completely dimensionless variables.  Such a non-dimensionalisation can be had by defining
@@ -194,7 +194,7 @@ and dividing the working (operator) variables through by those values.  Let \( z
 \end{bmatrix}
 z.
 \end{dmath}
-
+%
 This matrix can be diagonalized as
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:280}
@@ -222,7 +222,7 @@ i & -i \\
 1 & 1
 \end{bmatrix}.
 \end{dmath}
-
+%
 The equations of motion can now be written
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:320}
@@ -233,7 +233,7 @@ i & 0  \\
 \end{bmatrix}
 \lr{ V^{-1} z }.
 \end{dmath}
-
+%
 This final change of variables \( V^{-1} z \) decouples the system as desired.  Expanding that gives
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:340}
@@ -268,7 +268,7 @@ a^\dagger &= \sqrt{\frac{m \omega}{2 \Hbar}} \lr{ -i \frac{p^{(H)}}{m \omega} + 
 a &= \sqrt{\frac{m \omega}{2 \Hbar}} \lr{ i \frac{p^{(H)}}{m \omega} + x^{(H)} }.
 \end{aligned}
 \end{dmath}
-
+%
 Lo and behold, we have the standard form of the raising and lowering operators, and can write the system equations as
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:360}
@@ -277,7 +277,7 @@ Lo and behold, we have the standard form of the raising and lowering operators, 
 \ddt{a} &= -i \omega a.
 \end{aligned}
 \end{dmath}
-
+%
 It is actually a bit fluky that this matched exactly, since we could have chosen eigenvectors that differ by constant phase factors, like
 %
 \begin{dmath}\label{eqn:harmonicOscDiagonalize:380}
@@ -314,7 +314,7 @@ e^{i\phi} a^\dagger \\
 e^{i\psi} a
 \end{bmatrix}.
 \end{dmath}
-
+%
 To make the resulting pairs of operators Hermitian conjugates, we'd want to constrain those constant phase factors by setting \( \phi = -\psi \).  If we were only interested in solving the time evolution problem no such additional constraints are required.
 
 The raising and lowering operators are seen to naturally occur when seeking the solution of the Heisenberg equations of motion.  This is found using the standard technique of non-dimensionalisation and then seeking a change of basis that diagonalizes the system matrix.  Because the Heisenberg equations of motion are identical to the classical Hamiltonian equations of motion in this case, what we call the raising and lowering operators in quantum mechanics could also be utilized in the classical simple harmonic oscillator problem.  However, in a classical context we wouldn't have a justification to call this more than a change of basis.

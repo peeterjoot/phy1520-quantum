@@ -28,7 +28,7 @@ For a 1D SHO, show that
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:20}
 \bra{0} e^{i k x} \ket{0} = \exp\lr{ -k^2 \bra{0} x^2 \ket{0}/2 }.
 \end{dmath}
-
+%
 } % problem
 
 \makeanswer{problem:exponentialExpectationGroundState:1}{
@@ -39,7 +39,7 @@ Despite the simple appearance of this problem, I found this quite involved to sh
 =
 \sum_{m=0}^\infty \frac{(i k)^m}{m!} \bra{0} x^m \ket{0}.
 \end{dmath}
-
+%
 Let
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:60}
@@ -53,7 +53,7 @@ x
 = \sqrt{\frac{\Hbar}{2 \omega m}} X
 = \frac{x_0}{\sqrt{2}} X.
 \end{equation}
-
+%
 Consider the first few values of \( \bra{0} X^n \ket{0} \)
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:100}
@@ -85,7 +85,7 @@ Consider the first few values of \( \bra{0} X^n \ket{0} \)
 =
 0.
 \end{dmath}
-
+%
 Whenever the power \( n \) in \( X^n \) is even, the braket can be split into a bra that has only contributions from odd eigenstates and a ket with even eigenstates.  We conclude that \( \bra{0} X^n \ket{0} = 0 \) when \( n \) is odd.
 
 Noting that \( \bra{0} x^2 \ket{0} = \ifrac{x_0^2}{2} \), this leaves
@@ -99,7 +99,7 @@ Noting that \( \bra{0} x^2 \ket{0} = \ifrac{x_0^2}{2} \), this leaves
 =
 \sum_{m=0}^\infty \frac{1}{(2 m)!} \lr{ -k^2 \bra{0} x^2 \ket{0} }^m \bra{0} X^{2m} \ket{0}.
 \end{dmath}
-
+%
 This problem is now reduced to showing that
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:180}
@@ -129,7 +129,7 @@ It looks like \( \bra{0} X^{2m} \ket{0} \) can be expanded by inserting an ident
 =
 \bra{0} X^{2m-2} \ket{0} + \bra{0} X^2 \ket{2} \bra{2} X^{2m-2} \ket{0}.
 \end{dmath}
-
+%
 This has made use of the observation that \( \bra{0} X^2 \ket{n} = 0 \) for all \( n \ne 0,2 \).  The remaining term includes the factor
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:240}
@@ -149,7 +149,7 @@ Since \( \sqrt{2} \ket{2} = \lr{a^\dagger}^2 \ket{0} \), the expectation of inte
 =
 \bra{0} X^{2m-2} \ket{0} + \bra{0} a^2 X^{2m-2} \ket{0}.
 \end{dmath}
-
+%
 How do we expand the second term.  Let's look at how \( a \) and \( X \) commute
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:280}
@@ -177,7 +177,7 @@ a + \lr{ 1 + X a } a
 =
 2 a + X a^2.
 \end{dmath}
-
+%
 Proceeding to expand \( a^2 X^n \) we find
 \begin{equation}\label{eqn:exponentialExpectationGroundState:320}
 \begin{aligned}
@@ -187,7 +187,7 @@ a^2 X^5 &= 20 X^3 + 10 X^4 a + X^5 a^2 \\
 a^2 X^6 &= 30 X^4 + 12 X^5 a + X^6 a^2.
 \end{aligned}
 \end{equation}
-
+%
 It appears that we have
 \begin{equation}\label{eqn:exponentialExpectationGroundState:340}
 \antisymmetric{a^2 X^n}{X^n a^2} = \beta_n X^{n-2} + 2 n X^{n-1} a,
@@ -204,7 +204,7 @@ and \( \beta_2 = 2 \).  Some goofing around shows that \( \beta_n = n(n-1) \), s
 \begin{equation}\label{eqn:exponentialExpectationGroundState:380}
 \antisymmetric{a^2 X^n}{X^n a^2} = n(n-1) X^{n-2} + 2 n X^{n-1} a.
 \end{equation}
-
+%
 Let's check the induction
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:400}
 a^2 X^{n+1}
@@ -239,7 +239,7 @@ and
 =
 \bra{0} X^{2m-2} \ket{0} + (2m-2)(2m-3) \bra{0} X^{2m-4} \ket{0}.
 \end{dmath}
-
+%
 Let
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:460}

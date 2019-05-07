@@ -48,7 +48,7 @@ The left hand side can be expanded as the evolution of the state as found at tim
 =
 \Theta^{-1} e^{-i \hatH t/\Hbar} \Theta \ket{\Psi(0)}.
 \end{dmath}
-
+%
 To first order for a small time increment \( \delta t \), we have
 %
 \begin{dmath}\label{eqn:qmLecture13:80}
@@ -63,7 +63,7 @@ i \frac{\hatH}{\Hbar} \delta t \ket{\Psi(0)}
 =
 \Theta^{-1} (- i) \frac{\hatH}{\Hbar} \delta t \Theta \ket{\Psi(0)}.
 \end{dmath}
-
+%
 Since this holds for any state \( \ket{\Psi(0)} \), the time reversal operator satisfies
 %
 \begin{dmath}\label{eqn:qmLecture13:140}
@@ -71,7 +71,7 @@ i \hatH
 =
 \Theta^{-1} (- i) \hatH \Theta.
 \end{dmath}
-
+%
 Note that the factors of \( i \) have not been canceled on purpose, since we are allowing for the time reversal operator to not necessarily commute with imaginary numbers.
 
 There are two possible solutions
@@ -91,7 +91,7 @@ or
 =
 - \hatH \Theta.
 \end{dmath}
-
+%
 Consider the implications of this on energy eigenstates
 \begin{dmath}\label{eqn:qmLecture13:200}
 \hatH \ket{\Psi_n} = E_n \ket{\Psi_n},
@@ -112,7 +112,7 @@ or
 \begin{dmath}\label{eqn:qmLecture13:260}
 \hatH \lr{ \Theta \ket{\Psi_n}} = -E_n \lr{ \Theta \ket{\Psi_n} }.
 \end{dmath}
-
+%
 This would mean that \( \lr{ \Theta \ket{\Psi_n}} \) is an eigenket of \( \hatH \), but with a negative energy eigenvalue.
 
 \item \( \Theta \) is antiunitary, where \( \Theta i = -i \Theta \).
@@ -127,7 +127,7 @@ so
 \begin{dmath}\label{eqn:qmLecture13:300}
 \Theta \hatH = \hatH \Theta.
 \end{dmath}
-
+%
 Acting on an energy eigenket, we've got
 %
 \begin{dmath}\label{eqn:qmLecture13:1400}
@@ -177,7 +177,7 @@ i \Hbar \Theta^{-1} \Theta \PD{x}{}
 =
 -\hatp.
 \end{dmath}
-
+%
 How about the \( x,p \) commutator?  For that we have
 %
 \begin{dmath}\label{eqn:qmLecture13:380}
@@ -189,7 +189,7 @@ How about the \( x,p \) commutator?  For that we have
 =
 - \antisymmetric{\hatx}{\hatp}.
 \end{dmath}
-
+%
 For the the angular momentum operators
 %
 \begin{dmath}\label{eqn:qmLecture13:420}
@@ -214,7 +214,7 @@ Consider two spin states \( \ket{\uparrow}, \ket{\downarrow} \).  What should th
 \Theta \ket{\downarrow} &\questionEquals \ket{\uparrow}.
 \end{aligned}
 \end{dmath}
-
+%
 Given a general state
 so that if
 %
@@ -227,7 +227,7 @@ the action of the time reversal operator would be
 \begin{equation}\label{eqn:qmLecture13:760}
 \Theta \ket{\Psi} = a^\conj \ket{\downarrow} + b^\conj \ket{\uparrow}.
 \end{equation}
-
+%
 That action is:
 %
 \begin{equation}\label{eqn:qmLecture13:460}
@@ -242,13 +242,13 @@ Let's consider whether or not such an action a spin operator with properties
 \begin{dmath}\label{eqn:qmLecture13:480}
 \antisymmetric{\hatS_i}{\hatS_j} = i \epsilon_{ijk} \hatS_k.
 \end{dmath}
-
+%
 produce the desired inversion of sign
 %
 \begin{dmath}\label{eqn:qmLecture13:500}
 \Theta^{-1} \hatS_i \Theta = - \hatS_i.
 \end{dmath}
-
+%
 The expectations of the spin operators (without any application of time reversal) are
 %
 \begin{dmath}\label{eqn:qmLecture13:1440}
@@ -400,7 +400,7 @@ now try the action
 \begin{equation}\label{eqn:qmLecture13:780}
 \Theta \ket{\Psi} = a^\conj \ket{\downarrow} - b^\conj \ket{\uparrow}.
 \end{equation}
-
+%
 This is the action:
 %
 \begin{equation}\label{eqn:qmLecture13:600}
@@ -429,7 +429,7 @@ Note that acting the time reversal operator twice has the effects
 \begin{dmath}\label{eqn:qmLecture13:680}
 \Theta^2 \ket{\downarrow} = \Theta (-\ket{\uparrow}) = - \ket{\uparrow}.
 \end{dmath}
-
+%
 We end up with the same state we started with, but with the opposite sign.  This means that as an operator
 
 \index{time reversal!squared}
@@ -438,7 +438,7 @@ We end up with the same state we started with, but with the opposite sign.  This
 \Theta^2 = -1.
 }
 %\end{dmath}
-
+%
 This is try for half integer particles (Fermions) \( S = 1/2, 3/2, 5/2, \cdots \), but for Bosons with integer spin \( S \).
 %
 %\begin{dmath}\label{eqn:qmLecture13:720}
@@ -446,7 +446,7 @@ This is try for half integer particles (Fermions) \( S = 1/2, 3/2, 5/2, \cdots \
 \Theta^2 = 1.
 }
 %\end{dmath}
-
+%
 \paragraph{Kramer's degeneracy for Spin 1/2 (Fermions)}
 
 \index{spin half!time reversal}
@@ -457,7 +457,7 @@ Suppose we imagine there is state for which the action of the time reversal oper
 \ket{\psi}' = \Theta \ket{\psi}
 = e^{i \delta} \ket{\psi}.
 \end{equation}
-
+%
 For a Fermion we have
 \begin{dmath}\label{eqn:qmLecture13:840}
 \Theta^2 \ket{\psi} = -\ket{\psi},
@@ -478,7 +478,7 @@ e^{-i \delta} e^{i \delta} \ket{\psi}
 \ne
 - \ket{\psi}.
 \end{dmath}
-
+%
 This is a contradiction, so we must have at least a two-fold degeneracy.  This is called \textAndIndex{Kramer's degeneracy}.  In the homework we will show that this is not the case for integer spin particles.
 
 \paragraph{Time reversal implications for wave functions}

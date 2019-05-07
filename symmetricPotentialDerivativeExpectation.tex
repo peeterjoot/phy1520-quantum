@@ -54,12 +54,12 @@ since \( H \) operating to either the right or the left is the energy eigenvalue
 \frac{\Bp^2}{2m}
 = \inv{2 m r^2} \BL^2 - \frac{\Hbar^2}{2m} \lr{ \PDSq{r}{} + \frac{2}{r} \PD{r}{} }.
 \end{dmath}
-
+%
 With
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:80}
 R = - \frac{\Hbar^2}{2m} \lr{ \PDSq{r}{} + \frac{2}{r} \PD{r}{} }.
 \end{dmath}
-
+%
 we have
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:100}
@@ -69,7 +69,7 @@ we have
 = \bra{nlm} \antisymmetric{\inv{2 m r^2} \BL^2 + R + V(r)}{p_r} \ket{nlm}
 = \bra{nlm} \antisymmetric{\frac{-\Hbar^2 l (l+1)}{2 m r^2} + R + V(r)}{p_r} \ket{nlm}.
 \end{dmath}
-
+%
 Let's consider the commutator of each term separately.  First
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:120}
@@ -90,7 +90,7 @@ V p_r \psi
 =
 i \Hbar \PD{r}{V} \psi.
 \end{dmath}
-
+%
 Setting \( V(r) = 1/r^2 \), we also have
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:160}
@@ -98,7 +98,7 @@ Setting \( V(r) = 1/r^2 \), we also have
 =
 -\frac{2 i \Hbar}{r^3} \psi.
 \end{dmath}
-
+%
 Finally
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:180}
 \antisymmetric{\PDSq{r}{} + \frac{2}{r} \PD{r}{} }{ \PD{r}{}}
@@ -122,7 +122,7 @@ so
 =-\frac{2}{r^2} \frac{-\Hbar^2}{2m} p_r
 =\frac{\Hbar^2}{m r^2} p_r.
 \end{dmath}
-
+%
 Putting all the pieces back together, we've got
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:220}
 0
@@ -135,7 +135,7 @@ i \Hbar
 }
 \ket{nlm}.
 \end{dmath}
-
+%
 Since s-states are those for which \( l = 0 \), this means
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:240}
@@ -150,7 +150,7 @@ Since s-states are spherically symmetric, this is
 \expectation{\PD{r}{V}}
 = \frac{4 \pi \Hbar^2}{m } \int_0^\infty dr \psi^\conj \PD{r}{\psi}.
 \end{dmath}
-
+%
 That integral is
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:280}
@@ -158,7 +158,7 @@ That integral is
 =
 \evalrange{\Abs{\psi}^2}{0}{\infty} - \int_0^\infty dr \PD{r}{\psi^\conj} \psi.
 \end{dmath}
-
+%
 With the hydrogen atom, our radial wave functions are real valued.  It's reasonable to assume that we can do the same for other real-valued spherical potentials.  If that is the case, we have
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:300}
@@ -203,7 +203,7 @@ Z e^2 \frac{Z^2}{n^3 a_0^2 \lr{ l + 1/2 }}
 =
 \frac{2 \Hbar^2 Z^3}{m n^3 a_0^3}.
 \end{dmath}
-
+%
 On the other hand for \( n = 1 \), we have
 %
 \begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:380}
@@ -223,7 +223,7 @@ and for \( n = 2 \), we have
 =
 \frac{\Hbar^2 Z^3}{4 m a_0^3}.
 \end{dmath}
-
+%
 These both match the potential derivative expectation when evaluated for the s-orbital (\( l = 0 \)).
 
 In \nbref{sakuraiProblem5.16bSHO.nb} is a verification for the 3D SHO ground state.  There it was found that

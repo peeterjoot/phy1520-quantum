@@ -46,7 +46,7 @@ so
 \begin{dmath}\label{eqn:qmSchwartz:60}
 1 \ge \Real \braket{a}{b}.
 \end{dmath}
-
+%
 Similarly
 %
 \begin{dmath}\label{eqn:qmSchwartz:80}
@@ -60,7 +60,7 @@ so
 \begin{dmath}\label{eqn:qmSchwartz:100}
 \Real \braket{a}{b} \ge -1.
 \end{dmath}
-
+%
 This means that for normalized state vectors
 %
 \begin{equation}\label{eqn:qmSchwartz:120}
@@ -71,13 +71,13 @@ or
 \begin{dmath}\label{eqn:qmSchwartz:140}
 \Abs{\Real \braket{a}{b}} \le 1.
 \end{dmath}
-
+%
 %Because this bra-ket is just a complex number, we must also have
 %
 %\begin{equation}\label{eqn:qmSchwartz:160}
 %1 \ge \Abs{\Real \braket{a}{b}} \ge \Abs{\braket{a}{b}}.
 %\end{equation}
-
+%
 Writing out the unit vectors explicitly, that last inequality is
 %
 \begin{dmath}\label{eqn:qmSchwartz:180}
@@ -93,7 +93,7 @@ squaring and rearranging gives
 \braket{a}{a}
 \braket{b}{b}.
 \end{dmath}
-
+%
 This is similar to, but not identical to the Schwartz inequality.  Since \( \Abs{\Real \braket{a}{b}} \le \Abs{\braket{a}{b}} \) the Schwartz inequality cannot be demonstrated with this argument.  This first year algebra method works nicely for demonstrating the inequality for real vector spaces, so a different argument is required for a complex vector space (i.e. quantum mechanics state space.)
 
 \paragraph{Arguing with projected and rejected components}
@@ -113,7 +113,7 @@ or
 \alpha =
 \frac{\braket{a}{b} }{ \braket{a}{a} }.
 \end{dmath}
-
+%
 Therefore, the projection of \( \ket{b} \) on \( \ket{a} \) is
 %
 \begin{equation}\label{eqn:qmSchwartz:260}
@@ -121,20 +121,20 @@ Therefore, the projection of \( \ket{b} \) on \( \ket{a} \) is
 = \frac{\braket{a}{b} }{ \braket{a}{a} } \ket{a}
 = \frac{\braket{b}{a}^\conj }{ \braket{a}{a} } \ket{a}.
 \end{equation}
-
+%
 The conventional way to write this in QM is in the operator form
 %
 \begin{dmath}\label{eqn:qmSchwartz:300}
 \Proj_{\ket{a}} \ket{b}
 = \frac{\ket{a}\bra{a}}{\braket{a}{a}} \ket{b}.
 \end{dmath}
-
+%
 In this form the rejection of \( \ket{a} \) from \( \ket{b} \) can be expressed as
 %
 \begin{dmath}\label{eqn:qmSchwartz:280}
 \RejName_{\ket{a}} \ket{b} = \ket{b} - \frac{\ket{a}\bra{a}}{\braket{a}{a}} \ket{b}.
 \end{dmath}
-
+%
 This state vector is normal to \( \ket{a} \) as desired
 %
 \begin{dmath}\label{eqn:qmSchwartz:320}
@@ -143,7 +143,7 @@ This state vector is normal to \( \ket{a} \) as desired
 \braket{a}{ b}  - \frac{ \braket{a}{b} }{ \cancel{\braket{a}{a}} } \cancel{\braket{a}{a}}
 = 0.
 \end{dmath}
-
+%
 How about it's length?  That is
 %
 \begin{equation}\label{eqn:qmSchwartz:340}
@@ -155,13 +155,13 @@ How about it's length?  That is
 \braket{b}{b} - \frac{\Abs{\braket{a}{b}}^2}{\braket{a}{a}}.
 \end{aligned}
 \end{equation}
-
+%
 Observe that this must be greater to or equal to zero, so
 %
 \begin{equation}\label{eqn:qmSchwartz:360}
 \braket{b}{b} \ge \frac{ \Abs{ \braket{a}{b} }^2 }{ \braket{a}{a} }.
 \end{equation}
-
+%
 Rearranging this gives \cref{eqn:qmSchwartz:20} as desired.  The Schwartz proof in \citep{sakurai2014modern} obscures the geometry involved and starts with
 %
 \begin{dmath}\label{eqn:qmSchwartz:380}

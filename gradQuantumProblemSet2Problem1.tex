@@ -66,7 +66,7 @@ a \ket{z}
 =
 \sum_{n=0}^\infty c_{n} z \ket{n}.
 \end{dmath}
-
+%
 Equating like terms provides a recurrence relation for \( c_n \)
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:60}
@@ -95,7 +95,7 @@ or
 = c_0
 \sum_{n=0}^\infty \frac{z^n}{\sqrt{n!}} \ket{n}.
 \end{dmath}
-
+%
 A similar recurrence relation can be constructed for \( \ket{n} \)
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:140}
@@ -140,7 +140,7 @@ The normalization follows nicely from the \cref{eqn:gradQuantumProblemSet2Proble
 &= 1.
 \end{aligned}
 \end{dmath}
-
+%
 Picking a real value for the constant provides a z-dependent normalization for the state
 %
 \boxedEquation{eqn:gradQuantumProblemSet2Problem1:220}{
@@ -151,7 +151,7 @@ or
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:240}
 \ket{z} = e^{-\Abs{z}^2/2 + a^\dagger z} \ket{0}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:1b}
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:260}
@@ -171,7 +171,7 @@ e^{-\Abs{z}^2/2 -\Abs{z'}^2/2 }
 \exp\lr{ -\Abs{z}^2/2 -\Abs{z'}^2/2 + z^\conj z' }.
 \end{aligned}
 \end{dmath}
-
+%
 This can be rewritten in terms of the absolute difference between the two z values
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:280}
@@ -259,7 +259,7 @@ and
 =
 \frac{m \Hbar \omega}{2} \lr{ 1 - (z - z^\conj)^2 }.
 \end{dmath}
-
+%
 As a check against what was stated in class, observe that the minimum uncertainty are satisfied
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:400}
@@ -282,7 +282,7 @@ so we have
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:440}
 \Delta x \Delta p = \frac{\Hbar}{2}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:1d}
 
 Suppose that \( \setlr{ \ket{\psi} } \) is a basis for the observable \( A \).  In the Heisenberg picture the matrix element for that operator is
@@ -295,7 +295,7 @@ Suppose that \( \setlr{ \ket{\psi} } \) is a basis for the observable \( A \).  
 \sum_{\psi'',\psi'''}
 \bra{\psi} e^{i H t/\Hbar} \ket{\psi''} \bra{\psi''} A \ket{\psi'''} \bra{\psi'''} e^{-i H t/\Hbar} \ket{\psi'}.
 \end{dmath}
-
+%
 This product of three matrix elements has the structure of a similarity transformation \( \tilde{U}^\dagger \tilde{A} \tilde{U} \), where \( \tilde{U} \) is the matrix element of the time evolution operator and \( \tilde{A} \) is the matrix element of the observable \( A \).
 
 Compare this to the Schr\"{o}dinger picture matrix element with respect to time evolved states
@@ -308,7 +308,7 @@ Compare this to the Schr\"{o}dinger picture matrix element with respect to time 
 \sum_{\psi'',\psi'''}
 \bra{\psi} e^{i H t/\Hbar} \ket{\psi''} \bra{\psi''} A \ket{\psi'''} \bra{\psi'''} e^{-i H t/\Hbar} \ket{\psi'}.
 \end{dmath}
-
+%
 This has exactly the same structure as in the Heisenberg picture.  Since average quantities are matrix elements with respect to the same pair of states, this shows that measurements are independent of whether the Heisenberg or Schr\"{o}dinger picture is used to describe those measurements.
 
 \makeSubAnswer{}{gradQuantum:problemSet2:1e}
@@ -322,7 +322,7 @@ With time evolution in the mix using the Heisenberg representation of the annihi
 =
 \frac{x_0}{\sqrt{2}} \lr{ z e^{-i \omega t} + z^\conj e^{i \omega t} } .
 \end{dmath}
-
+%
 It's clear how to generalize the stationary state calculations in \partref{gradQuantum:problemSet2:1c}, and can do so by inspection
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:480}
@@ -334,7 +334,7 @@ It's clear how to generalize the stationary state calculations in \partref{gradQ
 \expectation{p^2} &= \frac{m \Hbar \omega}{2} \lr{ 1 - (z e^{-i \omega t} - z^\conj e^{i \omega t})^2 } = \expectation{p}^2 + \frac{m \Hbar \omega}{2}.
 \end{aligned}
 \end{dmath}
-
+%
 In class, symmetric and antisymmetric conjugate sums of \( z \) were identified as position and momentum, with
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:541}
@@ -343,7 +343,7 @@ x_0 &\equiv \sqrt{\frac{2 \Hbar}{m \omega}} \Real z = \sqrt{\frac{\Hbar}{2 m \om
 p_0 &\equiv \sqrt{2 m \Hbar \omega} \Imag z = -i \sqrt{\frac{m \Hbar \omega}{2}} \lr{ z - z^\conj }.
 \end{aligned}
 \end{dmath}
-
+%
 With that identification the expectation values above are
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:481}
@@ -362,7 +362,7 @@ The Poisson distribution has the form
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:581}
 P(n) = \frac{\mu^{n} e^{-\mu}}{n!}.
 \end{dmath}
-
+%
 Here \( \mu \) is the mean of the distribution
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:601}
@@ -373,7 +373,7 @@ Here \( \mu \) is the mean of the distribution
 = \mu e^{-\mu} e^{\mu}
 = \mu.
 \end{dmath}
-
+%
 We found that the coherent state had the form
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:621}
@@ -387,7 +387,7 @@ P(n)
 = c_0^2 \frac{\Abs{z^n}^2}{n!}
 = e^{-\Abs{z}^2} \frac{\Abs{z^n}^2}{n!}.
 \end{dmath}
-
+%
 This has the structure of the Poisson distribution with mean \( \mu = \Abs{z}^2 \).  The most probable value of \( n \) is that for which \( \Abs{f(n)}^2 \) is the largest.  This is, in general, hard to compute, since we have a maximization problem in the integer domain that falls outside the normal toolbox.  If we assume that \( n \) is large, so that Stirling's approximation can be used to approximate the factorial, and also seek a non-integer value that maximizes the distribution, the most probable value will be the closest integer to that, and this can be computed.  Let
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:661}
@@ -398,7 +398,7 @@ g(n)
 \approx e^{-\mu - n \ln n + n } \mu^n.
 = e^{-\mu - n \ln n + n + n \ln \mu }
 \end{dmath}
-
+%
 This is maximized when
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:681}

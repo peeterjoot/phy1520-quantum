@@ -48,7 +48,7 @@ For \( \Abs{x} > 0 \) Schr\"{o}dinger's equation takes the form
 \begin{dmath}\label{eqn:diracPotential:40}
 E \psi = -\frac{\Hbar^2}{2m} \frac{d^2 \psi}{dx^2}.
 \end{dmath}
-
+%
 With
 %
 \begin{dmath}\label{eqn:diracPotential:60}
@@ -61,7 +61,7 @@ this has solutions
 \begin{dmath}\label{eqn:diracPotential:80}
 \psi = e^{\pm \kappa x}.
 \end{dmath}
-
+%
 For \( x > 0 \) we must have
 \begin{dmath}\label{eqn:diracPotential:100}
 \psi = a e^{-\kappa x},
@@ -71,19 +71,19 @@ and for \( x < 0 \)
 \begin{dmath}\label{eqn:diracPotential:120}
 \psi = b e^{\kappa x}.
 \end{dmath}
-
+%
 requiring that \( \psi \) is continuous at \( x = 0 \) means \( a = b \), or
 %
 \begin{dmath}\label{eqn:diracPotential:140}
 \psi = \psi(0) e^{-\kappa \Abs{x}}.
 \end{dmath}
-
+%
 For the \( x = 0 \) region, consider an interval \( [-\epsilon, \epsilon] \) region around the origin.  We must have
 %
 \begin{dmath}\label{eqn:diracPotential:160}
 E \int_{-\epsilon}^\epsilon \psi(x) dx = \frac{-\Hbar^2}{2m} \int_{-\epsilon}^\epsilon \frac{d^2 \psi}{dx^2} dx - V_0 \int_{-\epsilon}^\epsilon \delta(x) \psi(x) dx.
 \end{dmath}
-
+%
 The RHS is zero
 %
 \begin{dmath}\label{eqn:diracPotential:180}
@@ -94,7 +94,7 @@ E \frac{ e^{-\kappa (\epsilon)} - 1}{-\kappa}
 \rightarrow
 0.
 \end{dmath}
-
+%
 That leaves
 \begin{dmath}\label{eqn:diracPotential:200}
 V_0 \int_{-\epsilon}^\epsilon \delta(x) \psi(x) dx
@@ -112,13 +112,13 @@ V_0 \int_{-\epsilon}^\epsilon \delta(x) \psi(x) dx
 \kappa e^{\kappa (-\epsilon)}
 }.
 \end{dmath}
-
+%
 In the \( \epsilon \rightarrow 0 \) limit this gives
 %
 \begin{dmath}\label{eqn:diracPotential:220}
 V_0 = \frac{\Hbar^2 \kappa}{m}.
 \end{dmath}
-
+%
 Equating relations for \( \kappa \) we have
 %
 \begin{equation}\label{eqn:diracPotential:240}
@@ -152,7 +152,7 @@ so
 \psi(x, t < 0) = \sqrt{\kappa} \exp\lr{ -i E t/\hbar - \kappa \Abs{x}}.
 }
 %\end{equation}
-
+%
 There is only one bound state for such a potential.
 
 \makeSubAnswer{}{problem:diracPotential:1:b}
@@ -195,7 +195,7 @@ dx
  \kappa^{3/2}}{\kappa^2+k^2}.
 }
 %\end{dmath}
-
+%
 The initial time state established by the delta function potential evolves as
 %\begin{equation}\label{eqn:diracPotential:480}
 \boxedEquation{eqn:diracPotential:500}{
@@ -203,7 +203,7 @@ The initial time state established by the delta function potential evolves as
 \inv{\sqrt{2\pi}} \int_{-\infty}^\infty e^{i k x - i \Hbar k^2 t/2m} A(k) dk.
 }
 %\end{equation}
-
+%
 In terms of \( m, V_0 \) that is
 %
 \begin{dmath}\label{eqn:diracPotential:700}
@@ -217,7 +217,7 @@ In terms of \( m, V_0 \) that is
 dk
 .
 \end{dmath}
-
+%
 This integral resists an attempt to evaluate with Mathematica.
 } % answer
 

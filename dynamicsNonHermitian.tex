@@ -30,7 +30,7 @@ H = H_{11} \ket{1}\bra{1}
   + H_{22} \ket{2}\bra{2}
   + H_{12} \ket{1}\bra{2}.
 \end{dmath}
-
+%
 What principle is now violated?  Illustrate your point explicitly by attempting to solve the most general time-dependent problem using an illegal Hamiltonian of this kind.  You may assume that \( H_{11} = H_{22} \) for simplicity.
 } % problem
 
@@ -50,7 +50,7 @@ H_{11} & H_{12} \\
 0      & H_{22} \\
 \end{bmatrix}.
 \end{dmath}
-
+%
 This is not a Hermitian operator.  What is the physical implication of this non-Hermicity?  Consider the simpler case where \( H_{11} = H_{22} \).  Such a Hamiltonian has the form
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:60}
@@ -60,7 +60,7 @@ a & b \\
 0 & a
 \end{bmatrix}.
 \end{dmath}
-
+%
 This has only one unique eigenvector ( \( (1,0) \), but we can still solve the time evolution equation
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:80}
@@ -72,7 +72,7 @@ since for constant \( H \), we have
 \begin{dmath}\label{eqn:dynamicsNonHermitian:100}
 U = e^{-i H t/\Hbar}.
 \end{dmath}
-
+%
 To exponentiate, note that we have
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:120}
@@ -86,7 +86,7 @@ a^n & n a^{n-1} b \\
 0 & a^n
 \end{bmatrix}.
 \end{dmath}
-
+%
 To prove the induction, the \( n = 2 \) case follows easily
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:140}
@@ -122,7 +122,7 @@ a^{n+1} & (n +1 ) a^{n} b \\
 0 & a^{n+1}
 \end{bmatrix}.
 \end{dmath}
-
+%
 The exponential sum is thus
 \begin{dmath}\label{eqn:dynamicsNonHermitian:180}
 e^{H \tau}
@@ -132,7 +132,7 @@ e^{a \tau} & 0 + \frac{b \tau}{1!} + \frac{2 a b \tau^2}{2!} + \frac{3 a^2 b \ta
 0 & e^{a \tau}
 \end{bmatrix}.
 \end{dmath}
-
+%
 That sum simplifies to
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:200}
@@ -142,7 +142,7 @@ b \tau \lr{ 1 + \frac{a \tau}{1!} + \frac{(a \tau)^2}{2!} + \cdots }
 =
 b \tau e^{a \tau}.
 \end{dmath}
-
+%
 The exponential is thus
 \begin{dmath}\label{eqn:dynamicsNonHermitian:220}
 e^{H \tau} =
@@ -157,7 +157,7 @@ e^{a\tau} & b \tau e^{a\tau} \\
 \end{bmatrix}
 e^{a\tau}.
 \end{dmath}
-
+%
 In particular
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:240}
@@ -168,7 +168,7 @@ U = e^{-i H t/\Hbar} =
 \end{bmatrix}
 e^{-i a t /\Hbar }.
 \end{dmath}
-
+%
 We can verify that this is a solution to \cref{eqn:dynamicsNonHermitian:80}.  The left hand side is
 %
 \begin{dmath}\label{eqn:dynamicsNonHermitian:260}
@@ -233,7 +233,7 @@ i b t/\Hbar & (b t)^2/\Hbar^2
 \end{bmatrix}
 \ne I.
 \end{dmath}
-
+%
 We required \( U^\dagger U = I \) for the time evolution operator, but don't have that property for this non-Hermitian Hamiltonian.
 } % answer
 

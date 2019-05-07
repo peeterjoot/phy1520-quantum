@@ -24,7 +24,7 @@ In \citep{sakurai2014modern} it is claimed in an Aharonov-Bohm discussion that a
 \begin{dmath}\label{eqn:magneticLorentzForceLagrangian:20}
 \LL \rightarrow \LL + \frac{e}{c} \Bv \cdot \BA.
 \end{dmath}
-
+%
 That can't be the full Lagrangian since there is no \( \phi \) term, so what exactly do we get?
 
 If you have somehow, like I did, forgot the exact form of the Euler-Lagrange equations (i.e. where do the dots go), then the derivation of those equations can come to your rescue.  The starting point is the action
@@ -43,7 +43,7 @@ where the end points of the integral are fixed, and we assume we have no variati
 = \int \lr{ \PD{x}{\LL} - \ddt{}\lr{\PD{\xdot}{\LL}} } \delta x dt
 + \delta x \PD{\xdot}{\LL}.
 \end{dmath}
-
+%
 The boundary term is killed after evaluation at the end points where the variation is zero.  For the result to hold for all variations \( \delta x \), we must have
 %
 %\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:80}
@@ -51,7 +51,7 @@ The boundary term is killed after evaluation at the end points where the variati
 \PD{x}{\LL} = \ddt{}\lr{\PD{\xdot}{\LL}}.
 }
 %\end{dmath}
-
+%
 Now lets apply this to the Lagrangian at hand.  For the position derivative we have
 %
 \begin{dmath}\label{eqn:magneticLorentzForceLagrangian:100}
@@ -59,7 +59,7 @@ Now lets apply this to the Lagrangian at hand.  For the position derivative we h
 =
 \frac{e}{c} v_j \PD{x_i}{A_j}.
 \end{dmath}
-
+%
 For the canonical momentum term, assuming \( \BA = \BA(\Bx) \) we have
 %
 \begin{dmath}\label{eqn:magneticLorentzForceLagrangian:120}
@@ -81,7 +81,7 @@ m \ddot{x}_i
 \frac{e}{c}
 \PD{x_j}{A_i} \frac{dx_j}{dt}.
 \end{dmath}
-
+%
 Assembling the results, we've got
 %
 \begin{dmath}\label{eqn:magneticLorentzForceLagrangian:140}
@@ -117,7 +117,7 @@ m \ddot{x}_i
 =
 \frac{e}{c} v_j B_k \epsilon_{i j k}.
 \end{dmath}
-
+%
 In vector form that is
 %
 %\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:180}
@@ -127,7 +127,7 @@ m \ddot{\Bx}
 \frac{e}{c} \Bv \cross \BB.
 }
 %\end{dmath}
-
+%
 So, we get the magnetic term of the Lorentz force.  Also note that this shows the Lagrangian (and the end result), was not in SI units.  The \( 1/c \) term would have to be dropped for SI.
 
 %\EndArticle

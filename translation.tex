@@ -63,7 +63,7 @@ is an eigenstate of the coordinate operator \( x \).
 =
 \PD{p}{F(p)}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{problem:translation:28:b}
 
 Having worked backwards through these problems, the answer for this one dimensional problem can be obtained from \cref{eqn:translation:140} and is
@@ -71,7 +71,7 @@ Having worked backwards through these problems, the answer for this one dimensio
 \begin{dmath}\label{eqn:translation:500}
 \antisymmetric{x}{e^{i p a/\Hbar}} = a e^{i p a/\Hbar}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{problem:translation:28:c}
 %
 \begin{dmath}\label{eqn:translation:520}
@@ -87,7 +87,7 @@ e^{i p a/\Hbar} x
 \lr{ a e^{i p a/\Hbar} + e^{i p a/\Hbar} x ' } \ket{x'}
 = \lr{ a + x' } \ket{x'}.
 \end{dmath}
-
+%
 This demonstrates that \( e^{i p a/\Hbar} \ket{x'} \) is an eigenstate of \( x \) with eigenvalue \( a + x' \).
 
 } % answer
@@ -102,7 +102,7 @@ For power series \( F, G \), verify
 \antisymmetric{x_k}{G(\Bp)} = i \Hbar \PD{p_k}{G}, \qquad
 \antisymmetric{p_k}{F(\Bx)} = -i \Hbar \PD{x_k}{F}.
 \end{equation}
-
+%
 \makesubproblem{}{problem:translation:29:b}
 
 Evaluate \( \antisymmetric{x^2}{p^2} \), and compare to the classical Poisson bracket \( \antisymmetric{x^2}{p^2}_{\textrm{classical}} \).
@@ -120,7 +120,7 @@ G(\Bp) &= \sum_{k l m} a_{k l m} p_1^k p_2^l p_3^m \\
 F(\Bx) &= \sum_{k l m} b_{k l m} x_1^k x_2^l x_3^m.
 \end{aligned}
 \end{equation}
-
+%
 It is simpler to work with a specific \( x_k \), say \( x_k = y \).  The validity of the general result will still be clear doing so.  Expanding the commutator gives
 %
 \begin{dmath}\label{eqn:translation:220}
@@ -141,7 +141,7 @@ p_1^k
 \antisymmetric{y}{p_2^l}
 p_3^m.
 \end{dmath}
-
+%
 From \cref{eqn:translation:100}, we have \( \antisymmetric{y}{p_2^l} = l i \Hbar p_2^{l-1} \), so
 %
 \begin{dmath}\label{eqn:translation:240}
@@ -157,7 +157,7 @@ p_3^m
 =
 i \Hbar \PD{y}{G(\Bp)}.
 \end{dmath}
-
+%
 It is straightforward to show that
 \( \antisymmetric{p}{x^l} = -l i \Hbar x^{l-1} \), allowing for a similar computation of the momentum commutator
 %
@@ -186,7 +186,7 @@ x_3^m
 =
 -i \Hbar \PD{p_y}{F(\Bx)}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{problem:translation:29:b}
 
 It isn't clear to me how the results above can be used directly to compute \( \antisymmetric{x^2}{p^2} \).  However, when the first term of such a commutator is a mononomial, it can be expanded in terms of an \( x \) commutator
@@ -200,13 +200,13 @@ It isn't clear to me how the results above can be used directly to compute \( \a
 = x \antisymmetric{ x }{ G } + \lr{ \antisymmetric{ x }{ G } + \cancel{G x} } x - \cancel{G x^2}
 = x \antisymmetric{ x }{ G } + \antisymmetric{ x }{ G } x.
 \end{dmath}
-
+%
 Similarly,
 %
 \begin{dmath}\label{eqn:translation:300}
 \antisymmetric{x^3}{G(\Bp)} = x^2 \antisymmetric{ x }{ G } + x \antisymmetric{ x }{ G } x + \antisymmetric{ x }{ G } x^2.
 \end{dmath}
-
+%
 An induction hypothesis can be formed
 %
 \begin{dmath}\label{eqn:translation:320}
@@ -252,7 +252,7 @@ x 2 i \Hbar p
 + 2 i \Hbar p x
 = i \Hbar \lr{ 2 x p + 2 p x }.
 \end{dmath}
-
+%
 The classical commutator is
 \begin{dmath}\label{eqn:translation:380}
 \antisymmetric{x^2}{p^2}_{\textrm{classical}}
@@ -262,13 +262,13 @@ The classical commutator is
 2 x 2 p
 = 2 x p + 2 p x.
 \end{dmath}
-
+%
 This demonstrates the expected relation between the classical and quantum commutators
 %
 \begin{equation}\label{eqn:translation:400}
 \antisymmetric{x^2}{p^2} = i \Hbar \antisymmetric{x^2}{p^2}_{\textrm{classical}}.
 \end{equation}
-
+%
 } % answer
 
 \makeoproblem{Translation operator and position expectation.}{problem:translation:30}{\citep{sakurai2014modern} pr. 1.30}{
@@ -289,7 +289,7 @@ Evaluate
 \begin{dmath}\label{eqn:translation:40}
 \antisymmetric{x_i}{\mathcal{T}(\Bl)}.
 \end{dmath}
-
+%
 \makesubproblem{}{problem:translation:1.30:b}
 Demonstrate how the expectation value \( \expectation{\Bx} \) changes under translation.
 
@@ -309,7 +309,7 @@ For clarity, let's set \( x_i = y \).  The general result will be clear despite 
 \lr{ \Bp \cdot \Bl }^k
 }.
 \end{dmath}
-
+%
 The commutator expands as
 %
 \begin{dmath}\label{eqn:translation:80}
@@ -336,7 +336,7 @@ y \lr{ p_x l_x + p_y l_y + p_z l_z } \lr{ \Bp \cdot \Bl }^{k-1}
 \lr{ \Bp \cdot \Bl }^{k} y
 + k i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}.
 \end{dmath}
-
+%
 In the above expansion, the commutation of \( y \) with \( p_x, p_z \) has been used.  This gives, for \( k \ne 0 \),
 %
 \begin{dmath}\label{eqn:translation:100}
@@ -346,7 +346,7 @@ In the above expansion, the commutation of \( y \) with \( p_x, p_z \) has been 
 =
 k i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}.
 \end{dmath}
-
+%
 Note that this also holds for the \( k = 0 \) case, since \( y \) commutes with the identity operator.  Plugging back into the \( \mathcal{T} \) commutator, we have
 %
 \begin{dmath}\label{eqn:translation:120}
@@ -360,13 +360,13 @@ l_y \sum_{k = 1} \inv{(k-1)!} \lr{\frac{-i}{\Hbar}}
 =
 l_y \mathcal{T}(\Bl).
 \end{dmath}
-
+%
 The same pattern clearly applies with the other \( x_i \) values, providing the desired relation.
 %
 \begin{equation}\label{eqn:translation:140}
 \antisymmetric{\Bx}{\mathcal{T}(\Bl)} = \sum_{m = 1}^3 \Be_m l_m \mathcal{T}(\Bl) = \Bl \mathcal{T}(\Bl).
 \end{equation}
-
+%
 \makeSubAnswer{}{problem:translation:1.30:b}
 
 Suppose that the translated state is defined as \( \ket{\alpha_{\Bl}} = \mathcal{T}(\Bl) \ket{\alpha} \).  The expectation value with respect to this state is
@@ -388,7 +388,7 @@ Suppose that the translated state is defined as \( \ket{\alpha_{\Bl}} = \mathcal
 =
 \expectation{\Bx} + \Bl.
 \end{dmath}
-
+%
 } % answer
 
 %\EndArticle
