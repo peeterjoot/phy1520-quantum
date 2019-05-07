@@ -20,10 +20,9 @@
 %%\chapter{Commutators of angular momentum and a central force Hamiltonian}
 %%\label{chap:angularMomentumAndCentralForceCommutators}
 
-\makeoproblem{Degeneracy in non-commuting observables that both commute with the Hamiltonian.}{problem:angularMomentumAndCentralForceCommutators:1}{\citep{sakurai2014modern} pr. 1.17}{
+\makeoproblem{Non-commuting observables and degeneracy.}{problem:angularMomentumAndCentralForceCommutators:1}{\citep{sakurai2014modern} pr. 1.17}{
 \index{degeneracy}
 \index{non-commuting observables}
-
 Show that non-commuting operators that both commute with the Hamiltonian, have, in general, degenerate energy eigenvalues.  That is
 %
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:320}
@@ -47,7 +46,6 @@ Construct some simple matrix examples that illustrate the degeneracy conditions.
 \makesubproblem{}{problem:angularMomentumAndCentralForceCommutators:1:c}
 %
 Prove the general case.
-
 } % problem
 
 \makeanswer{problem:angularMomentumAndCentralForceCommutators:1}{
@@ -55,7 +53,6 @@ Prove the general case.
 \makeSubAnswer{}{problem:angularMomentumAndCentralForceCommutators:1:a}
 %
 Let's start with demonstrate these commutators act as expected in these cases.
-
 With \( \BL = \Bx \cross \Bp \), we have
 %
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:20}
@@ -245,42 +242,36 @@ There is one shared eigenvector between all of \( A, B, H \)
 %
 The other eigenvectors for \( A \) are
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:420}
-\begin{aligned}
-\ket{a_1} &=
+\ket{a_1} =
 \begin{bmatrix}
 1 \\
 0 \\
 0
-\end{bmatrix} \\
-\ket{a_2} &=
+\end{bmatrix} \qquad
+\ket{a_2} =
 \begin{bmatrix}
 0 \\
 1 \\
 0
 \end{bmatrix},
-\end{aligned}
 \end{equation}
-
 and for \( B \)
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:440}
-\begin{aligned}
-\ket{b_1} &=
+\ket{b_1} =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 1 \\
 0
-\end{bmatrix} \\
-\ket{b_2} &=
+\end{bmatrix} \qquad
+\ket{b_2} =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 -1 \\
 0
-\end{bmatrix},
-\end{aligned}
+\end{bmatrix}.
 \end{equation}
-
 This clearly has the degeneracy sought.
 
 Looking to \citep{commutingMatrices}, it appears that it is possible to construct an even simpler example.  Let
@@ -420,7 +411,6 @@ B \ket{1}
 \end{dmath}
 %
 and \( B \ket{2} = B_{2 2} \ket{2} \).  This contradicts the requirement that \( \ket{1}, \ket{2} \) not be eigenkets of \( B \), leaving only the second option.  That second option means there must be a degeneracy in the system.
-
 } % answer
 
 %\EndArticle
