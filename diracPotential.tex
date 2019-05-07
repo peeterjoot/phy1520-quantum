@@ -27,7 +27,7 @@ Given a Dirac delta function potential
 \begin{dmath}\label{eqn:diracPotential:20}
 H = \frac{p^2}{2m} - V_0 \delta(x),
 \end{dmath}
-
+%
 which vanishes after \( t = 0 \).
 
 \makesubproblem{}{problem:diracPotential:1:a}
@@ -55,7 +55,7 @@ With
 \kappa =
 \frac{\sqrt{-2 m E}}{\Hbar},
 \end{dmath}
-
+%
 this has solutions
 %
 \begin{dmath}\label{eqn:diracPotential:80}
@@ -66,7 +66,7 @@ For \( x > 0 \) we must have
 \begin{dmath}\label{eqn:diracPotential:100}
 \psi = a e^{-\kappa x},
 \end{dmath}
-
+%
 and for \( x < 0 \)
 \begin{dmath}\label{eqn:diracPotential:120}
 \psi = b e^{\kappa x}.
@@ -124,19 +124,19 @@ Equating relations for \( \kappa \) we have
 \begin{equation}\label{eqn:diracPotential:240}
 \kappa = \frac{m V_0}{\Hbar^2} = \frac{\sqrt{-2 m E}}{\Hbar},
 \end{equation}
-
+%
 or
 %
 \begin{equation}\label{eqn:diracPotential:260}
 E = -\inv{2 m} \lr{ \frac{m V_0}{\Hbar} }^2,
 \end{equation}
-
+%
 with
 %
 \begin{equation}\label{eqn:diracPotential:280}
 \psi(x, t < 0) = C \exp\lr{ -i E t/\hbar - \kappa \Abs{x}}.
 \end{equation}
-
+%
 The normalization requires
 %
 \begin{dmath}\label{eqn:diracPotential:300}
@@ -145,7 +145,7 @@ The normalization requires
 = 2 \Abs{C}^2 \evalrange{\frac{e^{- 2 \kappa x}}{-2 \kappa}}{0}{\infty}
 = \frac{\Abs{C}^2}{\kappa},
 \end{dmath}
-
+%
 so
 %\begin{equation}\label{eqn:diracPotential:320}
 \boxedEquation{eqn:diracPotential:340}{
@@ -162,26 +162,26 @@ After turning off the potential, any plane wave
 \begin{equation}\label{eqn:diracPotential:360}
 \psi(x, t) = e^{i k x - i E(k) t/\Hbar},
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:diracPotential:380}
 k = \frac{\sqrt{2 m E}}{\Hbar},
 \end{equation}
-
+%
 is a solution.  In particular, at \( t = 0 \), the wave packet
 %
 \begin{equation}\label{eqn:diracPotential:400}
 \psi(x,0) = \inv{\sqrt{2\pi}} \int_{-\infty}^\infty e^{i k x} A(k) dk,
 \end{equation}
-
+%
 is a solution.  To solve for \( A(k) \), we require
 %
 \begin{dmath}\label{eqn:diracPotential:420}
 \inv{\sqrt{2\pi}} \int_{-\infty}^\infty e^{i k x} A(k) dk
 = \sqrt{\kappa} e^{ - \kappa \Abs{x} },
 \end{dmath}
-
+%
 or
 %\begin{dmath}\label{eqn:diracPotential:440}
 \boxedEquation{eqn:diracPotential:460}{

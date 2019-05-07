@@ -52,7 +52,7 @@ Let
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:20}
 \ket{z} = \sum_{n=0}^\infty c_n \ket{n},
 \end{dmath}
-
+%
 The defining identity for \( \ket{z} \) becomes
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:40}
@@ -72,7 +72,7 @@ Equating like terms provides a recurrence relation for \( c_n \)
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:60}
 c_{n} = \frac{c_{n-1} z}{\sqrt{n}},
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:80}
@@ -105,7 +105,7 @@ A similar recurrence relation can be constructed for \( \ket{n} \)
 = (a^\dagger)^{n-1} \frac{\ket{ n - (n-1) }}{\sqrt{n(n-1)(n-2)...(n- (n-2))}}
 = (a^\dagger)^{n} \frac{\ket{ 0 }}{\sqrt{n!}},
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:160}
@@ -113,7 +113,7 @@ so that
 = c_0
 \sum_{n=0}^\infty \frac{(a^\dagger z)^n}{n!} \ket{0},
 \end{dmath}
-
+%
 or
 \boxedEquation{eqn:gradQuantumProblemSet2Problem1:180}{
 \ket{z}
@@ -178,7 +178,7 @@ This can be rewritten in terms of the absolute difference between the two z valu
 \braket{z}{z'} =
 \exp\lr{ -\inv{2} \lr{ \Abs{z - z'}^2 - 2 i \Imag\lr{ z' z^\conj } } },
 \end{dmath}
-
+%
 however I'm not sure that's any prettier.
 
 \makeSubAnswer{}{gradQuantum:problemSet2:1c}
@@ -194,7 +194,7 @@ First note that
 =
 \bra{z} z^\conj,
 \end{dmath}
-
+%
 so
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:320}
@@ -244,7 +244,7 @@ so
 =
 \frac{\Hbar}{2 m \omega} \lr{(z + z^\conj)^2 + 1},
 \end{dmath}
-
+%
 and
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:380}
 \expectation{p^2}
@@ -268,7 +268,7 @@ As a check against what was stated in class, observe that the minimum uncertaint
 \frac{x_0^2}{2} \lr{ (z + z^\conj)^2 + 1 - (z + z^\conj)^2 }
 = \frac{x_0^2}{2},
 \end{dmath}
-
+%
 and
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:420}
 \expectation{p^2} - \expectation{p}^2
@@ -277,7 +277,7 @@ and
 =
 \frac{\Hbar^2}{2 x_0^2},
 \end{dmath}
-
+%
 so we have
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:440}
 \Delta x \Delta p = \frac{\Hbar}{2}.
@@ -379,7 +379,7 @@ We found that the coherent state had the form
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:621}
 \ket{z} = c_0 \sum_{n=0} \frac{z^n}{\sqrt{n!}} \ket{n},
 \end{dmath}
-
+%
 so the probability coefficients for \( \ket{n} \) are
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:641}
@@ -406,7 +406,7 @@ This is maximized when
 = \frac{dg}{dn}
 = \lr{ - \ln n - 1 + 1 + \ln \mu } g(n),
 \end{dmath}
-
+%
 which is maximized at \( n = \mu \).  One of the integers \( n = \lfloor \mu \rfloor \) or \( n = \lceil \mu \rceil \) that brackets this value \( \mu = \Abs{z}^2 \) is the most probable.  So, if an energy measurement is made of a coherent state \( \ket{z} \), the most probable value will be one of
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:701}
@@ -414,7 +414,7 @@ E = \Hbar \lr{
 \largestIntLessThan{\Abs{z}^2}
  + \inv{2} },
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:721}
@@ -422,6 +422,6 @@ E = \Hbar \lr{
 \largestIntGreaterThan{\Abs{z}^2}
  + \inv{2} },
 \end{dmath}
-
+%
 }
 }

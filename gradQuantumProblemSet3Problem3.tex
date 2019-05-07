@@ -18,7 +18,7 @@ Find the eigenstates for a particle confined to this cylinder (ignore normalizat
 \begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:20}
 E_{l m n} = \frac{\Hbar^2}{2 m } \lr{ k_{m n}^2 + \lr{ \frac{ \pi l }{L} }^2 } \qquad ( l = 1,2,3, \cdots ; m = 0, 1, 2, \cdots )
 \end{equation}
-
+%
 where \( k_{m n} \) is the $n$th root of the equation
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:40}
@@ -39,13 +39,13 @@ We can model this geometrical constraints of these two configurations by
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:60}
 H = \inv{2 m} \lr{ -i \Hbar \spacegrad - \frac{e}{c}\BA } + V,
 \end{dmath}
-
+%
 where
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:80}
 \spacegrad = \rhocap \partial_\rho + \inv{\rho} \partial_\phi + \zcap \partial_z,
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:100}
@@ -63,13 +63,13 @@ The effects of the potential require that a wavefunction \( \psi \) solution of 
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:120}
 \evalbar{\psi( z )}{z = 0,L} = 0,
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:140}
 \evalbar{\psi( \rho )}{\rho = \rho_a, \rho_b} = 0,
 \end{dmath}
-
+%
 leaving
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:160}
@@ -96,7 +96,7 @@ Assuming a solution is possible using separation of variables, let
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:200}
 \psi(\rho, \phi, z) = P(\rho) \Phi(\phi) Z(z),
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:320}
@@ -105,7 +105,7 @@ H \psi = E \psi = E P \Phi Z =
 \Phi Z \inv{\rho} \partial_\rho \lr{ \rho \partial_\rho P } + P Z \inv{\rho^2} \partial_{\phi\phi} \Phi + P \Phi \partial_{z z} Z
 },
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:220}
@@ -114,25 +114,25 @@ E =
 \inv{\rho P} \partial_\rho \lr{ \rho \partial_\rho P } + \inv{\rho^2 \Phi} \partial_{\phi\phi} \Phi + \inv{Z} \partial_{z z} Z
 },
 \end{dmath}
-
+%
 Let \( E = E' + E_z \), where
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:240}
 E_z = \frac{-\Hbar^2}{2 m} \inv{Z} Z'',
 \end{dmath}
-
+%
 This has solution
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:260}
 Z = e^{i k_z z},
 \end{dmath}
-
+%
 where \( k_z = \sqrt{2 m E_z}/\Hbar \).  The \( z = 0,L \) boundary condition requires that
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:340}
 k_z L = \pi l, \qquad l \in \bbZ
 \end{equation}
-
+%
 or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:280}
@@ -159,13 +159,13 @@ We are free to let
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:380}
 \frac{-\Hbar^2}{2 m} \inv{\Phi} \partial_{\phi\phi} \Phi = E_\phi,
 \end{dmath}
-
+%
 which has solution
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:400}
 \Phi = e^{i k_\phi \phi},
 \end{dmath}
-
+%
 where \( k_\phi = \sqrt{2 m E_\phi}/\Hbar \).  Geometry requires \( k_\phi (2 \pi) = 2 \pi \nu, \nu \in \bbZ \ge 0 \),
 
 or
@@ -180,7 +180,7 @@ This leaves
 E' \rho^2 = \frac{-\Hbar^2}{2 m}
 \frac{\rho}{P} \partial_\rho \lr{ \rho \partial_\rho P } + \frac{\Hbar^2 \nu^2}{2 m},
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:460}
@@ -195,13 +195,13 @@ With \( \rho' = \sqrt{ \frac{2 m E'}{\Hbar^2} } \rho \), this is the standard fo
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:480}
 a J_{\pm \nu}( \rho' ) + b N_\nu( \rho'),
 \end{dmath}
-
+%
 is a solution.  The geometry requires this vanish at \( \rho_a, \rho_b \).  With
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:540}
 k = \sqrt{ \frac{2 m E'}{\Hbar^2} },
 \end{dmath}
-
+%
 those boundary value constraints can be written as
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:500}
@@ -263,7 +263,7 @@ Checking this for \( \rho \ge \rho_a \) we have
 =
 0,
 \end{dmath}
-
+%
 and for \( \rho < \rho_a \)
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:640}
@@ -305,7 +305,7 @@ Expanding the cross terms we have
 =
 \frac{1}{\rho^2} \partial_\phi \psi,
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:700}
@@ -315,7 +315,7 @@ and
 =
 \frac{1}{\rho^2} \partial_\phi \psi,
 \end{dmath}
-
+%
 so we have
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:720}
@@ -413,7 +413,7 @@ E_\phi
 \frac{\Hbar^2}{2 m}
 \lr{ \nu - \frac{e B \rho_a^2}{2 \Hbar c} }^2,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:860}
 \rho^2 P'' + \rho P +
@@ -426,12 +426,12 @@ With
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:880}
 \nu' = \nu - \frac{e B \rho_a^2}{2 \Hbar c},
 \end{dmath}
-
+%
 and
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:900}
 k = \frac{\sqrt{2 m E'}}{\Hbar},
 \end{dmath}
-
+%
 this is, once again, a Bessel equation with solution
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:920}
@@ -451,19 +451,19 @@ With \( \theta = \ifrac{e B \rho_a^2}{2 \Hbar c} \), and \( N = \nu \), \cref{eq
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:960}
 \frac{2 m E_\phi}{\Hbar^2} = \lr{ N - \theta }^2,
 \end{dmath}
-
+%
 which has zeros when \( N = \theta \), or
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:980}
 N = \frac{e B \rho_a^2}{2 \Hbar c},
 \end{dmath}
-
+%
 Shuffling terms, this is
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:1000}
 \frac{2 \pi N \Hbar c}{e} = B \pi \rho_a^2,
 \end{dmath}
-
+%
 which is the desired result.
 }
 }

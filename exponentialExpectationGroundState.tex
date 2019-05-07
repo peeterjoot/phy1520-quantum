@@ -45,7 +45,7 @@ Let
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:60}
 X = \lr{ a + a^\dagger },
 \end{dmath}
-
+%
 so that
 %
 \begin{equation}\label{eqn:exponentialExpectationGroundState:80}
@@ -105,7 +105,7 @@ This problem is now reduced to showing that
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:180}
 \frac{1}{(2 m)!} \bra{0} X^{2m} \ket{0} = \inv{m! 2^m},
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:200}
@@ -115,7 +115,7 @@ or
 = \frac{ 2^m (m)(2m-1)(m-1)(2m-3)(m-2) \cdots (2)(3)(1)(1) }{2^m m!}
 = (2m-1)!!,
 \end{dmath}
-
+%
 where \( n!! = n(n-2)(n-4)\cdots \).
 
 It looks like \( \bra{0} X^{2m} \ket{0} \) can be expanded by inserting an identity operator and proceeding recursively, like
@@ -141,7 +141,7 @@ This has made use of the observation that \( \bra{0} X^2 \ket{n} = 0 \) for all 
 =
 \sqrt{2},
 \end{dmath}
-
+%
 Since \( \sqrt{2} \ket{2} = \lr{a^\dagger}^2 \ket{0} \), the expectation of interest can be written
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:260}
@@ -192,13 +192,13 @@ It appears that we have
 \begin{equation}\label{eqn:exponentialExpectationGroundState:340}
 \antisymmetric{a^2 X^n}{X^n a^2} = \beta_n X^{n-2} + 2 n X^{n-1} a,
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:exponentialExpectationGroundState:360}
 \beta_n = \beta_{n-1} + 2 (n-1),
 \end{equation}
-
+%
 and \( \beta_2 = 2 \).  Some goofing around shows that \( \beta_n = n(n-1) \), so the induction hypothesis is
 %
 \begin{equation}\label{eqn:exponentialExpectationGroundState:380}
@@ -225,13 +225,13 @@ X^{n+1} a^2 + (2 + 2 n) X^{n} a + \lr{ 2 n + n(n-1) }  X^{n-1}
 =
 X^{n+1} a^2 + 2(n + 1) X^{n} a + (n+1) n X^{n-1},
 \end{dmath}
-
+%
 which concludes the induction, giving
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:420}
 \bra{ 0 } a^2 X^{n} \ket{0 } = n(n-1) \bra{0} X^{n-2} \ket{0},
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:440}
@@ -245,7 +245,7 @@ Let
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:460}
 \sigma_{n} = \bra{0} X^n \ket{0},
 \end{dmath}
-
+%
 so that the recurrence relation, for \( 2n \ge 4 \) is
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:480}
@@ -288,7 +288,7 @@ For the general induction term, consider
 = (2n + 1) (2n -1)!!
 = (2n + 1)!!,
 \end{dmath}
-
+%
 which completes the final induction.  That was also the last thing required to complete the proof, so we are done!
 } % answer
 

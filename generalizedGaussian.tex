@@ -27,7 +27,7 @@ Both \citep{sakurai2014modern} and \citep{zee2005quantum} use Gaussian integrals
 \begin{dmath}\label{eqn:generalizedGaussian:20}
 \int_{-\infty}^\infty \exp\lr{ a x^2 } dx = \sqrt{\frac{-\pi}{a}},
 \end{dmath}
-
+%
 even when \( a \) is not a real negative constant, and in particular, with values \( a = \pm i \).  Clearly this doesn't follow by just making a substitution \( x \rightarrow x/\sqrt{a} \), since that moves the integration range onto a rotated path in the complex plane when \( a \) is \( \pm i \).  However, with some care, it can be shown that \cref{eqn:generalizedGaussian:20} holds provided \( \Real a \le 0 \).
 
 To show this, this integral will be considered for the pure real case, purely imaginary, and finally the complex case with non-zero real and imaginary parts for \( a \).
@@ -60,13 +60,13 @@ Observe that \( i e^{2 i \theta} = i\cos(2 \theta) - \sin(2\theta) \) which has 
 \int_0^\infty \exp\lr{ i x^2 } dx
 = \sqrt{\pi} e^{i\pi/4}/2,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:generalizedGaussian:80}
 \int_{-\infty}^\infty \exp\lr{ i x^2 } dx
 = \sqrt{i \pi},
 \end{dmath}
-
+%
 a special case of \cref{eqn:generalizedGaussian:20} as desired.  For \( a = -i \) integrating around the lower plane contour, we have
 %
 \begin{dmath}\label{eqn:generalizedGaussian:100}
@@ -85,7 +85,7 @@ This time we find
 \int_{-\infty}^\infty \exp\lr{ -i x^2 } dx
 = \sqrt{-i \pi},
 \end{dmath}
-
+%
 another special case of \cref{eqn:generalizedGaussian:20}.
 
 \paragraph{Completely complex case.}
@@ -103,13 +103,13 @@ To evaluate an integral consider
 + \int_0^{\theta} \exp\lr{ e^{i\phi} R^2 e^{2 i \mu} } R i e^{i\mu} d\mu
 + \int_R^0 \exp\lr{ e^{i\phi} e^{2 i \theta} t^2 } e^{i\theta} dt,
 \end{dmath}
-
+%
 where \( \phi \in (\pi/2, \pi) \cup (\pi,3\pi/2) \).  We have a hope of evaluating this last integral if \( \phi + 2 \theta = \pi \), or
 %
 \begin{dmath}\label{eqn:generalizedGaussian:160}
 \theta = (\pi -\phi)/2,
 \end{dmath}
-
+%
 giving
 %
 \begin{dmath}\label{eqn:generalizedGaussian:180}
@@ -124,25 +124,25 @@ If the cosine is always negative on the chosen contours, then that integral will
 \begin{dmath}\label{eqn:generalizedGaussian:200}
 \theta \in (0, \pi/4).
 \end{dmath}
-
+%
 Since \( \phi + 2\theta = \pi \), we have
 %
 \begin{dmath}\label{eqn:generalizedGaussian:220}
 \phi + 2 \mu \in (\pi/2, \pi),
 \end{dmath}
-
+%
 and find that the cosine is strictly negative on that contour for that range of \( \phi \).  Picking the lower plane contour for the \( \phi \in (\pi, 3\pi/2) \) range, we have
 %
 \begin{dmath}\label{eqn:generalizedGaussian:240}
 \theta \in (-\pi/4, 0),
 \end{dmath}
-
+%
 and so
 %
 \begin{dmath}\label{eqn:generalizedGaussian:260}
 \phi + 2 \mu \in (\pi/2, 3\pi/2).
 \end{dmath}
-
+%
 For this range of \( \phi \) the cosine on the lower plane contour is again negative as desired, so in the infinite \( R \) limit we have
 %
 \begin{dmath}\label{eqn:generalizedGaussian:280}

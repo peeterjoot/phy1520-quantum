@@ -79,7 +79,7 @@ e^{i \Lcap \cdot \ncap \phi/\Hbar} \ket{j, m}
 =
 \sum_{m'} d^j_{m m'}(\ncap, \phi) \ket{ j, m' }.
 \end{equation}
-
+%
 This has a block diagonal form that's sketched in \cref{fig:qmLecture15:qmLecture15Fig1}.
 
 \imageFigure{../figures/phy1520-quantum/qmLecture15Fig1}{Block diagonal form for angular momentum matrix representation.}{fig:qmLecture15:qmLecture15Fig1}{0.2}
@@ -135,7 +135,7 @@ Noting that \( \lr{ \Bsigma \cdot \ncap }^2 = 1 \), and \( \lr{\Bsigma \cdot \nc
 \begin{dmath}\label{eqn:qmLecture15:220}
 e^{ i \Bsigma \cdot \ncap \phi/2 } \ket{\inv{2}, m} = \lr{ \cos( \phi/2 ) + i \Bsigma \cdot \ncap \sin(\phi/2) } \ket{\inv{2}, m}.
 \end{dmath}
-
+%
 } % example
 
 The steps taken in the example above, which apply to all values of \( j \) were
@@ -145,7 +145,7 @@ The steps taken in the example above, which apply to all values of \( j \) were
 \begin{equation}\label{eqn:qmLecture15:140}
 j_1 = \inv{2} \leftrightarrow\, \mbox{2 states (dimension of irreducible representation = 2)}
 \end{equation}
-
+%
 \item Construct the \( \Lcap \) matrices.
 \item Construct \( d_{m m'}^j(\ncap, \phi) \).
 \end{enumerate}
@@ -159,7 +159,7 @@ For \( L = 1 \) it turns out that the rotation matrices turn out to be the 3D ro
 \begin{dmath}\label{eqn:qmLecture15:240}
 \BL = \Br \cross \Bp,
 \end{dmath}
-
+%
 the coordinates of the operator are
 %
 \begin{dmath}\label{eqn:qmLecture15:260}
@@ -193,7 +193,7 @@ One can find these functions
 \begin{dmath}\label{eqn:qmLecture15:320}
 Y_{lm}(\theta, \phi) = P_{l, m}(\cos \theta) e^{i m \phi},
 \end{dmath}
-
+%
 where \( P_{l, m}(\cos \theta) \) are called the \textAndIndex{associated Legendre polynomials}.  This can be applied whenever we have
 %
 \begin{dmath}\label{eqn:qmLecture15:340}
@@ -205,7 +205,7 @@ where all the eigenfunctions will have the form
 \begin{dmath}\label{eqn:qmLecture15:360}
 \Psi(r, \theta, \phi) = R(r) Y_{lm}(\theta, \phi).
 \end{dmath}
-
+%
 \section{Addition of angular momentum}
 \index{angular momentum!addition}
 
@@ -233,7 +233,7 @@ Given
 \begin{dmath}\label{eqn:qmLecture15:420}
 \Lcap_1 + \Lcap_2 = \Lcap_{\textrm{tot}},
 \end{dmath}
-
+%
 do we have
 \begin{dmath}\label{eqn:qmLecture15:440}
 \antisymmetric{
@@ -243,13 +243,13 @@ do we have
 }
 = i \Hbar \epsilon_{i j k} \hatL_{\textrm{tot}, k} ?
 \end{dmath}
-
+%
 That is
 %
 \begin{dmath}\label{eqn:qmLecture15:460}
 \antisymmetric{\hatL_{1,i} + \hatL_{1,j}}{\hatL_{2,i} + \hatL_{2,j}} = i \Hbar \epsilon_{i j k} \lr{ \hatL_{1,k} + \hatL_{1,k} }
 \end{dmath}
-
+%
 FIXME: Right at the end of the lecture, there was a mention of something about whether or not \( \Lcap_1^2 \) and \( \hatL_{1,z} \) were sharply defined, but I missed it.  Ask about this if not covered in the next lecture.
 
 %\EndArticle

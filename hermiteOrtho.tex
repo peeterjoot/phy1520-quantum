@@ -27,19 +27,19 @@ Derive the normalization constant \( c_n \) for the Harmonic oscillator solution
 \begin{dmath}\label{eqn:hermiteOrtho:20}
 u_n(x) = c_n H_n\lr{ x \sqrt{\frac{m\omega}{\Hbar}} } e^{-m \omega x^2/2 \Hbar},
 \end{dmath}
-
+%
 by deriving the orthogonality relationship using generating functions
 %
 \begin{equation}\label{eqn:hermiteOrtho:40}
 g(x,t) = e^{-t^2 + 2 t x} = \sum_{n=0}^\infty H_n(x) \frac{t^n}{n!}.
 \end{equation}
-
+%
 Start by working out the integral
 %
 \begin{equation}\label{eqn:hermiteOrtho:60}
 I = \int_{-\infty}^\infty g(x, t) g(x, s) e^{-x^2} dx,
 \end{equation}
-
+%
 consider the integral twice with each side definition of the generating function.
 
 } % problem
@@ -89,7 +89,7 @@ Let
 \begin{dmath}\label{eqn:hermiteOrtho:120}
 \alpha_{n m} = \int_{-\infty}^\infty H_n(x) H_m(x) e^{-x^2} dx,
 \end{dmath}
-
+%
 and equate the two expansions of this integral
 %
 \begin{dmath}\label{eqn:hermiteOrtho:140}
@@ -99,7 +99,7 @@ and equate the two expansions of this integral
 \sum_{m=0}^\infty \frac{s^m}{m!}
 \alpha_{n m},
 \end{dmath}
-
+%
 or, after equating powers of \( t^n \)
 %
 \begin{dmath}\label{eqn:hermiteOrtho:160}
@@ -112,7 +112,7 @@ This requires \( \alpha_{n m} \) to be zero for \( n \ne m \), so
 \begin{dmath}\label{eqn:hermiteOrtho:180}
 \sqrt{\pi} 2^n = \frac{1}{n!} \alpha_{n n},
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:hermiteOrtho:200}
@@ -127,7 +127,7 @@ The SHO normalization is fixed by
 \int_{-\infty}^\infty H_n^2(x/x_0) e^{-(x/x_0)^2} dx
 = c_n^2 x_0 \sqrt{\pi} 2^n n!,
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:hermiteOrtho:240}
