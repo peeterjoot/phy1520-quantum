@@ -67,16 +67,16 @@ the matrix representation is seen to be
 \end{dmath}
 %
 \makeSubAnswer{}{problem:moreBraKetProblems:1.5:b}
-
 First compute the spin-z representation of \( \ket{s_x = \Hbar/2 } \).
 %
 \begin{dmath}\label{eqn:moreBraKetProblems:60}
+\begin{aligned}
 \lr{ S_x - \Hbar/2 I }
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}
-=
+&=
 \lr{
 \begin{bmatrix}
 0 & \Hbar/2 \\
@@ -87,13 +87,13 @@ b
 \Hbar/2 & 0 \\
 0 & \Hbar/2 \\
 \end{bmatrix}
-}
-=
+} \\
+&=
 \begin{bmatrix}
 a \\
 b
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 -1 & 1 \\
@@ -103,11 +103,9 @@ b
 a \\
 b
 \end{bmatrix},
+\end{aligned}
 \end{dmath}
-%
-so \( \ket{s_x = \Hbar/2 } \propto (1,1) \).
-
-Normalized we have
+so \( \ket{s_x = \Hbar/2 } \propto (1,1) \).  Normalized we have
 %
 \begin{equation}\label{eqn:moreBraKetProblems:80}
 \begin{aligned}
@@ -163,15 +161,12 @@ This can be confirmed with direct computation
 \end{dmath}
 %
 } % answer
-
+%
 \makeoproblem{Eigenvalue of sum of kets.}{problem:moreBraKetProblems:6}{\citep{sakurai2014modern} pr. 1.6}{
-
 Given eigenkets \( \ket{i}, \ket{j} \) of an operator \( A \), what are the conditions that \( \ket{i} + \ket{j} \) is also an eigenvector?
-
 } % problem
 
 \makeanswer{problem:moreBraKetProblems:6}{
-
 Let \( A \ket{i} = i \ket{i}, A \ket{j} = j \ket{j} \), and suppose that the sum is an eigenket.  Then there must be a value \( a \) such that
 %
 \begin{dmath}\label{eqn:moreBraKetProblems:140}
@@ -192,15 +187,11 @@ i &= a \\
 j &= a,
 \end{aligned}
 \end{equation}
-
 so for the sum to be an eigenket, both of the corresponding energy eigenvalues must be identical (i.e. linear combinations of degenerate eigenkets are also eigenkets).
-
 } % answer
-
 
 \makeoproblem{Null operator.}{problem:moreBraKetProblems:7}{\citep{sakurai2014modern} pr. 1.7}{
 \index{null operator}
-
 Given eigenkets \( \ket{a'} \) of operator \( A \)
 
 \makesubproblem{}{problem:moreBraKetProblems:7:a}
@@ -209,7 +200,6 @@ show that
 \begin{equation}\label{eqn:moreBraKetProblems:200}
 \prod_{a'} \lr{ A - a' }
 \end{equation}
-
 is the null operator.
 
 \makesubproblem{}{problem:moreBraKetProblems:7:b}
@@ -219,15 +209,11 @@ is the null operator.
 \end{equation}
 
 \makesubproblem{}{problem:moreBraKetProblems:7:c}
-
 Illustrate using \( S_z \) for a spin 1/2 system.
-
 } % problem
 
 \makeanswer{problem:moreBraKetProblems:7}{
-
 \makeSubAnswer{}{problem:moreBraKetProblems:7:a}
-
 Application of \( \ket{a} \), the eigenket of \( A \) with eigenvalue \( a \) to any term \( A - a' \) scales \( \ket{a} \) by \( a - a' \), so the product operating on \( \ket{a} \) is
 %
 \begin{equation}\label{eqn:moreBraKetProblems:240}
@@ -279,44 +265,48 @@ For operator \( S_z \) the eigenvalues are \( \setlr{ \Hbar/2, -\Hbar/2 } \), so
 For the delta representation, consider the \( \ket{\pm} \) states and their eigenvalue.  The delta operators are
 %
 \begin{dmath}\label{eqn:moreBraKetProblems:320}
+\begin{aligned}
 \prod_{a'' \ne \Hbar/2} \frac{\lr{ A - a'' }}{\Hbar/2 - a''}
-=
-\frac{S_z - (-\Hbar/2) I}{\Hbar/2 - (-\Hbar/2)}
-=
-\inv{2} \lr{ \sigma_z + I }
-=
-\inv{2} \lr{ \PauliZ + \PauliI }
-=
+&=
+\frac{S_z - (-\Hbar/2) I}{\Hbar/2 - (-\Hbar/2)} \\
+&=
+\inv{2} \lr{ \sigma_z + I } \\
+&=
+\inv{2} \lr{ \PauliZ + \PauliI } \\
+&=
 \inv{2}
 \begin{bmatrix}
 2 & 0 \\
 0 & 0
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 & 0 \\
 0 & 0
 \end{bmatrix}.
+\end{aligned}
 \end{dmath}
 \begin{dmath}\label{eqn:moreBraKetProblems:340}
+\begin{aligned}
 \prod_{a'' \ne -\Hbar/2} \frac{\lr{ A - a'' }}{-\Hbar/2 - a''}
-=
-\frac{S_z - (\Hbar/2) I}{-\Hbar/2 - \Hbar/2}
-=
-\inv{2} \lr{ \sigma_z - I }
-=
-\inv{2} \lr{ \PauliZ - \PauliI }
-=
+&=
+\frac{S_z - (\Hbar/2) I}{-\Hbar/2 - \Hbar/2} \\
+&=
+\inv{2} \lr{ \sigma_z - I } \\
+&=
+\inv{2} \lr{ \PauliZ - \PauliI } \\
+&=
 \inv{2}
 \begin{bmatrix}
 0 & 0 \\
 0 & -2
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 0 & 0 \\
 0 & 1
 \end{bmatrix}.
+\end{aligned}
 \end{dmath}
 %
 These clearly have the expected delta function property acting on kets \( \ket{+} = (1,0)^\T, \ket{-} = (0, 1)^\T \).
@@ -335,7 +325,6 @@ Construct \( \ket{\BS \cdot \ncap ; + } \), where \( \ncap = ( \cos\alpha \sin\b
 \end{dmath}
 %
 Solve this as an eigenvalue problem.
-
 } % problem
 
 \makeanswer{problem:moreBraKetProblems:9}{
@@ -533,5 +522,5 @@ That is
 %
 } % answer
 
-
+%
 %\EndArticle
