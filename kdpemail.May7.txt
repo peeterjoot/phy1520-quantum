@@ -1,0 +1,12 @@
+My kdp account id is: AGHJBTMBPWHE5
+
+I've uploaded a PDF "Graduate Quantum Mechanics: Notes and problems" and to my surprise (unlike all the other books I've uploaded) there were no gutter errors in the formatting, as there had been for all the other books I'd uploaded.  All of those other books, like this one, had been converted from 8.5x11 to 6x9 for kdp publication, and had equations and figures that spilled out into the gutter.
+
+The currently uploaded version of this book also has such errors, however, they are not showing up as errors in the kdp preview -- with the other books, all such gutter errors had to be fixed before I could publish.   I can manually review all pages in the pdf looking for these issues, but that is error prone, and it would be nice if the tool would work again.
+
+An example of a gutter issue that the tool is not identifying as an error can be found on page 125 (pdf page number 105) of the current uploaded draft.  The text in question is:
+
+"Exercise 2.6 Time evolution of spin half probability and dispersion. ([15] pr. 2.3)" which extends all the way to the edge of the page well past the printable region.
+
+Note that the upload processing of this book PDF was suspiciously fast.  After upload, I did not see the usual "processing file" delay -- the upload seemed to proceed straight to the "Manuscript "phy1520.pdf" uploaded successfully!" state.
+
