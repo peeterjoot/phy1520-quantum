@@ -56,23 +56,25 @@ These are
 %
 To completely specify these equations, we need to expand \( U(t) \), which is
 %
-\begin{dmath}\label{eqn:heisenbergSpinPrecession:80}
+\begin{equation}\label{eqn:heisenbergSpinPrecession:80}
+\begin{aligned}
 U(t)
-= e^{-i H t /\Hbar}
-= e^{-i \omega S_z t /\Hbar}
-= e^{-i \omega \sigma_z t /2}
-= \cos\lr{ \omega t/2 } -i \sigma_z \sin\lr{ \omega t/2 }
-=
+&= e^{-i H t /\Hbar} \\
+&= e^{-i \omega S_z t /\Hbar} \\
+&= e^{-i \omega \sigma_z t /2} \\
+&= \cos\lr{ \omega t/2 } -i \sigma_z \sin\lr{ \omega t/2 } \\
+&=
 \begin{bmatrix}
 \cos\lr{ \omega t/2 } -i \sin\lr{ \omega t/2 } & 0 \\
 0 & \cos\lr{ \omega t/2 } + i \sin\lr{ \omega t/2 }
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 e^{-i\omega t/2} & 0 \\
 0 & e^{i\omega t/2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The equations of motion can now be written out in full.  To do so seems a bit silly since we also know that \( S_x^\txtH = U^\dagger S_x U, S_y^\txtH U^\dagger S_x U \).  However, if that is temporarily forgotten, we can show that the Heisenberg equations of motion can be solved for these too.
 %
@@ -200,7 +202,6 @@ S_z^\txtH &= S_z.
 \end{dmath}
 %
 Observe that these integrated values \( S_x^\txtH, S_y^\txtH \) match \cref{eqn:heisenbergSpinPrecession:100}, and \cref{eqn:heisenbergSpinPrecession:120} as expected.
-
 } % answer
 
 %\EndArticle

@@ -147,18 +147,20 @@ u_n(x,y) = c_n \lr{ x + i y }^n e^{-\alpha \lr{x^2 + y^2}/2},
 %
 which can be verified directly
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:320}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:320}
 \begin{aligned}
 \biglr{ &\partial_x + i \partial_y + \alpha ( x + i y) } u_n(x,y) \\
 &=
 \biglr{ \partial_x + i \partial_y + \alpha ( x + i y) } c_n \lr{ x + i y }^n e^{-\alpha \lr{x^2 + y^2}/2} \\
 &=
-c_n e^{-\alpha \lr{x^2 + y^2}/2} \lr{
-n \lr{ x + i y }^{n-1} \lr{ 1 + i^2 } -\alpha \lr{ x + i y }^n \lr{ 2x + 2 y i }/2 + \alpha \lr{ x + i y }^{n+1}
+c_n e^{-\alpha \lr{x^2 + y^2}/2} 
+\biglr{
+n \lr{ x + i y }^{n-1} \lr{ 1 + i^2 } \times \\
+&\qquad -\alpha \lr{ x + i y }^n \lr{ 2x + 2 y i }/2 + \alpha \lr{ x + i y }^{n+1}
 } \\
 &= 0.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 The normalization is given by
 %

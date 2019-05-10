@@ -204,7 +204,7 @@ We can invert these
 \ket{\uparrow \uparrow} &= \inv{\sqrt{2}} \lr{ \ket{1} + \ket{-3} } \\
 \ket{\uparrow \downarrow} &= \inv{\sqrt{2}} \lr{ \ket{1} - \ket{-3} } \\
 \ket{\downarrow \uparrow} &= \inv{\sqrt{2}} \lr{ \ket{3} + \ket{-1} } \\
-\ket{\downarrow \downarrow} &= \inv{\sqrt{2}} \lr{ \ket{3} - \ket{-1} } \\
+\ket{\downarrow \downarrow} &= \inv{\sqrt{2}} \lr{ \ket{3} - \ket{-1} }.
 \end{aligned}
 \end{dmath}
 
@@ -216,12 +216,11 @@ The original state of interest can now be expressed in terms of the eigenkets
 \inv{2} \lr{
 \ket{1} - \ket{-3} -
 \ket{3} - \ket{-1}
-}
+}.
 \end{dmath}
-
 The time evolution of this ket is
 %
-\begin{dmath}\label{eqn:twoSpinHamiltonian:260}
+\begin{equation}\label{eqn:twoSpinHamiltonian:260}
 \begin{aligned}
 \psi(t)
 &=
@@ -258,19 +257,19 @@ e^{-i B t/2} \lr{ \ket{\uparrow \uparrow} + \ket{\uparrow \downarrow} }
 } \\
 &=
 \inv{\sqrt{2}}
-\lr{
+\biglr{
 i \sin( B t )
 \lr{
  e^{- i B t/2} \ket{\downarrow \downarrow} - e^{i B t/2} \ket{\uparrow \uparrow}
-}
+} \\
+&\qquad
 + \cos( B t ) \lr{
 e^{i B t/2} \ket{\uparrow \downarrow}
 - e^{- i B t/2} \ket{\downarrow \uparrow}
 }
-}
+}.
 \end{aligned}
-\end{dmath}
-
+\end{equation}
 Note that this returns to the original state when \( t = \frac{2 \pi n}{B}, n \in \bbZ \).  I think I've got it right this time (although I got a slightly different answer on paper before typing it up.)
 
 %This doesn't exactly seem like a quick answer question, at least to me.  Is there some easier way to do it?

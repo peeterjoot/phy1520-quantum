@@ -21,7 +21,10 @@
 %%\chapter{Particle in charged uniform electric and magnetic fields}
 %%\label{chap:particleInUniformElectricAndMagneticField}
 %
-\makeoproblem{Particle in uniform electric and magnetic fields.}{problem:particleInUniformElectricAndMagneticField:1}{2015 midterm p2}{
+\makeoproblem
+%{Particle in uniform electric and magnetic fields.}
+{Particle in uniform fields.}
+{problem:particleInUniformElectricAndMagneticField:1}{2015 midterm p2}{
 %
 Find the energy eigenvalues and states for a charged particle moving the in the \( x, y \) plane in a uniform magnetic field \( B \zcap \) and a uniform electric field \( E \ycap \).
 } % problem
@@ -72,37 +75,39 @@ and if we try \( \psi = e^{i k y} \phi(x) \) we get
 %
 The latter is separable if we set \( b = 0 \), which requires \( a = 1 \), leaving an eigenvalue equation for \( \phi(y) \)
 %
-\begin{dmath}\label{eqn:particleInUniformElectricAndMagneticField:120}
+\begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:120}
+\begin{aligned}
 H'
-=
+&=
 \frac{(\Hbar k + q B y /c)^2}{2m} +
 \frac{p_y^2}{2m}
-- q E y
-=
+- q E y \\
+&=
 \frac{p_y^2}{2m}
 - \lr{ q E - \Hbar k q B /m c } y
 + \inv{2 m }\lr{\frac{q B y}{c}}^2
-+ \frac{(\Hbar k)^2}{2m}
-=
++ \frac{(\Hbar k)^2}{2m} \\
+&=
 \frac{p_y^2}{2m}
 + \inv{2m} \lr{ \frac{q B}{c} }^2
 \lr{
 - \frac{2}{m} \lr{ \frac{m c}{q B} }^2 \lr{ q E - \Hbar k q B /m c } y
 + y^2
 }
-+ \frac{(\Hbar k)^2}{2m}
-=
++ \frac{(\Hbar k)^2}{2m} \\
+&=
 \frac{p_y^2}{2m}
 +
 \inv{2} m
 \lr{ \frac{q B}{m c} }^2
 \lr{
 y - \inv{m} \lr{ \frac{m c}{q B} }^2 \lr{ q E - \Hbar k q B /m c }
-}^2
--
+}^2 \\
+&\qquad -
 \inv{2 m} \lr{ \frac{m c}{q B} }^2 \lr{ q E - \Hbar k q B /m c }^2
 + \frac{(\Hbar k)^2}{2m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Let
 \begin{equation}\label{eqn:particleInUniformElectricAndMagneticField:140}

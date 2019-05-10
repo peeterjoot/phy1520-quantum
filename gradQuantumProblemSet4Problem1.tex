@@ -272,13 +272,14 @@ As we've seen with the Harmonic oscillator, an expectation with respect to a sta
 \( C = \cos\theta \), \( S = \sin\theta \)
 that expectation value with respect to the state as expressed in \cref{eqn:gradQuantumProblemSet4Problem1:120} is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem1:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem1:220}
+\begin{aligned}
 \expectation{\hatv}
-=
-\bra{\Psi} \hatv \ket{\Psi}
-=
-c \lr{ C \bra{a} - S \bra{b} } \sigma_z \lr{ C \ket{a} - S \ket{b} }
-=
+&=
+\bra{\Psi} \hatv \ket{\Psi} \\
+&=
+c \lr{ C \bra{a} - S \bra{b} } \sigma_z \lr{ C \ket{a} - S \ket{b} } \\
+&=
 c \lr{
 C \bra{a} - S \bra{b} }
 \begin{bmatrix}
@@ -297,57 +298,58 @@ e^{i k x - i E t/\Hbar}
 C
 \end{bmatrix}
 e^{i k x + i E t/\Hbar}
-}
-=
+} \\
+&=
 c
 \lr{
-C
-\begin{bmatrix}
-C &
-S
-\end{bmatrix}
-e^{-i k x + i E t/\Hbar}
-- S
-\begin{bmatrix}
--S & C
-\end{bmatrix}
-e^{-i k x - i E t/\Hbar}
-}
-\lr{
-C
-\begin{bmatrix}
-C \\
--S
-\end{bmatrix}
-e^{i k x - i E t/\Hbar}
-+ S
-\begin{bmatrix}
-S \\
-C
-\end{bmatrix}
-e^{i k x + i E t/\Hbar}
-}
-= c \lr{
+   C
+   \begin{bmatrix}
+   C &
+   S
+   \end{bmatrix}
+   e^{-i k x + i E t/\Hbar}
+   - S
+   \begin{bmatrix}
+   -S & C
+   \end{bmatrix}
+   e^{-i k x - i E t/\Hbar}
+} \times \\
+&\qquad \lr{
+   C
+   \begin{bmatrix}
+   C \\
+   -S
+   \end{bmatrix}
+   e^{i k x - i E t/\Hbar}
+   + S
+   \begin{bmatrix}
+   S \\
+   C
+   \end{bmatrix}
+   e^{i k x + i E t/\Hbar}
+} \\
+&= c \lr{
 C^2 \cos(2\theta)
 - S^2 \cos( 2 \theta )
 + S C \sin( 2 \theta ) e^{-2 i E t/\Hbar}
 + S C \sin( 2 \theta ) e^{2 i E t/\Hbar}
-}
-=
-c \lr{ \cos^2( 2 \theta ) + \sin^2( 2 \theta ) \cos(2 E t/\Hbar) }
-=
+} \\
+&=
+c \lr{ \cos^2( 2 \theta ) + \sin^2( 2 \theta ) \cos(2 E t/\Hbar) } \\
+&=
 c \lr{
 \frac{ (\Hbar c k)^2 }{ (m c^2)^2 + (\Hbar k c)^2 }
 +\frac{ (m c^2)^2 }{ (m c^2)^2 + (\Hbar k c)^2 } \cos\lr{ 2 \pi \frac{2 E}{h} t }
-}
-=
+} \\
+&=
 \frac{c}{ (m c^2)^2 + (\Hbar k c)^2 } \lr{
 (\Hbar c k)^2
 +
 (m c^2)^2
 \cos\lr{ 2 \pi \frac{2 E}{h} t }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For \( k = 0 \), this is
 %

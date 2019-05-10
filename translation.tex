@@ -73,22 +73,23 @@ Having worked backwards through these problems, the answer for this one dimensio
 %
 \makeSubAnswer{}{problem:translation:28:c}
 %
-\begin{dmath}\label{eqn:translation:520}
+\begin{equation}\label{eqn:translation:520}
+\begin{aligned}
 x e^{i p a/\Hbar} \ket{x'}
-=
+&=
 \lr{
 \antisymmetric{x}{e^{i p a/\Hbar}}
 e^{i p a/\Hbar} x
 +
 }
-\ket{x'}
-=
-\lr{ a e^{i p a/\Hbar} + e^{i p a/\Hbar} x ' } \ket{x'}
-= \lr{ a + x' } \ket{x'}.
-\end{dmath}
+\ket{x'} \\
+&=
+\lr{ a e^{i p a/\Hbar} + e^{i p a/\Hbar} x ' } \ket{x'} \\
+&= \lr{ a + x' } \ket{x'}.
+\end{aligned}
+\end{equation}
 %
 This demonstrates that \( e^{i p a/\Hbar} \ket{x'} \) is an eigenstate of \( x \) with eigenvalue \( a + x' \).
-
 } % answer
 %
 \makeoproblem{Polynomial commutators.}{problem:translation:29}{\citep{sakurai2014modern} pr. 1.29}{
@@ -270,7 +271,7 @@ This demonstrates the expected relation between the classical and quantum commut
 %
 } % answer
 %
-\makeoproblem{Translation operator and position expectation.}{problem:translation:30}{\citep{sakurai2014modern} pr. 1.30}{
+\makeoproblem{Translation op., position expectation.}{problem:translation:30}{\citep{sakurai2014modern} pr. 1.30}{
 \index{translation!expectation}
 
 The translation operator for a finite spatial displacement is given by
@@ -291,7 +292,6 @@ Evaluate
 %
 \makesubproblem{}{problem:translation:1.30:b}
 Demonstrate how the expectation value \( \expectation{\Bx} \) changes under translation.
-
 } % problem
 %
 \makeanswer{problem:translation:30}{

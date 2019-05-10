@@ -17,9 +17,9 @@ H = \frac{\Bp^2}{2m} + V(\Bx).
 %
 Calculate \( \antisymmetric{\Bx \cdot \Bp}{H} \) and show that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:41}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:41}
 \ddt{} \expectation{ \Bx \cdot \Bp } = \expectation{ \frac{\Bp^2}{m} } - \expectation{ \Bx \cdot \spacegrad V }.
-\end{dmath}
+\end{equation}
 %
 When the l.h.s. vanishes, the result that the r.h.s. is zero is called the quantum virial theorem.
 %
@@ -44,19 +44,21 @@ Under what conditions does the left-hand side vanish?
 \makeSubAnswer{}{gradQuantum:problemSet2:2a}
 %
 We'll need various commutators to evaluate the Heisenberg equation of motion.
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:40}
+\begin{aligned}
 \antisymmetric{\Bx \cdot \Bp}{H}
-=
-\inv{2 m} \antisymmetric{\Bx \cdot \Bp}{\Bp^2} + \antisymmetric{\Bx \cdot \Bp}{V(\Bx)}
-=
+&=
+\inv{2 m} \antisymmetric{\Bx \cdot \Bp}{\Bp^2} + \antisymmetric{\Bx \cdot \Bp}{V(\Bx)} \\
+&=
 \inv{2 m} \lr{ x_r p_r \Bp^2 - \Bp^2 x_r p_r}
 +
-\lr{ x_r p_r V(\Bx) - V(\Bx) x_r p_r }
-=
+\lr{ x_r p_r V(\Bx) - V(\Bx) x_r p_r } \\
+&=
 \inv{2 m} \antisymmetric{ x_r }{\Bp^2} p_r
 +
 x_r \antisymmetric{ p_r}{ V(\Bx)},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Evaluating those commutators separately, gives
 %
