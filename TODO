@@ -1,4 +1,13 @@
-- check for spaces before and after equations.  Suspect that the page counts are inflated because of this.
+- separate manual passes looking for:
+
+   1) gutter issues
+   2) dmath's that left indent the equation number
+   3) equation numbers overlapped with the equations.
+   4) figures that look too big
+   5) spaces after equations (will show as indented text)
+   6) missing commas and periods in equations (example: chapter 3)
+
+   1-3 done to page 192.
 
 - revisit rod balancing problem (still in ../blogit).  Perhaps try particle on a table problem first.
 
