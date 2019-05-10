@@ -19,7 +19,7 @@
 %\generatetitle{Gauge transformed probability current}
 %%\chapter{Gauge transformed probability current}
 %\label{chap:gaugeTxCurrent}
-
+%
 \makeoproblem{Gauge transformed probability current.}{problem:gaugeTxCurrent:1}{\citep{sakurai2014modern} pr. 2.37 (b)}{
 \makesubproblem{}{problem:gaugeTxCurrent:1:a}
 \index{probability!current}
@@ -45,12 +45,12 @@ find the probability current defined by
 %
 \makesubproblem{}{problem:gaugeTxCurrent:1:b}
 Once obtained, let use a \( \psi = \sqrt{\rho} e^{i S/\Hbar} \) wavefunction representation, and find the corresponding form for the probability current.
-
+%
 \makesubproblem{}{problem:gaugeTxCurrent:1:c}
 Evaluate \( \int d^3 x \Bj \).
 
 } % problem
-
+%
 \makeanswer{problem:gaugeTxCurrent:1}{
 %
 \makeSubAnswer{}{problem:gaugeTxCurrent:1:a}
@@ -66,20 +66,22 @@ Equation \cref{eqn:gaugeTxCurrent:20} and its conjugate are
 
 which can be used immediately in a chain rule expansion of the probability time derivative
 %
-\begin{dmath}\label{eqn:gaugeTxCurrent:80}
+\begin{equation}\label{eqn:gaugeTxCurrent:80}
+\begin{aligned}
 i \Hbar \PD{t}{\rho}
-=
+&=
 i \Hbar \psi^\conj \PD{t}{\psi} +
-i \Hbar \psi \PD{t}{\psi^\conj}
-=
-\psi^\conj \lr{ \inv{2m} \BPi \cdot \BPi \psi + e \phi \psi } -
-\psi \lr{ \inv{2m} \BPi^\conj \cdot \BPi^\conj \psi^\conj + e \phi \psi^\conj }
-=
+i \Hbar \psi \PD{t}{\psi^\conj} \\
+&=
+\psi^\conj \lr{ \inv{2m} \BPi \cdot \BPi \psi + e \phi \psi } - \\
+&\quad\psi \lr{ \inv{2m} \BPi^\conj \cdot \BPi^\conj \psi^\conj + e \phi \psi^\conj } \\
+&=
 \inv{2m} \lr{
 \psi^\conj \BPi \cdot \BPi \psi
 -\psi \BPi^\conj \cdot \BPi^\conj \psi^\conj
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We have a difference of conjugates, so can get away with expanding just the first term
 %
@@ -105,9 +107,9 @@ Note that in the directional derivative terms, the gradient operates on everythi
 
 This gives
 %
-\begin{dmath}\label{eqn:gaugeTxCurrent:120}
+\begin{equation}\label{eqn:gaugeTxCurrent:120}
 \begin{aligned}
-\psi^\conj \BPi \cdot \BPi \psi - \psi \BPi^\conj \cdot \BPi^\conj \psi^\conj
+\psi^\conj &\BPi \cdot \BPi \psi - \psi \BPi^\conj \cdot \BPi^\conj \psi^\conj \\
 &=
 \psi^\conj
 \lr{
@@ -128,24 +130,26 @@ This gives
 +
 \psi
 \BA \cdot \spacegrad \psi^\conj + \psi \spacegrad \cdot (\BA \psi^\conj)
-}
+}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 
 The first term is recognized as a divergence
 %
-\begin{dmath}\label{eqn:gaugeTxCurrent:140}
-\spacegrad \cdot \lr{ \psi^\conj \spacegrad \psi - \psi \spacegrad \psi^\conj }
-=
+\begin{equation}\label{eqn:gaugeTxCurrent:140}
+\begin{aligned}
+\spacegrad &\cdot \lr{ \psi^\conj \spacegrad \psi - \psi \spacegrad \psi^\conj } \\
+&=
 \psi^\conj \spacegrad \cdot \spacegrad \psi
 +
 \spacegrad \psi \cdot \spacegrad \psi^\conj
 -
 \psi \spacegrad \cdot \spacegrad \psi^\conj
 -
-\spacegrad \psi^\conj \cdot \spacegrad \psi
-= \psi^\conj \spacegrad^2 \psi - \psi \spacegrad^2 \psi^\conj.
-\end{dmath}
+\spacegrad \psi^\conj \cdot \spacegrad \psi \\
+&= \psi^\conj \spacegrad^2 \psi - \psi \spacegrad^2 \psi^\conj.
+\end{aligned}
+\end{equation}
 %
 The second term can also be factored into a divergence operation
 %

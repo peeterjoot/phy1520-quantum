@@ -19,20 +19,20 @@
 %\chapter{Bra-ket and spin one-half problems}
 %\label{chap:moreBraKetProblems}
 
-
+%
 \makeoproblem{Operator matrix representation.}{problem:moreBraKetProblems:1.5}{\citep{sakurai2014modern} pr. 1.5}{
 \index{matrix representation}
-
+%
 \makesubproblem{}{problem:moreBraKetProblems:1.5:a}
 %
 Determine the matrix representation of \( \ket{\alpha}\bra{\beta} \) given a complete set of eigenvectors \( \ket{a^r} \).
-
+%
 \makesubproblem{}{problem:moreBraKetProblems:1.5:b}
 %
 Verify with \( \ket{\alpha} = \ket{s_z = \Hbar/2}, \ket{s_x = \Hbar/2} \).
 
 } % problem
-
+%
 \makeanswer{problem:moreBraKetProblems:1.5}{
 %
 \makeSubAnswer{}{problem:moreBraKetProblems:1.5:a}
@@ -165,7 +165,7 @@ This can be confirmed with direct computation
 \makeoproblem{Eigenvalue of sum of kets.}{problem:moreBraKetProblems:6}{\citep{sakurai2014modern} pr. 1.6}{
 Given eigenkets \( \ket{i}, \ket{j} \) of an operator \( A \), what are the conditions that \( \ket{i} + \ket{j} \) is also an eigenvector?
 } % problem
-
+%
 \makeanswer{problem:moreBraKetProblems:6}{
 Let \( A \ket{i} = i \ket{i}, A \ket{j} = j \ket{j} \), and suppose that the sum is an eigenket.  Then there must be a value \( a \) such that
 %
@@ -189,11 +189,11 @@ j &= a,
 \end{equation}
 so for the sum to be an eigenket, both of the corresponding energy eigenvalues must be identical (i.e. linear combinations of degenerate eigenkets are also eigenkets).
 } % answer
-
+%
 \makeoproblem{Null operator.}{problem:moreBraKetProblems:7}{\citep{sakurai2014modern} pr. 1.7}{
 \index{null operator}
 Given eigenkets \( \ket{a'} \) of operator \( A \)
-
+%
 \makesubproblem{}{problem:moreBraKetProblems:7:a}
 show that
 %
@@ -201,17 +201,17 @@ show that
 \prod_{a'} \lr{ A - a' }
 \end{equation}
 is the null operator.
-
+%
 \makesubproblem{}{problem:moreBraKetProblems:7:b}
 %
 \begin{equation}\label{eqn:moreBraKetProblems:220}
 \prod_{a'' \ne a'} \frac{\lr{ A - a'' }}{a' - a''}
 \end{equation}
-
+%
 \makesubproblem{}{problem:moreBraKetProblems:7:c}
 Illustrate using \( S_z \) for a spin 1/2 system.
 } % problem
-
+%
 \makeanswer{problem:moreBraKetProblems:7}{
 \makeSubAnswer{}{problem:moreBraKetProblems:7:a}
 Application of \( \ket{a} \), the eigenket of \( A \) with eigenvalue \( a \) to any term \( A - a' \) scales \( \ket{a} \) by \( a - a' \), so the product operating on \( \ket{a} \) is
@@ -221,7 +221,7 @@ Application of \( \ket{a} \), the eigenket of \( A \) with eigenvalue \( a \) to
 \end{equation}
 %
 Since \( \ket{a} \) is one of the \( \setlr{\ket{a'}} \) eigenkets of \( A \), one of these terms must be zero.
-
+%
 \makeSubAnswer{}{problem:moreBraKetProblems:7:b}
 %
 Again, consider the action of the operator on \( \ket{a} \),
@@ -313,7 +313,7 @@ These clearly have the expected delta function property acting on kets \( \ket{+
 
 } % answer
 
-
+%
 \makeoproblem{Spin half general normal.}{problem:moreBraKetProblems:9}{\citep{sakurai2014modern} pr. 1.9}{
 %
 \index{spin half!states}
@@ -326,7 +326,7 @@ Construct \( \ket{\BS \cdot \ncap ; + } \), where \( \ncap = ( \cos\alpha \sin\b
 %
 Solve this as an eigenvalue problem.
 } % problem
-
+%
 \makeanswer{problem:moreBraKetProblems:9}{
 %
 The spin operator for this direction is
@@ -432,7 +432,7 @@ e^{i\alpha}
 It is straightforward to show that these are orthogonal and that this has the \( -\Hbar/2 \) eigenvalue.
 
 } % answer
-
+%
 \makeoproblem{Two state Hamiltonian.}{problem:moreBraKetProblems:10}{\citep{sakurai2014modern} pr. 1.10}{
 \index{Hamiltonian!two state}
 
@@ -448,7 +448,7 @@ H = a \biglr{
 \end{dmath}
 
 } % problem
-
+%
 \makeanswer{problem:moreBraKetProblems:10}{
 %
 In matrix form the Hamiltonian is

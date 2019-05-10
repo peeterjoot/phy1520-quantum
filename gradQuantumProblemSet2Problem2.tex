@@ -22,13 +22,13 @@ Calculate \( \antisymmetric{\Bx \cdot \Bp}{H} \) and show that
 \end{dmath}
 %
 When the l.h.s. vanishes, the result that the r.h.s. is zero is called the quantum virial theorem.
-
+%
 \makesubproblem{}{gradQuantum:problemSet2:2c}
 Consider the 3D isotropic harmonic oscillator, and show explicitly that its eigenstates obey the virial theorem.
-
+%
 \makesubproblem{}{gradQuantum:problemSet2:2d}
 Evaluate the r.h.s. for the superposition state \( \ket{0,0,0} + \ket{0,0,2} \) where the notation stands for \( \ket{ n_x, n_y, n_z } \) occupation numbers.
-
+%
 \makesubproblem{}{gradQuantum:problemSet2:2b}
 Under what conditions does the left-hand side vanish?
 } % makeproblem
@@ -40,7 +40,7 @@ Under what conditions does the left-hand side vanish?
 %
 \makeanswer{gradQuantum:problemSet2:2}{
 \withproblemsetsParagraph{
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:2a}
 %
 We'll need various commutators to evaluate the Heisenberg equation of motion.
@@ -101,7 +101,7 @@ Evaluating the expectation of this identity with respect to a stationary state \
 \end{dmath}
 %
 Because the expectation was with respect to a stationary state, the time derivative could be moved outside of the expectation operation.
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:2c}
 When \cref{eqn:gradQuantumProblemSet2Problem2:120} is zero, we have the quantum equivalent of the virial theorem, relating the average kinetic energy to the potential
 %
@@ -197,7 +197,7 @@ or
 }
 
 Neither expectation has any time dependence, and the virial theorem has been confirmed.
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:2d}
 %
 With \( \ket{\psi} = \ket{0,0,0} + \ket{0,0,2} \), the gradient portion of the RHS is
@@ -375,7 +375,7 @@ or
 }
 
 This does not match \cref{eqn:gradQuantumProblemSet2Problem2:340}.
-
+%
 \makeSubAnswer{}{gradQuantum:problemSet2:2b}
 %
 To derive \cref{eqn:gradQuantumProblemSet2Problem2:41} the expectation had to be calculated with respect to stationary (non-time dependent) states.  As an example, we confirmed this by showing the r.h.s was zero with respect to the energy eigenstates.  For the superposition state \( \ket{0,0,0} + \ket{0,0,2} \) this was observed to be insufficient.  It is clear that the perfect cancellation of the time dependence that was required so that \( \expectation{\frac{\Bp^2}{m}} = \expectation{ \Bx \cdot \spacegrad V } \) will not, in general, be possible for such superposition states.  The virial theorem requires not only expectations with respect to stationary states, but requires those stationary states to also be energy eigenstates.

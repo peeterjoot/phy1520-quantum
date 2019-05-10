@@ -6,7 +6,7 @@
 \index{free particle propagator!momentum space}
 Derive the free particle propagator in momentum space.
 } % problem
-
+%
 \makeanswer{problem:freeParticlePropagator:33}{
 %
 The momentum space propagator follows in the same fashion as the spatial propagator
@@ -78,14 +78,16 @@ K(\Bp'', t ; \Bp', t_0)
 %
 This is what we expect since the time evolution is given by just this exponential factor
 %
-\begin{dmath}\label{eqn:freeParticlePropagator:220}
+\begin{equation}\label{eqn:freeParticlePropagator:220}
+\begin{aligned}
 \braket{\Bp'}{\alpha, t_0 ; t}
-= \bra{\Bp'} \exp\lr{ -i \frac{(\Bp')^2 (t -t_0)}{2 m \Hbar}} \ket{\alpha, t_0}
-=
+&= \bra{\Bp'} \exp\lr{ -i \frac{(\Bp')^2 (t -t_0)}{2 m \Hbar}} \ket{\alpha, t_0} \\
+&=
 \exp\lr{ -i \frac{(\Bp')^2 (t -t_0)}{2 m \Hbar}}
 \braket{\Bp'}
 {\alpha, t_0}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
 
