@@ -590,7 +590,7 @@ To determine the weighting of the wave functions, we require matching at the bou
 \begin{enumerate}[(i)]
 \item Total reflection.  Are there any special values of momentum that allow for total reflection?  If so, at the boundary both components must be zero
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:720}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:720}
 \begin{bmatrix}
 \cos\theta_{k_1} \\
 \sin\theta_{k_1} \\
@@ -606,7 +606,7 @@ To determine the weighting of the wave functions, we require matching at the bou
 0 \\
 0
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 
 This is possible if \( -B/A = \cot\theta_{k_1} = \tan\theta_{k_1} \), which requires
 %
@@ -616,15 +616,15 @@ This is possible if \( -B/A = \cot\theta_{k_1} = \tan\theta_{k_1} \), which requ
 %
 However, we must also have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:760}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:760}
 \tan 2 \theta_1 = \frac{m c}{\Hbar k},
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:780}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:780}
 \theta_1 = \inv{2} \Atan\lr{ \frac{m c}{\Hbar k} }.
-\end{dmath}
+\end{equation}
 %
 Simultaneous solutions of \cref{eqn:gradQuantumProblemSet4Problem3:740}, \cref{eqn:gradQuantumProblemSet4Problem3:780} only occur at \( k = \pm 0 \), where \( \tan( (1 + 2 n)\pi/2 ) = \pm \infty \).  Since a particle at rest is not at interest in a reflection scenario, this shows that a decaying solution in region II must be introduced to match the boundary value constraints.
 
@@ -739,7 +739,7 @@ so we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \), as exp
 
 For this case at \( x = 0 \), we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:940}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:940}
 A
 \begin{bmatrix}
 \cos\theta_{k_1} \\
@@ -757,11 +757,11 @@ D
 -\sin \theta_2 \\
 \cos \theta_2 \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 With the same substitutions as above, this is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:860}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:860}
 \begin{bmatrix}
 C_1 \\
 S_1
@@ -775,7 +775,7 @@ S_1
 a \\
 b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:880}
@@ -845,31 +845,31 @@ and again we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \),
 
 In units where \( \Hbar = c = 1 \), the eigenkets found for the Dirac Hamiltonian, before normalization, were found to be
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1041}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1041}
 \ket{\pm} \propto
 \begin{bmatrix}
 \mp m \\
 \epsilon_1 \pm k
 \end{bmatrix}
 e^{\pm i k x - i E t/\Hbar},
-\end{dmath}
+\end{equation}
 %
 where \( \epsilon_1^2 = m^2 + k^2 \).  Letting \( k \rightarrow i k \), this provides the form of the non-oscillatory wavefunctions in region II when there is no ordinary nor anti-particle transmission.
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1061}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1061}
 \ket{\pm} \propto
 \begin{bmatrix}
 \mp m \\
 \epsilon_2 \pm i k
 \end{bmatrix}
 e^{\mp k x - i E t/\Hbar},
-\end{dmath}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1081}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1081}
 \epsilon_2^2 = m^2 - k^2
-\end{dmath}
+\end{equation}
 
 Observe that the \( \psi_2 \) component of this wave function sits on a circle in the complex plane
 %
@@ -882,13 +882,13 @@ Observe that the \( \psi_2 \) component of this wave function sits on a circle i
 %
 Putting back in the factors of \( \Hbar \), \( c\), this allows the identification
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1121}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1121}
 \epsilon_2 \pm i \Hbar k c = m c^2 e^{i\phi}.
-\end{dmath}
+\end{equation}
 %
 So, like the trigonometric representation of the oscillatory wave function, the normalized wave functions for exponential decay(increase) can be written
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1141}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1141}
 \ket{\pm}
 =
 \inv{\sqrt{2}}
@@ -898,7 +898,7 @@ e^{\mp i \phi/2}
 \end{bmatrix}
 e^{\mp k x - i E t/\Hbar}
 ,
-\end{dmath}
+\end{equation}
 %
 where the respective eigenvalues are \( \epsilon_2 = \pm \sqrt{ (m c^2)^2 - (\Hbar k c)^2} \), and \( \Hbar k c < m c^2 \).
 
@@ -912,7 +912,7 @@ which makes some sense since the particle is not able to propagate freely in the
 
 At the interface, we wish to solve
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1181}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1181}
 A
 \begin{bmatrix}
 C_1 \\
@@ -930,7 +930,7 @@ C_1 \\
 e^{i \phi/2} \\
 e^{-i \phi/2} \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 With \( a = A/D \), and \( b = B/D \), this has solution
 %

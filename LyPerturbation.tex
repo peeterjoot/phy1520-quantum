@@ -87,12 +87,13 @@ m - m'
 The sum over \( l' \) was eliminated because \( V \) only changes the \( m \) of any state \( \ket{l,m} \), so the matrix element \( \bra{l',m'} V \ket{l, m} \) must includes a \( \delta_{l', l} \) factor.
 Since we are now summing over \( m' \ne m \), some of the matrix elements in the numerator should now be non-zero, unlike the case when the zero first order energy shift was calculated in \cref{eqn:LyPerturbation:60}.
 %
-\begin{dmath}\label{eqn:LyPerturbation:120}
+\begin{equation}\label{eqn:LyPerturbation:120}
+\begin{aligned}
 \bra{l, m'} C L_y \ket{l, m}
-=
+&=
 \frac{C}{2 i}
-\bra{l, m'} \lr{ L_{+} - L_{-} } \ket{l, m}
-=
+\bra{l, m'} \lr{ L_{+} - L_{-} } \ket{l, m} \\
+&=
 \frac{C}{2 i}
 \bra{l, m'}
 \lr{
@@ -100,23 +101,24 @@ L_{+}
 \ket{l, m}
 - L_{-}
 \ket{l, m}
-}
-=
+} \\
+&=
 \frac{C \Hbar}{2 i}
 \bra{l, m'}
 \lr{
 \sqrt{(l - m)(l + m + 1)} \ket{l, m + 1}
 -
 \sqrt{(l + m)(l - m + 1)} \ket{l, m - 1}
-}
-=
+} \\
+&=
 \frac{C \Hbar}{2 i}
 \lr{
 \sqrt{(l - m)(l + m + 1)} \delta_{m', m + 1}
 -
 \sqrt{(l + m)(l - m + 1)} \delta_{m', m - 1}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 After squaring and summing, the cross terms will be zero since they involve products of delta functions with different indices.  That leaves
 %

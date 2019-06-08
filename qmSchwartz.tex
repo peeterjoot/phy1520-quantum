@@ -35,12 +35,14 @@ is used in the derivation of the uncertainty relation.  The proof of the Schwart
 
 My ancient first year linear algebra text \citep{nicholson1990elementary} contains a non-sneaky proof, but it only works for real vector spaces.  Recast in bra-ket notation, this method examines the bounds of the norms of sums and differences of unit state vectors (i.e. \( \braket{a}{a} = \braket{b}{b} = 1 \).)
 %
-\begin{dmath}\label{eqn:qmSchwartz:40}
+\begin{equation}\label{eqn:qmSchwartz:40}
+\begin{aligned}
 \braket{a - b}{a - b}
-= \braket{a}{a} + \braket{b}{b} - \braket{a}{b} - \braket{b}{a}
-= 2 - 2 \Real \braket{a}{b}
-\ge 0,
-\end{dmath}
+&= \braket{a}{a} + \braket{b}{b} - \braket{a}{b} - \braket{b}{a} \\
+&= 2 - 2 \Real \braket{a}{b} \\
+&\ge 0,
+\end{aligned}
+\end{equation}
 %
 so
 \begin{dmath}\label{eqn:qmSchwartz:60}
@@ -50,10 +52,12 @@ so
 Similarly
 %
 \begin{dmath}\label{eqn:qmSchwartz:80}
+\begin{aligned}
 \braket{a + b}{a + b}
-= \braket{a}{a} + \braket{b}{b} + \braket{a}{b} + \braket{b}{a}
-= 2 + 2 \Real \braket{a}{b}
-\ge 0,
+&= \braket{a}{a} + \braket{b}{b} + \braket{a}{b} + \braket{b}{a} \\
+&= 2 + 2 \Real \braket{a}{b} \\
+&\ge 0,
+\end{aligned}
 \end{dmath}
 %
 so

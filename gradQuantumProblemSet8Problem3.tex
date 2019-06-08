@@ -75,25 +75,29 @@ where
 %
 To check this, operating with \( E^{(0)} - H_0 \), we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:180}
+\begin{aligned}
 \lr{ E^{(0)} - H_0 } \ket{n}
-=
+&=
 \lr{ E^{(0)} - H_0 } \ket{n^{(0)}} +
-\overbar{P}_n \lr{ \lambda_1 V_1 + \lambda^2 V_2 - \Delta } \ket{n}
-=
+\overbar{P}_n \lr{ \lambda_1 V_1 + \lambda^2 V_2 - \Delta } \ket{n} \\
+&=
 \lr{ 1 - \ket{n^{(0)}}\bra{n^{(0)}} } \lr{ H - H_0 - \Delta } \ket{n},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:200}
+\begin{aligned}
 \lr{ E^{(0)} - H + \Delta} \ket{n}
-=
--\ket{n^{(0)}}\bra{n^{(0)}} \lr{ H - H_0 - \Delta } \ket{n}
-=
+&=
+-\ket{n^{(0)}}\bra{n^{(0)}} \lr{ H - H_0 - \Delta } \ket{n} \\
+&=
 -\ket{n^{(0)}} \lr{
-\lr{ E^{(0)} + \Delta} - E^{(0)} -\Delta } \braket{n^{(0)}}{n}
-= 0.
-\end{dmath}
+\lr{ E^{(0)} + \Delta} - E^{(0)} -\Delta } \braket{n^{(0)}}{n} \\
+&= 0.
+\end{aligned}
+\end{equation}
 %
 The LHS is also zero as desired, showing that \cref{eqn:gradQuantumProblemSet8Problem3:140} is the desired perturbation relationship.
 For the perturbed state we are looking for just the \( \lambda^1 \) terms of \cref{eqn:gradQuantumProblemSet8Problem3:140}, which after dropping all second order and higher terms is
