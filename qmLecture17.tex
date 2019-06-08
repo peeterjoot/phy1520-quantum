@@ -271,28 +271,43 @@ Observe that further lowering this produces zero
 = 0.
 \end{dmath}
 %
-All the basis elements have been determined, and are summarized in \cref{tab:qmLecture17:100}.
-
-\captionedTable{Spin one,half total angular momentum basis.}{tab:qmLecture17:100}{
-\begin{tabular}{|l|l}
-\cline{1-1}
-\( \ket{ \frac{3}{2} \frac{3}{2} } = \ket{ 1 1; \frac{1}{2} \frac{1}{2} } \)
- &                        \\ \hline
-\( \ket{ \frac{3}{2} \frac{1}{2} } = \sqrt{\frac{2}{3}} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } + \inv{\sqrt{3}} \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \)
- & \multicolumn{1}{l|}{
-\( \ket{ \frac{1}{2} \frac{1}{2} } = \sqrt{\frac{1}{3}} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } - \sqrt{ \frac{2}{3} } \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \)
-} \\ \hline
-\( \ket{ \frac{3}{2} \frac{-1}{2} } = \inv{\sqrt{ 3 }} \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } + \sqrt{\frac{2}{3}} \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} } \)
- & \multicolumn{1}{l|}{
-\( \ket{ \frac{1}{2} -\frac{1}{2} } = \sqrt{ \frac{2}{3} } \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } - \inv{\sqrt{3}} \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} } \)
-} \\ \hline
-\( \ket{ \frac{3}{2} \frac{-3}{2} } = \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} } \)
- &                        \\ \cline{1-1}
-\end{tabular}
-}
-
+All the basis elements have been determined.  In summary
+\begin{equation}\label{eqn:qmLecture17:99}
+\begin{aligned}
+\ket{ \frac{3}{2} \frac{3}{2} } &= \ket{ 1 1; \frac{1}{2} \frac{1}{2} } \\
+%
+\sqrt{3} \ket{ \frac{3}{2} \frac{1}{2} } &= \sqrt{2} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } + \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \\
+\sqrt{3} \ket{ \frac{1}{2} \frac{1}{2} } &= \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } - \sqrt{2} \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \\
+%
+\sqrt{3} \ket{ \frac{3}{2} \frac{-1}{2} } &= \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } + \sqrt{2} \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} } \\
+\sqrt{3} \ket{ \frac{1}{2} -\frac{1}{2} } &= \sqrt{2} \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } - \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} } \\
+%
+\ket{ \frac{3}{2} \frac{-3}{2} } &= \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} }.
+\end{aligned}
+\end{equation}
+%, and are summarized in \cref{tab:qmLecture17:100}.
+%\captionedTable{Spin one,half total angular momentum basis.}{tab:qmLecture17:100}{
+%\begin{tabular}{|l|l}
+%\cline{1-1}
+%\( \ket{ \frac{3}{2} \frac{3}{2} } = \ket{ 1 1; \frac{1}{2} \frac{1}{2} } \)
+% &                        \\ \hline
+%%
+%\( \sqrt{3} \ket{ \frac{3}{2} \frac{1}{2} } = \sqrt{2} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } + \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \)
+% & \multicolumn{1}{l|}{
+%\( \sqrt{3} \ket{ \frac{1}{2} \frac{1}{2} } = \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} } - \sqrt{2} \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} } \)
+%} \\ \hline
+%%
+%\( \sqrt{3} \ket{ \frac{3}{2} \frac{-1}{2} } = \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } + \sqrt{2} \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} } \)
+% & \multicolumn{1}{l|}{
+%\( \sqrt{3} \ket{ \frac{1}{2} -\frac{1}{2} } = \sqrt{2} \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} } - \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} } \)
+%} \\ \hline
+%%
+%\( \ket{ \frac{3}{2} \frac{-3}{2} } = \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} } \)
+% &                        \\ \cline{1-1}
+%\end{tabular}
+%}
 } % example
-
+%
 \makeexample
 {Spin two, spin one.}
 {example:qmLecture17:2}{
