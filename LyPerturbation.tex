@@ -195,16 +195,25 @@ H &=
 \end{bmatrix} \\
 &+
 \frac{C \Hbar}{i}
+%\begin{bmatrix}
+%0                & -\sqrt{(2l-1)(1)} &                  &                    & \\
+%\sqrt{(2l-1)(1)} & 0                 & -\sqrt{(2l-2)(2)}&                    & \\
+%                 & \sqrt{(2l-2)(2)}  &                  &                    & \\
+%                 &                   & \ddots           &                    & \\
+%&                 &                   &  0               & - \sqrt{(1)(2l-1)}  \\
+%&                 &                   & \sqrt{(1)(2l-1)} & 0
+%\end{bmatrix}
 \begin{bmatrix}
-0                & -\sqrt{(2l-1)(1)} &                  &                    & \\
-\sqrt{(2l-1)(1)} & 0                 & -\sqrt{(2l-2)(2)}&                    & \\
-                 & \sqrt{(2l-2)(2)}  &                  &                    & \\
+0                & -c_{2l-1,1} &                  &                    & \\
+c_{2l-1,1} & 0                 & -c_{2l-2,2}&                    & \\
+                 & c_{2l-2,2}  &                  &                    & \\
                  &                   & \ddots           &                    & \\
-&                 &                   &  0               & - \sqrt{(1)(2l-1)}  \\
-&                 &                   & \sqrt{(1)(2l-1)} & 0
-\end{bmatrix}
+&                 &                   &  0               & - c_{1,2l-1}  \\
+&                 &                   & c_{1,2l-1} & 0
+\end{bmatrix},
 \end{aligned}
 \end{equation}
+where \( c_{a, b} = \sqrt{ a b } \).
 
 Solving for the eigenvalues of this Hamiltonian for increasing \( l \) in Mathematica (\nbref{sakuraiProblem5.17a.nb}), it appears that the eigenvalues are
 %
@@ -221,7 +230,11 @@ so to first order in \( C^2 \), these are
 We have a \( C^2 \Hbar/B \) term in both the perturbative energy shift
 \cref{eqn:LyPerturbation:140}, and the first order expansion of the exact solution
 \cref{eqn:LyPerturbation:220}.
-Comparing this for the \( l = 5 \) case, the coefficients of \( C^2 \Hbar/B \) in \cref{eqn:LyPerturbation:140} are all negative \( -17.5, -17., -16.5, -16., -15.5, -15., -14.5, -14., -13.5, -13., -12.5 \), whereas the coefficient of \( C^2 \Hbar/B \) in the first order expansion of the exact solution \cref{eqn:LyPerturbation:220} are \( 2 m \), ranging from \( [-10, 10] \).
+Comparing this for the \( l = 5 \) case, the coefficients of \( C^2 \Hbar/B \) in \cref{eqn:LyPerturbation:140} are all negative
+\begin{dmath}\label{eqn:LyPerturbation:n}
+-17.5, -17., -16.5, -16., -15.5, -15., -14.5, -14., -13.5, -13., -12.5,
+\end{dmath}
+whereas the coefficient of \( C^2 \Hbar/B \) in the first order expansion of the exact solution \cref{eqn:LyPerturbation:220} are \( 2 m \), ranging from \( [-10, 10] \).
 } % answer
 
 %\EndArticle

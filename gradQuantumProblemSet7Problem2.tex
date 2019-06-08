@@ -142,7 +142,6 @@ E_{\textrm{He}}
 \end{equation}
 %
 This is \( E_{\textrm{He}} = 8 E_\txtH\), a value of about \( -109 eV \).
-
 The computations above can be found in \nbref{ps7:heliumAtomGroundStateWithInteraction.nb}.
 %
 \makeSubAnswer{}{gradQuantum:problemSet7:2b}
@@ -459,26 +458,30 @@ where this is understood to be the \( \epsilon \rightarrow 0 \) limit of
 %
 See \citep{byron1992mca} for a demonstration of this identity, and the contour used to evaluate the RHS of \cref{eqn:gradQuantumProblemSet7Problem2:420}.  Employing this inverse radial representation, the \( r_1 \) and \( r_2 \) contributions to the interaction can be decoupled
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:440}
-\frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}
-=
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:440}
+\begin{aligned}
+\frac{e^2}{4 \pi \epsilon_0} & \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi} \\
+&=
 \frac{e^2}{4 \pi \epsilon_0}
-\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1)
+\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) 
+\,\times \\ &\qquad
 \int 2 \pi dr_2 d\theta_2 r_2^2 \sin(\theta_2)
 e^{ -2(r_1 + r_2)/a}
 \inv{2 \pi^2}
-\int d^3 k \frac{e^{i \Bk \cdot \lr{ \Br_1 - \Br_2} }}{\Bk^2}
-=
+\int d^3 k \frac{e^{i \Bk \cdot \lr{ \Br_1 - \Br_2} }}{\Bk^2} \\
+&=
 \frac{e^2}{4 \pi \epsilon_0}
 \inv{2 \pi^2}
 \int d^3 k \inv{\Bk^2}
-\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) e^{-2r_1/a + i \Bk \cdot \Br_1}
+\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) e^{-2r_1/a + i \Bk \cdot \Br_1} 
+\,\times \\ &\qquad
 \int 2 \pi dr_2 d\theta_2 r_2^2 \sin(\theta_2) e^{-2r_2/a - i \Bk \cdot \Br_2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The spatial domain integrals can now be evaluated separately.  With a coordinate system picked so that \( \Bk = \pm k \zcap \), that gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:460}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:460}
 \begin{aligned}
 2 \pi \int dr d\theta r^2 \sin(\theta) e^{-2r/a + i \Bk \cdot \Br}
 &=
@@ -500,7 +503,7 @@ e^{\mp i k r u} \\
 &=
 \frac{16 \pi a^3}{\lr{1 + a^2 k^2 }^2}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 We see that the specific orientation used to evaluate the integral does not matter, so we have
 %

@@ -41,25 +41,45 @@ Compute the full field evolution of the levels and compare with the perturbative
 \makeSubAnswer{}{gradQuantum:problemSet8:4a}
 %What are the spin eigenstates and eigenvalues?
 
-With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), the unperturbed interaction Hamiltonian is
+With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), we can compute the unperturbed interaction Hamiltonian.  For brevity, let \( S_{\txte\txtp} = \BS_\txte \cdot \BS_\txtp \)
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:60}
-A \BS_\txte \cdot \BS_\txtp
+A  \BS_\txte \cdot \BS_\txtp 
 =
 A
 \begin{bmatrix}
-\bra{++} \BS_\txte \cdot \BS_\txtp \ket{++} & \bra{++} \BS_\txte \cdot \BS_\txtp \ket{-+} & \bra{++} \BS_\txte \cdot \BS_\txtp \ket{+-} & \bra{++} \BS_\txte \cdot \BS_\txtp \ket{--} \\
-\bra{-+} \BS_\txte \cdot \BS_\txtp \ket{++} & \bra{-+} \BS_\txte \cdot \BS_\txtp \ket{-+} & \bra{-+} \BS_\txte \cdot \BS_\txtp \ket{+-} & \bra{-+} \BS_\txte \cdot \BS_\txtp \ket{--} \\
-\bra{+-} \BS_\txte \cdot \BS_\txtp \ket{++} & \bra{+-} \BS_\txte \cdot \BS_\txtp \ket{-+} & \bra{+-} \BS_\txte \cdot \BS_\txtp \ket{+-} & \bra{+-} \BS_\txte \cdot \BS_\txtp \ket{--} \\
-\bra{--} \BS_\txte \cdot \BS_\txtp \ket{++} & \bra{--} \BS_\txte \cdot \BS_\txtp \ket{-+} & \bra{--} \BS_\txte \cdot \BS_\txtp \ket{+-} & \bra{--} \BS_\txte \cdot \BS_\txtp \ket{--} \\
-\end{bmatrix}
+\bra{++} S_{\txte\txtp} \ket{++} & \bra{++} S_{\txte\txtp} \ket{-+} & \bra{++} S_{\txte\txtp} \ket{+-} & \bra{++} S_{\txte\txtp} \ket{--} \\
+\bra{-+} S_{\txte\txtp} \ket{++} & \bra{-+} S_{\txte\txtp} \ket{-+} & \bra{-+} S_{\txte\txtp} \ket{+-} & \bra{-+} S_{\txte\txtp} \ket{--} \\
+\bra{+-} S_{\txte\txtp} \ket{++} & \bra{+-} S_{\txte\txtp} \ket{-+} & \bra{+-} S_{\txte\txtp} \ket{+-} & \bra{+-} S_{\txte\txtp} \ket{--} \\
+\bra{--} S_{\txte\txtp} \ket{++} & \bra{--} S_{\txte\txtp} \ket{-+} & \bra{--} S_{\txte\txtp} \ket{+-} & \bra{--} S_{\txte\txtp} \ket{--} \\
+\end{bmatrix}.
+\end{dmath}
+Each of the matrix elements may be expanded in terms of the Pauli basis, for example
+\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:n}
+\bra{++} S_{\txte\txtp} \ket{-+} 
+=
+\frac{\Hbar^2}{4}
+\bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} 
+=
+\frac{\Hbar^2}{4}
+\braket{+}{-} \braket{+}{+},
+\end{dmath}
+so
+\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:61}
+A  \BS_\txte \cdot \BS_\txtp 
 =
 \frac{A \Hbar^2}{4}
+%\begin{bmatrix}
+%\bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{-} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{-} \\
+%\bra{-} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{-} & \bra{-} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{-} \\
+%\bra{+} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{-} & \bra{+} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{-} \\
+%\bra{-} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{-} & \bra{-} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{-} \\
+%\end{bmatrix}
 \begin{bmatrix}
-\bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{-} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{-} \\
-\bra{-} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{-} & \bra{-} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{-} \\
-\bra{+} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{-} & \bra{+} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{-} \\
-\bra{-} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{+} & \bra{-} \sigma_\txte \ket{+} \bra{-} \sigma_\txtp \ket{-} & \bra{-} \sigma_\txte \ket{-} \bra{-} \sigma_\txtp \ket{-} \\
+\braket{+}{+} \braket{+}{+} & \braket{+}{-} \braket{+}{+} & \braket{+}{+} \braket{+}{-} & \braket{+}{-} \braket{+}{-} \\
+\braket{-}{+} \braket{+}{+} & \braket{-}{-} \braket{+}{+} & \braket{-}{+} \braket{+}{-} & \braket{-}{-} \braket{+}{-} \\
+\braket{+}{+} \braket{-}{+} & \braket{+}{-} \braket{-}{+} & \braket{+}{+} \braket{-}{-} & \braket{+}{-} \braket{-}{-} \\
+\braket{-}{+} \braket{-}{+} & \braket{-}{-} \braket{-}{+} & \braket{-}{+} \braket{-}{-} & \braket{-}{-} \braket{-}{-} \\
 \end{bmatrix}
 =
 \frac{A \Hbar^2}{4}
@@ -87,23 +107,26 @@ The spin eigenstates are the basis elements of \( \beta \) above, with respectiv
 %
 The matrix representation of the perturbation potential is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:100}
--B_{\textrm{eff}} S^z_\txte
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:100}
+\begin{aligned}
+&-B_{\textrm{eff}} S^z_\txte
 =
--\frac{B_{\textrm{eff}} \Hbar}{2}
+-\frac{B_{\textrm{eff}} \Hbar}{2} 
+\,\times \\ &\quad
 \begin{bmatrix}
 \bra{+} \sigma^z_\txte \ket{+} \braket{+}{+} & \bra{+} \sigma^z_\txte \ket{-} \braket{+}{+} & \bra{+} \sigma^z_\txte \ket{+} \braket{+}{-} & \bra{+} \sigma^z_\txte \ket{-} \braket{+}{-} \\
 \bra{-} \sigma^z_\txte \ket{+} \braket{+}{+} & \bra{-} \sigma^z_\txte \ket{-} \braket{+}{+} & \bra{-} \sigma^z_\txte \ket{+} \braket{+}{-} & \bra{-} \sigma^z_\txte \ket{-} \braket{+}{-} \\
 \bra{+} \sigma^z_\txte \ket{+} \braket{-}{+} & \bra{+} \sigma^z_\txte \ket{-} \braket{-}{+} & \bra{+} \sigma^z_\txte \ket{+} \braket{-}{-} & \bra{+} \sigma^z_\txte \ket{-} \braket{-}{-} \\
 \bra{-} \sigma^z_\txte \ket{+} \braket{-}{+} & \bra{-} \sigma^z_\txte \ket{-} \braket{-}{+} & \bra{-} \sigma^z_\txte \ket{+} \braket{-}{-} & \bra{-} \sigma^z_\txte \ket{-} \braket{-}{-} \\
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&\qquad =
 -\frac{B_{\textrm{eff}} \Hbar}{2}
 \begin{bmatrix}
 \sigma^z_\txte & 0 \\
 0 & \sigma^z_\txte
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Assuming the \( \BS_\txte \) operator is directed along \( \ncap = (\sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta) \) with eigenkets
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:120}
@@ -245,7 +268,10 @@ The splitting is the same to first order, but the starting energies are differen
 %
 \makeSubAnswer{}{gradQuantum:problemSet8:4a}
 %
-The full field solutions (as found in \nbref{ps8:PauliMatrixSpinOperators.nb}) are
+See
+\nbref{ps8:PauliMatrixSpinOperators.nb}
+for the full field solutions, which are
+%The full field solutions (as found in \nbref{ps8:PauliMatrixSpinOperators.nb}) are
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:300}
 \begin{array}{c}

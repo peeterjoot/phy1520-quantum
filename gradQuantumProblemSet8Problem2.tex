@@ -45,23 +45,30 @@ Y_{1,-1}(\theta, \phi) &= \frac{1}{2} \sqrt{\frac{3}{2 \pi }} e^{-i \phi } \sin 
 %
 That is enough information to construct the matrix element of the perturbing potential with respect to these states.  Those are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:100}
-\bra{n' 1 m'} V \ket{n 1 m}
-=
-\int_0^\infty r^2 dr \int_0^\pi \sin\theta d\theta \int_0^{2 \pi} d\phi R_n(r) Y^\conj_{1, m'}(\theta, \phi) \lambda r^2 \sin^2\theta \cos(2 \phi) R_n(r) Y_{1, m}(\theta, \phi)
-=
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem2:100}
+\begin{aligned}
+&\bra{n' 1 m'} V \ket{n 1 m} \\
+&=
+\int_0^\infty r^2 dr \int_0^\pi \sin\theta d\theta 
+\,\times \\ &\qquad
+\int_0^{2 \pi} d\phi R_n(r) Y^\conj_{1, m'}(\theta, \phi) \lambda r^2 \sin^2\theta \cos(2 \phi) R_n(r) Y_{1, m}(\theta, \phi) \\
+&=
 \lambda \int_0^\infty r^4 dr R^2_n(r)
-\int_0^\pi \sin^3\theta \cos(2\phi) d\theta \int_0^{2 \pi} d\phi Y^\conj_{1, m'}(\theta, \phi) Y_{1, m}(\theta, \phi).
-=
+\int_0^\pi \sin^3\theta \cos(2\phi) d\theta \int_0^{2 \pi} d\phi Y^\conj_{1, m'}(\theta, \phi) Y_{1, m}(\theta, \phi) \\
+&=
 \lambda \int_0^\infty r^4 dr R^2_n(r)
 \begin{bmatrix}
 0 & 0 & -\frac{2}{5} \\
 0 & 0 & 0 \\
 -\frac{2}{5} & 0 & 0 \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-The matrix above is computed in \nbref{ps8:quadrupolarPotentialPorbitalSplitting.nb}.  It has eigenvalues
+See
+\nbref{ps8:quadrupolarPotentialPorbitalSplitting.nb}
+for a computation of the matrix.
+It has eigenvalues
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem2:120}
 \lambda \int_0^\infty r^4 dr R^2_n(r)
