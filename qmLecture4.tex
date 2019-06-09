@@ -67,23 +67,21 @@ After a suitable scaling of the variables, these elliptical orbits can be transf
 \section{Quantum Harmonic Oscillator.}
 \index{harmonic oscillator}
 %
+Starting with the Hamiltonian for the harmonic oscillator
 \begin{dmath}\label{eqn:qmLecture4:160}
-\hatH = \frac{\hatp^2}{2 m} + \inv{2} k \hatx^2
+\hatH = \frac{\hatp^2}{2 m} + \inv{2} k \hatx^2,
 \end{dmath}
-
-Set
-
-\begin{subequations}
-\label{eqn:qmLecture4:180}
+set
+%\begin{subequations}
+%\label{eqn:qmLecture4:180}
 \begin{equation}\label{eqn:qmLecture4:200}
-\hatX = \sqrt{\frac{m \omega}{\Hbar}} \hatx
-\end{equation}
-\begin{equation}\label{eqn:qmLecture4:220}
+\hatX = \sqrt{\frac{m \omega}{\Hbar}} \hatx,\qquad
+%\end{equation}
+%\begin{equation}\label{eqn:qmLecture4:220}
 \hatP = \sqrt{\inv{m \omega \Hbar}} \hatp
 \end{equation}
-\end{subequations}
-
-The commutators after this change of variables goes from
+%\end{subequations}
+With this change of variables the commutators transform from
 %
 \begin{equation}\label{eqn:qmLecture4:240}
 \antisymmetric{ \hatx}{\hatp} = i \Hbar,
@@ -91,10 +89,10 @@ The commutators after this change of variables goes from
 %
 to
 \begin{equation}\label{eqn:qmLecture4:260}
-\antisymmetric{ \hatX}{\hatP} = i.
+\antisymmetric{ \hatX}{\hatP} = i,
 \end{equation}
 %
-The Hamiltonian takes the form
+and the Hamiltonian can be reexpressed in a factorized form
 %
 \begin{dmath}\label{eqn:qmLecture4:280}
 \hatH
@@ -106,17 +104,15 @@ The Hamiltonian takes the form
 \index{raising operator}
 \index{lowering operator}
 Define ladder operators (raising and lowering operators respectively)
-
 \begin{subequations}
 \label{eqn:qmLecture4:300}
 \begin{dmath}\label{eqn:qmLecture4:320}
 \hata^\dagger = \frac{\hatX -i \hatP}{\sqrt{2}}
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture4:340}
-\hata = \frac{\hatX +i \hatP}{\sqrt{2}}
+\hata = \frac{\hatX +i \hatP}{\sqrt{2}},
 \end{dmath}
 \end{subequations}
-
 so
 %
 \begin{dmath}\label{eqn:qmLecture4:360}
@@ -130,13 +126,14 @@ We can show
 \end{dmath}
 %
 and
-
 \index{number operator}
 \begin{equation}\label{eqn:qmLecture4:400}
 N \ket{n} \equiv \hata^\dagger a = n \ket{n},
 \end{equation}
 %
-where \( n \ge 0 \) is an integer.  Recall that
+where \( n \ge 0 \) is an integer.
+
+Recall that
 %
 \begin{dmath}\label{eqn:qmLecture4:420}
 \hata \ket{0} = 0,
@@ -161,7 +158,6 @@ we can show
 \end{dmath}
 %
 Also recall that
-
 \begin{subequations}
 \label{eqn:qmLecture4:500}
 \begin{dmath}\label{eqn:qmLecture4:520}
@@ -171,22 +167,18 @@ Also recall that
 \hata^\dagger \ket{n} = \sqrt{n + 1} \ket{n+1}
 \end{dmath}
 \end{subequations}
-
 \section{Coherent states.}
 \index{coherent state}
-
 Coherent states for the quantum harmonic oscillator are the eigenkets for the creation and annihilation operators
-
 \begin{subequations}
 \label{eqn:qmLecture4:560}
 \begin{dmath}\label{eqn:qmLecture4:580}
 \hata \ket{z} = z \ket{z}
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture4:600}
-\hata^\dagger \ket{\tilde{z}} = \tilde{z} \ket{\tilde{z}} ,
+\hata^\dagger \ket{\tilde{z}} = \tilde{z} \ket{\tilde{z}},
 \end{dmath}
 \end{subequations}
-
 where
 %
 \begin{dmath}\label{eqn:qmLecture4:620}
@@ -200,10 +192,9 @@ Looking for such a state, we compute
 \begin{dmath}\label{eqn:qmLecture4:640}
 \hata \ket{z}
 = \sum_{n=1}^\infty c_n \hata \ket{n}
-= \sum_{n=1}^\infty c_n \sqrt{n} \ket{n-1}
+= \sum_{n=1}^\infty c_n \sqrt{n} \ket{n-1}.
 \end{dmath}
-
-compare this to
+Compare this to
 %
 \begin{dmath}\label{eqn:qmLecture4:660}
 z \ket{z}
@@ -220,7 +211,6 @@ so
 \begin{dmath}\label{eqn:qmLecture4:680}
 c_{n+1} \sqrt{n+1} = z c_n
 \end{dmath}
-
 This gives
 %
 \begin{dmath}\label{eqn:qmLecture4:700}
@@ -234,7 +224,6 @@ c_2 &= \frac{z c_1}{\sqrt{2}} = \frac{z^2 c_0}{\sqrt{2}} \\
 \vdots &
 \end{aligned}
 \end{equation}
-
 or
 %
 \begin{dmath}\label{eqn:qmLecture4:740}
@@ -281,9 +270,8 @@ will be left for homework.
 We don't know much about these coherent states.  For example does a coherent state at time zero evolve to a coherent state?
 %
 \begin{dmath}\label{eqn:qmLecture4:860}
-\ket{z} \overset{?}{\rightarrow} \ket{z(t)}
+\ket{z} \overset{?}{\rightarrow} \ket{z(t)}.
 \end{dmath}
-
 \index{Heisenberg picture!coherent state}
 It turns out that these questions are best tackled in the Heisenberg picture, considering
 %
@@ -332,8 +320,7 @@ The question to ask is what are the expansions of
 \hata^\dagger_\txtH(t) = e^{i \hatH t/\Hbar} \hata^\dagger e^{-i \hatH t/\Hbar}.
 \end{dmath}
 \end{subequations}
-
-The question to ask is how do these operators ask on the basis states
+We want to understand how these operators act on the basis states
 %
 \begin{dmath}\label{eqn:qmLecture4:1040}
 \hata_\txtH(t) \ket{n}
@@ -359,10 +346,8 @@ So we have found
 \begin{dmath}\label{eqn:qmLecture4:1060}
 \begin{aligned}
 \hata_\txtH(t) &= a e^{-i\omega t} \\
-\hata^\dagger_\txtH(t) &= a^\dagger e^{i\omega t}
+\hata^\dagger_\txtH(t) &= a^\dagger e^{i\omega t}.
 \end{aligned}
 \end{dmath}
-
 %\paragraph{Position and momentum operator time evolution}
-
 %\EndArticle

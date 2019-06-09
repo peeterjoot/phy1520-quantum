@@ -116,10 +116,9 @@ Since \( w_{+} + w_{-} = 1 \), this gives
 \boxedEquation{eqn:ensemblesForSpinOneHalf:80}{
 \begin{aligned}
 w_{+} &= \frac{1 + \tr( \rho \sigma_z )}{2} \\
-w_{-} &= \frac{1 - \tr( \rho \sigma_z )}{2}
+w_{-} &= \frac{1 - \tr( \rho \sigma_z )}{2}.
 \end{aligned}
 }
-
 Attempting to do a similar set of trace expansions this way for a more general spin basis turns out to be a really bad idea and horribly messy.  So much so that I resorted to
 %\href{https://raw.githubusercontent.com/peeterjoot/mathematica/master/phy1520/spinOneHalfSymbolicManipulation.nb}{Mathematica to do this symbolic work}
 \nbref{spinOneHalfSymbolicManipulation.nb} to do this symbolic work.
@@ -176,7 +175,7 @@ the projector matrices are
 \begin{bmatrix}
 \sin^2(\theta/2)  & -\cos(\theta/2) \sin(\theta/2) e^{-i \phi} \\
 -\cos(\theta/2) \sin(\theta/2) e^{i \phi} & \cos^2(\theta/2)
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
 
 With \( C = \cos(\theta/2), S = \sin(\theta/2) \), a general density operator in this basis has the form
@@ -248,16 +247,15 @@ w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & -(w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & - (w_{+} S^2  + w_{-} C^2)
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 The respective traces can be read right off the matrices
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:260}
 \begin{aligned}
 \tr( \rho \sigma_x ) &= (w_{+} - w_{-}) \sin\theta \cos\phi \\
 \tr( \rho \sigma_y ) &= (w_{+} - w_{-}) \sin\theta \sin\phi \\
-\tr( \rho \sigma_z ) &= (w_{+} - w_{-}) \cos\theta \\
-\end{aligned}.
+\tr( \rho \sigma_z ) &= (w_{+} - w_{-}) \cos\theta.
+\end{aligned}
 \end{dmath}
 %
 This gives
@@ -283,9 +281,8 @@ Another easier and trig free way to look at this problem is assume the density o
 \begin{bmatrix}
 a & b \\
 c & d
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 For such a representation we have
 %
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:420}
@@ -326,19 +323,17 @@ c & d
 \begin{bmatrix}
 a & -b\\
 c & -d
-\end{bmatrix} \\
+\end{bmatrix}.
 \end{aligned}
 \end{equation}
-
 The ensemble averages can be read by inspection
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:440}
 \begin{aligned}
 [\sigma_x] &= b + c \\
 [\sigma_y] &= i(b - c) \\
-[\sigma_z] &= a - d \\
+[\sigma_z] &= a - d.
 \end{aligned}
 \end{equation}
-
 Noting that \( \tr \lr{E A E^{-1}} = \tr \lr{A E^{-1} E} = \tr \lr{A} \), and that there must be a diagonal basis for which \( \braket{+}{-} = 0 \) and
 %
 \begin{dmath}\label{eqn:ensemblesForSpinOneHalf:460}
@@ -359,7 +354,6 @@ This provides one set of equations for each of \( b,c \) and \( a, d\)
 [\sigma_y] &= i(b - c),
 \end{aligned}
 \end{equation}
-
 and
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:520}
 \begin{aligned}
