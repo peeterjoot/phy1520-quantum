@@ -17,10 +17,9 @@ i \Hbar (-i E/\Hbar) \Psi =
 \begin{bmatrix}
 -i \Hbar (i k) + V_0 & m c^2 \\
 m c^2 & i \Hbar (i k)
-\end{bmatrix},
-\Psi
+\end{bmatrix}
+\Psi,
 \end{dmath}
-
 or
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:40}
 \begin{bmatrix}
@@ -209,7 +208,6 @@ so the normalized kets are
 \end{dmath}
 %
 \paragraph{Simplification of the rotation matrices}
-
 The eigenvalue equations have the form
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:240}
@@ -224,9 +222,8 @@ H
 \begin{bmatrix}
 \epsilon & 0 \\
 0 & -\epsilon
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 With \( R = \begin{bmatrix} \ket{+} & \ket{-} \end{bmatrix} \), this has the form \( H R = R \Omega \), or \( H = R \Omega R^{-1} \).  The rotation matrices have been found to be
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:260}
@@ -254,11 +251,11 @@ These don't look very much like rotation matrices as is, but not all the terms a
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:300}
 \begin{aligned}
-a &= \frac{m}{\sqrt{2\epsilon(\epsilon - k)}}  \\
+a &= \frac{m}{\sqrt{2\epsilon(\epsilon - k)}} \\
 b &= \frac{m}{\sqrt{2\epsilon(\epsilon + k)}} \\
-\alpha &= \sqrt{\frac{\epsilon + k}{2 \epsilon}}  \\
-\beta &= \sqrt{\frac{\epsilon - k}{2 \epsilon}}
-\end{aligned},
+\alpha &= \sqrt{\frac{\epsilon + k}{2 \epsilon}} \\
+\beta &= \sqrt{\frac{\epsilon - k}{2 \epsilon}},
+\end{aligned}
 \end{dmath}
 %
 the rotation matrices are
@@ -532,7 +529,7 @@ We want to find the wave incident, reflected, and transmitted wave function.  Fr
 \cos\theta_{k_1} \\
 \sin\theta_{k_1} \\
 \end{bmatrix}
-e^{i (k_1 x - E t/\Hbar)}
+e^{i (k_1 x - E t/\Hbar)},
 \end{dmath}
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:660}
 \Psi_{\textrm{ref}} =
@@ -540,9 +537,8 @@ e^{i (k_1 x - E t/\Hbar)}
 \sin\theta_{k_1} \\
 \cos\theta_{k_1} \\
 \end{bmatrix}
-e^{i (-k_1 x - E t/\Hbar)}
+e^{i (-k_1 x - E t/\Hbar)}.
 \end{dmath}
-
 The currents \( j = c (\psi_1^\conj \psi_1 - \psi_2^\conj \psi_2) \) for these wave functions are
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:960}
@@ -563,7 +559,7 @@ When there is a transmitted particle (anti-particle) in region II, the transmitt
 \cos\theta_{k_2} \\
 \sin\theta_{k_2} \\
 \end{bmatrix}
-e^{i (k_2 x - E t/\Hbar)}
+e^{i (k_2 x - E t/\Hbar)},
 \end{dmath}
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:700}
 \Psi_{\textrm{trans}} =
@@ -605,9 +601,8 @@ To determine the weighting of the wave functions, we require matching at the bou
 \begin{bmatrix}
 0 \\
 0
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
-
 This is possible if \( -B/A = \cot\theta_{k_1} = \tan\theta_{k_1} \), which requires
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:740}
@@ -627,9 +622,7 @@ so
 \end{equation}
 %
 Simultaneous solutions of \cref{eqn:gradQuantumProblemSet4Problem3:740}, \cref{eqn:gradQuantumProblemSet4Problem3:780} only occur at \( k = \pm 0 \), where \( \tan( (1 + 2 n)\pi/2 ) = \pm \infty \).  Since a particle at rest is not at interest in a reflection scenario, this shows that a decaying solution in region II must be introduced to match the boundary value constraints.
-
 \item Ordinary matter transmission.
-
 For this case at \( x = 0 \), we have
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:920}
@@ -698,7 +691,7 @@ which is
 \boxedEquation{eqn:gradQuantumProblemSet4Problem3:840}{
 \begin{aligned}
 \frac{B}{A} &= \frac{ \cos(\theta_{k_2} - \theta_{k_1}) }{\cos(\theta_{k_1} + \theta_{k_2})} \\
-\frac{D}{A} &= \frac{ \cos(2 \theta_{k_1}) }{\cos(\theta_{k_1} + \theta_{k_2})} \\
+\frac{D}{A} &= \frac{ \cos(2 \theta_{k_1}) }{\cos(\theta_{k_1} + \theta_{k_2})}.
 \end{aligned}
 }
 
@@ -805,7 +798,7 @@ which is
 \boxedEquation{eqn:gradQuantumProblemSet4Problem3:900}{
 \begin{aligned}
 \frac{B}{A} &= \frac{ \cos(\theta_{k_1} - \theta_{k_2}) }{\sin(\theta_{k_1} + \theta_{k_2})} \\
-\frac{D}{A} &= -\frac{ \cos(2 \theta_{k_1}) }{\sin(\theta_{k_1} + \theta_{k_2})} \\
+\frac{D}{A} &= -\frac{ \cos(2 \theta_{k_1}) }{\sin(\theta_{k_1} + \theta_{k_2})}.
 \end{aligned}
 }
 
@@ -840,9 +833,7 @@ j_{\textrm{trans}}
 \end{dmath}
 %
 and again we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \), as expected.
-
 \item Decaying transmission.
-
 In units where \( \Hbar = c = 1 \), the eigenkets found for the Dirac Hamiltonian, before normalization, were found to be
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1041}
@@ -868,7 +859,7 @@ e^{\mp k x - i E t/\Hbar},
 where
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1081}
-\epsilon_2^2 = m^2 - k^2
+\epsilon_2^2 = m^2 - k^2.
 \end{equation}
 
 Observe that the \( \psi_2 \) component of this wave function sits on a circle in the complex plane

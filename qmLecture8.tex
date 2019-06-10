@@ -27,22 +27,19 @@
 \section{Construction of the Dirac equation.}
 \index{Dirac equation}
 \paragraph{Schr\"{o}dinger Derivation}
-
 Recall that a ``derivation'' of the Schr\"{o}dinger equation can be associated with the following equivalences
 %
 \begin{equation}\label{eqn:qmLecture8:300}
-E \leftrightarrow \Hbar \omega \leftrightarrow i \Hbar \PD{t}{}
+E \leftrightarrow \Hbar \omega \leftrightarrow i \Hbar \PD{t}{},
 \end{equation}
 \begin{equation}\label{eqn:qmLecture8:320}
-p \leftrightarrow \Hbar k \leftrightarrow -i \Hbar \PD{t}{}
+p \leftrightarrow \Hbar k \leftrightarrow -i \Hbar \PD{t}{},
 \end{equation}
-
 so that the classical energy relationship
 %
 \begin{dmath}\label{eqn:qmLecture8:20}
-E = \frac{p^2}{2m}
+E = \frac{p^2}{2m},
 \end{dmath}
-
 takes the form
 %
 \begin{dmath}\label{eqn:qmLecture8:40}
@@ -54,9 +51,7 @@ How do we do this in a relativistic context where the energy momentum relationsh
 \begin{dmath}\label{eqn:qmLecture8:60}
 E = \sqrt{ p^2 c^2 + m^2 c^4 } \approx m c^2 + \frac{p^2}{2m} + \cdots
 \end{dmath}
-
-where \( m \) is the rest mass and \( c \) is the speed of light.
-
+where \( m \) is the rest mass and \( c \) is the speed of light?
 \paragraph{Attempt I}
 %
 \begin{dmath}\label{eqn:qmLecture8:80}
@@ -115,9 +110,8 @@ Working with \cref{eqn:qmLecture8:140}, which has some nicer features than other
 where we aim to write down an equation for this composite state.
 %
 \begin{dmath}\label{eqn:qmLecture8:200}
-i \Hbar \PD{t}{\Bpsi} = \BH \Bpsi
+i \Hbar \PD{t}{\Bpsi} = \BH \Bpsi.
 \end{dmath}
-
 Assuming the matrix is the Hamiltonian, multiplying that with the composite state gives
 %
 \begin{dmath}\label{eqn:qmLecture8:220}
@@ -141,11 +135,12 @@ m c^2 \psi_1 - \hatp c \psi_2
 \end{bmatrix}.
 \end{dmath}
 %
-What happens when we square this
+What happens when we square this?  We get
 %
 \begin{dmath}\label{eqn:qmLecture8:240}
 \lr{ i \Hbar \PD{t}{} }^2 \Bpsi
-= \BH \BH \Bpsi
+= \BH \BH 
+\Bpsi
 =
 \begin{bmatrix}
 \hatp c & m c^2 \\
@@ -161,15 +156,17 @@ m c^2 & - \hatp c
 \hatp^2 c^2 + m^2 c^4 & 0 \\
 0 & \hatp^2 c^2 + m^2 c^4 \\
 \end{bmatrix}
+\Bpsi,
 \end{dmath}
 %
+or
 \begin{dmath}\label{eqn:qmLecture8:260}
 - \Hbar^2 \PDSq{t}{} \Bpsi
 =
-\lr{ \hatp^2 c^2 + m^2 c^4 } \BOne \Bpsi,
+\lr{ \hatp^2 c^2 + m^2 c^4 } \BOne \Bpsi.
 \end{dmath}
 %
-or more exactly
+The operator squaring has decoupled the equation, leaving a pair of scalar relationships
 %
 \begin{dmath}\label{eqn:qmLecture8:280}
 - \Hbar^2 \PDSq{t}{} \psi_{1,2}
@@ -177,12 +174,11 @@ or more exactly
 \lr{ \hatp^2 c^2 + m^2 c^4 } \psi_{1,2}.
 \end{dmath}
 %
-This recovers the Klein Gordon equation for each of the wave functions \( \psi_1, \psi_2 \).
-
+We have recovered a Klein Gordon equation for each of the wave functions \( \psi_1, \psi_2 \).
 \section{Plane wave solution.}
 \index{Dirac equation!plane wave}
-
-Instead of squaring the operators, lets try to solve the first order equation.     To do so we'll want to diagonalize \( \BH \).
+Instead of squaring the operators, lets try to solve the first order equation.
+To do so we'll want to diagonalize \( \BH \).
 
 Before doing that, let's write out the Hamiltonian in an alternate but useful form
 %
@@ -204,7 +200,7 @@ m c^2
 %
 We have two types of operators in the mix here.  We have matrix operators that act on the wave function matrices, as well as derivative operators that act on the components of those matrices.
 
-We have
+The action of the Pauli matrices are
 %
 \begin{dmath}\label{eqn:qmLecture8:360}
 \hat\sigma_z
@@ -277,5 +273,4 @@ e^{i k x}.
 \end{dmath}
 %
 We'll plug this into the Schr\"{o}dinger equation and see what we get.
-
 %\EndNoBibArticle

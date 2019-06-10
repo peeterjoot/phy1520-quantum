@@ -24,10 +24,8 @@
 %Peeter's lecture notes from class.  These may be incoherent and rough.
 %
 %These are notes for the UofT course PHY1520, Graduate Quantum Mechanics, taught by Prof. Paramekanti.
-
 \section{Dirac scattering off a potential step.}
 \index{Dirac equation!scattering}
-
 For the non-relativistic case we have
 %
 \begin{equation}\label{eqn:qmLecture10:20}
@@ -38,11 +36,8 @@ E > V_0 &\implies T > 0, R < 1.
 \end{equation}
 %
 What happens for a relativistic 1D particle?
-
 Referring to \cref{fig:lecture10:lecture10Fig1}.
-
 \imageFigure{../figures/phy1520-quantum/lecture10Fig1}{Potential step.}{fig:lecture10:lecture10Fig1}{0.1}
-
 the region I Hamiltonian is
 %
 \begin{equation}\label{eqn:qmLecture10:40}
@@ -67,19 +62,17 @@ where
 \begin{dmath}\label{eqn:qmLecture10:80}
 \begin{aligned}
 \cos 2 \theta_1 &= \frac{ \Hbar c k_1 }{E_{k_1}} \\
-\sin 2 \theta_1 &= \frac{ m c^2 }{E_{k_1}} \\
+\sin 2 \theta_1 &= \frac{ m c^2 }{E_{k_1}}.
 \end{aligned}
 \end{dmath}
-
 To consider the \( k_1 < 0 \) case, note that
 %
 \begin{equation}\label{eqn:qmLecture10:100}
 \begin{aligned}
 \cos^2 \theta_1 - \sin^2 \theta_1 &= \cos 2 \theta_1 \\
-2 \sin\theta_1 \cos\theta_1 &= \sin 2 \theta_1
+2 \sin\theta_1 \cos\theta_1 &= \sin 2 \theta_1,
 \end{aligned}
 \end{equation}
-
 so after flipping the signs on all the \( k_1 \) terms we find for the reflected wave
 %
 \begin{dmath}\label{eqn:qmLecture10:120}
@@ -154,9 +147,7 @@ The \( r_1 \) and \( r_2 \) branches are sketched in \cref{fig:lecture10:lecture
 For low energies, we have a set of potentials for which we will have propagation, despite having a potential barrier.  For still higher values of the potential barrier the product \( r_1 r_2 \) will be negative, so the solutions will be decaying.  Finally, for even higher energies, there will again be propagation.
 
 The non-relativistic case is sketched in \cref{fig:lecture10:lecture10Fig3}.
-
 \imageFigure{../figures/phy1520-quantum/lecture10Fig3}{Effects of increasing potential for non-relativistic case.}{fig:lecture10:lecture10Fig3}{0.1}
-
 For the relativistic case we must consider three different cases, sketched in
 \cref{fig:lecture10:lecture10Fig4a},
 \cref{fig:lecture10:lecture10Fig4b}, and
@@ -169,9 +160,7 @@ For the relativistic case we must consider three different cases, sketched in
 \paragraph{Boundary value conditions}
 \index{Dirac equation!boundary conditions}
 We want to ensure that the current across the barrier is conserved (no particles are lost), as sketched in \cref{fig:lecture10:lecture10Fig5}.
-
 \imageFigure{../figures/phy1520-quantum/lecture10Fig5}{Transmitted, reflected and incident components.}{fig:lecture10:lecture10Fig5}{0.1}
-
 Recall that given a wave function
 %
 \begin{dmath}\label{eqn:qmLecture10:240}
@@ -187,12 +176,10 @@ the density and currents are respectively
 \begin{equation}\label{eqn:qmLecture10:260}
 \begin{aligned}
 \rho &= \psi_1^\conj \psi_1 + \psi_2^\conj \psi_2 \\
-j &= \psi_1^\conj \psi_1 - \psi_2^\conj \psi_2
+j &= \psi_1^\conj \psi_1 - \psi_2^\conj \psi_2.
 \end{aligned}
 \end{equation}
-
 Matching boundary value conditions requires
-
 \begin{enumerate}
 \item For both the relativistic and non-relativistic cases we must have
 %
@@ -209,8 +196,7 @@ Matching boundary value conditions requires
 -\frac{\Hbar^2}{2m} \lr{ \evalbar{\PD{x}{\Psi}}{\txtR} - \evalbar{\PD{x}{\Psi}}{\txtL} }  = 0.
 \end{equation}
 %
-We have to match
-
+%We have to match
 For the relativistic case
 %
 \begin{equation}\label{eqn:qmLecture10:460}
@@ -220,7 +206,6 @@ For the relativistic case
 \cancel{\int_{-\epsilon}^\epsilon \lr{ E - V_0 } \psi},
 \end{equation}
 \end{enumerate}
-
 so
 %
 \begin{equation}\label{eqn:qmLecture10:340}
@@ -238,14 +223,10 @@ so we must match
 It appears that things are simpler, because we only have to match the wave function values at the boundary, and don't have to match the derivatives too.  However, we have a two component wave function, so there are still two tasks.
 
 \paragraph{Solving the system}
-
 Let's look for a solution for the \( E + m c^2 > V_0 \) case on the right branch, as sketched in \cref{fig:lecture10:lecture10Fig6}.
-
 \imageFigure{../figures/phy1520-quantum/lecture10Fig6}{High potential region.  Anti-particle transmission.}{fig:lecture10:lecture10Fig6}{0.15}
-
 While the right branch in this case is left going, this might work out since that is an antiparticle.  We could try both.
-
-Try
+First
 %
 \begin{dmath}\label{eqn:qmLecture10:480}
 \Psi_{II} = D e^{i k_2 x}
@@ -272,9 +253,8 @@ so
 \begin{bmatrix}
 -\sin\theta \\
 \cos\theta \\
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 At \( x = 0 \) the exponentials vanish, so equating the waves at that point means
 %
 \begin{dmath}\label{eqn:qmLecture10:380}
@@ -307,13 +287,11 @@ This yields
 \boxedEquation{eqn:qmLecture10:420}{
 R = \frac{1 + \cos( 2 \theta_1 - 2 \theta_2) }{1 - \cos( 2 \theta_1 - 2 \theta_2)}.
 }
-
 As \( V_0 \rightarrow \infty \) this simplifies to
 %
 \begin{dmath}\label{eqn:qmLecture10:440}
 R = \frac{ E - \sqrt{ E^2 - \lr{ m c^2 }^2 } }{ E + \sqrt{ E^2 - \lr{ m c^2 }^2 } }.
 \end{dmath}
 %
-Filling in the details for these results part of problem set 4.
-
+Filling in the details for these results is left to problem set 4.
 %\EndNoBibArticle
