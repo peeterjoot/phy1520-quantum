@@ -36,11 +36,10 @@ For orbital angular momentum
 %
 \begin{equation}\label{eqn:qmLecture16:20}
 \begin{aligned}
-\Lcap_1 &= \rcap_1 \cross \pcap_1 \\
-\Lcap_1 &= \rcap_1 \cross \pcap_1,
+\Lcap_1 &= \rcap_1 \cross \pcap_1, \\
+\Lcap_1 &= \rcap_1 \cross \pcap_1.
 \end{aligned}
 \end{equation}
-
 We can show that it is true that
 %
 \begin{equation}\label{eqn:qmLecture16:40}
@@ -51,14 +50,11 @@ i \Hbar \epsilon_{i j k} \lr{ L_{1k} + L_{2k} },
 because the angular momentum of the independent particles commute.  Given this is it fair to consider that the sum
 %
 \begin{equation}\label{eqn:qmLecture16:60}
-\Lcap_1 + \Lcap_2
+\Lcap_1 + \Lcap_2,
 \end{equation}
-
 is also angular momentum.
 \item
-
 Given \( \ket{l_1, m_1} \) and \( \ket{l_2, m_2} \), if a measurement is made of \( \Lcap_1 + \Lcap_2 \), what do we get?
-
 Specifically, what do we get for
 %
 \begin{equation}\label{eqn:qmLecture16:80}
@@ -67,7 +63,7 @@ Specifically, what do we get for
 %
 and for
 \begin{equation}\label{eqn:qmLecture16:100}
-\lr{\hatL_{1z} + \hatL_{2z}}.
+\lr{\hatL_{1z} + \hatL_{2z}}?
 \end{equation}
 %
 For the latter, we get
@@ -75,7 +71,7 @@ For the latter, we get
 \begin{equation}\label{eqn:qmLecture16:120}
 \lr{\hatL_{1z} + \hatL_{2z}}\ket{ l_1, m_1 ; l_2, m_2 }
 =
-\lr{ \Hbar m_1 + \Hbar m_2 } \ket{ l_1, m_1 ; l_2, m_2 }
+\lr{ \Hbar m_1 + \Hbar m_2 } \ket{ l_1, m_1 ; l_2, m_2 }.
 \end{equation}
 %
 Given
@@ -114,16 +110,11 @@ but for
 \end{dmath}
 %
 \end{itemize}
-
 Classically if we have measured \( \Lcap_{1} \) and \( \Lcap_{2} \) then we know the total angular momentum as sketched in \cref{fig:qmLecture16:qmLecture16Fig1}.
-
 % FIXME: merge with previous lecture
-\imageFigure{../figures/phy1520-quantum/qmLecture16Fig1}{Classical addition of angular momenta.}{fig:qmLecture16:qmLecture16Fig1}{0.2}
-
+\imageFigure{../figures/phy1520-quantum/qmLecture16Fig1}{Classical addition of angular momenta.}{fig:qmLecture16:qmLecture16Fig1}{0.15}
 In QM where we don't know all the components of the angular momentum simultaneously, things get fuzzier.  For example, if the \( \hatL_{1z} \) and \( \hatL_{2z} \) components have been measured, we have the angular momentum defined within a conical region as sketched in \cref{fig:qmLecture16:qmLecture16Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture16Fig2}{Addition of angular momenta given measured \( \hatL_z \).}{fig:qmLecture16:qmLecture16Fig2}{0.2}
-
 Suppose we know \( \hatL_z^{\textrm{tot}} \) precisely, but have imprecise information about \( \lr{\Lcap^{\textrm{tot}}}^2 \).  Can we determine bounds for this?  Let \( \ket{\psi} = \ket{ l_1, m_2 ; l_2, m_2 } \), so
 %
 \begin{dmath}\label{eqn:qmLecture16:220}
@@ -173,9 +164,8 @@ Thus for the max we have
 \le
 \Hbar^2 l_1 \lr{ l_1 + 1 }
 +\Hbar^2 l_2 \lr{ l_2 + 1 }
-+ 2 \Hbar^2 \sqrt{ l_1 \lr{ l_1 + 1 } l_2 \lr{ l_2 + 2 } }
++ 2 \Hbar^2 \sqrt{ l_1 \lr{ l_1 + 1 } l_2 \lr{ l_2 + 2 } },
 \end{dmath}
-
 and for the min
 \begin{dmath}\label{eqn:qmLecture16:360}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
@@ -186,16 +176,14 @@ and for the min
 \end{dmath}
 %
 To try to pretty up these estimate, starting with the max, note that if we replace a portion of the RHS with something bigger, we are left with a strict less than relationship.
-
 That is
 %
 \begin{equation}\label{eqn:qmLecture16:320}
 \begin{aligned}
-l_1 \lr{ l_1 + 1 } &< \lr{ l_1 + \inv{2} }^2 \\
-l_2 \lr{ l_2 + 1 } &< \lr{ l_2 + \inv{2} }^2
+l_1 \lr{ l_1 + 1 } &< \lr{ l_1 + \inv{2} }^2, \\
+l_2 \lr{ l_2 + 1 } &< \lr{ l_2 + \inv{2} }^2.
 \end{aligned}
 \end{equation}
-
 That is
 %
 \begin{dmath}\label{eqn:qmLecture16:340}
@@ -218,9 +206,8 @@ l_1^2 + l_2^2 + l_1 + l_2
 \lr{
 \lr{ l_1 + l_2 + \inv{2} }
 \lr{ l_1 + l_2 + \frac{3}{2} } - \inv{4}
-}
+},
 \end{dmath}
-
 or
 \begin{dmath}\label{eqn:qmLecture16:380}
 l_{\textrm{tot}} \lr{ l_{\textrm{tot}} + 1 }
@@ -241,7 +228,6 @@ Finally, given a quantization requirement, that is
 \boxedEquation{eqn:qmLecture16:420}{
 l_{\textrm{tot}} \le l_1 + l_2.
 }
-
 Similarly, for the min, we find
 %
 \begin{dmath}\label{eqn:qmLecture16:440}
@@ -272,16 +258,14 @@ The total angular momentum quantum number must then satisfy
 %
 \begin{dmath}\label{eqn:qmLecture16:480}
 l_{\textrm{tot}}( l_{\textrm{tot}} + 1 ) >
-\lr{ l_1 - l_2 -\inv{2} } \lr{ l_1 - l_2 +\inv{2} } - \inv{4}
+\lr{ l_1 - l_2 -\inv{2} } \lr{ l_1 - l_2 +\inv{2} } - \inv{4}.
 \end{dmath}
-
 Is it true that
 %
 \begin{dmath}\label{eqn:qmLecture16:500}
 l_{\textrm{tot}}( l_{\textrm{tot}} + 1 ) >
 \lr{ l_1 - l_2 -\inv{2} } \lr{ l_1 - l_2 +\inv{2} }?
 \end{dmath}
-
 This is true when \( l_{\textrm{tot}} > l_1 - l_2 - \inv{2} \), assuming that \( l_1 > l_2 \).  Suppose \( l_{\textrm{tot}} = l_1 - l_2 - \inv{2} \), then
 %
 \begin{dmath}\label{eqn:qmLecture16:520}
@@ -295,7 +279,6 @@ So, is it true that
 \lr{ l_1 - l_2 }^2 - \inv{4} \ge l_1^2 + l_1 + l_2^2 + l_2 - 2
 \sqrt{ l_1(l_1 + 1) l_2( l_2 + 1) }?
 \end{dmath}
-
 If that is the case we have
 \begin{dmath}\label{eqn:qmLecture16:560}
 -2 l_1 l_2 - \inv{4} \ge l_1 + l_2
@@ -323,7 +306,7 @@ or
 %
 or
 \begin{dmath}\label{eqn:qmLecture16:700}
-0 \ge (x - y)^2 + \inv{16} + \inv{2}(x + y),
+0 \ge (x - y)^2 + \inv{16} + \inv{2}(x + y).
 \end{dmath}
 %
 But since \( x + y \ge 0 \) this inequality is not satisfied when \( l_{\textrm{tot}} = l_1 - l_2 -\inv{2} \).  We can conclude
@@ -336,7 +319,6 @@ Is it true that
 \begin{equation}\label{eqn:qmLecture16:660}
 l_1 - l_2 \ge l_{\textrm{tot}} \ge l_1 + l_2 ?
 \end{equation}
-
 Note that we have two separate Hilbert spaces \( l_1 \otimes l_2 \)
 of dimension \( 2 l_1 + 1 \) and \( 2 l_2 + 1 \) respectively.  The total number of states is
 %

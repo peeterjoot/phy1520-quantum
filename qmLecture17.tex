@@ -28,19 +28,16 @@
 
 \section{Clebsch-Gordan.}
 \index{Clebsch-Gordan}
-
 How can we related total momentum states to individual momentum states in the \( 1 \otimes 2 \) space?
 %
 \begin{dmath}\label{eqn:qmLecture16:720}
-\ket{l_1, l_2, l, m } = \sum_{m_1, m_2} C_{l_1 l_2 m_1 m_2}^{l_1 l_2 l m} \ket{l_1 m_1 ; l_2 m_2 }
+\ket{l_1, l_2, l, m } = \sum_{m_1, m_2} C_{l_1 l_2 m_1 m_2}^{l_1 l_2 l m} \ket{l_1 m_1 ; l_2 m_2 }.
 \end{dmath}
 %
 The values \( C_{l_1 l_2 m_1 m_2}^{l_1 l_2 l m} \) are called the Clebsch-Gordan coefficients.
-
 \makeexample
 {Example: spin one and spin one half}
 {example:qmLecture17:1}{
-
 With individual momentum states \( \ket{l_1 m_1 ; l_2 m_2 } \)
 %
 \begin{equation}\label{eqn:qmLecture16:740}
@@ -48,14 +45,13 @@ With individual momentum states \( \ket{l_1 m_1 ; l_2 m_2 } \)
 l_1 &= 1 \\
 m_1 &= \pm 1, 0 \\
 l_2 &= \inv{2} \\
-m_2 &= \pm \inv{2}
+m_2 &= \pm \inv{2}.
 \end{aligned}
 \end{equation}
-
 The total angular momentum numbers are
 %
 \begin{equation}\label{eqn:qmLecture16:760}
-l_{\textrm{tot}} \in [l_1 - l_2, l_1 + l_2] = [\ifrac{1}{2}, \ifrac{3}{2}]
+l_{\textrm{tot}} \in [l_1 - l_2, l_1 + l_2] = [\ifrac{1}{2}, \ifrac{3}{2}].
 \end{equation}
 %
 The possible states \( \ket{ l_{\textrm{tot}}, m_{\textrm{tot}} } \) are
@@ -72,9 +68,7 @@ and
 \end{equation}
 %
 The Clebsch-Gordan procedure is the search for an orthogonal angular momentum basis, built up from the individual momentum bases.  For the total momentum basis we want the basis states to satisfy the ladder operators, but also have them satisfy the consistent ladder operators for the individual particle angular momenta.  This procedure is sketched in \cref{fig:qmLecture17:qmLecture17Fig1}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture17Fig1}{Spin one,one-half Clebsch-Gordan procedure.}{fig:qmLecture17:qmLecture17Fig1}{0.2}
-
 Demonstrating by example, let the highest total momentum state be proportional to the highest product of individual momentum states
 %
 \begin{dmath}\label{eqn:qmLecture16:820}
@@ -234,7 +228,6 @@ The \( \ket{ \frac{1}{2} \frac{1}{2} } \) state is constructed as normal to \( \
 \sqrt{ \frac{2}{3} } \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} },
 }
 %\end{dmath}
-
 and \( \ket{ \frac{1}{2} -\frac{1}{2} } \) by lowering that.  With
 %
 \begin{dmath}\label{eqn:qmLecture17:1160}
@@ -311,12 +304,8 @@ All the basis elements have been determined.  In summary
 \makeexample
 {Spin two, spin one.}
 {example:qmLecture17:2}{
-
 With \( j_1 = 2 \) and \( j_2 = 1 \), we have \( j \in 1,2,3 \), and can proceed the same way as sketched in \cref{fig:qmLecture17:qmLecture17Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture17Fig2}{Spin two,one Clebsch-Gordan procedure.}{fig:qmLecture17:qmLecture17Fig2}{0.2}
-
 Working through the details for this example is left to the problem set.
 } % example
-
 %\EndArticle

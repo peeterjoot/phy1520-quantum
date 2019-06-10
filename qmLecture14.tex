@@ -108,13 +108,12 @@
 %%a - b^2 - b &\ge 0
 %%\end{aligned}
 %%\end{equation}
-
 Assuming that the \( b_{\textrm{max}} \) and \( b_{\textrm{min}} \) values are
 satisfied at the equality extremes we have
 %
 \begin{equation}\label{eqn:qmLecture14:240}
 \begin{aligned}
-b_{\textrm{max}} \lr{ b_{\textrm{max}} + 1 } &= a \\
+b_{\textrm{max}} \lr{ b_{\textrm{max}} + 1 } &= a, \\
 b_{\textrm{min}} \lr{ b_{\textrm{min}} - 1 } &= a.
 \end{aligned}
 \end{equation}
@@ -146,16 +145,14 @@ The final constraint is therefore
 - b_{\textrm{max}} \le b \le b_{\textrm{max}},
 }
 %\end{equation}
-
 and
 %
 \begin{equation}\label{eqn:qmLecture14:320}
 \begin{aligned}
-\hatL_{+} \ket{a, b_{\textrm{max}}} &= 0 \\
-\hatL_{-} \ket{a, b_{\textrm{min}}} &= 0
+\hatL_{+} \ket{a, b_{\textrm{max}}} &= 0, \\
+\hatL_{-} \ket{a, b_{\textrm{min}}} &= 0.
 \end{aligned}
 \end{equation}
-
 If we had the sequence, which must terminate at \( b_{\textrm{min}} \) or else it will go on forever
 %
 \begin{dmath}\label{eqn:qmLecture14:340}
@@ -213,15 +210,10 @@ In \citep{schwinger1955quantum} a powerful method for describing angular momentu
 \begin{dmath}\label{eqn:qmLecture14:460}
 \hatL_{+} \leftrightarrow a^{+}?
 \end{dmath}
-
 Picture two harmonic oscillators, one with states counted from one zero towards \( \infty \) and another with states counted from a different zero towards \( -\infty \), as pictured in \cref{fig:qmLecture14:qmLecture14Fig1}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture14Fig1}{Overlapping SHO domains.}{fig:qmLecture14:qmLecture14Fig1}{0.2}
-
 Is it possible that such an overlapping set of harmonic oscillators can provide the properties of the angular momentum operators?  Let's relabel the counting so that we have two sets of positive counted SHO systems, each counted in a positive direction as sketched in \cref{fig:qmLecture14:qmLecture14Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture14Fig2}{Relabeling the counting for overlapping SHO systems.}{fig:qmLecture14:qmLecture14Fig2}{0.2}
-
 It turns out that given a constraint there the number of ways to distribute particles between a pair of SHO systems, the process that can be viewed as reproducing the angular momentum action is a transfer of particles from one harmonic oscillator to the other.  For \( \hatL_z = +j \)
 %
 \begin{equation}\label{eqn:qmLecture14:480}
@@ -230,7 +222,6 @@ n_1 &= n_{\textrm{max}} \\
 n_2 &= 0,
 \end{aligned}
 \end{equation}
-
 and for \( \hatL_z = -j \)
 %
 \begin{equation}\label{eqn:qmLecture14:500}
@@ -254,9 +245,8 @@ j = \inv{2} n_{\textrm{max}},
 or
 %
 \begin{equation}\label{eqn:qmLecture14:560}
-n_1 + n_2 = \text{fixed} = n_{\textrm{max}}
+n_1 + n_2 = \text{fixed} = n_{\textrm{max}}.
 \end{equation}
-
 Changes that keep \( n_1 + n_2 \) fixed are those that change \( n_1 \), \( n_2 \) by \( +1 \) or \( -1 \) respectively, as sketched in \cref{fig:qmLecture14:qmLecture14Fig3}.
 
 \imageFigure{../figures/phy1520-quantum/qmLecture14Fig3}{Number conservation constraint.}{fig:qmLecture14:qmLecture14Fig3}{0.15}
@@ -274,11 +264,10 @@ What operator in the SHO problem has this effect?  Let's try
 \begin{aligned}
 \hatL_{-} &= \Hbar a_2^\dagger a_1  \\
 \hatL_{+} &= \Hbar a_1^\dagger a_2  \\
-\hatL_z &= \frac{\Hbar}{2} \lr{ n_1 - n_2 }
+\hatL_z &= \frac{\Hbar}{2} \lr{ n_1 - n_2 }.
 \end{aligned}
 }
 %\end{equation}
-
 Is this correct?  Do we need to make any scalar adjustments?  We want
 %
 \begin{equation}\label{eqn:qmLecture14:640}
@@ -373,23 +362,21 @@ With
 %
 \begin{equation}\label{eqn:qmLecture14:800}
 \begin{aligned}
-j &= \frac{n_1 + n_2}{2} \\
-m &= \frac{n_1 - n_2}{2} \\
+j &= \frac{n_1 + n_2}{2}, \\
+m &= \frac{n_1 - n_2}{2},
 \end{aligned}
 \end{equation}
-
-We can make the identification
+we can make the identification
 %
 \begin{equation}\label{eqn:qmLecture14:820}
 \ket{n_1, n_2} = \ket{ j+ m , j - m}.
 \end{equation}
 %
 \paragraph{Another way}
-
 With
 %
 \begin{equation}\label{eqn:qmLecture14:840}
-\hatL_{+} \ket{j, m} = d_{j,m}^{+} \ket{j, m+1}
+\hatL_{+} \ket{j, m} = d_{j,m}^{+} \ket{j, m+1},
 \end{equation}
 %
 or
@@ -409,18 +396,17 @@ we can seek this factor \( d_{j,m}^{+} \) by operating with \( \hatL_{+} \)
 =
 \Hbar \sqrt{ n + 1 } \sqrt{n_2} \ket{j+m +1,j-m-1}
 =
-\Hbar \sqrt{ \lr{ j+ m + 1}\lr{ j - m } } \ket{j+m +1,j-m-1}
+\Hbar \sqrt{ \lr{ j+ m + 1}\lr{ j - m } } \ket{j+m +1,j-m-1}.
 \end{dmath}
 %
 That gives
 \begin{equation}\label{eqn:qmLecture14:900}
 \begin{aligned}
-d_{j,m}^{+} &= \Hbar \sqrt{\lr{ j - m } \lr{ j+ m + 1} } \\
+d_{j,m}^{+} &= \Hbar \sqrt{\lr{ j - m } \lr{ j+ m + 1} }, \\
 d_{j,m}^{-} &= \Hbar \sqrt{\lr{ j + m } \lr{ j- m + 1} }.
 \end{aligned}
 \end{equation}
 %
 This equivalence can be used to model spin interaction in crystals as harmonic oscillators.   This equivalence of lattice vibrations and spin oscillations is called ``spin waves''.
 \index{spin wave}
-
 %\EndArticle

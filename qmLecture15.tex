@@ -87,7 +87,6 @@ This has a block diagonal form that's sketched in \cref{fig:qmLecture15:qmLectur
 We can view \( d^j_{m m'}(\ncap, \phi) \) as a matrix, representing the rotation.  The problem of determining these matrices can be reduced to that of determining the matrix for \( \Lcap \), because once we have that we can exponentiate that.
 
 \makeexample{Spin half}{example:qmLecture15:1}{
-
 From the eigenvalue relationships, with basis states
 %
 \begin{equation}\label{eqn:qmLecture15:160}
@@ -96,15 +95,14 @@ From the eigenvalue relationships, with basis states
 \begin{bmatrix}
 1 \\
 0
-\end{bmatrix} \\
+\end{bmatrix}, \\
 \ket{\downarrow} &=
 \begin{bmatrix}
 0 \\
 1 \\
-\end{bmatrix}
+\end{bmatrix},
 \end{aligned}
 \end{equation}
-
 we find
 %
 \begin{equation}\label{eqn:qmLecture15:180}
@@ -163,9 +161,8 @@ For \( L = 1 \) it turns out that the rotation matrices turn out to be the 3D ro
 the coordinates of the operator are
 %
 \begin{dmath}\label{eqn:qmLecture15:260}
-\hatL_k = i \epsilon_{k m n} r_m \lr{ -i \Hbar \PD{r_n}{} }
+\hatL_k = i \epsilon_{k m n} r_m \lr{ -i \Hbar \PD{r_n}{} }.
 \end{dmath}
-
 We see that scaling \( \Br \rightarrow \alpha \Br \) does not change this operator, allowing for an angular representation \( \hatL_k(\theta, \phi) \) that have the form
 %
 \begin{dmath}\label{eqn:qmLecture15:280}
@@ -176,18 +173,15 @@ We see that scaling \( \Br \rightarrow \alpha \Br \) does not change this operat
 \end{dmath}
 %
 Here \( \theta \) and \( \phi \) are the polar and azimuthal angles respectively as illustrated in \cref{fig:qmLecture15:qmLecture15Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture15Fig2}{Spherical coordinate convention.}{fig:qmLecture15:qmLecture15Fig2}{0.2}
-
 Introducing the \textAndIndex{spherical harmonics} \( Y_{lm} \), the equivalent wave function representation of the problem is
 %
 \begin{equation}\label{eqn:qmLecture15:300}
 \begin{aligned}
-\Lcap Y_{lm}(\theta, \phi) &= \Hbar^2 l (l + 1) Y_{lm}(\theta, \phi) \\
-\hatL_z Y_{lm}(\theta, \phi) &= \Hbar m Y_{lm}(\theta, \phi) \\
+\Lcap Y_{lm}(\theta, \phi) &= \Hbar^2 l (l + 1) Y_{lm}(\theta, \phi), \\
+\hatL_z Y_{lm}(\theta, \phi) &= \Hbar m Y_{lm}(\theta, \phi).
 \end{aligned}
 \end{equation}
-
 One can find these functions
 %
 \begin{dmath}\label{eqn:qmLecture15:320}
@@ -208,20 +202,16 @@ where all the eigenfunctions will have the form
 %
 \section{Addition of angular momentum.}
 \index{angular momentum!addition}
-
 Since \( \Lcap \) is a vector we expect to be able to add angular momentum in some way similar to the addition of classical vectors as illustrated in \cref{fig:qmLecture15:qmLecture15Fig3}.
-
 \imageFigure{../figures/phy1520-quantum/qmLecture15Fig3}{Classical vector addition.}{fig:qmLecture15:qmLecture15Fig3}{0.15}
-
 When we have a potential that depends only on the difference in position \( V(\Br_1 - \Br_2) \) then we know from classical problems it is effective to work in center of mass coordinates
 %
 \begin{equation}\label{eqn:qmLecture15:380}
 \begin{aligned}
-\Rcap_{\textrm{cm}} &= \frac{\rcap_1 + \rcap_2}{2} \\
-\Pcap_{\textrm{cm}} &= \pcap_1 + \pcap_2
+\Rcap_{\textrm{cm}} &= \frac{\rcap_1 + \rcap_2}{2}, \\
+\Pcap_{\textrm{cm}} &= \pcap_1 + \pcap_2,
 \end{aligned}
 \end{equation}
-
 where
 %
 \begin{dmath}\label{eqn:qmLecture15:400}
@@ -247,9 +237,8 @@ do we have
 That is
 %
 \begin{dmath}\label{eqn:qmLecture15:460}
-\antisymmetric{\hatL_{1,i} + \hatL_{1,j}}{\hatL_{2,i} + \hatL_{2,j}} = i \Hbar \epsilon_{i j k} \lr{ \hatL_{1,k} + \hatL_{1,k} }
+\antisymmetric{\hatL_{1,i} + \hatL_{1,j}}{\hatL_{2,i} + \hatL_{2,j}} = i \Hbar \epsilon_{i j k} \lr{ \hatL_{1,k} + \hatL_{1,k} }.
 \end{dmath}
 %
 FIXME: Right at the end of the lecture, there was a mention of something about whether or not \( \Lcap_1^2 \) and \( \hatL_{1,z} \) were sharply defined, but I missed it.  Ask about this if not covered in the next lecture.
-
 %\EndArticle

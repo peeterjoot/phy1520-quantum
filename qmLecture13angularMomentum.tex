@@ -124,18 +124,17 @@ Things aren't so nice when we act with other angular momentum operators, produci
 %
 \begin{equation}\label{eqn:qmLecture13:1040}
 \begin{aligned}
-\hatL_x \ket{a , b} &= \sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'} \\
-\hatL_y \ket{a , b} &= \sum_{a', b'} \calA^y_{a, b, a', b'} \ket{a', b'} \\
+\hatL_x \ket{a , b} &= \sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'},\\
+\hatL_y \ket{a , b} &= \sum_{a', b'} \calA^y_{a, b, a', b'} \ket{a', b'}.
 \end{aligned}
 \end{equation}
-
 With this representation, we have
 %
 \begin{dmath}\label{eqn:qmLecture13:1060}
 \hatL_x \Lcap^2 \ket{a, b}
 =
 \hatL_x \Hbar^2 a
-\sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'}.
+\sum_{a', b'} \calA^x_{a, b, a', b'} \ket{a', b'},
 \end{dmath}
 %
 \begin{dmath}\label{eqn:qmLecture13:1080}
@@ -160,19 +159,17 @@ Simplifying things we can write the action of \( \hatL_x, \hatL_y \) on the stat
 %
 \begin{dmath}\label{eqn:qmLecture13:1140}
 \begin{aligned}
-\hatL_x \ket{a , b} &= \sum_{ b'} \calA^x_{a; b, b'} \ket{a, b'} \\
-\hatL_y \ket{a , b} &= \sum_{ b'} \calA^y_{a; b, b'} \ket{a, b'} \\
+\hatL_x \ket{a , b} &= \sum_{ b'} \calA^x_{a; b, b'} \ket{a, b'}, \\
+\hatL_y \ket{a , b} &= \sum_{ b'} \calA^y_{a; b, b'} \ket{a, b'}.
 \end{aligned}
 \end{dmath}
-
 Let's define
 \begin{dmath}\label{eqn:qmLecture13:1160}
 \begin{aligned}
-\hatL_{+} &\equiv \hatL_x + i \hatL_y \\
-\hatL_{-} &\equiv \hatL_x - i \hatL_y \\
+\hatL_{+} &\equiv \hatL_x + i \hatL_y,
+\hatL_{-} &\equiv \hatL_x - i \hatL_y.
 \end{aligned}
 \end{dmath}
-
 Because these are sums of \( \hatL_x, \hatL_y \) they must also commute with \( \Lcap^2 \)
 %
 \begin{dmath}\label{eqn:qmLecture13:1180}
@@ -210,11 +207,10 @@ Explicitly, that is
 %
 \begin{dmath}\label{eqn:qmLecture13:1220}
 \begin{aligned}
-\hatL_z \hatL_{+} - \hatL_{+} \hatL_z &= \Hbar \hatL_{+} \\
-\hatL_z \hatL_{-} - \hatL_{-} \hatL_z &= -\Hbar \hatL_{-}
+\hatL_z \hatL_{+} - \hatL_{+} \hatL_z &= \Hbar \hatL_{+}, \\
+\hatL_z \hatL_{-} - \hatL_{-} \hatL_z &= -\Hbar \hatL_{-}.
 \end{aligned}
 \end{dmath}
-
 Now we are set to compute actions of these (assumed) raising and lowering operators on the eigenstate of \( \hatL_z, \Lcap^2 \)
 %
 \begin{dmath}\label{eqn:qmLecture13:1240}
@@ -259,7 +255,7 @@ and
 =
 \lr{ \Lcap^2 - \hatL_z^2 } - i \antisymmetric{\hatL_x}{\hatL_y}
 =
-\Lcap^2 - \hatL_z^2 + \Hbar \hatL_z,
+\Lcap^2 - \hatL_z^2 + \Hbar \hatL_z.
 \end{dmath}
 %
 So we must have
@@ -289,23 +285,16 @@ and
 \end{equation}
 %
 This puts constraints on \( a, b \), roughly of the form
-
 \begin{enumerate}
 \item
 \begin{equation}\label{eqn:qmLecture13:1360}
-a - b( b + 1) \ge 0
+a - b( b + 1) \ge 0,
 \end{equation}
-
-With \( b_{\textrm{max}} > 0 \), \( b_{\textrm{max}} \approx \sqrt{a} \).
-
+with \( b_{\textrm{max}} > 0 \), \( b_{\textrm{max}} \approx \sqrt{a} \).
 \item
 \begin{equation}\label{eqn:qmLecture13:1380}
-a - b( b - 1) \ge 0
+a - b( b - 1) \ge 0,
 \end{equation}
-
-With \( b_{\textrm{min}} < 0 \), \( b_{\textrm{min}} \approx -\sqrt{a} \).
-
+with \( b_{\textrm{min}} < 0 \), \( b_{\textrm{min}} \approx -\sqrt{a} \).
 \end{enumerate}
-
 %\paragraph{I Love and Desire Sofia Always!}
-

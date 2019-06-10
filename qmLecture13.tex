@@ -26,19 +26,16 @@
 %These are notes for the UofT course PHY1520, Graduate Quantum Mechanics, taught by Prof. Paramekanti, covering \textchapref{{4}}, \textchapref{{3}} \citep{sakurai2014modern} content.
 %
 \paragraph{Time reversal (cont.)}
-
 Given a time reversed state
 %
 \begin{dmath}\label{eqn:qmLecture13:20}
-\ket{\tilde{\Psi}(t)} = \Theta \ket{\Psi(0)}
+\ket{\tilde{\Psi}(t)} = \Theta \ket{\Psi(0)},
 \end{dmath}
-
 which can alternately be written
 %
 \begin{equation}\label{eqn:qmLecture13:40}
-\Theta^{-1} \ket{\tilde{\Psi}(t)} = \ket{\Psi(-t)} = e^{i \hatH t/\Hbar} \ket{\Psi(0)}
+\Theta^{-1} \ket{\tilde{\Psi}(t)} = \ket{\Psi(-t)} = e^{i \hatH t/\Hbar} \ket{\Psi(0)}.
 \end{equation}
-
 The left hand side can be expanded as the evolution of the state as found at time \( -t \)
 %
 \begin{dmath}\label{eqn:qmLecture13:60}
@@ -155,17 +152,17 @@ We expect
 \begin{aligned}
 \hatx &\rightarrow \hatx \\
 \hatp &\rightarrow -\hatp \\
-\Lcap &\rightarrow -\Lcap
+\Lcap &\rightarrow -\Lcap,
 \end{aligned}
 \end{dmath}
-
 where we have a sign flip in the time dependent momentum operator (and therefore angular momentum), but not for position.  If we have
 %
 \begin{dmath}\label{eqn:qmLecture13:340}
 \Theta^{-1} \hatx \Theta = \hatx,
 \end{dmath}
 %
-if that's true, then how about the momentum operator in the position basis
+%if that's true, 
+then how about the momentum operator in the position basis
 \begin{dmath}\label{eqn:qmLecture13:360}
 \Theta^{-1} \hatp \Theta
 =
@@ -232,18 +229,17 @@ That action is:
 %
 \begin{equation}\label{eqn:qmLecture13:460}
 \begin{aligned}
-a \rightarrow b^\conj \\
-b \rightarrow a^\conj
+a \rightarrow b^\conj, \\
+b \rightarrow a^\conj.
 \end{aligned}
 \end{equation}
-
 Let's consider whether or not such an action a spin operator with properties
 %
 \begin{dmath}\label{eqn:qmLecture13:480}
-\antisymmetric{\hatS_i}{\hatS_j} = i \epsilon_{ijk} \hatS_k.
+\antisymmetric{\hatS_i}{\hatS_j} = i \epsilon_{ijk} \hatS_k,
 \end{dmath}
 %
-produce the desired inversion of sign
+will produce the desired inversion of sign
 %
 \begin{dmath}\label{eqn:qmLecture13:500}
 \Theta^{-1} \hatS_i \Theta = - \hatS_i.
@@ -290,9 +286,8 @@ The expectations of the spin operators (without any application of time reversal
 \sigma_z
 \lr{ a \ket{\uparrow} - b \ket{\downarrow} }
 =
-\frac{\Hbar}{2} \lr{ \Abs{a}^2 - \Abs{b}^2 }
+\frac{\Hbar}{2} \lr{ \Abs{a}^2 - \Abs{b}^2 }.
 \end{dmath}
-
 The time reversed actions are
 %
 \begin{dmath}\label{eqn:qmLecture13:1560}
@@ -338,7 +333,7 @@ The time reversed actions are
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \lr{ -a \ket{\downarrow} + b \ket{\uparrow} }
 =
-\frac{\Hbar}{2} \lr{ -\Abs{a}^2 + \Abs{b}^2 }
+\frac{\Hbar}{2} \lr{ -\Abs{a}^2 + \Abs{b}^2 }.
 \end{dmath}
 %
 %\begin{dmath}\label{eqn:qmLecture13:1500}
@@ -383,7 +378,6 @@ The time reversed actions are
 %
 %\bra{\Psi} \Theta^{-1} \hatS_z \Theta \ket{\Psi}
 %= \frac{\Hbar}{2} \lr{ \Abs{b}^2 - \Abs{a}^2 }
-
 We see that this is not right, because the sign for the x component has not been flipped.
 % (only the sign of the y component has).
 
@@ -405,11 +399,10 @@ This is the action:
 %
 \begin{equation}\label{eqn:qmLecture13:600}
 \begin{aligned}
-a \rightarrow -b^\conj \\
-b \rightarrow a^\conj
+a \rightarrow -b^\conj, \\
+b \rightarrow a^\conj.
 \end{aligned}
 \end{equation}
-
 The correct action of time reversal on the basis states (up to a phase choice) is
 %
 \boxedEquation{eqn:qmLecture13:620}{
@@ -420,18 +413,16 @@ The correct action of time reversal on the basis states (up to a phase choice) i
 \end{aligned}
 %\end{boxed}
 }
-
 Note that acting the time reversal operator twice has the effects
 %
 \begin{dmath}\label{eqn:qmLecture13:660}
-\Theta^2 \ket{\uparrow} = \Theta \ket{\downarrow} = - \ket{\uparrow}
+\Theta^2 \ket{\uparrow} = \Theta \ket{\downarrow} = - \ket{\uparrow},
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture13:680}
 \Theta^2 \ket{\downarrow} = \Theta (-\ket{\uparrow}) = - \ket{\uparrow}.
 \end{dmath}
 %
 We end up with the same state we started with, but with the opposite sign.  This means that as an operator
-
 \index{time reversal!squared}
 %\begin{dmath}\label{eqn:qmLecture13:700}
 \boxedEquation{eqn:qmLecture13:700}{

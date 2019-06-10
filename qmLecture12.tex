@@ -27,36 +27,33 @@
 %
 \paragraph{Parity (review)}
 %
+The action of the parity operators on the position and momentum operators are
 \begin{dmath}\label{eqn:qmLecture12:20}
-\hat\Pi \hatx \hat\Pi = - \hatx
+\hat\Pi \hatx \hat\Pi = - \hatx,
 \end{dmath}
+and
 \begin{dmath}\label{eqn:qmLecture12:40}
-\hat\Pi \hatp \hat\Pi = - \hatp
+\hat\Pi \hatp \hat\Pi = - \hatp.
 \end{dmath}
-
 These are \underline{polar} vectors, in contrast to an \underline{axial} vector such as \( \BL = \Br \cross \Bp \).
 %
 \begin{dmath}\label{eqn:qmLecture12:60}
-\hat\Pi^2 = 1
+\hat\Pi^2 = 1,
 \end{dmath}
 %
 \begin{dmath}\label{eqn:qmLecture12:80}
-\Psi(x) \rightarrow \Psi(-x)
+\Psi(x) \rightarrow \Psi(-x).
 \end{dmath}
-
 If \( \antisymmetric{\hat\Pi}{\hatH} = 0 \) then all the eigenstates are either
-
 \begin{itemize}
-\item even: \( \hat\Pi \) eigenvalue is \( + 1 \).
+\item even: \( \hat\Pi \) eigenvalue is \( + 1 \),
 \item odd: \( \hat\Pi \) eigenvalue is \( - 1 \).
 \end{itemize}
-
 \paragraph{Note on parity in multiple dimensions}
-
 A Hamiltonian can be constructed with parity symmetries in one or more directions.  For example, given a potential
 %
 \begin{dmath}\label{eqn:qmLecture12:81}
-V(x,y) = a x + b x^2 + c y^2,
+V(x,y) = a x + b x^2 + c y^2.
 \end{dmath}
 %
 We don't have parity symmetry for \( \Bx = (x,y) \), but do have parity symmetry in the \( y \) direction.  Assuming a separated variables form for the wave function, say \( \psi(x,y) = X(x)Y(y) \), we can't say much about \( X \) on the grounds of symmetry considerations only, but know that \( Y \) has to be either an even or odd function.
@@ -66,46 +63,38 @@ We don't have parity symmetry for \( \Bx = (x,y) \), but do have parity symmetry
 \section{Translations.}
 \index{translation!symmetry}
 \index{translation!operator}
-
 Define a (continuous) translation operator
 %
 \begin{dmath}\label{eqn:qmLecture12:100}
-\hatT_\epsilon \ket{x} = \ket{x + \epsilon}
+\hatT_\epsilon \ket{x} = \ket{x + \epsilon}.
 \end{dmath}
-
 The action of this operator is sketched in \cref{fig:lecture12:lecture12Fig1}.
-
-\imageFigure{../figures/phy1520-quantum/lecture12Fig1}{Translation operation.}{fig:lecture12:lecture12Fig1}{0.15}
-
+\imageFigure{../figures/phy1520-quantum/lecture12Fig1}{Translation operation.}{fig:lecture12:lecture12Fig1}{0.1}
 This is a unitary operator
 %
 \begin{equation}\label{eqn:qmLecture12:120}
-\hatT_{-\epsilon} = \hatT_{\epsilon}^\dagger = \hatT_{\epsilon}^{-1}
+\hatT_{-\epsilon} = \hatT_{\epsilon}^\dagger = \hatT_{\epsilon}^{-1}.
 \end{equation}
-
 In a position basis, the action of this operator is
 %
-\begin{dmath}\label{eqn:qmLecture12:140}
+\begin{equation}\label{eqn:qmLecture12:140}
 \bra{x} \hatT_{\epsilon} \ket{\psi} = \braket{x-\epsilon}{\psi} = \psi(x - \epsilon)
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture12:160}
+\begin{equation}\label{eqn:qmLecture12:160}
 \Psi(x - \epsilon) \approx \Psi(x) - \epsilon \PD{x}{\Psi}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture12:180}
+\begin{equation}\label{eqn:qmLecture12:180}
 \bra{x} \hatT_{\epsilon} \ket{\Psi}
 = \braket{x}{\Psi} - \frac{\epsilon}{\Hbar} \bra{ x} i \hatp \ket{\Psi}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture12:200}
-\hatT_{\epsilon} \approx \lr{ 1 - i \frac{\epsilon}{\Hbar} \hatp }
-\end{dmath}
-
+\begin{equation}\label{eqn:qmLecture12:200}
+\hatT_{\epsilon} \approx \lr{ 1 - i \frac{\epsilon}{\Hbar} \hatp }.
+\end{equation}
 A non-infinitesimal translation can be composed of many small translations, as sketched in \cref{fig:lecture12:lecture12Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/lecture12Fig2}{Composition of small translations.}{fig:lecture12:lecture12Fig2}{0.15}
-
 For \( \epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a \), the total translation operator is
 %
 \begin{dmath}\label{eqn:qmLecture12:220}
@@ -113,9 +102,8 @@ For \( \epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a \), the tota
 = \hatT_{\epsilon}^N
 = \lim_{\epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a }
 \lr{ 1 - \frac{\epsilon}{\Hbar} \hatp }^N
-= e^{-i a \hatp/\Hbar}
+= e^{-i a \hatp/\Hbar}.
 \end{dmath}
-
 The momentum \( \hatp \) is called a ``Generator'' \index{generator!translation} of translations.  If a Hamiltonian \( H \) is translationally invariant, then
 %
 \begin{dmath}\label{eqn:qmLecture12:240}
@@ -130,9 +118,7 @@ This means that momentum will be a good quantum number
 %
 \section{Rotations.}
 \index{infitesimal rotation}
-
 Rotations form a non-Abelian group \index{Abelian group}, since the order of rotations \( \hatR_1 \hatR_2 \ne \hatR_2 \hatR_1 \).
-
 Given a rotation acting on a ket
 %
 \begin{dmath}\label{eqn:qmLecture12:280}
@@ -161,10 +147,9 @@ Consider an infinitesimal rotation about the z-axis as sketched in \cref{fig:lec
 \begin{aligned}
 x' &= x - \epsilon y \\
 y' &= y + \epsilon y \\
-z' &= z
+z' &= z.
 \end{aligned}
 \end{equation}
-
 The rotated wave function is
 %
 \begin{dmath}\label{eqn:qmLecture12:340}
@@ -226,7 +211,6 @@ e^{-i \frac{\phi}{\Hbar} \hatL_z}.
 %
 Note that \( \antisymmetric{\hatL_x}{\hatL_y} \ne 0 \).
 } % example
-
 By construction using Euler angles or any other method, a general rotation will include contributions from components of all the angular momentum operator, and will have the structure
 %
 %\begin{dmath}\label{eqn:qmLecture12:480}
@@ -261,13 +245,9 @@ Non-Abelian implies degeneracies in the spectrum.
 
 \section{Time-reversal.}
 \index{time reversal}
-
 Imagine that we have something moving along a curve at time \( t = 0 \), and ending up at the final position at time \( t = t_f \), as sketched in \cref{fig:lecture12:lecture12Fig5}.
-
-\imageFigure{../figures/phy1520-quantum/lecture12Fig5}{Time reversal trajectory.}{fig:lecture12:lecture12Fig5}{0.15}
-
+\imageFigure{../figures/phy1520-quantum/lecture12Fig5}{Time reversal trajectory.}{fig:lecture12:lecture12Fig5}{0.1}
 Now imagine that we flip the direction of motion (i.e. flipping the velocity) and run time backwards so the final-time state becomes the initial state.
-
 If the time reversal operator is designated \( \hat\Theta \), with operation
 %
 \begin{dmath}\label{eqn:qmLecture12:580}
