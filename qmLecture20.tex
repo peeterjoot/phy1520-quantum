@@ -180,16 +180,14 @@ contains a bit of \( \ket{ n^{(0)} } \)?  To determine this act with \( \bra{n^{
 \end{dmath}
 %
 This shows that \( \ket{n} \) is entirely orthogonal to \( \ket{n^{(0)}} \).
-
-Define a projection operator
+First define a projection operator
 %
 \begin{dmath}\label{eqn:qmLecture20:320}
 P_n = \ket{n^{(0)}}\bra{n^{(0)}},
 \end{dmath}
 %
 which has the idempotent property \( P_n^2 = P_n \) that we expect of a projection operator.
-
-Define a rejection operator
+Now define a rejection operator
 \begin{dmath}\label{eqn:qmLecture20:340}
 \overbar{P}_n
 = 1 -
@@ -205,9 +203,7 @@ Because \( \ket{n} \) has no component in the direction \( \ket{n^{(0)}} \), the
 \end{dmath}
 %
 valid for any initial \( \ket{n} \).
-
 \paragraph{Power series perturbation expansion}
-
 Instead of iterating, suppose that the unknown state and unknown energy difference operator can be expanded in a \( \lambda \) power series, say
 %
 \begin{dmath}\label{eqn:qmLecture20:380}
@@ -218,7 +214,6 @@ Instead of iterating, suppose that the unknown state and unknown energy differen
 + \lambda^2 \ket{n_2}
 + \lambda^3 \ket{n_3} + \cdots
 \end{dmath}
-
 and
 %
 \begin{dmath}\label{eqn:qmLecture20:400}
@@ -227,7 +222,6 @@ and
 + \lambda^2 \Delta_{n_2}
 + \lambda^3 \Delta_{n_3} + \cdots
 \end{dmath}
-
 We usually interpret functions of operators in terms of power series expansions.  In the case of \( \lr{ E_n^{(0)} - H_0 }^{-1} \), we have a concrete interpretation when acting on one of the unperturbed eigenstates
 %
 \begin{dmath}\label{eqn:qmLecture20:420}
@@ -280,9 +274,7 @@ however, we will normalize by setting \( \braket{n^0}{n} = 1 \), so
 %\end{equation}
 %
 \paragraph{to \( O(\lambda^0) \) }
-
 If all \( \lambda^n, n > 0 \) are zero, then we have
-
 \begin{subequations}
 \label{eqn:qmLecture20:780}
 \begin{dmath}\label{eqn:qmLecture20:740}
@@ -298,10 +290,9 @@ E_n^{(0)} - E_m^{(0)}
  \lr{ - \Delta_{n_0} } \ket{n_0}
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture20:800}
-\Delta_{n_0} \braket{n^{(0)}}{n_0} = 0
+\Delta_{n_0} \braket{n^{(0)}}{n_0} = 0,
 \end{dmath}
 \end{subequations}
-
 so
 %
 \begin{dmath}\label{eqn:qmLecture20:540}
@@ -312,7 +303,6 @@ so
 \end{dmath}
 %
 \paragraph{to \( O(\lambda^1) \) }
-
 Requiring identity for all \( \lambda^1 \) terms means
 %
 \begin{dmath}\label{eqn:qmLecture20:760}
@@ -362,16 +352,15 @@ E_n^{(0)} - E_m^{(0)}
 }
 V_{m n}
 %\bra{ m^{(0)}} V \ket{n_0}
-\\
+, \\
 \Delta_{n_1} &= \bra{ n^{(0)} } V \ket{ n^{(0)} } = V_{nn}.
 \end{aligned}
 \end{equation}
 %
 \paragraph{to \( O(\lambda^2) \) }
-
 The second order perturbation states are found by selecting only the \( \lambda^2 \) contributions to
 %
-\begin{dmath}\label{eqn:qmLecture20:820}
+\begin{equation}\label{eqn:qmLecture20:820}
 \lambda^2 \ket{n_2}
 =
 \sum_{m \ne n}
@@ -384,7 +373,7 @@ E_n^{(0)} - E_m^{(0)}
 \ket{n_0}
 + \lambda \ket{n_1}
 }.
-\end{dmath}
+\end{equation}
 %
 Because \( \ket{n_0} = \ket{n^{(0)}} \), the \( \lambda^2 \Delta_{n_2} \) is killed, leaving
 %

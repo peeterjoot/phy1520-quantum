@@ -57,17 +57,15 @@ Let's try allowing \( a_0 \rightarrow a \), to be a variational degree of freedo
 \begin{dmath}\label{eqn:qmLecture19:100}
 \bra{\psi_a} H \ket{\psi_a}
 =
-\bra{\psi_a} \frac{p^2}{2m} + \inv{2} m \omega^2 x^2 + \lambda x^4 \ket{\psi_a}
+\bra{\psi_a} \frac{p^2}{2m} + \inv{2} m \omega^2 x^2 + \lambda x^4 \ket{\psi_a}.
 \end{dmath}
-
 We can find
 \begin{dmath}\label{eqn:qmLecture19:120}
-\expectation{x^2} = \inv{2} a^2
+\expectation{x^2} = \inv{2} a^2,
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture19:140}
-\expectation{x^4} = \frac{3}{4} a^4
+\expectation{x^4} = \frac{3}{4} a^4.
 \end{dmath}
-
 Define
 %
 \begin{dmath}\label{eqn:qmLecture19:160}
@@ -97,9 +95,7 @@ Write this as
 \end{dmath}
 %
 This might look something like \cref{fig:lecture19:lecture19Fig1}.
-
 \imageFigure{../figures/phy1520-quantum/lecture19Fig1a}{Energy after perturbation.}{fig:lecture19:lecture19Fig1}{0.2}
-
 Demand that
 %
 \begin{dmath}\label{eqn:qmLecture19:220}
@@ -114,9 +110,8 @@ Demand that
 \lr{
 1 - \frac{\omega^2}{\tilde{\omega}^2}
 - 6 \frac{\lambda \Hbar}{m^2 \tilde{\omega}^3}
-}
+},
 \end{dmath}
-
 or
 \begin{dmath}\label{eqn:qmLecture19:260}
 \tilde{\omega}^3 - \omega^2 \tilde{\omega} - \frac{6 \lambda \Hbar}{m^2} = 0.
@@ -163,7 +158,7 @@ With \cref{eqn:qmLecture19:320}, that is
 %
 The energy levels are shifted slightly for each shift in the Hamiltonian frequency.
 
-What do we have in the extreme anharmonic limit, where \( \lambda a_0^4 \gg \Hbar \omega \).  Now we get
+What do we have in the extreme anharmonic limit, where \( \lambda a_0^4 \gg \Hbar \omega \)?  Now we get
 %
 \begin{equation}\label{eqn:qmLecture19:360}
 \tilde{\omega}^\conj = \lr{ \frac{ 6 \Hbar \lambda }{m^2} }^{1/3},
@@ -198,9 +193,7 @@ V(x) = \frac{m \omega^2}{8 a^2} \lr{ x - a }^2\lr{ x + a}^2.
 \end{equation}
 %
 Note that this potential, and the Hamiltonian, both commute with parity.
-
 We are interested in the regime where \( a_0^2 = \frac{\Hbar}{m \omega} \ll a^2 \).
-
 Near \( x = \pm a \), this will be approximately
 %
 \begin{equation}\label{eqn:qmLecture19:420}
@@ -213,29 +206,22 @@ Guessing a wave function that is an eigenstate of parity
 \Psi_{\pm} = g_{\pm} \lr{ \phi_\txtR(x) \pm \phi_\txtL(x) }.
 \end{equation}
 %
-perhaps looking like the even and odd functions sketched in \cref{fig:lecture19:lecture19Fig3}, and \cref{fig:lecture19:lecture19Fig4}.
-
+Perhaps this looks like the even and odd functions sketched in \cref{fig:lecture19:lecture19Fig3}, and \cref{fig:lecture19:lecture19Fig4}.
 \imageFigure{../figures/phy1520-quantum/lecture19Fig3}{Even double well function.}{fig:lecture19:lecture19Fig3}{0.2}
 \imageFigure{../figures/phy1520-quantum/lecture19Fig4}{Odd double well function.}{fig:lecture19:lecture19Fig4}{0.1}
-
 Using harmonic oscillator functions
 %
 \begin{equation}\label{eqn:qmLecture19:460}
 \begin{aligned}
-\phi_\txtL(x) &= \Psi_{\txtH.\txtO.}(x + a) \\
-\phi_\txtR(x) &= \Psi_{\txtH.\txtO.}(x - a)
+\phi_\txtL(x) &= \Psi_{\txtH.\txtO.}(x + a), \\
+\phi_\txtR(x) &= \Psi_{\txtH.\txtO.}(x - a).
 \end{aligned}
 \end{equation}
-
 After doing a lot of integral (i.e. in the problem set), we will see a splitting of the variational energy levels as sketched in \cref{fig:lecture19:lecture19Fig5}.
-
 \imageFigure{../figures/phy1520-quantum/lecture19Fig5}{Splitting for double well potential.}{fig:lecture19:lecture19Fig5}{0.1}
-
 This sort of level splitting was what was used in the very first mazers.
-
 \section{Perturbation theory (outline).}
 \index{perturbation}
-
 Given
 %
 \begin{equation}\label{eqn:qmLecture19:480}
@@ -255,13 +241,8 @@ H_0 \ket{n^{(0)}} = E_n^{(0)} \ket{n^{(0)}}.
 \end{equation}
 %
 We are hoping that the level transitions have adiabatic transitions between the original and perturbed levels as sketched in \cref{fig:lecture19:lecture19Fig6}.
-
 \imageFigure{../figures/phy1520-quantum/lecture19Fig6}{Adiabatic transitions.}{fig:lecture19:lecture19Fig6}{0.1}
-
 and not crossed level transitions as sketched in \cref{fig:lecture19:lecture19Fig7}.
-
 \imageFigure{../figures/phy1520-quantum/lecture19Fig7}{Crossed level transitions.}{fig:lecture19:lecture19Fig7}{0.1}
-
 If we have level crossings (which can in general occur), as opposed to adiabatic transitions, then we have no hope of using perturbation theory.
-
 %\EndArticle
