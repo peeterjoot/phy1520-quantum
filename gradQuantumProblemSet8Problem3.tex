@@ -4,20 +4,18 @@
 %
 \makeoproblem{Harmonic oscillator.}{gradQuantum:problemSet8:3}{2015 ps8 p3}{
 \index{harmonic oscillator!anharmonic perturbation}
-
 Consider a 2D harmonic oscillator with
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:20}
 H =
 \frac{p_x^2}{2m}
 +\frac{p_y^2}{2m}
-+ \inv{2} m \omega^2 \lr{ x^2 + y^2 }
++ \inv{2} m \omega^2 \lr{ x^2 + y^2 },
 \end{dmath}
-
-Turn on an anharmonic perturbation
+and turn on an anharmonic perturbation
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:40}
-V = \lambda g_1 \frac{m^2 \omega^3}{\Hbar} \lr{ x^4 + y^4 } + \lambda^2 g_2 m \omega^2 x y,
+V = \lambda g_1 \frac{m^2 \omega^3}{\Hbar} \lr{ x^4 + y^4 } + \lambda^2 g_2 m \omega^2 x y.
 \end{dmath}
 %
 Note that the potentials have been altered from the original problem statement to have dimensions of energy with dimensionless scale factors \( g_1, g_2, \lambda \).
@@ -54,7 +52,6 @@ with known solution \( H_0 \ket{n^{(0)}} = E^{(0)} \ket{n^{(0)}} \), we seek the
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:100}
 \Delta = \lambda \Delta^{(1)} + \lambda^2 \Delta^{(2)} + \cdots
 \end{dmath}
-
 where
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:120}
@@ -117,9 +114,7 @@ The \( \Delta^{(1)} \) contribution drops out, leaving
 \boxedEquation{eqn:gradQuantumProblemSet8Problem3:460}{
 \ket{n_1} = \sum_{m \ne n} \frac{\ket{m^{(0)}} \bra{m^{(0)}}}{E^{(0)} - E_m} V_1 \ket{n_0},
 }
-
 just as we had for a strictly first order perturbing potential.
-
 For the energy shifts consider the braket
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:220}
@@ -144,9 +139,8 @@ Expanding both sides in powers of \( \lambda \) we have
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:260}
 \sum_{r = 1, s = 0} \lambda^{r+s} \Delta^{(r)} \braket{n^{(0)}}{n_s}
 =
-\sum_{m = 0} \lambda^{m+1} \bra{n^{(0)}} V_1 \ket{n_m} + \lambda^{m+2} \bra{n^{(0)}} V_2 \ket{n_m}
+\sum_{m = 0} \lambda^{m+1} \bra{n^{(0)}} V_1 \ket{n_m} + \lambda^{m+2} \bra{n^{(0)}} V_2 \ket{n_m}.
 \end{dmath}
-
 With \( \ket{n^{(0)}} = \ket{n_0} \) as required in the \( \lambda \rightarrow 0 \) limit, the \( \lambda = 1 \) contribution to these sums is
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:280}
@@ -239,13 +233,12 @@ We can calculate
 \bra{0,0} V_1 \ket{n_1} &= -\frac{21}{4} \Hbar \omega g_1^2,
 \end{aligned}
 \end{dmath}
-
 so the second order energy shift is
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:600}
-\Delta^{(2)} = -\frac{21}{4} \Hbar \omega g_1^2,
+\Delta^{(2)} = -\frac{21}{4} \Hbar \omega g_1^2.
 \end{dmath}
 %
-so the ground state energy shift, to second order in \( \lambda \), is
+Finally, the ground state energy shift, to second order in \( \lambda \), is
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:620}
 \boxedEquation{eqn:gradQuantumProblemSet8Problem3:680}{

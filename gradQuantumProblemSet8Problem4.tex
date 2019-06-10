@@ -39,7 +39,6 @@ Compute the full field evolution of the levels and compare with the perturbative
 \withproblemsetsParagraph{
 \makeSubAnswer{}{gradQuantum:problemSet8:4a}
 %What are the spin eigenstates and eigenvalues?
-
 With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), we can compute the unperturbed interaction Hamiltonian.  For brevity, let \( S_{\txte\txtp} = \BS_\txte \cdot \BS_\txtp \)
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:60}
@@ -99,7 +98,7 @@ A  \BS_\txte \cdot \BS_\txtp
 The spin eigenstates are the basis elements of \( \beta \) above, with respective eigenvalues
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:80}
-\setlr{ A \Hbar^2/4, -A \Hbar^2/4, -A \Hbar^2/4, A \Hbar^2/4}
+\setlr{ A \Hbar^2/4, -A \Hbar^2/4, -A \Hbar^2/4, A \Hbar^2/4}.
 \end{dmath}
 %
 \makeSubAnswer{}{gradQuantum:problemSet8:4b}
@@ -133,7 +132,7 @@ Assuming the \( \BS_\txte \) operator is directed along \( \ncap = (\sin\theta \
 \begin{bmatrix}
 e^{-i\phi} \cos(\theta/2) \\
 \sin(\theta/2) \\
-\end{bmatrix}
+\end{bmatrix},
 \end{dmath}
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:140}
 \ket{-} =
@@ -166,7 +165,6 @@ U =
 \end{equation}
 %
 This is demonstrated in \nbref{ps8:PauliMatrixSpinOperators.nb}.
-
 The full Hamiltonian can now be written in block matrix form
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:200}
@@ -181,9 +179,8 @@ H
 \begin{bmatrix}
 U \sigma_z U^{-1} & 0 \\
 0 & U \sigma_z U^{-1}
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 Transforming the Hamiltonian to the \( S^z_\txte \) basis we have
 %
 \begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:220}
@@ -197,9 +194,8 @@ U^{-1} \sigma_z U & 0 \\
 \begin{bmatrix}
 \sigma_z & 0 \\
 0 & \sigma_z
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
 %With \( C = \cos(\theta/2), S = \sin(\theta/2) \) these \( U^{-1} \sigma_z U \) block matrices are
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:240}
@@ -240,25 +236,23 @@ U^{-1} \sigma_z U & 0 \\
 %\end{dmath}
 %
 %We don't need this for the zeroth order energy split.
-
 For \( B_{\textrm{eff}} \ll A \), the first order energy splitting can be read off by inspection
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:260}
 \begin{aligned}
-\frac{\Hbar^2 A}{4} &\rightarrow \frac{\Hbar^2 A}{4} -\frac{B_{\textrm{eff}} \Hbar}{2} \\
--\frac{\Hbar^2 A}{4} &\rightarrow -\frac{\Hbar^2 A}{4} +\frac{B_{\textrm{eff}} \Hbar}{2} \\
--\frac{\Hbar^2 A}{4} &\rightarrow -\frac{\Hbar^2 A}{4} -\frac{B_{\textrm{eff}} \Hbar}{2} \\
-\frac{\Hbar^2 A}{4} &\rightarrow \frac{\Hbar^2 A}{4} +\frac{B_{\textrm{eff}} \Hbar}{2} \\
+\frac{\Hbar^2 A}{4} &\rightarrow \frac{\Hbar^2 A}{4} -\frac{B_{\textrm{eff}} \Hbar}{2}, \\
+-\frac{\Hbar^2 A}{4} &\rightarrow -\frac{\Hbar^2 A}{4} +\frac{B_{\textrm{eff}} \Hbar}{2}, \\
+-\frac{\Hbar^2 A}{4} &\rightarrow -\frac{\Hbar^2 A}{4} -\frac{B_{\textrm{eff}} \Hbar}{2}, \\
+\frac{\Hbar^2 A}{4} &\rightarrow \frac{\Hbar^2 A}{4} +\frac{B_{\textrm{eff}} \Hbar}{2}.
 \end{aligned}
 \end{equation}
-
 For the strong field limit, we can flip the problem, and consider \( A \BS_\txte \cdot \BS_\txtp \) to be a perturbation of an initial Hamiltonian \( H_0 = -B_{\textrm{eff}} S^z_\txte \).  The diagonalization of that perturbation is just \cref{eqn:gradQuantumProblemSet8Problem4:200} so the first order energy shifts are
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:280}
 \begin{aligned}
--\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow -\frac{B_{\textrm{eff}} \Hbar}{2} + \frac{\Hbar^2 A}{4} \\
-\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow \frac{B_{\textrm{eff}} \Hbar}{2} - \frac{\Hbar^2 A}{4} \\
--\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow -\frac{B_{\textrm{eff}} \Hbar}{2} - \frac{\Hbar^2 A}{4} \\
+-\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow -\frac{B_{\textrm{eff}} \Hbar}{2} + \frac{\Hbar^2 A}{4}, \\
+\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow \frac{B_{\textrm{eff}} \Hbar}{2} - \frac{\Hbar^2 A}{4}, \\
+-\frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow -\frac{B_{\textrm{eff}} \Hbar}{2} - \frac{\Hbar^2 A}{4}, \\
 \frac{\Hbar B_{\textrm{eff}}}{2} &\rightarrow \frac{B_{\textrm{eff}} \Hbar}{2} + \frac{\Hbar^2 A}{4}.
 \end{aligned}
 \end{equation}
@@ -291,7 +285,6 @@ For the weak field \( B_{\textrm{eff}} \ll A \) the respective approximations of
   \frac{A \Hbar^2}{4} + \frac{B_{\textrm{eff}} \Hbar \cos\theta}{2},
 \end{array}
 \end{equation}
-
 whereas for the strong field \( B_{\textrm{eff}} \gg A \) the respective approximations of these energies are
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:340}

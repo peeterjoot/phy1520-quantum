@@ -47,16 +47,15 @@ With two states for the electron spin and three for the nuclear spin, the state 
 %
 \begin{equation}\label{eqn:hyperfineElectronAndBosonNucleus:40}
 \begin{aligned}
-H \ket{\ncap; + } \ket{1} &= \frac{J \Hbar^2}{2} \ket{\ncap; + } \ket{1} \\
-H \ket{\ncap; - } \ket{1} &= -\frac{J \Hbar^2}{2} \ket{\ncap; - } \ket{1} \\
-H \ket{\ncap; + } \ket{0} &= 0 \ket{\ncap; + } \ket{0} \\
-H \ket{\ncap; - } \ket{0} &= 0 \ket{\ncap; - } \ket{0} \\
-H \ket{\ncap; + } \ket{-1} &= -\frac{J \Hbar^2}{2} \ket{\ncap; + } \ket{-1} \\
-H \ket{\ncap; - } \ket{-1} &= \frac{J \Hbar^2}{2} \ket{\ncap; - } \ket{-1} \\
+H \ket{\ncap; + } \ket{1} &= \frac{J \Hbar^2}{2} \ket{\ncap; + } \ket{1}, \\
+H \ket{\ncap; - } \ket{1} &= -\frac{J \Hbar^2}{2} \ket{\ncap; - } \ket{1}, \\
+H \ket{\ncap; + } \ket{0} &= 0 \ket{\ncap; + } \ket{0}, \\
+H \ket{\ncap; - } \ket{0} &= 0 \ket{\ncap; - } \ket{0}, \\
+H \ket{\ncap; + } \ket{-1} &= -\frac{J \Hbar^2}{2} \ket{\ncap; + } \ket{-1}, \\
+H \ket{\ncap; - } \ket{-1} &= \frac{J \Hbar^2}{2} \ket{\ncap; - } \ket{-1}.
 \end{aligned}
 \end{equation}
-
-The can be put into block matrix form
+This can be put into block matrix form
 %
 \begin{equation}\label{eqn:hyperfineElectronAndBosonNucleus:60}
 J \BS_e \cdot \BS_n
@@ -250,36 +249,32 @@ whereas in the weak field case where \( B \ll \Hbar J \), we have
 E \approx
 \left\{
 \begin{array}{l l}
-\pm \frac{\Hbar B}{2} & \quad \mbox{if \( m = 0\) } \\
+\pm \frac{\Hbar B}{2} & \quad \mbox{if \( m = 0\),} \\
 \pm \frac{\Hbar^2 J}{2} \lr{
 1
 + \frac{B}{\Hbar J} m \cos\theta
 + \inv{2} \frac{B^2}{J^2 \Hbar^2} }
- & \quad \mbox{if \( m \ne 0\),}
+ & \quad \mbox{if \( m \ne 0\).}
 \end{array}
 \right.
 \end{dmath}
 %
 Note that the result above is exact for the \( m = 0 \) case.
-
 \paragraph{Perturbative solutions}
-
 The degenerate perturbation requires diagonalizing \( B S_e^z \).  Since \( R \) is a representation of \( S_e^z \), the eigenvalues of \( \frac{ B \Hbar R}{2} \) are \( \pm B \Hbar /2 \).
-
 This means that the first order shifts to the energy eigenvalues are
 %
 \begin{equation}\label{eqn:hyperfineElectronAndBosonNucleus:340}
 \begin{aligned}
-\frac{J \Hbar^2}{2} &\rightarrow \frac{J \Hbar^2}{2} + \frac{B \Hbar}{2} \\
--\frac{J \Hbar^2}{2} &\rightarrow -\frac{J \Hbar^2}{2} - \frac{B \Hbar}{2} \\
-0 &\rightarrow + \frac{B \Hbar}{2} \\
-0 &\rightarrow - \frac{B \Hbar}{2} \\
--\frac{J \Hbar^2}{2} &\rightarrow -\frac{J \Hbar^2}{2} + \frac{B \Hbar}{2} \\
+\frac{J \Hbar^2}{2} &\rightarrow \frac{J \Hbar^2}{2} + \frac{B \Hbar}{2}, \\
+-\frac{J \Hbar^2}{2} &\rightarrow -\frac{J \Hbar^2}{2} - \frac{B \Hbar}{2}, \\
+0 &\rightarrow + \frac{B \Hbar}{2}, \\
+0 &\rightarrow - \frac{B \Hbar}{2}, \\
+-\frac{J \Hbar^2}{2} &\rightarrow -\frac{J \Hbar^2}{2} + \frac{B \Hbar}{2}, \\
 \frac{J \Hbar^2}{2} &\rightarrow \frac{J \Hbar^2}{2} - \frac{B \Hbar}{2}.
 \end{aligned}
 \end{equation}
 }
 } % answer
-
 %}
 %\EndNoBibArticle
