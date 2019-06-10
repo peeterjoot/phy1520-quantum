@@ -31,26 +31,24 @@
 Imagine we perturb a potential, say a harmonic oscillator with an electric field
 %
 \begin{dmath}\label{eqn:qmLecture22:20}
-V_0(x) = \inv{2} k x^2
+V_0(x) = \inv{2} k x^2,
 \end{dmath}
 \begin{dmath}\label{eqn:qmLecture22:40}
-V(x) = \calE e x
+V(x) = \calE e x.
 \end{dmath}
-
 After minimizing the energy, using \( \PDi{x}{V} = 0 \), we get
 %
 \begin{dmath}\label{eqn:qmLecture22:60}
-\inv{2} k x^2 + \calE e x \rightarrow k x^\conj = - e \calE
+\inv{2} k x^2 + \calE e x \rightarrow k x^\conj = - e \calE,
 \end{dmath}
 %
 \begin{dmath}\label{eqn:qmLecture22:80}
-p^\conj = -e x^\conj = - \frac{e^2 \calE}{k}
+p^\conj = -e x^\conj = - \frac{e^2 \calE}{k}.
 \end{dmath}
-
 For such a system the polarizability is
 %
 \begin{dmath}\label{eqn:qmLecture22:100}
-\alpha = \frac{e^2 }{k}
+\alpha = \frac{e^2 }{k},
 \end{dmath}
 %
 \begin{dmath}\label{eqn:qmLecture22:120}
@@ -58,10 +56,8 @@ For such a system the polarizability is
 = - \inv{2} \lr{ \frac{e^2}{k} } \calE^2
 = - \inv{2} \alpha \calE^2
 \end{dmath}
-
 %\cref{fig:lecture22:lecture22Fig1}.
 %\imageFigure{../figures/phy1520-quantum/lecture22Fig1}{CAPTION: lecture22Fig1}{fig:lecture22:lecture22Fig1}{0.2}
-
 \section{van der Walls potential.}
 \index{van der Walls}
 %
@@ -73,7 +69,7 @@ H_{0 1} + H_{0 2},
 where
 %
 \begin{equation}\label{eqn:qmLecture22:160}
-H_{0 \alpha} = \frac{p_\alpha^2}{2m} - \frac{e^2}{4 \pi \epsilon_0 \Abs{ \Br_\alpha - \BR_\alpha} }, \qquad \alpha = 1,2
+H_{0 \alpha} = \frac{p_\alpha^2}{2m} - \frac{e^2}{4 \pi \epsilon_0 \Abs{ \Br_\alpha - \BR_\alpha} }, \qquad \alpha = 1,2.
 \end{equation}
 %
 The full interaction potential is
@@ -88,9 +84,8 @@ V =
 \inv{\Abs{\Br_1 - \BR_2}}
 -
 \inv{\Abs{\Br_2 - \BR_1}}
-}
+}.
 \end{dmath}
-
 Let
 %
 \begin{dmath}\label{eqn:qmLecture22:200}
@@ -102,16 +97,14 @@ Let
 \end{dmath}
 %
 as sketched in \cref{fig:lecture22:lecture22Fig2}.
-
 \imageFigure{../figures/phy1520-quantum/lecture22Fig2}{Two atom interaction.}{fig:lecture22:lecture22Fig2}{0.2}
 %
 \begin{dmath}\label{eqn:qmLecture22:240}
 H_{0 \alpha}
 =
 \frac{\Bp^2}{2m}
--\frac{e^2}{4 \pi \epsilon_0 \Abs{\Bx_\alpha}}
+-\frac{e^2}{4 \pi \epsilon_0 \Abs{\Bx_\alpha}},
 \end{dmath}
-
 which allows the total interaction potential to be written
 \begin{dmath}\label{eqn:qmLecture22:260}
 V =
@@ -124,9 +117,8 @@ V =
 \frac{R}{\Abs{\Bx_1 + \BR}}
 -
 \frac{R}{\Abs{-\Bx_2 + \BR}}
-}
+}.
 \end{dmath}
-
 For \( R \gg x_1, x_2 \), this interaction potential, after a multipole expansion, is approximately
 %
 \begin{dmath}\label{eqn:qmLecture22:280}
@@ -139,22 +131,18 @@ V =
 }{\Abs{\BR}^5}
 }
 \end{dmath}
-
 Showing this is left as a exercise.
-
 \paragraph{1. \( O(\lambda) \) }.
-
 With
 %
 \begin{dmath}\label{eqn:qmLecture22:300}
-\psi_0 = \ket{ 1s, 1s }
+\psi_0 = \ket{ 1s, 1s },
 \end{dmath}
 %
 \begin{dmath}\label{eqn:qmLecture22:320}
-\Delta E^{(1)} = \bra{\psi_0} V \ket{\psi_0}
+\Delta E^{(1)} = \bra{\psi_0} V \ket{\psi_0},
 \end{dmath}
-
-The two particle wave functions are of the form
+the two particle wave functions are of the form
 %
 \begin{dmath}\label{eqn:qmLecture22:340}
 \braket{ \Bx_1, \Bx_2 }{\psi_0} =
@@ -173,9 +161,8 @@ so
 \begin{dmath}\label{eqn:qmLecture22:760}
 \bra{\psi_{1s}} x_i \ket{\psi_{1s}}
 \propto
-\int_0^\pi \sin\theta d\theta \int_0^{2\pi} d\phi x_i
+\int_0^\pi \sin\theta d\theta \int_0^{2\pi} d\phi x_i,
 \end{dmath}
-
 where
 \begin{dmath}\label{eqn:qmLecture22:780}
 x_i \in \setlr{ r \sin\theta \cos\phi, r \sin\theta \sin\phi, r \cos\theta }.
@@ -184,9 +171,8 @@ x_i \in \setlr{ r \sin\theta \cos\phi, r \sin\theta \sin\phi, r \cos\theta }.
 The \( x, y \) integrals are zero because of the \( \phi \) integral, and the \( z \) integral is proportional to \( \int_0^\pi \sin(2 \theta) d\theta \), which is also zero.  This leads to zero averages
 %
 \begin{equation}\label{eqn:qmLecture22:360}
-\expectation{\Bx_1} = 0 = \expectation{\Bx_2}
+\expectation{\Bx_1} = 0 = \expectation{\Bx_2},
 \end{equation}
-
 so
 %
 \begin{dmath}\label{eqn:qmLecture22:380}
@@ -203,15 +189,13 @@ so
 %
 This is a sum over all excited states.
 %Here the \( \sum' \) indicates the sum over all excited states.
-
 We expect that this will be of the form
 %
 \begin{dmath}\label{eqn:qmLecture22:420}
-\Delta E^{(2)} = - \lr{ \frac{e^2}{4 \pi \epsilon_0} }^2 \frac{C_6}{R^6}
+\Delta E^{(2)} = - \lr{ \frac{e^2}{4 \pi \epsilon_0} }^2 \frac{C_6}{R^6},
 \end{dmath}
-
+where
 \( \Bx_1 \) and \( \Bx_2 \) are dipole operators.  The first time this has a non-zero expectation is when we go from the 1s to the 2p states (both 1s and 2s states are spherically symmetric).
-
 Noting that \( E_n = -e^2/2 n^2 a_0 \), we can compute a minimum bound for the energy denominator
 %
 \begin{dmath}\label{eqn:qmLecture22:440}
@@ -240,17 +224,15 @@ where
 -3
 (\Bx_1 \cdot \Rcap)
 (\Bx_2 \cdot \Rcap)
-}
+}.
 \end{dmath}
-
 \paragraph{What about degeneracy?}
 \index{degeneracy}
 %
 \begin{dmath}\label{eqn:qmLecture22:500}
 \Delta E^{(2)}_n
-= \sum_{m \ne n} \frac{ \Abs{ \bra{\psi_n } V \ket{\psi_0} }^2 }{E_0 - E_n}
+= \sum_{m \ne n} \frac{ \Abs{ \bra{\psi_n } V \ket{\psi_0} }^2 }{E_0 - E_n}.
 \end{dmath}
-
 If \( \bra{\psi_n} V \ket{\psi_m} \propto \delta_{n m} \) then it's okay.
 In general the we can't expect the matrix element will be anything but fully populated, say
 %
@@ -261,7 +243,7 @@ V_{11} & V_{12} & V_{13} & V_{14} \\
 V_{21} & V_{22} & V_{23} & V_{24} \\
 V_{31} & V_{32} & V_{33} & V_{34} \\
 V_{41} & V_{42} & V_{43} & V_{44} \\
-\end{bmatrix},
+\end{bmatrix}.
 \end{dmath}
 %
 If we choose a basis so that
@@ -288,24 +270,20 @@ H = H_0 + e \calE z,
 where
 %
 \begin{dmath}\label{eqn:qmLecture22:580}
-H_0 = \frac{\Bp^2}{2m} - \frac{e}{4 \pi \epsilon_0} \inv{\Abs{\Bx}}
+H_0 = \frac{\Bp^2}{2m} - \frac{e}{4 \pi \epsilon_0} \inv{\Abs{\Bx}}.
 \end{dmath}
-
 Consider the states \( 2s, 2 p_x, 2p_y, 2p_z \), for which \( E_n^{(0)} \equiv E_{2 s} \), as sketched in \cref{fig:lecture22:lecture22Fig3}.
-
 \imageFigure{../figures/phy1520-quantum/lecture22Fig3}{2s 2p degeneracy.}{fig:lecture22:lecture22Fig3}{0.2}
-
 Because of spherical symmetry
 %
 \begin{equation}\label{eqn:qmLecture22:600}
 \begin{aligned}
-\bra{2 s} e \calE z \ket{ 2 s}      &= 0  \\
-\bra{2 p_x} e \calE z \ket{ 2 p_x}  &= 0  \\
-\bra{2 p_y} e \calE z \ket{ 2 p_y}  &= 0  \\
-\bra{2 p_z} e \calE z \ket{ 2 p_z}  &= 0 \\
+\bra{2 s} e \calE z \ket{ 2 s}      &= 0, \\
+\bra{2 p_x} e \calE z \ket{ 2 p_x}  &= 0, \\
+\bra{2 p_y} e \calE z \ket{ 2 p_y}  &= 0, \\
+\bra{2 p_z} e \calE z \ket{ 2 p_z}  &= 0.
 \end{aligned}
 \end{equation}
-
 Looking at odd and even properties, it turns out that the only off-diagonal matrix element is
 %
 \begin{equation}\label{eqn:qmLecture22:620}
@@ -322,19 +300,17 @@ With a \( \setlr{ 2s, 2p_x, 2p_y, 2p_z } \) basis the potential matrix is
 V_1^\conj & 0 & 0 & 0 \\
 \end{bmatrix}
 \end{dmath}
-
+which has the block structure
 %\cref{fig:lecture22:lecture22Fig4}.
 %\imageFigure{../figures/phy1520-quantum/lecture22Fig4}{CAPTION: lecture22Fig4}{fig:lecture22:lecture22Fig4}{0.2}
-
 % 2s, 2p_z
 \begin{dmath}\label{eqn:qmLecture22:660}
 \begin{bmatrix}
 0 & -\Abs{V_1} \\
 -\Abs{V_1} & 0 \\
-\end{bmatrix}
+\end{bmatrix}.
 \end{dmath}
-
-implies that the energy splitting goes as
+This implies that the energy splitting goes as
 %
 \begin{equation}\label{eqn:qmLecture22:680}
 E_{2s} \rightarrow
@@ -342,13 +318,8 @@ E_{2s} \pm \Abs{V_1},
 \end{equation}
 %
 as sketched in \cref{fig:lecture22:lecture22Fig5}.
-
 \imageFigure{../figures/phy1520-quantum/lecture22Fig5}{Stark effect energy level splitting.}{fig:lecture22:lecture22Fig5}{0.2}
-
 The diagonalizing states corresponding to eigenvalues \( \pm 3 a_0 \calE \), are \( (\ket{2s} \mp \ket{2p_z})/\sqrt{2} \).
-
 The matrix element above is calculated explicitly in \nbref{lecture22Integrals.nb}.
-
 The degeneracy that is left unsplit here, and has to be accounted for should we attempt higher order perturbation calculations.
-
 %\EndArticle
