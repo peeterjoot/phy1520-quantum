@@ -251,27 +251,23 @@ Let
 so that the recurrence relation, for \( 2n \ge 4 \) is
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:480}
-\sigma_{2n} = \sigma_{2n -2} + (2n-2)(2n-3) \sigma_{2n -4}
+\sigma_{2n} = \sigma_{2n -2} + (2n-2)(2n-3) \sigma_{2n -4}.
 \end{dmath}
-
 We want to show that this simplifies to
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:500}
 \sigma_{2n} = (2n-1)!!
 \end{dmath}
-
 The first values are
-
 \begin{subequations}
 \label{eqn:exponentialExpectationGroundState:520}
 \begin{equation}\label{eqn:exponentialExpectationGroundState:540}
 \sigma_0 = \bra{0} X^0 \ket{0} = 1
 \end{equation}
 \begin{equation}\label{eqn:exponentialExpectationGroundState:560}
-\sigma_2 = \bra{0} X^2 \ket{0} = 1
+\sigma_2 = \bra{0} X^2 \ket{0} = 1,
 \end{equation}
 \end{subequations}
-
 which gives us the right result for the first term in the induction
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:580}
@@ -280,7 +276,6 @@ which gives us the right result for the first term in the induction
 = 1 + 2
 = 3!!
 \end{dmath}
-
 For the general induction term, consider
 %
 \begin{dmath}\label{eqn:exponentialExpectationGroundState:600}
@@ -293,5 +288,4 @@ For the general induction term, consider
 %
 which completes the final induction.  That was also the last thing required to complete the proof, so we are done!
 } % answer
-
 %\EndArticle

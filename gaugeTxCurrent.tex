@@ -24,7 +24,6 @@
 \makesubproblem{}{problem:gaugeTxCurrent:1:a}
 \index{probability!current}
 \index{gauge transformation!probability current}
-
 For the gauge transformed Schr\"{o}dinger equation
 %
 \begin{equation}\label{eqn:gaugeTxCurrent:20}
@@ -60,10 +59,9 @@ Equation \cref{eqn:gaugeTxCurrent:20} and its conjugate are
 \begin{dmath}\label{eqn:gaugeTxCurrent:22}
 \begin{aligned}
 \inv{2m} \BPi \cdot \BPi \psi + e \phi \psi &= i \Hbar \PD{t}{\psi} \\
-\inv{2m} \BPi^\conj \cdot \BPi^\conj \psi^\conj + e \phi \psi^\conj &= -i \Hbar \PD{t}{\psi^\conj}
+\inv{2m} \BPi^\conj \cdot \BPi^\conj \psi^\conj + e \phi \psi^\conj &= -i \Hbar \PD{t}{\psi^\conj},
 \end{aligned}
 \end{dmath}
-
 which can be used immediately in a chain rule expansion of the probability time derivative
 %
 \begin{equation}\label{eqn:gaugeTxCurrent:80}
@@ -104,7 +102,6 @@ We have a difference of conjugates, so can get away with expanding just the firs
 \end{dmath}
 %
 Note that in the directional derivative terms, the gradient operates on everything to its right, including \( \BA \).  Also note that the last term has no imaginary component, so it will not contribute to the difference of conjugates.
-
 This gives
 %
 \begin{equation}\label{eqn:gaugeTxCurrent:120}
@@ -133,7 +130,6 @@ This gives
 }.
 \end{aligned}
 \end{equation}
-
 The first term is recognized as a divergence
 %
 \begin{equation}\label{eqn:gaugeTxCurrent:140}
@@ -176,11 +172,11 @@ The second term can also be factored into a divergence operation
 \psi \BA \cdot \spacegrad \psi^\conj
 +\psi^\conj \spacegrad \cdot (\BA \psi)
 } \\
-&= 2 \spacegrad \cdot \lr{ \BA \psi \psi^\conj } \\
+&= 2 \spacegrad \cdot \lr{ \BA \psi \psi^\conj }
 %&= 2 \spacegrad \cdot \lr{ \rho \BA }
+.
 \end{aligned}
 \end{dmath}
-
 Putting all the pieces back together we have
 %
 \begin{dmath}\label{eqn:gaugeTxCurrent:180}
@@ -282,5 +278,4 @@ Integrating over all space to eliminate the identity operators, this is
 \end{dmath}
 %
 } % answer
-
 %\EndArticle
