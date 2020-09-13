@@ -1,0 +1,7 @@
+phy1520.V0.1.10-0.pdf (in progress.)
+
+- Add spell check rules and do spell check pass.
+- update pdfsubject
+- url fixes.
+- bump version.
+- run and fix thethe.py issues.
