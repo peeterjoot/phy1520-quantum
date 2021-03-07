@@ -13,6 +13,16 @@ include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
 
+# comment this out for online pdf version (uncomment for KDP)
+PRINT_VERSION := 1
+
+ifndef PRINT_VERSION
+PARAMS += --no-print
+endif
+ifdef PRINT_VERSION
+DISTEXTRA := kdp
+endif
+
 SOURCE_DIRS += appendix
 FIGURES := ../figures/$(THISBOOK)
 SOURCE_DIRS += $(FIGURES)
@@ -90,6 +100,9 @@ ps7mathematica.tex : ../METADATA ../mathematica/METADATA
 
 ps8mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -phy1520 -filter phy1520/ps8/ ) > $@
+
+parameters.sty : ../latex/bin/mkparams
+	../latex/bin/mkparams $(PARAMS) > $@
 
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@

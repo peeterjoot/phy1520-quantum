@@ -1,0 +1,21 @@
+This book contains notes for the Winter 2015, University of Toronto Graduate Quantum Mechanics course (PHY1520H), taught by Prof. Arun Paramekanti.
+<p>The course syllabus was:This course will discuss the following topics in quantum mechanics (time permitting)
+<ul>
+<li> Basics 
+<li> Postulates, Wavefunctions, Density matrices, Measurements
+<li> Time evolution 
+<li> Schrodinger picture, Heisenberg picture, Interaction picture
+<li> Harmonic oscillator 
+<li> Operator method, Wavefunctions, Coherent states
+<li> Particle in a magnetic field 
+<li> Local gauge invariance, 2D Landau levels
+<li> Symmetries 
+<li> Parity, Translations, Rotations, Time-reversal
+<li> Angular momentum, Spin, and Angular momentum addition
+<li> Time-independent perturbation theory
+<li> Time-dependent perturbation theory
+<li> Variation approach
+<li> Scattering theory
+<li> Dirac equation in one spatial dimension
+<li> Path integrals
+</ul>
