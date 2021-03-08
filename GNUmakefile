@@ -101,9 +101,6 @@ ps7mathematica.tex : ../METADATA ../mathematica/METADATA
 ps8mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -phy1520 -filter phy1520/ps8/ ) > $@
 
-parameters.sty : ../latex/bin/mkparams
-	../latex/bin/mkparams $(PARAMS) > $@
-
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@
 	#ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
