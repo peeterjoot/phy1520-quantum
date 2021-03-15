@@ -44,15 +44,15 @@ In spinMatrices.nb the matrix representation of the Hamiltonian is found to be
 H =
 \Hbar^2
 \begin{bmatrix}
- A+\frac{B}{2} & 0 & \frac{B}{2} \\
- -\frac{i B}{\sqrt{2}} & B & -\frac{i B}{\sqrt{2}} \\
- \frac{B}{2} & 0 & A+\frac{B}{2} \\
+ A & 0 & B \\
+ 0 & 0 & 0 \\
+ B & 0 & A
 \end{bmatrix}.
 \end{dmath}
 %
 The eigenvalues are
 \begin{dmath}\label{eqn:crystalSpinHamiltonianTimeReversal:60}
-\setlr{ \Hbar^2 A, \Hbar^2 B, \Hbar^2(A + B)},
+\setlr{ 0, A - B, A + B},
 \end{dmath}
 %
 and the respective eigenvalues (unnormalized) are
@@ -60,18 +60,18 @@ and the respective eigenvalues (unnormalized) are
 \begin{dmath}\label{eqn:crystalSpinHamiltonianTimeReversal:80}
 \setlr{
 \begin{bmatrix}
+0  \\
+1 \\
+0
+\end{bmatrix},
+\begin{bmatrix}
 -1 \\
 0 \\
 1
 \end{bmatrix},
 \begin{bmatrix}
+1 \\
 0 \\
-1 \\
-0
-\end{bmatrix},
-\begin{bmatrix}
-1 \\
--\frac{i \sqrt{2} B}{A} \\
 1 \\
 \end{bmatrix}
 }.
@@ -93,9 +93,9 @@ or
 %
 \begin{equation}\label{eqn:crystalSpinHamiltonianTimeReversal:140}
 \begin{aligned}
-\Theta \ket{1} &= -\ket{-1} \\
-\Theta \ket{0} &= \ket{0} \\
-\Theta \ket{-1} &= -\ket{1}.
+\Theta \ket{1,1} &= -\ket{1,-1} \\
+\Theta \ket{1,0} &= \ket{1,0} \\
+\Theta \ket{1,-1} &= -\ket{1,1}.
 \end{aligned}
 \end{equation}
 %
@@ -103,25 +103,24 @@ Let's write the eigenkets respectively as
 %
 \begin{equation}\label{eqn:crystalSpinHamiltonianTimeReversal:160}
 \begin{aligned}
-\ket{A} &= -\ket{1} + \ket{-1} \\
-\ket{B} &= \ket{0} \\
-\ket{A+B} &= \ket{1} + \ket{-1} - \frac{i \sqrt{2} B}{A} \ket{0}.
+\ket{0}   &=  \ket{1,0} \\
+\ket{A-B} &= -\ket{1,-1} + \ket{1,1} \\
+\ket{A+B} &=  \ket{1,-1} + \ket{1,1}.
 \end{aligned}
 \end{equation}
 %
-Noting that the time reversal operator maps complex numbers onto their conjugates, the time reversed eigenkets are
+Under the reversal operation, we should have
 %
 \begin{equation}\label{eqn:crystalSpinHamiltonianTimeReversal:180}
 \begin{aligned}
-\ket{A} &\rightarrow \ket{-1} - \ket{-1} = -\ket{A} \\
-\ket{B} &\rightarrow \ket{0} = \ket{B} \\
-\ket{A+B} &\rightarrow -\ket{1} - \ket{-1} + \frac{i \sqrt{2} B}{A} \ket{0} = -\ket{A+B}.
+\Theta \ket{0}   &\rightarrow \ket{1,0} \\
+\Theta \ket{A-B} &= +\ket{1,-1} - \ket{1,1} \\
+\Theta \ket{A+B} &= -\ket{1,-1} - \ket{1,1}.
 \end{aligned}
 \end{equation}
 %
-Up to a sign, the time reversed states match the unreversed states.
+Up to a sign, the time reversed states match the unreversed states, which makes sense given the Hamiltonian invariance.
 } % answer
-
 %}
 %\EndArticle
 %\EndNoBibArticle

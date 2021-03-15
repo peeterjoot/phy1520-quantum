@@ -59,6 +59,8 @@ problemSets :: gradQuantumProblemSet4.pdf
 problemSets :: gradQuantumProblemSet5.pdf
 problemSets :: gradQuantumProblemSet6.pdf
 
+#crystalSpinHamiltonianTimeReversalBlog.pdf : crystalSpinHamiltonianTimeReversal.tex
+
 gradQuantumProblemSet1.pdf : gradQuantumProblemSet1Problem1.tex
 gradQuantumProblemSet1.pdf : gradQuantumProblemSet1Problem2.tex
 gradQuantumProblemSet1.pdf : moreBraKetProblemsP12.tex
