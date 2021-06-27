@@ -1,10 +1,10 @@
 #../latex/bin/lgrep usefulFormulas.tex | tee o ; . ./o
-#perl -p -i ../latex/bin/latexRegex.pl usefulFormulas.tex
-
+##perl -p -i ../latex/bin/latexRegex.pl usefulFormulas.tex
+#
 #../latex/bin/lgrep 2dHarmonicOscillatorXYPerturbation.tex | tee o ; . ./o
 #../latex/bin/lgrep absolutePotentialVariation.tex | tee o ; . ./o
-#../latex/bin/lgrep angularMomentumAndCentralForceCommutators.tex | tee o ; . ./o
-../latex/bin/lgrep angularMomentumExpectation.tex | tee o ; . ./o
+../latex/bin/lgrep angularMomentumAndCentralForceCommutators.tex | tee o ; . ./o
+#../latex/bin/lgrep angularMomentumExpectation.tex | tee o ; . ./o
 #../latex/bin/lgrep anticommutingOperatorWithSimulaneousEigenket.tex | tee o ; . ./o
 #../latex/bin/lgrep bakercambell.tex | tee o ; . ./o
 #../latex/bin/lgrep braketManip.tex | tee o ; . ./o
@@ -17,16 +17,16 @@
 #../latex/bin/lgrep ensemblesForSpinOneHalf.tex | tee o ; . ./o
 #../latex/bin/lgrep eulerAngleRotationAngleAndNormal.tex | tee o ; . ./o
 #../latex/bin/lgrep exponentialExpectationGroundState.tex | tee o ; . ./o
-../latex/bin/lgrep fluxAndMomentum.tex | tee o ; . ./o
+#../latex/bin/lgrep fluxAndMomentum.tex | tee o ; . ./o
 #../latex/bin/lgrep freeParticlePropagator.tex | tee o ; . ./o
 #../latex/bin/lgrep gaugeTx.tex | tee o ; . ./o
 #../latex/bin/lgrep gaugeTxCurrent.tex | tee o ; . ./o
 #../latex/bin/lgrep generalizedGaussian.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet1Problem1.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet1Problem2.tex | tee o ; . ./o
-../latex/bin/lgrep gradQuantumProblemSet2Problem1.tex | tee o ; . ./o
+#../latex/bin/lgrep gradQuantumProblemSet2Problem1.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet2Problem2.tex | tee o ; . ./o
-../latex/bin/lgrep gradQuantumProblemSet2Problem3.tex | tee o ; . ./o
+#../latex/bin/lgrep gradQuantumProblemSet2Problem3.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet3.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet3Problem1.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet3Problem2.tex | tee o ; . ./o
@@ -53,7 +53,7 @@
 #../latex/bin/lgrep gradQuantumProblemSet8Problem3.tex | tee o ; . ./o
 #../latex/bin/lgrep gradQuantumProblemSet8Problem4.tex | tee o ; . ./o
 #../latex/bin/lgrep harmonicOscDiagonalize.tex | tee o ; . ./o
-../latex/bin/lgrep harmonicOscillatorEnergyShiftPertubation.tex | tee o ; . ./o
+#../latex/bin/lgrep harmonicOscillatorEnergyShiftPertubation.tex | tee o ; . ./o
 #../latex/bin/lgrep heisenbergSpinPrecession.tex  | tee o ; . ./o
 #../latex/bin/lgrep hermiteOrtho.tex | tee o ; . ./o
 #../latex/bin/lgrep hyperfineElectronAndBosonNucleus.tex | tee o ; . ./o
@@ -117,7 +117,7 @@
 #perl -p -i ../latex/bin/latexRegex.pl 2dHarmonicOscillatorXYPerturbation.tex
 #perl -p -i ../latex/bin/latexRegex.pl absolutePotentialVariation.tex
 #perl -p -i ../latex/bin/latexRegex.pl angularMomentumAndCentralForceCommutators.tex
-perl -p -i ../latex/bin/latexRegex.pl angularMomentumExpectation.tex
+#perl -p -i ../latex/bin/latexRegex.pl angularMomentumExpectation.tex
 #perl -p -i ../latex/bin/latexRegex.pl anticommutingOperatorWithSimulaneousEigenket.tex
 #perl -p -i ../latex/bin/latexRegex.pl bakercambell.tex
 #perl -p -i ../latex/bin/latexRegex.pl braketManip.tex
@@ -130,16 +130,16 @@ perl -p -i ../latex/bin/latexRegex.pl angularMomentumExpectation.tex
 #perl -p -i ../latex/bin/latexRegex.pl ensemblesForSpinOneHalf.tex
 #perl -p -i ../latex/bin/latexRegex.pl eulerAngleRotationAngleAndNormal.tex
 #perl -p -i ../latex/bin/latexRegex.pl exponentialExpectationGroundState.tex
-perl -p -i ../latex/bin/latexRegex.pl fluxAndMomentum.tex
+#perl -p -i ../latex/bin/latexRegex.pl fluxAndMomentum.tex
 #perl -p -i ../latex/bin/latexRegex.pl freeParticlePropagator.tex
 #perl -p -i ../latex/bin/latexRegex.pl gaugeTx.tex
 #perl -p -i ../latex/bin/latexRegex.pl gaugeTxCurrent.tex
 #perl -p -i ../latex/bin/latexRegex.pl generalizedGaussian.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet1Problem1.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet1Problem2.tex
-perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem1.tex
+#perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem1.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem2.tex
-perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem3.tex
+#perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem3.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet3.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet3Problem1.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet3Problem2.tex
@@ -166,7 +166,7 @@ perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet2Problem3.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet8Problem3.tex
 #perl -p -i ../latex/bin/latexRegex.pl gradQuantumProblemSet8Problem4.tex
 #perl -p -i ../latex/bin/latexRegex.pl harmonicOscDiagonalize.tex
-perl -p -i ../latex/bin/latexRegex.pl harmonicOscillatorEnergyShiftPertubation.tex
+#perl -p -i ../latex/bin/latexRegex.pl harmonicOscillatorEnergyShiftPertubation.tex
 #perl -p -i ../latex/bin/latexRegex.pl heisenbergSpinPrecession.tex 
 #perl -p -i ../latex/bin/latexRegex.pl hermiteOrtho.tex
 #perl -p -i ../latex/bin/latexRegex.pl hyperfineElectronAndBosonNucleus.tex
@@ -228,3 +228,5 @@ perl -p -i ../latex/bin/latexRegex.pl harmonicOscillatorEnergyShiftPertubation.t
 #perl -p -i ../latex/bin/latexRegex.pl twoSpinHamiltonian.tex
 #perl -p -i ../latex/bin/latexRegex.pl unimodularAndRotation.tex
 #perl -p -i ../latex/bin/latexRegex.pl usefulFormulas.tex
+../latex/bin/lgrep b.tex | tee o ; . ./o
+perl -p -i ../latex/bin/latexRegex.pl b.tex

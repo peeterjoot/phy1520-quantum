@@ -1,0 +1,125 @@
+%
+% Copyright © 2021 Peeter Joot.  All Rights Reserved.
+% Licenced as described in the file LICENSE under the root directory of this GIT repository.
+%
+%{
+\input{../latex/blogpost.tex}
+\renewcommand{\basename}{b}
+%\renewcommand{\dirname}{notes/phy1520/}
+\renewcommand{\dirname}{notes/ece1228-electromagnetic-theory/}
+%\newcommand{\dateintitle}{}
+%\newcommand{\keywords}{}
+
+\input{../latex/peeter_prologue_print2.tex}
+
+\usepackage{peeters_layout_exercise}
+\usepackage{peeters_braket}
+\usepackage{peeters_figures}
+\usepackage{siunitx}
+\usepackage{verbatim}
+%\usepackage{mhchem} % \ce{}
+%\usepackage{macros_bm} % \bcM
+%\usepackage{macros_qed} % \qedmarker
+%\usepackage{txfonts} % \ointclockwise
+
+\beginArtNoToc
+\generatetitle{XXX}
+The concrete examples above give some intuition for solving the more abstract problem.  Suppose that we are working in a basis that simultaneously diagonalizes operator \( A \) and the Hamiltonian \( H \).  To make life easy consider the simplest case where this basis is also an eigenbasis for the second operator \( B \) for all but two of that operators eigenvectors.  For such a system let's write
+%
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:160}
+\begin{aligned}
+H \ket{1} &= \epsilon_1 \ket{1} \\
+H \ket{2} &= \epsilon_2 \ket{2} \\
+A \ket{1} &= a_1 \ket{1} \\
+A \ket{2} &= a_2 \ket{2},
+\end{aligned}
+\end{equation}
+where \( \ket{1}\), and \( \ket{2} \) are not eigenkets of \( B \).  Because \( B \) also commutes with \( H \), we must have
+%
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:180}
+H B \ket{1}
+= H \sum_n \ket{n}\bra{n} B \ket{1}
+= \sum_n \epsilon_n \ket{n} B_{n 1},
+\end{dmath}
+%
+and
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:200}
+B H \ket{1}
+= B \epsilon_1 \ket{1}
+= \epsilon_1 \sum_n \ket{n}\bra{n} B \ket{1}
+= \epsilon_1 \sum_n \ket{n} B_{n 1}.
+\end{dmath}
+%
+We can now compute the action of the commutators on \( \ket{1}, \ket{2} \), 
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:220}
+\antisymmetric{B}{H} \ket{1}
+=
+\sum_n \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}.
+\end{dmath}
+%
+Similarly
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:240}
+\antisymmetric{B}{H} \ket{2}
+=
+\sum_n \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}.
+\end{dmath}
+%
+However, for those kets \( \ket{m} \in \setlr{ \ket{3}, \ket{4}, \cdots } \) that are eigenkets of \( B \), with \( B \ket{m} = b_m \ket{m} \), we have
+%
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:280}
+\antisymmetric{B}{H} \ket{m}
+=
+B \epsilon_m \ket{m} - H b_m \ket{m}
+=
+b_m \epsilon_m \ket{m} - \epsilon_m b_m \ket{m}
+=
+0,
+\end{dmath}
+%
+The sums in 
+\cref{eqn:angularMomentumAndCentralForceCommutators:220}
+and 
+\cref{eqn:angularMomentumAndCentralForceCommutators:240} reduce to
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:500}
+\antisymmetric{B}{H} \ket{1}
+=
+\sum_{n=1}^2 \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}
+=
+\lr{ \epsilon_1 - \epsilon_2 } \ket{2} B_{2 1},
+\end{dmath}
+and
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:520}
+\antisymmetric{B}{H} \ket{2}
+=
+\sum_{n=1}^2 \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}
+=
+\lr{ \epsilon_2 - \epsilon_1 } \ket{1} B_{1 2}.
+\end{dmath}
+Since the commutator is zero, the matrix elements of the commutator must all be zero, in particular
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:260}
+\begin{aligned}
+   \bra{1} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_2 } B_{2 1} \braket{1}{2} = 0 \\
+   \bra{2} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_2 } B_{2 1} \braket{1}{1} \\
+   \bra{1} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_1 } B_{1 2} \braket{1}{2} = 0 \\
+   \bra{2} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_1 } B_{1 2} \braket{2}{2} = 0.
+\end{aligned}
+\end{equation}
+We must either have
+\begin{itemize}
+\item \( B_{2 1} = B_{1 2} = 0 \), or
+\item \( \epsilon_1 = \epsilon_2 \).
+\end{itemize}
+If the first condition were true we would have
+%
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:300}
+B \ket{1}
+=
+\ket{n}\bra{n} B \ket{1}
+=
+\ket{n} B_{n 1}
+=
+\ket{1} B_{1 1},
+\end{dmath}
+%
+and \( B \ket{2} = B_{2 2} \ket{2} \).  This contradicts the requirement that \( \ket{1}, \ket{2} \) not be eigenkets of \( B \), leaving only the second option.  That second option means there must be a degeneracy in the system.
+\EndNoBibArticle

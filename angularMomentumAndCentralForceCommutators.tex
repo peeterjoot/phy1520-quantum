@@ -335,38 +335,37 @@ A \ket{1} &= a_1 \ket{1} \\
 A \ket{2} &= a_2 \ket{2},
 \end{aligned}
 \end{equation}
-
 where \( \ket{1}\), and \( \ket{2} \) are not eigenkets of \( B \).  Because \( B \) also commutes with \( H \), we must have
 %
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:180}
 H B \ket{1}
-= H \ket{n}\bra{n} B \ket{1}
-= \epsilon_n \ket{n} B_{n 1},
+= H \sum_n \ket{n}\bra{n} B \ket{1}
+= \sum_n \epsilon_n \ket{n} B_{n 1},
 \end{dmath}
 %
 and
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:200}
 B H \ket{1}
 = B \epsilon_1 \ket{1}
-= \epsilon_1 \ket{n}\bra{n} B \ket{1}
-= \epsilon_1 \ket{n} B_{n 1}.
+= \epsilon_1 \sum_n \ket{n}\bra{n} B \ket{1}
+= \epsilon_1 \sum_n \ket{n} B_{n 1}.
 \end{dmath}
 %
-The commutator is
+We can now compute the action of the commutators on \( \ket{1}, \ket{2} \),
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:220}
 \antisymmetric{B}{H} \ket{1}
 =
-\lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}.
+\sum_n \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}.
 \end{dmath}
 %
 Similarly
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:240}
 \antisymmetric{B}{H} \ket{2}
 =
-\lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}.
+\sum_n \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}.
 \end{dmath}
 %
-For those kets \( \ket{m} \in \setlr{ \ket{3}, \ket{4}, \cdots } \) that are eigenkets of \( B \), with \( B \ket{m} = b_m \ket{m} \), we have
+However, for those kets \( \ket{m} \in \setlr{ \ket{3}, \ket{4}, \cdots } \) that are eigenkets of \( B \), with \( B \ket{m} = b_m \ket{m} \), we have
 %
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:280}
 \antisymmetric{B}{H} \ket{m}
@@ -375,26 +374,42 @@ B \epsilon_m \ket{m} - H b_m \ket{m}
 =
 b_m \epsilon_m \ket{m} - \epsilon_m b_m \ket{m}
 =
-0.
+0,
 \end{dmath}
 %
-If the commutator is zero, then we require all its matrix elements
+The sums in
+\cref{eqn:angularMomentumAndCentralForceCommutators:220}
+and
+\cref{eqn:angularMomentumAndCentralForceCommutators:240} reduce to
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:500}
+\antisymmetric{B}{H} \ket{1}
+=
+\sum_{n=1}^2 \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}
+=
+\lr{ \epsilon_1 - \epsilon_2 } \ket{2} B_{2 1},
+\end{dmath}
+and
+\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:520}
+\antisymmetric{B}{H} \ket{2}
+=
+\sum_{n=1}^2 \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}
+=
+\lr{ \epsilon_2 - \epsilon_1 } \ket{1} B_{1 2}.
+\end{dmath}
+Since the commutator is zero, the matrix elements of the commutator must all be zero, in particular
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:260}
 \begin{aligned}
-\bra{1} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_1 } B_{1 1} \\
-\bra{2} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_2 } B_{2 1} \\
-\bra{1} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_1 } B_{1 2} \\
-\bra{2} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_2 } B_{2 2},
+   \bra{1} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_2 } B_{2 1} \braket{1}{2} = 0 \\
+   \bra{2} \antisymmetric{B}{H} \ket{1} &= \lr{ \epsilon_1 - \epsilon_2 } B_{2 1} \braket{1}{1} \\
+   \bra{1} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_1 } B_{1 2} \braket{1}{2} = 0 \\
+   \bra{2} \antisymmetric{B}{H} \ket{2} &= \lr{ \epsilon_2 - \epsilon_1 } B_{1 2} \braket{2}{2}.
 \end{aligned}
 \end{equation}
-
-to be zero.  Because of \cref{eqn:angularMomentumAndCentralForceCommutators:280} only the matrix elements with respect to states \( \ket{1}, \ket{2} \) need be considered.  Two of the matrix elements above are clearly zero, regardless of the values of \( B_{1 1}\), and \(B_{2 2} \), and for the other two to be zero, we must either have
-
+We must either have
 \begin{itemize}
 \item \( B_{2 1} = B_{1 2} = 0 \), or
 \item \( \epsilon_1 = \epsilon_2 \).
 \end{itemize}
-
 If the first condition were true we would have
 %
 \begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:300}
@@ -409,5 +424,4 @@ B \ket{1}
 %
 and \( B \ket{2} = B_{2 2} \ket{2} \).  This contradicts the requirement that \( \ket{1}, \ket{2} \) not be eigenkets of \( B \), leaving only the second option.  That second option means there must be a degeneracy in the system.
 } % answer
-
 %\EndArticle
