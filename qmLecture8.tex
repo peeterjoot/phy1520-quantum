@@ -79,33 +79,33 @@ This is the Klein-Gordon equation, which is second order in time.
 
 Suppose that we have the matrix
 %
-\begin{dmath}\label{eqn:qmLecture8:140}
+\begin{equation}\label{eqn:qmLecture8:140}
 \begin{bmatrix}
 p c & m c^2 \\
 m c^2 & - p c
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture8:160}
+\begin{equation}\label{eqn:qmLecture8:160}
 \begin{bmatrix}
 m c^2 & i p c \\
 -i p c & - m c^2
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 These both happen to have eigenvalues \( \lambda_{\pm} = \pm \sqrt{p^2 c^2} \).  For those familiar with the Dirac matrices, this amounts to a choice for different representations of the gamma matrices.
 
 Working with \cref{eqn:qmLecture8:140}, which has some nicer features than other possible representations, we seek a state
 %
-\begin{dmath}\label{eqn:qmLecture8:180}
+\begin{equation}\label{eqn:qmLecture8:180}
 \Bpsi =
 \begin{bmatrix}
 \psi_1(x, t) \\
 \psi_2(x, t) \\
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 where we aim to write down an equation for this composite state.
 %
@@ -114,12 +114,13 @@ i \Hbar \PD{t}{\Bpsi} = \BH \Bpsi.
 \end{equation}
 Assuming the matrix is the Hamiltonian, multiplying that with the composite state gives
 %
-\begin{dmath}\label{eqn:qmLecture8:220}
+\begin{equation}\label{eqn:qmLecture8:220}
+\begin{aligned}
 \begin{bmatrix}
 i \Hbar \PD{t}{\psi_1} \\
 i \Hbar \PD{t}{\psi_1}
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 \hatp c & m c^2 \\
 m c^2 & - \hatp c
@@ -128,20 +129,22 @@ m c^2 & - \hatp c
 \psi_1(x, t) \\
 \psi_2(x, t) \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \hatp c \psi_1 + m c^2 \psi_2  \\
 m c^2 \psi_1 - \hatp c \psi_2
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 What happens when we square this?  We get
 %
-\begin{dmath}\label{eqn:qmLecture8:240}
+\begin{equation}\label{eqn:qmLecture8:240}
+\begin{aligned}
 \lr{ i \Hbar \PD{t}{} }^2 \Bpsi
-= \BH \BH 
+&= \BH \BH 
 \Bpsi
-=
+\\ &=
 \begin{bmatrix}
 \hatp c & m c^2 \\
 m c^2 & - \hatp c
@@ -151,28 +154,29 @@ m c^2 & - \hatp c
 m c^2 & - \hatp c
 \end{bmatrix}
 \Bpsi
-=
+\\ &=
 \begin{bmatrix}
 \hatp^2 c^2 + m^2 c^4 & 0 \\
 0 & \hatp^2 c^2 + m^2 c^4 \\
 \end{bmatrix}
 \Bpsi,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:qmLecture8:260}
+\begin{equation}\label{eqn:qmLecture8:260}
 - \Hbar^2 \PDSq{t}{} \Bpsi
 =
 \lr{ \hatp^2 c^2 + m^2 c^4 } \BOne \Bpsi.
-\end{dmath}
+\end{equation}
 %
 The operator squaring has decoupled the equation, leaving a pair of scalar relationships
 %
-\begin{dmath}\label{eqn:qmLecture8:280}
+\begin{equation}\label{eqn:qmLecture8:280}
 - \Hbar^2 \PDSq{t}{} \psi_{1,2}
 =
 \lr{ \hatp^2 c^2 + m^2 c^4 } \psi_{1,2}.
-\end{dmath}
+\end{equation}
 %
 We have recovered a Klein Gordon equation for each of the wave functions \( \psi_1, \psi_2 \).
 \section{Plane wave solution.}
@@ -182,8 +186,9 @@ To do so we'll want to diagonalize \( \BH \).
 
 Before doing that, let's write out the Hamiltonian in an alternate but useful form
 %
-\begin{dmath}\label{eqn:qmLecture8:340}
-\BH =
+\begin{equation}\label{eqn:qmLecture8:340}
+\begin{aligned}
+\BH &=
 \hatp c
 \begin{bmatrix}
 1 & 0 \\
@@ -195,14 +200,15 @@ m c^2
 0 & 1 \\
 1 & 0
 \end{bmatrix}
-= \hatp c \hat\sigma_z + m c^2 \hat\sigma_x.
-\end{dmath}
+\\ &= \hatp c \hat\sigma_z + m c^2 \hat\sigma_x.
+\end{aligned}
+\end{equation}
 %
 We have two types of operators in the mix here.  We have matrix operators that act on the wave function matrices, as well as derivative operators that act on the components of those matrices.
 
 The action of the Pauli matrices are
 %
-\begin{dmath}\label{eqn:qmLecture8:360}
+\begin{equation}\label{eqn:qmLecture8:360}
 \hat\sigma_z
 \begin{bmatrix}
 \psi_1 \\
@@ -213,11 +219,11 @@ The action of the Pauli matrices are
 \psi_1 \\
 -\psi_2 \\
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:qmLecture8:380}
+\begin{equation}\label{eqn:qmLecture8:380}
 \hat\sigma_x
 \begin{bmatrix}
 \psi_1 \\
@@ -228,49 +234,51 @@ and
 \psi_2 \\
 \psi_1 \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Because the derivative actions of \( \hatp \) and the matrix operators are independent, we see that these operators commute.  For example
 %
-\begin{dmath}\label{eqn:qmLecture8:400}
+\begin{equation}\label{eqn:qmLecture8:400}
+\begin{aligned}
 \hat\sigma_z \hatp
 \begin{bmatrix}
 \psi_1 \\
 \psi_2 \\
 \end{bmatrix}
-=
+&=
 \hat\sigma_z
 \begin{bmatrix}
 -i \Hbar \PD{x}{\psi_1} \\
 -i \Hbar \PD{x}{\psi_2} \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 -i \Hbar \PD{x}{\psi_1} \\
 i \Hbar \PD{x}{\psi_2} \\
 \end{bmatrix}
-=
+\\ &=
 \hatp
 \hat\sigma_z
 \begin{bmatrix}
 \psi_1 \\
 \psi_2 \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \paragraph{Diagonalizing it}
 \index{Dirac equation!diagonalization}
 
 Suppose the wave function matrix has the structure
 %
-\begin{dmath}\label{eqn:qmLecture8:420}
+\begin{equation}\label{eqn:qmLecture8:420}
 \Bpsi =
 \begin{bmatrix}
 f_{+} \\
 f_{-} \\
 \end{bmatrix}
 e^{i k x}.
-\end{dmath}
+\end{equation}
 %
 We'll plug this into the Schr\"{o}dinger equation and see what we get.
 %\EndNoBibArticle

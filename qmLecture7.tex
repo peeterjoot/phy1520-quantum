@@ -77,12 +77,14 @@ To do so, we work with what is now called the Landau gauge
 %
 The curl of such a vector potential yields a uniform constant magnetic field
 %
-\begin{dmath}\label{eqn:qmLecture7:80}
+\begin{equation}\label{eqn:qmLecture7:80}
+\begin{aligned}
 \BB
-= \spacegrad \cross \BA
-= \lr{ \partial_x A_y - \partial_y A_x } \zcap
-= B \zcap.
-\end{dmath}
+&= \spacegrad \cross \BA
+\\ &= \lr{ \partial_x A_y - \partial_y A_x } \zcap
+\\ &= B \zcap.
+\end{aligned}
+\end{equation}
 %
 An alternate gauge choice, the symmetric gauge, is
 %
@@ -92,23 +94,27 @@ An alternate gauge choice, the symmetric gauge, is
 %
 that also has the same magnetic field
 %
-\begin{dmath}\label{eqn:qmLecture7:120}
+\begin{equation}\label{eqn:qmLecture7:120}
+\begin{aligned}
 \BB
-= \spacegrad \BA
-= \lr{ \partial_x A_y - \partial_y A_x } \zcap
-= \lr{ \frac{B}{2} - \lr{ - \frac{B}{2} } } \zcap
-= B \zcap.
-\end{dmath}
+&= \spacegrad \BA
+\\ &= \lr{ \partial_x A_y - \partial_y A_x } \zcap
+\\ &= \lr{ \frac{B}{2} - \lr{ - \frac{B}{2} } } \zcap
+\\ &= B \zcap.
+\end{aligned}
+\end{equation}
 %
 We expect the physics for each to have the same results, although the wave functions in one gauge may be more complicated than in the other.
 
 Our Hamiltonian is
 %
-\begin{dmath}\label{eqn:qmLecture7:160}
+\begin{equation}\label{eqn:qmLecture7:160}
+\begin{aligned}
 H
-= \inv{2 m} \lr{ \Bp - e \BA }^2
-= \inv{2 m} \hatp_x^2 + \inv{2 m} \lr{ \hatp_y - e B \hatx }^2.
-\end{dmath}
+&= \inv{2 m} \lr{ \Bp - e \BA }^2
+\\ &= \inv{2 m} \hatp_x^2 + \inv{2 m} \lr{ \hatp_y - e B \hatx }^2.
+\end{aligned}
+\end{equation}
 We can solve after noting that
 %
 \begin{equation}\label{eqn:qmLecture7:180}
@@ -135,11 +141,11 @@ becomes
 %
 This reduced Hamiltonian can be rewritten as
 %
-\begin{dmath}\label{eqn:qmLecture7:320}
+\begin{equation}\label{eqn:qmLecture7:320}
 H_x
 = \inv{2 m} p_x^2 + \inv{2 m} e^2 B^2 \lr{ \hatx - \frac{\Hbar k_y}{e B} }^2
 \equiv \inv{2 m} p_x^2 + \inv{2} m \omega^2 \lr{ \hatx - x_0 }^2,
-\end{dmath}
+\end{equation}
 where
 %
 \begin{equation}\label{eqn:qmLecture7:260}
@@ -191,12 +197,14 @@ with \( x_0 \le L_x \).  The range is thus restricted to
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture7:420}
-n_{\textrm{max}} =
+\begin{equation}\label{eqn:qmLecture7:420}
+\begin{aligned}
+n_{\textrm{max}} &=
 \mathLabelBox
 [ labelstyle={below of=m\themathLableNode, below of=m\themathLableNode} ]
 {L_x L_y}{area} \frac{ e B }{2 \pi \Hbar }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 That is
 %
 \begin{equation}\label{eqn:qmLecture7:440}

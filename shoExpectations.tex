@@ -56,30 +56,33 @@ x_0^2 &= \frac{\Hbar}{\omega m},
 \end{equation}
 we have
 %
-\begin{dmath}\label{eqn:shoExpectations:40}
+\begin{equation}\label{eqn:shoExpectations:40}
+\begin{aligned}
 \bra{m} x \ket{n}
-=
+&=
 \frac{x_0}{\sqrt{2}} \bra{m} \lr{ a + a^\dagger } \ket{n}
-=
+\\ &=
 \frac{x_0}{\sqrt{2}} \bra{m}
 \lr{
 e^{-i \omega t} \sqrt{n} \ket{n-1}
 +
 e^{i \omega t} \sqrt{n+1} \ket{n+1}
 }
-=
+\\ &=
 \frac{x_0}{\sqrt{2}} \lr{
 \delta_{m, n-1} e^{-i \omega t} \sqrt{n}
 +
 \delta_{m, n+1} e^{i \omega t} \sqrt{n+1}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:shoExpectations:60}
+\begin{equation}\label{eqn:shoExpectations:60}
+\begin{aligned}
 \bra{m} x^2 \ket{n}
-=
+&=
 \frac{x_0^2}{2} \bra{m} \lr{ a + a^\dagger }^2 \ket{n}
-=
+\\ &=
 \frac{x_0^2}{2}
 \lr{
 e^{i \omega t} \sqrt{m} \bra{m-1}
@@ -91,7 +94,7 @@ e^{-i \omega t} \sqrt{n} \ket{n-1}
 +
 e^{i \omega t} \sqrt{n+1} \ket{n+1}
 }
-=
+\\ &=
 \frac{x_0^2}{2}
 \lr{
 \delta_{m+1,n+1} \sqrt{(m+1)(n+1)}
@@ -99,31 +102,35 @@ e^{i \omega t} \sqrt{n+1} \ket{n+1}
 +\delta_{m-1,n+1} \sqrt{m(n+1)} e^{2 i \omega t}
 +\delta_{m-1,n-1} \sqrt{m n}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:shoExpectations:80}
+\begin{equation}\label{eqn:shoExpectations:80}
+\begin{aligned}
 \bra{m} p \ket{n}
-=
+&=
 \frac{i\Hbar}{\sqrt{2} x_0} \bra{m} \lr{ a^\dagger - a} \ket{n}
-=
+\\ &=
 \frac{i\Hbar}{\sqrt{2} x_0} \bra{m} \lr{
 e^{i \omega t} \sqrt{n+1} \ket{n+1}
 -
 e^{-i \omega t} \sqrt{n} \ket{n-1}
 }
-=
+\\ &=
 \frac{i\Hbar}{\sqrt{2} x_0} \lr{
 \delta_{m,n+1} e^{i \omega t} \sqrt{n+1}
 -
 \delta_{m,n-1} e^{-i \omega t} \sqrt{n}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:shoExpectations:100}
+\begin{equation}\label{eqn:shoExpectations:100}
+\begin{aligned}
 \bra{m} p^2 \ket{n}
-=
+&=
 \frac{\Hbar^2}{2 x_0^2} \ket{m} \lr{ a - a^\dagger }  \lr{ a^\dagger - a} \ket{n}
-=
+\\ &=
 \frac{\Hbar^2}{2 x_0^2}
 \lr{
 -e^{-i \omega t} \sqrt{m+1} \bra{m+1}
@@ -135,7 +142,7 @@ e^{i \omega t} \sqrt{n+1} \ket{n+1}
 -
 e^{-i \omega t} \sqrt{n} \ket{n-1}
 }
-=
+\\ &=
 \frac{\Hbar^2}{2 x_0^2}
 \lr{
 \delta_{m+1,n+1} \sqrt{(m+1)(n+1)}
@@ -143,13 +150,15 @@ e^{-i \omega t} \sqrt{n} \ket{n-1}
 +\delta_{m-1,n+1} \sqrt{m(n+1)} e^{2 i \omega t}
 +\delta_{m-1,n-1} \sqrt{m n}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the anticommutator \( \symmetric{x}{p} \), we have
 %
-\begin{dmath}\label{eqn:shoExpectations:120}
+\begin{equation}\label{eqn:shoExpectations:120}
+\begin{aligned}
 \symmetric{x}{p}
-=
+&=
 \frac{i\Hbar}{2}
 \lr{
 \lr{ a e^{-i \omega t} + a^\dagger e^{i \omega t} } \lr{ a^\dagger e^{i \omega t} - a e^{-i \omega t} }
@@ -157,7 +166,7 @@ For the anticommutator \( \symmetric{x}{p} \), we have
 \lr{ a^\dagger e^{i \omega t} - a e^{-i \omega t} }
 \lr{ a e^{-i \omega t} + a^\dagger e^{i \omega t} }
 }
-=
+\\ &=
 \frac{i\Hbar}{2}
 \lr{
 - a^2 e^{- 2 i \omega t}
@@ -169,82 +178,89 @@ For the anticommutator \( \symmetric{x}{p} \), we have
 - a^\dagger a
 + a a^\dagger
 }
-=
+\\ &=
 i\Hbar
 \lr{
 a a^\dagger - a^\dagger a
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:shoExpectations:140}
+\begin{equation}\label{eqn:shoExpectations:140}
+\begin{aligned}
 \bra{m} \symmetric{x}{p} \ket{n}
-=
+&=
 i\Hbar
 \bra{m}
 \lr{
 a a^\dagger - a^\dagger a
 }
 \ket{n}
-=
+\\ &=
 i\Hbar
 \bra{m}
 \lr{
 \sqrt{(n+1)^2}\ket{n}
 -\sqrt{n^2}\ket{n}
 }
-=
+\\ &=
 i\Hbar
 \bra{m}
 \lr{
 2 n + 1
 }
 \ket{n}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:shoExpectations:1:b}
 %
 For the SHO, the virial theorem requires \( \expectation{p^2/m} = \expectation{m \omega x^2} \).  That momentum expectation with respect to the eigenstate \( \ket{n} \) is
 %
-\begin{dmath}\label{eqn:shoExpectations:160}
+\begin{equation}\label{eqn:shoExpectations:160}
+\begin{aligned}
 \expectation{p^2/m}
-=
+&=
 \frac{\Hbar^2}{2 x_0^2 m}
 \lr{
 \sqrt{(n+1)(n+1)}
 +
 \sqrt{n n}
 }
-=
+\\ &=
 \frac{\Hbar^2 m \omega}{2 \Hbar m} \lr{ 2 n + 1 }
-=
+\\ &=
 \Hbar \omega \lr{ n + \inv{2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the position expectation we've got
 %
-\begin{dmath}\label{eqn:shoExpectations:180}
+\begin{equation}\label{eqn:shoExpectations:180}
+\begin{aligned}
 \expectation{m \omega x^2}
-=
+&=
 \frac{m \omega^2 x_0^2}{2}
 \lr{
 \sqrt{(n+1)(n+1)}
 + \sqrt{n n}
 }
-=
+\\ &=
 \frac{m \omega^2 \Hbar}{2 m \omega}
 \lr{
 \sqrt{(n+1)(n+1)}
 + \sqrt{n n}
 }
-=
+\\ &=
 \frac{\omega \Hbar}{2 }
 \lr{ 2 n + 1 }
-=
+\\ &=
 \omega \Hbar
 \lr{ n + \inv{2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This shows that the virial theorem holds for the SHO Hamiltonian for eigenstates.
 %

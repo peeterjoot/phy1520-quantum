@@ -50,13 +50,13 @@ m c^2 & - \hatp c
 %
 for which the solution is
 %
-\begin{dmath}\label{eqn:qmLecture10:60}
+\begin{equation}\label{eqn:qmLecture10:60}
 \Phi = e^{i k_1 x }
 \begin{bmatrix}
 \cos \theta_1 \\
 \sin \theta_1
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 where
 \begin{equation}\label{eqn:qmLecture10:80}
@@ -75,19 +75,19 @@ To consider the \( k_1 < 0 \) case, note that
 \end{equation}
 so after flipping the signs on all the \( k_1 \) terms we find for the reflected wave
 %
-\begin{dmath}\label{eqn:qmLecture10:120}
+\begin{equation}\label{eqn:qmLecture10:120}
 \Phi = e^{-i k_1 x}
 \begin{bmatrix}
 \sin\theta_1 \\
 \cos\theta_1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 FIXME: this reasoning doesn't entirely make sense to me.  Make sense of this by trying this solution as was done for the form of the incident wave solution.
 
 The region I wave has the form
 %
-\begin{dmath}\label{eqn:qmLecture10:140}
+\begin{equation}\label{eqn:qmLecture10:140}
 \Phi_I
 =
 A e^{i k_1 x}
@@ -101,7 +101,7 @@ B e^{-i k_1 x}
 \sin\theta_1 \\
 \cos\theta_1 \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 By the time we are done we want to have computed the reflection coefficient
 %
@@ -127,18 +127,20 @@ E
 %
 so
 %
-\begin{dmath}\label{eqn:qmLecture10:220}
+\begin{equation}\label{eqn:qmLecture10:220}
+\begin{aligned}
 \lr{ \Hbar c k_2 }^2
-=
+&=
 \lr{ E - V_0 }^2 - \lr{ m c^2}^2
-=
+\\ &=
 \mathLabelBox
 [ labelstyle={below of=m\themathLableNode, below of=m\themathLableNode} ]
 {\lr{ E - V_0 + m c^2 }}{\(r_1\)}
 \mathLabelBox
 [ labelstyle={below of=m\themathLableNode, below of=m\themathLableNode} ]
 {\lr{ E - V_0 - m c^2 }}{\(r_2\)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The \( r_1 \) and \( r_2 \) branches are sketched in \cref{fig:lecture10:lecture10Fig2}.
 
@@ -163,13 +165,13 @@ We want to ensure that the current across the barrier is conserved (no particles
 \imageFigure{../figures/phy1520-quantum/lecture10Fig5}{Transmitted, reflected and incident components.}{fig:lecture10:lecture10Fig5}{0.1}
 Recall that given a wave function
 %
-\begin{dmath}\label{eqn:qmLecture10:240}
+\begin{equation}\label{eqn:qmLecture10:240}
 \Psi =
 \begin{bmatrix}
 \psi_1 \\
 \psi_2
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 the density and currents are respectively
 %
@@ -228,36 +230,36 @@ Let's look for a solution for the \( E + m c^2 > V_0 \) case on the right branch
 While the right branch in this case is left going, this might work out since that is an antiparticle.  We could try both.
 First
 %
-\begin{dmath}\label{eqn:qmLecture10:480}
+\begin{equation}\label{eqn:qmLecture10:480}
 \Psi_{II} = D e^{i k_2 x}
 \begin{bmatrix}
 -\sin\theta_2 \\
 \cos\theta_2
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This is justified by
 %
-\begin{dmath}\label{eqn:qmLecture10:500}
+\begin{equation}\label{eqn:qmLecture10:500}
 +E \rightarrow
 \begin{bmatrix}
 \cos\theta \\
 \sin\theta
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:qmLecture10:520}
+\begin{equation}\label{eqn:qmLecture10:520}
 -E \rightarrow
 \begin{bmatrix}
 -\sin\theta \\
 \cos\theta \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 At \( x = 0 \) the exponentials vanish, so equating the waves at that point means
 %
-\begin{dmath}\label{eqn:qmLecture10:380}
+\begin{equation}\label{eqn:qmLecture10:380}
 \begin{bmatrix}
 \cos\theta_1 \\
 \sin\theta_1 \\
@@ -274,7 +276,7 @@ At \( x = 0 \) the exponentials vanish, so equating the waves at that point mean
 -\sin\theta_2 \\
 \cos\theta_2
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Solving this yields
 %

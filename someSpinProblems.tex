@@ -27,14 +27,14 @@
 \index{spin half}
 Find the eigenvectors of \( \sigma_y \), and then find the probability that a measurement of \( S_y \) will be \( \Hbar/2 \) when the state is initially
 %
-%\begin{dmath}\label{eqn:someSpinProblems:20}
+%\begin{equation}\label{eqn:someSpinProblems:20}
 \(
 \begin{bmatrix}
 \alpha \\
 \beta
 \end{bmatrix}
 \).
-%\end{dmath}
+%\end{equation}
 %
 } % problem
 %
@@ -42,17 +42,19 @@ Find the eigenvectors of \( \sigma_y \), and then find the probability that a me
 %
 The eigenvalues should be \( \pm 1 \), which is easily checked
 %
-\begin{dmath}\label{eqn:someSpinProblems:40}
-0 =
+\begin{equation}\label{eqn:someSpinProblems:40}
+\begin{aligned}
+0 &=
 \Abs{ \sigma_y - \lambda }
-=
+\\ &=
 \begin{vmatrix}
 -\lambda & -i \\
 i & -\lambda
 \end{vmatrix}
-=
+\\ &=
 \lambda^2 - 1.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For \( \ket{+} = (a,b)^\T \) we must have
 %
@@ -62,23 +64,23 @@ For \( \ket{+} = (a,b)^\T \) we must have
 %
 so
 %
-\begin{dmath}\label{eqn:someSpinProblems:80}
+\begin{equation}\label{eqn:someSpinProblems:80}
 \ket{+} \propto
 \begin{bmatrix}
 -i \\
 1
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:someSpinProblems:100}
+\begin{equation}\label{eqn:someSpinProblems:100}
 \ket{+} =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 i
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 For \( \ket{-} \) we must have
 %
@@ -88,23 +90,23 @@ a - i b = 0,
 %
 so
 %
-\begin{dmath}\label{eqn:someSpinProblems:140}
+\begin{equation}\label{eqn:someSpinProblems:140}
 \ket{+} \propto
 \begin{bmatrix}
 i \\
 1
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:someSpinProblems:160}
+\begin{equation}\label{eqn:someSpinProblems:160}
 \ket{+} =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 -i
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The normalized eigenvectors are
 %
@@ -118,14 +120,15 @@ The normalized eigenvectors are
 }
 For the probability question we are interested in
 %
-\begin{dmath}\label{eqn:someSpinProblems:200}
+\begin{equation}\label{eqn:someSpinProblems:200}
+\begin{aligned}
 \Abs{\bra{S_y; +}
 \begin{bmatrix}
 \alpha \\
 \beta
 \end{bmatrix}
 }^2
-=
+&=
 \inv{2} \Abs{
 \begin{bmatrix}
 1 & -i
@@ -135,11 +138,12 @@ For the probability question we are interested in
 \beta
 \end{bmatrix}
 }^2
-=
+\\ &=
 \inv{2} \lr{ \Abs{\alpha}^2 + \Abs{\beta}^2 }
-=
+\\ &=
 \inv{2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 There is a 50\% chance of finding the particle in the \( \ket{S_x;+} \) state, independent of the initial state.
 } % answer
@@ -156,31 +160,35 @@ H = - \inv{\Hbar} 2 \mu \BS \cdot \BB.
 %
 \makeanswer{problem:someSpinProblems:2}{
 %
-\begin{dmath}\label{eqn:someSpinProblems:240}
+\begin{equation}\label{eqn:someSpinProblems:240}
+\begin{aligned}
 H
-= - \mu \Bsigma \cdot \BB
-= - \mu \lr{ B_x \PauliX + B_y \PauliY + B_z \PauliZ }
-= - \mu
+&= - \mu \Bsigma \cdot \BB
+\\ &= - \mu \lr{ B_x \PauliX + B_y \PauliY + B_z \PauliZ }
+\\ &= - \mu
 \begin{bmatrix}
 B_z & B_x - i B_y \\
 B_x + i B_y & -B_z
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The characteristic equation is
-\begin{dmath}\label{eqn:someSpinProblems:260}
+\begin{equation}\label{eqn:someSpinProblems:260}
+\begin{aligned}
 0
-=
+&=
 \begin{vmatrix}
 -\mu B_z -\lambda & -\mu(B_x - i B_y) \\
 -\mu(B_x + i B_y) & \mu B_z - \lambda
 \end{vmatrix}
-=
+\\ &=
 -\lr{ (\mu B_z)^2 - \lambda^2 }
 - \mu^2\lr{ B_x^2 - (iB_y)^2 }
-=
+\\ &=
 \lambda^2 - \mu^2 \BB^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That is
 \boxedEquation{eqn:someSpinProblems:360}{
@@ -188,20 +196,22 @@ That is
 }
 Now for the eigenvectors.  We are looking for \( \ket{\pm} = (a,b)^\T \) such that
 %
-\begin{dmath}\label{eqn:someSpinProblems:300}
+\begin{equation}\label{eqn:someSpinProblems:300}
+\begin{aligned}
 0
-= (-\mu B_z \mp \mu B) a -\mu(B_x - i B_y) b,
-%= (B_z + B) a = (B_x - i B_y) b
-\end{dmath}
+&= (-\mu B_z \mp \mu B) a -\mu(B_x - i B_y) b,
+%\\ &= (B_z + B) a \\ &= (B_x - i B_y) b
+\end{aligned}
+\end{equation}
 or
 %
-\begin{dmath}\label{eqn:someSpinProblems:320}
+\begin{equation}\label{eqn:someSpinProblems:320}
 \ket{\pm} \propto
 \begin{bmatrix}
 B_x - i B_y \\
 B_z \pm B
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This squares to
 %

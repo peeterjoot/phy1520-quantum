@@ -26,52 +26,62 @@ to show that this is the Hamiltonian that describes the Lorentz force equation, 
 %
 The particle velocity follows easily
 %
-\begin{dmath}\label{eqn:qmLecture5:500}
+\begin{equation}\label{eqn:qmLecture5:500}
+\begin{aligned}
 \Bv
-= \ddt{\Br}
-= \PD{\Bp}{H}
-= \inv{m} \lr{ \Bp - q \BA }.
-\end{dmath}
+&= \ddt{\Br}
+\\ &= \PD{\Bp}{H}
+\\ &= \inv{m} \lr{ \Bp - q \BA }.
+\end{aligned}
+\end{equation}
 %
 For the Lorentz force we can proceed in the coordinate representation
 %
-\begin{dmath}\label{eqn:qmLecture5:520}
+\begin{equation}\label{eqn:qmLecture5:520}
+\begin{aligned}
 \ddt{p_k}
-= - \PD{x_k}{H}
-= - \frac{2}{2m} \lr{ p_m - q A_m } \PD{x_k}{}\lr{ p_m - q A_m } - q \PD{x_k}{\phi}
-= q v_m \PD{x_k}{A_m} - q \PD{x_k}{\phi}.
-\end{dmath}
+&= - \PD{x_k}{H}
+\\ &= - \frac{2}{2m} \lr{ p_m - q A_m } \PD{x_k}{}\lr{ p_m - q A_m } - q \PD{x_k}{\phi}
+\\ &= q v_m \PD{x_k}{A_m} - q \PD{x_k}{\phi}.
+\end{aligned}
+\end{equation}
 %
 We also have
 %
-\begin{dmath}\label{eqn:qmLecture5:540}
+\begin{equation}\label{eqn:qmLecture5:540}
+\begin{aligned}
 \ddt{p_k}
-=
+&=
 \ddt{} \lr{m x_k + q A_k }
-=
+\\ &=
 m \frac{d^2 x_k}{dt^2} + q \PD{x_m}{A_k} \frac{d x_m}{dt} + q \PD{t}{A_k}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Putting these together we've got
 %
-\begin{dmath}\label{eqn:qmLecture5:560}
+\begin{equation}\label{eqn:qmLecture5:560}
+\begin{aligned}
 m \frac{d^2 x_k}{dt^2}
-= q v_m \PD{x_k}{A_m} - q \PD{x_k}{\phi},
+&= q v_m \PD{x_k}{A_m} - q \PD{x_k}{\phi},
 - q \PD{x_m}{A_k} \frac{d x_m}{dt} - q \PD{t}{A_k}
-=
+\\ &=
 q v_m \lr{ \PD{x_k}{A_m} - \PD{x_m}{A_k} } + q E_k
-=
+\\ &=
 q v_m \epsilon_{k m s} B_s + q E_k,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture5:580}
+\begin{equation}\label{eqn:qmLecture5:580}
+\begin{aligned}
 m \frac{d^2 \Bx}{dt^2}
-=
+&=
 q \Be_k v_m \epsilon_{k m s} B_s + q E_k
-= q \Bv \cross \BB + q \BE.
-\end{dmath}
+\\ &= q \Bv \cross \BB + q \BE.
+\end{aligned}
+\end{equation}
 %
 } % answer
 %
@@ -85,24 +95,28 @@ After the gauge transformation of \cref{eqn:qmLecture5:420a} show that the elect
 %
 For the magnetic field the transformed field is
 %
-\begin{dmath}\label{eqn:qmLecture5:600}
+\begin{equation}\label{eqn:qmLecture5:600}
+\begin{aligned}
 \BB'
-= \spacegrad \cross \lr{ \BA + \spacegrad \chi }
-= \spacegrad \cross \BA + \spacegrad \cross \lr{ \spacegrad \chi }
-= \spacegrad \cross \BA
-= \BB.
-\end{dmath}
+&= \spacegrad \cross \lr{ \BA + \spacegrad \chi }
+\\ &= \spacegrad \cross \BA + \spacegrad \cross \lr{ \spacegrad \chi }
+\\ &= \spacegrad \cross \BA
+\\ &= \BB.
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture5:620}
+\begin{equation}\label{eqn:qmLecture5:620}
+\begin{aligned}
 \BE'
-=
+&=
 - \PD{t}{\BA'} - \spacegrad \phi'
-=
+\\ &=
 - \PD{t}{}\lr{\BA + \spacegrad \chi} - \spacegrad \lr{ \phi - \PD{t}{\chi}}
-=
+\\ &=
 - \PD{t}{\BA} - \spacegrad \phi
-=
+\\ &=
 \BE.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer

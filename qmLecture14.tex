@@ -77,28 +77,33 @@
 %%
 %%We found
 %%
-%%\begin{dmath}\label{eqn:qmLecture14:160}
-%%\hatL_{+} \hatL_{-} =
+%%\begin{equation}\label{eqn:qmLecture14:160}
+%%\begin{aligned}
+%%\hatL_{+} \hatL_{-} &=
 %%\lr{ \hatL_x + i \hatL_y } \lr{ \hatL_x - i \hatL_y }
-%%= \lr{ \Lcap^2 - \hatL_z^2 } -i \antisymmetric{\hatL_x}{\hatL_y}
-%%= \lr{ \Lcap^2 - \hatL_z^2 } -i \lr{ i \Hbar \hatL_z }
-%%= \lr{ \Lcap^2 - \hatL_z^2 } + \Hbar \hatL_z,
-%%\end{dmath}
+%%\\ &= \lr{ \Lcap^2 - \hatL_z^2 } -i \antisymmetric{\hatL_x}{\hatL_y}
+%%\\ &= \lr{ \Lcap^2 - \hatL_z^2 } -i \lr{ i \Hbar \hatL_z }
+%%\\ &= \lr{ \Lcap^2 - \hatL_z^2 } + \Hbar \hatL_z,
+%%
+%%\end{aligned}
+%%\end{equation}
 %%
 %%so
 %%
-%%\begin{dmath}\label{eqn:qmLecture14:180}
+%%\begin{equation}\label{eqn:qmLecture14:180}
 %%\bra{a,b} \hatL_{+} \hatL_{-} \ket{a, b}
 %%=
 %%\expectation{ \Lcap^2 - \hatL_z^2 + \Hbar \hatL_z }.
-%%\end{dmath}
+%%
+%%\end{equation}
 %%
 %%Similarly
-%%\begin{dmath}\label{eqn:qmLecture14:200}
+%%\begin{equation}\label{eqn:qmLecture14:200}
 %%\bra{a,b} \hatL_{-} \hatL_{+} \ket{a, b}
 %%=
 %%\expectation{ \Lcap^2 - \hatL_z^2 - \Hbar \hatL_z }.
-%%\end{dmath}
+%%
+%%\end{equation}
 %%
 %%\paragraph{Constraints}
 %%
@@ -155,7 +160,7 @@ and
 \end{equation}
 If we had the sequence, which must terminate at \( b_{\textrm{min}} \) or else it will go on forever
 %
-\begin{dmath}\label{eqn:qmLecture14:340}
+\begin{equation}\label{eqn:qmLecture14:340}
 \ket{a, b_{\textrm{max}}}
 \overset{\hatL_{-}}{\rightarrow}
 \ket{a, b_{\textrm{max}} - 1}
@@ -164,7 +169,7 @@ If we had the sequence, which must terminate at \( b_{\textrm{min}} \) or else i
 \cdots
 \overset{\hatL_{-}}{\rightarrow}
 \ket{a, b_{\textrm{min}}},
-\end{dmath}
+\end{equation}
 %
 then we know that \( b_{\textrm{max}} - b_{\textrm{min}} \in \bbZ \), or
 %
@@ -190,7 +195,6 @@ a &= j(j + 1).
 \end{equation}
 \index{angular momentum!magnetic quantum number}
 \index{angular momentum!azimuthal quantum number}
-
 so for \( m \in -j, -j + 1, \cdots, +j \)
 %
 %\begin{equation}\label{eqn:qmLecture14:420}
@@ -201,10 +205,8 @@ L_z \ket{j, m} &= \Hbar m \ket{j, m}.
 \end{aligned}
 }
 %\end{equation}
-
 \section{Schwinger's SHO angular momentum operators.}
 \index{angular momentum!Schwinger}
-
 In \citep{schwinger1955quantum} a powerful method for describing angular momentum with harmonic oscillators was introduced, which will be outlined here.  The question is whether we can construct a set of harmonic oscillators that allows a mapping from
 %
 \begin{equation}\label{eqn:qmLecture14:460}
@@ -276,58 +278,64 @@ Is this correct?  Do we need to make any scalar adjustments?  We want
 %
 First check this with the \( \hatL_{+} \) commutator
 %
-\begin{dmath}\label{eqn:qmLecture14:660}
+\begin{equation}\label{eqn:qmLecture14:660}
+\begin{aligned}
 \antisymmetric{\hatL_z}{\hatL_{+}}
-=
+&=
 \inv{2} \Hbar^2 \antisymmetric{ n_1 - n_2}{a_1^\dagger a_2 }
-=
+\\ &=
 \inv{2} \Hbar^2 \antisymmetric{ a_1^\dagger a_1 - a_2^\dagger a_2 }{a_1^\dagger a_2 }
-=
+\\ &=
 \inv{2} \Hbar^2
 \lr{
 \antisymmetric{ a_1^\dagger a_1 }{a_1^\dagger a_2 }
 -\antisymmetric{ a_2^\dagger a_2 }{a_1^\dagger a_2 }
 }
-=
+\\ &=
 \inv{2} \Hbar^2
 \lr{
 a_2 \antisymmetric{ a_1^\dagger a_1 }{a_1^\dagger }
 -a_1^\dagger \antisymmetric{ a_2^\dagger a_2 }{a_2 }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 But
 %
-\begin{dmath}\label{eqn:qmLecture14:720}
+\begin{equation}\label{eqn:qmLecture14:720}
+\begin{aligned}
 \antisymmetric{ a^\dagger a }{a^\dagger }
-=
+&=
 a^\dagger a
 a^\dagger
 -
 a^\dagger
 a^\dagger a
-=
+\\ &=
 a^\dagger \lr{ 1 +
 a^\dagger a}
 -
 a^\dagger
 a^\dagger a
-=
+\\ &=
 a^\dagger,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:qmLecture14:740}
+\begin{equation}\label{eqn:qmLecture14:740}
+\begin{aligned}
 \antisymmetric{ a^\dagger a }{a}
-=
+&=
 a^\dagger a a
 -a a^\dagger a
-=
+\\ &=
 a^\dagger a a
 -\lr{ 1 + a^\dagger a } a
-=
+\\ &=
 -a,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 \begin{equation}\label{eqn:qmLecture14:760}
@@ -336,27 +344,29 @@ so
 %
 as desired.  Similarly
 %
-\begin{dmath}\label{eqn:qmLecture14:780}
+\begin{equation}\label{eqn:qmLecture14:780}
+\begin{aligned}
 \antisymmetric{\hatL_z}{\hatL_{-}}
-=
+&=
 \inv{2} \Hbar^2 \antisymmetric{ n_1 - n_2}{a_2^\dagger a_1 }
-=
+\\ &=
 \inv{2} \Hbar^2 \antisymmetric{ a_1^\dagger a_1 - a_2^\dagger a_2 }{a_2^\dagger a_1 }
-=
+\\ &=
 \inv{2} \Hbar^2 \lr{
 a_2^\dagger \antisymmetric{ a_1^\dagger a_1 }{a_1 }
 - a_1 \antisymmetric{ a_2^\dagger a_2 }{a_2^\dagger }
 }
-=
+\\ &=
 \inv{2} \Hbar^2 \lr{
 a_2^\dagger (-a_1)
 - a_1 a_2^\dagger
 }
-=
+\\ &=
 - \Hbar^2 a_2^\dagger a_1
-=
+\\ &=
 - \Hbar \hatL_{-}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With
 %
@@ -387,17 +397,19 @@ or
 %
 we can seek this factor \( d_{j,m}^{+} \) by operating with \( \hatL_{+} \)
 %
-\begin{dmath}\label{eqn:qmLecture14:880}
+\begin{equation}\label{eqn:qmLecture14:880}
+\begin{aligned}
 \hatL_{+} \ket{j, m}
-=
+&=
 \Hbar a_1^\dagger a_2 \ket{n_1, n_2}
-=
+\\ &=
 \Hbar a_1^\dagger a_2 \ket{j+m,j-m}
-=
+\\ &=
 \Hbar \sqrt{ n + 1 } \sqrt{n_2} \ket{j+m +1,j-m-1}
-=
+\\ &=
 \Hbar \sqrt{ \lr{ j+ m + 1}\lr{ j - m } } \ket{j+m +1,j-m-1}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That gives
 \begin{equation}\label{eqn:qmLecture14:900}

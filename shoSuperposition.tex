@@ -59,29 +59,31 @@ Forming
 \end{equation}
 the position expectation is
 %
-\begin{dmath}\label{eqn:shoSuperposition:40}
+\begin{equation}\label{eqn:shoSuperposition:40}
 \bra{\psi} x \ket{\psi}
 =
 \inv{1 + \Abs{\sigma}^2} \lr{ \bra{0} + \sigma^\conj \bra{1} } \frac{x_0}{\sqrt{2}} \lr{ a^\dagger + a } \lr{ \ket{0} + \sigma \ket{1} }.
-\end{dmath}
+\end{equation}
 %
 Evaluating the action of the operators on the kets, we've got
 %
-\begin{dmath}\label{eqn:shoSuperposition:60}
+\begin{equation}\label{eqn:shoSuperposition:60}
 \lr{ a^\dagger + a } \lr{ \ket{0} + \sigma \ket{1} }
 =
 \ket{1} + \sqrt{2} \sigma \ket{2} + \sigma \ket{0}.
-\end{dmath}
+\end{equation}
 %
 The \( \ket{2} \) term is killed by the bras, leaving
 %
-\begin{dmath}\label{eqn:shoSuperposition:80}
+\begin{equation}\label{eqn:shoSuperposition:80}
+\begin{aligned}
 \expectation{x}
-=
+&=
 \inv{1 + \Abs{\sigma}^2} \frac{x_0}{\sqrt{2}} \lr{ \sigma + \sigma^\conj}
-=
+\\ &=
 \frac{\sqrt{2} x_0 \Real \sigma}{1 + \Abs{\sigma}^2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Any imaginary component in \( \sigma \) will reduce the expectation, so we are constrained to picking a real value.
 
@@ -111,57 +113,63 @@ That will be negative (maximum for the extreme value) at \( \sigma = 1 \), so th
 %
 That maximized position expectation is
 %
-\begin{dmath}\label{eqn:shoSuperposition:180}
+\begin{equation}\label{eqn:shoSuperposition:180}
 \expectation{x}
 =
 \frac{x_0}{\sqrt{2}}.
-\end{dmath}
+\end{equation}
 %
 \makeSubAnswer{}{problem:shoSuperposition:1:b}
 %
 The time evolution is given by
 %
-\begin{dmath}\label{eqn:shoSuperposition:200}
+\begin{equation}\label{eqn:shoSuperposition:200}
+\begin{aligned}
 \ket{\Psi(t)}
-= e^{-i H t/\Hbar} \inv{\sqrt{2}}\lr{ \ket{0} + \ket{1} }
-= \inv{\sqrt{2}}\lr{ e^{-i(0+ \ifrac{1}{2})\Hbar \omega t/\Hbar} \ket{0} + e^{-i(1+ \ifrac{1}{2})\Hbar \omega t/\Hbar} \ket{1} }
-= \inv{\sqrt{2}}\lr{ e^{-i \omega t/2} \ket{0} + e^{-3 i \omega t/2} \ket{1} }.
-\end{dmath}
+&= e^{-i H t/\Hbar} \inv{\sqrt{2}}\lr{ \ket{0} + \ket{1} }
+\\ &= \inv{\sqrt{2}}\lr{ e^{-i(0+ \ifrac{1}{2})\Hbar \omega t/\Hbar} \ket{0} + e^{-i(1+ \ifrac{1}{2})\Hbar \omega t/\Hbar} \ket{1} }
+\\ &= \inv{\sqrt{2}}\lr{ e^{-i \omega t/2} \ket{0} + e^{-3 i \omega t/2} \ket{1} }.
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:shoSuperposition:1:c}
 %
 The position expectation in the Schr\"{o}dinger representation is
 %
-\begin{dmath}\label{eqn:shoSuperposition:220}
+\begin{equation}\label{eqn:shoSuperposition:220}
+\begin{aligned}
 \expectation{x(t)}
-=
+&=
 \inv{2}
 \lr{ e^{i \omega t/2} \bra{0} + e^{3 i \omega t/2} \bra{1} } \frac{x_0}{\sqrt{2}} \lr{ a^\dagger + a }
 \lr{ e^{-i \omega t/2} \ket{0} + e^{-3 i \omega t/2} \ket{1} }
-=
+\\ &=
 \frac{x_0}{2\sqrt{2}}
 \lr{ e^{i \omega t/2} \bra{0} + e^{3 i \omega t/2} \bra{1} }
 \lr{ e^{-i \omega t/2} \ket{1} + e^{-3 i \omega t/2} \sqrt{2} \ket{2} + e^{-3 i \omega t/2} \ket{0} }
-=
+\\ &=
 \frac{x_0}{\sqrt{2}} \cos(\omega t).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:shoSuperposition:1:d}
 %
-\begin{dmath}\label{eqn:shoSuperposition:240}
+\begin{equation}\label{eqn:shoSuperposition:240}
+\begin{aligned}
 \expectation{x(t)}
-=
+&=
 \inv{2}
 \lr{ \bra{0} + \bra{1} } \frac{x_0}{\sqrt{2}}
 \lr{ a^\dagger e^{i\omega t} + a e^{-i \omega t} }
 \lr{ \ket{0} + \ket{1} }
-=
+\\ &=
 \frac{x_0}{2 \sqrt{2}}
 \lr{ \bra{0} + \bra{1} }
 \lr{ e^{i\omega t} \ket{1} + \sqrt{2} e^{i\omega t} \ket{2} + e^{-i \omega t} \ket{0} }
-=
+\\ &=
 \frac{x_0}{\sqrt{2}} \cos(\omega t),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 matching the calculation using the Schr\"{o}dinger picture.
 %
@@ -169,28 +177,32 @@ matching the calculation using the Schr\"{o}dinger picture.
 %
 Let's use the Heisenberg picture for the uncertainty calculation.  Using the calculation above we have
 %
-\begin{dmath}\label{eqn:shoSuperposition:260}
+\begin{equation}\label{eqn:shoSuperposition:260}
+\begin{aligned}
 \expectation{x^2}
-=
+&=
 \inv{2} \frac{x_0^2}{2}
 \lr{ e^{-i\omega t} \bra{1} + \sqrt{2} e^{-i\omega t} \bra{2} + e^{i \omega t} \bra{0} }
 \lr{ e^{i\omega t} \ket{1} + \sqrt{2} e^{i\omega t} \ket{2} + e^{-i \omega t} \ket{0} }
-=
+\\ &=
 \frac{x_0^2}{4} \lr{ 1 + 2 + 1}
-=
+\\ &=
 x_0^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The uncertainty is
-\begin{dmath}\label{eqn:shoSuperposition:280}
-\expectation{(\Delta x)^2} =
+\begin{equation}\label{eqn:shoSuperposition:280}
+\begin{aligned}
+\expectation{(\Delta x)^2} &=
 \expectation{x^2} - \expectation{x}^2
-=
+\\ &=
 x_0^2 - \frac{x_0^2}{2} \cos^2(\omega t)
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ 2 - \cos^2(\omega t) }
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ 1 + \sin^2(\omega t) }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 } % answer
 %\EndArticle

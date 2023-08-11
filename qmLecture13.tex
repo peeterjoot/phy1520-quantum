@@ -38,13 +38,15 @@ which can alternately be written
 \end{equation}
 The left hand side can be expanded as the evolution of the state as found at time \( -t \)
 %
-\begin{dmath}\label{eqn:qmLecture13:60}
+\begin{equation}\label{eqn:qmLecture13:60}
+\begin{aligned}
 \Theta^{-1} \ket{\tilde{\Psi}(t)}
-=
+&=
 \Theta^{-1} e^{-i \hatH t/\Hbar} \ket{\tilde{\Psi}(-t)}
-=
+\\ &=
 \Theta^{-1} e^{-i \hatH t/\Hbar} \Theta \ket{\Psi(0)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 To first order for a small time increment \( \delta t \), we have
 %
@@ -55,19 +57,19 @@ To first order for a small time increment \( \delta t \), we have
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture13:120}
+\begin{equation}\label{eqn:qmLecture13:120}
 i \frac{\hatH}{\Hbar} \delta t \ket{\Psi(0)}
 =
 \Theta^{-1} (- i) \frac{\hatH}{\Hbar} \delta t \Theta \ket{\Psi(0)}.
-\end{dmath}
+\end{equation}
 %
 Since this holds for any state \( \ket{\Psi(0)} \), the time reversal operator satisfies
 %
-\begin{dmath}\label{eqn:qmLecture13:140}
+\begin{equation}\label{eqn:qmLecture13:140}
 i \hatH
 =
 \Theta^{-1} (- i) \hatH \Theta.
-\end{dmath}
+\end{equation}
 %
 Note that the factors of \( i \) have not been cancelled on purpose, since we are allowing for the time reversal operator to not necessarily commute with imaginary numbers.
 
@@ -163,29 +165,32 @@ where we have a sign flip in the time dependent momentum operator (and therefore
 %
 %if that's true, 
 then how about the momentum operator in the position basis
-\begin{dmath}\label{eqn:qmLecture13:360}
+\begin{equation}\label{eqn:qmLecture13:360}
+\begin{aligned}
 \Theta^{-1} \hatp \Theta
-=
+&=
 \Theta^{-1} \lr{ -i \Hbar \PD{x}{} } \Theta
-=
-\Theta^{-1} \lr{ -i \Hbar } \Theta \PD{x}{}
-=
+\\ &=
+\Theta^{-1} \lr{ -i \Hbar } \Theta \PD{x}{} =
 i \Hbar \Theta^{-1} \Theta \PD{x}{}
-=
+\\ &=
 -\hatp.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 How about the \( x,p \) commutator?  For that we have
 %
-\begin{dmath}\label{eqn:qmLecture13:380}
+\begin{equation}\label{eqn:qmLecture13:380}
+\begin{aligned}
 \Theta^{-1} \antisymmetric{\hatx}{\hatp} \Theta
-=
+&=
 \Theta^{-1} \lr{ i \Hbar } \Theta
-=
+\\ &=
 -i \Hbar \Theta^{-1} \Theta
-=
+\\ &=
 - \antisymmetric{\hatx}{\hatp}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the angular momentum operators
 %
@@ -247,126 +252,147 @@ will produce the desired inversion of sign
 %
 The expectations of the spin operators (without any application of time reversal) are
 %
-\begin{dmath}\label{eqn:qmLecture13:1440}
+\begin{equation}\label{eqn:qmLecture13:1440}
+\begin{aligned}
 \bra{\Psi} \hatS_x \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\uparrow} + b^\conj \bra{\downarrow} }
 \sigma_x
 \lr{ a \ket{\uparrow} + b \ket{\downarrow} }
-=
+\\ &=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\uparrow} + b^\conj \bra{\downarrow} }
 \lr{ a \ket{\downarrow} + b \ket{\uparrow} }
-=
+\\ &=
 \frac{\Hbar}{2}
 \lr{ a^\conj b + b^\conj a },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture13:1460}
+\begin{equation}\label{eqn:qmLecture13:1460}
+\begin{aligned}
 \bra{\Psi} \hatS_y \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\uparrow} + b^\conj \bra{\downarrow} }
 \sigma_y
 \lr{ a \ket{\uparrow} + b \ket{\downarrow} }
-=
+\\ &=
 \frac{i\Hbar}{2}
 \lr{ a^\conj \bra{\uparrow} + b^\conj \bra{\downarrow} }
 \lr{ a \ket{\downarrow} - b \ket{\uparrow} }
-=
+\\ &=
 \frac{\Hbar}{2 i} \lr{ a^\conj b - b^\conj a },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture13:1480}
+\begin{equation}\label{eqn:qmLecture13:1480}
+\begin{aligned}
 \bra{\Psi} \hatS_z \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\uparrow} + b^\conj \bra{\downarrow} }
 \sigma_z
 \lr{ a \ket{\uparrow} - b \ket{\downarrow} }
-=
+\\ &=
 \frac{\Hbar}{2} \lr{ \Abs{a}^2 - \Abs{b}^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 The time reversed actions are
 %
-\begin{dmath}\label{eqn:qmLecture13:1560}
+\begin{equation}\label{eqn:qmLecture13:1560}
+\begin{aligned}
 \bra{\Psi} \Theta^{-1} \hatS_x \Theta \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \sigma_x
 \lr{ a \ket{\downarrow} + b \ket{\uparrow} }
-=
+\\ &=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \lr{ a \ket{\uparrow} + b \ket{\downarrow} }
-=
+\\ &=
 \frac{\Hbar}{2}
 \lr{ a^\conj b + b^\conj a },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture13:1580}
+\begin{equation}\label{eqn:qmLecture13:1580}
+\begin{aligned}
 \bra{\Psi} \Theta^{-1} \hatS_y \Theta \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \sigma_y
 \lr{ a \ket{\downarrow} + b \ket{\uparrow} }
-=
+\\ &=
 \frac{i\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \lr{ -a \ket{\uparrow} + b \ket{\downarrow} }
-=
+\\ &=
 \frac{\Hbar}{2 i} \lr{ -a^\conj b + b^\conj a },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture13:1600}
+\begin{equation}\label{eqn:qmLecture13:1600}
+\begin{aligned}
 \bra{\Psi} \Theta^{-1} \hatS_z \Theta \ket{\Psi}
-=
+&=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \sigma_z
 \lr{ a \ket{\downarrow} + b \ket{\uparrow} }
-=
+\\ &=
 \frac{\Hbar}{2}
 \lr{ a^\conj \bra{\downarrow} + b^\conj \bra{\uparrow} }
 \lr{ -a \ket{\downarrow} + b \ket{\uparrow} }
-=
+\\ &=
 \frac{\Hbar}{2} \lr{ -\Abs{a}^2 + \Abs{b}^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-%\begin{dmath}\label{eqn:qmLecture13:1500}
+%\begin{equation}\label{eqn:qmLecture13:1500}
+%\begin{aligned}
 %\Theta^{-1} \hatS_z \Theta \ket{\uparrow}
-%=
+%&=
 %\frac{\Hbar}{2} \Theta^{-1} \sigma_z \ket{\downarrow}
-%=
+%\\ &=
 %-\frac{\Hbar}{2} \Theta^{-1} \ket{\downarrow}
-%=
+%\\ &=
 %-\frac{\Hbar}{2} \ket{\uparrow},
-%\end{dmath}
 %
-%\begin{dmath}\label{eqn:qmLecture13:1520}
+%\end{aligned}
+%\end{equation}
+%
+%\begin{equation}\label{eqn:qmLecture13:1520}
+%\begin{aligned}
 %\Theta^{-1} \hatS_x \Theta \ket{\uparrow}
-%=
+%&=
 %\frac{\Hbar}{2} \Theta^{-1} \sigma_x \ket{\downarrow}
-%=
+%\\ &=
 %\frac{\Hbar}{2} \Theta^{-1} \ket{\uparrow}
-%=
+%\\ &=
 %\frac{\Hbar}{2} \ket{\downarrow},
-%\end{dmath}
+%
+%\end{aligned}
+%\end{equation}
 %
 %and
 %
-%\begin{dmath}\label{eqn:qmLecture13:1540}
+%\begin{equation}\label{eqn:qmLecture13:1540}
+%\begin{aligned}
 %\Theta^{-1} \hatS_y \Theta \ket{\uparrow}
-%=
+%&=
 %\frac{\Hbar}{2} \Theta^{-1} \sigma_y \ket{\downarrow}
-%=
+%\\ &=
 %-i \frac{\Hbar}{2} \Theta^{-1} \ket{\uparrow}
-%=
+%\\ &=
 %\frac{\Hbar}{2 i} \ket{\downarrow}.
-%\end{dmath}
+%
+%\end{aligned}
+%\end{equation}
 %
 %Contrast this to the time reversed action on the spin operators
 %
@@ -380,9 +406,7 @@ The time reversed actions are
 %= \frac{\Hbar}{2} \lr{ \Abs{b}^2 - \Abs{a}^2 }
 We see that this is not right, because the sign for the x component has not been flipped.
 % (only the sign of the y component has).
-
 \paragraph{Spin 1/2 (Fermions).  Attempt II.}
-
 Again assuming
 %
 \begin{equation}\label{eqn:qmLecture13:580}
@@ -424,24 +448,22 @@ Note that acting the time reversal operator twice has the effects
 %
 We end up with the same state we started with, but with the opposite sign.  This means that as an operator
 \index{time reversal!squared}
-%\begin{dmath}\label{eqn:qmLecture13:700}
+%\begin{equation}\label{eqn:qmLecture13:700}
 \boxedEquation{eqn:qmLecture13:700}{
 \Theta^2 = -1.
 }
-%\end{dmath}
+%\end{equation}
 %
 This is try for half integer particles (Fermions) \( S = 1/2, 3/2, 5/2, \cdots \), but for Bosons with integer spin \( S \).
 %
-%\begin{dmath}\label{eqn:qmLecture13:720}
+%\begin{equation}\label{eqn:qmLecture13:720}
 \boxedEquation{eqn:qmLecture13:720}{
 \Theta^2 = 1.
 }
-%\end{dmath}
+%\end{equation}
 %
 \paragraph{Kramer's degeneracy for Spin 1/2 (Fermions)}
-
 \index{spin half!time reversal}
-
 Suppose we imagine there is state for which the action of the time reversal operator produces the same state, just different in phase.  Let
 %
 \begin{equation}\label{eqn:qmLecture13:800}
@@ -456,19 +478,21 @@ For a Fermion we have
 %
 but if such the time reversal action posited above is possible we also have
 %
-\begin{dmath}\label{eqn:qmLecture13:860}
+\begin{equation}\label{eqn:qmLecture13:860}
+\begin{aligned}
 \Theta^2 \ket{\psi}
-=
+&=
 \Theta e^{i \delta} \ket{\psi}
-=
+\\ &=
 e^{-i \delta} \Theta \ket{\psi}
-=
+\\ &=
 e^{-i \delta} e^{i \delta} \ket{\psi}
-=
+\\ &=
 \ket{\psi}
 \ne
 - \ket{\psi}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is a contradiction, so we must have at least a two-fold degeneracy.  This is called \textAndIndex{Kramer's degeneracy}.  In the homework we will show that this is not the case for integer spin particles.
 

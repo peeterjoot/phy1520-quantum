@@ -47,11 +47,11 @@ A two dimensional phase space as sketched in \cref{fig:lectureOnePhaseSpaceClass
 
 For this lecture, we'll work with natural units, setting
 %
-%\begin{dmath}\label{eqn:qmLecture1:480}
+%\begin{equation}\label{eqn:qmLecture1:480}
 \boxedEquation{eqn:qmLecture1:480}{
 \Hbar = 1.
 }
-%\end{dmath}
+%\end{equation}
 %
 \index{state vector}
 In QM we are no longer allowed to think of position and momentum, but have to start asking about state vectors \( \ket{\Psi} \).
@@ -112,18 +112,18 @@ We have a problem, if we which to compute an average in momentum space such as \
 
 How do we convert
 %
-\begin{dmath}\label{eqn:qmLecture1:180}
+\begin{equation}\label{eqn:qmLecture1:180}
 \Psi(p)
 \overset{?}{\leftrightarrow}
 \Psi(x),
-\end{dmath}
+\end{equation}
 %
 or equivalently
-\begin{dmath}\label{eqn:qmLecture1:200}
+\begin{equation}\label{eqn:qmLecture1:200}
 \braket{p}{\Psi}
 \overset{?}{\leftrightarrow}
 \braket{x}{\Psi}.
-\end{dmath}
+\end{equation}
 %
 Such a conversion can be performed by virtue of an the assumption that we have a complete orthonormal basis, for which we can introduce identity operations such as
 %
@@ -147,43 +147,47 @@ Some interpretations:
 
 The delta function interpretation of the braket \( \braket{p}{p'} \) justifies the identity operator, since we recover any state in the basis when operating with it.  For example, in momentum space
 %
-\begin{dmath}\label{eqn:qmLecture1:260}
+\begin{equation}\label{eqn:qmLecture1:260}
+\begin{aligned}
 1 \ket{p}
-=
+&=
 \lr{ \int_{-\infty}^\infty dp'
 \ket{p'}\bra{p'} }
 \ket{p}
-=
+\\ &=
 \int_{-\infty}^\infty dp'
 \ket{p'}
 \braket{p'}{p}
-=
+\\ &=
 \int_{-\infty}^\infty dp'
 \ket{p'}
 \delta(p - p')
-=
+\\ &=
 \ket{p}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This also the determination of an integral operator representation for the delta function
 %
-\begin{dmath}\label{eqn:qmLecture1:500}
+\begin{equation}\label{eqn:qmLecture1:500}
+\begin{aligned}
 \delta(x - x')
-=
+&=
 \braket{x}{x'}
-=
+\\ &=
 \int dp \braket{x}{p} \braket{p}{x'}
-=
+\\ &=
 \inv{V} \int dp e^{i p x} e^{-i p x'},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture1:520}
+\begin{equation}\label{eqn:qmLecture1:520}
 \delta(x - x')
 =
 \inv{V} \int dp e^{i p (x- x')}.
-\end{dmath}
+\end{equation}
 %
 Here we used the fact that \( \braket{p}{x} = \braket{x}{p}^\conj \).
 
@@ -191,13 +195,15 @@ FIXME: do we have a justification for that conjugation with what was defined her
 
 The conversion from a position basis to momentum space is now possible
 %
-\begin{dmath}\label{eqn:qmLecture1:280}
+\begin{equation}\label{eqn:qmLecture1:280}
+\begin{aligned}
 \braket{p}{\Psi}
-=
+&=
 \Psi(p)
-= \int_{-\infty}^\infty \braket{p}{x} \braket{x}{\Psi} dx
-= \int_{-\infty}^\infty \frac{e^{-ip x}}{\sqrt{V}} \Psi(x) dx.
-\end{dmath}
+\\ &= \int_{-\infty}^\infty \braket{p}{x} \braket{x}{\Psi} dx
+\\ &= \int_{-\infty}^\infty \frac{e^{-ip x}}{\sqrt{V}} \Psi(x) dx.
+\end{aligned}
+\end{equation}
 %
 The momentum space to position space conversion can be written as
 %
@@ -208,11 +214,12 @@ The momentum space to position space conversion can be written as
 %
 Now we can go back and figure out the an expectation
 %
-\begin{dmath}\label{eqn:qmLecture1:320}
+\begin{equation}\label{eqn:qmLecture1:320}
+\begin{aligned}
 \expectation{p}
-=
+&=
 \int \Psi^\conj(p) \Psi(p) p d p
-=
+\\ &=
 \int dp
 \lr{
 \int_{-\infty}^\infty \frac{e^{ip x}}{\sqrt{V}} \Psi^\conj(x) dx
@@ -221,30 +228,31 @@ Now we can go back and figure out the an expectation
 \int_{-\infty}^\infty \frac{e^{-ip x'}}{\sqrt{V}} \Psi(x') dx'
 }
 p
-=\int dp dx dx'
+\\ &=\int dp dx dx'
 \Psi^\conj(x)
 \inv{V} e^{ip (x-x')} \Psi(x') p
-=
+\\ &=
 \int dp dx dx'
 \Psi^\conj(x)
 \inv{V} \lr{ -i\PD{x}{e^{ip (x-x')}} }\Psi(x')
-=
+\\ &=
 \int dp dx
 \Psi^\conj(x) \lr{ -i \PD{x}{} }
 \inv{V} \int dx' e^{ip (x-x')} \Psi(x')
-=
+\\ &=
 \int dx
 \Psi^\conj(x) \lr{ -i \PD{x}{} }
 \int dx' \lr{ \inv{V} \int dp e^{ip (x-x')} } \Psi(x')
-=
+\\ &=
 \int dx
 \Psi^\conj(x) \lr{ -i \PD{x}{} }
 \int dx' \delta(x - x') \Psi(x')
-=
+\\ &=
 \int dx
 \Psi^\conj(x) \lr{ -i \PD{x}{} }
 \Psi(x).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %FIXME : Performing this integral we find
 %
 %\begin{equation}\label{eqn:qmLecture1:340}
@@ -253,18 +261,21 @@ p
 %
 %so
 %
-%\begin{dmath}\label{eqn:qmLecture1:360}
+%\begin{equation}\label{eqn:qmLecture1:360}
+%\begin{aligned}
 %\expectation{p}
-%=
+%&=
 %\int dp dx dx'
 %\lr{ \frac{e^{ip x}}{\sqrt{V}} \Psi^\conj(x)  }
 %\lr{ i \frac{\Psi(x')}{\sqrt{V}} \PD{x'}{} e^{-ip x'} }
-%= \int \frac{dx dx'}{V} \Psi^\conj(x) \Psi(x) i \PD{x'}{} \lr{ \int dp e^{i p x - i p x'} }
-%= \int \frac{dx dx'}{V} \Psi^\conj(x) \Psi(x) i \PD{x'} V \delta(x - x')
-%= \int dx dx' \Psi^\conj(x) \Psi(x) i \PD{x'}{} \delta(x - x')
-%= \int dx dx' \Psi^\conj(x) \lr{ -i \PD{x'}{\Psi(x')}} \delta(x - x')
-%= \int dx \Psi^\conj(x) \lr{ -i \PD{x}{} } \Psi(x).
-%\end{dmath}
+%\\ &= \int \frac{dx dx'}{V} \Psi^\conj(x) \Psi(x) i \PD{x'}{} \lr{ \int dp e^{i p x - i p x'} }
+%\\ &= \int \frac{dx dx'}{V} \Psi^\conj(x) \Psi(x) i \PD{x'} V \delta(x - x')
+%\\ &= \int dx dx' \Psi^\conj(x) \Psi(x) i \PD{x'}{} \delta(x - x')
+%\\ &= \int dx dx' \Psi^\conj(x) \lr{ -i \PD{x'}{\Psi(x')}} \delta(x - x')
+%\\ &= \int dx \Psi^\conj(x) \lr{ -i \PD{x}{} } \Psi(x).
+%
+%\end{aligned}
+%\end{equation}
 %
 Here we've essentially calculated the position space representation of the momentum operator, allowing identifications of the following form
 \index{momentum!operator}
@@ -280,11 +291,11 @@ p^2 \leftrightarrow - \PDSq{x}{}.
 
 Most of the above results followed from the claim that \( \braket{x}{p} = e^{i p x} \).  Note that this position space representation of the momentum operator can also be taken as the starting point.  Given that, the exponential representation of the position-momentum braket follows
 %
-\begin{dmath}\label{eqn:qmLecture1:540}
+\begin{equation}\label{eqn:qmLecture1:540}
 \bra{x} P \ket{p}
 =
 -i \Hbar \PD{x}{} \braket{x}{p},
-\end{dmath}
+\end{equation}
 %
 but \( \bra{x} P \ket{p} = p \braket{x}{p} \), providing a differential equation for \( \braket{x}{p} \)
 %

@@ -62,88 +62,100 @@ R = - \frac{\Hbar^2}{2m} \lr{ \PDSq{r}{} + \frac{2}{r} \PD{r}{} },
 %
 we have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:100}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:100}
+\begin{aligned}
 0
-= \bra{nlm} \antisymmetric{H}{p_r} \ket{nlm}
-= \bra{nlm} \antisymmetric{\frac{\Bp^2}{2m} + V(r)}{p_r} \ket{nlm}
-= \bra{nlm} \antisymmetric{\inv{2 m r^2} \BL^2 + R + V(r)}{p_r} \ket{nlm}
-= \bra{nlm} \antisymmetric{\frac{-\Hbar^2 l (l+1)}{2 m r^2} + R + V(r)}{p_r} \ket{nlm}.
-\end{dmath}
+&= \bra{nlm} \antisymmetric{H}{p_r} \ket{nlm}
+\\ &= \bra{nlm} \antisymmetric{\frac{\Bp^2}{2m} + V(r)}{p_r} \ket{nlm}
+\\ &= \bra{nlm} \antisymmetric{\inv{2 m r^2} \BL^2 + R + V(r)}{p_r} \ket{nlm}
+\\ &= \bra{nlm} \antisymmetric{\frac{-\Hbar^2 l (l+1)}{2 m r^2} + R + V(r)}{p_r} \ket{nlm}.
+\end{aligned}
+\end{equation}
 %
 Let's consider the commutator of each term separately.  First
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:120}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:120}
+\begin{aligned}
 \antisymmetric{V}{p_r} \psi
-=
+&=
 V p_r \psi
 -
 p_r V \psi
-=
+\\ &=
 V p_r \psi
 -
 (p_r V) \psi
 -
 V p_r \psi
-=
+\\ &=
 -
 (p_r V) \psi
-=
+\\ &=
 i \Hbar \PD{r}{V} \psi.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Setting \( V(r) = 1/r^2 \), we also have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:160}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:160}
 \antisymmetric{\inv{r^2}}{p_r} \psi
 =
 -\frac{2 i \Hbar}{r^3} \psi.
-\end{dmath}
+\end{equation}
 %
 Finally
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:180}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:180}
+\begin{aligned}
 \antisymmetric{\PDSq{r}{} + \frac{2}{r} \PD{r}{} }{ \PD{r}{}}
-=
+&=
 \lr{ \partial_{rr} + \frac{2}{r} \partial_r } \partial_r
 -
 \partial_r \lr{ \partial_{rr} + \frac{2}{r} \partial_r }
-=
+\\ &=
 \partial_{rrr} + \frac{2}{r} \partial_{rr}
 -
 \lr{
 \partial_{rrr} -\frac{2}{r^2} \partial_r + \frac{2}{r} \partial_{rr}
 }
-=
+\\ &=
 -\frac{2}{r^2} \partial_r,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:200}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:200}
+\begin{aligned}
 \antisymmetric{R}{p_r}
-=-\frac{2}{r^2} \frac{-\Hbar^2}{2m} p_r
-=\frac{\Hbar^2}{m r^2} p_r.
-\end{dmath}
+&=-\frac{2}{r^2} \frac{-\Hbar^2}{2m} p_r
+\\ &=\frac{\Hbar^2}{m r^2} p_r.
+\end{aligned}
+\end{equation}
 %
 Putting all the pieces back together, we've got
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:220}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:220}
+\begin{aligned}
 0
-= \bra{nlm} \antisymmetric{\frac{-\Hbar^2 l (l+1)}{2 m r^2} + R + V(r)}{p_r} \ket{nlm}
-=
+&= \bra{nlm} \antisymmetric{\frac{-\Hbar^2 l (l+1)}{2 m r^2} + R + V(r)}{p_r} \ket{nlm}
+\\ &=
 i \Hbar
 \bra{nlm} \lr{
 \frac{\Hbar^2 l (l+1)}{m r^3} - \frac{i\Hbar}{m r^2} p_r +
 \PD{r}{V}
 }
 \ket{nlm}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since s-states are those for which \( l = 0 \), this means
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:240}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:240}
+\begin{aligned}
 \expectation{\PD{r}{V}}
-= \frac{i\Hbar}{m } \expectation{ \inv{r^2} p_r }
-= \frac{\Hbar^2}{m } \expectation{ \inv{r^2} \PD{r}{} }
-= \frac{\Hbar^2}{m } \int_0^\infty dr \int_0^\pi d\theta \int_0^{2 \pi} d\phi r^2 \sin\theta \psi^\conj(r,\theta, \phi) \inv{r^2} \PD{r}{\psi(r,\theta,\phi)}.
-\end{dmath}
+&= \frac{i\Hbar}{m } \expectation{ \inv{r^2} p_r }
+\\ &= \frac{\Hbar^2}{m } \expectation{ \inv{r^2} \PD{r}{} }
+\\ &= \frac{\Hbar^2}{m } \int_0^\infty dr \int_0^\pi d\theta \int_0^{2 \pi} d\phi r^2 \sin\theta \psi^\conj(r,\theta, \phi) \inv{r^2} \PD{r}{\psi(r,\theta,\phi)}.
+\end{aligned}
+\end{equation}
 %
 Since s-states are spherically symmetric, this is
 \begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:260}
@@ -153,19 +165,19 @@ Since s-states are spherically symmetric, this is
 %
 That integral is
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:280}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:280}
 \int_0^\infty dr \psi^\conj \PD{r}{\psi}
 =
 \evalrange{\Abs{\psi}^2}{0}{\infty} - \int_0^\infty dr \PD{r}{\psi^\conj} \psi.
-\end{dmath}
+\end{equation}
 %
 With the hydrogen atom, our radial wave functions are real valued.  It's reasonable to assume that we can do the same for other real-valued spherical potentials.  If that is the case, we have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:300}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:300}
 2 \int_0^\infty dr \psi^\conj \PD{r}{\psi}
 =
 \Abs{\psi(0)}^2,
-\end{dmath}
+\end{equation}
 %
 and
 %
@@ -181,57 +193,65 @@ which completes this part of the problem.
 %
 For a hydrogen like atom, in atomic units, we have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:360}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:360}
+\begin{aligned}
 \expectation{
 \PD{r}{V}
 }
-=
+&=
 \expectation{
 \PD{r}{} \lr{ -\frac{Z e^2}{r} }
 }
-=
+\\ &=
 Z e^2
 \expectation
 {
 \inv{r^2}
 }
-=
+\\ &=
 Z e^2 \frac{Z^2}{n^3 a_0^2 \lr{ l + 1/2 }}
-=
+\\ &=
 \frac{\Hbar^2}{m a_0} \frac{2 Z^3}{n^3 a_0^2}
-=
+\\ &=
 \frac{2 \Hbar^2 Z^3}{m n^3 a_0^3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 On the other hand for \( n = 1 \), we have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:380}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:380}
+\begin{aligned}
 \frac{2 \pi \Hbar^2}{m} \Abs{R_{10}(0)}^2 \Abs{Y_{00}}^2
-=
+&=
 \frac{2 \pi \Hbar^2}{m} \frac{Z^3}{a_0^3} 4 \inv{4 \pi}
-=
+\\ &=
 \frac{2 \Hbar^2 Z^3}{m a_0^3},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and for \( n = 2 \), we have
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:400}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:400}
+\begin{aligned}
 \frac{2 \pi \Hbar^2}{m} \Abs{R_{20}(0)}^2 \Abs{Y_{00}}^2
-=
+&=
 \frac{2 \pi \Hbar^2}{m} \frac{Z^3}{8 a_0^3} 4 \inv{4 \pi}
-=
+\\ &=
 \frac{\Hbar^2 Z^3}{4 m a_0^3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 These both match the potential derivative expectation when evaluated for the s-orbital (\( l = 0 \)).
 
 In \nbref{sakuraiProblem5.16bSHO.nb} is a verification for the 3D SHO ground state.  There it was found that
 %
-\begin{dmath}\label{eqn:symmetricPotentialDerivativeExpectation:420}
+\begin{equation}\label{eqn:symmetricPotentialDerivativeExpectation:420}
+\begin{aligned}
 \expectation{\PD{r}{V}}
-= \frac{2 \pi \Hbar^2}{m } \Abs{\psi(0)}^2
-= 2 \sqrt{\frac{m \omega ^3 \Hbar}{ \pi }}.
-\end{dmath}
+&= \frac{2 \pi \Hbar^2}{m } \Abs{\psi(0)}^2
+\\ &= 2 \sqrt{\frac{m \omega ^3 \Hbar}{ \pi }}.
+\end{aligned}
+\end{equation}
 %
 } % answer
 %\EndArticle

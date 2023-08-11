@@ -54,11 +54,11 @@ Let's try allowing \( a_0 \rightarrow a \), to be a variational degree of freedo
 \psi_a(x) = \inv{\pi^{1/4}} \inv{a^{1/2} } e^{- x^2/2 a^2},
 \end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture19:100}
+\begin{equation}\label{eqn:qmLecture19:100}
 \bra{\psi_a} H \ket{\psi_a}
 =
 \bra{\psi_a} \frac{p^2}{2m} + \inv{2} m \omega^2 x^2 + \lambda x^4 \ket{\psi_a}.
-\end{dmath}
+\end{equation}
 We can find
 \begin{equation}\label{eqn:qmLecture19:120}
 \expectation{x^2} = \inv{2} a^2,
@@ -74,44 +74,48 @@ Define
 %
 so that
 %
-\begin{dmath}\label{eqn:qmLecture19:180}
+\begin{equation}\label{eqn:qmLecture19:180}
+\begin{aligned}
 \overbar{E}_a
-=
+&=
 \bra{\psi_a} \lr{ \frac{p^2}{2m} + \inv{2} m \tilde{\omega}^2 x^2 }
 + \lr{
 \inv{2} m \lr{ \omega^2 - \tilde{\omega}^2 } x^2
 +
 \lambda x^4 }
 \ket{\psi_a}
-=
+\\ &=
 \inv{2} \Hbar \tilde{\omega} + \inv{2} m  \lr{ \omega^2 - \tilde{\omega}^2 } \inv{2} a^2 + \frac{3}{4} \lambda a^4.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Write this as
-\begin{dmath}\label{eqn:qmLecture19:200}
+\begin{equation}\label{eqn:qmLecture19:200}
 \overbar{E}_{\tilde{\omega}}
 =
 \inv{2} \Hbar \tilde{\omega} + \inv{4} \frac{\Hbar}{\tilde{\omega}} \lr{ \omega^2 - \tilde{\omega}^2 } + \frac{3}{4} \lambda \frac{\Hbar^2}{m^2 \tilde{\omega}^2 }.
-\end{dmath}
+\end{equation}
 %
 This might look something like \cref{fig:lecture19:lecture19Fig1}.
 \imageFigure{../figures/phy1520-quantum/lecture19Fig1a}{Energy after perturbation.}{fig:lecture19:lecture19Fig1}{0.2}
 Demand that
 %
-\begin{dmath}\label{eqn:qmLecture19:220}
+\begin{equation}\label{eqn:qmLecture19:220}
+\begin{aligned}
 0
-= \PD{\tilde{\omega}}{ \overbar{E}_{\tilde{\omega}}}
-=
+&= \PD{\tilde{\omega}}{ \overbar{E}_{\tilde{\omega}}}
+\\ &=
 \frac{\Hbar}{2} - \frac{\Hbar}{4} \frac{\omega^2}{\tilde{\omega}^2}
 - \frac{\Hbar}{4}
 + \frac{3}{4} (-2) \frac{\lambda \Hbar^2}{m^2 \tilde{\omega}^3}
-=
+\\ &=
 \frac{\Hbar}{4}
 \lr{
 1 - \frac{\omega^2}{\tilde{\omega}^2}
 - 6 \frac{\lambda \Hbar}{m^2 \tilde{\omega}^3}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
 \begin{equation}\label{eqn:qmLecture19:260}
 \tilde{\omega}^3 - \omega^2 \tilde{\omega} - \frac{6 \lambda \Hbar}{m^2} = 0.
@@ -137,18 +141,20 @@ and
 %
 Plugging into
 %
-\begin{dmath}\label{eqn:qmLecture19:340}
+\begin{equation}\label{eqn:qmLecture19:340}
+\begin{aligned}
 \overbar{E}_{\omega + \epsilon}
-=
+&=
 \inv{2} \Hbar \lr{ \omega + \epsilon }
 + \inv{4} \frac{\Hbar}{\omega} \lr{ -2 \omega \epsilon + \epsilon^2 } + \frac{3}{4} \lambda \frac{\Hbar^2}{m^2 \omega^2 }
 \approx
 \inv{2} \Hbar \lr{ \omega + \epsilon }
 - \inv{2} \Hbar \epsilon
 + \frac{3}{4} \lambda \frac{\Hbar^2}{m^2 \omega^2 }
-=
+\\ &=
 \inv{2} \Hbar \omega + \frac{3}{4} \lambda a_0^4.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \cref{eqn:qmLecture19:320}, that is
 %

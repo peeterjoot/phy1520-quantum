@@ -46,34 +46,36 @@ Use this to find the momentum space representation of the Schr\"{o}dinger equati
 \makeanswer{problem:shoMomentumSpace:15}{
 To expand the matrix element, introduce both momentum and position space identity operators
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:60}
+\begin{equation}\label{eqn:shoMomentumSpace:60}
+\begin{aligned}
 \bra{p'} x \ket{\alpha}
-=
+&=
 \int dx' dp'' \braket{p'}{x'}\bra{x'}x \ket{p''}\braket{p''}{\alpha}
-=
+\\ &=
 \int dx' dp'' \braket{p'}{x'}x'\braket{x'}{p''}\braket{p''}{\alpha}
-=
+\\ &=
 \inv{2 \pi \Hbar}
 \int dx' dp'' e^{-i p' x'/\Hbar} x' e^{i p'' x'/\Hbar} \braket{p''}{\alpha}
-=
+\\ &=
 \inv{2 \pi \Hbar}
 \int dx' dp'' x' e^{i (p'' - p') x'/\Hbar} \braket{p''}{\alpha}
-=
+\\ &=
 \inv{2 \pi \Hbar}
 \int dx' dp'' \frac{d}{dp''}\lr{ \frac{-i \Hbar} e^{i (p'' - p') x'/\Hbar} } \braket{p''}{\alpha}
-=
+\\ &=
 i \Hbar
 \int dp''
 \lr{ \inv{2 \pi \Hbar}
 \int dx' e^{i (p'' - p') x'/\Hbar} } \frac{d}{dp''} \braket{p''}{\alpha}
-=
+\\ &=
 i \Hbar
 \int dp'' \delta(p''- p')
 \frac{d}{dp''} \braket{p''}{\alpha}
-=
+\\ &=
 i \Hbar
 \frac{d}{dp'} \braket{p'}{\alpha}. \qedmarker
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 Schr\"{o}dinger's equation for a time dependent state \( \ket{\alpha} = U(t) \ket{\alpha,0} \) is
 %
@@ -89,14 +91,16 @@ i \Hbar \PD{t}{} \braket{p'}{\alpha} = \bra{p'} H \ket{\alpha}.
 %
 Expansion of the Hamiltonian matrix element for a strictly spatial dependent potential \( V(x) \) gives
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:120}
+\begin{equation}\label{eqn:shoMomentumSpace:120}
+\begin{aligned}
 \bra{p'} H \ket{\alpha}
-=
+&=
 \bra{p'} \lr{\frac{p^2}{2m} + V(x) } \ket{\alpha}
-=
+\\ &=
 \frac{(p')^2}{2m}
 + \bra{p'} V(x) \ket{\alpha}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Assuming a Taylor representation of the potential \( V(x) = \sum c_k x^k \), we want to calculate
 %
@@ -107,37 +111,43 @@ Assuming a Taylor representation of the potential \( V(x) = \sum c_k x^k \), we 
 %
 With \( \ket{\alpha} = \ket{p''} \) \cref{eqn:shoMomentumSpace:40} provides the \( k = 1 \) term
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:160}
+\begin{equation}\label{eqn:shoMomentumSpace:160}
+\begin{aligned}
 \bra{p'} x \ket{p''}
-= i \Hbar \frac{d}{dp'} \braket{p'}{p''}
-= i \Hbar \frac{d}{dp'} \delta(p' - p''),
-\end{dmath}
+&= i \Hbar \frac{d}{dp'} \braket{p'}{p''}
+\\ &= i \Hbar \frac{d}{dp'} \delta(p' - p''),
+\end{aligned}
+\end{equation}
 %
 where it is implied here that the derivative is operating on not just the delta function, but on all else that follows.
 
 Using this the higher powers of \( \bra{p'} x^k \ket{\alpha} \) can be found easily.  For example for \( k = 2 \) we have
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:180}
+\begin{equation}\label{eqn:shoMomentumSpace:180}
+\begin{aligned}
 \bra{p'} x^2 \ket{\alpha}
-=
+&=
 \int dp''
 \bra{p'} x \ket{p''}\bra{p''} x \ket{\alpha}
-=
+\\ &=
 \int dp''
 i \Hbar
 \frac{d}{dp'} \delta(p' - p'') i \Hbar \frac{d}{dp''} \braket{p''}{\alpha}
-=
+\\ &=
 \lr{ i \Hbar }^2 \frac{d^2}{d(p')^2} \braket{p'}{\alpha}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This means that the potential matrix element is
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:200}
+\begin{equation}\label{eqn:shoMomentumSpace:200}
+\begin{aligned}
 \bra{p'} V(x) \ket{\alpha}
-=
+&=
 \sum c_k \lr{ i \Hbar \frac{d}{dp'} }^k \braket{p'}{\alpha}
-= V\lr{ i \Hbar \frac{d}{dp'} }.
-\end{dmath}
+\\ &= V\lr{ i \Hbar \frac{d}{dp'} }.
+\end{aligned}
+\end{equation}
 %
 With 
 \begin{equation}\label{eqn:shoMomentumSpace:219}
@@ -145,23 +155,25 @@ With
 \end{equation}
 the momentum space representation of Schr\"{o}dinger's equation for a position dependent potential is
 %
-%\begin{dmath}\label{eqn:shoMomentumSpace:220}
+%\begin{equation}\label{eqn:shoMomentumSpace:220}
 \boxedEquation{eqn:shoMomentumSpace:220}{
 i \Hbar \PD{t}{} \Psi_\alpha(p')
 =
 \lr{ \frac{(p')^2}{2m} + V\lr{ i \Hbar \PDi{p'}{} } } \Psi_\alpha(p').
 }
-%\end{dmath}
+%\end{equation}
 %
 For the SHO Hamiltonian the potential is \( V(x) = (1/2) m \omega^2 x^2 \), so the Schr\"{o}dinger equation is
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:240}
+\begin{equation}\label{eqn:shoMomentumSpace:240}
+\begin{aligned}
 i \Hbar \PD{t}{} \Psi_\alpha(p')
-=
+&=
 \lr{ \frac{(p')^2}{2m} - \inv{2} m \omega^2 \Hbar^2 \frac{\partial^2}{\partial(p')^2} } \Psi_\alpha(p')
-=
+\\ &=
 \inv{2 m} \lr{ (p')^2 - m^2 \omega^2 \Hbar^2 \frac{\partial^2}{\partial(p')^2} } \Psi_\alpha(p').
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 To determine the wave functions, let's non-dimensionalize this and compare to the position space Schr\"{o}dinger equation.  Let
 %
@@ -170,33 +182,36 @@ p_0^2 = m \omega \hbar,
 \end{equation}
 %
 so
-\begin{dmath}\label{eqn:shoMomentumSpace:280}
+\begin{equation}\label{eqn:shoMomentumSpace:280}
+\begin{aligned}
 i \Hbar \PD{t}{} \Psi_\alpha(p')
-=
+&=
 \frac{p_0^2}{2 m} \lr{ \lr{\frac{p'}{p_0}}^2 - \frac{\partial^2}{\partial(p'/p_0)^2} } \Psi_\alpha(p')
-=
+\\ &=
 \frac{\omega \Hbar}{2}\lr{
 - \frac{\partial^2}{\partial(p'/p_0)^2} +
 \lr{\frac{p'}{p_0}}^2
 } \Psi_\alpha(p').
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Compare this to the position space equation with \( x_0^2 = m \omega/\Hbar \),
 %
-\begin{dmath}\label{eqn:shoMomentumSpace:300}
+\begin{equation}\label{eqn:shoMomentumSpace:300}
+\begin{aligned}
 i \Hbar \PD{t}{} \Psi_\alpha(x')
-=
+&=
 \lr{ -\frac{\Hbar^2}{2m} \frac{\partial^2}{\partial(x')^2}
 +
 \inv{2} m \omega^2 (x')^2 }
 \Psi_\alpha(x')
-=
+\\ &=
 \frac{\Hbar^2}{2m}
 \lr{ -\frac{\partial^2}{\partial(x')^2}
 +
 \frac{m^2 \omega^2}{\Hbar^2} (x')^2 }
 \Psi_\alpha(x')
-=
+\\ &=
 \frac{\Hbar^2 x_0^2}{2m}
 \lr{
 -\frac{\partial^2}{\partial(x'/x_0)^2}
@@ -204,7 +219,7 @@ i \Hbar \PD{t}{} \Psi_\alpha(x')
 \lr{\frac{x'}{x_0}}^2
 }
 \Psi_\alpha(x')
-=
+\\ &=
 \frac{\Hbar \omega}{2}
 \lr{
 -\frac{\partial^2}{\partial(x'/x_0)^2}
@@ -212,7 +227,8 @@ i \Hbar \PD{t}{} \Psi_\alpha(x')
 \lr{\frac{x'}{x_0}}^2
 }
 \Psi_\alpha(x').
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 It's clear that there is a straightforward duality relationship between the respective wave functions.  Since
 %

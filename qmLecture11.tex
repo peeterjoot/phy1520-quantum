@@ -79,13 +79,13 @@ This won't hold true for a general operator.   Two cases where this does hold tr
 
 If an ``observable'' is not changed by a unitary operation representing a symmetry we must have
 %
-\begin{dmath}\label{eqn:qmLecture11:140}
+\begin{equation}\label{eqn:qmLecture11:140}
 \bra{\psi} \hatA \ket{\psi}
 \rightarrow
 \bra{U \psi} \hatA \ket{U \psi}
 =
 \bra{\psi} U^\dagger \hatA U \ket{\psi},
-\end{dmath}
+\end{equation}
 %
 so
 \begin{equation}\label{eqn:qmLecture11:160}
@@ -110,11 +110,13 @@ Given
 H \ket{\phi_n} = \epsilon_n \ket{\phi_n},
 \end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture11:240}
+\begin{equation}\label{eqn:qmLecture11:240}
+\begin{aligned}
 U H \ket{\phi_n}
-= H U \ket{\phi_n}
-= \epsilon_n U \ket{\phi_n}.
-\end{dmath}
+&= H U \ket{\phi_n}
+\\ &= \epsilon_n U \ket{\phi_n}.
+\end{aligned}
+\end{equation}
 Such a state
 %
 \begin{equation}\label{eqn:qmLecture11:260}
@@ -189,12 +191,14 @@ or
 \end{equation}
 %
 %FIXME: show that \( \hat\Pi^\dagger \hatp \hat\Pi = - \hatp \).
-\begin{dmath}\label{eqn:qmLecture11:480}
+\begin{equation}\label{eqn:qmLecture11:480}
+\begin{aligned}
 \hatx \hat\Pi \ket{x_0}
-= - \hat\Pi \hatx  \ket{x_0}
-= - \hat\Pi x_0 \ket{x_0}
-= - x_0 \hat\Pi \ket{x_0},
-\end{dmath}
+&= - \hat\Pi \hatx  \ket{x_0}
+\\ &= - \hat\Pi x_0 \ket{x_0}
+\\ &= - x_0 \hat\Pi \ket{x_0},
+\end{aligned}
+\end{equation}
 so
 %
 \begin{equation}\label{eqn:qmLecture11:500}
@@ -203,12 +207,14 @@ so
 %
 Acting on a wave function
 %
-\begin{dmath}\label{eqn:qmLecture11:520}
+\begin{equation}\label{eqn:qmLecture11:520}
+\begin{aligned}
 \bra{x} \hat\Pi \ket{\psi}
-=
+&=
 \braket{-x}{\psi}
-= \psi(-x).
-\end{dmath}
+\\ &= \psi(-x).
+\end{aligned}
+\end{equation}
 %
 What does this mean for eigenfunctions.  Eigenfunctions are supposed to form irreducible representations of the group.  The group has just two elements
 %
@@ -226,31 +232,35 @@ H = \frac{\hatp^2}{2m} + V(\hatx),
 %
 where \( V(\hatx) \) is even, or \( \antisymmetric{V(\hatx)}{\hat\Pi } = 0 \).  The squared momentum commutes with the parity operator
 %
-\begin{dmath}\label{eqn:qmLecture11:580}
+\begin{equation}\label{eqn:qmLecture11:580}
+\begin{aligned}
 \antisymmetric{\hatp^2}{\hat\Pi}
-=
+&=
 \hatp^2 \hat\Pi
 - \hat\Pi \hatp^2
-=
+\\ &=
 \hatp^2 \hat\Pi
 - (\hat\Pi \hatp) \hatp
-=
+\\ &=
 \hatp^2 \hat\Pi
 -(- \hatp \hat\Pi) \hatp
-=
+\\ &=
 \hatp^2 \hat\Pi
 + \hatp (-\hatp \hat\Pi)
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Only two functions are possible in the symmetry set \( \setlr{ \Psi(x), \hat\Pi \Psi(x) } \), since
 %
-\begin{dmath}\label{eqn:qmLecture11:600}
+\begin{equation}\label{eqn:qmLecture11:600}
+\begin{aligned}
 \hat\Pi^2 \Psi(x)
-= \hat\Pi \Psi(-x)
-= \Psi(x).
-\end{dmath}
+&= \hat\Pi \Psi(-x)
+\\ &= \Psi(x).
+\end{aligned}
+\end{equation}
 %
 This symmetry severely restricts the possible solutions, making it so there can be only one dimensional forms of this problem with solutions that are either even or odd respectively
 %

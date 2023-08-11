@@ -56,40 +56,48 @@ H \Theta = \Theta H.
 %
 If \( \ket{\psi} \) is an energy eigenstate with eigenvalue \( E \), we have
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:80}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:80}
+\begin{aligned}
 H \Theta \ket{\psi}
-= \Theta H \ket{\psi}
-= \lambda \Theta \ket{\psi},
-\end{dmath}
+&= \Theta H \ket{\psi}
+\\ &= \lambda \Theta \ket{\psi},
+\end{aligned}
+\end{equation}
 %
 so \( \Theta \ket{\psi} \) is also an eigenvalue of \( H \), so can only differ from \( \ket{\psi} \) by a phase factor.  That is
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:100}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:100}
+\begin{aligned}
 \ket{\psi'}
-=
+&=
 \Theta \ket{\psi}
-= e^{i\delta} \ket{\psi}.
-\end{dmath}
+\\ &= e^{i\delta} \ket{\psi}.
+\end{aligned}
+\end{equation}
 %
 Now consider the expectation of \( \BL \) with respect to a time reversed state
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:120}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:120}
+\begin{aligned}
 \bra{ \psi'} \BL \ket{\psi'}
-=
+&=
 \bra{ \psi} \Theta^{-1} \BL \Theta \ket{\psi}
-=
+\\ &=
 \bra{ \psi} (-\BL) \ket{\psi},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 however, we also have
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:140}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:140}
+\begin{aligned}
 \bra{ \psi'} \BL \ket{\psi'}
-=
+&=
 \lr{ \bra{ \psi} e^{-i\delta} } \BL \lr{ e^{i\delta} \ket{\psi} }
-=
+\\ &=
 \bra{\psi} \BL \ket{\psi},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we have \( \bra{\psi} \BL \ket{\psi} = -\bra{\psi} \BL \ket{\psi} \) which is only possible if \( \expectation{\BL} = \bra{\psi} \BL \ket{\psi} = 0\).
 %
@@ -97,33 +105,37 @@ so we have \( \bra{\psi} \BL \ket{\psi} = -\bra{\psi} \BL \ket{\psi} \) which is
 %
 Consider the expansion of the wave function of a time reversed energy eigenstate
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:160}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:160}
+\begin{aligned}
 \bra{\Bx} \Theta \ket{\psi}
-=
+&=
 \bra{\Bx} e^{i\delta} \ket{\psi}
-=
+\\ &=
 e^{i\delta} \braket{\Bx}{\psi},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and then consider the same state expanded in the position basis
 %
-\begin{dmath}\label{eqn:totallyAsymmetricPotential:180}
+\begin{equation}\label{eqn:totallyAsymmetricPotential:180}
+\begin{aligned}
 \bra{\Bx} \Theta \ket{\psi}
-=
+&=
 \bra{\Bx} \Theta \int d^3 \Bx' \lr{ \ket{\Bx'}\bra{\Bx'} } \ket{\psi}
-=
+\\ &=
 \bra{\Bx} \Theta \int d^3 \Bx' \lr{ \braket{\Bx'}{\psi} } \ket{\Bx'}
-=
+\\ &=
 \bra{\Bx} \int d^3 \Bx' \lr{ \braket{\Bx'}{\psi} }^\conj \Theta \ket{\Bx'}
-=
+\\ &=
 \bra{\Bx} \int d^3 \Bx' \lr{ \braket{\Bx'}{\psi} }^\conj \ket{\Bx'}
-=
+\\ &=
 \int d^3 \Bx' \lr{ \braket{\Bx'}{\psi} }^\conj \braket{\Bx}{\Bx'}
-=
+\\ &=
 \int d^3 \Bx' \braket{\psi}{\Bx'} \delta(\Bx- \Bx')
-=
+\\ &=
 \braket{\psi}{\Bx}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This demonstrates a relationship between the wave function and its complex conjugate
 %

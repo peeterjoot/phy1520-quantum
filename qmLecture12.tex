@@ -97,13 +97,15 @@ A non-infinitesimal translation can be composed of many small translations, as s
 \imageFigure{../figures/phy1520-quantum/lecture12Fig2}{Composition of small translations.}{fig:lecture12:lecture12Fig2}{0.15}
 For \( \epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a \), the total translation operator is
 %
-\begin{dmath}\label{eqn:qmLecture12:220}
+\begin{equation}\label{eqn:qmLecture12:220}
+\begin{aligned}
 \hatT_{a}
-= \hatT_{\epsilon}^N
-= \lim_{\epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a }
+&= \hatT_{\epsilon}^N
+\\ &= \lim_{\epsilon \rightarrow 0, N \rightarrow \infty, N \epsilon = a }
 \lr{ 1 - \frac{\epsilon}{\Hbar} \hatp }^N
-= e^{-i a \hatp/\Hbar}.
-\end{dmath}
+\\ &= e^{-i a \hatp/\Hbar}.
+\end{aligned}
+\end{equation}
 The momentum \( \hatp \) is called a ``Generator'' \index{generator!translation} of translations.  If a Hamiltonian \( H \) is translationally invariant, then
 %
 \begin{equation}\label{eqn:qmLecture12:240}
@@ -127,12 +129,14 @@ Given a rotation acting on a ket
 %
 observe that the action of the rotation operator on a wave function is inverted
 %
-\begin{dmath}\label{eqn:qmLecture12:300}
+\begin{equation}\label{eqn:qmLecture12:300}
+\begin{aligned}
 \bra{\Br} \hatR \ket{\Psi}
-=
+&=
 \bra{R^{-1} \Br} \ket{\Psi}
-= \Psi(R^{-1} \Br).
-\end{dmath}
+\\ &= \Psi(R^{-1} \Br).
+\end{aligned}
+\end{equation}
 %
 \makeexample{Z axis normal rotation}{example:qmLecture12:1}{
 
@@ -152,10 +156,11 @@ z' &= z.
 \end{equation}
 The rotated wave function is
 %
-\begin{dmath}\label{eqn:qmLecture12:340}
+\begin{equation}\label{eqn:qmLecture12:340}
+\begin{aligned}
 \tilde{\Psi}(x,y,z)
-= \Psi( x + \epsilon y, y - \epsilon x, z )
-=
+&= \Psi( x + \epsilon y, y - \epsilon x, z )
+\\ &=
  \Psi( x, y, z )
 +
 \epsilon y
@@ -167,11 +172,12 @@ The rotated wave function is
 \mathLabelBox
 [ labelstyle={below of=m\themathLableNode, below of=m\themathLableNode} ]
 {\PD{y}{\Psi}}{\(i \hatp_y/\Hbar\)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The state must then transform as
 %
-\begin{dmath}\label{eqn:qmLecture12:360}
+\begin{equation}\label{eqn:qmLecture12:360}
 \ket{\tilde{\Psi}}
 =
 \lr{
@@ -180,46 +186,46 @@ The state must then transform as
 - i \frac{\epsilon}{\Hbar} \hatx \hatp_y
 }
 \ket{\Psi}.
-\end{dmath}
+\end{equation}
 %
 Observe that the combination \( \hatx \hatp_y - \haty \hatp_x \) is the \( \hatL_z \) component of angular momentum \( \Lcap = \rcap \cross \pcap \), so the infinitesimal rotation can be written
 %
-%\begin{dmath}\label{eqn:qmLecture12:380}
+%\begin{equation}\label{eqn:qmLecture12:380}
 \boxedEquation{eqn:qmLecture12:400}{
 \hatR_z(\epsilon) \ket{\Psi}
 =
 \lr{ 1 - i \frac{\epsilon}{\Hbar} \hatL_z } \ket{\Psi}.
 }
-%\end{dmath}
+%\end{equation}
 %
 For a finite rotation \( \epsilon \rightarrow 0, N \rightarrow \infty, \phi = \epsilon N \), the total rotation is
 %
-\begin{dmath}\label{eqn:qmLecture12:420}
+\begin{equation}\label{eqn:qmLecture12:420}
 \hatR_z(\phi)
 =
 \lr{ 1 - \frac{i \epsilon}{\Hbar} \hatL_z }^N,
-\end{dmath}
+\end{equation}
 %
 or
-%\begin{dmath}\label{eqn:qmLecture12:440}
+%\begin{equation}\label{eqn:qmLecture12:440}
 \boxedEquation{eqn:qmLecture12:460}{
 \hatR_z(\phi)
 =
 e^{-i \frac{\phi}{\Hbar} \hatL_z}.
 }
-%\end{dmath}
+%\end{equation}
 %
 Note that \( \antisymmetric{\hatL_x}{\hatL_y} \ne 0 \).
 } % example
 By construction using Euler angles or any other method, a general rotation will include contributions from components of all the angular momentum operator, and will have the structure
 %
-%\begin{dmath}\label{eqn:qmLecture12:480}
+%\begin{equation}\label{eqn:qmLecture12:480}
 \boxedEquation{eqn:qmLecture12:500}{
 \hatR_\ncap(\phi)
 =
 e^{-i \frac{\phi}{\Hbar} \lr{ \Lcap \cdot \ncap }}.
 }
-%\end{dmath}
+%\end{equation}
 %
 \paragraph{Rotationally invariant \( \hatH \).}
 \index{rotation invariance}

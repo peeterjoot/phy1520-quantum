@@ -29,37 +29,41 @@ is introduced in a discussion on the Aharonov-Bohm effect, for configurations wh
 
 I wasn't able to make sense of this since the field I was calculating was zero for all \( \rho \ne 0 \)
 %
-\begin{dmath}\label{eqn:solenoidConstantField:40}
+\begin{equation}\label{eqn:solenoidConstantField:40}
+\begin{aligned}
 \BB
-= \spacegrad \cross \BA
-= \lr{ \rhocap \partial_\rho + \zcap \partial_z + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho_a^2}{2 \rho} \phicap
-= \lr{ \rhocap \partial_\rho + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho_a^2}{2 \rho} \phicap
-=
+&= \spacegrad \cross \BA
+\\ &= \lr{ \rhocap \partial_\rho + \zcap \partial_z + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho_a^2}{2 \rho} \phicap
+\\ &= \lr{ \rhocap \partial_\rho + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho_a^2}{2 \rho} \phicap
+\\ &=
 \frac{B \rho_a^2}{2}
 \rhocap \cross \phicap \partial_\rho \lr{ \inv{\rho} }
 +
 \frac{B \rho_a^2}{2 \rho}
 \frac{\phicap}{\rho} \cross \partial_\phi \phicap
-=
+\\ &=
 \frac{B \rho_a^2}{2 \rho^2} \lr{ -\zcap + \phicap \cross \partial_\phi \phicap}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Note that the \( \rho \) partial requires that \( \rho \ne 0 \).  To expand the cross product in the second term let \( j = \Be_1 \Be_2 \), and expand using a geometric algebra representation of the unit vector
 %
-\begin{dmath}\label{eqn:solenoidConstantField:60}
+\begin{equation}\label{eqn:solenoidConstantField:60}
+\begin{aligned}
 \phicap \cross \partial_\phi \phicap
-=
+&=
 \Be_2 e^{j \phi} \cross \lr{ \Be_2 \Be_1 \Be_2 e^{j \phi} }
-=
+\\ &=
 - \Be_1 \Be_2 \Be_3
 \gpgradetwo{
 \Be_2 e^{j \phi} (-\Be_1) e^{j \phi}
 }
-=
+\\ &=
 \Be_1 \Be_2 \Be_3 \Be_2 \Be_1
-= \Be_3
-= \zcap.
-\end{dmath}
+\\ &= \Be_3
+\\ &= \zcap.
+\end{aligned}
+\end{equation}
 %
 So, provided \( \rho \ne 0 \), \( \BB = 0 \).
 
@@ -77,21 +81,23 @@ or
 %
 The first doesn't work, but the second does
 %
-\begin{dmath}\label{eqn:solenoidConstantField:120}
+\begin{equation}\label{eqn:solenoidConstantField:120}
+\begin{aligned}
 \BB
-= \spacegrad \cross \BA
-= \lr{ \rhocap \partial_\rho + \zcap \partial_z + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho}{2 } \phicap
-=
+&= \spacegrad \cross \BA
+\\ &= \lr{ \rhocap \partial_\rho + \zcap \partial_z + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{B \rho}{2 } \phicap
+\\ &=
 \frac{B }{2 } \rhocap \cross \phicap
 +
 \frac{B \rho}{2 }
 \frac{\phicap}{\rho} \cross \partial_\phi \phicap
-= B \zcap.
-\end{dmath}
+\\ &= B \zcap.
+\end{aligned}
+\end{equation}
 %
 So the vector potential that we want for a constant \( B \zcap \) field in the interior \( \rho < \rho_a \) of a cylindrical space, we need
 %
-\begin{dmath}\label{eqn:solenoidConstantField:140}
+\begin{equation}\label{eqn:solenoidConstantField:140}
 \BA =
 \left\{
 \begin{array}{l l}
@@ -99,7 +105,7 @@ So the vector potential that we want for a constant \( B \zcap \) field in the i
 \frac{B \rho}{2} \phicap & \quad \mbox{if \( \rho < \rho_a \).}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 An example of the magnitude of potential is graphed in \cref{fig:solenoidPotential:solenoidPotentialFig1}.
 

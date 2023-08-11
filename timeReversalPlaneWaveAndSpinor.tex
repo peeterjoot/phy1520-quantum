@@ -48,26 +48,29 @@ H = \frac{\Bp^2}{2m} = i \PD{t}{}.
 %
 Under time reversal the momentum side transforms as
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:40}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:40}
+\begin{aligned}
 \Theta \frac{\Bp^2}{2m} \Theta^{-1}
-=
+&=
 \frac{\lr{ \Theta \Bp \Theta^{-1}} \cdot \lr{ \Theta \Bp \Theta^{-1}} }{2m}
-=
+\\ &=
 \frac{(-\Bp) \cdot (-\Bp)}{2m}
-=
+\\ &=
 \frac{\Bp^2}{2m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The time derivative side of the equation is also time reversal invariant
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:60}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:60}
+\begin{aligned}
 \Theta i \PD{t}{} \Theta^{-1}
-=
+&=
 \Theta i \Theta^{-1} \Theta \PD{t}{} \Theta^{-1}
-=
--i \PD{(-t)}{}
-=
+\\ &=
+-i \PD{(-t)}{} =
 i \PD{t}{}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Solutions to this equation are linear combinations of
 %
@@ -77,13 +80,15 @@ Solutions to this equation are linear combinations of
 %
 where \( \Hbar^2 \Bk^2/2m = E \), the energy of the particle.  Under time reversal we have
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:100}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:100}
+\begin{aligned}
 \psi(\Bx, t)
 \rightarrow e^{-i \Bk \cdot \Bx + i E (-t)/\Hbar}
-= \lr{ e^{i \Bk \cdot \Bx - i E (-t)/\Hbar} }^\conj
-=
+&= \lr{ e^{i \Bk \cdot \Bx - i E (-t)/\Hbar} }^\conj
+\\ &=
 \psi^\conj(\Bx, -t).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:timeReversalPlaneWaveAndSpinor:1:b}
 %
@@ -95,15 +100,16 @@ The text uses a requirement for time reversal of spin states to show that the Pa
 %
 where \( K \) is a complex conjugating operator, and \( \eta \) is a phase factor with \( \Abs{\eta}^2 = 1 \).  The form of the spin up state used in that demonstration was
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:140}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:140}
+\begin{aligned}
 \ket{\ncap ; +}
-= e^{-i S_z \beta/\Hbar} e^{-i S_y \gamma/\Hbar} \ket{+}
-= e^{-i \sigma_z \beta/2} e^{-i \sigma_y \gamma/2} \ket{+}
-= \lr{ \cos(\beta/2) - i \sigma_z \sin(\beta/2) }
+&= e^{-i S_z \beta/\Hbar} e^{-i S_y \gamma/\Hbar} \ket{+}
+\\ &= e^{-i \sigma_z \beta/2} e^{-i \sigma_y \gamma/2} \ket{+}
+\\ &= \lr{ \cos(\beta/2) - i \sigma_z \sin(\beta/2) }
  \lr{ \cos(\gamma/2) - i \sigma_y \sin(\gamma/2) } \ket{+}
-= \lr{ \cos(\beta/2) - i \PauliZ \sin(\beta/2) }
+\\ &= \lr{ \cos(\beta/2) - i \PauliZ \sin(\beta/2) }
  \lr{ \cos(\gamma/2) - i \PauliY \sin(\gamma/2) } \ket{+}
-=
+\\ &=
 \begin{bmatrix}
 e^{-i\beta/2} & 0 \\
 0 & e^{i \beta/2}
@@ -116,7 +122,7 @@ e^{-i\beta/2} & 0 \\
 1 \\
 0
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 e^{-i\beta/2} & 0 \\
 0 & e^{i \beta/2}
@@ -125,7 +131,7 @@ e^{-i\beta/2} & 0 \\
 \cos(\gamma/2) \\
 \sin(\gamma/2) \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\gamma/2)
 e^{-i\beta/2}
@@ -133,42 +139,49 @@ e^{-i\beta/2}
 \sin(\gamma/2)
 e^{i \beta/2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The state orthogonal to this one is claimed to be
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:180}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:180}
+\begin{aligned}
 \ket{\ncap ; -}
-= e^{-i S_z \beta/\Hbar} e^{-i S_y (\gamma + \pi)/\Hbar} \ket{+}
-= e^{-i \sigma_z \beta/2} e^{-i \sigma_y (\gamma + \pi)/2} \ket{+}.
-\end{dmath}
+&= e^{-i S_z \beta/\Hbar} e^{-i S_y (\gamma + \pi)/\Hbar} \ket{+}
+\\ &= e^{-i \sigma_z \beta/2} e^{-i \sigma_y (\gamma + \pi)/2} \ket{+}.
+\end{aligned}
+\end{equation}
 %
 We have
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:200}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:200}
+\begin{aligned}
 \cos((\gamma + \pi)/2)
-=
+&=
 \Real e^{i(\gamma + \pi)/2}
-=
+\\ &=
 \Real i e^{i\gamma/2}
-=
+\\ &=
 -\sin(\gamma/2),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:220}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:220}
+\begin{aligned}
 \sin((\gamma + \pi)/2)
-=
+&=
 \Imag e^{i(\gamma + \pi)/2}
-=
+\\ &=
 \Imag i e^{i\gamma/2}
-=
+\\ &=
 \cos(\gamma/2),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we should have
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:240}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:240}
 \ket{\ncap ; -}
 =
 \begin{bmatrix}
@@ -178,13 +191,14 @@ e^{-i\beta/2}
 \cos(\gamma/2)
 e^{i \beta/2}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This looks right, but we can sanity check orthogonality
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:260}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:260}
+\begin{aligned}
 \braket{\ncap ; -}{\ncap ; +}
-=
+&=
 \begin{bmatrix}
 -\sin(\gamma/2)
 e^{i\beta/2}
@@ -199,29 +213,31 @@ e^{-i\beta/2}
 \sin(\gamma/2)
 e^{i \beta/2}
 \end{bmatrix}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 as expected.
 
 The task at hand appears to be the operation on the column representation of \( \ket{\ncap; +} \) using the Pauli representation of the time reversal operator.  With the phase factor \( \eta = 1 \) the time reversal action on the spin up state is
 %
-\begin{dmath}\label{eqn:timeReversalPlaneWaveAndSpinor:160}
+\begin{equation}\label{eqn:timeReversalPlaneWaveAndSpinor:160}
+\begin{aligned}
 \Theta \ket{\ncap ; +}
-=
+&=
 -i \sigma_y K
 \begin{bmatrix}
 e^{-i\beta/2} \cos(\gamma/2) \\
 e^{i \beta/2} \sin(\gamma/2)
 \end{bmatrix}
-=
+\\ &=
 -i \PauliY
 \begin{bmatrix}
 e^{i\beta/2} \cos(\gamma/2) \\
 e^{-i \beta/2} \sin(\gamma/2)
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 0 & -1 \\
 1 & 0
@@ -230,13 +246,14 @@ e^{-i \beta/2} \sin(\gamma/2)
 e^{i\beta/2} \cos(\gamma/2) \\
 e^{-i \beta/2} \sin(\gamma/2)
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 -e^{-i \beta/2} \sin(\gamma/2) \\
 e^{i\beta/2} \cos(\gamma/2) \\
 \end{bmatrix}
-= \ket{\ncap ; -}. \qedmarker
-\end{dmath}
+\\ &= \ket{\ncap ; -}. \qedmarker
+\end{aligned}
+\end{equation}
 } % answer
 Observe that we need \( \eta = i \) to have this match eq. (4.79) in the text where \( \Theta = i^{2m} \ket{j, -m} \).
 %}

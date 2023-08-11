@@ -22,11 +22,11 @@
 In \citep{sakurai2014modern} the \textAndIndex{Schwartz inequality}
 %
 \boxedEquation{eqn:qmSchwartz:20}{
-%\begin{dmath}\label{eqn:qmSchwartz:20}
+%\begin{equation}\label{eqn:qmSchwartz:20}
 \braket{a}{a}
 \braket{b}{b}
 \ge \Abs{\braket{a}{b}}^2,
-%\end{dmath}
+%\end{equation}
 }
 is used in the derivation of the uncertainty relation.  The proof of the Schwartz inequality uses a sneaky substitution that doesn't seem obvious, and is even less obvious since there is a typo in the value to be substituted.  Let's understand where that sneakiness is coming from.
 \paragraph{Without being sneaky}
@@ -81,19 +81,19 @@ or
 %
 Writing out the unit vectors explicitly, that last inequality is
 %
-\begin{dmath}\label{eqn:qmSchwartz:180}
+\begin{equation}\label{eqn:qmSchwartz:180}
 \Abs{ \Real \braket{ \frac{a}{\sqrt{\braket{a}{a}}} }{ \frac{b}{\sqrt{\braket{b}{b}}} } } \le 1,
 %1 \le \Abs{ \Braket{ \frac{a}{\sqrt{\braket{a|a}}} | \frac{b}{\sqrt{\braket{b|b}}} } },
 %1 \le \Abs{ \Bra{ \frac{a}{\sqrt{\braket{a|a}}} } \cdot \Ket{ \frac{b}{\sqrt{\braket{b|b}}} } },
-\end{dmath}
+\end{equation}
 %
 squaring and rearranging gives
 %
-\begin{dmath}\label{eqn:qmSchwartz:200}
+\begin{equation}\label{eqn:qmSchwartz:200}
 \Abs{\Real \braket{a}{b}}^2 \le
 \braket{a}{a}
 \braket{b}{b}.
-\end{dmath}
+\end{equation}
 %
 This is similar to, but not identical to the Schwartz inequality.  Since \( \Abs{\Real \braket{a}{b}} \le \Abs{\braket{a}{b}} \) the Schwartz inequality cannot be demonstrated with this argument.  This first year algebra method works nicely for demonstrating the inequality for real vector spaces, so a different argument is required for a complex vector space (i.e. quantum mechanics state space.)
 
@@ -103,11 +103,13 @@ Notice that the equality condition holds when the vectors are colinear, and the 
 
 Suppose we wish to calculation the rejection of \( \ket{a} \) from \( \ket{b} \), that is \( \ket{b - \alpha a}\), such that
 %
-\begin{dmath}\label{eqn:qmSchwartz:220}
+\begin{equation}\label{eqn:qmSchwartz:220}
+\begin{aligned}
 0
-= \braket{a}{b - \alpha a}
-= \braket{a}{b} - \alpha \braket{a}{a},
-\end{dmath}
+&= \braket{a}{b - \alpha a}
+\\ &= \braket{a}{b} - \alpha \braket{a}{a},
+\end{aligned}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:qmSchwartz:240}
@@ -138,12 +140,14 @@ In this form the rejection of \( \ket{a} \) from \( \ket{b} \) can be expressed 
 %
 This state vector is normal to \( \ket{a} \) as desired
 %
-\begin{dmath}\label{eqn:qmSchwartz:320}
+\begin{equation}\label{eqn:qmSchwartz:320}
+\begin{aligned}
 \braket{a}{b - \frac{\braket{a}{b} }{ \braket{a}{a} } a }
-=
+&=
 \braket{a}{ b}  - \frac{ \braket{a}{b} }{ \cancel{\braket{a}{a}} } \cancel{\braket{a}{a}}
-= 0.
-\end{dmath}
+\\ &= 0.
+\end{aligned}
+\end{equation}
 %
 How about it's length?  That is
 %

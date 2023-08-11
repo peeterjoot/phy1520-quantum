@@ -54,7 +54,7 @@ H \ket{\downarrow \downarrow} &= \frac{B \Hbar}{2} \lr{ \ket{\downarrow \downarr
 \end{equation}
 With respect to the basis \( \setlr{ \ket{\uparrow \uparrow}, \ket{\uparrow \downarrow}, \ket{\downarrow \uparrow}, \ket{\downarrow \downarrow} } \), the matrix of the Hamiltonian is
 %
-\begin{dmath}\label{eqn:twoSpinHamiltonian:80}
+\begin{equation}\label{eqn:twoSpinHamiltonian:80}
 H =
 % upup updown downup downdown
 \frac{ \Hbar B }{2}
@@ -64,12 +64,13 @@ H =
  0 &  0 & 1 & 2 \\
  0 &  0 & 2 & 1 \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 Utilizing the block diagonal form (and ignoring the \( \Hbar B/2 \) factor for now), the characteristic equation is
 %
-\begin{dmath}\label{eqn:twoSpinHamiltonian:100}
+\begin{equation}\label{eqn:twoSpinHamiltonian:100}
+\begin{aligned}
 0
-=
+&=
 \begin{vmatrix}
 -1 -\lambda &  2 \\
  2 & -1 - \lambda
@@ -78,10 +79,11 @@ Utilizing the block diagonal form (and ignoring the \( \Hbar B/2 \) factor for n
 1 -\lambda &  2 \\
  2 & 1 - \lambda
 \end{vmatrix}
-=
+\\ &=
 \lr{(1 + \lambda)^2 - 4}
 \lr{(1 - \lambda)^2 - 4}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has solutions
 %
@@ -205,14 +207,14 @@ We can invert these
 \end{equation}
 The original state of interest can now be expressed in terms of the eigenkets
 %
-\begin{dmath}\label{eqn:twoSpinHamiltonian:240}
+\begin{equation}\label{eqn:twoSpinHamiltonian:240}
 \psi
 =
 \inv{2} \lr{
 \ket{1} - \ket{-3} -
 \ket{3} - \ket{-1}
 }.
-\end{dmath}
+\end{equation}
 The time evolution of this ket is
 %
 \begin{equation}\label{eqn:twoSpinHamiltonian:260}

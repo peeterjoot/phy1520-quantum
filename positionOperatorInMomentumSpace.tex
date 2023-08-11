@@ -23,44 +23,48 @@ A derivation of the position space representation of the momentum operator \( -i
 
 What we want to do is expand the matrix element of the commutator.  First using the definition of the commutator
 %
-\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:20}
+\begin{equation}\label{eqn:positionOperatorInMomentumSpace:20}
+\begin{aligned}
 \bra{p'} X P - P X \ket{p''}
-=
+&=
 i \Hbar \braket{p'}{p''}
-=
+\\ &=
 i \Hbar \delta{p' - p''},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and then by inserting an identity operation in a momentum space basis
 %
-\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:40}
+\begin{equation}\label{eqn:positionOperatorInMomentumSpace:40}
+\begin{aligned}
 \bra{p'} X P - P X \ket{p''}
-=
+&=
 \int dp
 \bra{p'} X \ket{p}\bra{p} P \ket{p''}
 -\int dp
 \bra{p'} P \ket{p}\bra{p} X \ket{p''}
-=
+\\ &=
 \int dp
 \bra{p'} X \ket{p} p \delta(p - p'')
 -\int dp
 p  \delta(p' - p)
 \bra{p} X \ket{p''}
-=
+\\ &=
 \bra{p'} X \ket{p''} p''
 -
 p' \bra{p'} X \ket{p''}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So we have
 %
-\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:60}
+\begin{equation}\label{eqn:positionOperatorInMomentumSpace:60}
 \bra{p'} X \ket{p''} p''
 -
 p' \bra{p'} X \ket{p''}
 =
 i \Hbar \delta{p' - p''}.
-\end{dmath}
+\end{equation}
 %
 Because the RHS is zero whenever \( p' \ne p'' \), the matrix element \( \bra{p'} X \ket{p''} \) must also include a delta function.  Let
 %
@@ -70,30 +74,30 @@ Because the RHS is zero whenever \( p' \ne p'' \), the matrix element \( \bra{p'
 %
 Because \cref{eqn:positionOperatorInMomentumSpace:60} is an operator equation that really only takes on meaning when applied to a wave function and integrated, we do that
 %
-\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:100}
+\begin{equation}\label{eqn:positionOperatorInMomentumSpace:100}
 \int dp'' \delta(p' - p'') X(p'') p'' \psi(p'')
 -
 \int dp'' p' \delta(p' - p'') X(p'') \psi(p'')
 =
 \int dp'' i \Hbar \delta{p' - p''} \psi(p''),
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:120}
+\begin{equation}\label{eqn:positionOperatorInMomentumSpace:120}
 i \Hbar \psi(p')
 =
 X(p') p' \psi(p')
 -
 p'
 X(p') \psi(p').
-\end{dmath}
+\end{equation}
 %
 Provided \( X(p') \) operates on everything to its right, this equation is solved by setting
 %
-%\begin{dmath}\label{eqn:positionOperatorInMomentumSpace:140}
+%\begin{equation}\label{eqn:positionOperatorInMomentumSpace:140}
 \boxedEquation{eqn:positionOperatorInMomentumSpace:140}{
 X(p') = i \Hbar \PD{p'}{}.
 }
-%\end{dmath}
+%\end{equation}
 %
 %\EndArticle

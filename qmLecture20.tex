@@ -30,13 +30,13 @@
 
 Given a \( 2 \times 2 \) Hamiltonian \( H = H_0 + V \), where
 %
-\begin{dmath}\label{eqn:qmLecture20:20}
+\begin{equation}\label{eqn:qmLecture20:20}
 H =
 \begin{bmatrix}
 a & c \\
 c^\conj & b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 note that if \( c = 0 \) is
 %
@@ -50,13 +50,13 @@ a & 0 \\
 %
 The off diagonal terms can be considered to be a perturbation
 %
-\begin{dmath}\label{eqn:qmLecture20:80}
+\begin{equation}\label{eqn:qmLecture20:80}
 V =
 \begin{bmatrix}
 0 & c \\
 c^\conj & 0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 with \( H = H_0 + V \).
 
@@ -91,21 +91,25 @@ If  \( a > b \), then
 \lambda_\pm \approx \frac{a + b}{2} \pm \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }.
 \end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture20:140}
+\begin{equation}\label{eqn:qmLecture20:140}
+\begin{aligned}
 \lambda_{+}
-= \frac{a + b}{2} + \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }
-= a + \lr{a - b} \frac{\Abs{c}^2}{\lr{a - b}^2}
-= a + \frac{\Abs{c}^2}{a - b},
-\end{dmath}
+&= \frac{a + b}{2} + \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }
+\\ &= a + \lr{a - b} \frac{\Abs{c}^2}{\lr{a - b}^2}
+\\ &= a + \frac{\Abs{c}^2}{a - b},
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:qmLecture20:680}
+\begin{equation}\label{eqn:qmLecture20:680}
+\begin{aligned}
 \lambda_{-}
-= \frac{a + b}{2} - \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }
-=
+&= \frac{a + b}{2} - \frac{a - b}{2} \lr{ 1 + 2 \frac{\Abs{c}^2}{\lr{a - b}^2} }
+\\ &=
 b + \lr{a - b} \frac{\Abs{c}^2}{\lr{a - b}^2}
-= b + \frac{\Abs{c}^2}{a - b}.
-\end{dmath}
+\\ &= b + \frac{\Abs{c}^2}{a - b}.
+\end{aligned}
+\end{equation}
 %
 This adiabatic evolution displays a ``level repulsion'', quadratic in \( \Abs{c} \),
 % as sketched in \cref{fig:lecture20:lecture20Fig1},
@@ -115,12 +119,14 @@ and is described as a non-degenerate permutation.
 
 If \( \Abs{c} \gg \Abs{a -b} \), then
 %
-\begin{dmath}\label{eqn:qmLecture20:160}
+\begin{equation}\label{eqn:qmLecture20:160}
+\begin{aligned}
 \lambda_\pm
-= \frac{a + b}{2} \pm \Abs{c} \sqrt{ 1 + \inv{\Abs{c}^2} \lr{ \frac{a - b}{2}}^2 }
+&= \frac{a + b}{2} \pm \Abs{c} \sqrt{ 1 + \inv{\Abs{c}^2} \lr{ \frac{a - b}{2}}^2 }
 \approx \frac{a + b}{2} \pm \Abs{c} \lr{ 1 + \inv{2 \Abs{c}^2} \lr{ \frac{a - b}{2}}^2 }
-= \frac{a + b}{2} \pm \Abs{c} \pm \frac{\lr{a - b}^2}{8 \Abs{c}}.
-\end{dmath}
+\\ &= \frac{a + b}{2} \pm \Abs{c} \pm \frac{\lr{a - b}^2}{8 \Abs{c}}.
+\end{aligned}
+\end{equation}
 %
 Here we loose the adiabaticity, and have ``level repulsion'' that is linear in \( \Abs{c} \).
 %, as sketched in \cref{fig:lecture20:lecture20Fig2}.
@@ -169,15 +175,17 @@ which can be seen to be a solution to \cref{eqn:qmLecture20:220}.  We want to as
 %
 contains a bit of \( \ket{ n^{(0)} } \)?  To determine this act with \( \bra{n^{(0)}} \) on the left
 %
-\begin{dmath}\label{eqn:qmLecture20:300}
+\begin{equation}\label{eqn:qmLecture20:300}
+\begin{aligned}
 \bra{ n^{(0)} } \lr{ \lambda V - \Delta_n } \ket{n}
-=
+&=
 \bra{ n^{(0)} } \lr{ E_n^{(0)} - H_0 } \ket{n}
-=
+\\ &=
 \lr{ E_n^{(0)} - E_n^{(0)} } \braket{n^{(0)}}{n}
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This shows that \( \ket{n} \) is entirely orthogonal to \( \ket{n^{(0)}} \).
 First define a projection operator
@@ -188,13 +196,15 @@ P_n = \ket{n^{(0)}}\bra{n^{(0)}},
 %
 which has the idempotent property \( P_n^2 = P_n \) that we expect of a projection operator.
 Now define a rejection operator
-\begin{dmath}\label{eqn:qmLecture20:340}
+\begin{equation}\label{eqn:qmLecture20:340}
+\begin{aligned}
 \overbar{P}_n
-= 1 -
+&= 1 -
 \ket{n^{(0)}}\bra{n^{(0)}}
-= \sum_{m \ne n}
+\\ &= \sum_{m \ne n}
 \ket{m^{(0)}}\bra{m^{(0)}}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Because \( \ket{n} \) has no component in the direction \( \ket{n^{(0)}} \), the rejection operator can be inserted much like we normally do with the identity operator, yielding
 %
@@ -206,22 +216,22 @@ valid for any initial \( \ket{n} \).
 \paragraph{Power series perturbation expansion}
 Instead of iterating, suppose that the unknown state and unknown energy difference operator can be expanded in a \( \lambda \) power series, say
 %
-\begin{dmath}\label{eqn:qmLecture20:380}
+\begin{equation}\label{eqn:qmLecture20:380}
 \ket{n}
 =
 \ket{n_0}
 + \lambda \ket{n_1}
 + \lambda^2 \ket{n_2}
 + \lambda^3 \ket{n_3} + \cdots
-\end{dmath}
+\end{equation}
 and
 %
-\begin{dmath}\label{eqn:qmLecture20:400}
+\begin{equation}\label{eqn:qmLecture20:400}
 \Delta_{n} = \Delta_{n_0}
 + \lambda \Delta_{n_1}
 + \lambda^2 \Delta_{n_2}
 + \lambda^3 \Delta_{n_3} + \cdots
-\end{dmath}
+\end{equation}
 We usually interpret functions of operators in terms of power series expansions.  In the case of \( \lr{ E_n^{(0)} - H_0 }^{-1} \), we have a concrete interpretation when acting on one of the unperturbed eigenstates
 %
 \begin{equation}\label{eqn:qmLecture20:420}
@@ -231,14 +241,14 @@ We usually interpret functions of operators in terms of power series expansions.
 %
 This gives
 %
-\begin{dmath}\label{eqn:qmLecture20:440}
+\begin{equation}\label{eqn:qmLecture20:440}
 \ket{n}
 =
 \inv{ E_n^{(0)} - H_0 }
 \sum_{m \ne n}
 \ket{m^{(0)}}\bra{m^{(0)}}
  \lr{ \lambda V - \Delta_n } \ket{n} + \ket{ n^{(0)} },
-\end{dmath}
+\end{equation}
 %
 or
 %
@@ -277,7 +287,7 @@ however, we will normalize by setting \( \braket{n^0}{n} = 1 \), so
 If all \( \lambda^n, n > 0 \) are zero, then we have
 \begin{subequations}
 \label{eqn:qmLecture20:780}
-\begin{dmath}\label{eqn:qmLecture20:740}
+\begin{equation}\label{eqn:qmLecture20:740}
 \ket{n_0}
 =
  \ket{ n^{(0)} }
@@ -288,7 +298,7 @@ If all \( \lambda^n, n > 0 \) are zero, then we have
 E_n^{(0)} - E_m^{(0)}
 }
  \lr{ - \Delta_{n_0} } \ket{n_0}
-\end{dmath}
+\end{equation}
 \begin{equation}\label{eqn:qmLecture20:800}
 \Delta_{n_0} \braket{n^{(0)}}{n_0} = 0,
 \end{equation}
@@ -305,7 +315,7 @@ so
 \paragraph{to \( O(\lambda^1) \) }
 Requiring identity for all \( \lambda^1 \) terms means
 %
-\begin{dmath}\label{eqn:qmLecture20:760}
+\begin{equation}\label{eqn:qmLecture20:760}
 \ket{n_1} \lambda
 =
 \sum_{m \ne n}
@@ -314,11 +324,11 @@ Requiring identity for all \( \lambda^1 \) terms means
 E_n^{(0)} - E_m^{(0)}
 }
  \lr{ \lambda V - \Delta_{n_1} \lambda } \ket{n_0},
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:qmLecture20:560}
+\begin{equation}\label{eqn:qmLecture20:560}
 \ket{n_1}
 =
 \sum_{m \ne n}
@@ -329,7 +339,7 @@ so
 E_n^{(0)} - E_m^{(0)}
 }
 \lr{ V - \Delta_{n_1} } \ket{n_0}.
-\end{dmath}
+\end{equation}
 %
 With the assumption that \( \ket{n^{(0)}} \) is normalized, and with the shorthand
 %
@@ -377,9 +387,10 @@ E_n^{(0)} - E_m^{(0)}
 %
 Because \( \ket{n_0} = \ket{n^{(0)}} \), the \( \lambda^2 \Delta_{n_2} \) is killed, leaving
 %
-\begin{dmath}\label{eqn:qmLecture20:840}
+\begin{equation}\label{eqn:qmLecture20:840}
+\begin{aligned}
 \ket{n_2}
-=
+&=
 \sum_{m \ne n}
 \frac{\ket{m^{(0)}}\bra{m^{(0)}}}
 {
@@ -387,7 +398,7 @@ E_n^{(0)} - E_m^{(0)}
 }
  \lr{ V - \Delta_{n_1} }
 \ket{n_1}
-=
+\\ &=
 \sum_{m \ne n}
 \frac{\ket{m^{(0)}}\bra{m^{(0)}}}
 {
@@ -402,11 +413,12 @@ E_n^{(0)} - E_m^{(0)}
 E_n^{(0)} - E_l^{(0)}
 }
 V_{l n},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which can be written as
 %
-\begin{dmath}\label{eqn:qmLecture20:620}
+\begin{equation}\label{eqn:qmLecture20:620}
 \ket{n_2}
 =
 \sum_{l,m \ne n}
@@ -423,7 +435,7 @@ which can be written as
 {
 \lr{ E_n^{(0)} - E_m^{(0)} }^2
 }.
-\end{dmath}
+\end{equation}
 %
 For the second energy perturbation we have
 %
@@ -434,11 +446,12 @@ For the second energy perturbation we have
 %
 or
 %
-\begin{dmath}\label{eqn:qmLecture20:880}
+\begin{equation}\label{eqn:qmLecture20:880}
+\begin{aligned}
 \Delta_{n_2}
-=
+&=
 \bra{n^{(0)}} V \ket{n_1}
-=
+\\ &=
 \bra{n^{(0)}} V
 \sum_{m \ne n}
 \frac{
@@ -448,21 +461,22 @@ or
 E_n^{(0)} - E_m^{(0)}
 }
 V_{m n}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That is
 %
-\begin{dmath}\label{eqn:qmLecture20:900}
+\begin{equation}\label{eqn:qmLecture20:900}
 \Delta_{n_2}
 =
 \sum_{m \ne n} \frac{V_{n m} V_{m n} }{E_n^{(0)} - E_m^{(0)}}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{to \( O(\lambda^3) \) }
 
 Similarly, it can be shown that
 %
-\begin{dmath}\label{eqn:qmLecture20:640}
+\begin{equation}\label{eqn:qmLecture20:640}
 \Delta_{n_3} =
 \sum_{l, m \ne n} \frac{V_{n m} V_{m l} V_{l n} }{
 \lr{ E_n^{(0)} - E_m^{(0)} }
@@ -472,7 +486,7 @@ Similarly, it can be shown that
 \sum_{ m \ne n} \frac{V_{n m} V_{n n} V_{m n} }{
 \lr{ E_n^{(0)} - E_m^{(0)} }^2
 }.
-\end{dmath}
+\end{equation}
 %
 In general, the energy perturbation is given by
 %

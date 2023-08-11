@@ -19,35 +19,41 @@ all the commutators have the expected values.
 %
 The position commutators don't need consideration.  Of interest is the momentum-position commutators
 %
-\begin{dmath}\label{eqn:qmLecture6:620}
+\begin{equation}\label{eqn:qmLecture6:620}
+\begin{aligned}
 \antisymmetric{\hatp_k'}{\hatx_k'}
-=
+&=
 \antisymmetric{\hatp_k - q \partial_k \chi}{\hatx_k}
-=
+\\ &=
 \antisymmetric{\hatp_k}{\hatx_k} - q \antisymmetric{\partial_k \chi}{\hatx_k}
-=
+\\ &=
 \antisymmetric{\hatp_k}{\hatx_k},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and the momentum commutators
 %
-\begin{dmath}\label{eqn:qmLecture6:640}
+\begin{equation}\label{eqn:qmLecture6:640}
+\begin{aligned}
 \antisymmetric{\hatp_k'}{\hatp_j'}
-=
+&=
 \antisymmetric{\hatp_k - q \partial_k \chi}{\hatp_j - q \partial_j \chi}
-=
+\\ &=
 \antisymmetric{\hatp_k}{\hatp_j}
 - q \lr{ \antisymmetric{\partial_k \chi}{\hatp_j} + \antisymmetric{\hatp_k}{\partial_j \chi} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That last sum of commutators is
 %
-\begin{dmath}\label{eqn:qmLecture6:660}
+\begin{equation}\label{eqn:qmLecture6:660}
+\begin{aligned}
 \antisymmetric{\partial_k \chi}{\hatp_j} + \antisymmetric{\hatp_k}{\partial_j \chi}
-=
+&=
 - i \Hbar \lr{ \PD{k}{(\partial_j \chi)} -  \PD{j}{(\partial_k \chi)} }
-= 0.
-\end{dmath}
+\\ &= 0.
+\end{aligned}
+\end{equation}
 %
 We've shown that
 %

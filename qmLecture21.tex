@@ -29,21 +29,21 @@
 %
 %\paragraph{Non-degenerate perturbation theory.  Recap.}
 %
-%\begin{dmath}\label{eqn:qmLecture21:20}
+%\begin{equation}\label{eqn:qmLecture21:20}
 %\ket{n} = \ket{n_0}
 %+ \lambda \ket{n_1}
 %+ \lambda^2 \ket{n_2}
 %+ \lambda^3 \ket{n_3} + \cdots
-%\end{dmath}
+%\end{equation}
 %
 %and
 %
-%\begin{dmath}\label{eqn:qmLecture21:40}
+%\begin{equation}\label{eqn:qmLecture21:40}
 %\Delta_{n} = \Delta_{n_0}
 %+ \lambda \Delta_{n_1}
 %+ \lambda^2 \Delta_{n_2}
 %+ \lambda^3 \Delta_{n_3} + \cdots
-%\end{dmath}
+%\end{equation}
 %
 %\begin{equation}\label{eqn:qmLecture21:60}
 %\begin{aligned}
@@ -61,7 +61,6 @@
 %
 \section{Stark effect.}
 \index{Stark effect}
-
 %
 \begin{equation}\label{eqn:qmLecture21:100}
 H = H_{\textrm{atom}} + e \calE z,
@@ -81,21 +80,23 @@ and wave functions
 %
 Referring to \cref{eqn:qmLecture21:640}, the first level correction to the energy
 %
-\begin{dmath}\label{eqn:qmLecture21:160}
+\begin{equation}\label{eqn:qmLecture21:160}
+\begin{aligned}
 \Delta_1
-= \bra{\psi_{100}} e \calE z \ket{ \psi_{100}}
-= e \calE \int \frac{d\Omega}{4 \pi} \cos \theta \int dr r^2 R_{100}^2(r).
-\end{dmath}
+&= \bra{\psi_{100}} e \calE z \ket{ \psi_{100}}
+\\ &= e \calE \int \frac{d\Omega}{4 \pi} \cos \theta \int dr r^2 R_{100}^2(r).
+\end{aligned}
+\end{equation}
 The cosine integral is obliterated, so we have \( \Delta_1 = 0 \).
 How about the second order energy correction?  That is
 %
-\begin{dmath}\label{eqn:qmLecture21:180}
+\begin{equation}\label{eqn:qmLecture21:180}
 \Delta_2 = \sum_{n l m \ne 100} \frac{
 \Abs{ \bra{\psi_{100}} e \calE z \ket{ n l m }}^2
 }{
 E_{100}^{(0)} - E_{n l m}
 }.
-\end{dmath}
+\end{equation}
 
 The matrix element in the numerator is the absolute square of
 %
@@ -123,14 +124,15 @@ FIXME: find the property of the spherical harmonics that can be used to prove th
 
 This leaves
 %
-\begin{dmath}\label{eqn:qmLecture21:220}
+\begin{equation}\label{eqn:qmLecture21:220}
+\begin{aligned}
 \Delta_2
-= \sum_{n \ne 1} \frac{
+&= \sum_{n \ne 1} \frac{
 \Abs{ \bra{\psi_{100}} e \calE z \ket{ n 1 0 }}^2
 }{
 E_{100}^{(0)} - E_{n 1 0}
 }
-=
+\\ &=
 -e^2 \calE^2
 \sum_{n \ne 1} \frac{
 \Abs{ \bra{\psi_{100}} z \ket{ n 1 0 }}^2
@@ -138,7 +140,8 @@ E_{100}^{(0)} - E_{n 1 0}
 E_{n 1 0}
 -E_{100}^{(0)}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is sometimes written in terms of a polarizability \( \alpha \)
 %
@@ -148,7 +151,7 @@ This is sometimes written in terms of a polarizability \( \alpha \)
 %
 where
 %
-\begin{dmath}\label{eqn:qmLecture21:280}
+\begin{equation}\label{eqn:qmLecture21:280}
 \alpha =
 2 e^2
 \sum_{n \ne 1} \frac{
@@ -157,7 +160,7 @@ where
 E_{n 1 0}
 -E_{100}^{(0)}
 }.
-\end{dmath}
+\end{equation}
 %
 With
 \begin{equation}\label{eqn:qmLecture21:840}
@@ -166,13 +169,15 @@ With
 %
 the energy change upon turning on the electric field from \( 0 \rightarrow \calE \) is simply \( - \BP \cdot d\bcE \) integrated from \( 0 \rightarrow \calE \).  Putting \( \BP = \alpha \calE \zcap \), we have
 %
-\begin{dmath}\label{eqn:qmLecture21:400}
+\begin{equation}\label{eqn:qmLecture21:400}
+\begin{aligned}
 - \int_0^\calE P_z d\calE
-=
+&=
 - \int_0^\calE \alpha \calE d\calE
-=
+\\ &=
 - \inv{2} \alpha \calE^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 leading to an energy change \( - \alpha \calE^2/2 \), so we can directly compute \( \expectation{\BP} \) or we can compute change in energy, and both contain information about the polarization factor \( \alpha \).
 There is an exact answer to the sum \cref{eqn:qmLecture21:280}, but we aren't going to try to get it here.  Instead let's look for bounds
 %
@@ -180,11 +185,11 @@ There is an exact answer to the sum \cref{eqn:qmLecture21:280}, but we aren't go
 \Delta_2^{\mathrm{min}} < \Delta_2 < \Delta_2^{\mathrm{max}},
 \end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture21:320}
+\begin{equation}\label{eqn:qmLecture21:320}
 \alpha^{\mathrm{min}} = 2 e^2 \frac{
 \Abs{ \bra{\psi_{100}} z \ket{\psi_{210}} }^2
 }{E_{210}^{(0)} - E_{100}^{(0)}}.
-\end{dmath}
+\end{equation}
 For the hydrogen atom we have
 %
 \begin{equation}\label{eqn:qmLecture21:820}
@@ -203,50 +208,54 @@ E_{210}^{(0)} - E_{100}^{(0)} = \frac{3}{4}
 \end{equation}
 In the numerator we have
 %
-\begin{dmath}\label{eqn:qmLecture21:380}
+\begin{equation}\label{eqn:qmLecture21:380}
+\begin{aligned}
 \bra{\psi_{100}} z \ket{\psi_{210}}
-=
+&=
 \int r^2 d\Omega
 \lr{ \inv{\sqrt{\pi} a_0^{3/2}} e^{-r/a_0} } r \cos\theta \lr{
 \inv{4 \sqrt{2 \pi} a_0^{3/2}} \frac{r}{a_0} e^{-r/2a_0} \cos\theta
 }
-=
+\\ &=
 (2 \pi)
 \inv{\sqrt{\pi}} \inv{4 \sqrt{2 \pi} } a_0
 \int_0^\pi d\theta \sin\theta \cos^2\theta
 \int_0^\infty \frac{dr}{a_0} \frac{r^4}{a_0^4} e^{-r/a_0 - r/2 a_0}
-=
+\\ &=
 (2 \cancel{\pi})
 \cancel{\inv{\sqrt{\pi}}} \inv{4 \sqrt{2 \cancel{\pi}} } a_0
 \lr{ \evalrange{-\frac{u^3}{3}}{1}{-1} }
 \int_0^\infty s^4 ds e^{- 3 s/2 }
-=
+\\ &=
 \inv{2 \sqrt{2}} \frac{2}{3} a_0 \frac{256}{81}
-%=
+%\\ &=
 %\int \frac{d\Omega}{\sqrt{4 \pi}} \sqrt{ \frac{3}{4 \pi} } \cos\theta \cos\theta
 %\int dr r^2 r \frac{2}{a_0^{3/2}} e^{-r/a_0} \inv{\sqrt{3}} \frac{r}{a_0} \inv{ (2 a_0)^{3/2} } e^{-r/2 a_0}
-=
+\\ &=
 \frac{1}{3 \sqrt{2} } \frac{ 256}{81} a_0
 \approx 0.75 a_0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This gives
 %
-\begin{dmath}\label{eqn:qmLecture21:420}
+\begin{equation}\label{eqn:qmLecture21:420}
+\begin{aligned}
 \alpha^{\mathrm{min}}
-= \frac{ 2 e^2 (0.75)^2 a_0^2 }{ \frac{3}{4} \frac{\Hbar^2}{2 m a_0^2} }
-= \frac{6}{4} \frac{2 m e^2 a_0^4}{ \Hbar^2 }
-= 3 \frac{m e^2 a_0^4}{ \Hbar^2 }
-= 3 \frac{ 4 \pi \epsilon_0 }{a_0} a_0^4
+&= \frac{ 2 e^2 (0.75)^2 a_0^2 }{ \frac{3}{4} \frac{\Hbar^2}{2 m a_0^2} }
+\\ &= \frac{6}{4} \frac{2 m e^2 a_0^4}{ \Hbar^2 }
+\\ &= 3 \frac{m e^2 a_0^4}{ \Hbar^2 }
+\\ &= 3 \frac{ 4 \pi \epsilon_0 }{a_0} a_0^4
 \approx 4 \pi \epsilon_0 a_0^3 \times 3.
-\end{dmath}
+\end{aligned}
+\end{equation}
 % a_0 = 4 \pi e_0 hbar^2/m e^2
 % a_0 e^2 = 4 \pi e_0 hbar^2/m
 % 4 \pi e_0 /(a_0) = m e^2/hbar^2
 The factor \( 4 \pi \epsilon_0 a_0^3 \) are the natural units for the polarizability.
 There is a neat trick that generalizes to many problems to find the upper bound.  Recall that the general polarizability was
 %
-\begin{dmath}\label{eqn:qmLecture21:440}
+\begin{equation}\label{eqn:qmLecture21:440}
 \alpha =
 2 e^2
 \sum_{nlm \ne 100} \frac{
@@ -255,43 +264,44 @@ There is a neat trick that generalizes to many problems to find the upper bound.
 E_{n l m}
 -E_{100}^{(0)}
 }.
-\end{dmath}
+\end{equation}
 %
 If we are looking for the upper bound, and replace the denominator by the smallest energy difference that will be encountered, it can be brought out of the sum, for
 %
-\begin{dmath}\label{eqn:qmLecture21:460}
+\begin{equation}\label{eqn:qmLecture21:460}
 \alpha^{\mathrm{max}} =
 2 e^2
 \inv{E_{2 1 0}
 -E_{100}^{(0)} }
 \sum_{nlm \ne 100}
 \bra{100} z \ket{ n l m } \bra{nlm} z \ket{ 100 }.
-\end{dmath}
+\end{equation}
 Because \( \bra{nlm} z \ket{100} = 0 \), the constraint in the sum can be removed, and the identity summation evaluated
 %
-\begin{dmath}\label{eqn:qmLecture21:480}
-\alpha^{\mathrm{max}} =
+\begin{equation}\label{eqn:qmLecture21:480}
+\begin{aligned}
+\alpha^{\mathrm{max}} &=
 2 e^2
 \inv{E_{2 1 0}
 -E_{100}^{(0)} }
 \sum_{nlm}
 \bra{100} z \ket{ n l m } \bra{nlm} z \ket{ 100 }
-=
+\\ &=
 \frac{2 e^2 }{ \frac{3}{4} \frac{\Hbar^2}{ 2 m a_0^2} }
 \bra{100} z^2 \ket{ 100 }
-=
+\\ &=
 \frac{16 e^2 m a_0^2 }{ 3 \Hbar^2 } \times a_0^2
-= 4 \pi \epsilon_0 a_0^3 \times \frac{16}{3}.
-\end{dmath}
+\\ &= 4 \pi \epsilon_0 a_0^3 \times \frac{16}{3}.
+\end{aligned}
+\end{equation}
 %
 The bounds are
 %
-%\begin{dmath}\label{eqn:qmLecture21:520}
+%\begin{equation}\label{eqn:qmLecture21:520}
 \boxedEquation{eqn:qmLecture21:540}{
 3 \ge \frac{\alpha}{\alpha^{\mathrm{at}}} < \frac{16}{3},
 }
-%\end{dmath}
-
+%\end{equation}
 where
 %
 \begin{equation}\label{eqn:qmLecture21:560}
@@ -316,13 +326,13 @@ See \nbref{lecture21someSphericalHarmonicsAndTheirIntegrals.nb}, for some of the
 %
 Without any perturbation this is zero.  After perturbation, retaining only the terms that are first order in \( \delta \psi_{100} \) we have
 %
-\begin{dmath}\label{eqn:qmLecture21:620}
+\begin{equation}\label{eqn:qmLecture21:620}
 \bra{\psi_{100} + \delta \psi_{100}} e z \ket{\psi_{100} + \delta \psi_{100}}
 \approx
 \bra{\psi_{100}} e z \ket{\delta \psi_{100}}
 +
 \bra{\delta \psi_{100}} e z \ket{\psi_{100}}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Next time: van der Walls}
 

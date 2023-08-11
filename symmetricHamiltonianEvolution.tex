@@ -33,13 +33,13 @@ H = \delta \lr{ \ket{a'}\bra{a'} + \ket{a''}\bra{a''} }.
 %
 This Hamiltonian has the matrix representation
 %
-\begin{dmath}\label{eqn:symmetricHamiltonianEvolution:40}
+\begin{equation}\label{eqn:symmetricHamiltonianEvolution:40}
 H =
 \begin{bmatrix}
 0 & \delta \\
 \delta & 0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 which has a characteristic equation of
 %
@@ -51,24 +51,25 @@ so the energy eigenvalues are \( \pm \delta \).
 
 The diagonal basis states are respectively
 %
-\begin{dmath}\label{eqn:symmetricHamiltonianEvolution:80}
+\begin{equation}\label{eqn:symmetricHamiltonianEvolution:80}
 \ket{\pm\delta} =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 \pm 1 \\
 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The time evolution operator is
 %
-\begin{dmath}\label{eqn:symmetricHamiltonianEvolution:100}
+\begin{equation}\label{eqn:symmetricHamiltonianEvolution:100}
+\begin{aligned}
 U
-= e^{-i H t/\Hbar}
-=
+&= e^{-i H t/\Hbar}
+\\ &=
   e^{-i \delta t/\Hbar} \ket{+\delta}\bra{+\delta}
 + e^{i \delta t/\Hbar} \ket{-\delta}\bra{-\delta}
-=
+\\ &=
 \frac{e^{-i \delta t/\Hbar} }{2}
 \begin{bmatrix}
 1 & 1
@@ -85,7 +86,7 @@ U
 -1  \\
 1
 \end{bmatrix}
-=
+\\ &=
 \frac{e^{-i \delta t/\Hbar} }{2}
 \begin{bmatrix}
 1 & 1 \\
@@ -96,12 +97,13 @@ U
 1 & -1 \\
 -1 & 1
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\delta t/\Hbar) & -i\sin(\delta t/\Hbar) \\
 -i \sin(\delta t/\Hbar) & \cos(\delta t/\Hbar) \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 %The non-diagonal states have the matrix representation
 %
@@ -115,12 +117,13 @@ U
 %so
 The desired time evolution in the original basis is
 %
-\begin{dmath}\label{eqn:symmetricHamiltonianEvolution:140}
+\begin{equation}\label{eqn:symmetricHamiltonianEvolution:140}
+\begin{aligned}
 \ket{a', t}
-=
+&=
 e^{-i H t/\Hbar}
 \ket{a', 0}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\delta t/\Hbar) & -i\sin(\delta t/\Hbar) \\
 -i \sin(\delta t/\Hbar) & \cos(\delta t/\Hbar) \\
@@ -129,14 +132,15 @@ e^{-i H t/\Hbar}
 1 \\
 0
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\delta t/\Hbar) \\
 -i \sin(\delta t/\Hbar)
 \end{bmatrix}
-=
+\\ &=
 \cos(\delta t/\Hbar) \ket{a',0} -i \sin(\delta t/\Hbar) \ket{a'',0}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This evolution has the same structure as left circularly polarized light.
 

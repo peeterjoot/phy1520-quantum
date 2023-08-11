@@ -77,47 +77,51 @@ Demonstrating by example, let the highest total momentum state be proportional t
 %
 A lowered state can be constructed in two different ways, one using the total angular momentum lowering operator
 %
-\begin{dmath}\label{eqn:qmLecture16:840}
+\begin{equation}\label{eqn:qmLecture16:840}
+\begin{aligned}
 \ket{ \frac{3}{2} \frac{1}{2} }
-=
+&=
 \hatL_{-}^{\textrm{tot}} \ket{ \frac{3}{2} \frac{3}{2} }
-= \Hbar \sqrt{\lr{\frac{3}{2} + \frac{3}{2}}\lr{\frac{3}{2} - \frac{3}{2} + 1}} \ket{ \frac{3}{2} \frac{1}{2} }
-= \Hbar \sqrt{3} \ket{ \frac{3}{2} \frac{1}{2} }.
-\end{dmath}
+\\ &= \Hbar \sqrt{\lr{\frac{3}{2} + \frac{3}{2}}\lr{\frac{3}{2} - \frac{3}{2} + 1}} \ket{ \frac{3}{2} \frac{1}{2} }
+\\ &= \Hbar \sqrt{3} \ket{ \frac{3}{2} \frac{1}{2} }.
+\end{aligned}
+\end{equation}
 %
 On the other hand, the lowering operator can also be expressed as \( \hatL_{-}^{\textrm{tot}} = \hatL_{-}^{(1)} \otimes 1 + 1 \otimes \hatL_{-}^{(2)} \).  Operating with that gives
 %
-\begin{dmath}\label{eqn:qmLecture16:860}
+\begin{equation}\label{eqn:qmLecture16:860}
+\begin{aligned}
 \ket{ \frac{3}{2} \frac{1}{2} }
-=
+&=
 \hatL_{-}^{\textrm{tot}} \ket{ 1 1 } \otimes \ket{ \frac{1}{2} \frac{1}{2} }
-=
+\\ &=
 \hatL_{-}^{(1)} \ket{ 1 1 } \otimes \ket{ \frac{1}{2} \frac{1}{2} }
 +
 \ket{ 1 1 } \otimes \hatL_{-}^2 \ket{ \frac{1}{2} \frac{1}{2} }
-=
+\\ &=
 \Hbar \sqrt{\lr{1 + 1}\lr{1 - 1 + 1}} \ket{ 1 0 } \otimes \ket{ \frac{1}{2} \frac{1}{2} }
 +
 \Hbar \sqrt{\lr{\frac{1}{2} + \frac{1}{2}}\lr{\frac{1}{2} - \frac{1}{2} + 1}} \ket{ 1 1 } \otimes \ket{ \frac{1}{2} -\frac{1}{2} }
-=
+\\ &=
 \Hbar \sqrt{2} \ket{ 1 0 } \otimes \ket{ \frac{1}{2} \frac{1}{2} }
 +
 \Hbar \ket{ 1 1 } \otimes \ket{ \frac{1}{2} -\frac{1}{2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %%%
 Equating both sides and dispensing with the direct product notation, this is
 %
-\begin{dmath}\label{eqn:qmLecture16:880}
+\begin{equation}\label{eqn:qmLecture16:880}
 \sqrt{3} \ket{ \frac{3}{2} \frac{1}{2} }
 =
 \sqrt{2} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} }
 +
 \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} },
-\end{dmath}
+\end{equation}
 %
 or
 %
-%\begin{dmath}\label{eqn:qmLecture16:900}
+%\begin{equation}\label{eqn:qmLecture16:900}
 \boxedEquation{eqn:qmLecture16:1020}{
 \ket{ \frac{3}{2} \frac{1}{2} }
 =
@@ -125,47 +129,49 @@ or
 +
 \inv{\sqrt{3}} \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} }.
 }
-%\end{dmath}
+%\end{equation}
 %
 This is clearly both a unit ket, and normal to \( \ket{ \frac{3}{2} \frac{3}{2} } \).  We can continue operating with the lowering operator for the total angular momentum to construct all the states down to \( \ket{ \frac{3}{2} \frac{-3}{2} } \).  Working with \( \Hbar = 1 \) since we see it cancel out, the next lower state follows from
 %
-\begin{dmath}\label{eqn:qmLecture16:920}
+\begin{equation}\label{eqn:qmLecture16:920}
+\begin{aligned}
 \hatL_{-}^{\textrm{tot}} \ket{ \frac{3}{2} \frac{1}{2} }
-=
+&=
 \sqrt{2 \times 2} \ket{ \frac{3}{2} \frac{-1}{2} }
-=
+\\ &=
 2 \ket{ \frac{3}{2} \frac{-1}{2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and from the individual lowering operators on the components of \( \ket{ \frac{3}{2} \frac{1}{2} } \).
 %
-\begin{dmath}\label{eqn:qmLecture16:940}
+\begin{equation}\label{eqn:qmLecture16:940}
 \hatL_{-}^{(1)} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} }
 =
 \sqrt{ 1 \times 2 } \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} },
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:qmLecture16:960}
+\begin{equation}\label{eqn:qmLecture16:960}
 \hatL_{-}^{(2)} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} }
 =
 \sqrt{ 1 \times 1 } \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} },
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:qmLecture16:980}
+\begin{equation}\label{eqn:qmLecture16:980}
 \hatL_{-}^1
 \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} }
 =
 \sqrt{ 2 \times 1 }
 \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} }.
-\end{dmath}
+\end{equation}
 %
 This gives
 %
-\begin{dmath}\label{eqn:qmLecture16:1000}
+\begin{equation}\label{eqn:qmLecture16:1000}
 2 \ket{ \frac{3}{2} \frac{-1}{2} } =
 \sqrt{\frac{2}{3}} \lr{
 \sqrt{ 2 } \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} }
@@ -175,11 +181,11 @@ This gives
 + \inv{\sqrt{3}}
 \sqrt{ 2 }
 \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} },
-\end{dmath}
+\end{equation}
 %
 or
 %
-%\begin{dmath}\label{eqn:qmLecture16:1000}
+%\begin{equation}\label{eqn:qmLecture16:1000}
 \boxedEquation{eqn:qmLecture16:1040}{
 \ket{ \frac{3}{2} \frac{-1}{2} } =
 \inv{\sqrt{ 3 }} \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} }
@@ -187,47 +193,49 @@ or
 \sqrt{\frac{2}{3}}
 \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} }.
 }
-%\end{dmath}
+%\end{equation}
 %
 There's one more possible state with total angular momentum \( \frac{3}{2} \).  This time
 %
-\begin{dmath}\label{eqn:qmLecture16:1060}
+\begin{equation}\label{eqn:qmLecture16:1060}
+\begin{aligned}
 \hatL_{-}^{\textrm{tot}}
 \ket{ \frac{3}{2} \frac{-1}{2} }
-=
+&=
 \sqrt{ 1 \times 3 }
 \ket{ \frac{3}{2} \frac{-3}{2} }
-=
+\\ &=
 \inv{\sqrt{ 3 }} \hatL_{-}^{(2)} \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} }
 +
 \sqrt{\frac{2}{3}}
 \hatL_{-}^{(1)} \ket{ 1 0 ; \frac{1}{2} \frac{-1}{2} }
-=
+\\ &=
 \inv{\sqrt{ 3 }} \sqrt{1 \times 1 } \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} }
 +
 \sqrt{\frac{2}{3}}
 \sqrt{ 1 \times 2 } \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-%\begin{dmath}\label{eqn:qmLecture16:1080}
+%\begin{equation}\label{eqn:qmLecture16:1080}
 \boxedEquation{eqn:qmLecture16:1100}{
 \ket{ \frac{3}{2} \frac{-3}{2} }
 =
 \ket{ 1 -1 ; \frac{1}{2} \frac{-1}{2} }.
 }
-%\end{dmath}
+%\end{equation}
 %
 The \( \ket{ \frac{1}{2} \frac{1}{2} } \) state is constructed as normal to \( \ket{ \frac{3}{2} \frac{1}{2} } \), or
 %
-%\begin{dmath}\label{eqn:qmLecture17:1120}
+%\begin{equation}\label{eqn:qmLecture17:1120}
 \boxedEquation{eqn:qmLecture17:1140}{
 \ket{ \frac{1}{2} \frac{1}{2} } =
 \sqrt{\frac{1}{3}} \ket{ 1 0 ; \frac{1}{2} \frac{1}{2} }
 -
 \sqrt{ \frac{2}{3} } \ket{ 1 1 ; \frac{1}{2} -\frac{1}{2} },
 }
-%\end{dmath}
+%\end{equation}
 and \( \ket{ \frac{1}{2} -\frac{1}{2} } \) by lowering that.  With
 %
 \begin{equation}\label{eqn:qmLecture17:1160}
@@ -236,33 +244,35 @@ and \( \ket{ \frac{1}{2} -\frac{1}{2} } \) by lowering that.  With
 %
 we have
 %
-\begin{dmath}\label{eqn:qmLecture17:1180}
+\begin{equation}\label{eqn:qmLecture17:1180}
 \ket{ \frac{1}{2} -\frac{1}{2} } =
 \sqrt{\frac{1}{3}} \lr{
 \sqrt{ 1 \times 2 } \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} }
 + \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} }
 }
 -\sqrt{ \frac{2}{3} } \sqrt{ 2 \times 1 } \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} },
-\end{dmath}
+\end{equation}
 %
 or
-%\begin{dmath}\label{eqn:qmLecture17:1200}
+%\begin{equation}\label{eqn:qmLecture17:1200}
 \boxedEquation{eqn:qmLecture17:1220}{
 \ket{ \frac{1}{2} -\frac{1}{2} } =
 \sqrt{ \frac{2}{3} } \ket{ 1 -1 ; \frac{1}{2} \frac{1}{2} }
 - \inv{\sqrt{3}} \ket{ 1 0 ; \frac{1}{2} -\frac{1}{2} }.
 }
-%\end{dmath}
+%\end{equation}
 %
 Observe that further lowering this produces zero
 %
-\begin{dmath}\label{eqn:qmLecture17:1240}
+\begin{equation}\label{eqn:qmLecture17:1240}
+\begin{aligned}
 \hatL_{-}^{\textrm{tot}} \ket{ \frac{1}{2} -\frac{1}{2} }
-=
+&=
 \sqrt{ \frac{2}{3} } \sqrt{ 1 \times 1 } \ket{ 1 -1 ; \frac{1}{2} -\frac{1}{2} }
 - \inv{\sqrt{3}} \sqrt{ 1 \times 2 } \ket{ 1 -1 ; \frac{1}{2} -\frac{1}{2} }.
-= 0.
-\end{dmath}
+\\ &= 0.
+\end{aligned}
+\end{equation}
 %
 All the basis elements have been determined.  In summary
 \begin{equation}\label{eqn:qmLecture17:99}

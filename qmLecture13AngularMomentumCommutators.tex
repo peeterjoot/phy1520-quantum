@@ -16,61 +16,68 @@ Using \( \hatL_i = \epsilon_{ijk} \hatr_j \hatp_k \), show that
 %
 Let's start without using abstract index expressions, computing the commutator for \( \hatL_1, \hatL_2 \), which should show the basic steps required
 %
-\begin{dmath}\label{eqn:qmLecture13:1640}
+\begin{equation}\label{eqn:qmLecture13:1640}
+\begin{aligned}
 \antisymmetric{\hatL_1}{\hatL_2}
-=
+&=
 \antisymmetric{\hatr_2 \hatp_3 - \hatr_3 \hatp_2}{\hatr_3 \hatp_1 - \hatr_1 \hatp_3}
-=
+\\ &=
 \antisymmetric{\hatr_2 \hatp_3}{\hatr_3 \hatp_1}
 -\antisymmetric{\hatr_2 \hatp_3}{\hatr_1 \hatp_3}
 -\antisymmetric{\hatr_3 \hatp_2}{\hatr_3 \hatp_1}
 +\antisymmetric{\hatr_3 \hatp_2}{\hatr_1 \hatp_3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The first of these commutators is
 %
-\begin{dmath}\label{eqn:qmLecture13:1660}
+\begin{equation}\label{eqn:qmLecture13:1660}
+\begin{aligned}
 \antisymmetric{\hatr_2 \hatp_3}{\hatr_3 \hatp_1}
-=
+&=
 {\hatr_2 \hatp_3}{\hatr_3 \hatp_1}
 -
 {\hatr_3 \hatp_1}
 {\hatr_2 \hatp_3}
-=
+\\ &=
 \hatr_2 \hatp_1 \antisymmetric{\hatp_3}{\hatr_3}
-=
+\\ &=
 -i \Hbar \hatr_2 \hatp_1.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We see that any factors in the commutator don't have like indexes (i.e. \( \hatr_k, \hatp_k \)) on both position and momentum terms, can be pulled out of the commutator.  This leaves
 %
-\begin{dmath}\label{eqn:qmLecture13:1680}
+\begin{equation}\label{eqn:qmLecture13:1680}
+\begin{aligned}
 \antisymmetric{\hatL_1}{\hatL_2}
-=
+&=
 \hatr_2 \hatp_1 \antisymmetric{\hatp_3}{\hatr_3}
 -\cancel{\antisymmetric{\hatr_2 \hatp_3}{\hatr_1 \hatp_3}}
 -\cancel{\antisymmetric{\hatr_3 \hatp_2}{\hatr_3 \hatp_1}}
 +\hatr_1 \hatp_2 \antisymmetric{\hatr_3}{\hatp_3}
-=
+\\ &=
 i \Hbar \lr{ \hatr_1 \hatp_2 - \hatr_2 \hatp_1 }
-=
+\\ &=
 i \Hbar \hatL_3.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With cyclic permutation this is really enough to consider \cref{eqn:qmLecture13:1620} proven.  However, can we do this in the general case with the abstract index expression?  The quantity to simplify looks forbidding
 %
-\begin{dmath}\label{eqn:qmLecture13:1700}
+\begin{equation}\label{eqn:qmLecture13:1700}
 \antisymmetric{\hatL_i}{\hatL_j}
 =
 \epsilon_{i a b }
 \epsilon_{j s t }
 \antisymmetric{ \hatr_a \hatp_b }{ \hatr_s \hatp_t }.
-\end{dmath}
+\end{equation}
 Because there are no repeated indexes, this doesn't submit to any of the normal reduction identities.  Note however, since we only care about the \( i \ne j \) case, that one of the indexes \( a, b \) must be \( j \) for this quantity to be non-zero.  Therefore (for \( i \ne j \))
 %
-\begin{dmath}\label{eqn:qmLecture13:1720}
+\begin{equation}\label{eqn:qmLecture13:1720}
+\begin{aligned}
 \antisymmetric{\hatL_i}{\hatL_j}
-=
+&=
 \epsilon_{i j b }
 \epsilon_{j s t }
 \antisymmetric{ \hatr_j \hatp_b }{ \hatr_s \hatp_t   }
@@ -78,7 +85,7 @@ Because there are no repeated indexes, this doesn't submit to any of the normal 
 \epsilon_{i a j }
 \epsilon_{j s t }
 \antisymmetric{ \hatr_a \hatp_j }{ \hatr_s \hatp_t   }
-=
+\\ &=
 \epsilon_{i j b }
 \epsilon_{j s t }
 \lr{
@@ -86,24 +93,25 @@ Because there are no repeated indexes, this doesn't submit to any of the normal 
 -
 \antisymmetric{ \hatr_b \hatp_j }{ \hatr_s \hatp_t   }
 }
-=
+\\ &=
 -\delta^{s t}_{[i b]}
 \antisymmetric{ \hatr_j \hatp_b - \hatr_b \hatp_j }{ \hatr_s \hatp_t }
-=
+\\ &=
 \antisymmetric{ \hatr_j \hatp_b - \hatr_b \hatp_j }{ \hatr_b \hatp_i - \hatr_i \hatp_b }
-=
+\\ &=
   \antisymmetric{ \hatr_j \hatp_b }{ \hatr_b \hatp_i }
 - \cancel{\antisymmetric{ \hatr_j \hatp_b }{ \hatr_i \hatp_b }}
 - \cancel{\antisymmetric{ \hatr_b \hatp_j }{ \hatr_b \hatp_i }}
 + \antisymmetric{ \hatr_b \hatp_j }{ \hatr_i \hatp_b }
-=
+\\ &=
 \hatr_j \hatp_i  \antisymmetric{ \hatp_b }{ \hatr_b }
 + \hatr_i \hatp_j \antisymmetric{ \hatr_b }{ \hatp_b }
-=
+\\ &=
  i \Hbar \lr{ \hatr_i \hatp_j - \hatr_j \hatp_i }
-=
+\\ &=
  i \Hbar \epsilon_{i j k} \hatr_i \hatp_j .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
 

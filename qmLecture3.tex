@@ -65,7 +65,7 @@ With \( \txtL \) and \( \txtR \) implied for \( \ket{m}, \ket{n} \) indexed stat
 %
 The density operator is
 %
-\begin{dmath}\label{eqn:qmLecture3:80}
+\begin{equation}\label{eqn:qmLecture3:80}
 \hat\rho =
 \sum_{m,n}
 C_{m, n}
@@ -73,16 +73,17 @@ C_{m', n'}^\conj
 \ket{m} \ket{n}
 \sum_{m',n'}
 \bra{m'} \bra{n'}.
-\end{dmath}
+\end{equation}
 %
 Suppose we trace over the right partition of the state space, defining such a trace as the reduced density operator \( \hat\rho_{\textrm{red}} \)
 %
-\begin{dmath}\label{eqn:qmLecture3:100}
+\begin{equation}\label{eqn:qmLecture3:100}
+\begin{aligned}
 \hat\rho_{\textrm{red}}
 \equiv
 \tr_\txtR(\hat\rho)
-= \sum_{\tilde{n}} \bra{\tilde{n}} \hat\rho \ket{ \tilde{n}}
-= \sum_{\tilde{n}}
+&= \sum_{\tilde{n}} \bra{\tilde{n}} \hat\rho \ket{ \tilde{n}}
+\\ &= \sum_{\tilde{n}}
 \bra{\tilde{n} }
 \lr{
 \sum_{m,n}
@@ -95,7 +96,7 @@ C_{m', n'}^\conj
 \bra{m'} \bra{n'}
 }
 \ket{ \tilde{n} }
-=
+\\ &=
 \sum_{\tilde{n}}
 \sum_{m,n}
 \sum_{m',n'}
@@ -104,22 +105,25 @@ C_{m', n'}^\conj
 \ket{m} \delta_{\tilde{n} n}
 \bra{m' }
 \delta_{ \tilde{n} n' }
-=
+\\ &=
 \sum_{\tilde{n}, m, m'}
 C_{m, \tilde{n}}
 C_{m', \tilde{n}}^\conj
 \ket{m} \bra{m' }
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 Computing the matrix element of \( \hat\rho_{\textrm{red}} \), we have
 %
-\begin{dmath}\label{eqn:qmLecture3:120}
+\begin{equation}\label{eqn:qmLecture3:120}
+\begin{aligned}
 \bra{\tilde{m}} \hat\rho_{\textrm{red}} \ket{\tilde{m}}
-=
+&=
 \sum_{m, m', \tilde{n}} C_{m, \tilde{n}} C_{m', \tilde{n}}^\conj \braket{ \tilde{m}}{m} \braket{m'}{\tilde{m}}
-=
+\\ &=
 \sum_{\tilde{n}} \Abs{C_{\tilde{m}, \tilde{n}} }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is the probability that the left partition is in state \( \tilde{m} \).
 
@@ -128,12 +132,12 @@ This is the probability that the left partition is in state \( \tilde{m} \).
 
 Suppose we have two spin half particles.  For such a system the total magnetization is
 %
-\begin{dmath}\label{eqn:qmLecture3:140}
+\begin{equation}\label{eqn:qmLecture3:140}
 S_{\textrm{Total}} =
 S_1^z
 +
 S_1^z,
-\end{dmath}
+\end{equation}
 %
 as sketched in \cref{fig:magneticMomentTwoSpins:magneticMomentTwoSpinsFig3}.
 
@@ -141,11 +145,11 @@ as sketched in \cref{fig:magneticMomentTwoSpins:magneticMomentTwoSpinsFig3}.
 
 The average of some observable is
 %
-\begin{dmath}\label{eqn:qmLecture3:160}
+\begin{equation}\label{eqn:qmLecture3:160}
 \expectation{\hatA}
 = \sum_{m, n, m', n'} C_{m, n}^\conj C_{m', n'}
 \bra{m}\bra{n} \hatA \ket{n'} \ket{m'}.
-\end{dmath}
+\end{equation}
 %
 \index{trace}
 Consider the trace of the density operator observable product
@@ -163,35 +167,37 @@ Let
 %
 so that
 %
-\begin{dmath}\label{eqn:qmLecture3:220}
+\begin{equation}\label{eqn:qmLecture3:220}
+\begin{aligned}
 \tr( \hat\rho \hatA )
-= \sum_{m, n, m', n', m'', n''} C_{m', n'} C_{m'', n''}^\conj
+&= \sum_{m, n, m', n', m'', n''} C_{m', n'} C_{m'', n''}^\conj
 \braket{m n}{m', n'} \bra{m'', n''} \hatA \ket{m, n}
-= \sum_{m, n, m'', n''} C_{m, n} C_{m'', n''}^\conj
+\\ &= \sum_{m, n, m'', n''} C_{m, n} C_{m'', n''}^\conj
 \bra{m'', n''} \hatA \ket{m, n}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is just
 %
-%\begin{dmath}\label{eqn:qmLecture3:240}
+%\begin{equation}\label{eqn:qmLecture3:240}
 \boxedEquation{eqn:qmLecture3:240}{
 \bra{\Psi} \hatA \ket{\Psi} = \tr( \hat\rho \hatA ).
 }
-%\end{dmath}
+%\end{equation}
 %
 \section{Left observables.}
 \index{density operator!left observable}
-
 Consider
 %
-\begin{dmath}\label{eqn:qmLecture3:260}
+\begin{equation}\label{eqn:qmLecture3:260}
+\begin{aligned}
 \bra{\Psi} \hatA_\txtL \ket{\Psi}
-= \tr(\hat\rho \hatA_\txtL)
-=
+&= \tr(\hat\rho \hatA_\txtL)
+\\ &=
 \tr_\txtL
 \tr_\txtR
 (\hat\rho \hatA_\txtL)
-=
+\\ &=
 \tr_\txtL
 \lr{
 \lr{
@@ -199,21 +205,22 @@ Consider
 }
 \hatA_\txtL)
 }
-=
+\\ &=
 \tr_\txtL
 \lr{
 \hat\rho_{\textrm{red}}
 \hatA_\txtL)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We see
 %
-\begin{dmath}\label{eqn:qmLecture3:280}
+\begin{equation}\label{eqn:qmLecture3:280}
 \bra{\Psi} \hatA_\txtL \ket{\Psi}
 =
 \tr_\txtL \lr{ \hat\rho_{\textrm{red}, \txtL} \hatA_\txtL }.
-\end{dmath}
+\end{equation}
 %
 We find that we don't need to know the state of the complete system to answer questions about portions of the system, but instead just need \( \hat\rho \), a ``probability operator'' that provides all the required information about the partitioning of the system.
 
@@ -235,26 +242,28 @@ Consider
 \end{equation}
 %
 For the first pure state the density operator is
-\begin{dmath}\label{eqn:qmLecture3:360}
+\begin{equation}\label{eqn:qmLecture3:360}
 \hat\rho = \inv{2}
 \lr{ \ket{ \uparrow \downarrow } - \ket{ \downarrow \uparrow } }
 \lr{ \bra{ \uparrow \downarrow } - \bra{ \downarrow \uparrow } }.
-\end{dmath}
+\end{equation}
 
 What are the reduced density matrices?
 \index{reduced density!operator}
 %
-\begin{dmath}\label{eqn:qmLecture3:340}
+\begin{equation}\label{eqn:qmLecture3:340}
+\begin{aligned}
 \hat\rho_\txtL
-= \tr_\txtR \lr{ \hat\rho }
-=
+&= \tr_\txtR \lr{ \hat\rho }
+\\ &=
 \inv{2} (-1)(-1) \ket{\downarrow}\bra{\downarrow}
 +\inv{2} (+1)(+1) \ket{\uparrow}\bra{\uparrow},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the matrix representation of this reduced density operator is
 %
-\begin{dmath}\label{eqn:qmLecture3:380}
+\begin{equation}\label{eqn:qmLecture3:380}
 \hat\rho_\txtL
 =
 \inv{2}
@@ -262,35 +271,37 @@ so the matrix representation of this reduced density operator is
 1 & 0 \\
 0 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 For the second pure state the density operator is
-\begin{dmath}\label{eqn:qmLecture3:400}
+\begin{equation}\label{eqn:qmLecture3:400}
 \hat\rho = \inv{2}
 \lr{ \ket{ \uparrow \downarrow } + \ket{ \uparrow \uparrow } }
 \lr{ \bra{ \uparrow \downarrow } + \bra{ \uparrow \uparrow } }.
-\end{dmath}
+\end{equation}
 %
 This has a reduced density matrix
-\begin{dmath}\label{eqn:qmLecture3:420}
+\begin{equation}\label{eqn:qmLecture3:420}
+\begin{aligned}
 \hat\rho_\txtL
-= \tr_\txtR \lr{ \hat\rho }
-=
+&= \tr_\txtR \lr{ \hat\rho }
+\\ &=
 \inv{2} \ket{\uparrow}\bra{\uparrow}
 +\inv{2} \ket{\uparrow}\bra{\uparrow}
-=
+\\ &=
 \ket{\uparrow}\bra{\uparrow}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has a matrix representation
-\begin{dmath}\label{eqn:qmLecture3:440}
+\begin{equation}\label{eqn:qmLecture3:440}
 \hat\rho_\txtL
 =
 \begin{bmatrix}
 1 & 0 \\
 0 & 0
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 \index{entanglement entropy}
 In this second example, we have more information about the left partition.  That will be seen as a zero entanglement entropy in the problem set.  In contrast we have less information about the first state, and will find a non-zero positive entanglement entropy in that case.
 } % example
