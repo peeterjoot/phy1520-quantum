@@ -7,7 +7,7 @@ my @phy1520 =
    TITLE => qq(Schwartz inequality in bra-ket notation),
    DATE => 'July 06, 2015',
    REF => 'qmSchwartz',
-   URL => 'http://peeterjoot.com/archives/math2015/qmSchwartz.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmSchwartz.pdf',
    WHAT => qq()
 }
 ,{
@@ -15,7 +15,7 @@ my @phy1520 =
    TITLE => qq(An observation about the geometry of Pauli x,y matrices),
    DATE => 'July 19, 2015',
    REF => 'pauliMatrixXYgeometry',
-   URL => 'http://peeterjoot.com/archives/math2015/pauliMatrixXYgeometry.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/pauliMatrixXYgeometry.pdf',
    WHAT => qq()
 }
 ,{
@@ -23,7 +23,7 @@ my @phy1520 =
    TITLE => qq(Pauli matrix problems),
    DATE => 'July 21, 2015',
    REF => 'pauliProblems',
-   URL => 'http://peeterjoot.com/archives/math2015/pauliProblems.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/pauliProblems.pdf',
    WHAT => qq()
 }
 ,{
@@ -31,7 +31,7 @@ my @phy1520 =
    TITLE => qq(bra-ket manipulation problems),
    DATE => 'July 23, 2015',
    REF => 'braketManip',
-   URL => 'http://peeterjoot.com/archives/math2015/braketManip.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/braketManip.pdf',
    WHAT => qq()
 }
 ,{
@@ -39,7 +39,7 @@ my @phy1520 =
    TITLE => qq(Bra-ket and spin one-half problems),
    DATE => 'July 27, 2015',
    REF => 'moreBraKetProblems',
-   URL => 'http://peeterjoot.com/archives/math2015/moreBraKetProblems.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/moreBraKetProblems.pdf',
    WHAT => qq()
 }
 ,{
@@ -47,7 +47,7 @@ my @phy1520 =
    TITLE => qq(Cascading Stern-Gerlach),
    DATE => 'July 28, 2015',
    REF => 'sg',
-   URL => 'http://peeterjoot.com/archives/math2015/sg.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/sg.pdf',
    WHAT => qq()
 }
 ,{
@@ -55,7 +55,7 @@ my @phy1520 =
    TITLE => qq(More ket problems),
    DATE => 'August 05, 2015',
    REF => 'moreKet',
-   URL => 'http://peeterjoot.com/archives/math2015/moreKet.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/moreKet.pdf',
    WHAT => qq()
 }
 ,{
@@ -63,7 +63,7 @@ my @phy1520 =
    TITLE => qq(Translation operator problems),
    DATE => 'August 07, 2015',
    REF => 'translation',
-   URL => 'http://peeterjoot.com/archives/math2015/translation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/translation.pdf',
    WHAT => qq()
 }
 ,{
@@ -71,7 +71,7 @@ my @phy1520 =
    TITLE => qq(Dynamics of non-Hermitian Hamiltonian),
    DATE => 'August 13, 2015',
    REF => 'dynamicsNonHermitian',
-   URL => 'http://peeterjoot.com/archives/math2015/dynamicsNonHermitian.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/dynamicsNonHermitian.pdf',
    WHAT => qq()
 }
 ,{
@@ -79,7 +79,7 @@ my @phy1520 =
    TITLE => qq(Heisenberg picture spin precession),
    DATE => 'August 13, 2015',
    REF => 'heisenbergSpinPrecession',
-   URL => 'http://peeterjoot.com/archives/math2015/heisenbergSpinPrecession.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/heisenbergSpinPrecession.pdf',
    WHAT => qq()
 }
 ,{
@@ -87,7 +87,7 @@ my @phy1520 =
    TITLE => qq(Heisenberg picture position commutator),
    DATE => 'August 14, 2015',
    REF => 'positionCommutator',
-   URL => 'http://peeterjoot.com/archives/math2015/positionCommutator.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/positionCommutator.pdf',
    WHAT => qq()
 }
 ,{
@@ -95,7 +95,7 @@ my @phy1520 =
    TITLE => qq(Diagonalizating the Quantum Harmonic Oscillator),
    DATE => 'August 19, 2015',
    REF => 'harmonicOscDiagonalize',
-   URL => 'http://peeterjoot.com/archives/math2015/harmonicOscDiagonalize.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/harmonicOscDiagonalize.pdf',
    WHAT => qq()
 }
 ,{
@@ -103,7 +103,7 @@ my @phy1520 =
    TITLE => qq(Relation of probability flux to momentum),
    DATE => 'August 19, 2015',
    REF => 'fluxAndMomentum',
-   URL => 'http://peeterjoot.com/archives/math2015/fluxAndMomentum.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/fluxAndMomentum.pdf',
    WHAT => qq()
 }
 ,{
@@ -111,7 +111,7 @@ my @phy1520 =
    TITLE => qq(Hermite polynomial normalization constant),
    DATE => 'August 21, 2015',
    REF => 'hermiteOrtho',
-   URL => 'http://peeterjoot.com/archives/math2015/hermiteOrtho.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/hermiteOrtho.pdf',
    WHAT => qq()
 }
 ,{
@@ -119,7 +119,7 @@ my @phy1520 =
    TITLE => qq(Operator matrix element),
    DATE => 'August 29, 2015',
    REF => 'operatorMatrixElement',
-   URL => 'http://peeterjoot.com/archives/math2015/operatorMatrixElement.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/operatorMatrixElement.pdf',
    WHAT => qq()
 }
 ,{
@@ -127,7 +127,7 @@ my @phy1520 =
    TITLE => qq(A symmetric real Hamiltonian),
    DATE => 'August 31, 2015',
    REF => 'symmetricHamiltonianEvolution',
-   URL => 'http://peeterjoot.com/archives/math2015/symmetricHamiltonianEvolution.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/symmetricHamiltonianEvolution.pdf',
    WHAT => qq()
 }
 ,{
@@ -135,7 +135,7 @@ my @phy1520 =
    TITLE => qq(Quantum Virial Theorem),
    DATE => 'September 01, 2015',
    REF => 'qmVirialTheorem',
-   URL => 'http://peeterjoot.com/archives/math2015/qmVirialTheorem.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmVirialTheorem.pdf',
    WHAT => qq()
 }
 ,{
@@ -143,7 +143,7 @@ my @phy1520 =
    TITLE => qq(SHO translation operator expectation),
    DATE => 'September 02, 2015',
    REF => 'translationExpectation',
-   URL => 'http://peeterjoot.com/archives/math2015/translationExpectation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/translationExpectation.pdf',
    WHAT => qq()
 }
 ,{
@@ -151,7 +151,7 @@ my @phy1520 =
    TITLE => qq(Momentum space representation of Schrodinger equation),
    DATE => 'September 02, 2015',
    REF => 'shoMomentumSpace',
-   URL => 'http://peeterjoot.com/archives/math2015/shoMomentumSpace.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/shoMomentumSpace.pdf',
    WHAT => qq()
 }
 ,{
@@ -159,7 +159,7 @@ my @phy1520 =
    TITLE => qq(Correlation function),
    DATE => 'September 05, 2015',
    REF => 'correlationSHO',
-   URL => 'http://peeterjoot.com/archives/math2015/correlationSHO.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/correlationSHO.pdf',
    WHAT => qq()
 }
 ,{
@@ -167,7 +167,7 @@ my @phy1520 =
    TITLE => qq(Partition function and ground state energy),
    DATE => 'September 05, 2015',
    REF => 'partitionFunction',
-   URL => 'http://peeterjoot.com/archives/math2015/partitionFunction.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/partitionFunction.pdf',
    WHAT => qq()
 }
 ,{
@@ -175,7 +175,7 @@ my @phy1520 =
    TITLE => qq(Free particle propagator),
    DATE => 'September 07, 2015',
    REF => 'freeParticlePropagator',
-   URL => 'http://peeterjoot.com/archives/math2015/freeParticlePropagator.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/freeParticlePropagator.pdf',
    WHAT => qq()
 }
 ,{
@@ -183,7 +183,7 @@ my @phy1520 =
    TITLE => qq(Generalized Gaussian integrals),
    DATE => 'September 10, 2015',
    REF => 'generalizedGaussian',
-   URL => 'http://peeterjoot.com/archives/math2015/generalizedGaussian.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/generalizedGaussian.pdf',
    WHAT => qq()
 }
 ,{
@@ -191,7 +191,7 @@ my @phy1520 =
    TITLE => qq(Gauge transformation),
    DATE => 'September 15, 2015',
    REF => 'gaugeTx',
-   URL => 'http://peeterjoot.com/archives/math2015/gaugeTx.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gaugeTx.pdf',
    WHAT => qq()
 }
 ,{
@@ -199,7 +199,7 @@ my @phy1520 =
    TITLE => qq(Gauge transformed probability current),
    DATE => 'September 17, 2015',
    REF => 'gaugeTxCurrent',
-   URL => 'http://peeterjoot.com/archives/math2015/gaugeTxCurrent.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gaugeTxCurrent.pdf',
    WHAT => qq()
 }
 ,{
@@ -207,7 +207,7 @@ my @phy1520 =
    TITLE => qq(Lighting review),
    DATE => 'September 17, 2015',
    REF => 'qmLecture1',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture1.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture1.pdf',
    WHAT => qq()
 }
 ,{
@@ -215,7 +215,7 @@ my @phy1520 =
    TITLE => qq(Entropy when density operator has zero eigenvalues),
    DATE => 'September 20, 2015',
    REF => 'densityMatrixEntropy',
-   URL => 'http://peeterjoot.com/archives/math2015/densityMatrixEntropy.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/densityMatrixEntropy.pdf',
    WHAT => qq()
 }
 ,{
@@ -223,7 +223,7 @@ my @phy1520 =
    TITLE => qq(Lighting review),
    DATE => 'September 22, 2015',
    REF => 'lecture2',
-   URL => 'http://peeterjoot.com/archives/math2015/lecture2.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/lecture2.pdf',
    WHAT => qq()
 }
 ,{
@@ -231,7 +231,7 @@ my @phy1520 =
    TITLE => qq(Constant magnetic solenoid field),
    DATE => 'September 24, 2015',
    REF => 'solenoidConstantField',
-   URL => 'http://peeterjoot.com/archives/math2015/solenoidConstantField.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/solenoidConstantField.pdf',
    WHAT => qq()
 }
 ,{
@@ -239,7 +239,7 @@ my @phy1520 =
    TITLE => qq(Density matrix (cont.)),
    DATE => 'September 24, 2015',
    REF => 'qmLecture3',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture3.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture3.pdf',
    WHAT => qq()
 }
 ,{
@@ -247,7 +247,7 @@ my @phy1520 =
    TITLE => qq(Lagrangian for magnetic portion of Lorentz force),
    DATE => 'September 26, 2015',
    REF => 'magneticLorentzForceLagrangian',
-   URL => 'http://peeterjoot.com/archives/math2015/magneticLorentzForceLagrangian.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/magneticLorentzForceLagrangian.pdf',
    WHAT => qq()
 }
 ,{
@@ -255,7 +255,7 @@ my @phy1520 =
    TITLE => qq(Can anticommuting operators have a simulaneous eigenket?),
    DATE => 'September 28, 2015',
    REF => 'anticommutingOperatorWithSimulaneousEigenket',
-   URL => 'http://peeterjoot.com/archives/math2015/anticommutingOperatorWithSimulaneousEigenket.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/anticommutingOperatorWithSimulaneousEigenket.pdf',
    WHAT => qq()
 }
 ,{
@@ -263,7 +263,7 @@ my @phy1520 =
    TITLE => qq(Quantum Harmonic oscillator and coherent states),
    DATE => 'September 29, 2015',
    REF => 'qmLecture4',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture4.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture4.pdf',
    WHAT => qq()
 }
 ,{
@@ -271,7 +271,7 @@ my @phy1520 =
    TITLE => qq(Density matrix and spin),
    DATE => 'September 30, 2015',
    REF => 'gradQuantumProblemSet1',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet1.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet1.pdf',
    WHAT => qq()
 }
 ,{
@@ -279,7 +279,7 @@ my @phy1520 =
    TITLE => qq(time evolution of coherent states, and charged particles in a magnetic field),
    DATE => 'October 01, 2015',
    REF => 'qmLecture5',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture5.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture5.pdf',
    WHAT => qq()
 }
 ,{
@@ -287,7 +287,7 @@ my @phy1520 =
    TITLE => qq(Electromagnetic gauge transformation and Aharonov-Bohm effect),
    DATE => 'October 06, 2015',
    REF => 'qmLecture6',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture6.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture6.pdf',
    WHAT => qq()
 }
 ,{
@@ -295,7 +295,7 @@ my @phy1520 =
    TITLE => qq(1D SHO linear superposition that maximizes expectation),
    DATE => 'October 07, 2015',
    REF => 'shoSuperposition',
-   URL => 'http://peeterjoot.com/archives/math2015/shoSuperposition.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/shoSuperposition.pdf',
    WHAT => qq()
 }
 ,{
@@ -303,7 +303,7 @@ my @phy1520 =
    TITLE => qq(Coherent states, virial theorem, and correlation function),
    DATE => 'October 07, 2015',
    REF => 'gradQuantumProblemSet2',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet2.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet2.pdf',
    WHAT => qq()
 }
 ,{
@@ -311,7 +311,7 @@ my @phy1520 =
    TITLE => qq(Dirac equation in 1D),
    DATE => 'October 13, 2015',
    REF => 'qmLecture8',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture8.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture8.pdf',
    WHAT => qq()
 }
 ,{
@@ -319,7 +319,7 @@ my @phy1520 =
    TITLE => qq(Expectations for SHO Hamiltonian, and virial theorem.),
    DATE => 'October 15, 2015',
    REF => 'shoExpectations',
-   URL => 'http://peeterjoot.com/archives/math2015/shoExpectations.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/shoExpectations.pdf',
    WHAT => qq()
 }
 ,{
@@ -327,7 +327,7 @@ my @phy1520 =
    TITLE => qq(Dirac equation (cont.)),
    DATE => 'October 15, 2015',
    REF => 'qmLecture9',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture9.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture9.pdf',
    WHAT => qq()
 }
 ,{
@@ -335,7 +335,7 @@ my @phy1520 =
    TITLE => qq(Time evolution of spin half probability and dispersion),
    DATE => 'October 15, 2015',
    REF => 'spinTimeEvolution',
-   URL => 'http://peeterjoot.com/archives/math2015/spinTimeEvolution.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/spinTimeEvolution.pdf',
    WHAT => qq()
 }
 ,{
@@ -343,7 +343,7 @@ my @phy1520 =
    TITLE => qq(Aharonov-Bohm effect and Landau levels),
    DATE => 'October 16, 2015',
    REF => 'qmLecture7',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture7.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture7.pdf',
    WHAT => qq()
 }
 ,{
@@ -351,7 +351,7 @@ my @phy1520 =
    TITLE => qq(Plane wave ground state expectation),
    DATE => 'October 18, 2015',
    REF => 'exponentialExpectationGroundState',
-   URL => 'http://peeterjoot.com/archives/math2015/exponentialExpectationGroundState.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/exponentialExpectationGroundState.pdf',
    WHAT => qq()
 }
 ,{
@@ -359,7 +359,7 @@ my @phy1520 =
    TITLE => qq(Aharonov-Bohm effect and Landau levels),
    DATE => 'October 20, 2015',
    REF => 'gradQuantumProblemSet3',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet3.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet3.pdf',
    WHAT => qq()
 }
 ,{
@@ -367,7 +367,7 @@ my @phy1520 =
    TITLE => qq(1D Dirac scattering off potential step),
    DATE => 'October 20, 2015',
    REF => 'qmLecture10',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture10.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture10.pdf',
    WHAT => qq()
 }
 ,{
@@ -375,7 +375,7 @@ my @phy1520 =
    TITLE => qq(Commutators of angular momentum and a central force Hamiltonian),
    DATE => 'October 22, 2015',
    REF => 'angularMomentumAndCentralForceCommutators',
-   URL => 'http://peeterjoot.com/archives/math2015/angularMomentumAndCentralForceCommutators.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/angularMomentumAndCentralForceCommutators.pdf',
    WHAT => qq()
 }
 ,{
@@ -383,7 +383,7 @@ my @phy1520 =
    TITLE => qq(Dirac equation),
    DATE => 'October 29, 2015',
    REF => 'gradQuantumProblemSet4',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet4.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet4.pdf',
    WHAT => qq()
 }
 ,{
@@ -391,7 +391,7 @@ my @phy1520 =
    TITLE => qq(Symmetries in QM),
    DATE => 'October 29, 2015',
    REF => 'qmLecture11',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture11.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture11.pdf',
    WHAT => qq()
 }
 ,{
@@ -399,7 +399,7 @@ my @phy1520 =
    TITLE => qq(Some spin problems),
    DATE => 'October 30, 2015',
    REF => 'someSpinProblems',
-   URL => 'http://peeterjoot.com/archives/math2015/someSpinProblems.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/someSpinProblems.pdf',
    WHAT => qq()
 }
 ,{
@@ -407,7 +407,7 @@ my @phy1520 =
    TITLE => qq(Unimodular transformation),
    DATE => 'October 31, 2015',
    REF => 'unimodularAndRotation',
-   URL => 'http://peeterjoot.com/archives/math2015/unimodularAndRotation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/unimodularAndRotation.pdf',
    WHAT => qq()
 }
 ,{
@@ -415,7 +415,7 @@ my @phy1520 =
    TITLE => qq(Ensembles for spin one half),
    DATE => 'November 01, 2015',
    REF => 'ensemblesForSpinOneHalf',
-   URL => 'http://peeterjoot.com/archives/math2015/ensemblesForSpinOneHalf.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/ensemblesForSpinOneHalf.pdf',
    WHAT => qq()
 }
 ,{
@@ -423,7 +423,7 @@ my @phy1520 =
    TITLE => qq(Determining the rotation angle and normal for a rotation through Euler angles),
    DATE => 'November 02, 2015',
    REF => 'eulerAngleRotationAngleAndNormal',
-   URL => 'http://peeterjoot.com/archives/math2015/eulerAngleRotationAngleAndNormal.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/eulerAngleRotationAngleAndNormal.pdf',
    WHAT => qq()
 }
 ,{
@@ -431,7 +431,7 @@ my @phy1520 =
    TITLE => qq(more on coherent states),
    DATE => 'November 04, 2015',
    REF => 'coherentPoisson',
-   URL => 'http://peeterjoot.com/archives/math2015/coherentPoisson.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/coherentPoisson.pdf',
    WHAT => qq()
 }
 ,{
@@ -439,7 +439,7 @@ my @phy1520 =
    TITLE => qq(A curious proof of the Baker-Campbell-Hausdorff formula),
    DATE => 'November 04, 2015',
    REF => 'bakercambell',
-   URL => 'http://peeterjoot.com/archives/math2015/bakercambell.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/bakercambell.pdf',
    WHAT => qq()
 }
 ,{
@@ -447,7 +447,7 @@ my @phy1520 =
    TITLE => qq(Symmetry (cont.)),
    DATE => 'November 05, 2015',
    REF => 'qmLecture12',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture12.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture12.pdf',
    WHAT => qq()
 }
 ,{
@@ -455,7 +455,7 @@ my @phy1520 =
    TITLE => qq(Time reversal (cont.)),
    DATE => 'November 07, 2015',
    REF => 'qmLecture13',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture13.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture13.pdf',
    WHAT => qq()
 }
 ,{
@@ -463,7 +463,7 @@ my @phy1520 =
    TITLE => qq(Position operator in momentum space representation),
    DATE => 'November 08, 2015',
    REF => 'positionOperatorInMomentumSpace',
-   URL => 'http://peeterjoot.com/archives/math2015/positionOperatorInMomentumSpace.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/positionOperatorInMomentumSpace.pdf',
    WHAT => qq()
 }
 ,{
@@ -471,7 +471,7 @@ my @phy1520 =
    TITLE => qq(Angular momentum (cont.)),
    DATE => 'November 11, 2015',
    REF => 'qmLecture14',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture14.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture14.pdf',
    WHAT => qq()
 }
 ,{
@@ -479,7 +479,7 @@ my @phy1520 =
    TITLE => qq(angular momentum rotation representation, and angular momentum addition),
    DATE => 'November 12, 2015',
    REF => 'qmLecture15',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture15.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture15.pdf',
    WHAT => qq()
 }
 ,{
@@ -487,7 +487,7 @@ my @phy1520 =
    TITLE => qq(Two spin time evolution),
    DATE => 'November 14, 2015',
    REF => 'twoSpinHamiltonian',
-   URL => 'http://peeterjoot.com/archives/math2015/twoSpinHamiltonian.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/twoSpinHamiltonian.pdf',
    WHAT => qq()
 }
 ,{
@@ -495,7 +495,7 @@ my @phy1520 =
    TITLE => qq(Symmetries),
    DATE => 'November 17, 2015',
    REF => 'gradQuantumProblemSet5',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet5.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet5.pdf',
    WHAT => qq()
 }
 ,{
@@ -503,7 +503,7 @@ my @phy1520 =
    TITLE => qq(Addition of angular momenta),
    DATE => 'November 17, 2015',
    REF => 'qmLecture16',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture16.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture16.pdf',
    WHAT => qq()
 }
 ,{
@@ -511,7 +511,7 @@ my @phy1520 =
    TITLE => qq(Dirac delta function potential),
    DATE => 'November 19, 2015',
    REF => 'diracPotential',
-   URL => 'http://peeterjoot.com/archives/math2015/diracPotential.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/diracPotential.pdf',
    WHAT => qq()
 }
 ,{
@@ -519,7 +519,7 @@ my @phy1520 =
    TITLE => qq(Clebsch-Gordan),
    DATE => 'November 21, 2015',
    REF => 'qmLecture17',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture17.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture17.pdf',
    WHAT => qq()
 }
 ,{
@@ -527,7 +527,7 @@ my @phy1520 =
    TITLE => qq(Angular momentum),
    DATE => 'November 22, 2015',
    REF => 'gradQuantumProblemSet6',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet6.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet6.pdf',
    WHAT => qq()
 }
 ,{
@@ -535,7 +535,7 @@ my @phy1520 =
    TITLE => qq(Expansion of the squared angular momentum operator),
    DATE => 'November 24, 2015',
    REF => 'squaredAngularMomentumExpansion',
-   URL => 'http://peeterjoot.com/archives/math2015/squaredAngularMomentumExpansion.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/squaredAngularMomentumExpansion.pdf',
    WHAT => qq()
 }
 ,{
@@ -543,7 +543,7 @@ my @phy1520 =
    TITLE => qq(Approximation methods),
    DATE => 'November 26, 2015',
    REF => 'qmLecture18',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture18.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture18.pdf',
    WHAT => qq()
 }
 ,{
@@ -551,7 +551,7 @@ my @phy1520 =
    TITLE => qq(Variational method),
    DATE => 'November 27, 2015',
    REF => 'qmLecture19',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture19.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture19.pdf',
    WHAT => qq()
 }
 ,{
@@ -559,7 +559,7 @@ my @phy1520 =
    TITLE => qq(AlternateDiracEquation),
    DATE => 'November 27, 2015',
    REF => 'diracAlternate',
-   URL => 'http://peeterjoot.com/archives/math2015/diracAlternate.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/diracAlternate.pdf',
    WHAT => qq()
 }
 ,{
@@ -567,7 +567,7 @@ my @phy1520 =
    TITLE => qq(Variational problems),
    DATE => 'December 02, 2015',
    REF => 'gradQuantumProblemSet7',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet7.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet7.pdf',
    WHAT => qq()
 }
 ,{
@@ -575,7 +575,7 @@ my @phy1520 =
    TITLE => qq(Pertubation theory),
    DATE => 'December 03, 2015',
    REF => 'qmLecture20',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture20.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture20.pdf',
    WHAT => qq()
 }
 ,{
@@ -583,7 +583,7 @@ my @phy1520 =
    TITLE => qq(Non-degenerate pertubation),
    DATE => 'December 04, 2015',
    REF => 'qmLecture21',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture21.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture21.pdf',
    WHAT => qq()
 }
 ,{
@@ -591,7 +591,7 @@ my @phy1520 =
    TITLE => qq(Energy estimate for an absolute value potential),
    DATE => 'December 04, 2015',
    REF => 'absolutePotentialVariation',
-   URL => 'http://peeterjoot.com/archives/math2015/absolutePotentialVariation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/absolutePotentialVariation.pdf',
    WHAT => qq()
 }
 ,{
@@ -599,7 +599,7 @@ my @phy1520 =
    TITLE => qq(Harmonic oscillator with energy shift),
    DATE => 'December 05, 2015',
    REF => 'harmonicOscillatorEnergyShiftPertubation',
-   URL => 'http://peeterjoot.com/archives/math2015/harmonicOscillatorEnergyShiftPertubation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/harmonicOscillatorEnergyShiftPertubation.pdf',
    WHAT => qq()
 }
 ,{
@@ -607,7 +607,7 @@ my @phy1520 =
    TITLE => qq(Simplest perturbation two by two Hamiltonian),
    DATE => 'December 07, 2015',
    REF => 'simplestTwoByTwoPerturbation',
-   URL => 'http://peeterjoot.com/archives/math2015/simplestTwoByTwoPerturbation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/simplestTwoByTwoPerturbation.pdf',
    WHAT => qq()
 }
 ,{
@@ -615,7 +615,7 @@ my @phy1520 =
    TITLE => qq(2D SHO xy perturbation),
    DATE => 'December 07, 2015',
    REF => '2dHarmonicOscillatorXYPerturbation',
-   URL => 'http://peeterjoot.com/archives/math2015/2dHarmonicOscillatorXYPerturbation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/2dHarmonicOscillatorXYPerturbation.pdf',
    WHAT => qq()
 }
 ,{
@@ -623,7 +623,7 @@ my @phy1520 =
    TITLE => qq(Pertubation theory),
    DATE => 'December 10, 2015',
    REF => 'gradQuantumProblemSet8',
-   URL => 'http://peeterjoot.com/archives/math2015/gradQuantumProblemSet8.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gradQuantumProblemSet8.pdf',
    WHAT => qq()
 }
 ,{
@@ -631,7 +631,7 @@ my @phy1520 =
    TITLE => qq(Van der Wall potential and Stark effect),
    DATE => 'December 10, 2015',
    REF => 'qmLecture22',
-   URL => 'http://peeterjoot.com/archives/math2015/qmLecture22.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/qmLecture22.pdf',
    WHAT => qq()
 }
 ,{
@@ -639,7 +639,7 @@ my @phy1520 =
    TITLE => qq(Lz and Ls eigenvalues and probabilities for a wave function),
    DATE => 'December 11, 2015',
    REF => 'LsquaredLzProblem',
-   URL => 'http://peeterjoot.com/archives/math2015/LsquaredLzProblem.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/LsquaredLzProblem.pdf',
    WHAT => qq()
 }
 ,{
@@ -647,7 +647,7 @@ my @phy1520 =
    TITLE => qq(\(L_y\) perturbation),
    DATE => 'December 13, 2015',
    REF => 'LyPerturbation',
-   URL => 'http://peeterjoot.com/archives/math2015/LyPerturbation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/LyPerturbation.pdf',
    WHAT => qq()
 }
 ,{
@@ -655,7 +655,7 @@ my @phy1520 =
    TITLE => qq(Quadradic Zeeman effect),
    DATE => 'December 13, 2015',
    REF => 'quadraticZeeman',
-   URL => 'http://peeterjoot.com/archives/math2015/quadraticZeeman.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/quadraticZeeman.pdf',
    WHAT => qq()
 }
 ,{
@@ -663,7 +663,7 @@ my @phy1520 =
    TITLE => qq(Expectation of spherically symmetric 3D potential derivative),
    DATE => 'December 14, 2015',
    REF => 'symmetricPotentialDerivativeExpectation',
-   URL => 'http://peeterjoot.com/archives/math2015/symmetricPotentialDerivativeExpectation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/symmetricPotentialDerivativeExpectation.pdf',
    WHAT => qq()
 }
 ,{
@@ -671,7 +671,7 @@ my @phy1520 =
    TITLE => qq(Angular momentum expectation),
    DATE => 'December 14, 2015',
    REF => 'angularMomentumExpectation',
-   URL => 'http://peeterjoot.com/archives/math2015/angularMomentumExpectation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/angularMomentumExpectation.pdf',
    WHAT => qq()
 }
 ,{
@@ -679,7 +679,7 @@ my @phy1520 =
    TITLE => qq(Spin three halves spin interaction),
    DATE => 'December 15, 2015',
    REF => 'spinThreeHalvesNucleus',
-   URL => 'http://peeterjoot.com/archives/math2015/spinThreeHalvesNucleus.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/spinThreeHalvesNucleus.pdf',
    WHAT => qq()
 }
 ,{
@@ -687,7 +687,7 @@ my @phy1520 =
    TITLE => qq(Time reversal behaviour of solutions to crystal spin Hamiltonian),
    DATE => 'December 15, 2015',
    REF => 'crystalSpinHamiltonianTimeReversal',
-   URL => 'http://peeterjoot.com/archives/math2015/crystalSpinHamiltonianTimeReversal.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/crystalSpinHamiltonianTimeReversal.pdf',
    WHAT => qq()
 }
 ,{
@@ -695,7 +695,7 @@ my @phy1520 =
    TITLE => qq(Plane wave and spinor under time reversal),
    DATE => 'December 16, 2015',
    REF => 'timeReversalPlaneWaveAndSpinor',
-   URL => 'http://peeterjoot.com/archives/math2015/timeReversalPlaneWaveAndSpinor.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/timeReversalPlaneWaveAndSpinor.pdf',
    WHAT => qq()
 }
 ,{
@@ -703,7 +703,7 @@ my @phy1520 =
    TITLE => qq(Commutators for some symmetry operators),
    DATE => 'December 16, 2015',
    REF => 'symmetryOperatorCommutators',
-   URL => 'http://peeterjoot.com/archives/math2015/symmetryOperatorCommutators.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/symmetryOperatorCommutators.pdf',
    WHAT => qq()
 }
 ,{
@@ -711,7 +711,7 @@ my @phy1520 =
    TITLE => qq(Totally asymmetric potential),
    DATE => 'December 16, 2015',
    REF => 'totallyAsymmetricPotential',
-   URL => 'http://peeterjoot.com/archives/math2015/totallyAsymmetricPotential.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/totallyAsymmetricPotential.pdf',
    WHAT => qq()
 }
 ,{
@@ -719,7 +719,7 @@ my @phy1520 =
    TITLE => qq(Non-interacting particles in a box),
    DATE => 'December 16, 2015',
    REF => 'noninteractingParticlesInABox',
-   URL => 'http://peeterjoot.com/archives/math2015/noninteractingParticlesInABox.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/noninteractingParticlesInABox.pdf',
    WHAT => qq()
 }
 ,{
@@ -727,7 +727,7 @@ my @phy1520 =
    TITLE => qq(Particle in charged uniform electric and magnetic fields),
    DATE => 'December 17, 2015',
    REF => 'particleInUniformElectricAndMagneticField',
-   URL => 'http://peeterjoot.com/archives/math2015/particleInUniformElectricAndMagneticField.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/particleInUniformElectricAndMagneticField.pdf',
    WHAT => qq()
 }
 ,{
@@ -735,7 +735,7 @@ my @phy1520 =
    TITLE => qq(Electron and Boson hyperfine spin interaction),
    DATE => 'December 21, 2015',
    REF => 'hyperfineElectronAndBosonNucleus',
-   URL => 'http://peeterjoot.com/archives/math2015/hyperfineElectronAndBosonNucleus.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/hyperfineElectronAndBosonNucleus.pdf',
    WHAT => qq()
 }
 ) ; # @phy1520
