@@ -30,26 +30,26 @@
 
 Imagine we perturb a potential, say a harmonic oscillator with an electric field
 %
-\begin{dmath}\label{eqn:qmLecture22:20}
+\begin{equation}\label{eqn:qmLecture22:20}
 V_0(x) = \inv{2} k x^2,
-\end{dmath}
-\begin{dmath}\label{eqn:qmLecture22:40}
+\end{equation}
+\begin{equation}\label{eqn:qmLecture22:40}
 V(x) = \calE e x.
-\end{dmath}
+\end{equation}
 After minimizing the energy, using \( \PDi{x}{V} = 0 \), we get
 %
-\begin{dmath}\label{eqn:qmLecture22:60}
+\begin{equation}\label{eqn:qmLecture22:60}
 \inv{2} k x^2 + \calE e x \rightarrow k x^\conj = - e \calE,
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture22:80}
+\begin{equation}\label{eqn:qmLecture22:80}
 p^\conj = -e x^\conj = - \frac{e^2 \calE}{k}.
-\end{dmath}
+\end{equation}
 For such a system the polarizability is
 %
-\begin{dmath}\label{eqn:qmLecture22:100}
+\begin{equation}\label{eqn:qmLecture22:100}
 \alpha = \frac{e^2 }{k},
-\end{dmath}
+\end{equation}
 %
 \begin{dmath}\label{eqn:qmLecture22:120}
 \inv{2} k \lr{ -\frac{ e \calE}{k} }^2 + \calE e \lr{ - \frac{e \calE}{k} }
@@ -88,13 +88,13 @@ V =
 \end{dmath}
 Let
 %
-\begin{dmath}\label{eqn:qmLecture22:200}
+\begin{equation}\label{eqn:qmLecture22:200}
 \Bx_\alpha = \Br_\alpha - \BR_\alpha,
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture22:220}
+\begin{equation}\label{eqn:qmLecture22:220}
 \BR = \BR_1 - \BR_2,
-\end{dmath}
+\end{equation}
 %
 as sketched in \cref{fig:lecture22:lecture22Fig2}.
 \imageFigure{../figures/phy1520-quantum/lecture22Fig2}{Two atom interaction.}{fig:lecture22:lecture22Fig2}{0.2}
@@ -135,13 +135,13 @@ Showing this is left as a exercise.
 \paragraph{1. \( O(\lambda) \) }.
 With
 %
-\begin{dmath}\label{eqn:qmLecture22:300}
+\begin{equation}\label{eqn:qmLecture22:300}
 \psi_0 = \ket{ 1s, 1s },
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture22:320}
+\begin{equation}\label{eqn:qmLecture22:320}
 \Delta E^{(1)} = \bra{\psi_0} V \ket{\psi_0},
-\end{dmath}
+\end{equation}
 the two particle wave functions are of the form
 %
 \begin{dmath}\label{eqn:qmLecture22:340}
@@ -152,9 +152,9 @@ the two particle wave functions are of the form
 %
 so braket integrals must be evaluated over a six-fold space.  Recall that
 %
-\begin{dmath}\label{eqn:qmLecture22:740}
+\begin{equation}\label{eqn:qmLecture22:740}
 \psi_{1s} = \inv{\sqrt{\pi} a_0^{3/2} } e^{-r/a_0},
-\end{dmath}
+\end{equation}
 %
 so
 %
@@ -164,9 +164,9 @@ so
 \int_0^\pi \sin\theta d\theta \int_0^{2\pi} d\phi x_i,
 \end{dmath}
 where
-\begin{dmath}\label{eqn:qmLecture22:780}
+\begin{equation}\label{eqn:qmLecture22:780}
 x_i \in \setlr{ r \sin\theta \cos\phi, r \sin\theta \sin\phi, r \cos\theta }.
-\end{dmath}
+\end{equation}
 %
 The \( x, y \) integrals are zero because of the \( \phi \) integral, and the \( z \) integral is proportional to \( \int_0^\pi \sin(2 \theta) d\theta \), which is also zero.  This leads to zero averages
 %
@@ -175,9 +175,9 @@ The \( x, y \) integrals are zero because of the \( \phi \) integral, and the \(
 \end{equation}
 so
 %
-\begin{dmath}\label{eqn:qmLecture22:380}
+\begin{equation}\label{eqn:qmLecture22:380}
 \Delta E^{(1)} = 0.
-\end{dmath}
+\end{equation}
 %
 \paragraph{2. \( O(\lambda^2) \)}.
 %
@@ -191,9 +191,9 @@ This is a sum over all excited states.
 %Here the \( \sum' \) indicates the sum over all excited states.
 We expect that this will be of the form
 %
-\begin{dmath}\label{eqn:qmLecture22:420}
+\begin{equation}\label{eqn:qmLecture22:420}
 \Delta E^{(2)} = - \lr{ \frac{e^2}{4 \pi \epsilon_0} }^2 \frac{C_6}{R^6},
-\end{dmath}
+\end{equation}
 where
 \( \Bx_1 \) and \( \Bx_2 \) are dipole operators.  The first time this has a non-zero expectation is when we go from the 1s to the 2p states (both 1s and 2s states are spherically symmetric).
 Noting that \( E_n = -e^2/2 n^2 a_0 \), we can compute a minimum bound for the energy denominator
@@ -263,15 +263,15 @@ When this is the case, we have no mixing of elements in the sum of \cref{eqn:qmL
 \paragraph{Degeneracy in the Stark effect}
 \index{degeneracy!Stark effect}
 %
-\begin{dmath}\label{eqn:qmLecture22:560}
+\begin{equation}\label{eqn:qmLecture22:560}
 H = H_0 + e \calE z,
-\end{dmath}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:qmLecture22:580}
+\begin{equation}\label{eqn:qmLecture22:580}
 H_0 = \frac{\Bp^2}{2m} - \frac{e}{4 \pi \epsilon_0} \inv{\Abs{\Bx}}.
-\end{dmath}
+\end{equation}
 Consider the states \( 2s, 2 p_x, 2p_y, 2p_z \), for which \( E_n^{(0)} \equiv E_{2 s} \), as sketched in \cref{fig:lecture22:lecture22Fig3}.
 \imageFigure{../figures/phy1520-quantum/lecture22Fig3}{2s 2p degeneracy.}{fig:lecture22:lecture22Fig3}{0.2}
 Because of spherical symmetry

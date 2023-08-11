@@ -30,9 +30,9 @@
 
 In a classical context considering a Hamiltonian
 %
-\begin{dmath}\label{eqn:qmLecture11:20}
+\begin{equation}\label{eqn:qmLecture11:20}
 H(q_i, p_i),
-\end{dmath}
+\end{equation}
 %
 a symmetry means that certain \( q_i \) don't appear.  In that case the rate of change of one of the generalized momenta is zero
 %
@@ -47,18 +47,18 @@ the trajectory of a particle after rotation is related by rotation to the trajec
 
 Suppose that we have a symmetry operation that takes states from
 %
-\begin{dmath}\label{eqn:qmLecture11:60}
+\begin{equation}\label{eqn:qmLecture11:60}
 \ket{\psi} \rightarrow \ket{U \psi}
-\end{dmath}
-\begin{dmath}\label{eqn:qmLecture11:80}
+\end{equation}
+\begin{equation}\label{eqn:qmLecture11:80}
 \ket{\phi} \rightarrow \ket{U \phi},
-\end{dmath}
+\end{equation}
 %
 we expect that
 %
-\begin{dmath}\label{eqn:qmLecture11:100}
+\begin{equation}\label{eqn:qmLecture11:100}
 \Abs{\braket{ \psi}{\phi} }^2 = \Abs{\braket{ U\psi}{ U\phi} }^2.
-\end{dmath}
+\end{equation}
 %
 This won't hold true for a general operator.   Two cases where this does hold true is when
 
@@ -88,9 +88,9 @@ If an ``observable'' is not changed by a unitary operation representing a symmet
 \end{dmath}
 %
 so
-\begin{dmath}\label{eqn:qmLecture11:160}
+\begin{equation}\label{eqn:qmLecture11:160}
 U^\dagger \hatA U = \hatA,
-\end{dmath}
+\end{equation}
 %
 or
 \boxedEquation{eqn:qmLecture11:180}{
@@ -99,16 +99,16 @@ or
 An observable that is unchanged by a unitary symmetry commutes \( \antisymmetric{\hatA}{U} \) with the operator \( U \) for that transformation.
 \paragraph{Symmetries of the Hamiltonian}
 Given
-\begin{dmath}\label{eqn:qmLecture11:200}
+\begin{equation}\label{eqn:qmLecture11:200}
 \antisymmetric{H}{U} = 0,
-\end{dmath}
+\end{equation}
 %
 \( H \) is invariant.
 Given
 %
-\begin{dmath}\label{eqn:qmLecture11:220}
+\begin{equation}\label{eqn:qmLecture11:220}
 H \ket{\phi_n} = \epsilon_n \ket{\phi_n},
-\end{dmath}
+\end{equation}
 %
 \begin{dmath}\label{eqn:qmLecture11:240}
 U H \ket{\phi_n}
@@ -117,18 +117,18 @@ U H \ket{\phi_n}
 \end{dmath}
 Such a state
 %
-\begin{dmath}\label{eqn:qmLecture11:260}
+\begin{equation}\label{eqn:qmLecture11:260}
 \ket{\psi_n} = U \ket{\phi_n},
-\end{dmath}
+\end{equation}
 is also an eigenstate with the \underline{same} energy.
 Suppose this process is repeated, finding other states
 %
-\begin{dmath}\label{eqn:qmLecture11:280}
+\begin{equation}\label{eqn:qmLecture11:280}
 U \ket{\psi_n} = \ket{\chi_n}
-\end{dmath}
-\begin{dmath}\label{eqn:qmLecture11:300}
+\end{equation}
+\begin{equation}\label{eqn:qmLecture11:300}
 U \ket{\chi_n} = \ket{\alpha_n}
-\end{dmath}
+\end{equation}
 Because such a transformation only generates states with the initial energy, this process cannot continue forever.  At some point this process will enumerate a fixed size set of states.  These states can be orthonormalized.
 
 We can say that symmetry operations are generators of a \underlineAndIndex{group}.  For a set of symmetry operations we can
@@ -157,9 +157,9 @@ When \( H \) has a symmetry, then degenerate eigenstates form \underlineAndIndex
 \makeexample{Inversion.}{example:qmLecture11:1}{
 Consider a state and a parity operation \( \hat\Pi \), with the transformation
 %
-\begin{dmath}\label{eqn:qmLecture11:380}
+\begin{equation}\label{eqn:qmLecture11:380}
 \ket{\psi} \rightarrow \hat\Pi \ket{\psi}.
-\end{dmath}
+\end{equation}
 In one dimension, the parity operation is just inversion.  In two dimensions, this is a set of flipping operations on two axes \cref{fig:lecture11:lecture11Fig2}.
 \imageFigure{../figures/phy1520-quantum/lecture11Fig2}{2D parity operation.}{fig:lecture11:lecture11Fig2}{0.2}
 The operational effects of this operator are
@@ -173,20 +173,20 @@ The operational effects of this operator are
 %
 Acting again with the \textAndIndex{parity operator} produces the original value, so it is its own inverse, and \( \hat\Pi^\dagger = \hat\Pi = \hat\Pi^{-1} \).  In an expectation value
 %
-\begin{dmath}\label{eqn:qmLecture11:420}
+\begin{equation}\label{eqn:qmLecture11:420}
 \bra{ \hat\Pi \psi } \hatx \ket{ \hat\Pi \psi } = - \bra{\psi} \hatx \ket{\psi}.
-\end{dmath}
+\end{equation}
 %
 This means that
 %
-\begin{dmath}\label{eqn:qmLecture11:440}
+\begin{equation}\label{eqn:qmLecture11:440}
 \hat\Pi^\dagger \hatx \hat\Pi = - \hatx,
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:qmLecture11:460}
+\begin{equation}\label{eqn:qmLecture11:460}
 \hatx \hat\Pi = - \hat\Pi \hatx,
-\end{dmath}
+\end{equation}
 %
 %FIXME: show that \( \hat\Pi^\dagger \hatp \hat\Pi = - \hatp \).
 \begin{dmath}\label{eqn:qmLecture11:480}
@@ -197,9 +197,9 @@ or
 \end{dmath}
 so
 %
-\begin{dmath}\label{eqn:qmLecture11:500}
+\begin{equation}\label{eqn:qmLecture11:500}
 \hat\Pi \ket{x_0} = \ket{-x_0}.
-\end{dmath}
+\end{equation}
 %
 Acting on a wave function
 %
@@ -212,17 +212,17 @@ Acting on a wave function
 %
 What does this mean for eigenfunctions.  Eigenfunctions are supposed to form irreducible representations of the group.  The group has just two elements
 %
-\begin{dmath}\label{eqn:qmLecture11:540}
+\begin{equation}\label{eqn:qmLecture11:540}
 \setlr{ 1, \hat\Pi },
-\end{dmath}
+\end{equation}
 %
 where \( \hat\Pi^2 = 1 \).
 
 Suppose we have a Hamiltonian
 %
-\begin{dmath}\label{eqn:qmLecture11:560}
+\begin{equation}\label{eqn:qmLecture11:560}
 H = \frac{\hatp^2}{2m} + V(\hatx),
-\end{dmath}
+\end{equation}
 %
 where \( V(\hatx) \) is even, or \( \antisymmetric{V(\hatx)}{\hat\Pi } = 0 \).  The squared momentum commutes with the parity operator
 %
