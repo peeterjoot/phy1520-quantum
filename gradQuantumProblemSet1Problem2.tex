@@ -53,10 +53,10 @@ and compute \( S_{n=2} \) for the above \( \rho_\txtR \).
 
 Some notation is useful to start.  Let \( \ket{a}_1 \) represent a spin state for the first particle and \( \ket{a}_2 \) represent a spin state for the second particle.  If the state under consideration is \( \ket{\psi} \), the reduced density operator matrix representation, after summing over all the second particle states, is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:20}
 \rho_\txtR
 = \sum_a \prescript{}{2}{\bra{a}} \lr{ \ket{\psi} \bra{\psi} } \ket{a}_2.
-\end{dmath}
+\end{equation}
 %
 Computing these \( {}_2\braket{a}{\psi} \) brackets for each state will allow the each of reduced density matrix to be expressed easily.
 
@@ -379,10 +379,10 @@ S_{n=2} = -\ln \lr{ \frac{1}{25} + \frac{16}{25} } = \ln \frac{17}{25} \approx 0
 
 In a diagonal representation of the reduced density matrix, the \( n \rightarrow 1 \) summation in the numerator of the Renyi entropy
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:380}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:380}
 S_{n \rightarrow 1}
 = \lim_{n \rightarrow 1} \frac{\ln \sum_{k} \rho_{kk}^n }{1 - n},
-\end{dmath}
+\end{equation}
 %
 tends to unity, so that logarithm tends to zero.  This results in division of two nearly zero quantities, which can be evaluated using l'H\^{o}pital's rule.  That is
 %
