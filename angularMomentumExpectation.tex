@@ -61,34 +61,40 @@ L_y &= \inv{2i} \lr{ L_{+} - L_{-} }.
 %
 The first order expectations \( \expectation{L_x}, \expectation{L_y} \) are both zero since \( \expectation{L_{+}} = \expectation{L_{-}} \).  For the second order expectation values we have
 %
-\begin{dmath}\label{eqn:angularMomentumExpectation:100}
+\begin{equation}\label{eqn:angularMomentumExpectation:100}
+\begin{aligned}
 L_x^2
-= \inv{4} \lr{ L_{+} + L_{-} } \lr{ L_{+} + L_{-} }
-= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + L_{+} L_{-} + L_{-} L_{+} }
-= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + 2 (L_x^2 + L_y^2) }
-= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + 2 (\BL^2 - L_z^2) },
-\end{dmath}
+&= \inv{4} \lr{ L_{+} + L_{-} } \lr{ L_{+} + L_{-} }
+\\ &= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + L_{+} L_{-} + L_{-} L_{+} }
+\\ &= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + 2 (L_x^2 + L_y^2) }
+\\ &= \inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} + 2 (\BL^2 - L_z^2) },
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:angularMomentumExpectation:120}
+\begin{equation}\label{eqn:angularMomentumExpectation:120}
+\begin{aligned}
 L_y^2
-= -\inv{4} \lr{ L_{+} - L_{-} } \lr{ L_{+} - L_{-} }
-= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - L_{+} L_{-} - L_{-} L_{+} }
-= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - 2 (L_x^2 + L_y^2) }
-= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - 2 (\BL^2 - L_z^2) }.
-\end{dmath}
+&= -\inv{4} \lr{ L_{+} - L_{-} } \lr{ L_{+} - L_{-} }
+\\ &= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - L_{+} L_{-} - L_{-} L_{+} }
+\\ &= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - 2 (L_x^2 + L_y^2) }
+\\ &= -\inv{4} \lr{ L_{+} L_{+} + L_{-} L_{-} - 2 (\BL^2 - L_z^2) }.
+\end{aligned}
+\end{equation}
 %
 Any expectation value \( \bra{lm} L_{+} L_{+} \ket{lm} \) or \( \bra{lm} L_{-} L_{-} \ket{lm} \) will be zero, leaving
 %
-\begin{dmath}\label{eqn:angularMomentumExpectation:140}
+\begin{equation}\label{eqn:angularMomentumExpectation:140}
+\begin{aligned}
 \expectation{L_x^2}
-=
+&=
 \expectation{L_y^2}
-=
+\\ &=
 \inv{4} \expectation{2 (\BL^2 - L_z^2) }
-=
+\\ &=
 \inv{2} \lr{ \Hbar^2 l(l+1) - (\Hbar m)^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observe that we have
 \begin{equation}\label{eqn:angularMomentumExpectation:160}

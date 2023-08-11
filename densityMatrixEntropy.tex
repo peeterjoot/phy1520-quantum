@@ -33,22 +33,22 @@ In one of our problems I had trouble evaluating this, having calculated a densit
 %
 where
 %
-\begin{dmath}\label{eqn:densityMatrixEntropy:60}
+\begin{equation}\label{eqn:densityMatrixEntropy:60}
 E = \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 1 \\
 1 & -1
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:densityMatrixEntropy:100}
+\begin{equation}\label{eqn:densityMatrixEntropy:100}
 \wedge =
 \begin{bmatrix}
 1 & 0 \\
 0 & 0
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The usual method of evaluating a function of a matrix is to assume the function has a power series representation, and that a similarity transformation of the form \( A = E \wedge E^{-1} \) is possible, so that
 %
@@ -58,7 +58,7 @@ f(A) = E f(\wedge) E^{-1},
 %
 however, when attempting to do this with the matrix of \cref{eqn:densityMatrixEntropy:40} leads to an undesirable result
 %
-\begin{dmath}\label{eqn:densityMatrixEntropy:120}
+\begin{equation}\label{eqn:densityMatrixEntropy:120}
 \ln \rho =
 \inv{2}
 \begin{bmatrix}
@@ -73,35 +73,39 @@ however, when attempting to do this with the matrix of \cref{eqn:densityMatrixEn
 1 & 1 \\
 1 & -1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The \( \ln 0 \) makes the evaluation of this matrix logarithm rather unpleasant.  To give meaning to the entropy expression, we have to do two things, the first is treating the trace operation as a higher precedence than the logarithms that it contains.  That is
 %
-\begin{dmath}\label{eqn:densityMatrixEntropy:140}
+\begin{equation}\label{eqn:densityMatrixEntropy:140}
+\begin{aligned}
 -\tr ( \rho \ln \rho )
-=
+&=
 -\tr ( E \wedge E^{-1} E \ln \wedge E^{-1} )
-=
+\\ &=
 -\tr ( E \wedge \ln \wedge E^{-1} )
-=
+\\ &=
 -\tr ( E^{-1} E \wedge \ln \wedge )
-=
+\\ &=
 -\tr ( \wedge \ln \wedge )
-=
+\\ &=
 - \sum_k \wedge_{kk} \ln \wedge_{kk}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now the matrix of the logarithm need not be evaluated, but we still need to give meaning to \( \wedge_{kk} \ln \wedge_{kk} \) for zero diagonal entries.  This can be done by considering a limiting scenario
 %
-\begin{dmath}\label{eqn:densityMatrixEntropy:160}
+\begin{equation}\label{eqn:densityMatrixEntropy:160}
+\begin{aligned}
 -\lim_{a \rightarrow 0} a \ln a
-=
+&=
 -\lim_{x \rightarrow \infty} e^{-x} \ln e^{-x}
-=
+\\ &=
 \lim_{x \rightarrow \infty} x e^{-x}
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The entropy can now be expressed in the unambiguous form, summing over all the non-zero eigenvalues of the density operator
 %

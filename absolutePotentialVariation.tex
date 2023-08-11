@@ -33,7 +33,7 @@ Estimate the lowest eigenvalue \( \lambda \) of the differential equation
 %
 Using \( \alpha \) variation with the trial function
 %
-\begin{dmath}\label{eqn:absolutePotentialVariation:40}
+\begin{equation}\label{eqn:absolutePotentialVariation:40}
 \psi =
 \left\{
 \begin{array}{l l}
@@ -41,7 +41,7 @@ c(\alpha - \Abs{x}) & \quad \mbox{\(\Abs{x} < \alpha,\) } \\
 0 & \quad \mbox{\(\Abs{x} > \alpha.\) }
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 } % problem
 %
@@ -54,36 +54,39 @@ H \psi = -\frac{d^2}{dx^2}\psi + \Abs{x} \psi = \lambda \psi.
 %
 We need the derivatives of the trial distribution.  The first derivative is
 %
-\begin{dmath}\label{eqn:absolutePotentialVariation:80}
+\begin{equation}\label{eqn:absolutePotentialVariation:80}
+\begin{aligned}
 \frac{d}{dx} \psi
-=
+&=
 -c \frac{d}{dx} \Abs{x}
-=
+\\ &=
 -c \frac{d}{dx} \lr{ x \theta(x) - x \theta(-x) }
-=
+\\ &=
 -c \lr{
  \theta(x) - \theta(-x)
 +
 x \delta(x) + x \delta(-x)
 }
-=
+\\ &=
 -c \lr{
  \theta(x) - \theta(-x)
 +
 2 x \delta(x)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The second derivative is
-\begin{dmath}\label{eqn:absolutePotentialVariation:100}
+\begin{equation}\label{eqn:absolutePotentialVariation:100}
+\begin{aligned}
 \frac{d^2}{dx^2} \psi
-=
+&=
 -c \frac{d}{dx} \lr{
  \theta(x) - \theta(-x)
 +
 2 x \delta(x)
 }
-=
+\\ &=
 -c \lr{
  \delta(x) + \delta(-x)
 +
@@ -91,15 +94,17 @@ The second derivative is
 +
 2 x \delta'(x)
 }
-=
+\\ &=
 -c \lr{
 4 \delta(x)
 +
 2 x \frac{-\delta(x) }{x}
 }
-=
+\\ &=
 -2 c \delta(x).
-\end{dmath}
+\end{aligned}
+\end{equation}
+
 %
 This gives
 %
@@ -141,15 +146,17 @@ c^2 \lr{ - 2 \alpha + \inv{6} \alpha^4 }.
 %
 The energy estimate is
 %
-\begin{dmath}\label{eqn:absolutePotentialVariation:180}
+\begin{equation}\label{eqn:absolutePotentialVariation:180}
+\begin{aligned}
 \overbar{E}
-=
+&=
 \frac{\braket{\psi}{H \psi}}{\braket{\psi}{\psi}}
-=
+\\ &=
 \frac{ - 2 \alpha + \inv{6} \alpha^4 }{ \frac{2}{3} \alpha^3}
-=
+\\ &=
 - \frac{3}{\alpha^2} + \inv{4} \alpha.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has its minimum at
 \begin{equation}\label{eqn:absolutePotentialVariation:200}
@@ -163,16 +170,17 @@ or
 %
 Back substitution into the energy gives
 %
-\begin{dmath}\label{eqn:absolutePotentialVariation:240}
+\begin{equation}\label{eqn:absolutePotentialVariation:240}
+\begin{aligned}
 \overbar{E}
-=
+&=
 - \frac{3}{4 \times 3^{2/3}} + \inv{2} 3^{1/3}
-= \frac{3^{4/3}}{4}
+\\ &= \frac{3^{4/3}}{4}
 \approx 1.08.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The problem says the exact answer is 1.019, so the variation gets within 6 \%.
 %
 } % answer
-
 %\EndArticle

@@ -33,15 +33,16 @@ f(\lambda) = e^{\lambda a} e^{\lambda b} e^{-\lambda (a + b)},
 \end{equation}
 %
 That derivative is
-\begin{dmath}\label{eqn:bakercambell:60}
+\begin{equation}\label{eqn:bakercambell:60}
+\begin{aligned}
 \frac{df}{d\lambda}
-=
+&=
 e^{\lambda a} a e^{\lambda b} e^{-\lambda (a + b)}
 +
 e^{\lambda a} b e^{\lambda b} e^{-\lambda (a + b)}
 -
 e^{\lambda a} b e^{\lambda b} (a + b)e^{-\lambda (a + b)}
-=
+\\ &=
 e^{\lambda a} \lr{
 a e^{\lambda b}
 +
@@ -50,33 +51,36 @@ b e^{\lambda b}
 e^{\lambda b} (a+b)
 }
 e^{-\lambda (a + b)}
-=
+\\ &=
 e^{\lambda a} \lr{
 \antisymmetric{a}{e^{\lambda b}}
 +
 \cancel{\antisymmetric{b}{e^{\lambda b}}}
 }
 e^{-\lambda (a + b)}
-=
+\\ &=
 e^{\lambda a}
 \antisymmetric{a}{e^{\lambda b}}
 e^{-\lambda (a + b)}
 .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The commutator above is proportional to \( \antisymmetric{a}{b} \)
 %
-\begin{dmath}\label{eqn:bakercambell:80}
+\begin{equation}\label{eqn:bakercambell:80}
+\begin{aligned}
 \antisymmetric{a}{e^{\lambda b}}
-=
+&=
 \sum_{k=0}^\infty \frac{\lambda^k}{k!} \antisymmetric{a}{ b^k }
-=
+\\ &=
 \sum_{k=0}^\infty \frac{\lambda^k}{k!} k b^{k-1} \antisymmetric{a}{b}
-=
+\\ &=
 \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}}{(k-1)!} b^{k-1} \antisymmetric{a}{b}
-=
+\\ &=
 \lambda e^{\lambda b} \antisymmetric{a}{b},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -87,23 +91,25 @@ so
 To get the above, we should also do the induction demonstration for \( \antisymmetric{a}{ b^k } = k b^{k-1} \antisymmetric{a}{b} \).
 This clearly holds for \( k = 0,1 \).  For any other \( k \) we have
 %
-\begin{dmath}\label{eqn:bakercambell:120}
+\begin{equation}\label{eqn:bakercambell:120}
+\begin{aligned}
 \antisymmetric{a}{b^{k+1}}
-=
+&=
 a b^{k+1} - b^{k+1} a
-=
+\\ &=
 \lr{ \antisymmetric{a}{b^{k}} + b^k a
 } b - b^{k+1} a
-=
+\\ &=
 k b^{k-1} \antisymmetric{a}{b} b
 + b^k \lr{ \antisymmetric{a}{b} + \cancel{b a} }
 - \cancel{b^{k+1} a}
-=
+\\ &=
 k b^{k} \antisymmetric{a}{b}
 + b^k \antisymmetric{a}{b}
-=
+\\ &=
 (k+1) b^k \antisymmetric{a}{b}. \qedmarker
-\end{dmath}
+\end{aligned}
+\end{equation}
 Observe that \cref{eqn:bakercambell:100} is solved by
 %
 \begin{equation}\label{eqn:bakercambell:140}

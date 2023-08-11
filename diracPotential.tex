@@ -86,23 +86,26 @@ E \int_{-\epsilon}^\epsilon \psi(x) dx = \frac{-\Hbar^2}{2m} \int_{-\epsilon}^\e
 %
 The RHS is zero
 %
-\begin{dmath}\label{eqn:diracPotential:180}
+\begin{equation}\label{eqn:diracPotential:180}
+\begin{aligned}
 E \int_{-\epsilon}^\epsilon \psi(x) dx
-=
+&=
 E \frac{ e^{-\kappa (\epsilon)} - 1}{-\kappa}
 -E \frac{ 1 - e^{\kappa (-\epsilon)}}{\kappa}
-\rightarrow
+\\ &\rightarrow
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That leaves
-\begin{dmath}\label{eqn:diracPotential:200}
+\begin{equation}\label{eqn:diracPotential:200}
+\begin{aligned}
 V_0 \int_{-\epsilon}^\epsilon \delta(x) \psi(x) dx
-=
+&=
 \frac{-\Hbar^2}{2m} \int_{-\epsilon}^\epsilon \frac{d^2 \psi}{dx^2} dx
-=
+\\ &=
 \frac{-\Hbar^2}{2m} \evalrange{\frac{d \psi}{dx}}{-\epsilon}{\epsilon}
-=
+\\ &=
 \frac{-\Hbar^2}{2m}
 \psi(0)
 \lr
@@ -111,7 +114,8 @@ V_0 \int_{-\epsilon}^\epsilon \delta(x) \psi(x) dx
 -
 \kappa e^{\kappa (-\epsilon)}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In the \( \epsilon \rightarrow 0 \) limit this gives
 %
@@ -139,12 +143,14 @@ with
 %
 The normalization requires
 %
-\begin{dmath}\label{eqn:diracPotential:300}
+\begin{equation}\label{eqn:diracPotential:300}
+\begin{aligned}
 1
-= 2 \Abs{C}^2 \int_0^\infty e^{- 2 \kappa x} dx
-= 2 \Abs{C}^2 \evalrange{\frac{e^{- 2 \kappa x}}{-2 \kappa}}{0}{\infty}
-= \frac{\Abs{C}^2}{\kappa},
-\end{dmath}
+&= 2 \Abs{C}^2 \int_0^\infty e^{- 2 \kappa x} dx
+\\ &= 2 \Abs{C}^2 \evalrange{\frac{e^{- 2 \kappa x}}{-2 \kappa}}{0}{\infty}
+\\ &= \frac{\Abs{C}^2}{\kappa},
+\end{aligned}
+\end{equation}
 %
 so
 %\begin{equation}\label{eqn:diracPotential:320}
@@ -206,7 +212,7 @@ The initial time state established by the delta function potential evolves as
 %
 In terms of \( m, V_0 \) that is
 %
-\begin{dmath}\label{eqn:diracPotential:700}
+\begin{equation}\label{eqn:diracPotential:700}
 \psi(x, t > 0) =
 \frac{
  \lr{m V_0}^{3/2}
@@ -216,7 +222,7 @@ In terms of \( m, V_0 \) that is
 }{k^2 \Hbar^2 + \ifrac{m^2 V_0^2}{\Hbar^2}}
 dk
 .
-\end{dmath}
+\end{equation}
 %
 This integral resists an attempt to evaluate with Mathematica.
 } % answer

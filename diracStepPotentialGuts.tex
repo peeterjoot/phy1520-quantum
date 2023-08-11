@@ -12,16 +12,16 @@ To understand the form of the eigenkets for particles and antiparticles in both 
 
 For the forward solution, given \( \Psi = \Psi_0 e^{i(k x - E t/\Hbar) } \), the Dirac equation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:20}
 i \Hbar (-i E/\Hbar) \Psi =
 \begin{bmatrix}
 -i \Hbar (i k) + V_0 & m c^2 \\
 m c^2 & i \Hbar (i k)
 \end{bmatrix}
 \Psi,
-\end{dmath}
+\end{equation}
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:40}
 \begin{bmatrix}
 E - V_0 & 0 \\
 0 & E - V_0
@@ -33,11 +33,11 @@ E - V_0 & 0 \\
 m c^2 &  - \Hbar k
 \end{bmatrix}
 \Psi.
-\end{dmath}
+\end{equation}
 %
 Similarly, for the backwards moving wave \( \Psi = e^{i(-k x - E t/\Hbar)} \), we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:60}
 \begin{bmatrix}
 E - V_0 & 0 \\
 0 & E - V_0
@@ -49,32 +49,34 @@ E - V_0 & 0 \\
 m c^2 & \Hbar k
 \end{bmatrix}
 \Psi.
-\end{dmath}
+\end{equation}
 %
 Working with \( \Hbar = c = 1 \) temporarily, we want to compute the eigensolutions for the matrix
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:80}
 H_{\pm k}
 =
 \begin{bmatrix}
 \pm k & m \\
 m & \mp k
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The eigenvalues \( \epsilon \) of both are the same
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:100}
+\begin{aligned}
 0
-=
+&=
 \Abs{ H_{\pm k} - \epsilon }
-=
+\\ &=
 (\pm k - \epsilon)(\mp k - \epsilon) - m^2
-=
+\\ &=
 (\mp k + \epsilon)(\pm k + \epsilon) - m^2
-=
+\\ &=
 \epsilon^2 - k^2 - m^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -86,9 +88,9 @@ or
 
 For the positive(negative) energy eigenvalues, we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:140}
 0
-=
+&=
 \begin{bmatrix}
 k \mp \epsilon & m \\
 m & -k \mp \epsilon
@@ -97,7 +99,7 @@ m & -k \mp \epsilon
 a \\
 b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 for some \( a, b\).  That is
 %
@@ -107,7 +109,7 @@ for some \( a, b\).  That is
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:180}
 \begin{bmatrix}
 a \\
 b
@@ -117,36 +119,37 @@ b
 - m \\
 k \mp \epsilon
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 For the normalization note that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:200}
+\begin{aligned}
 m^2 + \lr{ k \mp \epsilon }^2
-=
+&=
 m^2 + k^2 + \epsilon^2 \mp 2 k \epsilon
-=
+\\ &=
 2 \epsilon^2 \mp 2 k \epsilon
-=
+\\ &=
 2 \epsilon (\epsilon \mp k),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the normalized kets are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:220}
 \ket{k; \pm\epsilon} =
 \inv{\sqrt{2 \epsilon(\epsilon \mp k)}}
 \begin{bmatrix}
 \pm m \\
 \epsilon \mp k
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Eigenkets for \( H_{-k} \)}
-
 This time, for the positive(negative) energy eigenvalues, we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:141}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:141}
 0
 =
 \begin{bmatrix}
@@ -157,7 +160,7 @@ m & k \mp \epsilon
 a \\
 b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 for some \( a, b\).  That is
 %
@@ -167,50 +170,54 @@ for some \( a, b\).  That is
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:181}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:181}
+\begin{aligned}
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}
-\propto
+&\propto
 \begin{bmatrix}
 - m \\
 -k \mp \epsilon
 \end{bmatrix}
-\propto
+\\ &\propto
 \begin{bmatrix}
 m \\
 k \pm \epsilon
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the normalization note that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:201}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:201}
+\begin{aligned}
 m^2 + \lr{ k \pm \epsilon }^2
-=
+&=
 m^2 + k^2 + \epsilon^2 \pm 2 k \epsilon
-=
+\\ &=
 2 \epsilon^2 \pm 2 k \epsilon
-=
+\\ &=
 2 \epsilon (\epsilon \pm k),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the normalized kets are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:221}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:221}
 \ket{-k; \pm\epsilon} =
 \inv{\sqrt{2 \epsilon(\epsilon \mp k)}}
 \begin{bmatrix}
 \pm m \\
 \epsilon \pm k
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Simplification of the rotation matrices}
 The eigenvalue equations have the form
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:240}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:240}
 H
 \begin{bmatrix}
 \ket{+} & \ket{-}
@@ -223,10 +230,10 @@ H
 \epsilon & 0 \\
 0 & -\epsilon
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 With \( R = \begin{bmatrix} \ket{+} & \ket{-} \end{bmatrix} \), this has the form \( H R = R \Omega \), or \( H = R \Omega R^{-1} \).  The rotation matrices have been found to be
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:260}
 R_{+k}
 =
 \inv{\sqrt{2\epsilon}}
@@ -234,10 +241,10 @@ R_{+k}
 \frac{m}{\sqrt{\epsilon - k}} & \frac{-m}{\sqrt{\epsilon + k}} \\
 \sqrt{\epsilon - k} & \sqrt{\epsilon + k}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:280}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:280}
 R_{-k}
 =
 \inv{\sqrt{2\epsilon}}
@@ -245,7 +252,7 @@ R_{-k}
 \frac{m}{\sqrt{\epsilon + k}} & \frac{-m}{\sqrt{\epsilon - k}} \\
 \sqrt{\epsilon + k} & \sqrt{\epsilon - k}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 These don't look very much like rotation matrices as is, but not all the terms are independent.  Writing
 %
@@ -260,24 +267,24 @@ b &= \frac{m}{\sqrt{2\epsilon(\epsilon + k)}} \\
 %
 the rotation matrices are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:320}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:320}
 R_{+k}
 =
 \begin{bmatrix}
 a & - b \\
 \beta & \alpha
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:340}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:340}
 R_{-k}
 =
 \begin{bmatrix}
 b & -a \\
 \alpha & \beta
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Note that
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:360}
@@ -290,41 +297,43 @@ Note that
 \end{equation}
 %
 So
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:380}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:380}
 R_{+k}
 =
 \begin{bmatrix}
 a & - b \\
 b & a
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:400}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:400}
 R_{-k}
 =
 \begin{bmatrix}
 b & -a \\
 a & b
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 These are expected to have a unit determinant, which is verified easily
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:420}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:420}
+\begin{aligned}
 a^2 + b^2
-=
+&=
 \frac{m^2}{2 \epsilon}
 \lr{
 \frac{1}{\epsilon + k}
 +
 \frac{1}{\epsilon - k}
 }
-=
+\\ &=
 \frac{m^2}{2 \epsilon}
 \frac{2 \epsilon}{\epsilon_2 - k^2}
-= 1.
-\end{dmath}
+\\ &= 1.
+\end{aligned}
+\end{equation}
 %
 We see that both sets of matrices invert by transposition, so we are free to make a trigonometric identification
 %
@@ -342,27 +351,31 @@ b = \sin\theta
 %
 Using the double angle formulation used in class these are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:480}
+\begin{aligned}
 \cos(2 \theta)
-=
+&=
 \frac{m^2}{2\epsilon(\epsilon - k)} -
 \frac{m^2}{2\epsilon(\epsilon + k)}
-=
+\\ &=
 \frac{m^2}{2 \epsilon} \lr{ \inv{\epsilon - k} - \inv{\epsilon + k} }
-=
+\\ &=
 \frac{2 k m^2}{2 \epsilon (\epsilon^2 - k^2)}
-=
+\\ &=
 \frac{k}{\epsilon},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:500}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:500}
+\begin{aligned}
 \sin(2 \theta)
-=
+&=
 2 \frac{m^2}{2 \epsilon} \inv{\sqrt{\epsilon^2 - k^2}}
-=
+\\ &=
 \frac{m}{\epsilon}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Putting back in the \( \Hbar \), and \( c\) factors, the diagonalizing transformation is now fully specified
 %
@@ -409,11 +422,12 @@ R_{- k} &=
 %
 The functions \( \Psi = \ket{\pm k; \pm \epsilon} e^{\pm i k x - i E t/\Hbar} \) are eigenfunctions of the Hamiltonian.  For example, for a non-antiparticle forward moving state
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:540}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:540}
+\begin{aligned}
 (E - V_0) \ket{k; +\epsilon}
-=
+&=
 H_k \ket{k; +\epsilon}
-=
+\\ &=
 \begin{bmatrix}
 \ket{k;+\epsilon} &
 \ket{k;-\epsilon}
@@ -427,7 +441,7 @@ H_k \ket{k; +\epsilon}
 \bra{k;-\epsilon}
 \end{bmatrix}
 \ket{k; \epsilon}
-=
+\\ &=
 \begin{bmatrix}
 \ket{k;+\epsilon} &
 \ket{k;-\epsilon}
@@ -440,7 +454,7 @@ H_k \ket{k; +\epsilon}
 \braket{k;+\epsilon}{k; \epsilon} \\
 \braket{k;-\epsilon}{k; \epsilon}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \ket{k;+\epsilon} &
 \ket{k;-\epsilon}
@@ -453,7 +467,7 @@ H_k \ket{k; +\epsilon}
 1 \\
 0
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \ket{k;+\epsilon} &
 \ket{k;-\epsilon}
@@ -462,10 +476,11 @@ H_k \ket{k; +\epsilon}
 \epsilon \\
 0
 \end{bmatrix}
-=
+\\ &=
 \epsilon
 \ket{k;+\epsilon}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \paragraph{Back to the core problem.}
 
@@ -483,18 +498,20 @@ This can be plotted nicely, as \( \frac{E}{m c^2} \) vs. \( \frac{\Hbar k}{m c} 
 %
 For the step potential we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:600}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:600}
+\begin{aligned}
 \frac{E}{m c^2}
-= \sqrt{ 1 + {\frac{ \Hbar k_1}{m c} }^2 }
-= \pm \sqrt{ 1 + {\frac{ \Hbar k_2}{m c} }^2 } + \frac{V_0}{m c^2},
-\end{dmath}
+&= \sqrt{ 1 + {\frac{ \Hbar k_1}{m c} }^2 }
+\\ &= \pm \sqrt{ 1 + {\frac{ \Hbar k_2}{m c} }^2 } + \frac{V_0}{m c^2},
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:620}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:620}
 \frac{ \Hbar k_2}{m c}
 =
 \lr{ \lr{ \pm \sqrt{ 1 + {\frac{ \Hbar k_1}{m c} }^2 } - \frac{V_0}{m c^2} }^2 - 1 }^{1/2}.
-\end{dmath}
+\end{equation}
 %
 When this is real valued, there is transmission in the barrier region.  There are a few cases of interest, the \( V_0 < 2 m c^2 \) cases are plotted in \cref{fig:ps4DiracStepPotential:ps4DiracStepPotentialFig1} showing the transmission (\( V_0 = 0.7 m c^2 \)) and decaying cases (\( V_0 = 1.4 m c^2 \)) respectively.
 Three \( V_0 > 2 m c^2 \) cases are plotted in \cref{fig:ps4DiracStepPotential:ps4DiracStepPotentialFig3},
@@ -523,22 +540,22 @@ and ordinary-particle transmission
 
 We want to find the wave incident, reflected, and transmitted wave function.  From the diagonalization above, these are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:640}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:640}
 \Psi_{\textrm{inc}} =
 \begin{bmatrix}
 \cos\theta_{k_1} \\
 \sin\theta_{k_1} \\
 \end{bmatrix}
 e^{i (k_1 x - E t/\Hbar)},
-\end{dmath}
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:660}
+\end{equation}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:660}
 \Psi_{\textrm{ref}} =
 \begin{bmatrix}
 \sin\theta_{k_1} \\
 \cos\theta_{k_1} \\
 \end{bmatrix}
 e^{i (-k_1 x - E t/\Hbar)}.
-\end{dmath}
+\end{equation}
 The currents \( j = c (\psi_1^\conj \psi_1 - \psi_2^\conj \psi_2) \) for these wave functions are
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:960}
@@ -553,22 +570,22 @@ j_{\textrm{ref}} = c (\sin^2 \theta_{k_1} - \cos^2 \theta_{k_1}) = -c \cos(2 \th
 %
 When there is a transmitted particle (anti-particle) in region II, the transmitted wave function are respectively
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:680}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:680}
 \Psi_{\textrm{trans}} =
 \begin{bmatrix}
 \cos\theta_{k_2} \\
 \sin\theta_{k_2} \\
 \end{bmatrix}
 e^{i (k_2 x - E t/\Hbar)},
-\end{dmath}
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:700}
+\end{equation}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:700}
 \Psi_{\textrm{trans}} =
 \begin{bmatrix}
 -\sin\theta_{k_2} \\
 \cos\theta_{k_2} \\
 \end{bmatrix}
 e^{i (k_2 x - E t/\Hbar)}.
-\end{dmath}
+\end{equation}
 %
 The currents for these are respectively
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1321}
@@ -625,7 +642,7 @@ Simultaneous solutions of \cref{eqn:gradQuantumProblemSet4Problem3:740}, \cref{e
 \item Ordinary matter transmission.
 For this case at \( x = 0 \), we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:920}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:920}
 A
 \begin{bmatrix}
 \cos\theta_{k_1} \\
@@ -643,11 +660,11 @@ D
 \cos \theta_2 \\
 \sin \theta_2
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 With \( a = B/A \) and \( b = D/A \), \( S_{1,2} = \sin\theta_{k_{1,2}}, C_{1,2} = \cos\theta_{k_{1,2}} \), this is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:800}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:800}
 \begin{bmatrix}
 C_1 \\
 S_1
@@ -661,15 +678,16 @@ S_1
 a \\
 b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:820}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:820}
+\begin{aligned}
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}
-=
+&=
 \inv{- S_1 S_2 + C_1 C_2 }
 \begin{bmatrix}
 S_2 & -C_2 \\
@@ -679,13 +697,14 @@ C_1 & -S_1
 C_1 \\
 S_1
 \end{bmatrix}
-=
+\\ &=
 \inv{\cos(\theta_{k_1} + \theta_{k_2})}
 \begin{bmatrix}
 C_1 S_2 - S_1 C_2 \\
 C_1^2 - S_1^2
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which is
 \boxedEquation{eqn:gradQuantumProblemSet4Problem3:840}{
@@ -697,33 +716,35 @@ which is
 
 Let's verify that the currents in both regions match.  With \( A = 1 \), the region I current sum is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1000}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1000}
+\begin{aligned}
 j_{\textrm{inc}}
 + j_{\textrm{ref}}
-=
+&=
 c \cos( 2 \theta_{k_1} ) - B^2 c \cos( 2 \theta_{k_1} )
-=
+\\ &=
 c \cos( 2 \theta_{k_1} )
 \lr{ 1 -
 \frac{ \sin^2(\theta_{k_2} - \theta_{k_1}) }{\cos^2(\theta_{k_1} + \theta_{k_2})} }
-=
+\\ &=
 c \cos( 2 \theta_{k_1} )
 \frac{ \cos^2(\theta_{k_1} + \theta_{k_2}) - \sin^2(\theta_{k_2} - \theta_{k_1}) }{\cos^2(\theta_{k_1} + \theta_{k_2})}
-=
+\\ &=
 c
 \frac{ \cos( 2 \theta_{k_1} ) \cos(2 \theta_{k_1}) \cos(2 \theta_{k_2})}
 {\cos^2(\theta_{k_1} + \theta_{k_2})}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Whereas, the transmitted (region II) current is
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1020}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1020}
+\begin{aligned}
 j_{\textrm{trans}}
-=
- c D^2 \cos( 2 \theta_{k_2} )
-=
- c \cos( 2 \theta_{k_2} )
+&= c D^2 \cos( 2 \theta_{k_2} )
+\\ &= c \cos( 2 \theta_{k_2} )
 \frac{ \cos^2(2 \theta_{k_1}) }{\cos^2(\theta_{k_1} + \theta_{k_2})},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \), as expected.
 
@@ -771,12 +792,13 @@ b
 \end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:880}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:880}
+\begin{aligned}
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}
-=
+&=
 \inv{- (S_1 C_2 + S_2 C_1) }
 \begin{bmatrix}
 C_2 & -S_2 \\
@@ -786,13 +808,14 @@ C_1 & -S_1
 C_1 \\
 S_1
 \end{bmatrix}
-=
+\\ &=
 \inv{-\sin(\theta_{k_1} + \theta_{k_2})}
 \begin{bmatrix}
 C_1 C_2 + S_1 S_2 \\
 C_1^2 - S_1^2
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which is
 \boxedEquation{eqn:gradQuantumProblemSet4Problem3:900}{
@@ -804,33 +827,35 @@ which is
 
 For the anti-particle transmission, the region I current is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1001}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1001}
+\begin{aligned}
 j_{\textrm{inc}}
 + j_{\textrm{ref}}
-=
+&=
 c \cos( 2 \theta_{k_1} ) - B^2 c \cos( 2 \theta_{k_1} )
-=
+\\ &=
 c \cos( 2 \theta_{k_1} )
 \lr{ 1 -
 \frac{ \cos^2(\theta_{k_1} - \theta_{k_2}) }{\sin^2(\theta_{k_1} + \theta_{k_2})} }
-=
+\\ &=
 c \cos( 2 \theta_{k_1} )
 \frac{ \sin^2(\theta_{k_1} + \theta_{k_2}) - \cos^2(\theta_{k_1} - \theta_{k_2}) }{\cos^2(\theta_{k_1} + \theta_{k_2})}
-=
+\\ &=
 -c
 \frac{ \cos( 2 \theta_{k_1} ) \cos(2 \theta_{k_1}) \cos(2 \theta_{k_2})}
 {\sin^2(\theta_{k_1} + \theta_{k_2})}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Whereas, the transmitted (region II) current is
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1021}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1021}
+\begin{aligned}
 j_{\textrm{trans}}
-=
- -c D^2 \cos( 2 \theta_{k_2} )
-=
- -c \cos( 2 \theta_{k_2} )
+&= -c D^2 \cos( 2 \theta_{k_2} )
+\\ &= -c \cos( 2 \theta_{k_2} )
 \frac{ \cos^2(2 \theta_{k_1}) }{\sin^2(\theta_{k_1} + \theta_{k_2})},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and again we see \( j_{\textrm{inc}} + j_{\textrm{ref}} = j_{\textrm{trans}} \), as expected.
 \item Decaying transmission.
@@ -864,12 +889,14 @@ where
 
 Observe that the \( \psi_2 \) component of this wave function sits on a circle in the complex plane
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1101}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1101}
+\begin{aligned}
 \Abs{\epsilon_2 \pm i k}^2
-= \epsilon^2 + k^2
-= m^2 - k^2 + k^2
-= m^2.
-\end{dmath}
+&= \epsilon^2 + k^2
+\\ &= m^2 - k^2 + k^2
+\\ &= m^2.
+\end{aligned}
+\end{equation}
 %
 Putting back in the factors of \( \Hbar \), \( c\), this allows the identification
 %
@@ -925,12 +952,13 @@ e^{-i \phi/2} \\
 %
 With \( a = A/D \), and \( b = B/D \), this has solution
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1201}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1201}
+\begin{aligned}
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}
-=
+&=
 \inv{\sqrt{2}}
 {\begin{bmatrix}
 C_1 & S_1 \\
@@ -940,7 +968,7 @@ S_1 & C_1
 e^{i \phi/2} \\
 e^{-i \phi/2} \\
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2} \cos(2 \theta_{k_1})}
 \begin{bmatrix}
 C_1 & -S_1 \\
@@ -950,32 +978,35 @@ C_1 & -S_1 \\
 e^{i \phi/2} \\
 e^{-i \phi/2} \\
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2} \cos(2 \theta_{k_1})}
 \begin{bmatrix}
 C_1 e^{i \phi/2} -S_1 e^{-i \phi/2} \\
 -S_1 e^{i \phi/2} + C_1 e^{-i \phi/2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The reflection coefficient is unity
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem3:1221}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem3:1221}
+\begin{aligned}
 R
-= \Abs{\frac{B}{A}}^2
-= \Abs{\frac{B/D}{A/D}}^2
-= \frac{\Abs{-S_1 e^{i \phi/2} + C_1 e^{-i \phi/2}}^2}
+&= \Abs{\frac{B}{A}}^2
+\\ &= \Abs{\frac{B/D}{A/D}}^2
+\\ &= \frac{\Abs{-S_1 e^{i \phi/2} + C_1 e^{-i \phi/2}}^2}
 {\Abs{C_1 e^{i \phi/2} -S_1 e^{-i \phi/2} }^2}
-=
+\\ &=
 \frac
 { C_1^2 + S_1^2 - 2 S_1 C_1 \Real e^{-i\phi} }
 { C_1^2 + S_1^2 - 2 S_1 C_1 \Real e^{i\phi} }
-=
+\\ &=
 \frac
 { 1 - \sin( 2 \theta_{k_1}) \cos \phi }
 { 1 - \sin( 2 \theta_{k_1}) \cos \phi }
-=
+\\ &=
 1.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 %%%\paragraph{Confusion:}
 %%%Completely counter to (my) intuition, the transmission coefficient is not 0, so we don't appear to have \( R + T = 1 \).  Instead

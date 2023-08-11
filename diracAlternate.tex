@@ -27,13 +27,13 @@
 %
 Given an alternate representation of the Dirac equation
 %
-\begin{dmath}\label{eqn:diracAlternate:20}
+\begin{equation}\label{eqn:diracAlternate:20}
 H =
 \begin{bmatrix}
 m c^2 + V_0 & c \hatp \\
 c \hatp & - m c^2 + V_0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 calculate
 %
@@ -56,18 +56,19 @@ find the form of the probability density current.
 %
 The action of the Hamiltonian on
 %
-\begin{dmath}\label{eqn:diracAlternate:40}
+\begin{equation}\label{eqn:diracAlternate:40}
 \psi =
 e^{i k x - i E t/\Hbar}
 \begin{bmatrix}
 \psi_1 \\
 \psi_2
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 is
-\begin{dmath}\label{eqn:diracAlternate:60}
+\begin{equation}\label{eqn:diracAlternate:60}
+\begin{aligned}
 H \psi
-=
+&=
 \begin{bmatrix}
 m c^2 + V_0 & c (-i \Hbar) i k \\
 c (-i \Hbar) i k & - m c^2 + V_0
@@ -77,36 +78,39 @@ c (-i \Hbar) i k & - m c^2 + V_0
 \psi_2
 \end{bmatrix}
 e^{i k x - i E t/\Hbar}
-=
+\\ &=
 \begin{bmatrix}
 m c^2 + V_0 & c \Hbar k \\
 c \Hbar k & - m c^2 + V_0
 \end{bmatrix}
 \psi.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Writing
 %
-\begin{dmath}\label{eqn:diracAlternate:80}
+\begin{equation}\label{eqn:diracAlternate:80}
 H_k
 =
 \begin{bmatrix}
 m c^2 + V_0 & c \Hbar k \\
 c \Hbar k & - m c^2 + V_0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 the characteristic equation is
 %
-\begin{dmath}\label{eqn:diracAlternate:100}
-0 =
+\begin{equation}\label{eqn:diracAlternate:100}
+\begin{aligned}
+0 &=
 (m c^2 + V_0 - \lambda)
 (-m c^2 + V_0 - \lambda)
 %(-m c^2 - V_0 + \lambda)
 %(m c^2 - V_0 + \lambda)
 - (c \Hbar k)^2
-=
+\\ &=
 \lr{ (\lambda - V_0)^2 - (m c^2)^2 } - (c \Hbar k)^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -183,7 +187,7 @@ c \Hbar k \\
 
 We can now write
 %
-\begin{dmath}\label{eqn:diracAlternate:220}
+\begin{equation}\label{eqn:diracAlternate:220}
 H_k =
 E
 \begin{bmatrix}
@@ -191,7 +195,7 @@ V_0 + \epsilon & 0 \\
 0         & V_0 - \epsilon
 \end{bmatrix}
 E^{-1},
-\end{dmath}
+\end{equation}
 %
 where
 \begin{equation}\label{eqn:diracAlternate:240}
@@ -256,26 +260,30 @@ E =
 %
 Observe that \cref{eqn:diracAlternate:280} can be simplified by using double angle formulas
 %
-\begin{dmath}\label{eqn:diracAlternate:320}
+\begin{equation}\label{eqn:diracAlternate:320}
+\begin{aligned}
 \cos(2 \theta)
-=
+&=
 \frac{\lr{ \epsilon + m c^2} }{ 2 \epsilon }
 -
 \frac{\lr{ \epsilon - m c^2}}{ 2 \epsilon }
-=
+\\ &=
 \frac{1}{ 2 \epsilon } \lr{ \epsilon + m c^2 - \epsilon + m c^2 }
-=
+\\ &=
 \frac{m c^2 }{ \epsilon },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:diracAlternate:340}
+\begin{equation}\label{eqn:diracAlternate:340}
+\begin{aligned}
 \sin(2\theta)
-=
+&=
 2 \frac{1}{2 \epsilon} \sgn(k ) \sqrt{ \epsilon^2 - (m c^2)^2 }
-=
+\\ &=
 \frac{\Hbar k c}{\epsilon}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This allows all the \( \theta \) dependence on \( \Hbar k c \) and \( m c^2 \) to be expressed as a ratio of momenta
 %
@@ -288,14 +296,14 @@ This allows all the \( \theta \) dependence on \( \Hbar k c \) and \( m c^2 \) t
 \makeSubAnswer{}{problem:diracAlternate:1:b}
 For a wave function of the form
 %
-\begin{dmath}\label{eqn:diracAlternate:380}
+\begin{equation}\label{eqn:diracAlternate:380}
 \psi =
 e^{k x - i E t/\Hbar}
 \begin{bmatrix}
 \psi_1 \\
 \psi_2
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 some of the work above can be recycled if we substitute \( k \rightarrow -i k \), which yields unnormalized eigenfunctions
 %
@@ -324,15 +332,17 @@ where
 %
 The squared magnitude of these wavefunctions are
 %
-\begin{dmath}\label{eqn:diracAlternate:440}
+\begin{equation}\label{eqn:diracAlternate:440}
+\begin{aligned}
 (c \Hbar k)^2 + (m c^2 \mp \epsilon)^2
-=
+&=
 (c \Hbar k)^2 + (m c^2)^2 + \epsilon^2 \mp 2 m c^2 \epsilon
-=
+\\ &=
 (c \Hbar k)^2 + (m c^2)^2 + (m c^2)^2 \mp (c \Hbar k)^2 - 2 m c^2 \epsilon
-= 2 (m c^2)^2 \mp 2 m c^2 \epsilon
-= 2 m c^2 ( m c^2 \mp \epsilon ),
-\end{dmath}
+\\ &= 2 (m c^2)^2 \mp 2 m c^2 \epsilon
+\\ &= 2 m c^2 ( m c^2 \mp \epsilon ),
+\end{aligned}
+\end{equation}
 %
 so, up to a constant phase for each, the normalized kets are
 %
@@ -380,23 +390,27 @@ m c^2 + \epsilon
 \end{equation}
 %
 \makeSubAnswer{}{problem:diracAlternate:1:c}
-\begin{dmath}\label{eqn:diracAlternate:500}
+\begin{equation}\label{eqn:diracAlternate:500}
+\begin{aligned}
 \hatv
-= \inv{i \Hbar} \antisymmetric{ \hatx }{ H}
-= \inv{i \Hbar} \antisymmetric{ \hatx }{ m c^2 \sigma_z + V_0 + c \hatp \sigma_x }
-= \frac{c \sigma_x}{i \Hbar} \antisymmetric{ \hatx }{ \hatp }
-= c \sigma_x.
-\end{dmath}
+&= \inv{i \Hbar} \antisymmetric{ \hatx }{ H}
+\\ &= \inv{i \Hbar} \antisymmetric{ \hatx }{ m c^2 \sigma_z + V_0 + c \hatp \sigma_x }
+\\ &= \frac{c \sigma_x}{i \Hbar} \antisymmetric{ \hatx }{ \hatp }
+\\ &= c \sigma_x.
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:diracAlternate:1:d}
 %
 Acting against a completely general wavefunction the Hamiltonian action \( H \psi \) is
 %
-\begin{dmath}\label{eqn:diracAlternate:520}
+\begin{equation}\label{eqn:diracAlternate:520}
+\begin{aligned}
 i \Hbar \PD{t}{\psi}
-= m c^2 \sigma_z \psi + V_0 \psi + c \hatp \sigma_x \psi
-= m c^2 \sigma_z \psi + V_0 \psi -i \Hbar c \sigma_x \PD{x}{\psi}.
-\end{dmath}
+&= m c^2 \sigma_z \psi + V_0 \psi + c \hatp \sigma_x \psi
+\\ &= m c^2 \sigma_z \psi + V_0 \psi -i \Hbar c \sigma_x \PD{x}{\psi}.
+\end{aligned}
+\end{equation}
 %
 Conversely, the conjugate \( (H \psi)^\dagger \) is
 %
@@ -418,15 +432,15 @@ m c^2 \psi^\dagger \sigma_z \psi + V_0 \psi^\dagger \psi -i \Hbar c \psi^\dagger
 \end{equation}
 %
 Taking differences
-\begin{dmath}\label{eqn:diracAlternate:580}
+\begin{equation}\label{eqn:diracAlternate:580}
 \psi^\dagger \PD{t}{\psi} + \PD{t}{\psi^\dagger} \psi
 =
 - c \psi^\dagger \sigma_x \PD{x}{\psi} - c \PD{x}{\psi^\dagger} \sigma_x \psi,
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:diracAlternate:600}
+\begin{equation}\label{eqn:diracAlternate:600}
 0
 =
 \PD{t}{}
@@ -438,11 +452,12 @@ or
 \lr{
 c \psi^\dagger \sigma_x \psi
 }.
-\end{dmath}
+\end{equation}
 %
 The probability current still has the usual form \( \rho = \psi^\dagger \psi = \psi_1^\conj \psi_1 + \psi_2^\conj \psi_2 \), but the probability current with this representation of the Dirac Hamiltonian is
 %
-\begin{dmath}\label{eqn:diracAlternate:620}
+\begin{equation}\label{eqn:diracAlternate:620}
+\begin{aligned}
 j
 = c \psi^\dagger \sigma_x \psi
 = c
@@ -455,7 +470,8 @@ j
 \psi_1
 \end{bmatrix}
 = c \lr{ \psi_1^\conj \psi_2 + \psi_2^\conj \psi_1 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 } % answer
 
 %\EndNoBibArticle

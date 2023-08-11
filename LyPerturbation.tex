@@ -44,16 +44,18 @@ The first order energy shift is zero
 % Lp = Lx + iLy
 % Lm = Lx - iLy
 % 2i Ly = Lp - Lm
-\begin{dmath}\label{eqn:LyPerturbation:60}
+\begin{equation}\label{eqn:LyPerturbation:60}
+\begin{aligned}
 \Delta^1
-=
+&=
 \bra{l, m} C L_y \ket{l, m}
-=
+\\ &=
 \frac{C}{2 i}
 \bra{l, m} \lr{ L_{+} - L_{-} } \ket{l, m}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we need the second order shift.  Assuming no degeneracy to start, the perturbed state is
 %
@@ -62,27 +64,29 @@ so we need the second order shift.  Assuming no degeneracy to start, the perturb
 \end{equation}
 %
 and the next order energy shift is
-\begin{dmath}\label{eqn:LyPerturbation:100}
+\begin{equation}\label{eqn:LyPerturbation:100}
+\begin{aligned}
 \Delta^2
-=
+&=
 \bra{l m} V
 \sum' \frac{\ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m}
-=
+&=
 \sum' \frac{\bra{l, m} V \ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m}
-=
+\\ &=
 \sum' \frac{ \Abs{ \bra{l', m'} V \ket{l, m} }^2 }{E_{l,m} - E_{l', m'}}
-=
+\\ &=
 \sum_{m' \ne m} \frac{ \Abs{ \bra{l, m'} V \ket{l, m} }^2 }{E_{l,m} - E_{l, m'}}
-=
+\\ &=
 \sum_{m' \ne m} \frac{ \Abs{ \bra{l, m'} V \ket{l, m} }^2 }{
 \lr{ A \Hbar^2 l(l+1) + B \Hbar m }
 -\lr{ A \Hbar^2 l(l+1) + B \Hbar m' }
 }
-=
+\\ &=
 \inv{B \Hbar} \sum_{m' \ne m} \frac{ \Abs{ \bra{l, m'} V \ket{l, m} }^2 }{
 m - m'
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The sum over \( l' \) was eliminated because \( V \) only changes the \( m \) of any state \( \ket{l,m} \), so the matrix element \( \bra{l',m'} V \ket{l, m} \) must includes a \( \delta_{l', l} \) factor.
 Since we are now summing over \( m' \ne m \), some of the matrix elements in the numerator should now be non-zero, unlike the case when the zero first order energy shift was calculated in \cref{eqn:LyPerturbation:60}.
@@ -122,9 +126,10 @@ L_{+}
 %
 After squaring and summing, the cross terms will be zero since they involve products of delta functions with different indices.  That leaves
 %
-\begin{dmath}\label{eqn:LyPerturbation:140}
+\begin{equation}\label{eqn:LyPerturbation:140}
+\begin{aligned}
 \Delta^2
-=
+&=
 \frac{C^2 \Hbar}{4 B} \sum_{m' \ne m} \frac{
 (l - m)(l + m + 1) \delta_{m', m + 1}
 -
@@ -132,14 +137,14 @@ After squaring and summing, the cross terms will be zero since they involve prod
 }{
 m - m'
 }
-=
+\\ &=
 \frac{C^2 \Hbar}{4 B}
 \lr{
 \frac{ (l - m)(l + m + 1) }{ m - (m+1) }
 -
 \frac{ (l + m)(l - m + 1) }{ m - (m-1)}
 }
-=
+\\ &=
 \frac{C^2 \Hbar}{4 B}
 \lr{
 -
@@ -147,9 +152,10 @@ m - m'
 -
 (l^2 - m^2 + l + m)
 }
-=
+\\ &=
 -\frac{C^2 \Hbar}{2 B} (l^2 - m^2 + l ),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so to first order the energy shift is
 %
@@ -163,12 +169,10 @@ A \Hbar
 + B \Hbar m
 +\frac{C^2 m^2 \Hbar}{2 B}.
 }
-
 \paragraph{Exact perturbation equation}
-
 If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 2 m + 1 \) dimensional Hamiltonian
 %
-\begin{dmath}\label{eqn:LyPerturbation:180}
+\begin{equation}\label{eqn:LyPerturbation:180}
 \bra{l, m'} H \ket{l, m}
 =
 \lr{ A \Hbar^2 l(l+1) + B \Hbar m } \delta_{m', m}
@@ -179,7 +183,8 @@ If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 
 -
 \sqrt{(l + m)(l - m + 1)} \delta_{m', m - 1}
 }.
-\end{dmath}
+\end{equation}
+
 %
 This Hamiltonian matrix has a very regular structure
 %

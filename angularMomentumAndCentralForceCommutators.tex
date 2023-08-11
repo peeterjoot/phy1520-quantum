@@ -217,7 +217,7 @@ H &=
 \end{equation}
 This system has \( \antisymmetric{A}{H} = \antisymmetric{B}{H} = 0 \), and
 %
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:380}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:380}
 \antisymmetric{A}{B}
 =
 \begin{bmatrix}
@@ -225,17 +225,17 @@ This system has \( \antisymmetric{A}{H} = \antisymmetric{B}{H} = 0 \), and
 -2 & 0 & 0 \\
  0 & 0 & 0 \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 There is one shared eigenvector between all of \( A, B, H \)
 %
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:400}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:400}
 \ket{3} =
 \begin{bmatrix}
 0 \\
 0 \\
 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The other eigenvectors for \( A \) are
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:420}
@@ -337,65 +337,75 @@ A \ket{2} &= a_2 \ket{2},
 \end{equation}
 where \( \ket{1}\), and \( \ket{2} \) are not eigenkets of \( B \).  Because \( B \) also commutes with \( H \), we must have
 %
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:180}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:180}
+\begin{aligned}
 H B \ket{1}
-= H \sum_n \ket{n}\bra{n} B \ket{1}
-= \sum_n \epsilon_n \ket{n} B_{n 1},
-\end{dmath}
+&= H \sum_n \ket{n}\bra{n} B \ket{1}
+\\ &= \sum_n \epsilon_n \ket{n} B_{n 1},
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:200}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:200}
+\begin{aligned}
 B H \ket{1}
-= B \epsilon_1 \ket{1}
-= \epsilon_1 \sum_n \ket{n}\bra{n} B \ket{1}
-= \epsilon_1 \sum_n \ket{n} B_{n 1}.
-\end{dmath}
+&= B \epsilon_1 \ket{1}
+\\ &= \epsilon_1 \sum_n \ket{n}\bra{n} B \ket{1}
+\\ &= \epsilon_1 \sum_n \ket{n} B_{n 1}.
+\end{aligned}
+\end{equation}
 %
 We can now compute the action of the commutators on \( \ket{1}, \ket{2} \),
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:220}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:220}
 \antisymmetric{B}{H} \ket{1}
 =
 \sum_n \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}.
-\end{dmath}
+\end{equation}
 %
 Similarly
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:240}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:240}
 \antisymmetric{B}{H} \ket{2}
 =
 \sum_n \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}.
-\end{dmath}
+\end{equation}
 %
 However, for those kets \( \ket{m} \in \setlr{ \ket{3}, \ket{4}, \cdots } \) that are eigenkets of \( B \), with \( B \ket{m} = b_m \ket{m} \), we have
 %
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:280}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:280}
+\begin{aligned}
 \antisymmetric{B}{H} \ket{m}
-=
+&=
 B \epsilon_m \ket{m} - H b_m \ket{m}
-=
+\\ &=
 b_m \epsilon_m \ket{m} - \epsilon_m b_m \ket{m}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The sums in
 \cref{eqn:angularMomentumAndCentralForceCommutators:220}
 and
 \cref{eqn:angularMomentumAndCentralForceCommutators:240} reduce to
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:500}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:500}
+\begin{aligned}
 \antisymmetric{B}{H} \ket{1}
-=
+&=
 \sum_{n=1}^2 \lr{ \epsilon_1 - \epsilon_n } \ket{n} B_{n 1}
-=
+\\ &=
 \lr{ \epsilon_1 - \epsilon_2 } \ket{2} B_{2 1},
-\end{dmath}
+\end{aligned}
+\end{equation}
 and
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:520}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:520}
+\begin{aligned}
 \antisymmetric{B}{H} \ket{2}
-=
+&=
 \sum_{n=1}^2 \lr{ \epsilon_2 - \epsilon_n } \ket{n} B_{n 2}
-=
+\\ &=
 \lr{ \epsilon_2 - \epsilon_1 } \ket{1} B_{1 2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 Since the commutator is zero, the matrix elements of the commutator must all be zero, in particular
 \begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:260}
 \begin{aligned}
@@ -412,15 +422,17 @@ We must either have
 \end{itemize}
 If the first condition were true we would have
 %
-\begin{dmath}\label{eqn:angularMomentumAndCentralForceCommutators:300}
+\begin{equation}\label{eqn:angularMomentumAndCentralForceCommutators:300}
+\begin{aligned}
 B \ket{1}
-=
+&=
 \ket{n}\bra{n} B \ket{1}
-=
+\\ &=
 \ket{n} B_{n 1}
-=
+\\ &=
 \ket{1} B_{1 1},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and \( B \ket{2} = B_{2 2} \ket{2} \).  This contradicts the requirement that \( \ket{1}, \ket{2} \) not be eigenkets of \( B \), leaving only the second option.  That second option means there must be a degeneracy in the system.
 } % answer
