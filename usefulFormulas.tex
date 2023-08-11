@@ -162,23 +162,23 @@ S = - \tr( \rho \ln \rho ) = - \tr( \rho_{kk} \ln \rho_{kk} )
 
 \begin{subequations}
 \label{eqn:usefulFormulas:100}
-\begin{dmath}\label{eqn:usefulFormulas:120}
+\begin{equation}\label{eqn:usefulFormulas:120}
 \ket{S_x ; \pm } =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 \pm 1
 \end{bmatrix}
-\end{dmath}
-\begin{dmath}\label{eqn:usefulFormulas:140}
+\end{equation}
+\begin{equation}\label{eqn:usefulFormulas:140}
 \ket{S_y ; \pm } =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
 \pm i
 \end{bmatrix}
-\end{dmath}
-\begin{dmath}\label{eqn:usefulFormulas:160}
+\end{equation}
+\begin{equation}\label{eqn:usefulFormulas:160}
 \ket{S_z ; \pm } =
 \begin{bmatrix}
 1 \\
@@ -188,7 +188,7 @@ S = - \tr( \rho \ln \rho ) = - \tr( \rho_{kk} \ln \rho_{kk} )
 0 \\
 1 \\
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 \end{subequations}
 
 For \( \ncap = \lr{\sin\theta \cos\phi, \sin\theta\sin\phi, \cos\theta} \), the eigenkets of \( \BS \cdot \ncap \) are
@@ -228,13 +228,13 @@ p_0^2 = m \omega \Hbar
 \begin{equation}\label{eqn:usefulFormulas:240}
 x(t) = \frac{x_0}{\sqrt{2}} \lr{ a e^{-i\omega t} + a^\dagger e^{i \omega t} }
 \end{equation}
-\begin{dmath}\label{eqn:usefulFormulas:260}
+\begin{equation}\label{eqn:usefulFormulas:260}
 p(t) = \frac{i \Hbar}{\sqrt{2} x_0} \lr{
 a^\dagger e^{i \omega t}
 -
 a e^{-i\omega t}
 }
-\end{dmath}
+\end{equation}
 \begin{equation}\label{eqn:usefulFormulas:1640}
 a,a^\dagger = \inv{\sqrt{2} x_0} \lr{ x \mp x_0^2 \frac{d}{dx} }
 \end{equation}
@@ -254,11 +254,11 @@ p(t) = p(0) \cos \omega t - m \omega x(0) \sin \omega t
 \begin{equation}\label{eqn:usefulFormulas:360}
 x(t)^2 = \frac{\Hbar \omega}{2} \lr{ a e^{-i\omega t} + a^\dagger e^{i \omega t} }^2
 \end{equation}
-\begin{dmath}\label{eqn:usefulFormulas:380}
+\begin{equation}\label{eqn:usefulFormulas:380}
 p(t)^2 = \frac{\Hbar \omega}{2}
 \lr{ a e^{-i\omega t} - a^\dagger e^{i \omega t} }
 \lr{ a^\dagger e^{i \omega t} -a e^{-i\omega t} }
-\end{dmath}
+\end{equation}
 %
 \begin{equation}\label{eqn:usefulFormulas:1000}
 N = a^\dagger a
@@ -327,15 +327,17 @@ a \ket{z} = z \ket{z}
 \end{aligned}
 \end{equation}
 %
-\begin{dmath}\label{eqn:usefulFormulas:1340}
-\BA =
+\begin{equation}\label{eqn:usefulFormulas:1340}
+\begin{aligned}
+\BA &=
 \left\{
 \begin{array}{l l}
-\frac{B \rho_a^2}{2 \rho} \phicap & \quad \mbox{if \( \rho \ge \rho_a \) } \implies \BB = 0 \\
-\frac{B \rho}{2} \phicap & \quad \mbox{if \( \rho < \rho_a \)} \implies \BB = B \zcap
+\frac{B \rho_a^2}{2 \rho} \phicap & \quad \mbox{if \( \rho \ge \rho_a \) } \implies \BB \\ &= 0 \\
+\frac{B \rho}{2} \phicap & \quad \mbox{if \( \rho < \rho_a \)} \implies \BB \\ &= B \zcap
 \end{array}
 \right.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \begin{equation}\label{eqn:usefulFormulas:1400}
 \Phi \equiv \oint \BA \cdot d\Bl
@@ -545,16 +547,16 @@ J_z \ket{j,m} = m \Hbar \ket{j, m}
 J_{\pm} \ket{j,m} = \Hbar \sqrt{ (j \mp m)(j \pm m + 1)} \ket{j, m}
 \end{equation}
 %
-\begin{dmath}\label{eqn:usefulFormulas:2120}
+\begin{equation}\label{eqn:usefulFormulas:2120}
 \calD(R) =
 \exp\lr{ -i \BL \cdot \ncap \phi/\Hbar }
 \otimes
 \exp\lr{ -i \BS \cdot \ncap \phi/\Hbar }
-\end{dmath}
+\end{equation}
 
 \paragraph{Spin one representation}
 %
-\begin{dmath}\label{eqn:usefulFormulas:2140}
+\begin{equation}\label{eqn:usefulFormulas:2140}
 J_x
 =
 \frac{\Hbar}{\sqrt{2}}
@@ -563,9 +565,9 @@ J_x
 1 & 0 & 1 \\
 0 & 1 & 0 \\
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:usefulFormulas:2160}
+\begin{equation}\label{eqn:usefulFormulas:2160}
 J_y
 =
 \frac{\Hbar i}{\sqrt{2}}
@@ -574,9 +576,9 @@ J_y
 1 &  0 & -1 \\
 0 &  1 &  0 \\
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:usefulFormulas:2180}
+\begin{equation}\label{eqn:usefulFormulas:2180}
 J_z
 =\Hbar
 \begin{bmatrix}
@@ -584,17 +586,19 @@ J_z
 0 & 0 & 0 \\
 0 & 0 & -1 \\
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 \paragraph{Angular momentum}
 %
-\begin{dmath}\label{eqn:usefulFormulas:1840}
+\begin{equation}\label{eqn:usefulFormulas:1840}
+\begin{aligned}
 \BL^2
-= L_z^2 + \inv{2}\lr{ L_{+}L_{-} + L_{-}L_{+}}
-=
+&= L_z^2 + \inv{2}\lr{ L_{+}L_{-} + L_{-}L_{+}}
+\\ &=
 -\Hbar^2 \lr{ \inv{\sin^2\theta} \partial_{\phi\phi} + \inv{\sin\theta} \partial_\theta \lr{ \sin\theta \partial_\theta} }
-= \Bx^2 \Bp^2 - (\Bx \cdot \Bp)^2 + i \Hbar \Bx \cdot \Bp
-= r^2 \Bp^2 + \Hbar^2 \lr{ r^2 \partial_{rr} + 2 r \partial_r }
-\end{dmath}
+\\ &= \Bx^2 \Bp^2 - (\Bx \cdot \Bp)^2 + i \Hbar \Bx \cdot \Bp
+\\ &= r^2 \Bp^2 + \Hbar^2 \lr{ r^2 \partial_{rr} + 2 r \partial_r }
+\end{aligned}
+\end{equation}
 %
 \begin{equation}\label{eqn:usefulFormulas:1860}
 \begin{aligned}
@@ -627,64 +631,8 @@ L_{\pm} \ket{l,m} =\Hbar \sqrt{(l \mp m)(l \pm m + 1)} \ket{l, m \pm 1}
 L_z \ket{l, m} = m \Hbar \ket{l,m}
 \end{equation}
 
-\paragraph{Spherical harmonics}
-%
-\begin{equation}\label{eqn:qmLecture21:760}
-\begin{aligned}
-Y_{00} &= \frac{1}{2 \sqrt{\pi}} \\
-Y_{10} &= \frac{1}{2} \sqrt{\frac{3}{\pi }} \cos(\theta) \\
-Y_{20} &= \frac{1}{4} \sqrt{\frac{5}{\pi }} \lr{3 \cos^2(\theta)-1} \\
-Y_{30} &= \frac{1}{4} \sqrt{\frac{7}{\pi }} \lr{5 \cos^3(\theta)-3 \cos(\theta)} \\
-Y_{40} &= \frac{3 \lr{(35 \cos^4(\theta)-30 \cos^2(\theta)+3}}{16 \sqrt{\pi }} \\
-Y_{50} &= \frac{1}{16} \sqrt{\frac{11}{\pi }} \lr{63 \cos^5(\theta)-70 \cos^3(\theta)+15 \cos(\theta)} \\
-Y_{60} &= \frac{1}{32} \sqrt{\frac{13}{\pi }} \lr{231 \cos^6(\theta)-315 \cos^4(\theta)+105 \cos^2(\theta)-5} \\
-Y_{70} &= \frac{1}{32} \sqrt{\frac{15}{\pi }} \lr{429 \cos^7(\theta)-693 \cos^5(\theta)+315 \cos^3(\theta)-35 \cos(\theta)},
-%Y_{80} &= \frac{1}{256} \sqrt{\frac{17}{\pi }} \biglr{6435 \cos^8(\theta)-12012 \cos^6(\theta) \\
-%&\qquad +6930 \cos^4(\theta)-1260 \cos^2(\theta)+35 } \\
-\end{aligned}
-\end{equation}
-%
-\begin{equation}\label{eqn:usefulFormulas:2580}
-Y_{l,-m} = (-1)^m Y_{lm}^\conj
-\end{equation}
-%FIXME: complete this table.
-\paragraph{Hydrogen wavefunctions}
-
-% URL referenced is gone.  New versions from mit physical chemistry 2017 seem to be different.
-%From \citep{hydrogenWavefunctionsMIT}, with the \( a_0 \) factors added in.
-\begin{subequations}
-\label{eqn:qmLecture21:640}
-\begin{equation}\label{eqn:qmLecture21:660}
-\psi_{1 s} = \psi_{100} = \inv{\sqrt{\pi}} \lr{ \frac{Z}{a_0} }^{3/2} e^{- Z r/a_0}
-\end{equation}
-\begin{equation}\label{eqn:qmLecture21:680}
-\psi_{2 s} = \psi_{200} = \inv{4 \sqrt{2 \pi}} \lr{ \frac{Z}{a_0} }^{3/2} \lr{ 2 - \frac{r Z}{a_0} } e^{-Z r/2a_0}
-\end{equation}
-\begin{equation}\label{eqn:qmLecture21:700}
-\psi_{2 p_x} = \frac{1}{\sqrt{2}} \lr{ \psi_{2,1,-1} - \psi_{2,1,1} }
-= \inv{4 \sqrt{2 \pi}} \lr{ \frac{Z}{a_0} }^{3/2} \frac{rZ}{a_0} e^{-rZ/2a_0} \sin\theta\cos\phi
-\end{equation}
-\begin{equation}\label{eqn:qmLecture21:720}
-\psi_{2 p_y} = \frac{i}{\sqrt{2}} \lr{ \psi_{2,1,-1} + \psi_{2,1,1} }
-= \inv{4 \sqrt{2 \pi}} \lr{ \frac{Z}{a_0} }^{3/2} \frac{r Z }{a_0} e^{-rZ/2a_0} \sin\theta\sin\phi
-\end{equation}
-\begin{equation}\label{eqn:qmLecture21:740}
-\psi_{2 p_z} = \psi_{210} = \inv{4 \sqrt{2 \pi}} \lr{ \frac{Z}{a_0} }^{3/2} \frac{r Z}{a_0} e^{-r Z/2a_0} \cos\theta
-\end{equation}
-\end{subequations}
-
-I looked to \citep{hydrogenWavefunctionsHyperPhysics} to see where to add in the \( a_0 \) factors.
-
-Energy levels are \( n \) dependent only
-%
-\begin{equation}\label{eqn:usefulFormulas:1820}
-E_n = - \frac{Z^2 e^2}{2 n^2 a_0}
-\end{equation}
-%
-\begin{equation}\label{eqn:usefulFormulas:1960}
-a_0 = \frac{4 \pi \epsilon_0 \Hbar^2}{m e^2}
-\end{equation}
-
+\input{sphericalharmonics.tex}
+\input{hydrogenwavefunctions.tex}
 \paragraph{Perturbation}
 
 \begin{subequations}

@@ -43,24 +43,28 @@ If \( \calT_\Bd \), \( \calD(\ncap, \phi) \), and \( \pi \) denote the translati
 \makeSubAnswer{}{problem:symmetryOperatorCommutators:1:a}
 %
 Consider
-\begin{dmath}\label{eqn:symmetryOperatorCommutators:20}
+\begin{equation}\label{eqn:symmetryOperatorCommutators:20}
+\begin{aligned}
 \calT_\Bd \calT_{\Bd'} \ket{\Bx}
-=
+&=
 \calT_\Bd \ket{\Bx + \Bd'}
-=
+\\ &=
 \ket{\Bx + \Bd' + \Bd},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and the reverse application of the translation operators
-\begin{dmath}\label{eqn:symmetryOperatorCommutators:40}
+\begin{equation}\label{eqn:symmetryOperatorCommutators:40}
+\begin{aligned}
 \calT_{\Bd'} \calT_{\Bd} \ket{\Bx}
-=
+&=
 \calT_{\Bd'} \ket{\Bx + \Bd}
-=
+\\ &=
 \ket{\Bx + \Bd + \Bd'}
-=
+\\ &=
 \ket{\Bx + \Bd' + \Bd}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we see that
 %
@@ -76,24 +80,28 @@ That rotations do not commute when they are in different directions (like any tw
 %
 \makeSubAnswer{}{problem:symmetryOperatorCommutators:1:c}
 We have
-\begin{dmath}\label{eqn:symmetryOperatorCommutators:80}
+\begin{equation}\label{eqn:symmetryOperatorCommutators:80}
+\begin{aligned}
 \calT_\Bd \pi \ket{\Bx}
-=
+&=
 \calT_\Bd \ket{-\Bx}
-=
+\\ &=
 \ket{-\Bx + \Bd},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 yet
-\begin{dmath}\label{eqn:symmetryOperatorCommutators:100}
+\begin{equation}\label{eqn:symmetryOperatorCommutators:100}
+\begin{aligned}
 \pi \calT_\Bd \ket{\Bx}
-=
+&=
 \pi \ket{\Bx + \Bd}
-=
+\\ &=
 \ket{-\Bx - \Bd}
 \ne
 \ket{-\Bx + \Bd}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so, in general \( \antisymmetric{\calT_\Bd}{\pi} \ne 0 \).
 %
@@ -101,21 +109,23 @@ so, in general \( \antisymmetric{\calT_\Bd}{\pi} \ne 0 \).
 %
 We have
 %
-\begin{dmath}\label{eqn:symmetryOperatorCommutators:120}
+\begin{equation}\label{eqn:symmetryOperatorCommutators:120}
+\begin{aligned}
 \pi \calD(\ncap, \phi) \ket{\Bx}
-=
+&=
 \pi \calD(\ncap, \phi) \pi^\dagger \pi \ket{\Bx}
-=
+\\ &=
 \pi \calD(\ncap, \phi) \pi^\dagger \pi \ket{\Bx}
-=
-\pi \lr{ \sum_{k=0}^\infty \frac{(-i \BJ \cdot \ncap)^k}{k!} } \pi^\dagger \pi \ket{\Bx}
-=
+\\ &=
+\pi \lr{ \sum_{k =0}^\infty \frac{(-i \BJ \cdot \ncap)^k}{k!} } \pi^\dagger \pi \ket{\Bx}
+\\ &=
 \sum_{k=0}^\infty \frac{(-i (\pi \BJ \pi^\dagger) \cdot (\pi \ncap \pi^\dagger) )^k}{k!} \pi \ket{\Bx}
-=
+\\ &=
 \sum_{k=0}^\infty \frac{(-i \BJ \cdot \ncap)^k}{k!} \pi \ket{\Bx}
-=
+\\ &=
 \calD(\ncap, \phi) \pi \ket{\Bx},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so \( \antisymmetric{\calD(\ncap, \phi)}{\pi} \ket{\Bx} = 0 \), for any position state \( \ket{\Bx} \), and therefore these operators commute in general.
 } % answer

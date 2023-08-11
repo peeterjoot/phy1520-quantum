@@ -48,54 +48,61 @@ U(t) = e^{-i p^2 t/(2 m \Hbar)}.
 %
 The Heisenberg picture position operator is
 %
-\begin{dmath}\label{eqn:positionCommutator:80}
+\begin{equation}\label{eqn:positionCommutator:80}
+\begin{aligned}
 x^\txtH
-= U^\dagger x U
-= e^{i p^2 t/(2 m \Hbar)} x e^{-i p^2 t/(2 m \Hbar)}
-= \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i p^2 t}{2 m \Hbar} }^k
+&= U^\dagger x U
+\\ &= e^{i p^2 t/(2 m \Hbar)} x e^{-i p^2 t/(2 m \Hbar)}
+\\ &= \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i p^2 t}{2 m \Hbar} }^k
 x
 e^{-i p^2 t/(2 m \Hbar)}
-= \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k p^{2k} x
+\\ &= 
+\sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k p^{2k} x
 e^{-i p^2 t/(2 m \Hbar)}
-=
+\\ &=
 \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k \lr{ \antisymmetric{p^{2k}}{x} + x p^{2k} }
 e^{-i p^2 t/(2 m \Hbar)}
-= x +
+\\ &= x +
 \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k \antisymmetric{p^{2k}}{x}
 e^{-i p^2 t/(2 m \Hbar)}
-= x +
+\\ &= x +
 \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k \lr{ -i \Hbar \PD{p}{p^{2k}} }
 e^{-i p^2 t/(2 m \Hbar)}
-= x +
+\\ &= x +
 \sum_{k = 0}^\infty \inv{k!} \lr{ \frac{i t}{2 m \Hbar} }^k \lr{ -i \Hbar 2 k p^{2 k -1} }
 e^{-i p^2 t/(2 m \Hbar)}
-= x +
+\\ &= x +
 -2 i \Hbar p \frac{i t}{2 m \Hbar} \sum_{k = 1}^\infty \inv{(k-1)!} \lr{ \frac{i t}{2 m \Hbar} }^{k-1} p^{2(k - 1)}
 e^{-i p^2 t/(2 m \Hbar)}
-= x + t \frac{p}{m}.
-\end{dmath}
+\\ &= x + t \frac{p}{m}.
+\end{aligned}
+\end{equation}
 %
 This has the structure of a classical free particle \( x(t) = x + v t \), but in this case \( x,p \) are operators.
 
 The evolved position commutator is
-\begin{dmath}\label{eqn:positionCommutator:100}
+\begin{equation}\label{eqn:positionCommutator:100}
+\begin{aligned}
 \antisymmetric{x(t)}{x(0)}
-=
+&=
 \antisymmetric{x + t p/m}{x}
-=
+\\ &=
 \frac{t}{m} \antisymmetric{p}{x}
-=
+\\ &=
 -i \Hbar \frac{t}{m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Compare this to the classical Poisson bracket
-\begin{dmath}\label{eqn:positionCommutator:120}
+\begin{equation}\label{eqn:positionCommutator:120}
+\begin{aligned}
 \antisymmetric{x(t)}{x(0)}_{\textrm{classical}}
-=
+&=
 \PD{x}{}\lr{x + p t/m} \PD{p}{x} - \PD{p}{}\lr{x + p t/m} \PD{x}{x}
-=
+\\ &=
 - \frac{t}{m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has the expected relation \( \antisymmetric{x(t)}{x(0)} = i \Hbar \antisymmetric{x(t)}{x(0)}_{\textrm{classical}} \).
 %

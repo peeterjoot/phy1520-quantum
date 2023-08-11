@@ -91,23 +91,27 @@ we find
 %
 We also find
 %
-\begin{dmath}\label{eqn:qmLecture16:180}
+\begin{equation}\label{eqn:qmLecture16:180}
+\begin{aligned}
 \antisymmetric{(\Lcap_1 + \Lcap_2)^2}{\Lcap_1^2}
-=
+&=
 \antisymmetric{\Lcap_1^2 + \Lcap_2^2 + 2 \Lcap_1 \cdot \Lcap_2}{\Lcap_1^2}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 but for
-\begin{dmath}\label{eqn:qmLecture16:200}
+\begin{equation}\label{eqn:qmLecture16:200}
+\begin{aligned}
 \antisymmetric{(\Lcap_1 + \Lcap_2)^2}{\hatL_{1z}}
-=
+&=
 \antisymmetric{\Lcap_1^2 + \Lcap_2^2 + 2 \Lcap_1 \cdot \Lcap_2}{\hatL_{1z}}
-=
+\\ &=
 2 \antisymmetric{\Lcap_1 \cdot \Lcap_2}{\hatL_{1z}}
 \ne 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \end{itemize}
 Classically if we have measured \( \Lcap_{1} \) and \( \Lcap_{2} \) then we know the total angular momentum as sketched in \cref{fig:qmLecture16:qmLecture16Fig1}.
@@ -117,26 +121,28 @@ In QM where we don't know all the components of the angular momentum simultaneou
 \imageFigure{../figures/phy1520-quantum/qmLecture16Fig2}{Addition of angular momenta given measured \( \hatL_z \).}{fig:qmLecture16:qmLecture16Fig2}{0.2}
 Suppose we know \( \hatL_z^{\textrm{tot}} \) precisely, but have imprecise information about \( \lr{\Lcap^{\textrm{tot}}}^2 \).  Can we determine bounds for this?  Let \( \ket{\psi} = \ket{ l_1, m_2 ; l_2, m_2 } \), so
 %
-\begin{dmath}\label{eqn:qmLecture16:220}
+\begin{equation}\label{eqn:qmLecture16:220}
+\begin{aligned}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
-=
+&=
 \bra{\psi} \Lcap_1^2 \ket{\psi}
 + \bra{\psi} \Lcap_2^2 \ket{\psi}
 + 2 \bra{\psi} \Lcap_1 \cdot \Lcap_2 \ket{\psi}
-=
+\\ &=
 l_1 \lr{ l_1 + 1} \Hbar^2
 + l_2 \lr{ l_2 + 1} \Hbar^2
 + 2
 \bra{\psi} \Lcap_1 \cdot \Lcap_2 \ket{\psi}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Using the Cauchy-Schwartz inequality
 %
-\begin{dmath}\label{eqn:qmLecture16:240}
+\begin{equation}\label{eqn:qmLecture16:240}
 \Abs{\braket{\phi}{\psi}}^2 \le
 \Abs{\braket{\phi}{\phi}}
 \Abs{\braket{\psi}{\psi}},
-\end{dmath}
+\end{equation}
 %
 which is the equivalent of the classical relationship
 \begin{equation}\label{eqn:qmLecture16:260}
@@ -145,7 +151,7 @@ which is the equivalent of the classical relationship
 %
 Applying this to the last term, we have
 %
-\begin{dmath}\label{eqn:qmLecture16:280}
+\begin{equation}\label{eqn:qmLecture16:280}
 %\lr{ \underbrace{\bra{\psi} \Lcap_1}_{\phi} \cdot \underbrace{\Lcap_2 \ket{\psi}}_{\psi} }^2
 \lr{ \bra{\psi} \Lcap_1 \cdot \Lcap_2 \ket{\psi} }^2
 \le
@@ -155,25 +161,25 @@ Applying this to the last term, we have
 \Hbar^4
 l_1 \lr{ l_1 + 1 }
 l_2 \lr{ l_2 + 2 }.
-\end{dmath}
+\end{equation}
 %
 Thus for the max we have
 %
-\begin{dmath}\label{eqn:qmLecture16:300}
+\begin{equation}\label{eqn:qmLecture16:300}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
 \le
 \Hbar^2 l_1 \lr{ l_1 + 1 }
 +\Hbar^2 l_2 \lr{ l_2 + 1 }
 + 2 \Hbar^2 \sqrt{ l_1 \lr{ l_1 + 1 } l_2 \lr{ l_2 + 2 } },
-\end{dmath}
+\end{equation}
 and for the min
-\begin{dmath}\label{eqn:qmLecture16:360}
+\begin{equation}\label{eqn:qmLecture16:360}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
 \ge
 \Hbar^2 l_1 \lr{ l_1 + 1 }
 +\Hbar^2 l_2 \lr{ l_2 + 1 }
 -  2 \Hbar^2 \sqrt{ l_1 \lr{ l_1 + 1 } l_2 \lr{ l_2 + 2 } }.
-\end{dmath}
+\end{equation}
 %
 To try to pretty up these estimate, starting with the max, note that if we replace a portion of the RHS with something bigger, we are left with a strict less than relationship.
 That is
@@ -186,7 +192,8 @@ l_2 \lr{ l_2 + 1 } &< \lr{ l_2 + \inv{2} }^2.
 \end{equation}
 That is
 %
-\begin{dmath}\label{eqn:qmLecture16:340}
+\begin{equation}\label{eqn:qmLecture16:340}
+\begin{aligned}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
 <
 \Hbar^2
@@ -195,27 +202,28 @@ l_1 \lr{ l_1 + 1 }
 + l_2 \lr{ l_2 + 1 }
 + 2 \lr{ l_1 + \inv{2} } \lr{ l_2 + \inv{2} }
 }
-=
+&=
 \Hbar^2
 \lr{
 l_1^2 + l_2^2 + l_1 + l_2
 + 2 l_1 l_2 + l_1 + l_2 + \inv{2}
 }
-=
+\\ &=
 \Hbar^2
 \lr{
 \lr{ l_1 + l_2 + \inv{2} }
 \lr{ l_1 + l_2 + \frac{3}{2} } - \inv{4}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
-\begin{dmath}\label{eqn:qmLecture16:380}
+\begin{equation}\label{eqn:qmLecture16:380}
 l_{\textrm{tot}} \lr{ l_{\textrm{tot}} + 1 }
 <
 \lr{ l_1 + l_2 + \inv{2} }
 \lr{ l_1 + l_2 + \frac{3}{2} }
 ,
-\end{dmath}
+\end{equation}
 %
 which, gives
 %
@@ -230,16 +238,17 @@ l_{\textrm{tot}} \le l_1 + l_2.
 }
 Similarly, for the min, we find
 %
-\begin{dmath}\label{eqn:qmLecture16:440}
+\begin{equation}\label{eqn:qmLecture16:440}
+\begin{aligned}
 \bra{\psi} \lr{ \Lcap_1 + \Lcap_2 }^2 \ket{\psi}
->
+&>
 \Hbar^2
 \lr{
 l_1 \lr{ l_1 + 1 }
 + l_2 \lr{ l_2 + 1 }
 - 2 \lr{ l_1 + \inv{2} } \lr{ l_2 + \inv{2} }
 }
-=
+\\ &=
 \Hbar^2
 \lr{
 l_1^2 + l_2^2 %+ \cancel{l_1 + l_2}
@@ -247,12 +256,13 @@ l_1^2 + l_2^2 %+ \cancel{l_1 + l_2}
 %-\cancel{l_1 - l_2}
 - \inv{2}
 }
-=
+\\ &=
 \Hbar^2
 \lr{
 \lr{ l_1 - l_2 - \inv{2}}\lr{ l_1 - l_2 + \inv{2}} - \inv{4}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The total angular momentum quantum number must then satisfy
 %
@@ -268,11 +278,13 @@ l_{\textrm{tot}}( l_{\textrm{tot}} + 1 ) >
 \end{equation}
 This is true when \( l_{\textrm{tot}} > l_1 - l_2 - \inv{2} \), assuming that \( l_1 > l_2 \).  Suppose \( l_{\textrm{tot}} = l_1 - l_2 - \inv{2} \), then
 %
-\begin{dmath}\label{eqn:qmLecture16:520}
+\begin{equation}\label{eqn:qmLecture16:520}
+\begin{aligned}
 l_{\textrm{tot}}( l_{\textrm{tot}} + 1 )
-= \lr{ l_1 - l_2 -\inv{2} } \lr{ l_1 - l_2 +\inv{2} }
-= \lr{ l_1 - l_2 }^2 - \inv{4}.
-\end{dmath}
+&= \lr{ l_1 - l_2 -\inv{2} } \lr{ l_1 - l_2 +\inv{2} }
+\\ &= \lr{ l_1 - l_2 }^2 - \inv{4}.
+\end{aligned}
+\end{equation}
 %
 So, is it true that
 \begin{equation}\label{eqn:qmLecture16:540}
@@ -285,13 +297,13 @@ If that is the case we have
  - 2 \sqrt{ l_1(l_1 + 1) l_2( l_2 + 1) },
 \end{equation}
 %
-\begin{dmath}\label{eqn:qmLecture16:580}
- 2 \sqrt{ l_2(l_1 + 1) l_1( l_2 + 1) } \ge
+\begin{equation}\label{eqn:qmLecture16:580}
+2 \sqrt{ l_2(l_1 + 1) l_1( l_2 + 1) } \ge
 l_1 + l_2
 +2 l_1 l_2 + \inv{4}
 =
 l_1(l_2 + 1) + l_2(l_1 + 1) + \inv{4}.
-\end{dmath}
+\end{equation}
 %
 This has the structure
 %
@@ -322,28 +334,29 @@ l_1 - l_2 \ge l_{\textrm{tot}} \ge l_1 + l_2 ?
 Note that we have two separate Hilbert spaces \( l_1 \otimes l_2 \)
 of dimension \( 2 l_1 + 1 \) and \( 2 l_2 + 1 \) respectively.  The total number of states is
 %
-\begin{dmath}\label{eqn:qmLecture16:680}
+\begin{equation}\label{eqn:qmLecture16:680}
+\begin{aligned}
 \sum_{l_{\textrm{tot}} = l_1 - l_2}^{l_1 + l_2}
 \lr{ 2 l_{\textrm{tot}} + 1 }
-=
+&=
 2 \sum_{n = l_1 - l_2}^{l_1 + l_2} n + \cancel{l_1} + l_2 - (\cancel{l_1} - l_2) + 1
-=
+\\ &=
 2 \inv{2} \lr{ l_1 + l_2 + (l_1 - l_2) } \lr{ l_1 + l_2 - (l_1 - l_2) + 1 }
 +
 2 l_2 + 1
-=
+\\ &=
 2 l_1 \lr{ 2 l_2 + 1 }
 +
 2 l_2 + 1
-=
+\\ &=
 (2 l_1 + 1)
 (2 l_2 + 1).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So the end result is that given \( \ket{l_1, m_1 }, \ket{l_2, m_2} \), with \( l_1 \ge l_2 \), where, in steps of 1,
 %
 \boxedEquation{eqn:qmLecture16:460}{
 l_1 - l_2 \le l_{\textrm{tot}} \le l_1 + l_2.
 }
-
 %\EndArticle

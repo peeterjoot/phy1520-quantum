@@ -36,11 +36,13 @@ For a 1D SHO, show that
 \makeanswer{problem:exponentialExpectationGroundState:1}{
 Despite the simple appearance of this problem, I found this quite involved to show.  To do so, start with a series expansion of the expectation
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:40}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:40}
+\begin{aligned}
 \bra{0} e^{i k x} \ket{0}
-=
-\sum_{m=0}^\infty \frac{(i k)^m}{m!} \bra{0} x^m \ket{0}.
-\end{dmath}
+&=
+\sum_{m =0}^\infty \frac{(i k)^m}{m!} \bra{0} x^m \ket{0}.
+\end{aligned}
+\end{equation}
 %
 Let
 %
@@ -58,49 +60,57 @@ x
 %
 Consider the first few values of \( \bra{0} X^n \ket{0} \)
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:100}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:100}
+\begin{aligned}
 \bra{0} X \ket{0}
-=
+&=
 \bra{0} \lr{ a + a^\dagger } \ket{0}
-=
+\\ &=
 \braket{0}{1}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:120}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:120}
+\begin{aligned}
 \bra{0} X^2 \ket{0}
-=
+&=
 \bra{0} \lr{ a + a^\dagger }^2 \ket{0}
-=
+\\ &=
 \braket{1}{1}
-=
+\\ &=
 1,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:140}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:140}
+\begin{aligned}
 \bra{0} X^3 \ket{0}
-=
+&=
 \bra{0} \lr{ a + a^\dagger }^3 \ket{0}
-=
+\\ &=
 \bra{1} \lr{ \sqrt{2} \ket{2} + \ket{0} }
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Whenever the power \( n \) in \( X^n \) is even, the braket can be split into a bra that has only contributions from odd eigenstates and a ket with even eigenstates.  We conclude that \( \bra{0} X^n \ket{0} = 0 \) when \( n \) is odd.
 
 Noting that \( \bra{0} x^2 \ket{0} = \ifrac{x_0^2}{2} \), this leaves
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:160}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:160}
+\begin{aligned}
 \bra{0} e^{i k x} \ket{0}
-=
-\sum_{m=0}^\infty \frac{(i k)^{2 m}}{(2 m)!} \bra{0} x^{2m} \ket{0}
-=
+&=
+\sum_{m =0}^\infty \frac{(i k)^{2 m}}{(2 m)!} \bra{0} x^{2m} \ket{0}
+\\ &=
 \sum_{m=0}^\infty \frac{(i k)^{2 m}}{(2 m)!} \lr{ \frac{x_0^2}{2} }^m \bra{0} X^{2m} \ket{0}
-=
+\\ &=
 \sum_{m=0}^\infty \frac{1}{(2 m)!} \lr{ -k^2 \bra{0} x^2 \ket{0} }^m \bra{0} X^{2m} \ket{0}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This problem is now reduced to showing that
 %

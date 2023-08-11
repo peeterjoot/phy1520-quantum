@@ -44,72 +44,78 @@ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-},
 %
 where these are the \( \BS \cdot (\pm \zcap) \) eigenstates.  The traces are
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:40}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:40}
+\begin{aligned}
 \tr( \rho \sigma_x )
-=
+&=
 \bra{+} \rho \sigma_x \ket{+}
 +
 \bra{-} \rho \sigma_x \ket{-}
-=
+\\ &=
 \bra{+} \rho \PauliX \ket{+}
 +
 \bra{-} \rho \PauliX \ket{-}
-=
+\\ &=
 \bra{+} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{-}
 +
 \bra{-} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{+}
-=
+\\ &=
 \bra{+} w_{-} \ket{-}
 +
 \bra{-} w_{+} \ket{+}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:60}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:60}
+\begin{aligned}
 \tr( \rho \sigma_y )
-=
+&=
 \bra{+} \rho \sigma_y \ket{+}
 +
 \bra{-} \rho \sigma_y \ket{-}
-=
+\\ &=
 \bra{+} \rho \PauliY \ket{+}
 +
 \bra{-} \rho \PauliY \ket{-}
-=
+\\ &=
 i \bra{+} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{-}
 -
 i \bra{-} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{+}
-=
+\\ &=
 i \bra{+} w_{-} \ket{-}
 -
 i \bra{-} w_{+} \ket{+}
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:100}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:100}
+\begin{aligned}
 \tr( \rho \sigma_z )
-=
+&=
 \bra{+} \rho \sigma_z \ket{+}
 +
 \bra{-} \rho \sigma_z \ket{-}
-=
+\\ &=
 \bra{+} \rho \ket{+}
 -
 \bra{-} \rho \ket{-}
-=
+\\ &=
  \bra{+} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{+}
 -
  \bra{-} \lr{ w_{+} \ket{+}\bra{+} + w_{-} \ket{-}\bra{-} } \ket{-}
-=
+\\ &=
  \bra{+} w_{+} \ket{+}
 -
  \bra{-} w_{-} \ket{-}
-=
+\\ &=
 w_{+} - w_{-}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since \( w_{+} + w_{-} = 1 \), this gives
 %

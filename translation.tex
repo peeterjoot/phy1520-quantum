@@ -55,13 +55,15 @@ is an eigenstate of the coordinate operator \( x \).
 %
 \makeSubAnswer{}{problem:translation:28:a}
 %
-\begin{dmath}\label{eqn:translation:480}
+\begin{equation}\label{eqn:translation:480}
+\begin{aligned}
 \antisymmetric{x}{F(p)}_{\textrm{classical}}
-=
+&=
 \PD{x}{x} \PD{p}{F(p)} - \PD{p}{x} \PD{x}{F(p)}
-=
+\\ &=
 \PD{p}{F(p)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:translation:28:b}
 %
@@ -123,30 +125,33 @@ F(\Bx) &= \sum_{k l m} b_{k l m} x_1^k x_2^l x_3^m.
 %
 It is simpler to work with a specific \( x_k \), say \( x_k = y \).  The validity of the general result will still be clear doing so.  Expanding the commutator gives
 %
-\begin{dmath}\label{eqn:translation:220}
+\begin{equation}\label{eqn:translation:220}
+\begin{aligned}
 \antisymmetric{y}{G(\Bp)}
-=
+&=
 \sum_{k l m} a_{k l m} \antisymmetric{y}{p_1^k p_2^l p_3^m }
-=
+\\ &=
 \sum_{k l m} a_{k l m} \lr{
 y p_1^k p_2^l p_3^m  - p_1^k p_2^l p_3^m  y
 }
-=
+\\ &=
 \sum_{k l m} a_{k l m} \lr{
 p_1^k y p_2^l p_3^m  - p_1^k y p_2^l p_3^m
 }
-=
+\\ &=
 \sum_{k l m} a_{k l m}
 p_1^k
 \antisymmetric{y}{p_2^l}
 p_3^m.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 From \cref{eqn:translation:100}, we have \( \antisymmetric{y}{p_2^l} = l i \Hbar p_2^{l-1} \), so
 %
-\begin{dmath}\label{eqn:translation:240}
+\begin{equation}\label{eqn:translation:240}
+\begin{aligned}
 \antisymmetric{y}{G(\Bp)}
-=
+&=
 \sum_{k l m} a_{k l m}
 p_1^k
 \antisymmetric{y}{p_2^l}
@@ -154,52 +159,57 @@ p_1^k
 i \Hbar p_2^{l-1}
 }
 p_3^m
-=
+\\ &=
 i \Hbar \PD{y}{G(\Bp)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 It is straightforward to show that
 \( \antisymmetric{p}{x^l} = -l i \Hbar x^{l-1} \), allowing for a similar computation of the momentum commutator
 %
-\begin{dmath}\label{eqn:translation:260}
+\begin{equation}\label{eqn:translation:260}
+\begin{aligned}
 \antisymmetric{p_y}{F(\Bx)}
-=
+&=
 \sum_{k l m} b_{k l m} \antisymmetric{p_y}{x_1^k x_2^l x_3^m }
-=
+\\ &=
 \sum_{k l m} b_{k l m} \lr{
 p_y x_1^k x_2^l x_3^m  - x_1^k x_2^l x_3^m  p_y
 }
-=
+\\ &=
 \sum_{k l m} b_{k l m} \lr{
 x_1^k p_y x_2^l x_3^m  - x_1^k p_y x_2^l x_3^m
 }
-=
+\\ &=
 \sum_{k l m} b_{k l m}
 x_1^k
 \antisymmetric{p_y}{x_2^l}
 x_3^m
-=
+\\ &=
 \sum_{k l m} b_{k l m}
 x_1^k
 \lr{ -l i \Hbar x_2^{l-1}}
 x_3^m
-=
+\\ &=
 -i \Hbar \PD{p_y}{F(\Bx)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:translation:29:b}
 %
 It isn't clear to me how the results above can be used directly to compute \( \antisymmetric{x^2}{p^2} \).  However, when the first term of such a commutator is a mononomial, it can be expanded in terms of an \( x \) commutator
 %
-\begin{dmath}\label{eqn:translation:280}
+\begin{equation}\label{eqn:translation:280}
+\begin{aligned}
 \antisymmetric{x^2}{G(\Bp)}
-= x^2 G - G x^2
-= x \lr{ x G } - G x^2
-= x \lr{ \antisymmetric{ x }{ G } + G x } - G x^2
-= x \antisymmetric{ x }{ G } + \lr{ x G } x - G x^2
-= x \antisymmetric{ x }{ G } + \lr{ \antisymmetric{ x }{ G } + \cancel{G x} } x - \cancel{G x^2}
-= x \antisymmetric{ x }{ G } + \antisymmetric{ x }{ G } x.
-\end{dmath}
+&= x^2 G - G x^2
+\\ &= x \lr{ x G } - G x^2
+\\ &= x \lr{ \antisymmetric{ x }{ G } + G x } - G x^2
+\\ &= x \antisymmetric{ x }{ G } + \lr{ x G } x - G x^2
+\\ &= x \antisymmetric{ x }{ G } + \lr{ \antisymmetric{ x }{ G } + \cancel{G x} } x - \cancel{G x^2}
+\\ &= x \antisymmetric{ x }{ G } + \antisymmetric{ x }{ G } x.
+\end{aligned}
+\end{equation}
 %
 Similarly,
 %
@@ -215,53 +225,59 @@ An induction hypothesis can be formed
 %
 and demonstrated
 %
-\begin{dmath}\label{eqn:translation:340}
+\begin{equation}\label{eqn:translation:340}
+\begin{aligned}
 \antisymmetric{x^{k+1}}{G(\Bp)}
-=
+&=
 x^{k+1} G - G x^{k+1}
-=
+\\ &=
 x \lr{ x^{k} G } - G x^{k+1}
-=
+\\ &=
 x \lr{ \antisymmetric{x^{k}}{G} + G x^k } - G x^{k+1}
-=
+\\ &=
 x \antisymmetric{x^{k}}{G} + \lr{ x G } x^k - G x^{k+1}
-=
+\\ &=
 x \antisymmetric{x^{k}}{G} + \lr{ \antisymmetric{x}{G} + G x } x^k - G x^{k+1}
-=
+\\ &=
 x \antisymmetric{x^{k}}{G} + \antisymmetric{x}{G} x^k
-=
+\\ &=
 x \sum_{j = 0}^{k-1} x^{k-1-j} \antisymmetric{ x }{ G } x^j + \antisymmetric{x}{G} x^k
-=
+\\ &=
 \sum_{j = 0}^{k-1} x^{(k+1)-1-j} \antisymmetric{ x }{ G } x^j + \antisymmetric{x}{G} x^k
-=
+\\ &=
 \sum_{j = 0}^{k} x^{(k+1)-1-j} \antisymmetric{ x }{ G } x^j. \qedmarker
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 That was a bit overkill for this problem, but may be useful later.  Application of this to the problem gives
 %
-\begin{dmath}\label{eqn:translation:360}
+\begin{equation}\label{eqn:translation:360}
+\begin{aligned}
 \antisymmetric{x^2}{p^2}
-=
+&=
 x \antisymmetric{x}{p^2}
 + \antisymmetric{x}{p^2} x
-=
+\\ &=
 x i \Hbar \PD{x}{p^2}
 + i \Hbar \PD{x}{p^2} x
-=
+\\ &=
 x 2 i \Hbar p
 + 2 i \Hbar p x
-= i \Hbar \lr{ 2 x p + 2 p x }.
-\end{dmath}
+\\ &= i \Hbar \lr{ 2 x p + 2 p x }.
+\end{aligned}
+\end{equation}
 %
 The classical commutator is
-\begin{dmath}\label{eqn:translation:380}
+\begin{equation}\label{eqn:translation:380}
+\begin{aligned}
 \antisymmetric{x^2}{p^2}_{\textrm{classical}}
-=
+&=
 \PD{x}{x^2} \PD{p}{p^2} - \PD{p}{x^2} \PD{x}{p^2}
-=
+\\ &=
 2 x 2 p
-= 2 x p + 2 p x.
-\end{dmath}
+\\ &= 2 x p + 2 p x.
+\end{aligned}
+\end{equation}
 %
 This demonstrates the expected relation between the classical and quantum commutators
 %
@@ -300,65 +316,71 @@ Demonstrate how the expectation value \( \expectation{\Bx} \) changes under tran
 %
 For clarity, let's set \( x_i = y \).  The general result will be clear despite doing so.
 %
-\begin{dmath}\label{eqn:translation:60}
+\begin{equation}\label{eqn:translation:60}
+\begin{aligned}
 \antisymmetric{y}{\mathcal{T}(\Bl)}
-=
-\sum_{k= 0} \inv{k!} \lr{\frac{-i}{\Hbar}}
+&=
+\sum_{k = 0} \inv{k!} \lr{\frac{-i}{\Hbar}}
 \antisymmetric{y}{
 \lr{ \Bp \cdot \Bl }^k
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The commutator expands as
 %
-\begin{dmath}\label{eqn:translation:80}
+\begin{equation}\label{eqn:translation:80}
+\begin{aligned}
 \antisymmetric{y}{
 \lr{ \Bp \cdot \Bl }^k
 }
 + \lr{ \Bp \cdot \Bl }^k y
-=
+&=
 y \lr{ \Bp \cdot \Bl }^k
-=
+\\ &=
 y \lr{ p_x l_x + p_y l_y + p_z l_z } \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 \lr{ p_x l_x y + y p_y l_y + p_z l_z y } \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 \lr{ p_x l_x y + l_y \lr{ p_y y + i \Hbar } + p_z l_z y } \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 \lr{ \Bp \cdot \Bl } y \lr{ \Bp \cdot \Bl }^{k-1}
 + i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}
-= \cdots
-=
+\\ &= \cdots
+\\ &=
 \lr{ \Bp \cdot \Bl }^{k-1} y \lr{ \Bp \cdot \Bl }^{k-(k-1)}
 + (k-1) i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 \lr{ \Bp \cdot \Bl }^{k} y
 + k i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In the above expansion, the commutation of \( y \) with \( p_x, p_z \) has been used.  This gives, for \( k \ne 0 \),
 %
-\begin{dmath}\label{eqn:translation:100}
+\begin{equation}\label{eqn:translation:100}
 \antisymmetric{y}{
 \lr{ \Bp \cdot \Bl }^k
 }
 =
 k i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}.
-\end{dmath}
+\end{equation}
 %
 Note that this also holds for the \( k = 0 \) case, since \( y \) commutes with the identity operator.  Plugging back into the \( \mathcal{T} \) commutator, we have
 %
-\begin{dmath}\label{eqn:translation:120}
+\begin{equation}\label{eqn:translation:120}
+\begin{aligned}
 \antisymmetric{y}{\mathcal{T}(\Bl)}
-=
+&=
 \sum_{k = 1} \inv{k!} \lr{\frac{-i}{\Hbar}}
 k i \Hbar l_y \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 l_y \sum_{k = 1} \inv{(k-1)!} \lr{\frac{-i}{\Hbar}}
 \lr{ \Bp \cdot \Bl }^{k-1}
-=
+\\ &=
 l_y \mathcal{T}(\Bl).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The same pattern clearly applies with the other \( x_i \) values, providing the desired relation.
 %
@@ -370,23 +392,25 @@ The same pattern clearly applies with the other \( x_i \) values, providing the 
 %
 Suppose that the translated state is defined as \( \ket{\alpha_{\Bl}} = \mathcal{T}(\Bl) \ket{\alpha} \).  The expectation value with respect to this state is
 %
-\begin{dmath}\label{eqn:translation:160}
+\begin{equation}\label{eqn:translation:160}
+\begin{aligned}
 \expectation{\Bx'}
-=
+&=
 \bra{\alpha_{\Bl}} \Bx \ket{\alpha_{\Bl}}
-=
+\\ &=
 \bra{\alpha} \mathcal{T}^\dagger(\Bl) \Bx \mathcal{T}(\Bl) \ket{\alpha}
-=
+\\ &=
 \bra{\alpha} \mathcal{T}^\dagger(\Bl) \lr{ \Bx \mathcal{T}(\Bl) } \ket{\alpha}
-=
+\\ &=
 \bra{\alpha} \mathcal{T}^\dagger(\Bl) \lr{ \mathcal{T}(\Bl) \Bx + \Bl \mathcal{T}(\Bl) } \ket{\alpha}
-=
+\\ &=
 \bra{\alpha} \mathcal{T}^\dagger \mathcal{T} \Bx + \Bl \mathcal{T}^\dagger \mathcal{T} \ket{\alpha}
-=
+\\ &=
 \bra{\alpha} \Bx \ket{\alpha} + \Bl \braket{\alpha}{\alpha}
-=
+\\ &=
 \expectation{\Bx} + \Bl.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
 
