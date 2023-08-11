@@ -31,10 +31,10 @@ Recall the classical Harmonic oscillator equations in their Hamiltonian form
 
 \begin{subequations}
 \label{eqn:qmLecture4:20}
-\begin{dmath}\label{eqn:qmLecture4:40}
+\begin{equation}\label{eqn:qmLecture4:40}
 \ddt{x} = \frac{p}{m}
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:60}
+\begin{equation}\label{eqn:qmLecture4:60}
 \ddt{p} = -k x.
 \end{dmath}
 \end{subequations}
@@ -54,10 +54,10 @@ the solutions are ellipses in phase space
 
 \begin{subequations}
 \label{eqn:qmLecture4:80}
-\begin{dmath}\label{eqn:qmLecture4:100}
+\begin{equation}\label{eqn:qmLecture4:100}
 x(t) = x_0 \cos(\omega t) + \frac{p_0}{m \omega} \sin(\omega t)
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:120}
+\begin{equation}\label{eqn:qmLecture4:120}
 p(t) = p_0 \cos(\omega t) - m \omega x_0 \sin(\omega t).
 \end{dmath}
 \end{subequations}
@@ -68,7 +68,7 @@ After a suitable scaling of the variables, these elliptical orbits can be transf
 \index{harmonic oscillator}
 %
 Starting with the Hamiltonian for the harmonic oscillator
-\begin{dmath}\label{eqn:qmLecture4:160}
+\begin{equation}\label{eqn:qmLecture4:160}
 \hatH = \frac{\hatp^2}{2 m} + \inv{2} k \hatx^2,
 \end{dmath}
 set
@@ -106,22 +106,22 @@ and the Hamiltonian can be reexpressed in a factorized form
 Define ladder operators (raising and lowering operators respectively)
 \begin{subequations}
 \label{eqn:qmLecture4:300}
-\begin{dmath}\label{eqn:qmLecture4:320}
+\begin{equation}\label{eqn:qmLecture4:320}
 \hata^\dagger = \frac{\hatX -i \hatP}{\sqrt{2}}
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:340}
+\begin{equation}\label{eqn:qmLecture4:340}
 \hata = \frac{\hatX +i \hatP}{\sqrt{2}},
 \end{dmath}
 \end{subequations}
 so
 %
-\begin{dmath}\label{eqn:qmLecture4:360}
+\begin{equation}\label{eqn:qmLecture4:360}
 \hatH = \Hbar \omega \lr{ \hata^\dagger \hata + \inv{2} }.
 \end{dmath}
 %
 We can show
 %
-\begin{dmath}\label{eqn:qmLecture4:380}
+\begin{equation}\label{eqn:qmLecture4:380}
 \antisymmetric{\hata}{\hata^\dagger} = 1,
 \end{dmath}
 %
@@ -135,35 +135,35 @@ where \( n \ge 0 \) is an integer.
 
 Recall that
 %
-\begin{dmath}\label{eqn:qmLecture4:420}
+\begin{equation}\label{eqn:qmLecture4:420}
 \hata \ket{0} = 0,
 \end{dmath}
 %
 and
 %
-\begin{dmath}\label{eqn:qmLecture4:440}
+\begin{equation}\label{eqn:qmLecture4:440}
 \bra{X} X + i P \ket{0} = 0.
 \end{dmath}
 %
 With
 %
-\begin{dmath}\label{eqn:qmLecture4:460}
+\begin{equation}\label{eqn:qmLecture4:460}
 \braket{x}{0} = \Psi_0(x),
 \end{dmath}
 %
 we can show
 %
-\begin{dmath}\label{eqn:qmLecture4:480}
+\begin{equation}\label{eqn:qmLecture4:480}
 \inv{\sqrt{2}} \lr{ X + \PD{X}{} } \Psi_0(X) = 0.
 \end{dmath}
 %
 Also recall that
 \begin{subequations}
 \label{eqn:qmLecture4:500}
-\begin{dmath}\label{eqn:qmLecture4:520}
+\begin{equation}\label{eqn:qmLecture4:520}
 \hata \ket{n} = \sqrt{n} \ket{n-1}
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:540}
+\begin{equation}\label{eqn:qmLecture4:540}
 \hata^\dagger \ket{n} = \sqrt{n + 1} \ket{n+1}
 \end{dmath}
 \end{subequations}
@@ -172,16 +172,16 @@ Also recall that
 Coherent states for the quantum harmonic oscillator are the eigenkets for the creation and annihilation operators
 \begin{subequations}
 \label{eqn:qmLecture4:560}
-\begin{dmath}\label{eqn:qmLecture4:580}
+\begin{equation}\label{eqn:qmLecture4:580}
 \hata \ket{z} = z \ket{z}
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:600}
+\begin{equation}\label{eqn:qmLecture4:600}
 \hata^\dagger \ket{\tilde{z}} = \tilde{z} \ket{\tilde{z}},
 \end{dmath}
 \end{subequations}
 where
 %
-\begin{dmath}\label{eqn:qmLecture4:620}
+\begin{equation}\label{eqn:qmLecture4:620}
 \ket{z} = \sum_{n = 0}^\infty c_n \ket{n},
 \end{dmath}
 %
@@ -208,12 +208,12 @@ z \sum_{n=0}^\infty c_n \ket{n}
 %
 so
 %
-\begin{dmath}\label{eqn:qmLecture4:680}
+\begin{equation}\label{eqn:qmLecture4:680}
 c_{n+1} \sqrt{n+1} = z c_n
 \end{dmath}
 This gives
 %
-\begin{dmath}\label{eqn:qmLecture4:700}
+\begin{equation}\label{eqn:qmLecture4:700}
 c_{n+1} = \frac{z c_n}{\sqrt{n+1}}
 \end{dmath}
 %
@@ -226,19 +226,19 @@ c_2 &= \frac{z c_1}{\sqrt{2}} = \frac{z^2 c_0}{\sqrt{2}} \\
 \end{equation}
 or
 %
-\begin{dmath}\label{eqn:qmLecture4:740}
+\begin{equation}\label{eqn:qmLecture4:740}
 c_n = \frac{z^n}{\sqrt{n!}}.
 \end{dmath}
 %
 So the desired state is
 %
-\begin{dmath}\label{eqn:qmLecture4:760}
+\begin{equation}\label{eqn:qmLecture4:760}
 \ket{z} = c_0 \sum_{n=0}^\infty \frac{z^n}{\sqrt{n!}} \ket{n}.
 \end{dmath}
 %
 Also recall that
 %
-\begin{dmath}\label{eqn:qmLecture4:780}
+\begin{equation}\label{eqn:qmLecture4:780}
 \ket{n} = \frac{\lr{ \hata^\dagger }^n}{\sqrt{n!}} \ket{0},
 \end{dmath}
 %
@@ -252,13 +252,13 @@ which gives
 %
 The normalization is
 %
-\begin{dmath}\label{eqn:qmLecture4:820}
+\begin{equation}\label{eqn:qmLecture4:820}
 c_0 = e^{-\Abs{z}^2/2}.
 \end{dmath}
 %
 While we have \( \braket{n_1}{n_2} = \delta_{n_1, n_2} \), these \( \ket{z} \) states are not orthonormal.  Figuring out that this overlap
 %
-\begin{dmath}\label{eqn:qmLecture4:840}
+\begin{equation}\label{eqn:qmLecture4:840}
 \braket{z_1}{z_2} \ne 0,
 \end{dmath}
 %
@@ -269,13 +269,13 @@ will be left for homework.
 
 We don't know much about these coherent states.  For example does a coherent state at time zero evolve to a coherent state?
 %
-\begin{dmath}\label{eqn:qmLecture4:860}
+\begin{equation}\label{eqn:qmLecture4:860}
 \ket{z} \overset{?}{\rightarrow} \ket{z(t)}.
 \end{dmath}
 \index{Heisenberg picture!coherent state}
 It turns out that these questions are best tackled in the Heisenberg picture, considering
 %
-\begin{dmath}\label{eqn:qmLecture4:880}
+\begin{equation}\label{eqn:qmLecture4:880}
 e^{-i \hatH t/\Hbar } \ket{z}.
 \end{dmath}
 %
@@ -293,19 +293,19 @@ c_{n'} e^{i E_{n'} t/\Hbar}
 %
 This is very messy to attempt.  Instead if we know how the operator evolves we can calculate
 %
-\begin{dmath}\label{eqn:qmLecture4:920}
+\begin{equation}\label{eqn:qmLecture4:920}
 \bra{z} \hatx_\txtH(t) \ket{z},
 \end{dmath}
 %
 that is
 %
-\begin{dmath}\label{eqn:qmLecture4:940}
+\begin{equation}\label{eqn:qmLecture4:940}
 \expectation{\hatx}(t) = \bra{z} \hatx_\txtH(t) \ket{z},
 \end{dmath}
 %
 and for momentum
 %
-\begin{dmath}\label{eqn:qmLecture4:960}
+\begin{equation}\label{eqn:qmLecture4:960}
 \expectation{\hatp}(t) = \bra{z} \hatp_\txtH(t) \ket{z}.
 \end{dmath}
 %
@@ -313,10 +313,10 @@ The question to ask is what are the expansions of
 
 \begin{subequations}
 \label{eqn:qmLecture4:980}
-\begin{dmath}\label{eqn:qmLecture4:1000}
+\begin{equation}\label{eqn:qmLecture4:1000}
 \hata_\txtH(t) = e^{i \hatH t/\Hbar} \hata e^{-i \hatH t/\Hbar}.
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture4:1020}
+\begin{equation}\label{eqn:qmLecture4:1020}
 \hata^\dagger_\txtH(t) = e^{i \hatH t/\Hbar} \hata^\dagger e^{-i \hatH t/\Hbar}.
 \end{dmath}
 \end{subequations}

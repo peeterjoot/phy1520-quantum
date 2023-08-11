@@ -60,7 +60,7 @@ In QM we are no longer allowed to think of position and momentum, but have to st
 \index{braket}
 We'll consider the state vector with respect to some basis, for example, in a position basis, we write
 %
-\begin{dmath}\label{eqn:qmLecture1:40}
+\begin{equation}\label{eqn:qmLecture1:40}
 \braket{ x }{\Psi } = \Psi(x),
 \end{dmath}
 %
@@ -71,38 +71,38 @@ a complex numbered ``wave function'', the probability amplitude for a particle i
 We could also consider the state in a momentum basis
 \index{momentum!basis}
 %
-\begin{dmath}\label{eqn:qmLecture1:60}
+\begin{equation}\label{eqn:qmLecture1:60}
 \braket{ p }{\Psi } = \Psi(p),
 \end{dmath}
 %
 a probability amplitude with respect to momentum \( p \).
 More precisely,
 %
-\begin{dmath}\label{eqn:qmLecture1:80}
+\begin{equation}\label{eqn:qmLecture1:80}
 \Abs{\Psi(x)}^2 dx \ge 0,
 \end{dmath}
 is the probability of finding the particle in the range \( (x, x + dx ) \).  To have meaning as a probability, we require
 \index{normalization}
-\begin{dmath}\label{eqn:qmLecture1:100}
+\begin{equation}\label{eqn:qmLecture1:100}
 \int_{-\infty}^\infty \Abs{\Psi(x)}^2 dx = 1.
 \end{dmath}
 %
 \index{probability!density function}
 The average position can be calculated using this probability density function.  For example
 %
-\begin{dmath}\label{eqn:qmLecture1:120}
+\begin{equation}\label{eqn:qmLecture1:120}
 \expectation{x} = \int_{-\infty}^\infty \Abs{\Psi(x)}^2 x dx,
 \end{dmath}
 %
 or
-\begin{dmath}\label{eqn:qmLecture1:140}
+\begin{equation}\label{eqn:qmLecture1:140}
 \expectation{f(x)} = \int_{-\infty}^\infty \Abs{\Psi(x)}^2 f(x) dx.
 \end{dmath}
 %
 Similarly, calculation of an average of a function of momentum can be expressed as
 
 \index{expectation}
-\begin{dmath}\label{eqn:qmLecture1:160}
+\begin{equation}\label{eqn:qmLecture1:160}
 \expectation{f(p)} = \int_{-\infty}^\infty \Abs{\Psi(p)}^2 f(p) dp.
 \end{dmath}
 %
@@ -127,12 +127,12 @@ or equivalently
 %
 Such a conversion can be performed by virtue of an the assumption that we have a complete orthonormal basis, for which we can introduce identity operations such as
 %
-\begin{dmath}\label{eqn:qmLecture1:220}
+\begin{equation}\label{eqn:qmLecture1:220}
 \int_{-\infty}^\infty dp \ket{p}\bra{p} = 1,
 \end{dmath}
 %
 or
-\begin{dmath}\label{eqn:qmLecture1:240}
+\begin{equation}\label{eqn:qmLecture1:240}
 \int_{-\infty}^\infty dx \ket{x}\bra{x} = 1
 \end{dmath}
 
@@ -247,7 +247,7 @@ p
 \end{dmath}
 %FIXME : Performing this integral we find
 %
-%\begin{dmath}\label{eqn:qmLecture1:340}
+%\begin{equation}\label{eqn:qmLecture1:340}
 %p e^{i p x} \leftrightarrow -i \PD{x}{} e^{i p x},
 %\end{dmath}
 %
@@ -269,10 +269,10 @@ p
 Here we've essentially calculated the position space representation of the momentum operator, allowing identifications of the following form
 \index{momentum!operator}
 %
-\begin{dmath}\label{eqn:qmLecture1:380}
+\begin{equation}\label{eqn:qmLecture1:380}
 p \leftrightarrow -i \PD{x}{}
 \end{dmath}
-\begin{dmath}\label{eqn:qmLecture1:400}
+\begin{equation}\label{eqn:qmLecture1:400}
 p^2 \leftrightarrow - \PDSq{x}{}.
 \end{dmath}
 %
@@ -288,18 +288,18 @@ Most of the above results followed from the claim that \( \braket{x}{p} = e^{i p
 %
 but \( \bra{x} P \ket{p} = p \braket{x}{p} \), providing a differential equation for \( \braket{x}{p} \)
 %
-\begin{dmath}\label{eqn:qmLecture1:560}
+\begin{equation}\label{eqn:qmLecture1:560}
 p \braket{x}{p} = -i \Hbar \PD{x}{} \braket{x}{p},
 \end{dmath}
 %
 with solution
 %
-\begin{dmath}\label{eqn:qmLecture1:580}
+\begin{equation}\label{eqn:qmLecture1:580}
 i p x/\Hbar = \ln \braket{x}{p} + \text{const},
 \end{dmath}
 %
 or
-\begin{dmath}\label{eqn:qmLecture1:600}
+\begin{equation}\label{eqn:qmLecture1:600}
 \braket{x}{p} \propto e^{i p x/\Hbar}.
 \end{dmath}
 %
@@ -311,7 +311,7 @@ or
 \item Operators \( \leftrightarrow \) matrices that act on vectors.
 \end{enumerate}
 %
-\begin{dmath}\label{eqn:qmLecture1:420}
+\begin{equation}\label{eqn:qmLecture1:420}
 \hatp \ket{\Psi} \rightarrow \ket{\Psi'}.
 \end{dmath}
 \section{Time evolution.}
@@ -319,12 +319,12 @@ or
 \index{Hamiltonian}
 For a state subject to the equations of motion given by the Hamiltonian operator \( \hatH \)
 %
-\begin{dmath}\label{eqn:qmLecture1:440}
+\begin{equation}\label{eqn:qmLecture1:440}
 i \PD{t}{} \ket{\Psi} = \hatH \ket{\Psi},
 \end{dmath}
 %
 the time evolution is given by
-\begin{dmath}\label{eqn:qmLecture1:460}
+\begin{equation}\label{eqn:qmLecture1:460}
 \ket{\Psi(t)} = e^{-i \hatH t} \ket{\Psi(0)}.
 \end{dmath}
 %
