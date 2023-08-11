@@ -80,25 +80,29 @@ x y \ket{0,0}
 \end{aligned}
 \end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:220}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:220}
+\begin{aligned}
 x y \ket{1, 0}
-=
+&=
 \frac{x_0^2}{2} \lr{ a + a^\dagger } \lr{ b + b^\dagger } \ket{1,0}
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ a + a^\dagger } \ket{1,1}
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ \ket{0,1} + \sqrt{2} \ket{2,1} } .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:240}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:240}
+\begin{aligned}
 x y \ket{0, 1}
-=
+&=
 \frac{x_0^2}{2} \lr{ a + a^\dagger } \lr{ b + b^\dagger } \ket{0,1}
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ b + b^\dagger } \ket{1,1}
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ \ket{1,0} + \sqrt{2} \ket{1,2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 %<row|A|column>
 The matrix representation of \( m \omega^2 x y \) with respect to the subspace spanned by basis \( \beta \) above is
@@ -203,12 +207,13 @@ E_2 &\rightarrow \Hbar \omega \lr{ 2 - \delta/2 }.
 %
 For the exact solution, it's possible to rotate the coordinate system in a way that kills the explicit \( x y \) term of the perturbation.  That we could do this for \( x, y \) operators wasn't obvious to me, but after doing so (and rotating the momentum operators the same way) the new operators still have the required commutators.  Let
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:80}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:80}
+\begin{aligned}
 \begin{bmatrix}
 u \\
 v
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 \cos\theta & \sin\theta \\
 -\sin\theta & \cos\theta
@@ -217,20 +222,22 @@ v
 x \\
 y
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 x \cos\theta + y \sin\theta \\
 -x \sin\theta + y \cos\theta
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Similarly, for the momentum operators, let
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:100}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:100}
+\begin{aligned}
 \begin{bmatrix}
 p_u \\
 p_v
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 \cos\theta & \sin\theta \\
 -\sin\theta & \cos\theta
@@ -239,54 +246,63 @@ p_v
 p_x \\
 p_y
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 p_x \cos\theta + p_y \sin\theta \\
 -p_x \sin\theta + p_y \cos\theta
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the commutators of the new operators we have
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:120}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:120}
+\begin{aligned}
 \antisymmetric{u}{p_u}
-=
+&=
 \antisymmetric{x \cos\theta + y \sin\theta}{p_x \cos\theta + p_y \sin\theta}
-=
+\\ &=
 \antisymmetric{x}{p_x} \cos^2\theta + \antisymmetric{y}{p_y} \sin^2\theta
-=
+\\ &=
 i \Hbar \lr{ \cos^2\theta + \sin^2\theta }
-=
+\\ &=
 i\Hbar.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:140}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:140}
+\begin{aligned}
 \antisymmetric{v}{p_v}
-=
+&=
 \antisymmetric{-x \sin\theta + y \cos\theta}{-p_x \sin\theta + p_y \cos\theta}
-=
+\\& =
 \antisymmetric{x}{p_x} \sin^2\theta + \antisymmetric{y}{p_y} \cos^2\theta
-=
+\\& =
 i \Hbar.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:160}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:160}
+\begin{aligned}
 \antisymmetric{u}{p_v}
-=
+&=
 \antisymmetric{x \cos\theta + y \sin\theta}{-p_x \sin\theta + p_y \cos\theta}
-= \cos\theta \sin\theta \lr{ -\antisymmetric{x}{p_x} + \antisymmetric{y}{p_p} }
-=
+\\ &= \cos\theta \sin\theta \lr{ -\antisymmetric{x}{p_x} + \antisymmetric{y}{p_p} }
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:180}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:180}
+\begin{aligned}
 \antisymmetric{v}{p_u}
-=
+&=
 \antisymmetric{-x \sin\theta + y \cos\theta}{p_x \cos\theta + p_y \sin\theta}
-= \cos\theta \sin\theta \lr{ -\antisymmetric{x}{p_x} + \antisymmetric{y}{p_p} }
-=
+\\ &= \cos\theta \sin\theta \lr{ -\antisymmetric{x}{p_x} + \antisymmetric{y}{p_p} }
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We see that the new operators are canonical conjugate as required.  For this problem, we just want a 45 degree rotation, with
 %
@@ -298,46 +314,54 @@ y &= \inv{\sqrt{2}} \lr{ u - v }.
 \end{equation}
 %
 We have
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:480}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:480}
+\begin{aligned}
 x^2 + y^2
-=
+&=
 \inv{2} \lr{ (u+v)^2 + (u-v)^2 }
-=
+\\ &=
 \inv{2} \lr{ 2 u^2 + 2 v^2 + 2 u v - 2 u v }
-=
+\\ &=
 u^2 + v^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:500}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:500}
+\begin{aligned}
 p_x^2 + p_y^2
-=
+&=
 \inv{2} \lr{ (p_u+p_v)^2 + (p_u-p_v)^2 }
-=
+\\ &=
 \inv{2} \lr{ 2 p_u^2 + 2 p_v^2 + 2 p_u p_v - 2 p_u p_v }
-=
+\\ &=
 p_u^2 + p_v^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:520}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:520}
+\begin{aligned}
 x y
-=
+&=
 \inv{2} \lr{ (u+v)(u-v) }
-=
+\\ &=
 \inv{2} \lr{ u^2 - v^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The perturbed Hamiltonian is
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:540}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:540}
+\begin{aligned}
 H_0 + \delta V
-=
+&=
 \inv{2m} \lr{ p_u^2 + p_v^2 }
 + \inv{2} m \omega^2 \lr{ u^2 + v^2 + \delta u^2 - \delta v^2 }
-=
+\\ &=
 \inv{2m} \lr{ p_u^2 + p_v^2 }
 + \inv{2} m \omega^2 \lr{ u^2(1 + \delta) + v^2 (1 - \delta) }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In this coordinate system, the corresponding eigensystem is
 %
@@ -348,20 +372,20 @@ H \ket{n_1, n_2}
 %
 For small \( \delta \)
 %
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:580}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:580}
 n_1 \sqrt{1 + \delta} + n_2 \sqrt{ 1 - \delta }
 \approx
 n_1 + n_2
 + \inv{2} n_1 \delta
 - \inv{2} n_2 \delta,
-\end{dmath}
+\end{equation}
 %
 so
-\begin{dmath}\label{eqn:2dHarmonicOscillatorXYPerturbation:600}
+\begin{equation}\label{eqn:2dHarmonicOscillatorXYPerturbation:600}
 H \ket{n_1, n_2}
 \approx \Hbar \omega \lr{ 1 + n_1 + n_2 + \inv{2} n_1 \delta - \inv{2} n_2 \delta
 } \ket{n_1, n_2}.
-\end{dmath}
+\end{equation}
 %
 The lowest order perturbed energy levels are
 %
