@@ -28,26 +28,30 @@ B \ket{\Psi} = b \ket{\Psi}.
 %
 The action of the anticommutator on this state is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem3:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem3:60}
+\begin{aligned}
 \lr{ A B + B A } \ket{\Psi}
-=
+&=
 \lr{ a b + b a } \ket{\Psi}
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This means the product \( 2 a b \), is zero, and that at least one of \( a \) or \( b \) must be zero.
 
 The concrete example of the parity operator \( \hat\Pi \) and the momentum operator \( \hatp \) demonstrates this.
 Because the eigenvalues of the parity operator can only be \( \pm 1 \), if such a simultaneous eigenstate exists in the momentum basis, it must have a \( p = 0 \) eigenvalue.  To see this explicitly, assume there is some value \( p \) for which \( \ket{p} \) is a simultaneous eigenstate of \( \hat\Pi \) and \( \hatp \).  First consider
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem3:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem3:80}
+\begin{aligned}
 \hat\Pi \hatp \ket{p}
-=
+&=
 p \hat\Pi \ket{p}
-=
+\\ &=
 - p \ket{p}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since these operators anticommute
 %
@@ -57,12 +61,14 @@ Since these operators anticommute
 %
 we must also have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem3:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem3:120}
+\begin{aligned}
 \hat\Pi \hatp \ket{p}
-= - \hatp \hat\Pi \ket{p}
-= \hatp \ket{p}
-= p \ket{p}.
-\end{dmath}
+&= - \hatp \hat\Pi \ket{p}
+\\ &= \hatp \ket{p}
+\\ &= p \ket{p}.
+\end{aligned}
+\end{equation}
 %
 The only way this can be satisfied is when the eigenvalue of this state is \( p = 0 \).
 }

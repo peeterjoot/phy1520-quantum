@@ -36,33 +36,35 @@ The momentum space propagator follows in the same fashion as the spatial propaga
 \end{equation}
 so
 %
-\begin{dmath}\label{eqn:freeParticlePropagator:160}
+\begin{equation}\label{eqn:freeParticlePropagator:160}
 K(\Bp'', t ; \Bp', t_0)
 =
 \sum_{a'}
 \braket{\Bp''}{a'}
 \braket{a' }{\Bp'}
 e^{-i E_{a'} (t -t_0)/\Hbar}.
-\end{dmath}
+\end{equation}
 %
 For the free particle Hamiltonian, this can be evaluated over a momentum space basis
 %
-\begin{dmath}\label{eqn:freeParticlePropagator:170}
+\begin{equation}\label{eqn:freeParticlePropagator:170}
+\begin{aligned}
 K(\Bp'', t ; \Bp', t_0)
-=
+&=
 \int d^3 \Bp'''
 \braket{\Bp''}{\Bp'''}
 \braket{\Bp''' }{\Bp'}
 e^{-i E_{\Bp'''} (t -t_0)/\Hbar}
-=
+\\ &=
 \int d^3 \Bp'''
 \braket{\Bp''}{\Bp'''}
 \delta(\Bp''' - \Bp')
 \exp\lr{ -i \frac{(\Bp''')^2 (t -t_0)}{2 m \Hbar}}
-=
+\\ &=
 \braket{\Bp''}{\Bp'}
 \exp\lr{ -i \frac{(\Bp')^2 (t -t_0)}{2 m \Hbar}},
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
 %
 %\begin{dmath}\label{eqn:freeParticlePropagator:200}

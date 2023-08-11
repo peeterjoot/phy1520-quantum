@@ -157,13 +157,14 @@ i & 1
 
 The time evolution operator is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem1:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem1:140}
+\begin{aligned}
 U(t)
-= e^{-i \hatH t/\Hbar}
-= e^{i B S_z t/\Hbar}
-= e^{i B \sigma_z t/2}
-= \cos( B t/2 ) + i \sigma_z \sin( B t/2)
-=
+&= e^{-i \hatH t/\Hbar}
+\\ &= e^{i B S_z t/\Hbar}
+\\ &= e^{i B \sigma_z t/2}
+\\ &= \cos( B t/2 ) + i \sigma_z \sin( B t/2)
+\\ &=
 \begin{bmatrix}
 \cos(B t/2) & 0 \\
 0 & \cos(B t/2) \\
@@ -173,17 +174,19 @@ U(t)
 i \sin(B t/2) & 0 \\
 0 & -i \sin(B t/2) \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 e^{i B t/2} & 0 \\
 0 & e^{-i B t/2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the time evolved state is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem1:160}
-\ket{\psi(t)} =
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem1:160}
+\begin{aligned}
+\ket{\psi(t)} &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 e^{i B t/2} & 0 \\
@@ -193,19 +196,21 @@ e^{i B t/2} & 0 \\
 1 \\
 i
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 e^{i B t/2} \\
 i e^{-i B t/2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The density operator matrix representation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem1:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem1:180}
+\begin{aligned}
 \hat\rho(t)
-=
+&=
 \inv{2}
 \begin{bmatrix}
 e^{i B t/2} \\
@@ -214,13 +219,14 @@ i e^{-i B t/2}
 \begin{bmatrix}
 e^{-i B t/2} & -i e^{i B t/2}
 \end{bmatrix}
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 1 & -i e^{i B t} \\
 i e^{-i B t} & 1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 As a check observe that this has the right value for \( t = 0 \).  This also checks against the slightly messier computation \( \hatp(t) = U \hatp(0) U^\dagger \).
 \end{enumerate}

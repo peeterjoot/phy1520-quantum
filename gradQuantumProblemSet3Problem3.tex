@@ -48,7 +48,7 @@ where
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:100}
 V =
 \left\{
 \begin{array}{l l}
@@ -56,7 +56,7 @@ V =
 \infty & \quad \mbox{otherwise.}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 The effects of the potential require that a wavefunction \( \psi \) solution of this equation satisfies
 %
@@ -82,14 +82,16 @@ in the interior region of the cylinder where the electron is free to move.
 %
 Without a magnetic field, in the interior of the cylinder, the Hamiltonian is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:180}
+\begin{aligned}
 H \psi
-= \frac{-\Hbar^2}{2 m} \spacegrad^2 \psi
-=
+&= \frac{-\Hbar^2}{2 m} \spacegrad^2 \psi
+\\ &=
 \frac{-\Hbar^2}{2 m} \lr{
 \inv{\rho} \partial_\rho \lr{ \rho \partial_\rho \psi } + \inv{\rho^2} \partial_{\phi\phi} \psi + \partial_{z z} \psi
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Assuming a solution is possible using separation of variables, let
 %
@@ -99,21 +101,23 @@ Assuming a solution is possible using separation of variables, let
 %
 so that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:320}
-H \psi = E \psi = E P \Phi Z =
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:320}
+\begin{aligned}
+H \psi &= E \psi \\ &= E P \Phi Z \\ &=
 \frac{-\Hbar^2}{2 m} \lr{
 \Phi Z \inv{\rho} \partial_\rho \lr{ \rho \partial_\rho P } + P Z \inv{\rho^2} \partial_{\phi\phi} \Phi + P \Phi \partial_{z z} Z
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:220}
 E =
 \frac{-\Hbar^2}{2 m} \lr{
 \inv{\rho P} \partial_\rho \lr{ \rho \partial_\rho P } + \inv{\rho^2 \Phi} \partial_{\phi\phi} \Phi + \inv{Z} \partial_{z z} Z
 },
-\end{dmath}
+\end{equation}
 %
 Let \( E = E' + E_z \), where
 %
@@ -147,12 +151,12 @@ E = E' + \frac{\Hbar^2}{2 m} \lr{ \frac{\pi l}{L} }^2.
 %
 Now we consider the remaining subset of the eigenvalue equation
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:360}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:360}
 E' \rho^2 =
 \frac{-\Hbar^2}{2 m} \lr{
 \frac{\rho}{P} \partial_\rho \lr{ \rho \partial_\rho P } + \inv{\Phi} \partial_{\phi\phi} \Phi
 }.
-\end{dmath}
+\end{equation}
 %
 We are free to let
 %
@@ -182,12 +186,12 @@ E' \rho^2 = \frac{-\Hbar^2}{2 m}
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:460}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:460}
 0 =
 \rho^2 \partial_{\rho \rho} P + \rho \partial_\rho P
 +
 \lr{ \frac{2 m}{\Hbar^2} E' \rho^2 - \nu^2 } P.
-\end{dmath}
+\end{equation}
 %
 With \( \rho' = \sqrt{ \frac{2 m E'}{\Hbar^2} } \rho \), this is the standard form (\texteqnref{10.2.1} \citep{NIST:DLMF}) for Bessel's equation as a function of \( \rho' \), with solutions \( J_{\pm \nu}( \rho' ), N_\nu( \rho') \).  In particular, the linear combination
 %
@@ -203,7 +207,7 @@ k = \sqrt{ \frac{2 m E'}{\Hbar^2} },
 %
 those boundary value constraints can be written as
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:500}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:500}
 0 =
 \begin{bmatrix}
 J_{\pm \nu}( k \rho_a ) & N_\nu( k \rho_b ) \\
@@ -213,7 +217,7 @@ J_{\pm \nu}( k \rho_b ) & N_\nu( k \rho_b )
 a \\
 b
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This is satisfied when the determinant is zero
 %
@@ -239,7 +243,7 @@ The complete wavefunction associated with this energy eigenvalue is
 %
 A magnetic field that is isolated to the hole of the cavity is described by the piecewise vector potential
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:600}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:600}
 \BA =
 \left\{
 \begin{array}{l l}
@@ -247,86 +251,97 @@ A magnetic field that is isolated to the hole of the cavity is described by the 
 \frac{B}{2} \rho \phicap & \quad \mbox{if \( \rho < \rho_a \) } \\
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 Checking this for \( \rho \ge \rho_a \) we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:620}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:620}
+\begin{aligned}
 \spacegrad \cross \BA
-=
+&=
 \frac{B}{2} \rho_a^2 \lr{ \rhocap \partial_\rho + \frac{\phicap}{\rho} \partial_\phi } \cross \frac{\phicap}{\rho}
-=
+\\ &=
 \frac{B}{2} \rho_a^2 \lr{ \rhocap \cross \frac{\phicap}{-\rho^2} + \frac{\phicap}{\rho^2} \partial_\phi \phicap }
-=
+\\ &=
 \frac{B \rho_a^2}{2 \rho^2} \lr{ \rhocap \cross \phicap + \phicap \cross \lr{ -\rhocap} }
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and for \( \rho < \rho_a \)
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:640}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:640}
+\begin{aligned}
 \spacegrad \cross \BA
-=
+&=
 \frac{B}{2} \lr{ \rhocap \partial_\rho + \frac{\phicap}{\rho} \partial_\phi } \cross \lr{ \rho \phicap }
-=
+\\ &=
 \frac{B}{2} \lr{ \rhocap \cross \phicap + \frac{\phicap}{\rho} \cross \lr{ -\rho \rhocap } }
-=
+\\ &=
 B \zcap.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In the conduction zone of the cylinder the Hamiltonian is now
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:660}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:660}
+\begin{aligned}
 H
-= \inv{2 m} \lr{ \Bp - \frac{e}{c} \BA }^2
-= \inv{2 m} \lr{ -i \Hbar \spacegrad - \frac{e}{c} \frac{B}{2} \rho_a^2 \frac{\phicap}{\rho} }^2
-= \inv{2 m} \lr{
+&= \inv{2 m} \lr{ \Bp - \frac{e}{c} \BA }^2
+\\ &= \inv{2 m} \lr{ -i \Hbar \spacegrad - \frac{e}{c} \frac{B}{2} \rho_a^2 \frac{\phicap}{\rho} }^2
+\\ &= \inv{2 m} \lr{
 - \Hbar^2 \spacegrad^2
 + i \Hbar \frac{e}{c} \frac{B}{2} \rho_a^2 \lr{ \spacegrad \cdot \frac{\phicap}{\rho} + \frac{\phicap}{\rho} \cdot \spacegrad }
 + \lr{ \frac{e B \rho_a^2}{2 c \rho} }^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 Expanding the cross terms we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:680}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:680}
+\begin{aligned}
 \spacegrad \cdot \lr{ \frac{\phicap}{\rho} \psi }
-=
+&=
 \spacegrad \psi \cdot \frac{\phicap}{\rho}
 +
 \psi \spacegrad \cdot \frac{\phicap}{\rho}
-=
+\\ &=
 \lr{ \rhocap \partial_\rho \psi + \frac{\phicap}{\rho} \partial_\phi \psi + \partial_z \psi } \cdot \frac{\phicap}{\rho}
 +
 \psi
 \lr{ \rhocap \cdot \frac{\phicap}{-\rho^2} + \frac{\phicap}{\rho} \cdot \frac{(-\rhocap)}{\rho} }
-=
+\\ &=
 \frac{1}{\rho^2} \partial_\phi \psi,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:700}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:700}
+\begin{aligned}
 \frac{\phicap}{\rho} \cdot \spacegrad \psi
-=
+&=
 \frac{\phicap}{\rho} \cdot \frac{\phicap}{\rho} \partial_\phi \psi
-=
+\\ &=
 \frac{1}{\rho^2} \partial_\phi \psi,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:720}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:720}
 \spacegrad \cdot \frac{\phicap}{\rho} + \frac{\phicap}{\rho} \cdot \spacegrad
 =
 \frac{2}{\rho^2} \partial_\phi.
-\end{dmath}
+\end{equation}
 %
 The complete Hamiltonian is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:740}
-H \psi =
-E \psi =
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:740}
+\begin{aligned}
+H \psi &=
+E \psi \\ &=
 \frac{-\Hbar^2}{2 m} \lr{
 \inv{\rho} \partial_\rho \lr{ \rho \partial_\rho \psi } + \inv{\rho^2} \partial_{\phi\phi} \psi + \partial_{z z} \psi
 }
@@ -334,7 +349,8 @@ E \psi =
 +
 \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c \rho} }^2 \psi.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Proceeding the same way with separation of variables using \( \psi = P \Phi Z \), we have as before
 %
@@ -346,7 +362,7 @@ E &= E' + \frac{\Hbar^2}{2m} \lr{ \frac{\pi l}{L} }^2,
 \end{equation}
 and are left with
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:780}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:780}
 E' \rho^2 =
 \frac{-\Hbar^2}{2 m} \lr{
 \frac{\rho}{P} \partial_\rho \lr{ \rho \partial_\rho P } + \inv{\Phi} \partial_{\phi\phi} \Phi
@@ -355,68 +371,72 @@ E' \rho^2 =
 +
 \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2.
-\end{dmath}
+\end{equation}
 %
 Now set
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:800}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:800}
 \frac{-\Hbar^2}{2 m \Phi} \partial_{\phi\phi} \Phi + \frac{i \Hbar e B \rho_a^2}{2 m c \Phi} \partial_\phi \Phi + \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2
 = E_\phi.
-\end{dmath}
+\end{equation}
 %
 With \( \Phi = e^{i \nu \phi} \), that gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:820}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:820}
+\begin{aligned}
 E_\phi
-=
+&=
 \frac{-\Hbar^2}{2 m } (-i \nu)^2 + \frac{i \Hbar e B \rho_a^2}{2 m c \Phi} (i\nu) + \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2
-=
+\\ &=
 \frac{\Hbar^2 \nu^2}{2 m } - \frac{\Hbar e B \rho_a^2}{2 m c} \nu + \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2
-=
+\\ &=
 \frac{\Hbar^2}{2 m} \lr{ \nu^2 - \frac{e B \rho_a^2}{\Hbar c} \nu }
 + \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2
-=
+\\ &=
 \frac{\Hbar^2}{2 m}
 \lr{
 \lr{ \nu - \frac{e B \rho_a^2}{2 \Hbar c} }^2 - \lr{ \frac{e B \rho_a^2}{2 \Hbar c} }^2
 }
 + \inv{2m}
 \lr{ \frac{e B \rho_a^2}{2 c} }^2
-=
+\\ &=
 \frac{\Hbar^2}{2 m}
 \lr{ \nu - \frac{e B \rho_a^2}{2 \Hbar c} }^2
 .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We are left with
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:840}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:840}
+\begin{aligned}
 E' \rho^2
-=
+&=
 \frac{-\Hbar^2}{2 m} \lr{
 \frac{\rho}{P} \partial_\rho \lr{ \rho \partial_\rho P }
 }
 +
 E_\phi
-=
+\\ &=
 \frac{-\Hbar^2}{2 m} \lr{
 \frac{\rho}{P} \partial_\rho \lr{ \rho \partial_\rho P }
 }
 +
 \frac{\Hbar^2}{2 m}
 \lr{ \nu - \frac{e B \rho_a^2}{2 \Hbar c} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:860}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:860}
 \rho^2 P'' + \rho P +
 \lr{ \frac{2 m E'}{\Hbar^2} \rho^2 -
 \lr{ \nu - \frac{e B \rho_a^2}{2 \Hbar c} }^2 } P = 0.
-\end{dmath}
+\end{equation}
 %
 With
 %

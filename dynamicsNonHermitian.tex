@@ -25,11 +25,11 @@
 \index{Hamiltonian!non-Hermitian}
 Revisiting an earlier Hamiltonian, but assuming it was entered incorrectly as
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:20}
+\begin{equation}\label{eqn:dynamicsNonHermitian:20}
 H = H_{11} \ket{1}\bra{1}
   + H_{22} \ket{2}\bra{2}
   + H_{12} \ket{1}\bra{2}.
-\end{dmath}
+\end{equation}
 %
 What principle is now violated?  Illustrate your point explicitly by attempting to solve the most general time-dependent problem using an illegal Hamiltonian of this kind.  You may assume that \( H_{11} = H_{22} \) for simplicity.
 } % problem
@@ -38,28 +38,30 @@ What principle is now violated?  Illustrate your point explicitly by attempting 
 %
 In matrix form this Hamiltonian is
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:40}
-H =
+\begin{equation}\label{eqn:dynamicsNonHermitian:40}
+\begin{aligned}
+H &=
 \begin{bmatrix}
 \bra{1} H \ket{1} & \bra{1} H \ket{2} \\
 \bra{2} H \ket{1} & \bra{2} H \ket{2} \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 H_{11} & H_{12} \\
 0      & H_{22} \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is not a Hermitian operator.  What is the physical implication of this non-Hermicity?  Consider the simpler case where \( H_{11} = H_{22} \).  Such a Hamiltonian has the form
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:60}
+\begin{equation}\label{eqn:dynamicsNonHermitian:60}
 H =
 \begin{bmatrix}
 a & b \\
 0 & a
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This has only one unique eigenvector ( \( (1,0) \), but we can still solve the time evolution equation
 %
@@ -75,7 +77,7 @@ U = e^{-i H t/\Hbar}.
 %
 To exponentiate, note that we have
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:120}
+\begin{equation}\label{eqn:dynamicsNonHermitian:120}
 {\begin{bmatrix}
 a & b \\
 0 & a
@@ -85,11 +87,11 @@ a & b \\
 a^n & n a^{n-1} b \\
 0 & a^n
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 To prove the induction, the \( n = 2 \) case follows easily
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:140}
+\begin{equation}\label{eqn:dynamicsNonHermitian:140}
 \begin{bmatrix}
 a & b \\
 0 & a
@@ -103,11 +105,11 @@ a & b \\
 a^2 & 2 a b \\
 0 & a^2
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 as does the general case
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:160}
+\begin{equation}\label{eqn:dynamicsNonHermitian:160}
 \begin{bmatrix}
 a^n & n a^{n-1} b \\
 0 & a^n
@@ -121,77 +123,87 @@ a & b \\
 a^{n+1} & (n +1 ) a^{n} b \\
 0 & a^{n+1}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The exponential sum is thus
-\begin{dmath}\label{eqn:dynamicsNonHermitian:180}
+\begin{equation}\label{eqn:dynamicsNonHermitian:180}
 e^{H \tau}
 =
 \begin{bmatrix}
 e^{a \tau} & 0 + \frac{b \tau}{1!} + \frac{2 a b \tau^2}{2!} + \frac{3 a^2 b \tau^3}{3!} + \cdots \\
 0 & e^{a \tau}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 That sum simplifies to
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:200}
+\begin{equation}\label{eqn:dynamicsNonHermitian:200}
+\begin{aligned}
 \frac{b \tau}{0!} + \frac{a b \tau^2}{1!} + \frac{a^2 b \tau^3}{2!} + \cdots \\
-=
+&=
 b \tau \lr{ 1 + \frac{a \tau}{1!} + \frac{(a \tau)^2}{2!} + \cdots }
-=
+\\ &=
 b \tau e^{a \tau}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The exponential is thus
-\begin{dmath}\label{eqn:dynamicsNonHermitian:220}
-e^{H \tau} =
+\begin{equation}\label{eqn:dynamicsNonHermitian:220}
+\begin{aligned}
+e^{H \tau}
+&=
 \begin{bmatrix}
 e^{a\tau} & b \tau e^{a\tau} \\
 0 & e^{a\tau}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 1 & b \tau \\
 0 & 1
 \end{bmatrix}
 e^{a\tau}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In particular
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:240}
-U = e^{-i H t/\Hbar} =
+\begin{equation}\label{eqn:dynamicsNonHermitian:240}
+\begin{aligned}
+U &= e^{-i H t/\Hbar} \\ &=
 \begin{bmatrix}
 1 & -i b t/\Hbar \\
 0 & 1
 \end{bmatrix}
 e^{-i a t /\Hbar }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We can verify that this is a solution to \cref{eqn:dynamicsNonHermitian:80}.  The left hand side is
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:260}
+\begin{equation}\label{eqn:dynamicsNonHermitian:260}
+\begin{aligned}
 i \Hbar \PD{t}{U}
-=
+&=
 i \Hbar
 \begin{bmatrix}
 -i a/\Hbar & -i b /\Hbar + (-i b t/\Hbar)(-i a/\Hbar) \\
 0 & -i a /\Hbar
 \end{bmatrix}
 e^{-i a t /\Hbar }
-=
+\\ &=
 \begin{bmatrix}
 a & b - i a b t/\Hbar \\
 0 & a
 \end{bmatrix}
 e^{-i a t /\Hbar },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and for the right hand side
-\begin{dmath}\label{eqn:dynamicsNonHermitian:280}
+\begin{equation}\label{eqn:dynamicsNonHermitian:280}
+\begin{aligned}
 H U
-=
+&=
 \begin{bmatrix}
 a & b \\
 0 & a
@@ -201,21 +213,23 @@ a & b \\
 0 & 1
 \end{bmatrix}
 e^{-i a t /\Hbar }
-=
+\\ &=
 \begin{bmatrix}
 a & b - i a b t/\Hbar \\
 0 & a
 \end{bmatrix}
 e^{-i a t /\Hbar }
-=
+\\ &=
 i \Hbar \PD{t}{U}. \qedmarker
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 While the Schr\"{o}dinger is satisfied, we don't have the unitary inversion physical property that is desired for the time evolution operator \( U \).  Namely
 %
-\begin{dmath}\label{eqn:dynamicsNonHermitian:300}
+\begin{equation}\label{eqn:dynamicsNonHermitian:300}
+\begin{aligned}
 U^\dagger U
-=
+&=
 \begin{bmatrix}
 1 & 0 \\
 i b t/\Hbar & 1
@@ -226,13 +240,14 @@ e^{i a t /\Hbar }
 0 & 1
 \end{bmatrix}
 e^{-i a t /\Hbar }
-=
+\\ &=
 \begin{bmatrix}
 1 & -i b t/\Hbar \\
 i b t/\Hbar & (b t)^2/\Hbar^2
 \end{bmatrix}
 \ne I.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We required \( U^\dagger U = I \) for the time evolution operator, but don't have that property for this non-Hermitian Hamiltonian.
 } % answer

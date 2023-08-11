@@ -63,8 +63,9 @@ Computing these \( {}_2\braket{a}{\psi} \) brackets for each state will allow th
 \begin{enumerate}[(i)]
 \item For this state we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:40}
-\prescript{}{2}{\braket{\uparrow}{\psi}} =
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:40}
+\begin{aligned}
+\prescript{}{2}{\braket{\uparrow}{\psi}} &=
 \inv{2}
 \prescript{}{2}{\bra{\uparrow}}
 \lr{
@@ -73,24 +74,26 @@ Computing these \( {}_2\braket{a}{\psi} \) brackets for each state will allow th
 - \ket{ \downarrow \downarrow }
 + \ket{ \downarrow \uparrow }
 }
-=
+\\ &=
 \inv{2}
 \lr{
  \ket{ \uparrow }_1
 + \ket{ \downarrow }_1
 }
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 1 \\
 1
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:60}
-\prescript{}{2}{\braket{\downarrow}{\psi}} =
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:60}
+\begin{aligned}
+\prescript{}{2}{\braket{\downarrow}{\psi}} &=
 \inv{2}
 \prescript{}{2}{\bra{\downarrow}}
 \lr{
@@ -99,25 +102,27 @@ and
 - \ket{ \downarrow \downarrow }
 + \ket{ \downarrow \uparrow }
 }
-=
+\\ &=
 \inv{2}
 \lr{
 - \ket{ \uparrow }_1
 - \ket{ \downarrow }_1
 }
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 -1 \\
 -1
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the reduced density operator matrix representation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:80}
+\begin{aligned}
 \rho_\txtR
-=
+&=
 \inv{4}
 \begin{bmatrix}
 1 \\
@@ -135,13 +140,14 @@ so the reduced density operator matrix representation is
 \begin{bmatrix}
 -1 & -1
 \end{bmatrix}
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 1 & 1 \\
 1 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \item For this state we have
 %
@@ -187,9 +193,10 @@ and
 %
 so the reduced density operator matrix representation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:140}
+\begin{aligned}
 \rho_\txtR
-=
+&=
 \inv{2}
 \begin{bmatrix}
 1 \\
@@ -207,13 +214,14 @@ so the reduced density operator matrix representation is
 \begin{bmatrix}
 0 & 1
 \end{bmatrix}
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \item For this state we have
 %
@@ -259,9 +267,10 @@ and
 %
 so the reduced density operator matrix representation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:200}
+\begin{aligned}
 \rho_\txtR
-=
+&=
 \inv{5}
 \begin{bmatrix}
 1 \\
@@ -279,13 +288,14 @@ so the reduced density operator matrix representation is
 \begin{bmatrix}
 0 & 1
 \end{bmatrix}
-=
+\\ &=
 \inv{5}
 \begin{bmatrix}
 1 & 0 \\
 0 & 4
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \end{enumerate}
 
@@ -310,12 +320,14 @@ S_{\txtv \txtN} = 2 \lr{ - \inv{2} \ln \inv{2} } = \ln 2 \approx 0.69.
 
 \item This is also diagonal with von Neumann entropy of
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:260}
+\begin{aligned}
 S_{\txtv \txtN}
-= - \inv{5} \ln \inv{5} - \frac{4}{5} \ln \frac{4}{5}
-= \inv{5} \lr{ \ln 5 + 4 \ln (5/4) }
-\approx 0.50.
-\end{dmath}
+&= - \inv{5} \ln \inv{5} - \frac{4}{5} \ln \frac{4}{5}
+\\ &= \inv{5} \lr{ \ln 5 + 4 \ln (5/4) }
+\\ &\approx 0.50.
+\end{aligned}
+\end{equation}
 
 In the diagonal representation the entropy of the reduced density operator for case (i) shows that it is the most ordered system, with a unit probability amplitude for one state of that representation, and zero amplitude for the other.  Case (iii) of the reduced system is the next most ordered, with the more of the probability amplitude weighting associated with the first particle in the spin down state.  This results in a greater than zero entropy.  Case (ii) is the least ordered of the reduced systems with equal probability amplitudes for each first particle spin state, and has the maximum von Neumann entropy possible for a two dimensional Hilbert space.
 
@@ -386,41 +398,47 @@ S_{n \rightarrow 1}
 %
 tends to unity, so that logarithm tends to zero.  This results in division of two nearly zero quantities, which can be evaluated using l'H\^{o}pital's rule.  That is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:400}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:400}
+\begin{aligned}
 S_{n \rightarrow 1}
-= \frac{\evalbar{\frac{d}{dn} \ln \sum_{k} \rho_{kk}^n}{n=1} }{-1}
-=
+&= \frac{\evalbar{\frac{d}{dn} \ln \sum_{k} \rho_{kk}^n}{n\\ &=1} }{-1}
+\\ &=
 \frac{
-\sum_k \evalbar{\frac{d}{dn} \rho_{kk}^n}{n=1}
+\sum_k \evalbar{\frac{d}{dn} \rho_{kk}^n}{n\\ &=1}
 }{-
-\evalbar{\sum_{k} \rho_{kk}^n}{n=1}
+\evalbar{\sum_{k} \rho_{kk}^n}{n\\ &=1}
 }
-=
-- \sum_k \evalbar{\frac{d}{dn} \rho_{kk}^n}{n=1}.
-\end{dmath}
+\\ &=
+- \sum_k \evalbar{\frac{d}{dn} \rho_{kk}^n}{n\\ &=1}.
+\end{aligned}
+\end{equation}
 %
 To evaluate the derivatives set \( a^n = e^y \), or \( y = n \ln a \).  That gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:420}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:420}
+\begin{aligned}
 \frac{d}{dn} a^n
-=
+&=
 \frac{d}{dn} e^{ n \ln a }
-=
+\\ &=
 a^n \ln a,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet1Problem2:440}
+\begin{equation}\label{eqn:gradQuantumProblemSet1Problem2:440}
+\begin{aligned}
 S_{n \rightarrow 1}
-=
+&=
 -
 \evalbar{
 \sum_k \rho_{kk}^n \ln \rho_{kk}
-}{n=1}
-=
+}{n\\ &=1}
+\\ &=
 \sum_k \rho_{kk} \ln \rho_{kk},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which is precisely the von Neumann entropy.
 }

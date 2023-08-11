@@ -40,81 +40,91 @@ x_0 = \sqrt{\frac{\Hbar}{m \omega}}.
 %
 The expectations of interest, with the raising and lowering operators evaluated at \( t = 0 \), are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:80}
+\begin{aligned}
 \bra{n} x(0) x(0) \ket{n}
-=
+&=
 \frac{x_0^2}{2} \bra{n} \lr{ a + a^\dagger }^2 \ket{n}
-=
+\\ &=
 \frac{x_0^2}{2}
 \lr{ \sqrt{n+1} \bra{n+1} + \sqrt{n} \bra{n-1} }
 \lr{ \sqrt{n+1} \ket{n+1} + \sqrt{n} \ket{n-1} }
-=
+\\ &=
 \frac{x_0^2}{2} \lr{ 2 n + 1 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:100}
+\begin{aligned}
 \bra{n} x(0) p(0) \ket{n}
-=
+&=
 \frac{i \Hbar}{2}
 \bra{n} \lr{ a + a^\dagger } \lr{ a^\dagger - a }  \ket{n}
-=
+\\ &=
 \frac{i \Hbar}{2}
 \lr{ \sqrt{n+1} \bra{n+1} + \sqrt{n} \bra{n-1} }
 \lr{ \sqrt{n+1} \ket{n+1} - \sqrt{n} \ket{n-1} }
-=
+\\ &=
 \frac{i \Hbar}{2},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:101}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:101}
+\begin{aligned}
 \bra{n} p(0) p(0) \ket{n}
-=
+&=
 \frac{-\Hbar^2 }{ 2 x_0^2}
 \bra{n} \lr{ a^\dagger - a } \lr{ a^\dagger - a }  \ket{n}
-=
+\\ &=
 \frac{-\Hbar^2 }{ 2 x_0^2}
 \lr{ \sqrt{n+1} \bra{n+1} - \sqrt{n} \bra{n-1} }
 \lr{ \sqrt{n+1} \ket{n+1} - \sqrt{n} \ket{n-1} }
-=
+\\ &=
 \frac{(-\Hbar^2) }{ 2 x_0^2}
 \lr{
 2 n + 1
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and finally
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:120}
+\begin{aligned}
 \bra{n} p(0) x(0) \ket{n}
-=
+&=
 \bra{n}
 \lr{
 \antisymmetric{p(0)}{x(0)} + x(0) p(0)
 }
 \ket{n}
-=
+\\ &=
 -i \Hbar + \frac{i\Hbar}{2}
-=
+\\ &=
 \frac{i \Hbar}{2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now we are ready to compute the correlations.  The position correlation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:140}
+\begin{aligned}
 \bra{n} x(0) x(t) \ket{n}
-=
+&=
 \bra{n} x(0) \lr{
 x(0) \cos(\omega t) + \frac{p(0)}{m \omega} \sin(\omega t)
 } \ket{n}
-=
+\\ &=
 \cos(\omega t) \bra{n} x(0) x(0) \ket{n}
 +
 \frac{1}{m \omega} \sin(\omega t) \bra{n} x(0) p(0) \ket{n}
-=
+\\ &=
 \cos(\omega t)
 \frac{x_0^2}{2} \lr{ 2 n + 1 }
 + \frac{1}{m \omega} \sin(\omega t) \frac{i \Hbar}{2},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which is
 %
@@ -133,18 +143,20 @@ which is
 %
 The momentum correlation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem3:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem3:200}
+\begin{aligned}
 \bra{n} p(0) p(t) \ket{n}
-=
+&=
 \bra{n} p(0) \lr{
 p(0) \cos(\omega t) - m \omega x(0) \sin(\omega t)
 } \ket{n}
-=
+\\ &=
 \cos(\omega t)
 \lr{ 2 n + 1 }
 \frac{(-\Hbar^2) }{ 2 x_0^2}
 - m \omega \sin(\omega t) \frac{i \Hbar}{2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \( p_0^2 = m \omega \Hbar \), this is
 %

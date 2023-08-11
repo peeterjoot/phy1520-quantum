@@ -49,43 +49,49 @@ The final results for these calculations are found in \citep{sakurai2014modern},
 
 The first order of business is the Heisenberg picture velocity operator, but first note
 %
-\begin{dmath}\label{eqn:gaugeTx:60}
+\begin{equation}\label{eqn:gaugeTx:60}
+\begin{aligned}
 \BPi \cdot \BPi
-= \lr{ \Bp - \frac{e}{c} \BA} \cdot \lr{ \Bp - \frac{e}{c} \BA}
-= \Bp^2 - \frac{e}{c} \lr{ \BA \cdot \Bp + \Bp \cdot \BA } + \frac{e^2}{c^2} \BA^2.
-\end{dmath}
+&= \lr{ \Bp - \frac{e}{c} \BA} \cdot \lr{ \Bp - \frac{e}{c} \BA}
+\\ &= \Bp^2 - \frac{e}{c} \lr{ \BA \cdot \Bp + \Bp \cdot \BA } + \frac{e^2}{c^2} \BA^2.
+\end{aligned}
+\end{equation}
 %
 The time evolution of the Heisenberg picture position operator is therefore
 %
-\begin{dmath}\label{eqn:gaugeTx:80}
+\begin{equation}\label{eqn:gaugeTx:80}
+\begin{aligned}
 \ddt{\Bx}
-= \inv{i\Hbar} \antisymmetric{\Bx}{H}
-= \inv{i\Hbar 2 m} \antisymmetric{\Bx}{\BPi^2}
-= \inv{i\Hbar 2 m} \antisymmetric{\Bx}{\Bp^2 - \frac{e}{c} \lr{ \BA \cdot \Bp + \Bp \cdot \BA } + \frac{e^2}{c^2} \BA^2 }
-= \inv{i\Hbar 2 m}
+&= \inv{i\Hbar} \antisymmetric{\Bx}{H}
+\\ &= \inv{i\Hbar 2 m} \antisymmetric{\Bx}{\BPi^2}
+\\ &= \inv{i\Hbar 2 m} \antisymmetric{\Bx}{\Bp^2 - \frac{e}{c} \lr{ \BA \cdot \Bp + \Bp \cdot \BA } + \frac{e^2}{c^2} \BA^2 }
+\\ &= \inv{i\Hbar 2 m}
 \lr{
 \antisymmetric{\Bx}{\Bp^2}
 - \frac{e}{c} \antisymmetric{\Bx}{ \BA \cdot \Bp + \Bp \cdot \BA }
 }
 .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the \( \Bp^2 \) commutator we have
 %
-\begin{dmath}\label{eqn:gaugeTx:100}
+\begin{equation}\label{eqn:gaugeTx:100}
+\begin{aligned}
 \antisymmetric{x_r}{\Bp^2}
-=
+&=
 i \Hbar \PD{p_r}{\Bp^2}
-=
+\\ &=
 2 i \Hbar p_r,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gaugeTx:120}
+\begin{equation}\label{eqn:gaugeTx:120}
 \antisymmetric{\Bx}{\Bp^2}
 =
 2 i \Hbar \Bp.
-\end{dmath}
+\end{equation}
 %
 Computing the remaining commutator, we've got
 %
@@ -119,21 +125,23 @@ Assembling these results gives
 as asserted in the text.
 \paragraph{Kinetic Momentum commutators}
 %
-\begin{dmath}\label{eqn:gaugeTx:200}
+\begin{equation}\label{eqn:gaugeTx:200}
+\begin{aligned}
 \antisymmetric{\Pi_r}{\Pi_s}
-=
+&=
 \antisymmetric{p_r - e A_r/c}{p_s - e A_s/c}
-=
+\\ &=
 \cancel{\antisymmetric{p_r}{p_s}}
 - \frac{e}{c} \lr{ \antisymmetric{p_r}{A_s} + \antisymmetric{A_r}{p_s}}
 + \frac{e^2}{c^2} \cancel{\antisymmetric{A_r}{A_s}}
-=
+\\ &=
 - \frac{e}{c} \lr{ (-i\Hbar) \PD{x_r}{A_s} + (i\Hbar) \PD{x_s}{A_r} }
-=
+\\ &=
 - \frac{i e \Hbar}{c} \lr{ -\PD{x_r}{A_s} + \PD{x_s}{A_r} }
-=
+\\ &=
 - \frac{i e \Hbar}{c} \epsilon_{t s r} B_t,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %\begin{dmath}\label{eqn:gaugeTx:220}
@@ -149,25 +157,26 @@ or
 
 For the force equation we have
 %
-\begin{dmath}\label{eqn:gaugeTx:240}
+\begin{equation}\label{eqn:gaugeTx:240}
+\begin{aligned}
 m \frac{d^2 \Bx}{dt^2}
-= \ddt{\BPi}
-= \inv{i \Hbar} \antisymmetric{\BPi}{H}
-= \inv{i \Hbar 2 m } \antisymmetric{\BPi}{\BPi^2}
+&= \ddt{\BPi}
+\\ &= \inv{i \Hbar} \antisymmetric{\BPi}{H}
+\\ &= \inv{i \Hbar 2 m } \antisymmetric{\BPi}{\BPi^2}
 + \inv{i \Hbar } \antisymmetric{\BPi}{e \phi}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the \( \phi \) commutator consider one component
 %
-\begin{dmath}\label{eqn:gaugeTx:260}
+\begin{equation}\label{eqn:gaugeTx:260}
+\begin{aligned}
 \antisymmetric{\Pi_r}{e \phi}
-=
-e \antisymmetric{p_r - \frac{e}{c} A_r}{\phi}
-=
-e \antisymmetric{p_r}{\phi}
-=
-e (-i\Hbar) \PD{x_r}{\phi},
-\end{dmath}
+&= e \antisymmetric{p_r - \frac{e}{c} A_r}{\phi}
+\\ &= e \antisymmetric{p_r}{\phi}
+\\ &= e (-i\Hbar) \PD{x_r}{\phi},
+\end{aligned}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:gaugeTx:280}
@@ -182,33 +191,35 @@ For the \( \BPi^2 \) commutator I initially did this the hard way (it took four 
 
 Considering a single component
 %
-\begin{dmath}\label{eqn:gaugeTx:300}
+\begin{equation}\label{eqn:gaugeTx:300}
+\begin{aligned}
 \antisymmetric{\Pi_r}{\BPi^2}
-=
+&=
 \antisymmetric{\Pi_r}{\Pi_s \Pi_s}
-=
+\\ &=
 \Pi_r \Pi_s \Pi_s - \Pi_s \Pi_s \Pi_r
-=
-\lr{ \antisymmetric{\Pi_r}{\Pi_s}  + \cancel{\Pi_s \Pi_r} }
-\Pi_s
-- \Pi_s
-\lr{ \antisymmetric{\Pi_s}{\Pi_r}  + \cancel{\Pi_r \Pi_s} }
-= i \Hbar \frac{e}{c} \epsilon_{r s t}
+\\ &=
+\lr{ \antisymmetric{\Pi_r}{\Pi_s}  + \cancel{\Pi_s \Pi_r} } \Pi_s
+- \Pi_s \lr{ \antisymmetric{\Pi_s}{\Pi_r}  + \cancel{\Pi_r \Pi_s} }
+\\ &= i \Hbar \frac{e}{c} \epsilon_{r s t}
 \lr{ B_t \Pi_s + \Pi_s B_t },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:gaugeTx:320}
+\begin{equation}\label{eqn:gaugeTx:320}
+\begin{aligned}
 \inv{ i \Hbar 2 m} \antisymmetric{\BPi}{\BPi^2}
-= \frac{e}{2 m c } \epsilon_{r s t} \Be_r
+&= \frac{e}{2 m c } \epsilon_{r s t} \Be_r
 \lr{ B_t \Pi_s + \Pi_s B_t }
-= \frac{e}{ 2 m c }
+\\ &= \frac{e}{ 2 m c }
 \lr{
  \BPi \cross \BB
 - \BB \cross \BPi
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Putting all the pieces together we've got the quantum equivalent of the Lorentz force equation
 %

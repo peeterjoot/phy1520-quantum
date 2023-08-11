@@ -110,75 +110,85 @@ This problem is now reduced to showing that
 %
 or
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:200}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:200}
+\begin{aligned}
 \bra{0} X^{2m} \ket{0}
-= \frac{(2m)!}{m! 2^m}
-= \frac{ (2m)(2m-1)(2m-2) \cdots (2)(1) }{2^m m!}
-= \frac{ 2^m (m)(2m-1)(m-1)(2m-3)(m-2) \cdots (2)(3)(1)(1) }{2^m m!}
-= (2m-1)!!,
-\end{dmath}
+&= \frac{(2m)!}{m! 2^m}
+\\ &= \frac{ (2m)(2m-1)(2m-2) \cdots (2)(1) }{2^m m!}
+\\ &= \frac{ 2^m (m)(2m-1)(m-1)(2m-3)(m-2) \cdots (2)(3)(1)(1) }{2^m m!}
+\\ &= (2m-1)!!,
+\end{aligned}
+\end{equation}
 %
 where \( n!! = n(n-2)(n-4)\cdots \).
 
 It looks like \( \bra{0} X^{2m} \ket{0} \) can be expanded by inserting an identity operator and proceeding recursively, like
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:220}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:220}
+\begin{aligned}
 \bra{0} X^{2m} \ket{0}
-=
-\bra{0} X^2 \lr{ \sum_{n=0}^\infty \ket{n}\bra{n} } X^{2m-2} \ket{0}
-=
+&=
+\bra{0} X^2 \lr{ \sum_{n\\ &=0}^\infty \ket{n}\bra{n} } X^{2m-2} \ket{0}
+\\ &=
 \bra{0} X^2 \lr{ \ket{0}\bra{0} + \ket{2}\bra{2} } X^{2m-2} \ket{0}
-=
+\\ &=
 \bra{0} X^{2m-2} \ket{0} + \bra{0} X^2 \ket{2} \bra{2} X^{2m-2} \ket{0}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has made use of the observation that \( \bra{0} X^2 \ket{n} = 0 \) for all \( n \ne 0,2 \).  The remaining term includes the factor
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:240}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:240}
+\begin{aligned}
 \bra{0} X^2 \ket{2}
-=
+&=
 \bra{0} \lr{a + a^\dagger}^2 \ket{2}
-=
+\\ &=
 \lr{ \bra{0} + \sqrt{2} \bra{2} } \ket{2}
-=
+\\ &=
 \sqrt{2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since \( \sqrt{2} \ket{2} = \lr{a^\dagger}^2 \ket{0} \), the expectation of interest can be written
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:260}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:260}
 \bra{0} X^{2m} \ket{0}
 =
 \bra{0} X^{2m-2} \ket{0} + \bra{0} a^2 X^{2m-2} \ket{0}.
-\end{dmath}
+\end{equation}
 %
 How do we expand the second term.  Let's look at how \( a \) and \( X \) commute
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:280}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:280}
+\begin{aligned}
 a X
-=
+&=
 \antisymmetric{a}{X} + X a
-=
+\\ &=
 \antisymmetric{a}{a + a^\dagger} + X a
-=
+\\ &=
 \antisymmetric{a}{a^\dagger} + X a
-=
+\\ &=
 1 + X a,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:300}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:300}
+\begin{aligned}
 a^2 X
-=
+&=
 a \lr{ a X }
-=
+\\ &=
 a \lr{ 1 + X a }
-=
+\\ &=
 a + a X a
-=
+\\ &=
 a + \lr{ 1 + X a } a
-=
+\\ &=
 2 a + X a^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Proceeding to expand \( a^2 X^n \) we find
 \begin{equation}\label{eqn:exponentialExpectationGroundState:320}
@@ -208,25 +218,27 @@ and \( \beta_2 = 2 \).  Some goofing around shows that \( \beta_n = n(n-1) \), s
 \end{equation}
 %
 Let's check the induction
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:400}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:400}
+\begin{aligned}
 a^2 X^{n+1}
-=
+&=
 a^2 X^{n} X
-=
+\\ &=
 \lr{ n(n-1) X^{n-2} + 2 n X^{n-1} a + X^n a^2 } X
-=
+\\ &=
 n(n-1) X^{n-1} + 2 n X^{n-1} a X + X^n a^2 X
-=
+\\ &=
 n(n-1) X^{n-1} + 2 n X^{n-1} \lr{ 1 + X a } + X^n \lr{ 2 a + X a^2 }
-=
+\\ &=
 n(n-1) X^{n-1} + 2 n X^{n-1}  + 2 n X^{n} a
 + 2 X^n a
 + X^{n+1} a^2
-=
+\\ &=
 X^{n+1} a^2 + (2 + 2 n) X^{n} a + \lr{ 2 n + n(n-1) }  X^{n-1}
-=
+\\ &=
 X^{n+1} a^2 + 2(n + 1) X^{n} a + (n+1) n X^{n-1},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which concludes the induction, giving
 %
@@ -236,11 +248,11 @@ which concludes the induction, giving
 %
 and
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:440}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:440}
 \bra{0} X^{2m} \ket{0}
 =
 \bra{0} X^{2m-2} \ket{0} + (2m-2)(2m-3) \bra{0} X^{2m-4} \ket{0}.
-\end{dmath}
+\end{equation}
 %
 Let
 %
@@ -270,21 +282,25 @@ The first values are
 \end{subequations}
 which gives us the right result for the first term in the induction
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:580}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:580}
+\begin{aligned}
 \sigma_4
-= \sigma_2 + 2 \times 1 \times \sigma_0
-= 1 + 2
-= 3!!
-\end{dmath}
+&= \sigma_2 + 2 \times 1 \times \sigma_0
+\\ &= 1 + 2
+\\ &= 3!!
+\end{aligned}
+\end{equation}
 For the general induction term, consider
 %
-\begin{dmath}\label{eqn:exponentialExpectationGroundState:600}
+\begin{equation}\label{eqn:exponentialExpectationGroundState:600}
+\begin{aligned}
 \sigma_{2n + 2}
-= \sigma_{2n} + 2 n (2n - 1) \sigma_{2n -2}
-= (2n-1)!! + 2n ( 2n - 1) (2n -3)!!
-= (2n + 1) (2n -1)!!
-= (2n + 1)!!,
-\end{dmath}
+&= \sigma_{2n} + 2 n (2n - 1) \sigma_{2n -2}
+\\ &= (2n-1)!! + 2n ( 2n - 1) (2n -3)!!
+\\ &= (2n + 1) (2n -1)!!
+\\ &= (2n + 1)!!,
+\end{aligned}
+\end{equation}
 %
 which completes the final induction.  That was also the last thing required to complete the proof, so we are done!
 } % answer

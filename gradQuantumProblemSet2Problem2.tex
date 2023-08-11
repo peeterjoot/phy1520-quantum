@@ -80,27 +80,31 @@ and
 \end{equation}
 %
 so
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:100}
+\begin{aligned}
 \ddt{}\lr{\Bx \cdot \Bp}
-=
+&=
 \inv{i \Hbar}
 \antisymmetric{\Bx \cdot \Bp}{H}
-=
+\\ &=
 \inv{2 m} 2 p_r p_r - x_r \PD{x_r}{V(\Bx)}
-=
+\\ &=
 \frac{\Bp^2}{m} - \Bx \cdot \spacegrad V(\Bx).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Evaluating the expectation of this identity with respect to a stationary state \( \ket{\psi} \) (i.e. a state independent of time), we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:120}
+\begin{aligned}
 \bra{\psi} \ddt{} \Bx \cdot \Bp \ket{\psi}
-=
+&=
 \ddt{} \bra{\psi} \Bx \cdot \Bp \ket{\psi}
-=
+\\ &=
 \ddt{} \expectation{ \Bx \cdot \Bp }
-= \expectation{\frac{\Bp^2}{m}} - \expectation{\Bx \cdot \spacegrad V(\Bx)}.
-\end{dmath}
+\\ &= \expectation{\frac{\Bp^2}{m}} - \expectation{\Bx \cdot \spacegrad V(\Bx)}.
+\end{aligned}
+\end{equation}
 %
 Because the expectation was with respect to a stationary state, the time derivative could be moved outside of the expectation operation.
 %
@@ -121,58 +125,62 @@ a_z(t) &= a_z e^{-i \omega t}.
 \end{equation}
 Note that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:480}
+\begin{aligned}
 \expectation{ \Bx \cdot \spacegrad V }
-=
+&=
 m \omega^2 \expectation{ \Bx^2(t) }
-=
+\\ &=
 m \omega^2 \frac{x_0^2}{2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \expectation{ \lr{a_k(t) + a_k^\dagger(t)}^2 }
-=
+\\ &=
 \frac{ \Hbar \omega }{2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \bra{\psi} \lr{a_k(t) + a_k^\dagger(t)}^2 \ket{\psi}
-=
+\\ &=
 \frac{ \Hbar \omega }{2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \bra{\psi} \lr{a_k  e^{-i \omega t} + a_k^\dagger e^{i \omega t}}^2 \ket{\psi},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:500}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:500}
+\begin{aligned}
 \expectation{ \frac{\Bp^2}{m} }
-=
+&=
 \frac{-\Hbar^2}{2 m x_0^2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \expectation{ \lr{a_k^\dagger(t) - a_k(t) }^2 }
-=
+\\ &=
 \frac{ \Hbar \omega }{2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \bra{\psi}
 \lr{ a_k(t) - a_k^\dagger(t) }
 \lr{ a_k^\dagger(t) - a_k(t) }
 \ket{\psi}
-=
+\\ &=
 \frac{ \Hbar \omega }{2}
-\sum_{k=1}^3
+\sum_{k\\ &=1}^3
 \bra{\psi}
 \lr{ a_k e^{-i \omega t}- a_k^\dagger e^{i \omega t}}
 \lr{ a_k^\dagger e^{i \omega t} - a_k e^{-i \omega t}}
 \ket{\psi}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In both cases the pairs of raising and lowering operators have been factored into conjugate pairs so that only the action of the latter on \( \ket{\psi} \) need be considered.  Considering the \( x \) component for example, we've got
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:540}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:540}
 \lr{ a_x^\dagger e^{i \omega t} \pm a_x e^{-i \omega t}}
 \ket{n_x, n_y, n_z}
 =
 e^{i \omega t} \sqrt{n_x + 1} \ket{n_x + 1, n_y, n_z}
 \pm
 e^{-i \omega t} \sqrt{n_x} \ket{n_x - 1, n_y, n_z}.
-\end{dmath}
+\end{equation}
 %
 This gives
 %
@@ -202,17 +210,19 @@ Neither expectation has any time dependence, and the virial theorem has been con
 %
 With \( \ket{\psi} = \ket{0,0,0} + \ket{0,0,2} \), the gradient portion of the RHS is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:600}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:600}
+\begin{aligned}
 \expectation{ \Bx \cdot \spacegrad V }
-=
+&=
 m \omega^2 \expectation{ \Bx^2(t) }
-=
+\\ &=
 m \omega^2 \frac{x_0^2}{2}
-\sum_{k=1}^3 \bra{\psi} \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} }^2 \ket{\psi}
-=
+\sum_{k\\ &=1}^3 \bra{\psi} \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} }^2 \ket{\psi}
+\\ &=
 \frac{\Hbar \omega}{2}
-\sum_{k=1}^3 \bra{\psi} \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} }^2 \ket{\psi}.
-\end{dmath}
+\sum_{k\\ &=1}^3 \bra{\psi} \lr{ a_k e^{-i \omega t} + a_k^\dagger e^{i \omega t} }^2 \ket{\psi}.
+\end{aligned}
+\end{equation}
 %
 %\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:260}
 %\begin{aligned}
@@ -284,19 +294,21 @@ e^{-i \omega t} \sqrt{2} + e^{i \omega t}
 %
 This gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:700}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:700}
+\begin{aligned}
 \expectation{ \Bx \cdot \spacegrad V }
-=
+&=
 \frac{\Hbar\omega}{2}
 \lr{
 2 + 2 + 3 + \Abs{ e^{-i \omega t} \sqrt{2} + e^{i \omega t} }^2
 }
-=
+\\ &=
 \frac{\Hbar\omega}{2}
 \lr{
 2 + 2 + 3 + 1 + 2 + 2 \sqrt{2} \cos(2 \omega t)
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:340}
@@ -310,7 +322,7 @@ or
 %
 For the kinetic portion, we've got
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:360}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:360}
 \expectation{\frac{\Bp^2}{m}}
 =
 %\frac{\Hbar^2}{2 x_0^2 m}
@@ -319,18 +331,20 @@ For the kinetic portion, we've got
 \bra{\psi}
 \lr{ a_k e^{-i\omega t} - a_k^\dagger e^{i\omega t} }
 \lr{ a_k^\dagger e^{i\omega t} - a_k e^{-i\omega t} } \ket{\psi}.
-\end{dmath}
+\end{equation}
 %
 The squared momentum operator has been factored into conjugate pairs, so only the action on \( \ket{\psi} \) need be computed.  For the \( x \) component of that operation we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:380}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:380}
+\begin{aligned}
 \lr{ a_x^\dagger e^{i\omega t} - a_x e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
-=
+&=
 a_x^\dagger e^{i\omega t} \lr{ \ket{0,0,0} + \ket{0,0,2} }
-=
+\\ &=
 e^{i\omega t}
 \lr{ \ket{1,0,0} + \ket{1,0,2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The \( y \) component, by inspection, must be
 %
@@ -345,28 +359,32 @@ e^{i\omega t}
 %
 The \( z \) component is slightly messier to compute
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:420}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:420}
+\begin{aligned}
 \lr{ a_z^\dagger e^{i\omega t} - a_z e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
-=
+&=
 e^{i\omega t} \lr{ \ket{0,0,1} + \sqrt{3} \ket{0,0,3} }
 - e^{-i\omega t} \sqrt{2} \ket{0,0,1}
-=
+\\ &=
 \lr{ e^{i\omega t} - e^{-i\omega t} \sqrt{2} } \ket{0,0,1}
 + e^{i\omega t} \sqrt{3} \ket{0,0,3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Summation of all the component contributions gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem2:440}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:440}
+\begin{aligned}
 \expectation{\frac{\Bp^2}{m}}
-=
+&=
 \frac{\Hbar \omega}{2} \lr{
 2 + 2 + 3 +
 + \Abs{e^{i\omega t} - e^{-i\omega t} \sqrt{2}}^2
 }
-=
+\\ &=
 \frac{\Hbar \omega}{2} \lr{ 4 + 3 + 1 + 2 - 2 \sqrt{2} \cos(2 \omega t)},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 \boxedEquation{eqn:gradQuantumProblemSet2Problem2:460}{

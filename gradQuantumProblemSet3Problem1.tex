@@ -25,41 +25,47 @@ This is the same flux periodicity we saw in class for the energy levels versus f
 %
 In general, the superposition of two equal amplitude wave packets with the same wavelength can be factored into a phase and amplitude
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem1:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem1:20}
+\begin{aligned}
 e^{i (\omega t - k L_1)} + e^{i (\omega t - k L_1)}
-=
+&=
 e^{i (\omega t - k L_1/2 - k L_2/2)}
 \lr{
 e^{-i k L_1/2 + i k L_2/2}
 +
 e^{i k L_1/2 - i k L_2/2}
 }
-=
+\\ &=
 2 e^{i(\omega t - k L_1/2 - k L_2/2)} \cos\lr{ k (L_1 - L_2)/2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now consider the geometry of this screen configuration as sketched in \cref{fig:ps3p1:ps3p1Fig1}.
 \imageFigure{../figures/phy1520-quantum/ps3p1Fig1}{Double slit interference.}{fig:ps3p1:ps3p1Fig1}{0.2}
 The upper and lower path lengths are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem1:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem1:40}
+\begin{aligned}
 L_{1,2}
-= \sqrt{ D^2 + (y \mp d/2)^2 }
-= D \sqrt{ 1 + \frac{(y \mp d/2)^2}{D^2} }
-\approx D \lr{ 1 + \inv{2} \frac{(y \mp d/2)^2}{D^2} }
-= D + \inv{2 D} (y \mp d/2)^2.
-\end{dmath}
+&= \sqrt{ D^2 + (y \mp d/2)^2 }
+\\ &= D \sqrt{ 1 + \frac{(y \mp d/2)^2}{D^2} }
+\\ &\approx D \lr{ 1 + \inv{2} \frac{(y \mp d/2)^2}{D^2} }
+\\ &= D + \inv{2 D} (y \mp d/2)^2.
+\end{aligned}
+\end{equation}
 %
 To first order the length difference is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem1:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem1:60}
+\begin{aligned}
 L_1 - L_2
-=
+&=
 \inv{2 D} (y - d/2)^2
 -\inv{2 D} (y + d/2)^2
-=
+\\ &=
 -\frac{y d}{D}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The amplitude of the interference pattern, at height \( y \) on the screen is gated by the cosine
 %

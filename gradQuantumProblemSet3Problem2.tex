@@ -33,29 +33,33 @@ Using the approach suggested by our practise problem \citep{sakurai2014modern} \
 %and \citep{desai2009quantum}
 the Hamiltonian for magnetic field driven motion constrained to a plane, can be factored into raising and lowering style operators
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:40}
+\begin{aligned}
 H
-= \inv{2 m} \lr{ \Bp - \frac{e}{c} \BA }^2
-= \inv{2 m} \lr{ \Pi_x^2 + \Pi_y^2 }^2
-= \inv{2 m} \lr{ \lr{ \Pi_x - i \Pi_y }\lr{ \Pi_x + i \Pi_y } - i \lr{ \Pi_x \Pi_y - \Pi_y \Pi_x } },
-\end{dmath}
+&= \inv{2 m} \lr{ \Bp - \frac{e}{c} \BA }^2
+\\ &= \inv{2 m} \lr{ \Pi_x^2 + \Pi_y^2 }^2
+\\ &= \inv{2 m} \lr{ \lr{ \Pi_x - i \Pi_y }\lr{ \Pi_x + i \Pi_y } - i \lr{ \Pi_x \Pi_y - \Pi_y \Pi_x } },
+\end{aligned}
+\end{equation}
 %
 That commutator term is proportional to the magnetic field strength
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:60}
+\begin{aligned}
 \Pi_x \Pi_y - \Pi_y \Pi_x
-=
+&=
 \antisymmetric{\Pi_x}{\Pi_y}
-=
+\\ &=
 \antisymmetric{p_x - \frac{e}{c} A_x}{p_y - \frac{e}{c} A_y}
-=
+\\ &=
 \cancel{\antisymmetric{p_x}{p_y}} - \frac{e}{c} \lr{ \antisymmetric{A_x}{p_y} + \antisymmetric{p_x}{A_y} } + \lr{\frac{e}{c}}^2 \cancel{\antisymmetric{A_x}{A_y}}
-=
+\\ &=
 - \frac{e}{c} (-i \Hbar) \lr{ \PD{x}{A_y} - \PD{y}{A_x} }
-=
+\\ &=
 i \frac{e \Hbar}{c} B_z
-=
+\\ &=
 i \frac{e \Hbar B_0}{c},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -78,17 +82,19 @@ H
 %
 Observe that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:140}
+\begin{aligned}
 \antisymmetric{ \Pi_x + i \Pi_y }{ \Pi_x - i \Pi_y }
-=
+&=
 i \antisymmetric{ \Pi_y }{ \Pi_x } - i \antisymmetric{ \Pi_x }{ \Pi_y }
-=
+\\ &=
 - 2 i \antisymmetric{ \Pi_x }{ \Pi_y }
-=
+\\ &=
 \frac{2 e \Hbar B_0}{c}
-=
+\\ &=
 2 m \omega.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With
 %
@@ -116,12 +122,14 @@ E_n = \Hbar \omega \lr{ n + \inv{2} }.
 %
 For the symmetric gauge where \( A_x = - B_0 y/2, A_y = B_0 x/2 \), the lowering operator has the form
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:240}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:240}
+\begin{aligned}
 b
-= \inv{\sqrt{2 m \omega \Hbar}} \lr{ p_x + i p_y - \frac{e}{c} \frac{B_0}{2} ( -y + i x ) }
-= \frac{-i \Hbar}{\sqrt{2 m \omega \Hbar}} \lr{ \partial_x + i \partial_y + \frac{e B_0}{2 \Hbar c} ( i y + x ) }
-= \frac{-i \Hbar}{\sqrt{2 m \omega \Hbar}} \lr{ \partial_x + i \partial_y + \frac{m \omega}{2 \Hbar} ( x + i y) }.
-\end{dmath}
+&= \inv{\sqrt{2 m \omega \Hbar}} \lr{ p_x + i p_y - \frac{e}{c} \frac{B_0}{2} ( -y + i x ) }
+\\ &= \frac{-i \Hbar}{\sqrt{2 m \omega \Hbar}} \lr{ \partial_x + i \partial_y + \frac{e B_0}{2 \Hbar c} ( i y + x ) }
+\\ &= \frac{-i \Hbar}{\sqrt{2 m \omega \Hbar}} \lr{ \partial_x + i \partial_y + \frac{m \omega}{2 \Hbar} ( x + i y) }.
+\end{aligned}
+\end{equation}
 %
 With
 %
@@ -131,13 +139,15 @@ With
 %
 The first state is defined by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:280}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:280}
+\begin{aligned}
 0
-=
+&=
 \bra{x,y} b \ket{0}
-\propto
+\\ &\propto
 \lr{ \partial_x + i \partial_y + \alpha ( x + i y) } u(x,y).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For integer \( n \), this has solutions of the form
 %
@@ -164,22 +174,26 @@ n \lr{ x + i y }^{n-1} \lr{ 1 + i^2 } \times \\
 %
 The normalization is given by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:340}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:340}
+\begin{aligned}
 1
-= \int \Abs{u_n(x,y)}^2 dx dy
-= \Abs{c_n}^2 \int \Abs{x + i y}^{2n} e^{-\alpha(x^2 + y^2)} dx dy
-= \Abs{c_n}^2 \int_0^\infty 2 \pi r r^{2n} e^{-\alpha r^2} dr.
-\end{dmath}
+&= \int \Abs{u_n(x,y)}^2 dx dy
+\\ &= \Abs{c_n}^2 \int \Abs{x + i y}^{2n} e^{-\alpha(x^2 + y^2)} dx dy
+\\ &= \Abs{c_n}^2 \int_0^\infty 2 \pi r r^{2n} e^{-\alpha r^2} dr.
+\end{aligned}
+\end{equation}
 %
 Let \( \alpha r^2 = t \), with \( 2 r dr = dt/\alpha \), for
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:360}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:360}
+\begin{aligned}
 1
-= \Abs{c_n}^2 \frac{\pi}{\alpha} \int_0^\infty \lr{\frac{t}{\alpha}}^n e^{-t} dt
-= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} \int_0^\infty t^{(n + 1) - 1} e^{-t} dt
-= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} \Gamma(n+1)
-= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} n!,
-\end{dmath}
+&= \Abs{c_n}^2 \frac{\pi}{\alpha} \int_0^\infty \lr{\frac{t}{\alpha}}^n e^{-t} dt
+\\ &= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} \int_0^\infty t^{(n + 1) - 1} e^{-t} dt
+\\ &= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} \Gamma(n+1)
+\\ &= \Abs{c_n}^2 \frac{\pi}{\alpha^{n+1}} n!,
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -201,25 +215,26 @@ The wave functions decay exponentially, and beyond a certain threshold (dependen
 
 What is the value of \( r \) for which the probability density is maximized for a given value of \( n \)?  That is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:420}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:420}
+\begin{aligned}
 0
-=
+&=
 \frac{d}{dr} \lr{
 2 \pi r \Abs{u_n(r)}^2
 }
-=
+\\ &=
 2 \pi \frac{\alpha^{n+1}}{\pi n!}
 \frac{d}{dr} \lr{
 r r^{2 n} e^{-\alpha r^2}
 }
-=
+\\ &=
 2 \pi \frac{\alpha^{n+1}}{\pi n!}
 \lr{
 (2 n + 1) r^{2 n}
 r^{2 n+ 1} \lr{ - 2 \alpha r }
 }
 e^{-\alpha r^2}
-=
+\\ &=
 2 \pi \frac{\alpha^{n+1}}{\pi n!}
 \lr{
 (2 n + 1)
@@ -227,15 +242,18 @@ e^{-\alpha r^2}
 }
 r^{2 n}
 e^{-\alpha r^2},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which occurs at
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:440}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:440}
+\begin{aligned}
 r^2
-= \frac{(2 n + 1)}{2 \alpha}
-= \lr{n + \inv{2}} \frac{ 2 \Hbar c}{e B_0}.
-\end{dmath}
+&= \frac{(2 n + 1)}{2 \alpha}
+\\ &= \lr{n + \inv{2}} \frac{ 2 \Hbar c}{e B_0}.
+\end{aligned}
+\end{equation}
 %
 If this is less than \( R^2 \), and
 assuming \( n \) large with respect to \( 1/2 \), and \( r^2 \le R^2 \), this is
@@ -246,12 +264,14 @@ n \frac{ 2 \Hbar c}{e B_0} \le R^2,
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem2:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet3Problem2:480}
+\begin{aligned}
 n
-\le \frac{e B_0 R^2}{ 2 \Hbar c}
-= \frac{e B_0 \pi R^2}{ h c}
-= \frac{e \Phi}{ h c}.
-\end{dmath}
+&\le \frac{e B_0 R^2}{ 2 \Hbar c}
+\\ &= \frac{e B_0 \pi R^2}{ h c}
+\\ &= \frac{e \Phi}{ h c}.
+\end{aligned}
+\end{equation}
 %
 The approximate number of ground states if the particle is confined to a disk of radius \( R \) is proportional to the magnetic flux \( \Phi = \int \BB \cdot d\BS = B_0 \pi R^2 \) through that disk.
 }

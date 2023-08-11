@@ -144,9 +144,10 @@ Using the basis
 \index{projection operator}
 the projector matrices are
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:140}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:140}
+\begin{aligned}
 \ket{\BS \cdot \ncap ; + } \bra{\BS \cdot \ncap ; + }
-=
+&=
 \begin{bmatrix}
 \cos(\theta/2) \\
 \sin(\theta/2) e^{i \phi}
@@ -155,15 +156,17 @@ the projector matrices are
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos^2(\theta/2) & \cos(\theta/2) \sin(\theta/2) e^{-i \phi} \\
 \sin(\theta/2) \cos(\theta/2) e^{i \phi} & \sin^2(\theta/2)
 \end{bmatrix},
-\end{dmath}
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:160}
+\end{aligned}
+\end{equation}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:160}
+\begin{aligned}
 \ket{\BS \cdot \ncap ; - } \bra{\BS \cdot \ncap ; - }
-=
+&=
 \begin{bmatrix}
 \sin(\theta/2) e^{-i \phi} \\
 -\cos(\theta/2) \\
@@ -171,18 +174,20 @@ the projector matrices are
 \begin{bmatrix}
 \sin(\theta/2) e^{i \phi} & -\cos(\theta/2) \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \sin^2(\theta/2)  & -\cos(\theta/2) \sin(\theta/2) e^{-i \phi} \\
 -\cos(\theta/2) \sin(\theta/2) e^{i \phi} & \cos^2(\theta/2)
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 With \( C = \cos(\theta/2), S = \sin(\theta/2) \), a general density operator in this basis has the form
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:180}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:180}
+\begin{aligned}
 \rho
-=
+&=
 w_{+}
 \begin{bmatrix}
 C^2 & C S e^{-i \phi} \\
@@ -194,61 +199,68 @@ w_{-}
 S^2  & -C S e^{-i \phi} \\
 -C S e^{i \phi} & C^2
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & w_{+} S^2  + w_{-} C^2
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The products with the Pauli matrices are
 \index{Pauli matrix}
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:200}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:200}
+\begin{aligned}
 \rho \sigma_x
-=
+&=
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & w_{+} S^2  + w_{-} C^2
 \end{bmatrix}
 \PauliX
-=
+\\ &=
 \begin{bmatrix}
 (w_{+} - w_{-})C S e^{-i \phi}  & w_{+} C^2 + w_{-} S^2  \\
 w_{+} S^2  + w_{-} C^2 & (w_{+} -w_{-} ) S C e^{i \phi} \\
 \end{bmatrix}
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:220}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:220}
+\begin{aligned}
 \rho \sigma_y
-=
+&=
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & w_{+} S^2  + w_{-} C^2
 \end{bmatrix}
 \PauliY
-=
+\\ &=
 i
 \begin{bmatrix}
 (w_{+} - w_{-})C S e^{-i \phi}  & -w_{+} C^2 - w_{-} S^2  \\
 w_{+} S^2  + w_{-} C^2          & -(w_{+} -w_{-} ) S C e^{i \phi} \\
 \end{bmatrix}
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:240}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:240}
+\begin{aligned}
 \rho \sigma_z
-=
+&=
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & (w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & w_{+} S^2  + w_{-} C^2
 \end{bmatrix}
 \PauliZ
-=
+\\ &=
 \begin{bmatrix}
 w_{+} C^2 + w_{-} S^2  & -(w_{+} - w_{-})C S e^{-i \phi} \\
 (w_{+} -w_{-} ) S C e^{i \phi} & - (w_{+} S^2  + w_{-} C^2)
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 The respective traces can be read right off the matrices
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:260}
 \begin{aligned}
@@ -269,20 +281,17 @@ or
 \boxedEquation{eqn:ensemblesForSpinOneHalf:320}{
 w_{\pm} = \frac{1 \pm \sqrt{ \tr^2( \rho \sigma_x ) + \tr^2( \rho \sigma_y ) + \tr^2( \rho \sigma_z )} }{2} .
 }
-
 So, as claimed, it's possible to completely describe the ensemble weight factors using the ensemble averages of \( [S_x], [S_y], [S_z] \).  I used the Pauli matrices instead, but the difference is just an \( \Hbar/2 \) scaling adjustment.
-
 \paragraph{Alternate approach}
-
 Another easier and trig free way to look at this problem is assume the density operator's representation is given by a \( 2 \times 2 \) matrix with undetermined values
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:400}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:400}
 \rho =
 \begin{bmatrix}
 a & b \\
 c & d
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 For such a representation we have
 %
 \begin{equation}\label{eqn:ensemblesForSpinOneHalf:420}
@@ -371,7 +380,6 @@ a &= \frac{1 + [\sigma_z]}{2} \\
 d &= \frac{1 - [\sigma_z]}{2},
 \end{aligned}
 \end{equation}
-
 or
 %
 \boxedEquation{eqn:ensemblesForSpinOneHalf:560}{
@@ -395,16 +403,16 @@ or
 \boxedEquation{eqn:ensemblesForSpinOneHalf:580}{
 \lambda = \frac{1 \pm \sqrt{ [\sigma_x]^2 + [\sigma_y]^2 + [\sigma_z]^2 }}{2},
 }
-
 as found above.
 %
 \makeSubAnswer{}{problem:ensemblesForSpinOneHalf:1:b}
 %
 Suppose that the system is in the state \( \ket{\BS \cdot \ncap ; + } \) as defined in \cref{eqn:ensemblesForSpinOneHalf:120}, then the expectation values of \( \sigma_x, \sigma_y, \sigma_z \) with respect to this state are
 %
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:300}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:300}
+\begin{aligned}
 \expectation{\sigma_x}
-=
+&=
 \begin{bmatrix}
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
@@ -414,7 +422,7 @@ Suppose that the system is in the state \( \ket{\BS \cdot \ncap ; + } \) as defi
 \cos(\theta/2) \\
 \sin(\theta/2) e^{i \phi}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
@@ -423,12 +431,14 @@ Suppose that the system is in the state \( \ket{\BS \cdot \ncap ; + } \) as defi
 \sin(\theta/2) e^{i \phi} \\
 \cos(\theta/2) \\
 \end{bmatrix}
-=
+\\ &=
 \sin\theta \cos\phi,
-\end{dmath}
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:340}
+\end{aligned}
+\end{equation}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:340}
+\begin{aligned}
 \expectation{\sigma_y}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
@@ -438,7 +448,7 @@ Suppose that the system is in the state \( \ket{\BS \cdot \ncap ; + } \) as defi
 \cos(\theta/2) \\
 \sin(\theta/2) e^{i \phi}
 \end{bmatrix}
-=
+\\ &=
 i
 \begin{bmatrix}
 \cos(\theta/2) &
@@ -448,12 +458,14 @@ i
 -\sin(\theta/2) e^{i \phi} \\
 \cos(\theta/2) \\
 \end{bmatrix}
-=
+\\ &=
 \sin\theta \sin\phi,
-\end{dmath}
-\begin{dmath}\label{eqn:ensemblesForSpinOneHalf:360}
+\end{aligned}
+\end{equation}
+\begin{equation}\label{eqn:ensemblesForSpinOneHalf:360}
+\begin{aligned}
 \expectation{\sigma_z}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
@@ -463,7 +475,7 @@ i
 \cos(\theta/2) \\
 \sin(\theta/2) e^{i \phi}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos(\theta/2) &
 \sin(\theta/2) e^{-i \phi}
@@ -472,17 +484,16 @@ i
 \cos(\theta/2) \\
 -\sin(\theta/2) e^{i \phi}
 \end{bmatrix}
-=
+\\ &=
 \cos\theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So we have
 \boxedEquation{eqn:ensemblesForSpinOneHalf:380}{
 \ncap = \lr{ \expectation{\sigma_x}, \expectation{\sigma_y}, \expectation{\sigma_z} }.
 }
-
 \index{spin half!expectation}
 The spin direction is completely determined by this vector of expectation values (or equivalently, the expectation values of \( S_x, S_y, S_z \)).
 } % answer
-
 %\EndArticle

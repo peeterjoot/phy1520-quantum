@@ -11,14 +11,14 @@ Set aside for now, the physical meaning of \( m < 0 \).
 Assume \( V(x) = 0 \) but let us assume the mass \( m \) is a function of position \( m(x) \).
 This leads to
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:20}
 H =
 \begin{bmatrix}
 c \hatp & m(x) c^2 \\
 m(x) c^2 & -c \hatp
 \end{bmatrix}
 .
-\end{dmath}
+\end{equation}
 %
 Let \( m(x) \) be such that \( m(-x) = -m(x) \), i.e., an odd function of position which changes sign at \( x = 0 \).
 %
@@ -58,20 +58,21 @@ Normalize the wavefunction \( \Phi(x) \).
 %
 Let \( \pi \) represent a parity operator that acts on a scalar (operator), so the Dirac parity operator \( \hatcalP_{\textrm{Dirac}} \) takes the form
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:80}
 \hatcalP_{\textrm{Dirac}} =
 \begin{bmatrix}
 0 & -i \pi \\
 i \pi & 0
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The commutator with the Hamiltonian is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:100}
+\begin{aligned}
 \antisymmetric{H}{\hatcalP_{\textrm{Dirac}}}
-= H \hatcalP_{\textrm{Dirac}} - \hatcalP_{\textrm{Dirac}} H
-=
+&= H \hatcalP_{\textrm{Dirac}} - \hatcalP_{\textrm{Dirac}} H
+\\ &=
 \begin{bmatrix}
 c \hatp & m(x) c^2 \\
 m(x) c^2 & -c \hatp
@@ -89,7 +90,7 @@ i \pi & 0
 c \hatp & m(x) c^2 \\
 m(x) c^2 & -c \hatp
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 i c^2 m(x) \pi & -i c \hatp \pi \\
 -i c \hatp \pi & - i c^2 m(x) \pi
@@ -99,44 +100,49 @@ i c^2 m(x) \pi & -i c \hatp \pi \\
 -i c^2 \pi m(x) & i c \pi \hatp \\
 i c \pi \hatp & i c^2 \pi m(x)
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 i c^2 \symmetric{m(x)}{ \pi } & -i c \symmetric{\hatp}{\pi} \\
 -i c \symmetric{\hatp}{\pi} & - i c^2 \symmetric{m(x)}{\pi}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now consider the matrix element of this commutator with respect to a position basis wavefunction \( \bra{x} \antisymmetric{H}{\hatcalP_{\textrm{Dirac}}} \ket{\Psi} \).  To compute this we must first understand the behavior of the anticommutators of scalar operators \( m, \hatp \) with \( \pi \).  That is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:120}
+\begin{aligned}
 \bra{x} \symmetric{m(x)}{\pi} \ket{\psi}
-=
+&=
 \symmetric{m(x)}{\pi} \psi(x)
-=
+\\ &=
 m(x) \pi \psi(x) + \pi ( m(x) \psi(x) )
-=
+\\ &=
 m(x) \psi(-x) + m(-x) \psi(-x)
-=
+\\ &=
 m(x) \psi(-x) - m(x) \psi(-x)
-=
+\\ &=
 0,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:140}
+\begin{aligned}
 \bra{x} \symmetric{\hatp}{\pi} \ket{\psi}
-=
+&=
 \symmetric{-i \Hbar \PD{x}{} }{\pi} \psi(x)
-=
+\\ &=
 -i \Hbar \PD{x}{} \pi \psi(x) + \pi ( -i \Hbar \PD{x}{} \psi(x) )
-=
+\\ &=
 -i \Hbar \PD{x}{} \psi(-x) + (-i \Hbar) \PD{(-x)}{} \psi(-x)
-=
+\\ &=
 i \Hbar \PD{(-x)}{} \psi(-x) - i \Hbar \PD{(-x)}{} \psi(-x)
-=
+\\ &=
 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This shows that \( \bra{x} \antisymmetric{H}{\hatcalP_{\textrm{Dirac}}} \ket{\Psi} = 0 \).  Since this is true for any \( \ket{\Psi} \), we've shown that the Hamiltonian commutes with the Dirac parity operator
 %
@@ -148,9 +154,10 @@ H \hatcalP_{\textrm{Dirac}} = \hatcalP_{\textrm{Dirac}} H.
 %
 This follows with direct substitution
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:180}
+\begin{aligned}
 \hatcalP_{\textrm{Dirac}} \Phi(x)
-=
+&=
 \begin{bmatrix}
 0 & -i \pi \\
 i \pi & 0
@@ -159,32 +166,34 @@ i \pi & 0
 f(x) \\
 -i f(x)
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 - \pi f(x) \\
 i \pi f(x)
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 - f(-x) \\
 i f(-x)
 \end{bmatrix}
-=
+\\ &=
 -
 \begin{bmatrix}
 f(x) \\
 -i f(x)
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{gradQuantum:problemSet4:2c}
 %
 The eigenvalue equation has the form
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:380}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:380}
+\begin{aligned}
 \lambda \Phi
-= H \Phi
-=
+&= H \Phi
+\\ &=
 \begin{bmatrix}
 c \hatp & m(x) c^2 \\
 m(x) c^2 & -c \hatp
@@ -193,12 +202,13 @@ m(x) c^2 & -c \hatp
 f \\
 -i f
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 c \hatp f -i m(x) c^2 f \\
 m(x) c^2 f + i c \hatp f
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
 \begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:200}
 \begin{aligned}
@@ -228,18 +238,22 @@ f(x) = f(0) \exp\lr{ - \int_0^x \frac{c}{\Hbar} m(x) dx }.
 %
 For \( x > 0 \) this is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:280}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:280}
+\begin{aligned}
 f(x)
-= f(0) \exp\lr{ - \int_0^x \frac{c}{\Hbar} m_0 dx }
-= f(0) \exp\lr{ - \frac{m_0 c x}{\Hbar}},
-\end{dmath}
+&= f(0) \exp\lr{ - \int_0^x \frac{c}{\Hbar} m_0 dx }
+\\ &= f(0) \exp\lr{ - \frac{m_0 c x}{\Hbar}},
+\end{aligned}
+\end{equation}
 %
 and for \( x < 0 \) this is
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:300}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:300}
+\begin{aligned}
 f(x)
-= f(0) \exp\lr{ \int_0^x \frac{c}{\Hbar} m_0 dx }
-= f(0) \exp\lr{ \frac{m_0 c x}{\Hbar}}.
-\end{dmath}
+&= f(0) \exp\lr{ \int_0^x \frac{c}{\Hbar} m_0 dx }
+\\ &= f(0) \exp\lr{ \frac{m_0 c x}{\Hbar}}.
+\end{aligned}
+\end{equation}
 %
 These can be combined as
 %
@@ -251,21 +265,23 @@ f(x) = f(0) \exp\lr{ - \frac{m_0 c \Abs{x}}{\Hbar}}.
 %
 The normalization is given by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet4Problem2:340}
+\begin{equation}\label{eqn:gradQuantumProblemSet4Problem2:340}
+\begin{aligned}
 1
-=
+&=
 \int_{-\infty}^\infty \Phi^\dagger \Phi dx
-=
+\\ &=
 \int_{-\infty}^\infty 2 \Abs{f}^2 dx
-=
+\\ &=
 2 f^2(0) \int_{-\infty}^\infty e^{- 2 m_0 c \Abs{x}/\Hbar} dx
-=
+\\ &=
 4 f^2(0) \int_{0}^\infty e^{- 2 m_0 c x/\Hbar} dx
-=
+\\ &=
 4 f^2(0) \evalrange{\frac{e^{- 2 m_0 c x/\Hbar}}{ - 2 m_0 c/\Hbar}}{0}{\infty}
-=
+\\ &=
 \frac{2 \Hbar}{ m_0 c} f^2(0),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
