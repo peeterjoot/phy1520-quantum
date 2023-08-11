@@ -91,12 +91,12 @@ and
 %
 In the Heisenberg picture the equations of motion are precisely those of classical Hamiltonian mechanics, except that we are dealing with operators instead of scalars
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:140}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:140}
 \begin{aligned}
 \ddt{p^{(H)}} &= -m \omega^2 x^{(H)} \\
 \ddt{x^{(H)}} &= \inv{m } p^{(H)}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 In the text the ladder operators are used to simplify the solution of these coupled equations, since they can decouple them.  That's not really required since we can solve them directly in matrix form with little work
 %
@@ -168,12 +168,12 @@ y(0),
 %
 or
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:220}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:220}
 \begin{aligned}
 \frac{p^{(H)}(t)}{m \omega} &= \cos\lr{ \omega t } \frac{p^{(H)}(0)}{m \omega} + \sin\lr{ \omega t } x^{(H)}(0) \\
 x^{(H)}(t) &= -\sin\lr{ \omega t } \frac{p^{(H)}(0)}{m \omega} + \cos\lr{ \omega t } x^{(H)}(0).
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 This solution depends on being lucky enough to recognize that the matrix has a Pauli matrix as a factor (which squares to unity, and allows the exponential to be evaluated easily.)
 
@@ -262,21 +262,21 @@ a
 \end{dmath}
 %
 where
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:400}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:400}
 \begin{aligned}
 a^\dagger &= \sqrt{\frac{m \omega}{2 \Hbar}} \lr{ -i \frac{p^{(H)}}{m \omega} + x^{(H)} } \\
 a &= \sqrt{\frac{m \omega}{2 \Hbar}} \lr{ i \frac{p^{(H)}}{m \omega} + x^{(H)} }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Lo and behold, we have the standard form of the raising and lowering operators, and can write the system equations as
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:360}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:360}
 \begin{aligned}
 \ddt{a^\dagger} &= i \omega a^\dagger \\
 \ddt{a} &= -i \omega a.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 It is actually a bit fluky that this matched exactly, since we could have chosen eigenvectors that differ by constant phase factors, like
 %

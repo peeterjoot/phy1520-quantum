@@ -78,13 +78,13 @@ c_{n} = \frac{c_{n-1} z}{\sqrt{n}},
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:80}
 \begin{aligned}
 c_1 &= \frac{c_0 z}{\sqrt{1}} \\
 c_2 &= \frac{c_1 z}{\sqrt{2}} = \frac{c_0 z^2}{\sqrt{2 \times 1}}  \\
 c_3 &= \frac{c_2 z}{\sqrt{3}} = \frac{c_0 z^3}{\sqrt{3!}},
 \end{aligned}
-\end{dmath}
+\end{equation}
 
 or more generally
 %
@@ -124,7 +124,7 @@ or
 }
 The normalization follows nicely from the \cref{eqn:gradQuantumProblemSet2Problem1:120} representation
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:200}
 \begin{aligned}
 \braket{z}{z}
 &=
@@ -141,7 +141,7 @@ The normalization follows nicely from the \cref{eqn:gradQuantumProblemSet2Proble
 &= \Abs{c_0}^2 e^{\Abs{z}^2} \\
 &= 1.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Picking a real value for the constant provides a z-dependent normalization for the state
 %
@@ -156,7 +156,7 @@ or
 %
 \makeSubAnswer{}{gradQuantum:problemSet2:1b}
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:260}
 \begin{aligned}
 \braket{z}{z'}
 &=
@@ -172,7 +172,7 @@ e^{-\Abs{z}^2/2 -\Abs{z'}^2/2 }
 &=
 \exp\lr{ -\Abs{z}^2/2 -\Abs{z'}^2/2 + z^\conj z' }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 This can be rewritten in terms of the absolute difference between the two z values
 %
@@ -327,7 +327,7 @@ With time evolution in the mix using the Heisenberg representation of the annihi
 %
 It's clear how to generalize the stationary state calculations in \partref{gradQuantum:problemSet2:1c}, and can do so by inspection
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:480}
 \begin{aligned}
 \expectation{x} &= \sqrt{ \frac{\Hbar}{2 m \omega} } \lr{ z e^{-i \omega t} + z^\conj e^{i \omega t} } \\
 \expectation{xp} &= \frac{i \Hbar}{2} \lr{ z e^{-i \omega t} + z^\conj e^{i \omega t} } \lr{ z e^{-i \omega t} - z^\conj e^{i \omega t} } \\
@@ -335,25 +335,25 @@ It's clear how to generalize the stationary state calculations in \partref{gradQ
 \expectation{x^2} &= \frac{\Hbar}{2 m \omega} \lr{(z e^{-i \omega t} + z^\conj e^{i \omega t} )^2 + 1} = \expectation{x}^2 + \frac{\Hbar}{2 m \omega} \\
 \expectation{p^2} &= \frac{m \Hbar \omega}{2} \lr{ 1 - (z e^{-i \omega t} - z^\conj e^{i \omega t})^2 } = \expectation{p}^2 + \frac{m \Hbar \omega}{2}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 In class, symmetric and antisymmetric conjugate sums of \( z \) were identified as position and momentum, with
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:541}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:541}
 \begin{aligned}
 x_0 &\equiv \sqrt{\frac{2 \Hbar}{m \omega}} \Real z = \sqrt{\frac{\Hbar}{2 m \omega}} \lr{ z + z^\conj } \\
 p_0 &\equiv \sqrt{2 m \Hbar \omega} \Imag z = -i \sqrt{\frac{m \Hbar \omega}{2}} \lr{ z - z^\conj }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 With that identification the expectation values above are
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet2Problem1:481}
+\begin{equation}\label{eqn:gradQuantumProblemSet2Problem1:481}
 \begin{aligned}
 \expectation{x} &= x_0 \cos(\omega t) + \frac{p_0}{m \omega} \sin(\omega t) \\
 \expectation{p} &= p_0 \cos(\omega t) - m \omega x_0 \sin(\omega t).
 \end{aligned}
-\end{dmath}
+\end{equation}
 These expectations are analogous to the phase space trajectories of classical particles.
 %
 \makeSubAnswer{}{gradQuantum:problemSet2:1f}
