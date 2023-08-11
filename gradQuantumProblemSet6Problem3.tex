@@ -15,11 +15,11 @@ Express \( \bra{j = 1, m'} \hatJ_y \ket{ j = 1, m } \) as a \( 3 \times 3 \) mat
 %
 \makesubproblem{}{gradQuantum:problemSet6:3b}
 Show that for \( j = 1 \) % , we can replace (units where \( \Hbar = 1 \)),
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem3:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem3:20}
 e^{-i \hatJ_y \beta/\Hbar}
 =
 1 - i \frac{\hatJ_y}{\Hbar} \sin\beta - \frac{\hatJ_y^2}{\Hbar^2} \lr{ 1 - \cos\beta }.
-\end{dmath}
+\end{equation}
 } % makeproblem
 %
 \makeanswer{gradQuantum:problemSet6:3}{
@@ -70,7 +70,7 @@ We have nine matrix elements
 %
 Put into matrix form, that is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem3:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem3:260}
 \bra{j, m'} \hatJ_y \ket{j, m}
 =
 \frac{\Hbar}{2 i}
@@ -79,7 +79,7 @@ Put into matrix form, that is
 -\sqrt{2} & 0 & \sqrt{2} \\
 0 & -\sqrt{2} & 0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 %\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem3:40}
@@ -99,9 +99,10 @@ or
 %
 The square of the matrix representation of \( \hatJ_y \) of \cref{eqn:gradQuantumProblemSet6Problem3:40} is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem3:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem3:60}
+\begin{aligned}
 \hatJ_y^2
-=
+&=
 -\frac{\Hbar^2}{2}
 \begin{bmatrix}
 0 & -1 &  0 \\
@@ -113,19 +114,21 @@ The square of the matrix representation of \( \hatJ_y \) of \cref{eqn:gradQuantu
 1 &  0 & -1 \\
 0 &  1 &  0 \\
 \end{bmatrix}
-=
+\\ &=
 -\frac{\Hbar^2}{2}
 \begin{bmatrix}
 -1 & 0 & 1 \\
 0 & -2 & 0 \\
 1 & 0 & -1
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and the cube is
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem3:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem3:80}
+\begin{aligned}
 \hatJ_y^3
-=
+&=
 -\frac{\Hbar^2}{2}
 \frac{\Hbar i}{\sqrt{2}}
 \begin{bmatrix}
@@ -138,23 +141,24 @@ and the cube is
 1 &  0 & -1 \\
 0 &  1 &  0 \\
 \end{bmatrix}
-=
+\\ &=
 -\frac{i\Hbar^3}{2 \sqrt{2}}
 \begin{bmatrix}
 0 & 2 & 0 \\
 -2 & 0 & 2 \\
 0 & -2 & 0
 \end{bmatrix}
-=
+\\ &=
 \Hbar^2 \frac{i \Hbar}{\sqrt{2}}
 \begin{bmatrix}
 0 & -1 &  0 \\
 1 &  0 & -1 \\
 0 &  1 &  0 \\
 \end{bmatrix}
-=
+\\ &=
 \Hbar^2 \hatJ_y.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This proves (5.55) from the text
 \begin{equation}\label{eqn:gradQuantumProblemSet6Problem3:100}

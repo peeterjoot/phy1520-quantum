@@ -4,14 +4,13 @@
 %
 \makeoproblem{Double well potential.}{gradQuantum:problemSet7:1}{2015 ps7 p1}{
 \index{double well potential}
-
 Consider a particle in the double well potential
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:20}
 V (x) =
 \frac{m \omega^2}{ 8 a^2 }
 \lr{ x + a }^2 \lr{x - a}^2.
-\end{dmath}
+\end{equation}
 %
 Expanding \( V(x) \) around \( x = \pm a \) leads to a harmonic potential with frequency \( \omega \).
 Construct variational states with even/odd parity as \( \psi_\pm(x) = g_\pm \lr{ \phi(x - a) \pm \phi(x + a) } \) where \( \phi(x) \) is the normalized ground state of the usual harmonic oscillator with frequency \( \omega \), i.e.,
@@ -73,25 +72,27 @@ The integration grunt work for this problem can be found in \nbref{ps7:doubleWel
 %
 With \( u = a^2/a_0^2 \), in the \( a \gg a_0 \) limit, the almost zero \( \coth u - 1 \) difference can be approximated as an exponential
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:100}
+\begin{aligned}
 \coth u -1
-=
+&=
 \frac{e^{2u} + 1}{e^{2u} - 1} - 1
-=
+\\ &=
 \frac{e^{2u} + 1 - e^{2u} + 1 }{e^{2u} - 1}
-=
+\\ &=
 \frac{ 2 }{e^{2u} - 1}
-\approx
+\\ &\approx
 2 e^{-2u},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the energy difference is approximately
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:120}
 \overbar{E}_{+} - \overbar{E}_{-}
 \approx
 \frac{\Hbar \omega}{4} \frac{a^2}{a_0^2} \exp\lr{-\frac{a^2}{a_0^2}}.
-\end{dmath}
+\end{equation}
 %
 \makeSubAnswer{}{gradQuantum:problemSet7:1b}
 Now lets compare to the energy levels of the phenomenological Hamiltonian, which are given by
@@ -108,25 +109,27 @@ E_{\pm} = \epsilon_0 \pm \gamma.
 %
 If the eigenvectors are proportional to the column vector given by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:180}
 \ket{\pm} =
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 then we must have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:200}
+\begin{aligned}
 0
-= \lr{ \epsilon_0 - (\epsilon_0 \pm \gamma) } a - \gamma b
-= \gamma \lr{ \mp a - b },
-\end{dmath}
+&= \lr{ \epsilon_0 - (\epsilon_0 \pm \gamma) } a - \gamma b
+\\ &= \gamma \lr{ \mp a - b },
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:220}
 \ket{\pm}
 =
 \inv{\sqrt{2}}
@@ -134,23 +137,25 @@ or
 1 \\
 \mp 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The energy level difference for this Hamiltonian is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:240}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:240}
+\begin{aligned}
 \Delta E
-= E_{+} - E_{-}
-= \epsilon_0 + \gamma - \lr{ \epsilon_0 - \gamma }
-= 2 \gamma.
-\end{dmath}
+&= E_{+} - E_{-}
+\\ &= \epsilon_0 + \gamma - \lr{ \epsilon_0 - \gamma }
+\\ &= 2 \gamma.
+\end{aligned}
+\end{equation}
 %
 Equating this difference with \cref{eqn:gradQuantumProblemSet7Problem1:120}, we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem1:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem1:260}
 \gamma
 =
 \frac{\Hbar \omega}{8} \frac{a^2}{a_0^2} \exp\lr{-\frac{a^2}{a_0^2}}.
-\end{dmath}
+\end{equation}
 }
 }

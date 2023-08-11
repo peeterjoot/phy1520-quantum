@@ -6,12 +6,12 @@
 \index{harmonic oscillator!anharmonic perturbation}
 Consider a 2D harmonic oscillator with
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:20}
 H =
 \frac{p_x^2}{2m}
 +\frac{p_y^2}{2m}
 + \inv{2} m \omega^2 \lr{ x^2 + y^2 },
-\end{dmath}
+\end{equation}
 and turn on an anharmonic perturbation
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:40}
@@ -117,15 +117,17 @@ The \( \Delta^{(1)} \) contribution drops out, leaving
 just as we had for a strictly first order perturbing potential.
 For the energy shifts consider the braket
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:220}
+\begin{aligned}
 \bra{n^{(0)}} H -H_0 \ket{n}
-=
+&=
 \bra{n^{(0)}} { V_1 \Delta^{(1)} + V_2 \Delta^{(2)} } \ket{n}
-=
+\\ &=
 \lr{ \lr{ E^{(0)} + \Delta } -E^{(0)} } \braket{n^{(0)}}{n}
-=
+\\ &=
 \Delta \braket{n^{(0)}}{n},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %As with the a first order \( \lambda \) perturbation, we can impose a requirement that \( \braket{0^{(0)}}{n} = 1 \), so
@@ -136,11 +138,11 @@ or
 %
 Expanding both sides in powers of \( \lambda \) we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:260}
 \sum_{r = 1, s = 0} \lambda^{r+s} \Delta^{(r)} \braket{n^{(0)}}{n_s}
 =
 \sum_{m = 0} \lambda^{m+1} \bra{n^{(0)}} V_1 \ket{n_m} + \lambda^{m+2} \bra{n^{(0)}} V_2 \ket{n_m}.
-\end{dmath}
+\end{equation}
 With \( \ket{n^{(0)}} = \ket{n_0} \) as required in the \( \lambda \rightarrow 0 \) limit, the \( \lambda = 1 \) contribution to these sums is
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:280}
@@ -151,11 +153,11 @@ With \( \ket{n^{(0)}} = \ket{n_0} \) as required in the \( \lambda \rightarrow 0
 %
 The second order contribution is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:320}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:320}
 \Delta^{(1)} \braket{n^{(0)}}{n_1} + \Delta^{(2)} \braket{n^{(0)}}{n_0}
 =
 \bra{n^{(0)}} V_1 \ket{n_1} + \bra{n^{(0)}} V_2 \ket{n_0},
-\end{dmath}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:380}
@@ -184,11 +186,12 @@ However, from \cref{eqn:gradQuantumProblemSet8Problem3:460} we see that \( \ket{
 In \nbref{ps8:2dHarmonicOscillatorOperators.nb}, for
 an initial state \( \ket{n_0} = \ket{0,0} \), it is calculated that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:480}
+\begin{aligned}
 V_1 \ket{0,0}
-=
+&=
 g_1 \frac{\Hbar \omega}{x_0^4} \lr{ x^4 + y^4 } \ket{0,0}
-=
+\\ &=
 g_1 \Hbar \omega
 \lr{
 \frac{3 }{2} \ket{0,0}
@@ -197,7 +200,8 @@ g_1 \Hbar \omega
 +
 \sqrt{\frac{3}{2}} \lr{ \ket{4,0} + \ket{0,4} }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The first energy shift is
 %
@@ -207,24 +211,24 @@ The first energy shift is
 %
 and the first order perturbation of the state is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:540}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:540}
 \ket{n_1} = g_1 \Hbar \omega
 \lr{
 \frac{3}{\sqrt{2}} \frac{\ket{2,0} + \ket{0,2} }{ \Hbar \omega \lr{ 1 + 0 + 0 } - \Hbar \omega \lr{ 1 + 2 + 0} }
 +
 \sqrt{\frac{3}{2}} \frac{ \ket{4,0} + \ket{0,4} }{ \Hbar \omega \lr{ 1 + 0 + 0 } - \Hbar \omega \lr{ 1 + 4 + 0} }
 },
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:560}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:560}
 \ket{n_1} = -g_1
 \lr{
 \frac{3}{2 \sqrt{2}} \lr{\ket{2,0} + \ket{0,2} }
 +
 \inv{4} \sqrt{\frac{3}{2}} \lr{ \ket{4,0} + \ket{0,4} }
 },
-\end{dmath}
+\end{equation}
 %
 We can calculate
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:580}
@@ -252,19 +256,21 @@ For the ground state, there is no contribution from the second order potential \
 %
 The next two highest states are \( \ket{1,0}, \ket{0,1} \) both with unperturbed energy eigenvalues \( 2 \Hbar \omega \).  For a basis spanning the \( \setlr{ \ket{1,0}, \ket{0,1} } \) subspace, the matrix element of the perturbed Hamiltonian is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem3:640}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem3:640}
+\begin{aligned}
 H_0 + \lambda V_1 + \lambda^2 V_2
-=
+&=
 2 \Hbar \omega I
 + \frac{9}{2} g_1 \lambda \Hbar \omega I
 + \frac{1}{2} g_2 \lambda^2 \Hbar \omega \sigma_1
-=
+\\ &=
 \Hbar \omega
 \begin{bmatrix}
 2 + \frac{9}{2} g_1 \lambda & \frac{1}{2} g_2 \lambda^2 \\
 \frac{1}{2} g_2 \lambda^2 & 2 + \frac{9}{2} g_1 \lambda
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since the eigenvalues of \(
 \begin{bmatrix}

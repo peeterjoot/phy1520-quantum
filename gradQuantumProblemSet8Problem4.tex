@@ -41,7 +41,7 @@ Compute the full field evolution of the levels and compare with the perturbative
 %What are the spin eigenstates and eigenvalues?
 With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), we can compute the unperturbed interaction Hamiltonian.  For brevity, let \( S_{\txte\txtp} = \BS_\txte \cdot \BS_\txtp \)
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:60}
 A  \BS_\txte \cdot \BS_\txtp 
 =
 A
@@ -51,21 +51,24 @@ A
 \bra{+-} S_{\txte\txtp} \ket{++} & \bra{+-} S_{\txte\txtp} \ket{-+} & \bra{+-} S_{\txte\txtp} \ket{+-} & \bra{+-} S_{\txte\txtp} \ket{--} \\
 \bra{--} S_{\txte\txtp} \ket{++} & \bra{--} S_{\txte\txtp} \ket{-+} & \bra{--} S_{\txte\txtp} \ket{+-} & \bra{--} S_{\txte\txtp} \ket{--} \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 Each of the matrix elements may be expanded in terms of the Pauli basis, for example
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:n}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:n}
+\begin{aligned}
 \bra{++} S_{\txte\txtp} \ket{-+} 
-=
+&=
 \frac{\Hbar^2}{4}
 \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} 
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \braket{+}{-} \braket{+}{+},
-\end{dmath}
+\end{aligned}
+\end{equation}
 so
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:61}
-A  \BS_\txte \cdot \BS_\txtp 
-=
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:61}
+\begin{aligned}
+A \BS_\txte \cdot \BS_\txtp 
+&=
 \frac{A \Hbar^2}{4}
 %\begin{bmatrix}
 %\bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{+} & \bra{+} \sigma_\txte \ket{+} \bra{+} \sigma_\txtp \ket{-} & \bra{+} \sigma_\txte \ket{-} \bra{+} \sigma_\txtp \ket{-} \\
@@ -79,7 +82,7 @@ A  \BS_\txte \cdot \BS_\txtp
 \braket{+}{+} \braket{-}{+} & \braket{+}{-} \braket{-}{+} & \braket{+}{+} \braket{-}{-} & \braket{+}{-} \braket{-}{-} \\
 \braket{-}{+} \braket{-}{+} & \braket{-}{-} \braket{-}{+} & \braket{-}{+} \braket{-}{-} & \braket{-}{-} \braket{-}{-} \\
 \end{bmatrix}
-=
+\\ &=
 \frac{A \Hbar^2}{4}
 \begin{bmatrix}
 (1) (1) & (0) (1) & (1) (0) & (0) (0) \\
@@ -87,13 +90,14 @@ A  \BS_\txte \cdot \BS_\txtp
 (1) (0) & (0) (0) & (1) (-1) & (0) (-1) \\
 (0) (0) & (-1) (0) & (0) (-1) & (-1) (-1) \\
 \end{bmatrix}
-=
+\\ &=
 \frac{A \Hbar^2}{4}
 \begin{bmatrix}
 \sigma_3 & 0 \\
 0 & -\sigma_3
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The spin eigenstates are the basis elements of \( \beta \) above, with respective eigenvalues
 %
@@ -127,33 +131,35 @@ The matrix representation of the perturbation potential is
 \end{equation}
 %
 Assuming the \( \BS_\txte \) operator is directed along \( \ncap = (\sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta) \) with eigenkets
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:120}
 \ket{+} =
 \begin{bmatrix}
 e^{-i\phi} \cos(\theta/2) \\
 \sin(\theta/2) \\
 \end{bmatrix},
-\end{dmath}
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:140}
+\end{equation}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:140}
 \ket{-} =
 \begin{bmatrix}
 -e^{-i\phi} \sin(\theta/2) \\
 \cos(\theta/2) \\
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 the representation of the \( \sigma^z_\txte \) operator is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:160}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:160}
+\begin{aligned}
 \sigma^z_\txte
-=
+&=
 \begin{bmatrix}
 \cos\theta & -\sin\theta \\
 -\sin\theta & -\cos\theta \\
 \end{bmatrix}
-=
+\\ &=
 U \PauliZ U^{-1},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:180}
@@ -167,7 +173,7 @@ U =
 This is demonstrated in \nbref{ps8:PauliMatrixSpinOperators.nb}.
 The full Hamiltonian can now be written in block matrix form
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:200}
 H
 =
 \frac{A \Hbar^2}{4}
@@ -180,10 +186,10 @@ H
 U \sigma_z U^{-1} & 0 \\
 0 & U \sigma_z U^{-1}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 Transforming the Hamiltonian to the \( S^z_\txte \) basis we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:220}
 H' =
 \frac{A \Hbar^2}{4}
 \begin{bmatrix}
@@ -195,7 +201,7 @@ U^{-1} \sigma_z U & 0 \\
 \sigma_z & 0 \\
 0 & \sigma_z
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %With \( C = \cos(\theta/2), S = \sin(\theta/2) \) these \( U^{-1} \sigma_z U \) block matrices are
 %
 %\begin{dmath}\label{eqn:gradQuantumProblemSet8Problem4:240}

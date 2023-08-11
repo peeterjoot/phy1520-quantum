@@ -26,14 +26,13 @@
 \index{Euler angle}
 Consider a sequence of Euler rotations represented by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem1:20}
 \calD^{1/2}(\alpha, \beta, \gamma)
 =
 e^{-i \sigma_z \alpha/2} e^{-i \sigma_y \beta/2} e^{-i \sigma_z \gamma_2 }.
-\end{dmath}
-} % problem
-
+\end{equation}
 Because rotations form a group, this sequence of rotations corresponds to a single rotation by an angle \( \theta \) about a new axis \( \ncap \). What is \(\theta\)? What is \( \ncap\)?
+} % problem
 %
 \makeanswer{problem:gradQuantumProblemSet6Problem1:1}{
 \withproblemsetsParagraph{
@@ -120,37 +119,41 @@ e^{i(\alpha-\gamma)/2} \sin \frac{\beta}{2} & e^{i(\alpha+\gamma)/2} \cos \frac{
 %
 Compare this to the matrix for a rotation (double sided) about a normal, given by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem1:40}
+\begin{aligned}
 \calR
-= e^{-i \Bsigma \cdot \ncap \theta/2}
-= \cos \frac{\theta}{2} I - i \Bsigma \cdot \ncap \sin \frac{\theta}{2}.
-\end{dmath}
+&= e^{-i \Bsigma \cdot \ncap \theta/2}
+\\ &= \cos \frac{\theta}{2} I - i \Bsigma \cdot \ncap \sin \frac{\theta}{2}.
+\end{aligned}
+\end{equation}
 %
 With \( \ncap = \lr{ \sin \Theta \cos\Phi, \sin \Theta \sin\Phi, \cos\Theta} \), the normal direction in its Pauli basis is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem1:60}
+\begin{aligned}
 \Bsigma \cdot \ncap
-=
+&=
 \begin{bmatrix}
 \cos\Theta        & \sin \Theta \cos\Phi - i \sin \Theta \sin\Phi \\
 \sin \Theta \cos\Phi + i \sin \Theta \sin\Phi & -\cos\Theta
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos\Theta        & \sin \Theta e^{-i \Phi} \\
 \sin \Theta e^{i \Phi} & -\cos\Theta
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:80}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem1:80}
 \calR =
 \begin{bmatrix}
 \cos \frac{\theta}{2} -i \sin \frac{\theta}{2} \cos\Theta & -i \sin \Theta e^{-i \Phi} \sin \frac{\theta}{2} \\
 -i \sin \Theta e^{i \Phi} \sin \frac{\theta}{2}           & \cos \frac{\theta}{2} +i \sin \frac{\theta}{2} \cos\Theta \\
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 It's not obvious how to put this into correspondence with the matrix for the Euler rotations.  Doing so certainly doesn't look fun.  To solve this problem, let's go the opposite direction, and put the matrix for the Euler rotations into the form of \cref{eqn:gradQuantumProblemSet6Problem1:40}.
 That is
@@ -192,13 +195,13 @@ This gives us
 %
 The angle is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet6Problem1:140}
 \theta
 = 2 \Atan \frac{
 \sqrt{\sin^2\frac{\beta}{2} + \sin^2\frac{\alpha+\gamma}{2} \cos^2\frac{\beta}{2}
 }
 }{\cos\frac{\alpha+\gamma}{2} \cos \frac{\beta}{2}},
-\end{dmath}
+\end{equation}
 %
 or
 %\begin{dmath}\label{eqn:gradQuantumProblemSet6Problem1:180}

@@ -19,39 +19,43 @@ Prove that time-reversal implies \( \Theta \ket{j , m} = (-1)^{m} \ket{j, -m}\).
 %
 Assuming the rotation is around the normal \( \ncap = (n_1, n_2, n_3) \) by \( \phi \) radians, the action of the time reversal operator on the rotated state can be expanded in series
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:20}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:20}
+\begin{aligned}
 \Theta \calD(R) \ket{j, m}
-=
+&=
 \Theta e^{-i \BJ \cdot \ncap \phi/\Hbar} \ket{j, m}
-=
+\\ &=
 \sum_{k = 0}^\infty \inv{k!} \lr{\frac{-i \phi}{\Hbar}}^k \lr{ \BJ \cdot \ncap }^k \ket{j, m}
-=
+\\ &=
 \sum_{k = 0}^\infty \inv{k!} \lr{\frac{-i \phi}{\Hbar}}^k
 \Theta \lr{ \BJ \cdot \ncap }^k
 \ket{j, m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For any \( J_i \), we know that \( \Theta J_i = -J_i \Theta \), so
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:40}
+\begin{aligned}
 \Theta (J_m n_m)^k
-=
+&=
 -J_r n_r \Theta (J_m n_m)^{k-1}
-=
+\\ &=
 (-J_r n_r)^2 \Theta (J_m n_m)^{k-2}
-=
+\\ &=
 \cdots
-=
+\\ &=
 (-J_r n_r)^k \Theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This effectively flips the sign of the rotation angle, so we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:60}
 \Theta \calD(R) \ket{j, m}
 =
 \calD(R^{-1}) \Theta \ket{j, m}.
-\end{dmath}
+\end{equation}
 %
 \makeSubAnswer{}{gradQuantum:problemSet5:4b}
 %
@@ -64,13 +68,15 @@ For general total angular momentum states \( \BJ + \BL + \BS \), we can utilize 
 %
 Considering each of \( J_z \) and \( J_{\pm} \) in turn, we first have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:100}
+\begin{aligned}
 \Theta J_z \ket{j, m}
-=
+&=
 \Hbar m \Theta \ket{j, m}
-=
+\\ &=
 - J_z \Theta \ket{j, m},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -86,35 +92,39 @@ This means that \( \Theta \ket{j, m} \) is an eigenket of \( J_z \) with eigenva
 %
 The interplay of the ladder and time-reversal operators can be used to determine the factor \( c_m \).  Note that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:160}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:160}
+\begin{aligned}
 \Theta J_{+} \Theta^{-1}
-=
+&=
 \Theta \lr{ J_x + i J_y } \Theta^{-1}
-=
+\\ &=
 -J_x - i \Theta J_y \Theta^{-1}
-=
+\\ &=
 -J_x + i J_y
-=
+\\ &=
 -\lr{ J_x - i J_y }
-=
+\\ &=
 -J_{-},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:180}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:180}
+\begin{aligned}
 \Theta J_{-} \Theta^{-1}
-=
+&=
 \Theta \lr{ J_x - i J_y } \Theta^{-1}
-=
+\\ &=
 -J_x + i \Theta J_y \Theta^{-1}
-=
+\\ &=
 -J_x - i J_y
-=
+\\ &=
 -\lr{ J_x + i J_y }
-=
+\\ &=
 -J_{+},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:200}
@@ -126,25 +136,29 @@ J_{+} \Theta &= -\Theta J_{-}.
 %
 Acting with the raising operator on a time reversed state we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:220}
+\begin{aligned}
 J_{+} \Theta \ket{j, m}
-=
+&=
 J_{+} c_m \ket{j, -m}
-=
+\\ &=
 \Hbar \sqrt{ (j-(-m))(j+(-m)+1) } c_{m} \ket{j, -m + 1}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 But we must also have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:240}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:240}
+\begin{aligned}
 J_{+} \Theta \ket{j, m}
-=
+&=
 -\Theta J_{-} \ket{j, m}
-=
+\\ &=
 -\Theta \Hbar \sqrt{(j+m)(j-m+1)} \ket{j, m - 1}
-=
+\\ &=
 - \Hbar \sqrt{(j+m)(j-m+1)} c_{m-1} \ket{j, -m + 1}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This provides a recurrence relation for the undetermined \( c_m \) factors
 %
@@ -159,15 +173,17 @@ c_m = (-1)^{m + j} c_{-j}.
 %
 Acting twice with the time reversal operator
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet5Problem4:300}
+\begin{equation}\label{eqn:gradQuantumProblemSet5Problem4:300}
+\begin{aligned}
 \Theta^2 \ket{j, m}
-=
+&=
 \Theta (-1)^{m + j} c_{-j} \ket{j, -m}
-=
+\\ &=
 (-1)^{ m -m + 2 j} c_{-j}^\conj c_{-j} \ket{j, m}
-=
+\\ &=
  (-1)^{2 j} \Abs{c_{-j}}^2 \ket{j, m}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The \( c_{-j} \) factor can be absorbed into the definition of the time reversal operator, so that, up to a phase factor, we have
 %

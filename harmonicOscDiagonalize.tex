@@ -43,24 +43,26 @@ A^{(H)} = U^\dagger A^{(S)} U,
 %
 where \( U \) is the time evolution operator.  For this discussion, we need only know that \( U \) commutes with \( H \), and do not need to know the specific structure of that operator.  In particular, the Heisenberg equations of motion take the form
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:80}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:80}
+\begin{aligned}
 \ddt{A^{(H)}}
-= \inv{i \Hbar}
+&= \inv{i \Hbar}
 \antisymmetric{A^{(H)}}{H}
-= \inv{i \Hbar}
+\\ &= \inv{i \Hbar}
 \antisymmetric{U^\dagger A^{(S)} U}{H}
-= \inv{i \Hbar}
+\\ &= \inv{i \Hbar}
 \lr{
 U^\dagger A^{(S)} U H
 - H U^\dagger A^{(S)} U
 }
-= \inv{i \Hbar}
+\\ &= \inv{i \Hbar}
 \lr{
 U^\dagger A^{(S)} H U
 - U^\dagger H A^{(S)} U
 }
-= \inv{i \Hbar} U^\dagger \antisymmetric{A^{(S)}}{H} U.
-\end{dmath}
+\\ &= \inv{i \Hbar} U^\dagger \antisymmetric{A^{(S)}}{H} U.
+\end{aligned}
+\end{equation}
 %
 The Hamiltonian for the harmonic oscillator, with Schr\"{o}dinger-picture position and momentum operators \( x, p \) is
 %
@@ -70,24 +72,28 @@ H = \frac{p^2}{2m} + \inv{2} m \omega^2 x^2,
 %
 so the equations of motions are
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:100}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:100}
+\begin{aligned}
 \ddt{x^{(H)}}
-= \inv{i \Hbar} U^\dagger \antisymmetric{x}{H} U
-= \inv{i \Hbar} U^\dagger \antisymmetric{x}{\frac{p^2}{2m}} U
-= \inv{2 m i \Hbar} U^\dagger \lr{ i \Hbar \PD{p}{p^2} } U
-= \inv{m } U^\dagger p U
-= \inv{m } p^{(H)},
-\end{dmath}
+&= \inv{i \Hbar} U^\dagger \antisymmetric{x}{H} U
+\\ &= \inv{i \Hbar} U^\dagger \antisymmetric{x}{\frac{p^2}{2m}} U
+\\ &= \inv{2 m i \Hbar} U^\dagger \lr{ i \Hbar \PD{p}{p^2} } U
+\\ &= \inv{m } U^\dagger p U
+\\ &= \inv{m } p^{(H)},
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:120}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:120}
+\begin{aligned}
 \ddt{p^{(H)}}
-= \inv{i \Hbar} U^\dagger \antisymmetric{p}{H} U
-= \inv{i \Hbar} U^\dagger \antisymmetric{p}{\inv{2} m \omega^2 x^2 } U
-= \frac{m \omega^2}{2 i \Hbar} U^\dagger \lr{ -i \Hbar \PD{x}{x^2} } U
-= -m \omega^2 U^\dagger x U
-= -m \omega^2 x^{(H)}.
-\end{dmath}
+&= \inv{i \Hbar} U^\dagger \antisymmetric{p}{H} U
+\\ &= \inv{i \Hbar} U^\dagger \antisymmetric{p}{\inv{2} m \omega^2 x^2 } U
+\\ &= \frac{m \omega^2}{2 i \Hbar} U^\dagger \lr{ -i \Hbar \PD{x}{x^2} } U
+\\ &= -m \omega^2 U^\dagger x U
+\\ &= -m \omega^2 x^{(H)}.
+\end{aligned}
+\end{equation}
 %
 In the Heisenberg picture the equations of motion are precisely those of classical Hamiltonian mechanics, except that we are dealing with operators instead of scalars
 %
@@ -100,7 +106,7 @@ In the Heisenberg picture the equations of motion are precisely those of classic
 %
 In the text the ladder operators are used to simplify the solution of these coupled equations, since they can decouple them.  That's not really required since we can solve them directly in matrix form with little work
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:160}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:160}
 \ddt{}
 \begin{bmatrix}
 p^{(H)} \\
@@ -115,17 +121,18 @@ x^{(H)}
 p^{(H)} \\
 x^{(H)}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or, with length scaled variables
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:180}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:180}
+\begin{aligned}
 \ddt{}
 \begin{bmatrix}
 \frac{p^{(H)}}{m \omega} \\
 x^{(H)}
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 0 & -\omega \\
 \omega & 0
@@ -134,37 +141,40 @@ x^{(H)}
 \frac{p^{(H)}}{m \omega} \\
 x^{(H)}
 \end{bmatrix}
-=
+\\ &=
 -i \omega
 \PauliY
 \begin{bmatrix}
 \frac{p^{(H)}}{m \omega} \\
 x^{(H)}
 \end{bmatrix}
-=
+\\ &=
 -i \omega
 \sigma_y
 \begin{bmatrix}
 \frac{p^{(H)}}{m \omega} \\
 x^{(H)}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Writing \( y = \begin{bmatrix} \frac{p^{(H)}}{m \omega} \\ x^{(H)} \end{bmatrix} \), the solution can then be written immediately as
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:200}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:200}
+\begin{aligned}
 y(t)
-=
+&=
 \exp\lr{ -i \omega \sigma_y t } y(0)
-=
+\\ &=
 \lr{ \cos \lr{ \omega t } I - i \sigma_y \sin\lr{ \omega t } } y(0)
-=
+\\ &=
 \begin{bmatrix}
 \cos\lr{ \omega t } & \sin\lr{ \omega t } \\
 -\sin\lr{ \omega t } & \cos\lr{ \omega t }
 \end{bmatrix}
 y(0),
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -185,7 +195,7 @@ x_0 = \sqrt{\frac{\Hbar}{m \omega}},
 %
 and dividing the working (operator) variables through by those values.  Let \( z = \inv{x_0} y \), and \( \tau = \omega t \) so that the equations of motion are
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:260}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:260}
 \frac{dz}{d\tau}
 =
 \begin{bmatrix}
@@ -193,52 +203,55 @@ and dividing the working (operator) variables through by those values.  Let \( z
 1 & 0
 \end{bmatrix}
 z.
-\end{dmath}
+\end{equation}
 %
 This matrix can be diagonalized as
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:280}
-A =
+\begin{equation}\label{eqn:harmonicOscDiagonalize:280}
+\begin{aligned}
+A &=
 \begin{bmatrix}
 0 & -1 \\
 1 & 0
 \end{bmatrix}
-=
+\\ &=
 V
 \begin{bmatrix}
 i & 0  \\
 0 & -i
 \end{bmatrix}
 V^{-1},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:300}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:300}
 V =
 \inv{\sqrt{2}}
 \begin{bmatrix}
 i & -i \\
 1 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The equations of motion can now be written
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:320}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:320}
 \frac{d}{d\tau} \lr{ V^{-1} z } =
 \begin{bmatrix}
 i & 0  \\
 0 & -i
 \end{bmatrix}
 \lr{ V^{-1} z }.
-\end{dmath}
+\end{equation}
 %
 This final change of variables \( V^{-1} z \) decouples the system as desired.  Expanding that gives
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:340}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:340}
+\begin{aligned}
 V^{-1} z
-=
+&=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 -i & 1 \\
@@ -248,18 +261,19 @@ V^{-1} z
 \frac{p^{(H)}}{x_0 m \omega} \\
 \frac{x^{(H)}}{x_0}
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2} x_0}
 \begin{bmatrix}
 -i \frac{p^{(H)}}{m \omega} + x^{(H)} \\
 i \frac{p^{(H)}}{m \omega} + x^{(H)}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 a^\dagger \\
 a
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where
 \begin{equation}\label{eqn:harmonicOscDiagonalize:400}
@@ -280,19 +294,20 @@ Lo and behold, we have the standard form of the raising and lowering operators, 
 %
 It is actually a bit fluky that this matched exactly, since we could have chosen eigenvectors that differ by constant phase factors, like
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:380}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:380}
 V = \inv{\sqrt{2}}
 \begin{bmatrix}
 i e^{i\phi} & -i e^{i \psi} \\
 1 e^{i\phi} & e^{i \psi}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:harmonicOscDiagonalize:341}
+\begin{equation}\label{eqn:harmonicOscDiagonalize:341}
+\begin{aligned}
 V^{-1} z
-=
+&=
 \frac{e^{-i(\phi + \psi)}}{\sqrt{2}}
 \begin{bmatrix}
 -i e^{i\psi} & e^{i \psi} \\
@@ -302,18 +317,19 @@ i e^{i\phi} & e^{i \phi}
 \frac{p^{(H)}}{x_0 m \omega} \\
 \frac{x^{(H)}}{x_0}
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2} x_0}
 \begin{bmatrix}
 -i e^{i\phi} \frac{p^{(H)}}{m \omega} + e^{i\phi} x^{(H)} \\
 i e^{i\psi} \frac{p^{(H)}}{m \omega} + e^{i\psi} x^{(H)}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 e^{i\phi} a^\dagger \\
 e^{i\psi} a
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 To make the resulting pairs of operators Hermitian conjugates, we'd want to constrain those constant phase factors by setting \( \phi = -\psi \).  If we were only interested in solving the time evolution problem no such additional constraints are required.
 %

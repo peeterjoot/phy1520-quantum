@@ -29,12 +29,12 @@ e^2
 \end{equation}
 %
 and consider the variational wavefunction
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:40}
 \psi(\Br_1, \Br_2)
 =
 N
 e^{- \inv{a} \lr{ r_1 + r_2 } }.
-\end{dmath}
+\end{equation}
 %
 where \( N \) is the normalization constant, and \( a \) is a variational parameter. Determine the variational ground state energy, and minimize with respect to a to find the best estimate for the ground state energy of Helium.
 Compare with numerical estimates of the energy.
@@ -55,7 +55,7 @@ Without the electron-electron interaction term, the Helium Hamiltonian is separa
 %
 The Hamiltonian action on this wave function is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:680}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:680}
 E \psi_1(r_1) \psi_2(r_2)
 =
 \lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) } \psi_2(r_2) + \lr{ \inv{2m} \Bp_2^2 \psi_2(r_1) } \psi_1(r_2)
@@ -65,10 +65,10 @@ E \psi_1(r_1) \psi_2(r_2)
 -
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2),
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:700}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:700}
 E
 =
 \lr{\inv{\psi_1(r)} \lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) }
@@ -80,7 +80,7 @@ E
 -
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_2}}.
-\end{dmath}
+\end{equation}
 %
 This can be written in separated form as
 %
@@ -257,27 +257,29 @@ or
 %
 For Helium without electron-electron interaction the kinetic portion of the Hamiltonian action on this trial function \( \psi = e^{-(r_1 + r_2)/a} \) is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:140}
+\begin{aligned}
 H \psi(r_1, r_2)
-=
+&=
 \frac{\Bp_1^2}{2m} \psi
 +
 \frac{\Bp_2^2}{2m} \psi
 - 2 e^2 \inv{4 \pi \epsilon_0 } \lr{ \inv{r_1} + \inv{r_2} } \psi
-=
+\\ &=
 -\frac{\Hbar^2}{2m a} \lr{ \frac{2}{a} -\frac{2}{ r_1}  -\frac{2}{ r_2} } \psi
 - 2 e^2 \inv{4 \pi \epsilon_0 } \lr{ \inv{r_1} + \inv{r_2} } \psi
-=
+\\ &=
 \lr{ -\frac{\Hbar^2}{m a^2}
 +
 \lr{ \frac{\Hbar^2}{m a} - \frac{e^2}{2 \pi \epsilon_0} } \lr{ \inv{r_1} + \inv{r_2} }
 }
 e^{-(r_1 + r_2)/a}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now, assuming that \( \psi = e^{-(r_1 + r_2)/a} \) is the unnormalized ground state wavefunction for the Helium atom without electron-electron interaction, that ground state energy is given by
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:260}
 E_{\textrm{He}}
 %=
 %\frac{
@@ -298,7 +300,7 @@ E_{\textrm{He}}
    \braket{ \psi }{ \psi }
 }
    - \frac{\Hbar^2}{m a^2} .
-\end{dmath}
+\end{equation}
 %
 %%%\paragraph{Calculating Hydrogen ground state energy}
 
@@ -322,10 +324,9 @@ We'll need a couple helper integrals
 {\pi}{a^3},
 %\end{aligned}
 \end{equation}
-
 and %for the inverse radial expectation we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:200}
 %\bra{ \psi } \inv{r} \ket{ \psi }
 %=
 4 \pi \int_0^\infty r dr e^{-2 r/a}
@@ -333,7 +334,7 @@ and %for the inverse radial expectation we have
 %{4 \pi}\frac{a^2}{2^2} \int_0^\infty r dr e^{-r}
 =
 {\pi}{a^2}.
-\end{dmath}
+\end{equation}
 %
 %so
 %
@@ -391,36 +392,40 @@ To normalize the wavefunction, we need a six-fold integral over both the spatial
 %
 We also need the inverse radial expectations.  Calculating the expectation of \( 1/r_1 \) is sufficient, and is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:300}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:300}
+\begin{aligned}
 \bra{ \psi } \inv{r_1} \ket{ \psi }
-=
+&=
 \lr{ 4 \pi}^2
 \int_0^\infty r_1 dr_1 e^{-2 r_1/a}
 \int_0^\infty r_2^2 dr_2 e^{-2 r_2/a}
-%=
+%\\ &=
 %\lr{ 4 \pi}^2 \lr{ \frac{a}{2} }^5
 %\lr{ \int_0^\infty r dr e^{-r} }
 %\lr{ \int_0^\infty r^2 dr e^{-r} }
-%=
+%\\ &=
 %2^{4 - 5 + 1}
 %\pi^2 a^5
-= \pi^2 a^5.
-\end{dmath}
+\\ &= \pi^2 a^5.
+\end{aligned}
+\end{equation}
 %
 So, without the electron-electron interaction, the ground state energy is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:320}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:320}
+\begin{aligned}
 E_{\textrm{He}}
-=
+&=
    \lr{ \frac{\Hbar^2}{m a} - e^2 \inv{2 \pi \epsilon_0 } }
 \frac{ 2 \pi^2 a^5 }
 {
    \pi^2 a^6
 }
    - \frac{\Hbar^2}{m a^2}
-=
+\\ &=
    \frac{\Hbar^2}{m a^2} - e^2 \inv{\pi \epsilon_0 a }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 %%%It appears that the value of \( a \) that minimizes this energy is not the bohr radius for this wave function, so the assumption that \( \psi(r_1, r_2) = e^{-(r_1 + r_2)/a_0} \) was an eigenfunction for the Hamiltonian was incorrect.  Performing the variation, we find that the minimum energy is found at
 %%%
@@ -506,59 +511,65 @@ e^{\mp i k r u} \\
 %
 We see that the specific orientation used to evaluate the integral does not matter, so we have
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:480}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:480}
+\begin{aligned}
 \frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}
-=
+&=
 \frac{e^2}{4 \pi \epsilon_0}
 \inv{2 \pi^2}
 \int d^3 k \inv{\Bk^2}
 \frac{(16 \pi a^3)^2}{\lr{1 + a^2 k^2 }^4}
-=
+\\ &=
 \frac{e^2}{4 \pi \epsilon_0}
 \inv{2 \pi^2}
 (4\pi)
 16^2 \pi^2 a^6
 \int dk k^2 \inv{\Bk^2}
 \inv{\lr{1 + a^2 k^2 }^4}
-%=
+%\\ &=
 %\frac{32 e^2 a^6}{\epsilon_0}
 %\int dk
 %\inv{\lr{1 + a^2 k^2 }^4}
-%=
+%\\ &=
 %\frac{32 e^2 a^6}{\epsilon_0}
 %\frac{5 \pi}{32 a}
-=
+\\ &=
 \frac{5 \pi e^2 a^5}{32 \epsilon_0}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Rescaling with the normalization factor gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:500}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:500}
+\begin{aligned}
 \frac{e^2}{4 \pi \epsilon_0} \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi}/\braket{\psi}{\psi}
-=
+&=
 \frac{5 \pi e^2 a^5}{32 \epsilon_0 } \inv{\pi^2 a^6}
-=
+\\ &=
 \frac{5 e^2 }{32 \pi \epsilon_0 a}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Adding this electron-electron interaction to the Helium ground energy calculated in
 \cref{eqn:gradQuantumProblemSet7Problem2:320} gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:520}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:520}
 E_{\textrm{He}}
 =
 \frac{\Hbar^2}{m a^2} -\frac{27}{32} e^2 \inv{\pi \epsilon_0 a }.
-\end{dmath}
+\end{equation}
 %
 For the minimum we want to solve
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:540}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:540}
+\begin{aligned}
 0
-=
+&=
 \PD{a}{E}
-=
+\\ &=
 -2 \frac{\Hbar^2}{m a^3} + \frac{27}{32} e^2 \inv{\pi \epsilon_0 a^2 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which has the minimum at
 %
@@ -580,11 +591,11 @@ E_{\textrm{He}}
 %\end{dmath}
 In atomic units this is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem2:860}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:860}
 E_{\textrm{He}}
 =
 - \lr{\frac{27}{16}}^2 \frac{e^2}{a_0} \approx -2.848 \frac{e^2}{a_0}.
-\end{dmath}
+\end{equation}
 %
 In \citep{desai2009quantum} the measured value is stated as \( -2.90 \,\ifrac{e^2}{a_0} \).  Table 1 of \citep{aznabayev2015energy}, which lists high precision calculations of all the energy levels, has \( -2.903724 \,\ifrac{e^2}{a_0} \) for the 1s energy level.  The calculated value of \cref{eqn:gradQuantumProblemSet7Problem2:600} is about 2 \% off the mark.
 

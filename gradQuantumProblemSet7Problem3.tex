@@ -27,30 +27,34 @@ In order to make the derivatives of the trial function better behaved at the ori
 %
 This has a derivative
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:40}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:40}
+\begin{aligned}
 \psi'(x)
-=
+&=
 \delta(x) e^{-\beta x} - \delta(-x) e^{\beta x}
 + \beta \lr{ -\Theta(x) e^{-\beta x} + \Theta(-x) e^{\beta x} }
-=
+\\ &=
 -2 \delta(x) \sinh( \beta x )
 + \beta \lr{ -\Theta(x) e^{-\beta x} + \Theta(-x) e^{\beta x} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Using \( \delta'(x) = - \delta(x)/x \), the second derivative is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:60}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:60}
+\begin{aligned}
 \psi''(x)
-=
+&=
 +2 \delta(x) \sinh( \beta x )/x
 -2 \beta \delta(x) \cosh( \beta x )
 + \beta \lr{ -\delta(x) e^{-\beta x} - \delta(-x) e^{\beta x} }
 + \beta^2 \lr{ \Theta(x) e^{-\beta x} + \Theta(-x) e^{\beta x} }
-=
+\\ &=
 +2 \delta(x) \beta \lr{ \frac{\sinh( \beta x )}{\beta x} - \cosh( \beta x ) }
 - 2 \beta \delta(x) \cosh( \beta x )
 + \beta^2 e^{-\beta \Abs{x} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Because
 %
@@ -60,42 +64,48 @@ Because
 %
 and
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:100}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:100}
+\begin{aligned}
 \int \delta(x) \lr{ \frac{\sinh( \beta x )}{\beta x} - \cosh( \beta x ) } f(x) dx
-= \lr{ 1 - 1 } f(0)
-= 0,
-\end{dmath}
+&= \lr{ 1 - 1 } f(0)
+\\ &= 0,
+\end{aligned}
+\end{equation}
 %
 this second derivative can be simplified to
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:120}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:120}
 \psi''(x)
 =
 - 2 \beta \delta(x) + \beta^2 e^{-\beta \Abs{x} }.
-\end{dmath}
+\end{equation}
 %
 This has the \( \beta^2 \psi(x) \) value that we expect at points away from the origin.  All the expectations can now be computed.  The normalization is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:140}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:140}
+\begin{aligned}
 \braket{\psi}{\psi}
-=
+&=
 2 \int_0^\infty e^{-2 \beta x} dx
-=
+\\ &=
 2 \evalrange{\frac{e^{-2 \beta x}}{-2 \beta}}{0}{\infty}
-=
+\\ &=
 \inv{\beta}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observe that
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:160}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:160}
+\begin{aligned}
 \frac{d^2}{d\beta^2} \int_0^\infty e^{-2 \beta x} dx
-=
+&=
 (-2)^2 \int_0^\infty x^2 e^{-2 \beta x} dx
-=
+\\ &=
 \frac{d}{d\beta} \lr{ -\inv{2 \beta^2}}
-=
+\\ &=
 \frac{1}{\beta^3},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:180}
@@ -104,61 +114,69 @@ so
 %
 a result we will need later.  The kinetic portion of the energy expectation is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:200}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:200}
+\begin{aligned}
 \bra{\psi} \frac{p^2}{2m} \ket{\psi}
-=
+&=
 -\frac{\Hbar^2}{2m}
 \int_{-\infty}^\infty e^{-\beta x} \lr{ - 2 \beta \delta(x) + \beta^2 e^{-\beta \Abs{x} } }
-=
+\\ &=
 -\frac{\Hbar^2}{2m} \beta^2 \inv{\beta} -\frac{\Hbar^2}{2m} \lr{ - 2 \beta }
-= \frac{\Hbar^2}{2m} \beta.
-\end{dmath}
+\\ &= \frac{\Hbar^2}{2m} \beta.
+\end{aligned}
+\end{equation}
 %
 The potential portion of the energy expectation is
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:220}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:220}
+\begin{aligned}
 \bra{\psi} \inv{2} m \omega^2 x^2 \ket{\psi}
-=
+&=
 m \omega^2 \int_0^\infty x^2 e^{-2 \beta x} dx
-=
+\\ &=
 m \omega^2 \frac{1}{4 \beta^3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Adding things up we have
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:240}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:240}
+\begin{aligned}
 \overbar{E}(\beta)
-=
+&=
 \frac{\bra{\psi} H \ket{\psi}}{\braket{\psi}{\psi}}
-=
+\\ &=
 \frac{\frac{\Hbar^2}{2m} \beta
 + \frac{ m \omega^2}{4 \beta^3}}{\inv{\beta}}
-=
+\\ &=
 \frac{\Hbar^2}{2m} \beta^2
 + \frac{ m \omega^2}{4 \beta^2}
-=
+\\ &=
 \frac{\Hbar \omega}{2}
 \lr{
 \frac{\Hbar}{m \omega} \beta^2 +
 \frac{ m \omega}{2 \Hbar \beta^2}
 }
-=
+\\ &=
 \frac{\Hbar \omega}{2}
 \lr{
 x_0^2 \beta^2 + \inv{2 x_0^2 \beta^2}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Minimizing gives
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:260}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:260}
+\begin{aligned}
 0
-=
+&=
 \frac{d}{d\beta}
 \lr{
 x_0^2 \beta^2 + \inv{2 x_0^2 \beta^2}
 }
-=
+\\ &=
 2 x_0^2 \beta - \inv{x_0^2 \beta^3},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -173,17 +191,19 @@ which gives
 
 The energy at this value of \( \beta \) is
 %
-\begin{dmath}\label{eqn:gradQuantumProblemSet7Problem3:320}
+\begin{equation}\label{eqn:gradQuantumProblemSet7Problem3:320}
+\begin{aligned}
 \overbar{E}_{\textrm{min}}
-=
+&=
 \frac{\Hbar \omega}{2}
 \lr{
 x_0^2 \inv{\sqrt{2} x_0^2} + \frac{ \sqrt{2} x_0^2}{2 x_0^2 }
 }
-=
+\\ &=
 \frac{\Hbar \omega}{2}
 \frac{2}{ \sqrt{2} },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 \boxedEquation{eqn:gradQuantumProblemSet7Problem3:340}{

@@ -35,14 +35,16 @@ express and solve the Heisenberg equations of motion for \( S_x(t), S_y(t) \), a
 %
 The equations of motion are of the form
 %
-\begin{dmath}\label{eqn:heisenbergSpinPrecession:40}
+\begin{equation}\label{eqn:heisenbergSpinPrecession:40}
+\begin{aligned}
 \frac{dS_i^\txtH}{dt}
-= \inv{i \Hbar} \antisymmetric{S_i^\txtH}{H}
-= \inv{i \Hbar} \antisymmetric{U^\dagger S_i U}{H}
-= \inv{i \Hbar} \lr{U^\dagger S_i U H - H U^\dagger S_i U }
-= \inv{i \Hbar} U^\dagger \lr{ S_i H - H S_i } U
-= \frac{\omega}{i \Hbar} U^\dagger \antisymmetric{ S_i}{S_z } U.
-\end{dmath}
+&= \inv{i \Hbar} \antisymmetric{S_i^\txtH}{H}
+\\ &= \inv{i \Hbar} \antisymmetric{U^\dagger S_i U}{H}
+\\ &= \inv{i \Hbar} \lr{U^\dagger S_i U H - H U^\dagger S_i U }
+\\ &= \inv{i \Hbar} U^\dagger \lr{ S_i H - H S_i } U
+\\ &= \frac{\omega}{i \Hbar} U^\dagger \antisymmetric{ S_i}{S_z } U.
+\end{aligned}
+\end{equation}
 %
 These are
 %
@@ -78,9 +80,10 @@ e^{-i\omega t/2} & 0 \\
 %
 The equations of motion can now be written out in full.  To do so seems a bit silly since we also know that \( S_x^\txtH = U^\dagger S_x U, S_y^\txtH U^\dagger S_x U \).  However, if that is temporarily forgotten, we can show that the Heisenberg equations of motion can be solved for these too.
 %
-\begin{dmath}\label{eqn:heisenbergSpinPrecession:100}
+\begin{equation}\label{eqn:heisenbergSpinPrecession:100}
+\begin{aligned}
 U^\dagger S_x U
-=
+&=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 e^{i\omega t/2} & 0 \\
@@ -91,7 +94,7 @@ e^{i\omega t/2} & 0 \\
 e^{-i\omega t/2} & 0 \\
 0 & e^{i\omega t/2}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 0 & e^{i\omega t/2} \\
@@ -101,18 +104,20 @@ e^{-i\omega t/2} & 0
 e^{-i\omega t/2} & 0 \\
 0 & e^{i\omega t/2}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 0 & e^{i\omega t} \\
 e^{-i\omega t} & 0
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
-\begin{dmath}\label{eqn:heisenbergSpinPrecession:120}
+\begin{equation}\label{eqn:heisenbergSpinPrecession:120}
+\begin{aligned}
 U^\dagger S_y U
-=
+&=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 e^{i\omega t/2} & 0 \\
@@ -123,7 +128,7 @@ e^{i\omega t/2} & 0 \\
 e^{-i\omega t/2} & 0 \\
 0 & e^{i\omega t/2}
 \end{bmatrix}
-=
+\\ &=
 \frac{i\Hbar}{2}
 \begin{bmatrix}
 0 & -e^{i\omega t/2} \\
@@ -133,13 +138,14 @@ e^{-i\omega t/2} & 0
 e^{-i\omega t/2} & 0 \\
 0 & e^{i\omega t/2}
 \end{bmatrix}
-=
+\\ &=
 \frac{i \Hbar}{2}
 \begin{bmatrix}
 0 & -e^{i\omega t} \\
 e^{-i\omega t} & 0
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The equations of motion are now fully specified
 %
@@ -203,5 +209,4 @@ S_z^\txtH &= S_z.
 %
 Observe that these integrated values \( S_x^\txtH, S_y^\txtH \) match \cref{eqn:heisenbergSpinPrecession:100}, and \cref{eqn:heisenbergSpinPrecession:120} as expected.
 } % answer
-
 %\EndArticle
