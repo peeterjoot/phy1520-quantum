@@ -25,43 +25,48 @@ Evaluate the dispersion in \( S_x \), that is,
 \makeSubAnswer{}{problem:moreBraKetProblems:12:a}
 In matrix form the spin operator for the system is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:680}
+\begin{equation}\label{eqn:moreBraKetProblems:680}
+\begin{aligned}
 \BS \cdot \ncap
-= \frac{\Hbar}{2} \lr{ \cos\theta \PauliZ + \sin\theta \PauliX}
-= \frac{\Hbar}{2}
+&= \frac{\Hbar}{2} \lr{ \cos\theta \PauliZ + \sin\theta \PauliX}
+\\ &= \frac{\Hbar}{2}
 \begin{bmatrix}
 \cos\theta & \sin\theta \\
 \sin\theta & -\cos\theta \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 An eigenket \( \ket{\BS \cdot \ncap ; + } = (a,b)^\T \) must satisfy
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:700}
+\begin{equation}\label{eqn:moreBraKetProblems:700}
+\begin{aligned}
 0
-= \lr{ \cos \theta - 1 } a + \sin\theta b
-= \lr{ -2 \sin^2 \frac{\theta}{2} } a + 2 \sin\frac{\theta}{2} \cos\frac{\theta}{2} b
-= -\sin \frac{\theta}{2} a + \cos\frac{\theta}{2} b,
-\end{dmath}
+&= \lr{ \cos \theta - 1 } a + \sin\theta b
+\\ &= \lr{ -2 \sin^2 \frac{\theta}{2} } a + 2 \sin\frac{\theta}{2} \cos\frac{\theta}{2} b
+\\ &= -\sin \frac{\theta}{2} a + \cos\frac{\theta}{2} b,
+\end{aligned}
+\end{equation}
 %
 so the eigenstate is
-\begin{dmath}\label{eqn:moreBraKetProblems:720}
+\begin{equation}\label{eqn:moreBraKetProblems:720}
 \ket{\BS \cdot \ncap ; + }
 =
 \begin{bmatrix}
 \cos\frac{\theta}{2} \\
 \sin\frac{\theta}{2}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Pick \( \ket{S_x ; \pm } = \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\ \pm 1
 \end{bmatrix} \) as the basis for the \( S_x \) operator.  Then, for the probability that the system will end up in the \( + \Hbar/2 \) state of \( S_x \), we have
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:740}
+\begin{equation}\label{eqn:moreBraKetProblems:740}
+\begin{aligned}
 P
-= \Abs{\braket{ S_x ; + }{ \BS \cdot \ncap ; + } }^2
-= \Abs{ \inv{\sqrt{2} }
+&= \Abs{\braket{ S_x ; + }{ \BS \cdot \ncap ; + } }^2
+\\ &= \Abs{ \inv{\sqrt{2} }
 {
 \begin{bmatrix}
 1 \\
@@ -72,7 +77,7 @@ P
 \sin\frac{\theta}{2}
 \end{bmatrix}
 }^2
-=\inv{2}
+\\ &=\inv{2}
 \Abs{
 \begin{bmatrix}
 1 & 1
@@ -82,19 +87,20 @@ P
 \sin\frac{\theta}{2}
 \end{bmatrix}
 }^2
-=
+\\ &=
 \inv{2}
 \lr{
 \cos\frac{\theta}{2} +
 \sin\frac{\theta}{2}
 }^2
-=
+\\ &=
 \inv{2}
 \lr{ 1 + 2 \cos\frac{\theta}{2} \sin\frac{\theta}{2} }
-=
+\\ &=
 \inv{2}
 \lr{ 1 + \sin\theta }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is a reasonable seeming result, with \( P \in [0, 1] \).  Some special values also further validate this
 %
@@ -139,9 +145,10 @@ where we see that the probabilities are in proportion to the projection of the i
 %
 The \( S_x \) expectation is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:780}
+\begin{equation}\label{eqn:moreBraKetProblems:780}
+\begin{aligned}
 \expectation{S_x}
-=
+&=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 \cos\frac{\theta}{2} & \sin\frac{\theta}{2}
@@ -151,7 +158,7 @@ The \( S_x \) expectation is
 \cos\frac{\theta}{2} \\
 \sin\frac{\theta}{2}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 \cos\frac{\theta}{2} & \sin\frac{\theta}{2}
@@ -160,17 +167,19 @@ The \( S_x \) expectation is
 \sin\frac{\theta}{2} \\
 \cos\frac{\theta}{2}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2} 2 \sin\frac{\theta}{2} \cos\frac{\theta}{2}
-=
+\\ &=
 \frac{\Hbar}{2} \sin\theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Note that \( S_x^2 = (\Hbar/2)^2I \), so
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:800}
+\begin{equation}\label{eqn:moreBraKetProblems:800}
+\begin{aligned}
 \expectation{S_x^2}
-=
+&=
 \lr{\frac{\Hbar}{2}}^2
 \begin{bmatrix}
 \cos\frac{\theta}{2} & \sin\frac{\theta}{2}
@@ -179,26 +188,29 @@ Note that \( S_x^2 = (\Hbar/2)^2I \), so
 \cos\frac{\theta}{2} \\
 \sin\frac{\theta}{2}
 \end{bmatrix}
-=
+\\ &=
 \lr{ \frac{\Hbar}{2} }^2
 \cos^2\frac{\theta}{2} + \sin^2 \frac{\theta}{2}
-=
+\\ &=
 \lr{ \frac{\Hbar}{2} }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The dispersion is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:820}
+\begin{equation}\label{eqn:moreBraKetProblems:820}
+\begin{aligned}
 \expectation{\lr{ S_x - \expectation{S_x}}^2}
-=
+&=
 \expectation{S_x^2} - \expectation{S_x}^2
-=
+\\ &=
 \lr{ \frac{\Hbar}{2} }^2
 \lr{1 - \sin^2 \theta}
-=
+\\ &=
 \lr{ \frac{\Hbar}{2} }^2
 \cos^2 \theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 At \( \theta = \pi/2 \) the dispersion is 0, which is expected since \( \ket{\BS \cdot \ncap ; + } = \ket{ S_x ; + } \) at that point.  Similarly, the dispersion is maximized at \( \theta = 0,\pi \) where the \( \ket{\BS \cdot \ncap ; + } \) component in the \( \ket{S_x ; + } \) direction is minimized.
 %

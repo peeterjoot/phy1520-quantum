@@ -68,35 +68,41 @@ E = \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ n_1^2 + n_2^2 + n_3^2}.
 %
 Suppose we are considering the 3D box.  In statistical mechanics when we are considering particles Fermions, they are indistinguishable, and thus not allowed to share the same spin state at a given energy level.  However, for distinguishable particles, that restriction doesn't exist, and we can have two (or more) such particles in the lowest order energy state.  The lowest such energy is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:100}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:100}
+\begin{aligned}
 E_{1,1,1 ;1,1,1}
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 6 \times 1^2 }
-=
+\\ &=
 \frac{6}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The particle spin states can be any of \( \ket{++}, \ket{+-}, \ket{-+}, \ket{--} \), so there is a four way degeneracy in the ground state.
 
 the next lowest energy level is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:120}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:120}
+\begin{aligned}
 E_{1,1,2 ;1,1,1}
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 5 \times 1^2 + 2^2 }
-=
+\\ &=
 \frac{9}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where there are \( \binom{6}{1} = 6 \) ways to pick such a state for each variation of spin, for a total \( 6 \times 4 = 24 \) way degeneracy.  Finally, since \( 2^2 + 2^2 < 3^2 + 1^2 \), the next lowest energy level is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:140}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:140}
+\begin{aligned}
 E_{1,2,2 ;1,1,1}
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 4 \times 1^2 + 2 \times 2^2 }
-=
+\\ &=
 \frac{12}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 with a \( \binom{6}{2} \times 4 = 15 \times 4 = 60 \) way degeneracy for this energy level.
 %
@@ -104,33 +110,39 @@ with a \( \binom{6}{2} \times 4 = 15 \times 4 = 60 \) way degeneracy for this en
 %
 For three particles (the two particle case wasn't actually in the problem statement, but seemed an easier starting place), the lowest energy state for a 3D box is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:160}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:160}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 9 \times 1^2 }
-=
+\\ &=
 \frac{9}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 There are now \( 2^3 = 8 \) variations of spin \( \ket{+++}, \ket{++-}, \cdots \), so the ground state is 8-way degenerate.  Next up is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:180}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:180}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 8 \times 1^2 + 2^2 }
-=
+\\ &=
 \frac{12}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where there is a \( \binom{9}{1} \times 8 = 9 \times 8 = 72 \) way degeneracy in this energy level.  Finally, the next lowest energy level is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:200}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:200}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 7 \times 1^2 + 2 \times 2^2 }
-=
+\\ &=
 \frac{15}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 with a \( \binom{9}{2} \times 8 = 36 \times 8 = 288 \) way degeneracy for this energy level.
 %
@@ -138,33 +150,39 @@ with a \( \binom{9}{2} \times 8 = 36 \times 8 = 288 \) way degeneracy for this e
 %
 For four particles the lowest energy state for a 3D box is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:220}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:220}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 12 \times 1^2 }
-=
+\\ &=
 \frac{12}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 There are now \( 2^4 = 16 \) variations of spin \( \ket{++++}, \ket{+++-}, \cdots \), so the ground state is 16-way degenerate.  For the second level
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:240}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:240}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 11 \times 1^2 + 2^2 }
-=
+\\ &=
 \frac{15}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where there is a \( \binom{12}{1} \times 16 = 12 \times 16 = 192 \) way degeneracy in this energy level.  Finally, the next lowest energy level is
 %
-\begin{dmath}\label{eqn:noninteractingParticlesInABox:260}
+\begin{equation}\label{eqn:noninteractingParticlesInABox:260}
+\begin{aligned}
 E
-=
+&=
 \inv{2 m} \lr{ \frac{\Hbar \pi}{L} }^2 \lr{ 7 \times 1^2 + 2 \times 2^2 }
-=
+\\ &=
 \frac{15}{2 m} \lr{ \frac{\Hbar \pi}{L} }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 with a \( \binom{12}{2} \times 16 = 66 \times 16 = 1056 \) way degeneracy for this energy level.
 %

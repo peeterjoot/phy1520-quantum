@@ -18,7 +18,6 @@
 %\generatetitle{Bra-ket and spin one-half problems}
 %\chapter{Bra-ket and spin one-half problems}
 %\label{chap:moreBraKetProblems}
-
 %
 \makeoproblem{Operator matrix representation.}{problem:moreBraKetProblems:1.5}{\citep{sakurai2014modern} pr. 1.5}{
 \index{matrix representation}
@@ -39,18 +38,21 @@ Verify with \( \ket{\alpha} = \ket{s_z = \Hbar/2}, \ket{s_x = \Hbar/2} \).
 %
 Forming the matrix element
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:20}
+\begin{equation}\label{eqn:moreBraKetProblems:20}
+\begin{aligned}
 \bra{a^r} \lr{ \ket{\alpha}\bra{\beta} } \ket{a^s}
-=
+&=
 \braket{a^r}{\alpha}\braket{\beta}{a^s}
-=
+\\ &=
 \braket{a^r}{\alpha}
 \braket{a^s}{\beta}^\conj,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 the matrix representation is seen to be
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:40}
+\begin{equation}\label{eqn:moreBraKetProblems:40}
+\begin{aligned}
 \ket{\alpha}\bra{\beta}
 \sim
 \begin{bmatrix}
@@ -58,13 +60,14 @@ the matrix representation is seen to be
 \bra{a^2} \lr{ \ket{\alpha}\bra{\beta} } \ket{a^1} & \bra{a^2} \lr{ \ket{\alpha}\bra{\beta} } \ket{a^2} & \cdots \\
 \vdots & \vdots & \ddots \\
 \end{bmatrix}
-=
+&=
 \begin{bmatrix}
 \braket{a^1}{\alpha} \braket{a^1}{\beta}^\conj & \braket{a^1}{\alpha} \braket{a^2}{\beta}^\conj & \cdots \\
 \braket{a^2}{\alpha} \braket{a^1}{\beta}^\conj & \braket{a^2}{\alpha} \braket{a^2}{\beta}^\conj & \cdots \\
 \vdots & \vdots & \ddots \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{problem:moreBraKetProblems:1.5:b}
 First compute the spin-z representation of \( \ket{s_x = \Hbar/2 } \).
@@ -125,25 +128,28 @@ so \( \ket{s_x = \Hbar/2 } \propto (1,1) \).  Normalized we have
 %
 Using \cref{eqn:moreBraKetProblems:40} the matrix representation is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:100}
+\begin{equation}\label{eqn:moreBraKetProblems:100}
+\begin{aligned}
 \ket{\alpha}\bra{\beta}
 \sim
 \begin{bmatrix}
 (1) (1/\sqrt{2})^\conj & (1) (1/\sqrt{2})^\conj \\
 (0) (1/\sqrt{2})^\conj & (0) (1/\sqrt{2})^\conj \\
 \end{bmatrix}
-=
+&=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 1 \\
 0 & 0
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This can be confirmed with direct computation
-\begin{dmath}\label{eqn:moreBraKetProblems:120}
+\begin{equation}\label{eqn:moreBraKetProblems:120}
+\begin{aligned}
 \ket{\alpha}\bra{\beta}
-=
+&=
 \begin{bmatrix}
 1 \\
 0
@@ -152,13 +158,14 @@ This can be confirmed with direct computation
 \begin{bmatrix}
 1 & 1
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 1 \\
 0 & 0
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
 %
@@ -242,11 +249,12 @@ If \( \ket{a} = \ket{a'} \), then \( \prod_{a'' \ne a'} \frac{\lr{ A - a'' }}{a'
 %
 For operator \( S_z \) the eigenvalues are \( \setlr{ \Hbar/2, -\Hbar/2 } \), so the null operator must be
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:280}
+\begin{equation}\label{eqn:moreBraKetProblems:280}
+\begin{aligned}
 \prod_{a'} \lr{ A - a' }
-=
+&=
 \lr{ \frac{\Hbar}{2} }^2 \lr{ \PauliZ - \PauliI } \lr{ \PauliZ + \PauliI }
-=
+\\ &=
 \begin{bmatrix}
 0 & 0 \\
 0 & -2
@@ -255,12 +263,13 @@ For operator \( S_z \) the eigenvalues are \( \setlr{ \Hbar/2, -\Hbar/2 } \), so
 2 & 0  \\
 0 & 0 \\
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 0 & 0  \\
 0 & 0 \\
 \end{bmatrix}
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 For the delta representation, consider the \( \ket{\pm} \) states and their eigenvalue.  The delta operators are
 %
@@ -331,14 +340,15 @@ Solve this as an eigenvalue problem.
 %
 The spin operator for this direction is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:380}
+\begin{equation}\label{eqn:moreBraKetProblems:380}
+\begin{aligned}
 \BS \cdot \ncap
-= \frac{\Hbar}{2} \Bsigma \cdot \ncap
-= \frac{\Hbar}{2}
+&= \frac{\Hbar}{2} \Bsigma \cdot \ncap
+\\ &= \frac{\Hbar}{2}
 \lr{
 \cos\alpha \sin\beta \PauliX + \sin\alpha \sin\beta \PauliY + \cos\beta \PauliZ
 }
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 \cos\beta &
@@ -349,16 +359,18 @@ e^{i\alpha}
 \sin\beta
 & -\cos\beta
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observed that this is traceless and has a \( -\Hbar/2 \) determinant like any of the \( x,y,z \) spin operators.
 
 Assuming that this has an \( \Hbar/2 \) eigenvalue (to be verified later), the eigenvalue problem is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:400}
-0 =
+\begin{equation}\label{eqn:moreBraKetProblems:400}
+\begin{aligned}
+0 &=
 \BS \cdot \ncap - \Hbar/2 I
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 \cos\beta -1 &
@@ -369,7 +381,7 @@ e^{i\alpha}
 \sin\beta
 & -\cos\beta -1
 \end{bmatrix}
-=
+\\ &=
 \Hbar
 \begin{bmatrix}
 - \sin^2 \frac{\beta}{2} &
@@ -380,22 +392,25 @@ e^{i\alpha}
 \sin\frac{\beta}{2} \cos\frac{\beta}{2}
 & -\cos^2 \frac{\beta}{2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 This has a zero determinant as expected, and the eigenvector \( (a,b) \) will satisfy
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:420}
+\begin{equation}\label{eqn:moreBraKetProblems:420}
+\begin{aligned}
 0
-= - \sin^2 \frac{\beta}{2} a +
+&= - \sin^2 \frac{\beta}{2} a +
 e^{-i\alpha}
 \sin\frac{\beta}{2} \cos\frac{\beta}{2}
 b
-= \sin\frac{\beta}{2} \lr{ - \sin \frac{\beta}{2} a +
+\\ &= \sin\frac{\beta}{2} \lr{ - \sin \frac{\beta}{2} a +
 e^{-i\alpha} b
 \cos\frac{\beta}{2}
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:440}
+\begin{equation}\label{eqn:moreBraKetProblems:440}
 \begin{bmatrix}
 a \\
 b
@@ -406,27 +421,27 @@ b
 e^{i\alpha}
 \sin\frac{\beta}{2}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This is appropriately normalized, so the ket for \( \BS \cdot \ncap \) is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:460}
+\begin{equation}\label{eqn:moreBraKetProblems:460}
 \ket{ \BS \cdot \ncap ; + } =
 \cos\frac{\beta}{2} \ket{+} +
 e^{i\alpha}
 \sin\frac{\beta}{2}
 \ket{-}.
-\end{dmath}
+\end{equation}
 %
 Note that the other eigenvalue is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:480}
+\begin{equation}\label{eqn:moreBraKetProblems:480}
 \ket{ \BS \cdot \ncap ; - } =
 -\sin\frac{\beta}{2} \ket{+} +
 e^{i\alpha}
 \cos\frac{\beta}{2}
 \ket{-}.
-\end{dmath}
+\end{equation}
 %
 It is straightforward to show that these are orthogonal and that this has the \( -\Hbar/2 \) eigenvalue.
 %
@@ -436,14 +451,14 @@ It is straightforward to show that these are orthogonal and that this has the \(
 \index{Hamiltonian!two state}
 Solve the eigenproblem for
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:500}
+\begin{equation}\label{eqn:moreBraKetProblems:500}
 H = a \biglr{
 \ket{1}\bra{1}
 -\ket{2}\bra{2}
 +\ket{1}\bra{2}
 +\ket{2}\bra{1}
 }.
-\end{dmath}
+\end{equation}
 %
 } % problem
 %
@@ -451,23 +466,25 @@ H = a \biglr{
 %
 In matrix form the Hamiltonian is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:520}
+\begin{equation}\label{eqn:moreBraKetProblems:520}
 H = a
 \begin{bmatrix}
 1 & 1 \\
 1 & -1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 The eigenvalue problem is
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:540}
+\begin{equation}\label{eqn:moreBraKetProblems:540}
+\begin{aligned}
 0
-= \Abs{ H - \lambda I }
-= (a - \lambda)(-a - \lambda) - a^2
-= (-a + \lambda)(a + \lambda) - a^2
-= \lambda^2 - a^2 - a^2,
-\end{dmath}
+&= \Abs{ H - \lambda I }
+\\ &= (a - \lambda)(-a - \lambda) - a^2
+\\ &= (-a + \lambda)(a + \lambda) - a^2
+\\ &= \lambda^2 - a^2 - a^2,
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -484,39 +501,41 @@ An eigenket proportional to \( (\alpha,\beta) \) must satisfy
 %
 so
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:600}
+\begin{equation}\label{eqn:moreBraKetProblems:600}
 \ket{\pm} \propto
 \begin{bmatrix}
 -1 \\
 1 \mp \sqrt{2}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:moreBraKetProblems:620}
+\begin{equation}\label{eqn:moreBraKetProblems:620}
+\begin{aligned}
 \ket{\pm}
-=
+&=
 \inv{2(2 - \sqrt{2})}
 \begin{bmatrix}
 -1 \\
 1 \mp \sqrt{2}
 \end{bmatrix}
-=
+\\ &=
 \frac{2 + \sqrt{2}}{4}
 \begin{bmatrix}
 -1 \\
 1 \mp \sqrt{2}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That is
-\begin{dmath}\label{eqn:moreBraKetProblems:640}
+\begin{equation}\label{eqn:moreBraKetProblems:640}
 \ket{\pm} =
 \frac{2 + \sqrt{2}}{4} \lr{
 -\ket{1} + (1 \mp \sqrt{2}) \ket{2}
 }.
-\end{dmath}
+\end{equation}
 %
 } % answer
 

@@ -44,21 +44,23 @@ Notationally, it would seem to make sense to define \( \sigma_0 \equiv I \), so 
 
 For the opposite relations, given
 %
-\begin{dmath}\label{eqn:pauliProblems:40}
+\begin{equation}\label{eqn:pauliProblems:40}
+\begin{aligned}
 X
-= a_0 + \Bsigma \cdot \Ba
-= \PauliI a_0 + \PauliX a_1 + \PauliY a_2 + \PauliZ a_3
-=
+&= a_0 + \Bsigma \cdot \Ba
+\\ &= \PauliI a_0 + \PauliX a_1 + \PauliY a_2 + \PauliZ a_3
+\\ &=
 \begin{bmatrix}
 a_0 + a_3 & a_1 - i a_2 \\
 a_1 + i a_2 & a_0 - a_3
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 X_{11} & X_{12} \\
 X_{21} & X_{22} \\
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %\begin{equation}\label{eqn:pauliProblems:60}
@@ -101,23 +103,26 @@ Knowing Geometric Algebra, this is recognized as a rotation transformation.  In 
 
 First, consider the determinant of one of the exponentials.  Showing that one such exponential has unit determinant is sufficient.  The matrix representation of the unit normal is
 %
-\begin{dmath}\label{eqn:pauliProblems:120}
+\begin{equation}\label{eqn:pauliProblems:120}
+\begin{aligned}
 \Bsigma \cdot \ncap
-= n_x \PauliX
+&= n_x \PauliX
 + n_y \PauliY
 + n_z \PauliZ
-=
+\\ &=
 \begin{bmatrix}
 n_z & n_x - i n_y \\
 n_x + i n_y & -n_z
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is expected to have a unit square, and does
 %
-\begin{dmath}\label{eqn:pauliProblems:140}
+\begin{equation}\label{eqn:pauliProblems:140}
+\begin{aligned}
 \lr{ \Bsigma \cdot \ncap }^2
-=
+&=
 \begin{bmatrix}
 n_z & n_x - i n_y \\
 n_x + i n_y & -n_z
@@ -126,23 +131,25 @@ n_x + i n_y & -n_z
 n_z & n_x - i n_y \\
 n_x + i n_y & -n_z
 \end{bmatrix}
-=
+\\ &=
 \lr{ n_x^2 + n_y^2 + n_z^2 }
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
 \end{bmatrix}
-=
+\\ &=
 1.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This allows for a cosine and sine expansion of the exponential, as in
 %
-\begin{dmath}\label{eqn:pauliProblems:160}
+\begin{equation}\label{eqn:pauliProblems:160}
+\begin{aligned}
 \exp\lr{ i \Bsigma \cdot \ncap \theta}
-=
+&=
 \cos\theta + i \Bsigma \cdot \ncap \sin\theta
-=
+\\ &=
 \cos\theta
 \begin{bmatrix}
 1 & 0 \\
@@ -154,51 +161,55 @@ i \sin\theta
 n_z & n_x - i n_y \\
 n_x + i n_y & -n_z
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \cos\theta + i n_z \sin\theta & \lr{ n_x - i n_y } i \sin\theta \\
 \lr{ n_x + i n_y } i \sin\theta & \cos\theta - i n_z \sin\theta \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \index{rotation!determinant}
 This has determinant
 %
-\begin{dmath}\label{eqn:pauliProblems:180}
+\begin{equation}\label{eqn:pauliProblems:180}
+\begin{aligned}
 \Abs{\exp\lr{ i \Bsigma \cdot \ncap \theta} }
-=
+&=
 \cos^2\theta + n_z^2 \sin^2\theta
 -
 \lr{ -n_x^2 + -n_y^2 } \sin^2\theta
-=
+\\ &=
 \cos^2\theta + \lr{ n_x^2 + n_y^2 + n_z^2 } \sin^2\theta
-= 1,
-\end{dmath}
+\\ &= 1,
+\end{aligned}
+\end{equation}
 %
 as expected.
 
 Next step is to show that this transformation is a rotation, and determine the sense of the rotation.  Let \( C = \cos\phi/2, S = \sin\phi/2 \), so that
 %
-\begin{dmath}\label{eqn:pauliProblems:200}
+\begin{equation}\label{eqn:pauliProblems:200}
+\begin{aligned}
 \Bsigma \cdot \Ba'
-=
+&=
 \exp\lr{ i \Bsigma \cdot \ncap \phi/2}
 \Bsigma \cdot \Ba
 \exp\lr{ -i \Bsigma \cdot \ncap \phi/2}
-=
+\\ &=
 \lr{ C + i \Bsigma \cdot \ncap S }
 \Bsigma \cdot \Ba
 \lr{ C - i \Bsigma \cdot \ncap S }
-=
+\\ &=
 \lr{ C + i \Bsigma \cdot \ncap S }
 \lr{ C \Bsigma \cdot \Ba - i \Bsigma \cdot \Ba \Bsigma \cdot \ncap S }
-=
+\\ &=
 C^2 \Bsigma \cdot \Ba + \Bsigma \cdot \ncap \Bsigma \cdot \Ba \Bsigma \cdot \ncap S^2
 + i \lr{
 -\Bsigma \cdot \Ba \Bsigma \cdot \ncap
 + \Bsigma \cdot \ncap \Bsigma \cdot \Ba
 } S C
-=
+\\ &=
 \inv{2} \lr{ 1 + \cos\phi}
 \Bsigma \cdot \Ba
 + \Bsigma \cdot \ncap \Bsigma \cdot \Ba \Bsigma \cdot \ncap \inv{2} \lr{ 1 - \cos\phi}
@@ -206,7 +217,7 @@ C^2 \Bsigma \cdot \Ba + \Bsigma \cdot \ncap \Bsigma \cdot \Ba \Bsigma \cdot \nca
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
 \inv{2} \sin\phi
-=
+\\ &=
 \inv{2}
 \Bsigma \cdot \ncap
 \symmetric{
@@ -221,13 +232,15 @@ i
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
 \sin\phi.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observe that the angle dependent portion can be written in a compact exponential form
 %
-\begin{dmath}\label{eqn:pauliProblems:220}
+\begin{equation}\label{eqn:pauliProblems:220}
+\begin{aligned}
 \Bsigma \cdot \Ba'
-=
+&=
 \inv{2}
 \Bsigma \cdot \ncap
 \symmetric{
@@ -244,7 +257,7 @@ i
 \Bsigma \cdot \ncap
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
-=
+\\ &=
 \inv{2}
 \Bsigma \cdot \ncap
 \symmetric{
@@ -255,39 +268,43 @@ i
 \Bsigma \cdot \ncap
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The anticommutator and commutator products with the unit normal can be identified as projections and rejections respectively.  Consider the symmetric product first
 %
-\begin{dmath}\label{eqn:pauliProblems:240}
+\begin{equation}\label{eqn:pauliProblems:240}
+\begin{aligned}
 \inv{2}
 \symmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
-=
+&=
 \inv{2}
 \sum n_r a_s \lr{ \sigma_r \sigma_s + \sigma_s \sigma_r }
-=
+\\ &=
 \inv{2}
 \sum_{r \ne s} n_r a_s \lr{ \sigma_r \sigma_s + \sigma_s \sigma_r }
 +
 \inv{2}
 \sum_{r } n_r a_r 2
-= 2 \ncap \cdot \Ba.
-\end{dmath}
+\\ &= 2 \ncap \cdot \Ba.
+\end{aligned}
+\end{equation}
 %
 This shows that
-\begin{dmath}\label{eqn:pauliProblems:260}
+\begin{equation}\label{eqn:pauliProblems:260}
 \inv{2}
 \Bsigma \cdot \ncap
 \symmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
 =
 \lr{ \ncap \cdot \Ba } \Bsigma \cdot \ncap,
-\end{dmath}
+\end{equation}
 %
 which is the projection of \( \Ba \) in the direction of the normal \( \ncap \).  To show that the commutator term is the rejection, consider the sum of the two
 %
-\begin{dmath}\label{eqn:pauliProblems:280}
+\begin{equation}\label{eqn:pauliProblems:280}
+\begin{aligned}
 \inv{2}
 \Bsigma \cdot \ncap
 \symmetric{
@@ -297,41 +314,44 @@ which is the projection of \( \Ba \) in the direction of the normal \( \ncap \).
 \Bsigma \cdot \ncap
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
-=
+&=
 \Bsigma \cdot \ncap
 \Bsigma \cdot \ncap \Bsigma \cdot \Ba
-=
+\\ &=
 \Bsigma \cdot \Ba,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we must have
 %
-\begin{dmath}\label{eqn:pauliProblems:300}
+\begin{equation}\label{eqn:pauliProblems:300}
 \Bsigma \cdot \Ba - \lr{ \ncap \cdot \Ba } \Bsigma \cdot \ncap
 =
 \inv{2}
 \Bsigma \cdot \ncap
 \antisymmetric{
 \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }.
-\end{dmath}
+\end{equation}
 %
 This is the component of \( \Ba \) that has the projection in the \( \ncap \) direction removed.  Looking back to \cref{eqn:pauliProblems:220}, the transformation leaves components of the vector that are colinear with the unit normal unchanged, and applies an exponential operation to the component that lies in what is presumed to be the rotation plane.  To verify that this latter portion of the transformation is a rotation, and to determine the sense of the rotation, let's expand the factor of the sine of \cref{eqn:pauliProblems:200}.
 
 That is
 %
-\begin{dmath}\label{eqn:pauliProblems:320}
+\begin{equation}\label{eqn:pauliProblems:320}
+\begin{aligned}
 \frac{i}{2} \antisymmetric{ \Bsigma \cdot \ncap }{\Bsigma \cdot \Ba }
-=
+&=
 \frac{i}{2} \sum n_r a_s \antisymmetric{ \sigma_r }{\sigma_s }
-=
+\\ &=
 \frac{i}{2} \sum n_r a_s 2 i \epsilon_{r s t} \sigma_t
-=
+\\ &=
 - \sum \sigma_t n_r a_s \epsilon_{r s t}
-=
+\\ &=
 -\Bsigma \cdot \lr{ \ncap \cross \Ba }
-=
+\\ &=
 \Bsigma \cdot \lr{ \Ba \cross \ncap }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since \( \Ba \cross \ncap = \lr{ \Ba - \ncap (\ncap \cdot \Ba) } \cross \ncap \), this vector is seen to lie in the plane normal to \( \ncap \), but perpendicular to the rejection of \( \ncap \) from \( \Ba \).  That completes the demonstration that this is a rotation transformation.
 
@@ -346,11 +366,11 @@ To understand the sense of this rotation, consider \( \ncap = \zcap, \Ba = \xcap
 \end{equation}
 %
 and
-\begin{dmath}\label{eqn:pauliProblems:360}
+\begin{equation}\label{eqn:pauliProblems:360}
 \Bsigma \cdot \Ba'
 =
 \xcap \cos\phi - \ycap \sin\phi,
-\end{dmath}
+\end{equation}
 %
 showing that this rotation transformation has a clockwise sense.
 } % answer

@@ -15,10 +15,8 @@
 %\usepackage{peeters_figures}
 %
 %\beginArtNoToc
-
 %\generatetitle{Lagrangian for magnetic portion of Lorentz force}
 %\label{chap:magneticLorentzForceLagrangian}
-
 In \citep{sakurai2014modern} it is claimed in an Aharonov-Bohm discussion that a Lagrangian modification to include electromagnetism is
 %
 \begin{equation}\label{eqn:magneticLorentzForceLagrangian:20}
@@ -35,99 +33,107 @@ S = \int \LL(x, \xdot, t) dt,
 %
 where the end points of the integral are fixed, and we assume we have no variation at the end points.  The variational calculation is
 %
-\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:60}
+\begin{equation}\label{eqn:magneticLorentzForceLagrangian:60}
+\begin{aligned}
 \delta S
-= \int \delta \LL(x, \xdot, t) dt
-= \int \lr{ \PD{x}{\LL} \delta x + \PD{\xdot}{\LL} \delta \xdot } dt
-= \int \lr{ \PD{x}{\LL} \delta x + \PD{\xdot}{\LL} \delta \ddt{x} } dt
-= \int \lr{ \PD{x}{\LL} - \ddt{}\lr{\PD{\xdot}{\LL}} } \delta x dt
+&= \int \delta \LL(x, \xdot, t) dt
+\\ &= \int \lr{ \PD{x}{\LL} \delta x + \PD{\xdot}{\LL} \delta \xdot } dt
+\\ &= \int \lr{ \PD{x}{\LL} \delta x + \PD{\xdot}{\LL} \delta \ddt{x} } dt
+\\ &= \int \lr{ \PD{x}{\LL} - \ddt{}\lr{\PD{\xdot}{\LL}} } \delta x dt
 + \delta x \PD{\xdot}{\LL}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The boundary term is killed after evaluation at the end points where the variation is zero.  For the result to hold for all variations \( \delta x \), we must have
 %
-%\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:80}
+%\begin{equation}\label{eqn:magneticLorentzForceLagrangian:80}
 \boxedEquation{eqn:magneticLorentzForceLagrangian:80}{
 \PD{x}{\LL} = \ddt{}\lr{\PD{\xdot}{\LL}}.
 }
-%\end{dmath}
+%
+%\end{equation}
 %
 Now lets apply this to the Lagrangian at hand.  For the position derivative we have
 %
-\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:100}
+\begin{equation}\label{eqn:magneticLorentzForceLagrangian:100}
 \PD{x_i}{\LL}
 =
 \frac{e}{c} v_j \PD{x_i}{A_j}.
-\end{dmath}
+\end{equation}
 %
 For the canonical momentum term, assuming \( \BA = \BA(\Bx) \) we have
 %
-\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:120}
+\begin{equation}\label{eqn:magneticLorentzForceLagrangian:120}
+\begin{aligned}
 \ddt{} \PD{\xdot_i}{\LL}
-=
+&=
 \ddt{}
 \lr{ m \xdot_i
 +
 \frac{e}{c} A_i
 }
-=
+\\ &=
 m \ddot{x}_i
 +
 \frac{e}{c}
 \ddt{A_i}
-=
+\\ &=
 m \ddot{x}_i
 +
 \frac{e}{c}
 \PD{x_j}{A_i} \frac{dx_j}{dt}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Assembling the results, we've got
 %
-\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:140}
+\begin{equation}\label{eqn:magneticLorentzForceLagrangian:140}
+\begin{aligned}
 0
-=
+&=
 \ddt{} \PD{\xdot_i}{\LL}
 -
 \PD{x_i}{\LL}
-=
+\\ &=
 m \ddot{x}_i
 +
 \frac{e}{c}
 \PD{x_j}{A_i} \frac{dx_j}{dt}
 -
 \frac{e}{c} v_j \PD{x_i}{A_j},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:160}
+\begin{equation}\label{eqn:magneticLorentzForceLagrangian:160}
+\begin{aligned}
 m \ddot{x}_i
-=
+&=
 \frac{e}{c} v_j \PD{x_i}{A_j}
 -
 \frac{e}{c}
 \PD{x_j}{A_i} v_j
-=
+\\ &=
 \frac{e}{c} v_j
 \lr{
 \PD{x_i}{A_j}
 -
 \PD{x_j}{A_i}
 }
-=
+\\ &=
 \frac{e}{c} v_j B_k \epsilon_{i j k}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In vector form that is
 %
-%\begin{dmath}\label{eqn:magneticLorentzForceLagrangian:180}
+%\begin{equation}\label{eqn:magneticLorentzForceLagrangian:180}
 \boxedEquation{eqn:magneticLorentzForceLagrangian:180}{
 m \ddot{\Bx}
 =
 \frac{e}{c} \Bv \cross \BB.
 }
-%\end{dmath}
+%\end{equation}
 %
 So, we get the magnetic term of the Lorentz force.  Also note that this shows the Lagrangian (and the end result), was not in SI units.  The \( 1/c \) term would have to be dropped for SI.
-
 %\EndArticle

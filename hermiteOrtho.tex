@@ -48,41 +48,45 @@ consider the integral twice with each side definition of the generating function
 %
 First using the exponential definition of the generating function
 %
-\begin{dmath}\label{eqn:hermiteOrtho:80}
+\begin{equation}\label{eqn:hermiteOrtho:80}
+\begin{aligned}
 \int_{-\infty}^\infty g(x, t) g(x, s) e^{-x^2} dx
-=
+&=
 \int_{-\infty}^\infty
 e^{-t^2 + 2 t x}
 e^{-s^2 + 2 s x} e^{-x^2} dx
-=
+\\ &=
 e^{-t^2 -s^2}
 \int_{-\infty}^\infty
 e^{-(x^2- 2 t x - 2 s x)} dx
-=
+\\ &=
 e^{-t^2 -s^2 + (s + t)^2}
 \int_{-\infty}^\infty
 e^{-(x - t - s)^2} dx
-=
+\\ &=
 e^{2 st}
 \int_{-\infty}^\infty
 e^{-u^2} du
-= \sqrt{\pi} e^{2 st}.
-\end{dmath}
+\\ &= \sqrt{\pi} e^{2 st}.
+\end{aligned}
+\end{equation}
 %
 With the Hermite polynomial definition of the generating function, this integral is
 %
-\begin{dmath}\label{eqn:hermiteOrtho:100}
+\begin{equation}\label{eqn:hermiteOrtho:100}
+\begin{aligned}
 \int_{-\infty}^\infty g(x, t) g(x, s) e^{-x^2} dx
-=
+&=
 \int_{-\infty}^\infty
-\sum_{n=0}^\infty H_n(x) \frac{t^n}{n!}
-\sum_{m=0}^\infty H_m(x) \frac{s^m}{m!}
+\sum_{n = 0}^\infty H_n(x) \frac{t^n}{n!}
+\sum_{m = 0}^\infty H_m(x) \frac{s^m}{m!}
 e^{-x^2} dx
-=
-\sum_{n=0}^\infty \frac{t^n}{n!}
-\sum_{m=0}^\infty \frac{s^m}{m!}
+\\ &=
+\sum_{n = 0}^\infty \frac{t^n}{n!}
+\sum_{m = 0}^\infty \frac{s^m}{m!}
 \int_{-\infty}^\infty H_n(x) H_m(x) e^{-x^2} dx.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Let
 %
@@ -92,13 +96,13 @@ Let
 %
 and equate the two expansions of this integral
 %
-\begin{dmath}\label{eqn:hermiteOrtho:140}
+\begin{equation}\label{eqn:hermiteOrtho:140}
 \sqrt{\pi} \sum_{n=0}^\infty \frac{(2st)^n}{n!}
 =
-\sum_{n=0}^\infty \frac{t^n}{n!}
-\sum_{m=0}^\infty \frac{s^m}{m!}
+\sum_{n = 0}^\infty \frac{t^n}{n!}
+\sum_{m = 0}^\infty \frac{s^m}{m!}
 \alpha_{n m},
-\end{dmath}
+\end{equation}
 %
 or, after equating powers of \( t^n \)
 %
@@ -121,20 +125,24 @@ and
 %
 The SHO normalization is fixed by
 %
-\begin{dmath}\label{eqn:hermiteOrtho:220}
+\begin{equation}\label{eqn:hermiteOrtho:220}
+\begin{aligned}
 \int_{-\infty}^\infty u_n^2(x) dx
-= c_n^2
+&= c_n^2
 \int_{-\infty}^\infty H_n^2(x/x_0) e^{-(x/x_0)^2} dx
-= c_n^2 x_0 \sqrt{\pi} 2^n n!,
-\end{dmath}
+\\ &= c_n^2 x_0 \sqrt{\pi} 2^n n!,
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:hermiteOrtho:240}
+\begin{equation}\label{eqn:hermiteOrtho:240}
+\begin{aligned}
 c_n
-= \inv{\sqrt{ \sqrt{\pi} 2^n n! \sqrt{\frac{\Hbar}{m \omega}}}}
-= \lr{ \frac{m \omega}{\Hbar \pi} }^{1/4} 2^{-n/2} \inv{\sqrt{n!}}.
-\end{dmath}
+&= \inv{\sqrt{ \sqrt{\pi} 2^n n! \sqrt{\frac{\Hbar}{m \omega}}}}
+\\ &= \lr{ \frac{m \omega}{\Hbar \pi} }^{1/4} 2^{-n/2} \inv{\sqrt{n!}}.
+\end{aligned}
+\end{equation}
 %
 } % answer
 %\EndArticle

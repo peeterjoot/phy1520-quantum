@@ -50,8 +50,9 @@ To parameterize the ket space, consider first the kets that where both component
 \end{bmatrix}.
 \end{equation}
 The expectation values with respect to this ket are
-\begin{dmath}\label{eqn:moreKet:180}
-\expectation{S_x} =
+\begin{equation}\label{eqn:moreKet:180}
+\begin{aligned}
+\expectation{S_x} &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta} \\
@@ -61,7 +62,7 @@ The expectation values with respect to this ket are
 1 \\
 \alpha e^{i\theta} \\
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 1 &
@@ -71,18 +72,20 @@ The expectation values with respect to this ket are
 \alpha e^{i\theta} \\
 1 \\
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar}{2}
 \alpha e^{i\theta} + \alpha e^{-i\theta}
-=
+\\ &=
 \frac{\Hbar}{2}
 2 \alpha \cos\theta
-=
+\\ &=
 \Hbar \alpha \cos\theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:moreKet:200}
-\expectation{S_y} =
+\begin{equation}\label{eqn:moreKet:200}
+\begin{aligned}
+\expectation{S_y} &=
 \frac{\Hbar}{2}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta} \\
@@ -92,7 +95,7 @@ The expectation values with respect to this ket are
 1 \\
 \alpha e^{i\theta} \\
 \end{bmatrix}
-=
+\\ &=
 \frac{i\Hbar}{2}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta} \\
@@ -101,11 +104,12 @@ The expectation values with respect to this ket are
 -\alpha e^{i\theta} \\
 1 \\
 \end{bmatrix}
-=
+\\ &=
 \frac{-i \alpha \Hbar}{2} 2 i \sin\theta
-=
+\\ &=
 \alpha \Hbar \sin\theta.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \( C_\theta = \cos\theta, S_\theta = \sin\theta\), the variances are
 \begin{equation}\label{eqn:moreKet:220}
@@ -142,9 +146,10 @@ With \( C_\theta = \cos\theta, S_\theta = \sin\theta\), the variances are
 %
 and
 %
-\begin{dmath}\label{eqn:moreKet:240}
+\begin{equation}\label{eqn:moreKet:240}
+\begin{aligned}
 \lr{ \Delta S_y }^2
-=
+&=
 \lr{
 \frac{\Hbar}{2}
 \begin{bmatrix}
@@ -152,7 +157,7 @@ and
 i & -2 \alpha S_\theta \\
 \end{bmatrix}
 }^2
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 -2 \alpha S_\theta & -i \\
@@ -162,19 +167,21 @@ i & -2 \alpha S_\theta \\
 -2 \alpha S_\theta & -i \\
 i & -2 \alpha S_\theta \\
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 4 \alpha^2 S_\theta^2 + 1 & 4 \alpha i S_\theta \\
 -4 \alpha i S_\theta & 4 \alpha^2 S_\theta^2 + 1 \\
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The uncertainty factors are
 %
-\begin{dmath}\label{eqn:moreKet:260}
+\begin{equation}\label{eqn:moreKet:260}
+\begin{aligned}
 \expectation{\lr{\Delta S_x}^2}
-=
+&=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta}
@@ -187,7 +194,7 @@ The uncertainty factors are
 1 \\
 \alpha e^{i\theta}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta}
@@ -196,38 +203,40 @@ The uncertainty factors are
 4 \alpha^2 C_\theta^2 + 1 -4 \alpha^2 C_\theta e^{i\theta} \\
 -4 \alpha C_\theta + 4 \alpha^3 C_\theta^2 e^{i\theta} + \alpha e^{i\theta} \\
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 4 \alpha^2 C_\theta^2 + 1 -4 \alpha^2 C_\theta e^{i\theta}
 -4 \alpha^2 C_\theta e^{-i\theta} + 4 \alpha^4 C_\theta^2 + \alpha^2
 }
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 4 \alpha^2 C_\theta^2 + 1 -8 \alpha^2 C_\theta^2
 + 4 \alpha^4 C_\theta^2 + \alpha^2
 }
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 -4 \alpha^2 C_\theta^2 + 1
 + 4 \alpha^4 C_\theta^2 + \alpha^2
 }
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 4 \alpha^2 C_\theta^2 \lr{ \alpha^2 - 1 }
 + \alpha^2 + 1
 }
 ,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:moreKet:280}
+\begin{equation}\label{eqn:moreKet:280}
+\begin{aligned}
 \expectation{ \lr{ \Delta S_y }^2 }
-=
+&=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta}
@@ -240,7 +249,7 @@ and
 1 \\
 \alpha e^{i\theta}
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \begin{bmatrix}
 1 & \alpha e^{-i\theta}
@@ -249,19 +258,19 @@ and
 4 \alpha^2 S_\theta^2 + 1 + 4 \alpha^2 i S_\theta e^{i\theta} \\
 -4 \alpha i S_\theta + 4 \alpha^3 S_\theta^2 e^{i\theta} + \alpha e^{i\theta} \\
 \end{bmatrix}
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 4 \alpha^2 S_\theta^2 + 1 + 4 \alpha^2 i S_\theta e^{i\theta}
 -4 \alpha^2 i S_\theta e^{-i\theta} + 4 \alpha^4 S_\theta^2 + \alpha^2
 }
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 -4 \alpha^2 S_\theta^2 + 1
 + 4 \alpha^4 S_\theta^2 + \alpha^2
 }
-=
+\\ &=
 \frac{\Hbar^2}{4}
 \lr{
 4 \alpha^2 S_\theta^2 \lr{ \alpha^2 - 1}
@@ -269,7 +278,8 @@ and
 + 1
 }
 .
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The uncertainty product can finally be calculated
 %
@@ -298,12 +308,14 @@ The uncertainty product can finally be calculated
 \end{aligned}.
 \end{equation}
 The maximum occurs when \( f = \sin^2 2 \theta \) is extremized.  Those points are
-\begin{dmath}\label{eqn:moreKet:320}
+\begin{equation}\label{eqn:moreKet:320}
+\begin{aligned}
 0
-= \PD{\theta}{f}
-= 2 \sin 2 \theta \cos 2\theta
-= 4 \sin 4 \theta.
-\end{dmath}
+&= \PD{\theta}{f}
+\\ &= 2 \sin 2 \theta \cos 2\theta
+\\ &= 4 \sin 4 \theta.
+\end{aligned}
+\end{equation}
 %
 Those points are at \( 4 \theta = \pi n \), for integer \( n \), or
 %
@@ -333,7 +345,7 @@ At these points \( \sin^2 2\theta \) takes the values
 %
 so the maximization of the uncertainty product can be reduced to that of
 %
-\begin{dmath}\label{eqn:moreKet:420}
+\begin{equation}\label{eqn:moreKet:420}
 \expectation{\lr{\Delta S_x}^2}
 \expectation{\lr{\Delta S_y}^2}
 =
@@ -342,35 +354,37 @@ so the maximization of the uncertainty product can be reduced to that of
 4 \alpha^2 \lr{ \alpha^4 - 1 }
 + \lr{\alpha^2 + 1 }^2
 }.
-\end{dmath}
+\end{equation}
 We seek
 %
-\begin{dmath}\label{eqn:moreKet:440}
-0 =
+\begin{equation}\label{eqn:moreKet:440}
+\begin{aligned}
+0 &=
 \PD{\alpha}{}
 \lr{
 4 \alpha^2 \lr{ \alpha^4 - 1 }
 + \lr{\alpha^2 + 1 }^2
 }
-=
+\\ &=
 \lr{
 8 \alpha \lr{ \alpha^4 - 1 }
 +16 \alpha^5
 + 4 \lr{\alpha^2 + 1 } \alpha
 }
-=
+\\ &=
 4 \alpha
 \lr{
 2 \alpha^4 - 2
 +4 \alpha^4
 + 4 \alpha^2 + 4
 }
-=
+\\ &=
 8 \alpha
 \lr{
 3 \alpha^4 + 2 \alpha^2 + 1
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The only real root of this polynomial is \( \alpha = 0 \), so the ket where both \( \ket{+} \) and \( \ket{-} \) are not zero that maximizes the uncertainty product is
 %
@@ -445,11 +459,12 @@ so
 %
 For the commutator side of the uncertainty relation we have
 %
-\begin{dmath}\label{eqn:moreKet:560}
+\begin{equation}\label{eqn:moreKet:560}
+\begin{aligned}
 \inv{4} \Abs{ \expectation{ \antisymmetric{ S_x}{ S_y } } }^2
-=
+&=
 \inv{4} \Abs{ \expectation{ i \hbar S_z } }^2
-=
+\\ &=
 \lr{ \frac{\Hbar}{2} }^4
 \Abs{
 \begin{bmatrix}
@@ -460,7 +475,8 @@ For the commutator side of the uncertainty relation we have
 1 \\ 0
 \end{bmatrix}
 }^2,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so for the \( \ket{+} \) state we have an equality condition for the uncertainty relation
 %
@@ -597,8 +613,9 @@ Because of the two-fold degeneracy in the \( -a \) eigenvalues of \( A \), any l
 
 so the basis \( \setlr{ \ket{b_i}} \) is a simultaneous eigenspace for both \( A \) and \(B\).  Because there is a simultaneous eigenspace, the matrices must commute.  This can be confirmed with direct computation
 %
-\begin{dmath}\label{eqn:moreKet:100}
-A B = a b
+\begin{equation}\label{eqn:moreKet:100}
+\begin{aligned}
+A B &= a b
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & -1 & 0 \\
@@ -609,19 +626,21 @@ A B = a b
 0 & 0 & -i \\
 0 & i & 0
 \end{bmatrix}
-=
+\\ &=
 a b
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 0 & i \\
 0 & -i & 0
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:moreKet:120}
-B A = a b
+\begin{equation}\label{eqn:moreKet:120}
+\begin{aligned}
+B A &= a b
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 0 & -i \\
@@ -632,14 +651,15 @@ B A = a b
 0 & -1 & 0 \\
 0 & 0 & -1
 \end{bmatrix}
-=
+\\ &=
 a b
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 0 & i \\
 0 & -i & 0
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
 %
@@ -665,18 +685,19 @@ the matrix elements can be computed
 %
 that is
 %
-\begin{dmath}\label{eqn:moreKet:680}
-U =
+\begin{equation}\label{eqn:moreKet:680}
+\begin{aligned}
+U &=
 \begin{bmatrix}
 \bra{a^{(1)}} U \ket{a^{(1)}} & \bra{a^{(1)}} U \ket{a^{(2)}} \\
 \bra{a^{(2)}} U \ket{a^{(1)}} & \bra{a^{(2)}} U \ket{a^{(2)}}
 \end{bmatrix}
-=
+\\ &=
 \begin{bmatrix}
 \braket{a^{(1)}}{b^{(1)}} & \braket{a^{(1)}}{b^{(2)}} \\
 \braket{a^{(2)}}{b^{(1)}} & \braket{a^{(2)}}{b^{(2)}}
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 	\begin{bmatrix}
@@ -704,24 +725,27 @@ U =
 	1 \\ -1
 	\end{bmatrix} \\
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 1 \\
 1 & -1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \index{similarity transformation}
 As a similarity transformation, we have
 %
-\begin{dmath}\label{eqn:moreKet:700}
+\begin{equation}\label{eqn:moreKet:700}
+\begin{aligned}
 \bra{b^{(r)}} S_z \ket{b^{(s)}}
-=
+&=
 \braket{b^{(r)}}{a^{(t)}}\bra{a^{(t)}} S_z \ket{a^{(u)}}\braket{a^{(u)}}{b^{(s)}}
-=
+\\ &=
 \braket{a^{(r)}}U^\dagger {a^{(t)}}\bra{a^{(t)}} S_z \ket{a^{(u)}}\bra{a^{(u)}}U \ket{a^{(s)}},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
@@ -730,10 +754,11 @@ S_z' = U^\dagger S_z U.
 \end{equation}
 %
 Let's check that the computed similarity transformation does it's job.
-\begin{dmath}\label{eqn:moreKet:740}
+\begin{equation}\label{eqn:moreKet:740}
+\begin{aligned}
 \sigma_z'
-= U^\dagger \sigma_z U
-= \inv{2}
+&= U^\dagger \sigma_z U
+\\ &= \inv{2}
 \begin{bmatrix}
 1 & 1 \\
 1 & -1
@@ -746,7 +771,7 @@ Let's check that the computed similarity transformation does it's job.
 1 & 1 \\
 1 & -1
 \end{bmatrix}
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 1 & -1 \\
@@ -756,22 +781,24 @@ Let's check that the computed similarity transformation does it's job.
 1 & 1 \\
 1 & -1
 \end{bmatrix}
-=
+\\ &=
 \inv{2}
 \begin{bmatrix}
 0 & 2 \\
 2 & 0
 \end{bmatrix}
-= \sigma_x.
-\end{dmath}
+\\ &= \sigma_x.
+\end{aligned}
+\end{equation}
 %
 The transformation matrix can also be computed more directly
 %
-\begin{dmath}\label{eqn:moreKet:760}
+\begin{equation}\label{eqn:moreKet:760}
+\begin{aligned}
 U
-= U \ket{a^{(r)}} \bra{a^{(r)}}
-= \ket{b^{(r)}}\bra{a^{(r)}}
-=
+&= U \ket{a^{(r)}} \bra{a^{(r)}}
+\\ &= \ket{b^{(r)}}\bra{a^{(r)}}
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 \\
@@ -789,7 +816,7 @@ U
 \begin{bmatrix}
 0 & 1
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 0 \\
@@ -801,14 +828,14 @@ U
 0 & 1 \\
 0 & -1
 \end{bmatrix}
-=
+\\ &=
 \inv{\sqrt{2}}
 \begin{bmatrix}
 1 & 1 \\
 1 & -1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 } % answer
-
 %\EndArticle

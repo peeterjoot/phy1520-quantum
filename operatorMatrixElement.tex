@@ -19,14 +19,10 @@
 %\generatetitle{Operator matrix element}
 %\chapter{Operator matrix element}
 %\label{chap:operatorMatrixElement}
-
 \paragraph{Weird dreams}
 \index{matrix element}
-
 I woke up today having a dream still in my head from the night, but it was a strange one.  I was expanding out the Dirac notation representation of an operator in matrix form, but the symbols in the kets were elaborate pictures of Disney princesses that I was drawing with forestry scenery in the background, including little bears.  At the point that I woke up from the dream, I noticed that I'd gotten the proportion of the bears wrong in one of the pictures, and they looked like they were ready to eat one of the princess characters.
-
 \paragraph{Guts}
-
 As a side effect of this weird dream I actually started thinking about matrix element representation of operators.
 
 When forming the matrix element of an operator using Dirac notation the elements are of the form \( \bra{\textrm{row}} A \ket{\textrm{column}} \).  I've gotten that mixed up a couple of times, so I thought it would be helpful to write this out explicitly for a \( 2 \times 2 \) operator representation for clarity.
@@ -98,22 +94,24 @@ Suppose the matrix representation of \( \ket{q}, \ket{r} \) are respectively
 %
 then
 %
-\begin{dmath}\label{eqn:operatorMatrixElement:60}
+\begin{equation}\label{eqn:operatorMatrixElement:60}
+\begin{aligned}
 \bra{q} \sim
 {\begin{bmatrix}
 \braket{a}{q} \\
 \braket{b}{q} \\
 \end{bmatrix}}^\dagger
-=
+&=
 \begin{bmatrix}
 \braket{q}{a} &
 \braket{q}{b}
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The matrix element is then
 %
-\begin{dmath}\label{eqn:operatorMatrixElement:80}
+\begin{equation}\label{eqn:operatorMatrixElement:80}
 \bra{q} A \ket{r}
 \sim
 \bra{q}
@@ -122,18 +120,17 @@ The matrix element is then
 \bra{b} A \ket{a} & \bra{b} A \ket{b}
 \end{bmatrix}
 \ket{r},
-\end{dmath}
+\end{equation}
 %
 and the corresponding matrix representation of the operator is
 %
-\begin{dmath}\label{eqn:operatorMatrixElement:100}
+\begin{equation}\label{eqn:operatorMatrixElement:100}
 A \sim
 \begin{bmatrix}
 \bra{a} A \ket{a} & \bra{a} A \ket{b} \\
 \bra{b} A \ket{a} & \bra{b} A \ket{b}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 %This particular matrix representation is largely convention, because we could have easily have picked an alternate representation of the kets.
-
 %\EndNoBibArticle
