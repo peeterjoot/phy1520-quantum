@@ -36,13 +36,13 @@ Show that there is a periodicity of the energy levels with the field, with the p
 
 We can model this geometrical constraints of these two configurations by
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:60}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:60}
 H = \inv{2 m} \lr{ -i \Hbar \spacegrad - \frac{e}{c}\BA } + V,
 \end{dmath}
 %
 where
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:80}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:80}
 \spacegrad = \rhocap \partial_\rho + \inv{\rho} \partial_\phi + \zcap \partial_z,
 \end{dmath}
 %
@@ -60,19 +60,19 @@ V =
 %
 The effects of the potential require that a wavefunction \( \psi \) solution of this equation satisfies
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:120}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:120}
 \evalbar{\psi( z )}{z = 0,L} = 0,
 \end{dmath}
 %
 and
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:140}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:140}
 \evalbar{\psi( \rho )}{\rho = \rho_a, \rho_b} = 0,
 \end{dmath}
 %
 leaving
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:160}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:160}
 H = \inv{2 m} \lr{ -i \Hbar \spacegrad - \frac{e}{c} \BA }^2.
 \end{dmath}
 %
@@ -93,7 +93,7 @@ H \psi
 %
 Assuming a solution is possible using separation of variables, let
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:200}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:200}
 \psi(\rho, \phi, z) = P(\rho) \Phi(\phi) Z(z),
 \end{dmath}
 %
@@ -117,13 +117,13 @@ E =
 %
 Let \( E = E' + E_z \), where
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:240}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:240}
 E_z = \frac{-\Hbar^2}{2 m} \inv{Z} Z''.
 \end{dmath}
 %
 This has solution
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:260}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:260}
 Z = e^{i k_z z},
 \end{dmath}
 %
@@ -135,13 +135,13 @@ k_z L = \pi l, \qquad l \in \bbZ
 %
 or
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:280}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:280}
 k_z = \frac{\pi l}{L}.
 \end{dmath}
 %
 That means that the total energy is of the form
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:300}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:300}
 E = E' + \frac{\Hbar^2}{2 m} \lr{ \frac{\pi l}{L} }^2.
 \end{dmath}
 %
@@ -156,20 +156,20 @@ E' \rho^2 =
 %
 We are free to let
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:380}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:380}
 \frac{-\Hbar^2}{2 m} \inv{\Phi} \partial_{\phi\phi} \Phi = E_\phi,
 \end{dmath}
 %
 which has solution
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:400}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:400}
 \Phi = e^{i k_\phi \phi},
 \end{dmath}
 %
 where \( k_\phi = \sqrt{2 m E_\phi}/\Hbar \).  Geometry requires \( k_\phi (2 \pi) = 2 \pi \nu, \nu \in \bbZ \ge 0 \),
 or
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:420}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:420}
 E_\phi = \frac{\Hbar^2 \nu^2}{2 m}.
 \end{dmath}
 %
@@ -191,13 +191,13 @@ or
 %
 With \( \rho' = \sqrt{ \frac{2 m E'}{\Hbar^2} } \rho \), this is the standard form (\texteqnref{10.2.1} \citep{NIST:DLMF}) for Bessel's equation as a function of \( \rho' \), with solutions \( J_{\pm \nu}( \rho' ), N_\nu( \rho') \).  In particular, the linear combination
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:480}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:480}
 a J_{\pm \nu}( \rho' ) + b N_\nu( \rho'),
 \end{dmath}
 %
 is a solution.  The geometry requires this vanish at \( \rho_a, \rho_b \).  With
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:540}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:540}
 k = \sqrt{ \frac{2 m E'}{\Hbar^2} },
 \end{dmath}
 %
@@ -217,13 +217,13 @@ b
 %
 This is satisfied when the determinant is zero
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:520}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:520}
 0 = J_{\pm \nu}( k \rho_a ) N_\nu( k \rho_b ) - J_{\pm \nu}( k \rho_b ) N_\nu( k \rho_a ).
 \end{dmath}
 %
 The total energy eigenvalue is
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:560}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:560}
 E = \inv{2 m} (\Hbar k)^2 + \frac{\Hbar^2}{2 m} \lr{ \frac{\pi l}{L} }^2.
 \end{dmath}
 %
@@ -420,18 +420,18 @@ or
 %
 With
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:880}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:880}
 \nu' = \nu - \frac{e B \rho_a^2}{2 \Hbar c},
 \end{dmath}
 %
 and
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:900}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:900}
 k = \frac{\sqrt{2 m E'}}{\Hbar},
 \end{dmath}
 %
 this is, once again, a Bessel equation with solution
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:920}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:920}
 P = a J_{\pm \nu'}(k \rho) + b N_{\nu'}(k \rho).
 \end{dmath}
 %
@@ -445,19 +445,19 @@ The full solution is
 %
 With \( \theta = \ifrac{e B \rho_a^2}{2 \Hbar c} \), and \( N = \nu \), \cref{eqn:gradQuantumProblemSet3Problem3:820} takes the form
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:960}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:960}
 \frac{2 m E_\phi}{\Hbar^2} = \lr{ N - \theta }^2,
 \end{dmath}
 %
 which has zeros when \( N = \theta \), or
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:980}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:980}
 N = \frac{e B \rho_a^2}{2 \Hbar c},
 \end{dmath}
 %
 Shuffling terms, this is
 %
-\begin{equation}\label{eqn:gradQuantumProblemSet3Problem3:1000}
+\begin{dmath}\label{eqn:gradQuantumProblemSet3Problem3:1000}
 \frac{2 \pi N \Hbar c}{e} = B \pi \rho_a^2,
 \end{dmath}
 %

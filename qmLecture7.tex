@@ -39,14 +39,14 @@ Why do we have the zeros at integral multiples of \( h/q \)?  Consider a particl
 \imageFigure{../figures/phy1520-quantum/lecture7Fig3}{Circular trajectory.}{fig:lecture7:lecture7Fig3}{0.1}
 %FIXME: Prof mentioned:
 %%
-%\begin{equation}\label{eqn:qmLecture7:20}
+%\begin{dmath}\label{eqn:qmLecture7:20}
 %\phi_{\textrm{loop}} = q \frac{ h p/ q }{\Hbar} = 2 \pi p,
 %\end{dmath}
 %... I'm not sure what that was about now.
 %
 In classical mechanics we have
 %
-\begin{equation}\label{eqn:qmLecture7:40}
+\begin{dmath}\label{eqn:qmLecture7:40}
 \oint p dq.
 \end{dmath}
 The integral zero points are related to such a loop, but the \( q \BA \) portion of the momentum \( \Bp - q \BA \) needs to be considered.
@@ -66,12 +66,12 @@ This experiment shows that the effective charge of the circulating charge was \(
 %\imageFigure{../figures/phy1520-quantum/lecture7Fig7}{CAPTION: lecture7Fig7}{fig:lecture7:lecture7Fig7}{0.2}
 %
 For a constant uniform magnetic field, we will be able to identify an intrinsic angular frequency
-\begin{equation}\label{eqn:qmLecture7:140}
+\begin{dmath}\label{eqn:qmLecture7:140}
 \omega_{\textrm{c}} = \frac{e B}{m}.
 \end{dmath}
 To do so, we work with what is now called the Landau gauge
 %
-\begin{equation}\label{eqn:qmLecture7:60}
+\begin{dmath}\label{eqn:qmLecture7:60}
 \BA = \lr{ 0, B x, 0 }.
 \end{dmath}
 %
@@ -86,7 +86,7 @@ The curl of such a vector potential yields a uniform constant magnetic field
 %
 An alternate gauge choice, the symmetric gauge, is
 %
-\begin{equation}\label{eqn:qmLecture7:100}
+\begin{dmath}\label{eqn:qmLecture7:100}
 \BA = \lr{ -\frac{B y}{2}, \frac{B x}{2}, 0 },
 \end{dmath}
 %
@@ -111,18 +111,18 @@ H
 \end{dmath}
 We can solve after noting that
 %
-\begin{equation}\label{eqn:qmLecture7:180}
+\begin{dmath}\label{eqn:qmLecture7:180}
 \antisymmetric{\hatp_y}{H} = 0,
 \end{dmath}
 implies
 %
-\begin{equation}\label{eqn:qmLecture7:200}
+\begin{dmath}\label{eqn:qmLecture7:200}
 \Psi(x,y) = e^{i k_y y} \phi(x).
 \end{dmath}
 %
 The eigensystem
 %
-\begin{equation}\label{eqn:qmLecture7:220}
+\begin{dmath}\label{eqn:qmLecture7:220}
 H \psi(x, y) = E \phi(x, y),
 \end{dmath}
 %
@@ -142,7 +142,7 @@ H_x
 \end{dmath}
 where
 %
-\begin{equation}\label{eqn:qmLecture7:260}
+\begin{dmath}\label{eqn:qmLecture7:260}
 \inv{2 m} e^2 B^2 = \inv{2} m \omega^2,
 \end{dmath}
 %
@@ -153,7 +153,7 @@ or
 %
 and
 %
-\begin{equation}\label{eqn:qmLecture7:300}
+\begin{dmath}\label{eqn:qmLecture7:300}
 x_0 = \frac{\Hbar}{k_y}{e B}.
 \end{dmath}
 %
@@ -167,7 +167,7 @@ To resolve this we can introduce periodic boundary conditions, imagining that a 
 \imageFigure{../figures/phy1520-quantum/lecture7Fig9}{Landau degeneracy region.}{fig:lecture7:lecture7Fig9}{0.1}
 Requiring quantized momentum
 %
-\begin{equation}\label{eqn:qmLecture7:340}
+\begin{dmath}\label{eqn:qmLecture7:340}
 k_y L_y = 2 \pi n,
 \end{dmath}
 %
@@ -179,13 +179,13 @@ k_y = \frac{2 \pi n}{L_y}, \qquad n \in \bbZ,
 %
 gives
 %
-\begin{equation}\label{eqn:qmLecture7:380}
+\begin{dmath}\label{eqn:qmLecture7:380}
 x_0(n) = \frac{\Hbar}{e B} \frac{ 2 \pi n}{L_y},
 \end{dmath}
 %
 with \( x_0 \le L_x \).  The range is thus restricted to
 %
-\begin{equation}\label{eqn:qmLecture7:400}
+\begin{dmath}\label{eqn:qmLecture7:400}
 \frac{\Hbar}{e B} \frac{ 2 \pi n_{\textrm{max}}}{L_y} = L_x,
 \end{dmath}
 %
@@ -211,7 +211,7 @@ n_{\textrm{max}}
 
 Attempting to measure Hall-effect systems, it was found that the Hall conductivity was quantized like
 %
-\begin{equation}\label{eqn:qmLecture7:460}
+\begin{dmath}\label{eqn:qmLecture7:460}
 \sigma_{x y} = p \frac{e^2}{h}.
 \end{dmath}
 %

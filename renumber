@@ -59,7 +59,7 @@
 #../latex/bin/lgrep hyperfineElectronAndBosonNucleus.tex | tee o ; . ./o
 #../latex/bin/lgrep lecture2.tex | tee o ; . ./o
 #../latex/bin/lgrep LsquaredLzProblem.tex | tee o ; . ./o
-../latex/bin/lgrep LyPerturbation.tex | tee o ; . ./o
+#../latex/bin/lgrep LyPerturbation.tex | tee o ; . ./o
 #../latex/bin/lgrep magneticLorentzForceLagrangian.tex | tee o ; . ./o
 #../latex/bin/lgrep moreBraKetProblems.tex | tee o ; . ./o
 #../latex/bin/lgrep moreKet.tex | tee o ; . ./o
@@ -228,5 +228,5 @@
 #perl -p -i ../latex/bin/latexRegex.pl twoSpinHamiltonian.tex
 #perl -p -i ../latex/bin/latexRegex.pl unimodularAndRotation.tex
 #perl -p -i ../latex/bin/latexRegex.pl usefulFormulas.tex
-#../latex/bin/lgrep b.tex | tee o ; . ./o
-#perl -p -i ../latex/bin/latexRegex.pl b.tex
+../latex/bin/lgrep b.tex | tee o ; . ./o
+perl -p -i ../latex/bin/latexRegex.pl b.tex

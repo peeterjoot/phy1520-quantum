@@ -30,7 +30,7 @@
 
 In a classical context considering a Hamiltonian
 %
-\begin{equation}\label{eqn:qmLecture11:20}
+\begin{dmath}\label{eqn:qmLecture11:20}
 H(q_i, p_i),
 \end{dmath}
 %
@@ -47,16 +47,16 @@ the trajectory of a particle after rotation is related by rotation to the trajec
 
 Suppose that we have a symmetry operation that takes states from
 %
-\begin{equation}\label{eqn:qmLecture11:60}
+\begin{dmath}\label{eqn:qmLecture11:60}
 \ket{\psi} \rightarrow \ket{U \psi}
 \end{dmath}
-\begin{equation}\label{eqn:qmLecture11:80}
+\begin{dmath}\label{eqn:qmLecture11:80}
 \ket{\phi} \rightarrow \ket{U \phi},
 \end{dmath}
 %
 we expect that
 %
-\begin{equation}\label{eqn:qmLecture11:100}
+\begin{dmath}\label{eqn:qmLecture11:100}
 \Abs{\braket{ \psi}{\phi} }^2 = \Abs{\braket{ U\psi}{ U\phi} }^2.
 \end{dmath}
 %
@@ -88,7 +88,7 @@ If an ``observable'' is not changed by a unitary operation representing a symmet
 \end{dmath}
 %
 so
-\begin{equation}\label{eqn:qmLecture11:160}
+\begin{dmath}\label{eqn:qmLecture11:160}
 U^\dagger \hatA U = \hatA,
 \end{dmath}
 %
@@ -99,14 +99,14 @@ or
 An observable that is unchanged by a unitary symmetry commutes \( \antisymmetric{\hatA}{U} \) with the operator \( U \) for that transformation.
 \paragraph{Symmetries of the Hamiltonian}
 Given
-\begin{equation}\label{eqn:qmLecture11:200}
+\begin{dmath}\label{eqn:qmLecture11:200}
 \antisymmetric{H}{U} = 0,
 \end{dmath}
 %
 \( H \) is invariant.
 Given
 %
-\begin{equation}\label{eqn:qmLecture11:220}
+\begin{dmath}\label{eqn:qmLecture11:220}
 H \ket{\phi_n} = \epsilon_n \ket{\phi_n},
 \end{dmath}
 %
@@ -117,16 +117,16 @@ U H \ket{\phi_n}
 \end{dmath}
 Such a state
 %
-\begin{equation}\label{eqn:qmLecture11:260}
+\begin{dmath}\label{eqn:qmLecture11:260}
 \ket{\psi_n} = U \ket{\phi_n},
 \end{dmath}
 is also an eigenstate with the \underline{same} energy.
 Suppose this process is repeated, finding other states
 %
-\begin{equation}\label{eqn:qmLecture11:280}
+\begin{dmath}\label{eqn:qmLecture11:280}
 U \ket{\psi_n} = \ket{\chi_n}
 \end{dmath}
-\begin{equation}\label{eqn:qmLecture11:300}
+\begin{dmath}\label{eqn:qmLecture11:300}
 U \ket{\chi_n} = \ket{\alpha_n}
 \end{dmath}
 Because such a transformation only generates states with the initial energy, this process cannot continue forever.  At some point this process will enumerate a fixed size set of states.  These states can be orthonormalized.
@@ -157,7 +157,7 @@ When \( H \) has a symmetry, then degenerate eigenstates form \underlineAndIndex
 \makeexample{Inversion.}{example:qmLecture11:1}{
 Consider a state and a parity operation \( \hat\Pi \), with the transformation
 %
-\begin{equation}\label{eqn:qmLecture11:380}
+\begin{dmath}\label{eqn:qmLecture11:380}
 \ket{\psi} \rightarrow \hat\Pi \ket{\psi}.
 \end{dmath}
 In one dimension, the parity operation is just inversion.  In two dimensions, this is a set of flipping operations on two axes \cref{fig:lecture11:lecture11Fig2}.
@@ -173,18 +173,18 @@ The operational effects of this operator are
 %
 Acting again with the \textAndIndex{parity operator} produces the original value, so it is its own inverse, and \( \hat\Pi^\dagger = \hat\Pi = \hat\Pi^{-1} \).  In an expectation value
 %
-\begin{equation}\label{eqn:qmLecture11:420}
+\begin{dmath}\label{eqn:qmLecture11:420}
 \bra{ \hat\Pi \psi } \hatx \ket{ \hat\Pi \psi } = - \bra{\psi} \hatx \ket{\psi}.
 \end{dmath}
 %
 This means that
 %
-\begin{equation}\label{eqn:qmLecture11:440}
+\begin{dmath}\label{eqn:qmLecture11:440}
 \hat\Pi^\dagger \hatx \hat\Pi = - \hatx,
 \end{dmath}
 %
 or
-\begin{equation}\label{eqn:qmLecture11:460}
+\begin{dmath}\label{eqn:qmLecture11:460}
 \hatx \hat\Pi = - \hat\Pi \hatx,
 \end{dmath}
 %
@@ -197,7 +197,7 @@ or
 \end{dmath}
 so
 %
-\begin{equation}\label{eqn:qmLecture11:500}
+\begin{dmath}\label{eqn:qmLecture11:500}
 \hat\Pi \ket{x_0} = \ket{-x_0}.
 \end{dmath}
 %
@@ -212,7 +212,7 @@ Acting on a wave function
 %
 What does this mean for eigenfunctions.  Eigenfunctions are supposed to form irreducible representations of the group.  The group has just two elements
 %
-\begin{equation}\label{eqn:qmLecture11:540}
+\begin{dmath}\label{eqn:qmLecture11:540}
 \setlr{ 1, \hat\Pi },
 \end{dmath}
 %
@@ -220,7 +220,7 @@ where \( \hat\Pi^2 = 1 \).
 
 Suppose we have a Hamiltonian
 %
-\begin{equation}\label{eqn:qmLecture11:560}
+\begin{dmath}\label{eqn:qmLecture11:560}
 H = \frac{\hatp^2}{2m} + V(\hatx),
 \end{dmath}
 %
