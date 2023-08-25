@@ -79,7 +79,7 @@ e^{i \omega t} \sqrt{n+1} \ket{n+1}
 %
 \begin{equation}\label{eqn:shoExpectations:60}
 \begin{aligned}
-&\bra{m} x^2 \ket{n} \\
+\bra{m} x^2 \ket{n}
 &=
 \frac{x_0^2}{2} \bra{m} \lr{ a + a^\dagger }^2 \ket{n}
 \\ &=
@@ -88,7 +88,8 @@ e^{i \omega t} \sqrt{n+1} \ket{n+1}
 e^{i \omega t} \sqrt{m} \bra{m-1}
 +
 e^{-i \omega t} \sqrt{m+1} \bra{m+1}
-}
+} \times \\
+&\quad
 \lr{
 e^{-i \omega t} \sqrt{n} \ket{n-1}
 +
@@ -96,9 +97,10 @@ e^{i \omega t} \sqrt{n+1} \ket{n+1}
 }
 \\ &=
 \frac{x_0^2}{2}
-\lr{
+\Biglr{
 \delta_{m+1,n+1} \sqrt{(m+1)(n+1)}
-+\delta_{m+1,n-1} \sqrt{(m+1)n} e^{-2 i \omega t}
++\delta_{m+1,n-1} \sqrt{(m+1)n} e^{-2 i \omega t} \\
+&\quad
 +\delta_{m-1,n+1} \sqrt{m(n+1)} e^{2 i \omega t}
 +\delta_{m-1,n-1} \sqrt{m n}
 },
@@ -127,7 +129,7 @@ e^{-i \omega t} \sqrt{n} \ket{n-1}
 %
 \begin{equation}\label{eqn:shoExpectations:100}
 \begin{aligned}
-&\bra{m} p^2 \ket{n} \\
+\bra{m} p^2 \ket{n} 
 &=
 \frac{\Hbar^2}{2 x_0^2} \ket{m} \lr{ a - a^\dagger }  \lr{ a^\dagger - a} \ket{n}
 \\ &=
@@ -136,7 +138,8 @@ e^{-i \omega t} \sqrt{n} \ket{n-1}
 -e^{-i \omega t} \sqrt{m+1} \bra{m+1}
 +
 e^{i \omega t} \sqrt{m} \bra{m-1}
-}
+} \times \\
+&\quad
 \lr{
 e^{i \omega t} \sqrt{n+1} \ket{n+1}
 -
@@ -144,9 +147,10 @@ e^{-i \omega t} \sqrt{n} \ket{n-1}
 }
 \\ &=
 \frac{\Hbar^2}{2 x_0^2}
-\lr{
+\Biglr{
 \delta_{m+1,n+1} \sqrt{(m+1)(n+1)}
-+\delta_{m+1,n-1} \sqrt{(m+1)n} e^{-2 i \omega t}
++\delta_{m+1,n-1} \sqrt{(m+1)n} e^{-2 i \omega t} \\
+&\quad
 +\delta_{m-1,n+1} \sqrt{m(n+1)} e^{2 i \omega t}
 +\delta_{m-1,n-1} \sqrt{m n}
 }.
@@ -160,19 +164,21 @@ For the anticommutator \( \symmetric{x}{p} \), we have
 \symmetric{x}{p}
 &=
 \frac{i\Hbar}{2}
-\lr{
-\lr{ a e^{-i \omega t} + a^\dagger e^{i \omega t} } \lr{ a^\dagger e^{i \omega t} - a e^{-i \omega t} }
+\Biglr{
+\lr{ a e^{-i \omega t} + a^\dagger e^{i \omega t} } \lr{ a^\dagger e^{i \omega t} - a e^{-i \omega t} } \\
+&\quad
 -
 \lr{ a^\dagger e^{i \omega t} - a e^{-i \omega t} }
 \lr{ a e^{-i \omega t} + a^\dagger e^{i \omega t} }
 }
 \\ &=
 \frac{i\Hbar}{2}
-\lr{
+\Biglr{
 - a^2 e^{- 2 i \omega t}
 + (a^\dagger)^2 e^{ 2 i \omega t}
 + a a^\dagger
-- a^\dagger a
+- a^\dagger a \\
+&\quad
 + a^2 e^{- 2 i \omega t}
 - (a^\dagger)^2 e^{ 2 i \omega t}
 - a^\dagger a

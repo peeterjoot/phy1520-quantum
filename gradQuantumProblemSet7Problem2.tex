@@ -59,11 +59,11 @@ The Hamiltonian action on this wave function is
 \begin{aligned}
 E \psi_1(r_1) \psi_2(r_2)
 &=
-\lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) } \psi_2(r_2) + \lr{ \inv{2m} \Bp_2^2 \psi_2(r_1) } \psi_1(r_2)
--
-2 e^2
-\inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2) \\
+\lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) } \psi_2(r_2) + \lr{ \inv{2m} \Bp_2^2 \psi_2(r_1) } \psi_1(r_2) \\
 &\quad-
+2 e^2
+\inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2)
+-
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2),
 \end{aligned}
@@ -472,7 +472,7 @@ See \citep{byron1992mca} for a demonstration of this identity, and the contour u
 \frac{e^2}{4 \pi \epsilon_0} & \bra{\psi} \inv{\Abs{\Br_1 - \Br_2}} \ket{\psi} \\
 &=
 \frac{e^2}{4 \pi \epsilon_0}
-\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) 
+\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1)
 \,\times \\ &\qquad
 \int 2 \pi dr_2 d\theta_2 r_2^2 \sin(\theta_2)
 e^{ -2(r_1 + r_2)/a}
@@ -482,7 +482,7 @@ e^{ -2(r_1 + r_2)/a}
 \frac{e^2}{4 \pi \epsilon_0}
 \inv{2 \pi^2}
 \int d^3 k \inv{\Bk^2}
-\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) e^{-2r_1/a + i \Bk \cdot \Br_1} 
+\int 2 \pi dr_1 d\theta_1 r_1^2 \sin(\theta_1) e^{-2r_1/a + i \Bk \cdot \Br_1}
 \,\times \\ &\qquad
 \int 2 \pi dr_2 d\theta_2 r_2^2 \sin(\theta_2) e^{-2r_2/a - i \Bk \cdot \Br_2}.
 \end{aligned}

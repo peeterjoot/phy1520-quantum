@@ -75,11 +75,13 @@ Because the RHS is zero whenever \( p' \ne p'' \), the matrix element \( \bra{p'
 Because \cref{eqn:positionOperatorInMomentumSpace:60} is an operator equation that really only takes on meaning when applied to a wave function and integrated, we do that
 %
 \begin{equation}\label{eqn:positionOperatorInMomentumSpace:100}
-\int dp'' \delta(p' - p'') X(p'') p'' \psi(p'')
--
+\begin{aligned}
+\int &dp'' \delta(p' - p'') X(p'') p'' \psi(p'') \\
+&\quad-
 \int dp'' p' \delta(p' - p'') X(p'') \psi(p'')
 =
 \int dp'' i \Hbar \delta{p' - p''} \psi(p''),
+\end{aligned}
 \end{equation}
 %
 or
