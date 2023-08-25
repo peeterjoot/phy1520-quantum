@@ -42,8 +42,9 @@ Compute the full field evolution of the levels and compare with the perturbative
 With respect to the basis \( \beta = \ket{++}, \ket{-+}, \ket{+-}, \ket{--} \), where \( \ket{\pm, \pm} = \ket{\pm}_\txte \otimes \ket{\pm}_\txtp \) are the direct products of the eigenkets of the \( \BS_\txte \) and \( \BS_\txtp \) operators (not of the respective \( S^z \) operators), we can compute the unperturbed interaction Hamiltonian.  For brevity, let \( S_{\txte\txtp} = \BS_\txte \cdot \BS_\txtp \)
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:60}
-A  \BS_\txte \cdot \BS_\txtp 
-=
+\begin{aligned}
+A&  \BS_\txte \cdot \BS_\txtp \\
+&=
 A
 \begin{bmatrix}
 \bra{++} S_{\txte\txtp} \ket{++} & \bra{++} S_{\txte\txtp} \ket{-+} & \bra{++} S_{\txte\txtp} \ket{+-} & \bra{++} S_{\txte\txtp} \ket{--} \\
@@ -51,6 +52,7 @@ A
 \bra{+-} S_{\txte\txtp} \ket{++} & \bra{+-} S_{\txte\txtp} \ket{-+} & \bra{+-} S_{\txte\txtp} \ket{+-} & \bra{+-} S_{\txte\txtp} \ket{--} \\
 \bra{--} S_{\txte\txtp} \ket{++} & \bra{--} S_{\txte\txtp} \ket{-+} & \bra{--} S_{\txte\txtp} \ket{+-} & \bra{--} S_{\txte\txtp} \ket{--} \\
 \end{bmatrix}.
+\end{aligned}
 \end{equation}
 Each of the matrix elements may be expanded in terms of the Pauli basis, for example
 \begin{equation}\label{eqn:gradQuantumProblemSet8Problem4:n}

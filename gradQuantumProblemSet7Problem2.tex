@@ -56,30 +56,35 @@ Without the electron-electron interaction term, the Helium Hamiltonian is separa
 The Hamiltonian action on this wave function is
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:680}
+\begin{aligned}
 E \psi_1(r_1) \psi_2(r_2)
-=
+&=
 \lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) } \psi_2(r_2) + \lr{ \inv{2m} \Bp_2^2 \psi_2(r_1) } \psi_1(r_2)
 -
 2 e^2
-\inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2)
--
+\inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2) \\
+&\quad-
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_1} \psi_1(r_1) \psi_2(r_2),
+\end{aligned}
 \end{equation}
 %
 or
 \begin{equation}\label{eqn:gradQuantumProblemSet7Problem2:700}
+\begin{aligned}
 E
-=
+&=
 \lr{\inv{\psi_1(r)} \lr{ \inv{2m} \Bp_1^2 \psi_1(r_1) }
 -
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_1} }
 +
-\lr{\inv{\psi_2(r)} \lr{ \inv{2m} \Bp_2^2 \psi_2(r_2) }
+\lr{\inv{\psi_2(r)} \lr{ \inv{2m} \Bp_2^2 \psi_2(r_2) } \\
+&\quad
 -
 2 e^2
 \inv{4 \pi \epsilon_0 } \inv{r_2}}.
+\end{aligned}
 \end{equation}
 %
 This can be written in separated form as

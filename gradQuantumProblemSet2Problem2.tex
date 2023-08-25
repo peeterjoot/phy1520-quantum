@@ -174,12 +174,14 @@ and
 In both cases the pairs of raising and lowering operators have been factored into conjugate pairs so that only the action of the latter on \( \ket{\psi} \) need be considered.  Considering the \( x \) component for example, we've got
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:540}
-\lr{ a_x^\dagger e^{i \omega t} \pm a_x e^{-i \omega t}}
-\ket{n_x, n_y, n_z}
-=
+\begin{aligned}
+&\lr{ a_x^\dagger e^{i \omega t} \pm a_x e^{-i \omega t}}
+\ket{n_x, n_y, n_z} \\
+&\quad=
 e^{i \omega t} \sqrt{n_x + 1} \ket{n_x + 1, n_y, n_z}
 \pm
 e^{-i \omega t} \sqrt{n_x} \ket{n_x - 1, n_y, n_z}.
+\end{aligned}
 \end{equation}
 %
 This gives
@@ -361,7 +363,7 @@ The \( z \) component is slightly messier to compute
 %
 \begin{equation}\label{eqn:gradQuantumProblemSet2Problem2:420}
 \begin{aligned}
-\lr{ a_z^\dagger e^{i\omega t} - a_z e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} }
+&\lr{ a_z^\dagger e^{i\omega t} - a_z e^{-i\omega t} } \lr{ \ket{0,0,0} + \ket{0,0,2} } \\
 &=
 e^{i\omega t} \lr{ \ket{0,0,1} + \sqrt{3} \ket{0,0,3} }
 - e^{-i\omega t} \sqrt{2} \ket{0,0,1}

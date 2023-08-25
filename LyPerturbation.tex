@@ -69,7 +69,7 @@ and the next order energy shift is
 \Delta^2
 &=
 \bra{l m} V
-\sum' \frac{\ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m}
+\sum' \frac{\ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m} \\
 &=
 \sum' \frac{\bra{l, m} V \ket{l', m'} \bra{l', m'}}{E_{l,m} - E_{l', m'}} V \ket{l, m}
 \\ &=
@@ -173,9 +173,11 @@ A \Hbar
 If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 2 m + 1 \) dimensional Hamiltonian
 %
 \begin{equation}\label{eqn:LyPerturbation:180}
+\begin{equation*}
 \bra{l, m'} H \ket{l, m}
-=
-\lr{ A \Hbar^2 l(l+1) + B \Hbar m } \delta_{m', m}
+&=
+\lr{ A \Hbar^2 l(l+1) + B \Hbar m } \delta_{m', m} \\
+&\quad
 +
 \frac{C \Hbar}{2 i}
 \lr{
@@ -183,6 +185,7 @@ If we wanted to solve the Hamiltonian exactly, we've have to diagonalize the \( 
 -
 \sqrt{(l + m)(l - m + 1)} \delta_{m', m - 1}
 }.
+\end{equation*}
 \end{equation}
 
 %

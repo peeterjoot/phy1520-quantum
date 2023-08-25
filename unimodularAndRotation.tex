@@ -134,7 +134,7 @@ provided \( \Abs{z}^2 + \Abs{w}^2 = 1 \), so \cref{eqn:unimodularAndRotation:100
 %
 \begin{equation}\label{eqn:unimodularAndRotation:160}
 \begin{aligned}
-\frac{\Abs{z^2 - \Abs{w}^2}^2}{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 } + \Abs{w}^2 \frac{\Abs{z + z^\conj}^2 }{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 }
+&\frac{\Abs{z^2 - \Abs{w}^2}^2}{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 } + \Abs{w}^2 \frac{\Abs{z + z^\conj}^2 }{\lr{ \Abs{z}^2 + \Abs{w}^2}^2 } \\
 &=
 \frac{
 \lr{ z^2 - \Abs{w}^2 } \lr{ (z^\conj)^2 - \Abs{w}^2 }
@@ -173,16 +173,18 @@ U = e^{-i \Bsigma \cdot \ncap \theta/2},
 or
 %
 \begin{equation}\label{eqn:unimodularAndRotation:260}
-\inv{a_0^2 + \Ba^2}
+\begin{aligned}
+&\inv{a_0^2 + \Ba^2}
 \begin{bmatrix}
 a_0^2 - \Ba^2 + 2 i a_0 a_z & 2 a_0 ( a_y + i a_x ) \\
 -2 a_0( a_y - i a_x )       & a_0^2 - \Ba^2 - 2 i a_0 a_z
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&\quad=
 \begin{bmatrix}
 \cos(\theta/2) - i n_z \sin(\theta/2)  & (-n_y -i n_x) \sin(\theta/2) \\
 -( - n_y + i n_x ) \sin(\theta/2)      & \cos(\theta/2) + i n_z \sin(\theta/2)
 \end{bmatrix}.
+\end{aligned}
 \end{equation}
 %
 Equating components, that is
